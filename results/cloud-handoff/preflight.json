@@ -1,0 +1,16 @@
+{
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "machine": "x86_64",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "versions": {
+    "mani-skill": "3.0.1",
+    "sapien": "3.0.3",
+    "robosuite": "1.5.2",
+    "mujoco": "3.3.7",
+    "torch": "2.5.1+cpu",
+    "numpy": "1.26.4"
+  },
+  "nvidia": "nvidia-smi unavailable; Vulkan rendering compatibility remains untested",
+  "vulkan_icds": [],
+  "note": "CPU physics is required first. CPU-only PyTorch does not diagnose Vulkan rendering support. No driver installation is attempted."
+}

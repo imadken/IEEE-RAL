@@ -1,0 +1,22 @@
+{
+  "status": "blocked_or_failed",
+  "error_type": "RuntimeError",
+  "error": "failed to find a rendering device",
+  "traceback": "Traceback (most recent call last):\n  File \"/workspace/IEEE-RAL/scripts/qualify.py\", line 195, in main\n    else __import__(\"mani_runner\").qualify(args.task, args.output, args.states)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/IEEE-RAL/scripts/mani_runner.py\", line 83, in qualify\n    wrapped = gym.make(\n              ^^^^^^^^^\n  File \"/workspace/IEEE-RAL/.venv/lib/python3.12/site-packages/gymnasium/envs/registration.py\", line 738, in make\n    env = env_creator(**env_spec_kwargs)  # ty:ignore[call-top-callable]\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/IEEE-RAL/.venv/lib/python3.12/site-packages/mani_skill/utils/registration.py\", line 182, in make\n    env = env_spec.make(**kwargs)\n          ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/IEEE-RAL/.venv/lib/python3.12/site-packages/mani_skill/utils/registration.py\", line 79, in make\n    return self.cls(**_kwargs)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/IEEE-RAL/.venv/lib/python3.12/site-packages/mani_skill/envs/tasks/tabletop/push_cube.py\", line 65, in __init__\n    super().__init__(*args, robot_uids=robot_uids, **kwargs)\n  File \"/workspace/IEEE-RAL/.venv/lib/python3.12/site-packages/mani_skill/envs/sapien_env.py\", line 327, in __init__\n    obs, _ = self.reset(seed=[2022 + i for i in range(self.num_envs)], options=dict(reconfigure=True))\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/IEEE-RAL/.venv/lib/python3.12/site-packages/mani_skill/envs/sapien_env.py\", line 913, in reset\n    self._reconfigure(options)\n  File \"/workspace/IEEE-RAL/.venv/lib/python3.12/site-packages/mani_skill/envs/sapien_env.py\", line 743, in _reconfigure\n    self._load_scene(options)\n  File \"/workspace/IEEE-RAL/.venv/lib/python3.12/site-packages/mani_skill/envs/tasks/tabletop/push_cube.py\", line 115, in _load_scene\n    self.obj = actors.build_cube(\n               ^^^^^^^^^^^^^^^^^^\n  File \"/workspace/IEEE-RAL/.venv/lib/python3.12/site-packages/mani_skill/utils/building/actors/common.py\", line 87, in build_cube\n    material=sapien.render.RenderMaterial(\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: failed to find a rendering device\n",
+  "task": "PushCube-v1",
+  "requested_states": 1,
+  "wall_seconds": 4.902045496000028,
+  "versions": {
+    "mani-skill": "3.0.1",
+    "sapien": "3.0.3",
+    "robosuite": "1.5.2",
+    "mujoco": "3.3.7",
+    "torch": "2.5.1+cpu",
+    "numpy": "1.26.4"
+  },
+  "platform": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "cpu_count": 5,
+    "gpu_tested": false
+  }
+}

@@ -44,7 +44,7 @@ were sufficient for packages and official source inspection.
 | ManiSkill PushCube-v1 / Panda / CPU | BLOCKED at cube RenderMaterial construction; zero replay states | `results/PushCube-v1.metrics.json` |
 | ManiSkill PickCube-v1 / Panda / CPU | BLOCKED at cube RenderMaterial construction; zero replay states | `results/PickCube-v1.metrics.json` |
 | Renderer-free SAPIEN physical-property sanity check | PASS: baseline, doubled mass, increased friction | `results/physical_properties.json` |
-| Metric and actual MuJoCo contact-state regression tests | PASS: 3 tests | `tests/test_replay.py` |
+| Original metric and MuJoCo contact-state tests | PASS: 3 tests | `tests/test_replay.py` |
 | Lint / formatting | PASS | commands above |
 | GPU PhysX | UNRUN: CPU task gate not met; GPU not available | no GPU claims |
 
@@ -54,14 +54,15 @@ Commands (run separately so each nonzero exit remains visible):
 uv run python scripts/qualify.py --task Lift --states 20
 uv run python scripts/qualify.py --task PushCube-v1
 uv run python scripts/qualify.py --task PickCube-v1
-uv run python scripts/physics_properties.py
+uv run python scripts/physics_properties.py --output results/local-properties/physical_properties.json
 ```
 
-The two ManiSkill commands deliberately return nonzero. Their current implementation
-is a startup gate, **not a finished 20-state ManiSkill contact replay runner**.
-The CPU snapshot adapter is source-informed but unvalidated. Do not treat startup
-success on another machine as day-4 success: implement and run task-specific
-contact rollouts and the 20-state checks there before continuing.
+The original two ManiSkill commands returned nonzero at startup. A subsequent
+cloud handoff now provides a full CPU contact runner in `scripts/mani_runner.py`,
+including snapshot comparison and prefix fallback. Its physical behavior remains
+**unvalidated** because startup is still blocked. Do not treat source inspection
+or its action/recorder unit tests as day-4 success. Run one-state smoke checks
+and then the 20-state checks on compatible local hardware.
 
 ## Replay protocol and measured limits
 
@@ -136,7 +137,7 @@ were not instrumented; no measured core-hour claim is made.
 
 **Required next action:** supply an environment with a SAPIEN-compatible rendering
 device, even for these CPU physics tasks. Re-run both startup gates without
-patching simulator task code or faking RenderMaterial; then complete their
+patching simulator task code or faking RenderMaterial; then validate the prepared
 scripted-contact replay runner and qualify 20 independent states per task. If
 snapshot replay diverges, test deterministic reset plus full action-prefix replay
 and matched RNG scheduling. Stop if that also fails. Day-4 review is still required
@@ -163,3 +164,32 @@ Reusable configuration: saving install_script and start_skill was attempted, but
 the onboarding backend returned INVALID_ARGUMENT and could not confirm persistence.
 The tested instructions remain in scripts/install.sh, scripts/env.sh and this
 report. This is separate from the rendering-device blocker; nothing was published.
+
+## Cloud handoff extension — Ubuntu / RTX A4000
+
+See `LOCAL_CODEX_HANDOFF.md` for the local Codex request and exact commands.
+Installation and environment activation now resolve the actual checkout path;
+no `/workspace` path is required. New qualification outputs default to unique
+`results/local-*` directories, and existing metric/raw paths are rejected rather
+than overwritten. Source/asset manifests and the physical-property demonstration
+now require an explicit output path. Original evidence under `results/` is kept.
+
+Shared comparisons now reject nonfinite values, schema and shape mismatches,
+check simulation time, and distinguish one-state smoke from a 20-state run.
+The ManiSkill adapter additionally records known controller transient fields,
+drive position/velocity targets, and time-limit wrapper counters. The new runner
+requires actual robot-object contact and at least one successful manipulation;
+a repeatable all-failed trajectory is not enough. The Lift runner now checks
+grasp contacts as well. CPU task mode and the original tolerances remain fixed.
+
+Seven regression tests cover the numerical checks, actual MuJoCo contact replay,
+fail-closed observations/outcomes, scripted action bounds/gripper convention,
+and robot-cube versus cube-table contact detection. The latter uses a small API
+fixture; it does not validate real ManiSkill contact dynamics.
+
+New evidence lives in `results/cloud-handoff/` and `results/cloud-contact/`.
+Both task startup errors were reproduced with the prepared ManiSkill runner.
+A strengthened 20-state Lift rerun passed before adding explicit grasp coverage;
+`results/cloud-contact/Lift.metrics.json` records the final grasp-coverage run.
+No causal/model training or later-stage research was performed. Local success
+still depends on actual NVIDIA/Vulkan task construction and contact replay.

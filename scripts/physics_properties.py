@@ -4,6 +4,7 @@ This is a low-level sanity check, not a substitute for blocked Panda tasks.
 No condition metadata is inserted into the returned physical observation.
 """
 
+import argparse
 import json
 from pathlib import Path
 
@@ -48,6 +49,12 @@ def run(mass, friction):
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--output", type=Path, required=True)
+    args = parser.parse_args()
+    if args.output.exists():
+        parser.error("Output exists; choose a new path")
+    args.output.parent.mkdir(parents=True, exist_ok=True)
     # 4 cm cube: nominal 1000 kg/m^3 density, then twice the payload.
     rows = [run(0.064, 0.2), run(0.128, 0.2), run(0.064, 0.8)]
     assert (
@@ -58,7 +65,5 @@ if __name__ == "__main__":
         rows[0]["observation"]["displacement"][0]
         > rows[2]["observation"]["displacement"][0]
     )
-    Path("results/physical_properties.json").write_text(
-        json.dumps({"status": "passed", "runs": rows}, indent=2)
-    )
+    args.output.write_text(json.dumps({"status": "passed", "runs": rows}, indent=2))
     print(json.dumps(rows, indent=2))

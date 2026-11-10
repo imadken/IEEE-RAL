@@ -144,6 +144,11 @@ class RobosuiteReplay:
             "velocity": d.qvel.copy(),
             "time": float(d.time),
             "contacts": sorted((int(c.geom1), int(c.geom2)) for c in d.contact),
+            "is_grasped": bool(
+                self.env._check_grasp(
+                    gripper=self.env.robots[0].gripper, object_geoms=self.env.cube
+                )
+            ),
             "success": bool(self.env._check_success()),
             "observation": copy.deepcopy(obs),
         }
@@ -158,6 +163,11 @@ class ManiSkillReplay:
 
     def __init__(self, env):
         self.env = env.unwrapped
+        self.wrappers = []
+        wrapper = env
+        while wrapper is not self.env:
+            self.wrappers.append(wrapper)
+            wrapper = wrapper.env
         if self.env.gpu_sim_enabled:
             raise RuntimeError("CPU qualification must precede GPU support")
 
@@ -179,6 +189,27 @@ class ManiSkillReplay:
         custom = copy.deepcopy(custom)
         custom["torch"] = torch.get_rng_state().clone()
         custom["controller"] = copy.deepcopy(env.agent.get_controller_state())
+        # Public controller snapshots omit interpolation counters/targets in
+        # non-target modes. Capture these explicit fields at control boundaries.
+        custom["controller_transient"] = {
+            name: {
+                key: copy.deepcopy(getattr(ctrl, key))
+                for key in (
+                    "_step",
+                    "_start_qpos",
+                    "_target_qpos",
+                    "_step_size",
+                    "_target_pose",
+                )
+                if hasattr(ctrl, key)
+            }
+            for name, ctrl in env.agent.controller.controllers.items()
+        }
+        custom["wrapper_elapsed"] = [
+            getattr(w, "_elapsed_steps", None) for w in self.wrappers
+        ]
+        custom["drive_targets"] = env.agent.robot.drive_targets.clone()
+        custom["drive_velocities"] = env.agent.robot.drive_velocities.clone()
         return Snapshot(
             copy.deepcopy(env.get_state_dict()),
             random.getstate(),
@@ -191,10 +222,24 @@ class ManiSkillReplay:
 
         self.env.set_state_dict(copy.deepcopy(snap.physics))
         self.env.agent.set_controller_state(copy.deepcopy(snap.custom["controller"]))
+        for name, state in snap.custom["controller_transient"].items():
+            apply_fields(self.env.agent.controller.controllers[name], state)
+        robot = self.env.agent.robot
+        robot.set_joint_drive_targets(
+            snap.custom["drive_targets"], joints=robot.active_joints
+        )
+        robot.set_joint_drive_velocity_targets(
+            snap.custom["drive_velocities"], joints=robot.active_joints
+        )
         custom = copy.deepcopy(snap.custom)
         for k, v in custom.items():
-            if k not in ("torch", "controller"):
+            if k.startswith("_"):
                 setattr(self.env, k, v)
+        for wrapper, elapsed in zip(
+            self.wrappers, snap.custom["wrapper_elapsed"], strict=True
+        ):
+            if elapsed is not None:
+                wrapper._elapsed_steps = elapsed
         torch.set_rng_state(snap.custom["torch"])
         random.setstate(snap.python)
         np.random.set_state(snap.numpy)

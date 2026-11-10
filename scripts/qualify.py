@@ -9,18 +9,20 @@ import os
 import random
 import sys
 import time
+from datetime import UTC, datetime
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 import numpy as np
+from mani_runner import qualify as qualify_mani
 
 from dual_rec.replay import (
     RobosuiteReplay,
     Tolerances,
     distribution,
     jsonable,
-    quat_error,
 )
+from dual_rec.validation import compare, passes
 
 
 def make_lift(seed):
@@ -55,28 +57,6 @@ def action(env, phase):
     a[:3] = np.clip((target - current) / 0.05, -0.6, 0.6)
     a[-1] = -1 if phase < 2 else 1
     return a
-
-
-def compare(a, b):
-    obs_error = max(
-        float(
-            np.max(
-                np.abs(
-                    np.asarray(a["observation"][k]) - np.asarray(b["observation"][k])
-                )
-            )
-        )
-        for k in a["observation"]
-    )
-    return {
-        "position": float(np.linalg.norm(a["position"] - b["position"])),
-        "angle": quat_error(a["quaternion"], b["quaternion"]),
-        "velocity": float(np.max(np.abs(a["velocity"] - b["velocity"]))),
-        "qpos": float(np.max(np.abs(a["qpos"] - b["qpos"]))),
-        "observation": obs_error,
-        "success": a["success"] == b["success"],
-        "contacts": a["contacts"] == b["contacts"],
-    }
 
 
 def lift(output, states):
@@ -115,22 +95,15 @@ def lift(output, states):
                 obs, _, _, _ = env.step(a)
                 replay.append(adapter.record(obs))
             errors = [compare(a, b) for a, b in zip(reference, replay, strict=True)]
-            passed = all(
-                e["position"] <= tol.position
-                and e["angle"] <= tol.angle
-                and e["velocity"] <= tol.velocity
-                and e["observation"] <= tol.observation
-                and e["qpos"] <= tol.angle
-                and e["success"]
-                and e["contacts"]
-                for e in errors
-            )
+            passed = all(passes(e, tol) for e in errors)
             contacts = sum(bool(r["contacts"]) for r in prefix_records + reference)
+            grasp_steps = sum(r["is_grasped"] for r in prefix_records + reference)
             row = {
                 "seed": seed,
                 "passed": passed,
                 "errors": errors,
                 "contact_steps": contacts,
+                "grasp_steps": grasp_steps,
                 "start": start_record,
                 "reference": reference,
                 "restored": replay,
@@ -178,11 +151,16 @@ def lift(output, states):
         k: distribution([e[k] for row in results for e in row["errors"]])
         for k in ["position", "angle", "velocity", "qpos", "observation"]
     }
-    qualified = all(r["contact_steps"] > 0 for r in results)
+    qualified = all(r["grasp_steps"] > 0 for r in results) and any(
+        r["reference"][-1]["success"] for r in results
+    )
     return {
-        "status": "passed" if qualified else "failed_contact_coverage",
+        "status": ("passed" if states == 20 else "smoke_passed")
+        if qualified
+        else "failed_contact_coverage",
         "independent_states": len(results),
         "paired_rollouts": 2 * len(results),
+        "grasp_contact_states": sum(r["grasp_steps"] > 0 for r in results),
         "outcome_agreement": sum(e["success"] for r in results for e in r["errors"])
         / (25 * len(results)),
         "contact_event_agreement": sum(
@@ -198,46 +176,29 @@ def lift(output, states):
     }
 
 
-def mani(task, output):
-    import gymnasium as gym
-    import mani_skill.envs  # noqa: F401
-
-    env = None
-    try:
-        env = gym.make(
-            task,
-            robot_uids="panda",
-            sim_backend="cpu",
-            render_backend="none",
-            obs_mode="state_dict",
-            control_mode="pd_ee_delta_pos",
-        )
-        env.reset(seed=0)
-        return {
-            "status": "startup_only",
-            "replay_states": 0,
-            "reason": "CPU startup succeeded; full contact qualification remains required",
-        }
-    finally:
-        if env is not None:
-            env.close()
-
-
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--task", choices=["Lift", "PushCube-v1", "PickCube-v1"], required=True
     )
     parser.add_argument("--states", type=int, default=20, choices=range(1, 21))
-    parser.add_argument("--output", type=Path, default=Path("results"))
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=Path("results")
+        / ("local-" + datetime.now(UTC).strftime("%Y%m%dT%H%M%S%fZ")),
+    )
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=True)
+    for name in (f"{args.task}.metrics.json", f"{args.task}.raw.json"):
+        if (args.output / name).exists():
+            parser.error("Output already exists; choose a new --output directory")
     started = time.monotonic()
     try:
         result = (
             lift(args.output, args.states)
             if args.task == "Lift"
-            else mani(args.task, args.output)
+            else qualify_mani(args.task, args.output, args.states)
         )
     except Exception as exc:  # noqa: BLE001 - record startup failures before exiting nonzero
         import traceback
@@ -266,7 +227,7 @@ def main():
         json.dumps(result, indent=2, allow_nan=False)
     )
     print(json.dumps(result, indent=2), flush=True)
-    return 0 if result["status"] == "passed" else 1
+    return 0 if result["status"] in ("passed", "smoke_passed") else 1
 
 
 if __name__ == "__main__":
