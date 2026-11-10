@@ -52,6 +52,13 @@ def load_cohort(root: Path, split: str, config: dict):
                     "features": history_features(scenario.history),
                     "last": scenario.history[-1].observation.model_dump(),
                     "edit": scenario.recipe.physical_edits[0].model_dump(),
+                    "initial_cube_position": scenario.history[
+                        0
+                    ].observation.task_state.extra.obj_pose[0][:3],
+                    "robot_cube_contact_steps": sum(
+                        frame.observation.robot_cube_contact
+                        for frame in scenario.history
+                    ),
                 }
         outcomes += read_jsonl(folder / "outcomes.jsonl")
     expected = {
@@ -213,6 +220,46 @@ def matrix(outcomes, cases, config):
     return result
 
 
+def initial_effects(cases, config):
+    """Descriptive executed fault effects, never used to select fault settings."""
+    result = {}
+    native = {r["seed"]: r for r in cases.values() if r["condition"] == "native"}
+    for condition in config["conditions"]:
+        rows = sorted(
+            [r for r in cases.values() if r["condition"] == condition["name"]],
+            key=lambda row: row["seed"],
+        )
+        failed = sum(row["failed"] for row in rows)
+        measures = {
+            "goal_distance_m": [r["trigger"]["goal_distance_m"] for r in rows],
+            "window_progress_m": [r["trigger"]["window_progress_m"] for r in rows],
+            "robot_cube_contact_steps": [r["robot_cube_contact_steps"] for r in rows],
+            "cube_x_displacement_m": [
+                r["last"]["task_state"]["extra"]["obj_pose"][0][0]
+                - r["initial_cube_position"][0]
+                for r in rows
+            ],
+            "paired_goal_distance_change_vs_native_m": [
+                r["trigger"]["goal_distance_m"]
+                - native[r["seed"]]["trigger"]["goal_distance_m"]
+                for r in rows
+            ],
+        }
+        result[condition["name"]] = {
+            "failure_count": failed,
+            "independent_seeds": len(rows),
+            "failure_rate": failed / len(rows),
+            "failure_wilson_95": wilson(failed, len(rows)),
+            "measures": {
+                key: mean_interval(
+                    values, config["bootstrap_repetitions"], config["analysis_seed"]
+                )
+                for key, values in measures.items()
+            },
+        }
+    return result
+
+
 def evaluate(root, fitted, output, config):
     output.mkdir(exist_ok=False)
     development, dev_outcomes = load_cohort(root, "development", config)
@@ -228,6 +275,10 @@ def evaluate(root, fitted, output, config):
         r["seed"] for r in qualification.values()
     }
     report = {
+        "initial_effects": {
+            "development": initial_effects(development, config),
+            "qualification": initial_effects(qualification, config),
+        },
         "development_matrix": matrix(dev_outcomes, development, config),
         "qualification_matrix": matrix(outcomes, qualification, config),
         "qualification_failure_counts": {

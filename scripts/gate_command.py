@@ -25,6 +25,7 @@ def main() -> int:
     parser.add_argument("--root", type=Path, required=True)
     parser.add_argument("--name", required=True)
     parser.add_argument("--timeout", type=int, default=300)
+    parser.add_argument("--finalize", action="store_true")
     parser.add_argument("command", nargs=argparse.REMAINDER)
     args = parser.parse_args()
     command = args.command[1:] if args.command[:1] == ["--"] else args.command
@@ -59,7 +60,12 @@ def main() -> int:
     ):
         if Path(name).exists():
             source[name] = sha256(Path(name))
+    for config_path in sorted(Path("config").glob("*.json")):
+        source[str(config_path)] = sha256(config_path)
     log = args.root / f"{args.name}.log"
+    source_commit = subprocess.check_output(
+        ["git", "rev-parse", "HEAD"], text=True
+    ).strip()
     utc_start = datetime.now(UTC).isoformat()
     started = time.monotonic()
     env = os.environ | dict.fromkeys(
@@ -104,9 +110,7 @@ def main() -> int:
         "cpu_user_seconds": usage.ru_utime,
         "cpu_system_seconds": usage.ru_stime,
         "max_rss_kib": usage.ru_maxrss,
-        "source_commit": subprocess.check_output(
-            ["git", "rev-parse", "HEAD"], text=True
-        ).strip(),
+        "source_commit": source_commit,
         "source_sha256": source,
         "log_sha256": sha256(log),
         "numerical_threads": 2,
@@ -117,6 +121,29 @@ def main() -> int:
     }
     with journal.open("a") as stream:
         stream.write(json.dumps(row, allow_nan=False) + "\n")
+    if args.finalize:
+        inventory = {
+            str(path.relative_to(args.root)): {
+                "sha256": sha256(path),
+                "bytes": path.stat().st_size,
+            }
+            for path in sorted(args.root.rglob("*"))
+            if path.is_file() and path.name != "completion_manifest.json"
+        }
+        ledger = [json.loads(line) for line in journal.read_text().splitlines()]
+        final = {
+            "artifacts": inventory,
+            "source_sha256": source,
+            "source_commit": source_commit,
+            "worker_wall_seconds": sum(item["wall_seconds"] for item in ledger),
+            "cpu_core_hours": sum(
+                item["cpu_user_seconds"] + item["cpu_system_seconds"] for item in ledger
+            )
+            / 3600,
+        }
+        (args.root / "completion_manifest.json").write_text(
+            json.dumps(final, indent=2, allow_nan=False)
+        )
     print(
         json.dumps(
             {

@@ -5,3 +5,7 @@ __pycache__/
 
 .cache/
 results/local*/
+
+# Complete D5-D7 trajectories remain local; publish compact recipes and hashes.
+results/gate-d5-d7/**/scenarios.jsonl.gz
+results/gate-d5-d7/**/recoveries.jsonl.gz
