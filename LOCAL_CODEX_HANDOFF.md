@@ -10,7 +10,7 @@ authorized by this handoff. No scientific result or publication claim exists.
 - Hash-locked Python environment: Python 3.12, ManiSkill 3.0.1, SAPIEN 3.0.3,
   robosuite 1.5.2, MuJoCo 3.3.7, CPU PyTorch 2.5.1.
 - Original 20-state Lift/Panda replay passed; strengthened comparisons were rerun
-  on all 20 states in cloud. Six tests cover numerical checks, actual MuJoCo
+  on all 20 states in cloud. Seven tests cover numerical checks, actual MuJoCo
   contact-state replay, fail-closed observation comparisons and action conventions.
 - Renderer-free SAPIEN mass/friction perturbations behaved as expected.
 - Both real ManiSkill tasks still fail before reset finishes because this cloud
@@ -25,7 +25,7 @@ authorized by this handoff. No scientific result or publication claim exists.
 
 ## Prepare your checkout
 
-Preferred: clone branch `dual-rec/day4` after it is available on GitHub:
+The branch `dual-rec/day4` is available on GitHub; clone it:
 
 ```sh
 git clone --branch dual-rec/day4 https://github.com/imadken/IEEE-RAL.git
@@ -147,3 +147,7 @@ budget to spend during this handoff.
 recovery-choice conflicts, information versus physical-effect separation, robust
 planning baselines, model-error experiments and novelty. Passing D4 authorizes
 review of the next phase, not a paper claim or automatic campaign launch.
+
+Transfer has been tested: a fresh bundle clone installed the frozen environment,
+passed all seven tests and lint, and completed a one-state Lift grasp/replay smoke.
+This used the cloud CPU host; the local NVIDIA/Vulkan checks remain outstanding.

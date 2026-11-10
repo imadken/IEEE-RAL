@@ -157,8 +157,8 @@ outcomes remain entirely untested.
   release satisfying robosuite's >=3.3.0 requirement, rather than assuming the
   current MuJoCo 4.x release has matching API behavior.
 
-Use `git rev-parse HEAD` for this handoff's source commit. The local commit is not
-pushed and fresh-cloud snapshot restoration/publication has not been verified.
+Use `git rev-parse HEAD` for this handoff's source commit. The branch is now pushed to GitHub as `dual-rec/day4`. Cloud environment
+publication/restoration remains unverified; local Git transfer was validated separately.
 
 Reusable configuration: saving install_script and start_skill was attempted, but
 the onboarding backend returned INVALID_ARGUMENT and could not confirm persistence.
@@ -193,3 +193,15 @@ A strengthened 20-state Lift rerun passed before adding explicit grasp coverage;
 `results/cloud-contact/Lift.metrics.json` records the final grasp-coverage run.
 No causal/model training or later-stage research was performed. Local success
 still depends on actual NVIDIA/Vulkan task construction and contact replay.
+
+### Transfer verification
+
+A complete Git bundle was verified and cloned into a different directory with
+no virtual environment. Frozen installation from the shared artifact cache,
+all seven tests, lint and a one-state Lift grasp/replay smoke passed there.
+`results/transfer-check/Lift.metrics.json` records that smoke (not a 20-state
+qualification). This verifies checkout-path portability and isolated Python
+installation on this cloud host; it does not prove Ubuntu/A4000 driver support.
+The final grasp-aware full cloud rerun passed 20/20 independent states, with
+20/20 successful reference grasps and 100% outcome/contact-pair agreement.
+The repository branch was pushed without force and its remote SHA checked.
