@@ -138,6 +138,10 @@ def test_seed_partitions_are_grouped_and_replay_does_not_add_samples():
     config["replay_seeds"] = [9000]
     with pytest.raises(ValueError):
         split_seeds(config)
+    config["replay_seeds"] = [1000]
+    config["qualification_seeds"] = list(range(2000, 2030))
+    with pytest.raises(ValueError):
+        split_seeds(config)
 
 
 def test_recoveries_have_equal_horizon_costs_and_never_take_fault_metadata():
@@ -183,3 +187,50 @@ def test_failure_needs_executed_nonprogress_or_missed_contact_not_a_condition_ta
     assert failure_trigger([state(0, False)] * 11)["missed_contact"]
     assert not failure_trigger([state(0, True)] * 10 + [state(0.02, True)])["failed"]
     assert not failure_trigger([state(0, True, True)] * 11)["failed"]
+
+
+def test_passive_models_use_training_scaling_and_handle_nonlinear_signal():
+    from dual_rec.passive import fit_model, metrics, predict
+
+    x = np.array([[-1, -1], [-1, 1], [1, -1], [1, 1]], dtype=float)
+    y = np.array([0, 1, 1, 0])
+    model = fit_model(x, y, "rbf_kernel_logistic", 0.01)
+    assert metrics(y, predict(model, x))["balanced_accuracy"] == 1
+    original = copy.deepcopy(model)
+    predict(model, np.array([[1000, 2000]], dtype=float))
+    assert model == original
+    assert model["mean"] == [0, 0]
+    assert model["scale"] == [1, 1]
+
+
+def test_classifier_cv_keeps_fault_rows_of_each_base_seed_together():
+    from dual_rec.passive import select_model
+
+    groups = np.repeat(np.arange(8), 2)
+    y = np.tile([0, 1], 8)
+    x = np.column_stack([y, groups / 10])
+    model, scores = select_model(x, y, groups, "logistic", [0.1, 1])
+    assert model["mode"] == "logistic"
+    for score in scores:
+        for group in np.unique(groups):
+            assert len(set(np.asarray(score["folds"])[groups == group])) == 1
+        assert score["cross_validated_metrics"]["balanced_accuracy"] == 1
+
+
+def test_statistical_controls_do_not_count_recoveries_as_independent_seeds():
+    from dual_rec.passive import (
+        clustered_metric_intervals,
+        mean_interval,
+        metrics,
+        wilson,
+    )
+
+    y = np.tile([0, 1], 8)
+    p = np.tile([0.1, 0.9], 8)
+    groups = np.repeat(np.arange(8), 2)
+    assert metrics(y, p)["auroc"] == 1
+    assert metrics(y, np.ones(16) * 0.5)["auroc"] == 0.5
+    assert clustered_metric_intervals(y, p, groups, repetitions=20)["auroc"] == [1, 1]
+    assert mean_interval([0.2] * 8, repetitions=20)["independent_seeds"] == 8
+    assert wilson(8, 8)[0] < 1
+    assert mean_interval([]) is None

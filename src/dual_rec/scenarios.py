@@ -183,7 +183,7 @@ def split_seeds(config: dict) -> tuple[set[int], set[int]]:
         set(config["development_seeds"]),
         set(config["qualification_seeds"]),
     )
-    if development & qualification or max(len(development), len(qualification)) > 40:
+    if development & qualification or len(development | qualification) > 40:
         raise ValueError("Invalid or leaking seed partitions")
     if not set(config["replay_seeds"]) <= development:
         raise ValueError("Replay seeds must reuse development")
