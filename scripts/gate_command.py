@@ -66,9 +66,10 @@ def main() -> int:
         ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS"), "2"
     )
 
-    def limits():
-        cap = math.floor(remaining_cpu)
-        resource.setrlimit(resource.RLIMIT_CPU, (cap - 1, cap))
+    # This executor is a short-lived process. Set its limit before spawning so
+    # children inherit it without a preexec hook.
+    cap = math.floor(remaining_cpu)
+    resource.setrlimit(resource.RLIMIT_CPU, (cap - 1, cap))
 
     with log.open("x") as stream:
         process = subprocess.Popen(
@@ -77,7 +78,6 @@ def main() -> int:
             stderr=subprocess.STDOUT,
             env=env,
             start_new_session=True,
-            preexec_fn=limits,
         )
         timed_out = False
         try:
