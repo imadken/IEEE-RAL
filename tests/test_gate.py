@@ -234,3 +234,41 @@ def test_statistical_controls_do_not_count_recoveries_as_independent_seeds():
     assert mean_interval([0.2] * 8, repetitions=20)["independent_seeds"] == 8
     assert wilson(8, 8)[0] < 1
     assert mean_interval([]) is None
+
+
+def test_bounded_worker_timeout_retains_status_and_final_manifest(tmp_path):
+    import hashlib
+    import subprocess
+
+    result = subprocess.run(
+        [
+            sys.executable,
+            "scripts/gate_command.py",
+            "--root",
+            str(tmp_path),
+            "--name",
+            "timeout-check",
+            "--timeout",
+            "1",
+            "--finalize",
+            "--",
+            sys.executable,
+            "-c",
+            "import time; time.sleep(30)",
+        ],
+        cwd=Path(__file__).resolve().parents[1],
+        capture_output=True,
+        text=True,
+        timeout=20,
+        check=False,
+    )
+    assert result.returncode == 124
+    record = json.loads((tmp_path / "commands.jsonl").read_text())
+    assert record["exit_status"] == 124 and record["timed_out"]
+    assert record["wall_seconds"] < 10
+    manifest = json.loads((tmp_path / "completion_manifest.json").read_text())
+    for name, artifact in manifest["artifacts"].items():
+        assert (
+            hashlib.sha256((tmp_path / name).read_bytes()).hexdigest()
+            == artifact["sha256"]
+        )

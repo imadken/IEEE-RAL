@@ -57,6 +57,8 @@ def main() -> int:
         "pyproject.toml",
         "RESEARCH_PROTOCOL.md",
         "RESEARCH_EXECUTION_CONTRACT.md",
+        "GATE_REPORTS.md",
+        "README.md",
     ):
         if Path(name).exists():
             source[name] = sha256(Path(name))
@@ -75,6 +77,9 @@ def main() -> int:
     # This executor is a short-lived process. Set its limit before spawning so
     # children inherit it without a preexec hook.
     cap = math.floor(remaining_cpu)
+    _, inherited_hard = resource.getrlimit(resource.RLIMIT_CPU)
+    if inherited_hard != resource.RLIM_INFINITY:
+        cap = min(cap, inherited_hard)
     resource.setrlimit(resource.RLIMIT_CPU, (cap - 1, cap))
 
     with log.open("x") as stream:

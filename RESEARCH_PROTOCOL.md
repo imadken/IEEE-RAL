@@ -210,3 +210,89 @@ an exact reproduction recipe rather than caches or huge arrays. Preserve all
 failures and negative controls. `GATE_REPORTS.md` is the sole cumulative gate
 outcome document. Commit, push only `dual-rec/d5-d7`, and stop after D7 regardless
 of outcome. No probe/counterfactual-diagnosis/planning implementation is authorized.
+
+## Execution notes and reproduction (does not change v1)
+
+The scientific preregistration is commit `f9e158b` (full SHA from `git rev-parse
+f9e158b`). The initial rollout implementation is `5e83822`, grouped diagnostics
+are `7b8b622`, and the development-only model seal is `091002f`. The full commit
+IDs, per-command source hashes and exact worker arguments are retained in the
+published command ledger. No fault values, recovery definitions, horizon, feature
+channels, splits, utility or gate thresholds were changed after performance was
+observed. Later code changes harden seed-budget validation, administrative source
+commit timing, hashes and evidence packaging. Initial-effect summaries are
+explicitly descriptive; they are not additional decision criteria.
+
+The actual run is `results/gate-d5-d7/20261110T222449Z/`. Complete compressed
+scenario histories, recovery trajectories and fitted model arrays stay locally
+under that path. Compact complete recipes, outcomes, replay checks, all
+qualification predictions, development CV scores, small prespecified examples,
+and SHA-256 manifests are published. Reproduction regenerates the large files;
+matching numerical results and feature fingerprints is the target, not identical
+gzip headers (which include creation times). Nothing requires a model download,
+credential, GPU physics/training, or a service left running.
+
+A reviewer can reproduce on the qualified Ubuntu/A4000 setup in well under the
+180-minute / 6-core-hour limits. All simulator commands require host rendering
+device visibility; the restricted sandbox can hide a healthy device. Use a new
+root and run the commands **sequentially**. The worker wrapper enforces the
+aggregate budget and records every worker exit. Any failed prefix check stops the
+gate; do not skip failures or reuse a prior result directory.
+
+```bash
+set -euo pipefail
+bash scripts/install.sh
+source scripts/env.sh
+GATE_RUN="results/gate-d5-d7/replica-$(date -u +%Y%m%dT%H%M%SZ)"
+mkdir -p "$GATE_RUN"
+# Create a new preservation inventory before any workers.
+uv run python - "$GATE_RUN" <<'PY'
+import hashlib, json, subprocess, sys
+from datetime import UTC, datetime
+from pathlib import Path
+root = Path(sys.argv[1])
+files = subprocess.check_output(['git', 'ls-files', 'results'], text=True).splitlines()
+files += ['uv.lock', 'pyproject.toml', 'AGENTS.md']
+record = {'utc_start': datetime.now(UTC).isoformat(),
+          'base_sha': subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(),
+          'preserved_sha256': {p: hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in files}}
+(root / 'initial.json').write_text(json.dumps(record, indent=2))
+PY
+bounded() {
+    local command_name="$1"
+    shift
+    uv run python scripts/gate_command.py --root "$GATE_RUN" \
+        --name "$command_name" --timeout 900 -- "$@"
+}
+bounded preflight uv run python scripts/preflight.py --output "$GATE_RUN/preflight/hardware.json"
+bounded push-smoke uv run python scripts/qualify.py --task PushCube-v1 --states 1 --replay-mode prefix --output "$GATE_RUN/smokes/push"
+bounded pick-smoke uv run python scripts/qualify.py --task PickCube-v1 --states 1 --replay-mode prefix --output "$GATE_RUN/smokes/pick"
+bounded lift-smoke uv run python scripts/qualify.py --task Lift --states 1 --output "$GATE_RUN/smokes/lift"
+for offset in 0 4 8 12; do
+    bounded "development-$offset" uv run python scripts/gate_rollouts.py \
+        --split development --offset "$offset" --count 4 --output "$GATE_RUN/development-$offset"
+done
+bounded fit uv run python scripts/gate_analysis.py fit --root "$GATE_RUN" --output "$GATE_RUN/fitted"
+# Keep fit_plan.json/models hash as the seal before opening qualification.
+for offset in 0 4; do
+    bounded "qualification-$offset" uv run python scripts/gate_rollouts.py \
+        --split qualification --offset "$offset" --count 4 --output "$GATE_RUN/qualification-$offset"
+done
+bounded evaluate uv run python scripts/gate_analysis.py evaluate --root "$GATE_RUN" --fitted "$GATE_RUN/fitted" --output "$GATE_RUN/evaluation"
+bounded tests uv run pytest -q
+bounded lint uv run ruff check src scripts tests
+bounded format uv run ruff format --check src scripts tests
+bounded source-assets uv run python scripts/manifest.py --output "$GATE_RUN/preflight/integrity.json"
+uv run python scripts/gate_command.py --root "$GATE_RUN" --name audit --timeout 900 --finalize -- \
+    uv run python scripts/gate_audit.py --root "$GATE_RUN" --output "$GATE_RUN/audit"
+```
+
+Stop the shell sequence immediately on any nonzero worker; the full actual
+invocations/statuses, including fixed lint failures, are in `commands.jsonl`.
+The sequence enables `set -euo pipefail` so a failed worker ends execution.
+The loop grouping differs from the original one-seed start plus five-seed batches;
+the initial configuration, independent seeds, exact individual action schedules
+and scientific sample counts remain unchanged. The audit checks 144 scenario
+instances, 432 fresh recovery branches and the designated ten-seed subset.
+After reproduction, stop at D7. A different fault regime or action budget needs
+a new supervisor-approved preregistration, not edits to this evidence.

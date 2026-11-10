@@ -169,6 +169,28 @@ def main():
     (args.output / "physical_parameters.json").write_text(
         json.dumps(edits, indent=2, allow_nan=False)
     )
+    with gzip.open(
+        args.root / "fitted/models.json.gz", "rt", encoding="utf8"
+    ) as stream:
+        fitted = json.load(stream)
+    cv_results = {}
+    for family, cohorts in fitted["families"].items():
+        cv_results[family] = {}
+        for cohort, value in cohorts.items():
+            if value["status"] != "fitted":
+                cv_results[family][cohort] = value
+                continue
+            cv_results[family][cohort] = {
+                mode: {
+                    "regularization": item["model"]["regularization"],
+                    "training_seed_groups": item["train_seed_groups"],
+                    "cross_validation": item["cross_validation"],
+                }
+                for mode, item in value["models"].items()
+            }
+    (args.output / "development_cv.json").write_text(
+        json.dumps(cv_results, indent=2, allow_nan=False)
+    )
     inventory = {
         str(p.relative_to(args.root)): {"sha256": digest(p), "bytes": p.stat().st_size}
         for p in sorted(args.root.rglob("*"))
