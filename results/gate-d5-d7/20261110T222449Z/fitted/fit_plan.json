@@ -1,0 +1,153 @@
+{
+  "config_sha256": "bee51c8974687f6aa3c4fb29e8cf4d422d9ac8e5f26bf034cad78cf5b3578ccc",
+  "development_ids": [
+    "development-1000-control_mu03",
+    "development-1000-control_mu05",
+    "development-1000-heavy_cube",
+    "development-1000-high_friction",
+    "development-1000-misaligned",
+    "development-1000-native",
+    "development-1001-control_mu03",
+    "development-1001-control_mu05",
+    "development-1001-heavy_cube",
+    "development-1001-high_friction",
+    "development-1001-misaligned",
+    "development-1001-native",
+    "development-1002-control_mu03",
+    "development-1002-control_mu05",
+    "development-1002-heavy_cube",
+    "development-1002-high_friction",
+    "development-1002-misaligned",
+    "development-1002-native",
+    "development-1003-control_mu03",
+    "development-1003-control_mu05",
+    "development-1003-heavy_cube",
+    "development-1003-high_friction",
+    "development-1003-misaligned",
+    "development-1003-native",
+    "development-1004-control_mu03",
+    "development-1004-control_mu05",
+    "development-1004-heavy_cube",
+    "development-1004-high_friction",
+    "development-1004-misaligned",
+    "development-1004-native",
+    "development-1005-control_mu03",
+    "development-1005-control_mu05",
+    "development-1005-heavy_cube",
+    "development-1005-high_friction",
+    "development-1005-misaligned",
+    "development-1005-native",
+    "development-1006-control_mu03",
+    "development-1006-control_mu05",
+    "development-1006-heavy_cube",
+    "development-1006-high_friction",
+    "development-1006-misaligned",
+    "development-1006-native",
+    "development-1007-control_mu03",
+    "development-1007-control_mu05",
+    "development-1007-heavy_cube",
+    "development-1007-high_friction",
+    "development-1007-misaligned",
+    "development-1007-native",
+    "development-1008-control_mu03",
+    "development-1008-control_mu05",
+    "development-1008-heavy_cube",
+    "development-1008-high_friction",
+    "development-1008-misaligned",
+    "development-1008-native",
+    "development-1009-control_mu03",
+    "development-1009-control_mu05",
+    "development-1009-heavy_cube",
+    "development-1009-high_friction",
+    "development-1009-misaligned",
+    "development-1009-native",
+    "development-1010-control_mu03",
+    "development-1010-control_mu05",
+    "development-1010-heavy_cube",
+    "development-1010-high_friction",
+    "development-1010-misaligned",
+    "development-1010-native",
+    "development-1011-control_mu03",
+    "development-1011-control_mu05",
+    "development-1011-heavy_cube",
+    "development-1011-high_friction",
+    "development-1011-misaligned",
+    "development-1011-native",
+    "development-1012-control_mu03",
+    "development-1012-control_mu05",
+    "development-1012-heavy_cube",
+    "development-1012-high_friction",
+    "development-1012-misaligned",
+    "development-1012-native",
+    "development-1013-control_mu03",
+    "development-1013-control_mu05",
+    "development-1013-heavy_cube",
+    "development-1013-high_friction",
+    "development-1013-misaligned",
+    "development-1013-native",
+    "development-1014-control_mu03",
+    "development-1014-control_mu05",
+    "development-1014-heavy_cube",
+    "development-1014-high_friction",
+    "development-1014-misaligned",
+    "development-1014-native",
+    "development-1015-control_mu03",
+    "development-1015-control_mu05",
+    "development-1015-heavy_cube",
+    "development-1015-high_friction",
+    "development-1015-misaligned",
+    "development-1015-native"
+  ],
+  "qualification_seeds_unopened": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007
+  ],
+  "models_sha256": "0608caa9dc3723d0a24c4716b92bcdd25472659313b250bde57d9e11e64551df",
+  "selected": {
+    "surface_vs_alignment": {
+      "full": {
+        "status": "fitted",
+        "regularization": {
+          "logistic": 10.0,
+          "rbf_kernel_logistic": 0.01
+        }
+      },
+      "matched_failures": {
+        "status": "not_fit",
+        "reason": "fewer than four matched failed development seeds"
+      }
+    },
+    "surface_vs_payload": {
+      "full": {
+        "status": "fitted",
+        "regularization": {
+          "logistic": 0.1,
+          "rbf_kernel_logistic": 0.01
+        }
+      },
+      "matched_failures": {
+        "status": "not_fit",
+        "reason": "fewer than four matched failed development seeds"
+      }
+    },
+    "mild_surface_control": {
+      "full": {
+        "status": "fitted",
+        "regularization": {
+          "logistic": 0.1,
+          "rbf_kernel_logistic": 0.01
+        }
+      },
+      "matched_failures": {
+        "status": "not_fit",
+        "reason": "fewer than four matched failed development seeds"
+      }
+    }
+  }
+}
