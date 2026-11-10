@@ -1,0 +1,22 @@
+{
+  "status": "blocked_or_failed",
+  "error_type": "RuntimeError",
+  "error": "Snapshot mismatch; inspect prefix fallback and stop before experiments",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/imad/Desktop/IEEE-RAL/scripts/qualify.py\", line 201, in main\n    else qualify_mani(args.task, args.output, args.states)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/imad/Desktop/IEEE-RAL/scripts/mani_runner.py\", line 173, in qualify\n    raise RuntimeError(\nRuntimeError: Snapshot mismatch; inspect prefix fallback and stop before experiments\n",
+  "task": "PickCube-v1",
+  "requested_states": 1,
+  "wall_seconds": 6.741930644027889,
+  "versions": {
+    "mani-skill": "3.0.1",
+    "sapien": "3.0.3",
+    "robosuite": "1.5.2",
+    "mujoco": "3.3.7",
+    "torch": "2.5.1+cpu",
+    "numpy": "1.26.4"
+  },
+  "platform": {
+    "python": "3.12.12 (main, Oct 28 2025, 12:10:49) [Clang 20.1.4 ]",
+    "cpu_count": 64,
+    "gpu_tested": false
+  }
+}

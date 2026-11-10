@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "checks": {
+    "mass_reduces_displacement": true,
+    "friction_reduces_displacement": true,
+    "finite_observations": true
+  },
+  "runs": [
+    {
+      "evaluation_only": {
+        "mass_kg": 0.06400000303983688,
+        "friction": 0.2
+      },
+      "observation": {
+        "displacement": [
+          0.3435356616973877,
+          -1.4373720659932587e-05,
+          2.60770320892334e-08
+        ],
+        "velocity": [
+          1.3627647161483765,
+          -2.3610122298123315e-05,
+          -1.4752120478078723e-05
+        ]
+      }
+    },
+    {
+      "evaluation_only": {
+        "mass_kg": 0.12800000607967377,
+        "friction": 0.2
+      },
+      "observation": {
+        "displacement": [
+          0.047818057239055634,
+          -1.0561981071077753e-05,
+          2.1792948246002197e-07
+        ],
+        "velocity": [
+          0.19015035033226013,
+          -6.056614438421093e-05,
+          -7.648596510989591e-05
+        ]
+      }
+    },
+    {
+      "evaluation_only": {
+        "mass_kg": 0.06400000303983688,
+        "friction": 0.8
+      },
+      "observation": {
+        "displacement": [
+          -2.08817755265045e-06,
+          -4.39843120147998e-07,
+          -3.7439167499542236e-07
+        ],
+        "velocity": [
+          0.0006723615224473178,
+          -0.0005302179488353431,
+          -0.0008210318628698587
+        ]
+      }
+    }
+  ]
+}

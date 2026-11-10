@@ -1,0 +1,28 @@
+{
+  "started_epoch": 1794347445.143436,
+  "source_commit": "ee12762198644c6f56d03b2532489c2a8f8b5a6f",
+  "initial_status": "?? AGENTS.md\n",
+  "cloud_sha256": {
+    "results/Lift.command.log": "dbed280afcd8bc756831ac4c1a0d22dfd174b2f249a8ef5e053b836ab902e71e",
+    "results/Lift.metrics.json": "1456a1038b1607cc7e4f576b5fe5b0dcf0c869a849c4a70eadf4a6d0cd6ce6de",
+    "results/Lift.raw.json": "f8f50d2d39d5863bceb33ed02d8aaa27cbed721acf588336645859acbe4df6be",
+    "results/PickCube-v1.command.log": "680d9ab4c189b960f3c569eab2dfb86078ab9c3f17ddd0c4bad45238c056f935",
+    "results/PickCube-v1.metrics.json": "e377f93ab0286e4bb584f7ea137daebdbb56c0fea3bcf4032f95808def065fb1",
+    "results/PushCube-v1.command.log": "9763a25631690643239c1709099e9a59a9974aac61c76d69fbb745c8ec0ab96c",
+    "results/PushCube-v1.metrics.json": "b8c663fa98553a82cd7520e9656695ee539f02010ec647bb6136e4125b0f6312",
+    "results/cloud-contact/Lift.metrics.json": "c302d9cdb69482c6168f778699aa610cf57a1f3fc808d636734c41dfdaac848c",
+    "results/cloud-contact/Lift.raw.json": "aaeed2fd02bd9b588acb46b7aaf91a66f68a918c7ba0aca53ff7296dc45889aa",
+    "results/cloud-handoff/Lift.metrics.json": "f817be969d96a9e2a9ac78d3dd2baa45cf166f814fc0ef4f5eee6b73614c9061",
+    "results/cloud-handoff/Lift.raw.json": "4cd972a94be9f4fe37503b59b43d942f5be5a1a9722268c9ad1b732b2d60d909",
+    "results/cloud-handoff/PickCube-v1.metrics.json": "c125bde699f9b965993287e34d0c1f9f7c1543c45155bfadb5d31be1e438af88",
+    "results/cloud-handoff/PushCube-v1.metrics.json": "6d5e090bd7a45c73526dc8970fc148589fcb8668fe830fc8389aa06062748f59",
+    "results/cloud-handoff/integrity.json": "a976aa911c5b6d9564fe2ec515f4084f267ee67f06d129d0bda963e6e5e04248",
+    "results/cloud-handoff/physical_properties.json": "13309c241b1a7dd28f0ab3a38a2d8e6c932e1c1debdfdc3c0aafea747f30d0f8",
+    "results/cloud-handoff/preflight.json": "a736d3b916d64ae6d096da0aa4dde623829c80a61653232fd1e902ac6bdacb95",
+    "results/integrity.json": "6748f465df73a03781206ef5742dd8fe3a4c1a4810f6b7a538517e879b4e7aa8",
+    "results/physical_properties.command.log": "47586323876d40e991716a41bac9b5abe41fd12afb55be113e3afdf2ad0fe5cf",
+    "results/physical_properties.json": "13309c241b1a7dd28f0ab3a38a2d8e6c932e1c1debdfdc3c0aafea747f30d0f8",
+    "results/transfer-check/Lift.metrics.json": "0c40a1a83bbf966eb4f8cf8e60a5e51742fc890c32d23461a746da786a76b323"
+  },
+  "uv_lock_sha256": "79f692ff34e87194d9575472e6f7df5e9d7373c60f5217f52f9f5b1f37742d0a"
+}

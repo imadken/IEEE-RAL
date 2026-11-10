@@ -3,10 +3,13 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import importlib.metadata
 import json
 import os
 import random
+import resource
+import subprocess
 import sys
 import time
 from datetime import UTC, datetime
@@ -183,22 +186,36 @@ def main():
     )
     parser.add_argument("--states", type=int, default=20, choices=range(1, 21))
     parser.add_argument(
+        "--replay-mode", choices=["snapshot", "prefix"], default="snapshot"
+    )
+    parser.add_argument(
         "--output",
         type=Path,
         default=Path("results")
         / ("local-" + datetime.now(UTC).strftime("%Y%m%dT%H%M%S%fZ")),
     )
     args = parser.parse_args()
+    if args.task == "Lift" and args.replay_mode != "snapshot":
+        parser.error("Explicit prefix qualification is implemented only for ManiSkill")
     args.output.mkdir(parents=True, exist_ok=True)
     for name in (f"{args.task}.metrics.json", f"{args.task}.raw.json"):
         if (args.output / name).exists():
             parser.error("Output already exists; choose a new --output directory")
     started = time.monotonic()
+    source_files = [
+        p
+        for root in ("src", "scripts", "tests")
+        for p in Path(root).rglob("*")
+        if p.suffix in (".py", ".sh")
+    ] + [Path("uv.lock"), Path("pyproject.toml")]
+    source_sha256 = {
+        str(p): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(source_files)
+    }
     try:
         result = (
             lift(args.output, args.states)
             if args.task == "Lift"
-            else qualify_mani(args.task, args.output, args.states)
+            else qualify_mani(args.task, args.output, args.states, args.replay_mode)
         )
     except Exception as exc:  # noqa: BLE001 - record startup failures before exiting nonzero
         import traceback
@@ -211,6 +228,13 @@ def main():
         }
     result.update(
         task=args.task,
+        replay_mode=args.replay_mode,
+        source_commit=subprocess.check_output(
+            ["git", "rev-parse", "HEAD"], text=True
+        ).strip(),
+        source_sha256=source_sha256,
+        cpu_user_seconds=resource.getrusage(resource.RUSAGE_SELF).ru_utime,
+        cpu_system_seconds=resource.getrusage(resource.RUSAGE_SELF).ru_stime,
         requested_states=args.states,
         wall_seconds=time.monotonic() - started,
         versions={

@@ -1,8 +1,4 @@
-"""CPU contact qualification runner prepared from pinned official APIs.
-
-Cloud cannot construct the Panda tasks. Physical controller/replay behavior of
-this module MUST be qualified locally; unit checks do not establish readiness.
-"""
+"""Bounded CPU contact qualification with explicit reconstruction modes."""
 
 import json
 import random
@@ -10,7 +6,14 @@ import time
 
 import numpy as np
 
-from dual_rec.replay import ManiSkillReplay, Tolerances, distribution, jsonable
+from dual_rec.replay import (
+    ManiSkillReplay,
+    Tolerances,
+    distribution,
+    jsonable,
+    snapshot_data,
+    snapshot_mismatches,
+)
 from dual_rec.validation import array, compare, passes
 
 
@@ -66,12 +69,28 @@ def record(env, cube, obs):
     }
 
 
-def qualify(task, output, states):
+def make_env(task):
     import gymnasium as gym
     import mani_skill.envs  # noqa: F401
+
+    return gym.make(
+        task,
+        robot_uids="panda",
+        num_envs=1,
+        sim_backend="cpu",
+        render_backend="none",
+        obs_mode="state_dict",
+        control_mode="pd_ee_delta_pos",
+        max_episode_steps=150,
+    )
+
+
+def qualify(task, output, states, replay_mode="snapshot"):
     import torch
 
     tol = Tolerances()
+    if replay_mode not in ("snapshot", "prefix"):
+        raise ValueError("Unknown reconstruction mode")
     rows = []
     started = time.monotonic()
     for seed in range(states):
@@ -80,16 +99,7 @@ def qualify(task, output, states):
         random.seed(seed)
         np.random.seed(seed)
         torch.manual_seed(seed)
-        wrapped = gym.make(
-            task,
-            robot_uids="panda",
-            num_envs=1,
-            sim_backend="cpu",
-            render_backend="none",
-            obs_mode="state_dict",
-            control_mode="pd_ee_delta_pos",
-            max_episode_steps=150,
-        )
+        wrapped = make_env(task)
         try:
             obs, _ = wrapped.reset(seed=seed)
             env = wrapped.unwrapped
@@ -120,7 +130,24 @@ def qualify(task, output, states):
                 obs, _, _, _, _ = wrapped.step(action)
                 actions.append(action.copy())
                 reference.append(record(env, cube, obs))
-            adapter.restore(snapshot)
+            if replay_mode == "snapshot":
+                adapter.restore(snapshot)
+                prefix_errors = []
+            else:
+                # Deliberate reconstruction mode: recreate the scene, reset the
+                # seeded task, then execute every original action in order.
+                random.seed(seed)
+                np.random.seed(seed)
+                torch.manual_seed(seed)
+                obs, _ = wrapped.reset(seed=seed, options={"reconfigure": True})
+                env = wrapped.unwrapped
+                cube = env.obj if task == "PushCube-v1" else env.cube
+                prefix_errors = []
+                for action, ref in zip(prefix, trace, strict=True):
+                    obs, _, _, _, _ = wrapped.step(action)
+                    prefix_errors.append(compare(ref, record(env, cube, obs)))
+            reconstructed_snapshot = adapter.capture()
+            exposed_mismatches = snapshot_mismatches(snapshot, reconstructed_snapshot)
             restored_start = record(env, cube, env.get_obs())
             start_error = compare(before, restored_start)
             replay = []
@@ -128,10 +155,18 @@ def qualify(task, output, states):
                 obs, _, _, _, _ = wrapped.step(action)
                 replay.append(record(env, cube, obs))
             errors = [compare(a, b) for a, b in zip(reference, replay, strict=True)]
-            replay_ok = passes(start_error, tol) and all(passes(e, tol) for e in errors)
+            replay_ok = (
+                not exposed_mismatches
+                and passes(start_error, tol)
+                and all(passes(e, tol) for e in prefix_errors + errors)
+            )
             contact_ok = any(r["robot_object_contact"] for r in trace + reference)
             row = {
                 "seed": seed,
+                "replay_mode": replay_mode,
+                "snapshot": snapshot_data(snapshot),
+                "reconstructed_snapshot": snapshot_data(reconstructed_snapshot),
+                "exposed_state_mismatches": exposed_mismatches,
                 "snapshot_state": jsonable(snapshot.physics),
                 "snapshot_elapsed": jsonable(snapshot.custom["_elapsed_steps"]),
                 "snapshot_torch_rng": jsonable(snapshot.custom["torch"]),
@@ -145,6 +180,7 @@ def qualify(task, output, states):
                 "reference": reference,
                 "restored": replay,
                 "errors": errors,
+                "prefix_errors": prefix_errors,
                 "replay_passed": replay_ok,
                 "robot_object_contact": contact_ok,
             }
@@ -156,7 +192,7 @@ def qualify(task, output, states):
                 f"{task} seed {seed}: replay={replay_ok}, robot contact={contact_ok}",
                 flush=True,
             )
-            if not replay_ok:
+            if not replay_ok and replay_mode == "snapshot":
                 # Source-informed fallback remains an engineering diagnostic.
                 obs, _ = wrapped.reset(seed=seed, options={"reconfigure": True})
                 env = wrapped.unwrapped
@@ -173,6 +209,8 @@ def qualify(task, output, states):
                 raise RuntimeError(
                     "Snapshot mismatch; inspect prefix fallback and stop before experiments"
                 )
+            if not replay_ok:
+                raise RuntimeError("Prefix reconstruction mismatch; stop qualification")
             if not contact_ok:
                 raise RuntimeError(
                     "No robot/object contact: controller needs engineering adjustment; no qualification claim"
@@ -185,6 +223,7 @@ def qualify(task, output, states):
         if successes > 0
         else "failed_task_behavior",
         "independent_states": len(rows),
+        "replay_mode": replay_mode,
         "robot_contact_states": sum(r["robot_object_contact"] for r in rows),
         "successful_reference_rollouts": sum(
             r["reference"][-1]["success"] for r in rows
@@ -194,4 +233,13 @@ def qualify(task, output, states):
             k: distribution([e[k] for r in rows for e in r["errors"]])
             for k in ["position", "angle", "velocity", "observation", "qpos", "time"]
         },
+        "immediate_errors": {
+            k: distribution([r["start_error"][k] for r in rows])
+            for k in ["position", "angle", "velocity", "observation", "qpos", "time"]
+        },
+        "outcome_agreement": sum(e["success"] for r in rows for e in r["errors"])
+        / (25 * len(rows)),
+        "contact_event_agreement": sum(e["contacts"] for r in rows for e in r["errors"])
+        / (25 * len(rows)),
+        "exposed_state_agreement": all(not r["exposed_state_mismatches"] for r in rows),
     }

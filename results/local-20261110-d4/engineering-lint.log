@@ -1,0 +1,38 @@
+PIE807 [*] Prefer `dict` over useless lambda
+   --> tests/test_replay.py:176:34
+    |
+174 |             robot=robot,
+175 |             controller=NS(controllers={}),
+176 |             get_controller_state=lambda: {},
+    |                                  ^^^^^^^^^^
+177 |             set_controller_state=lambda state: None,
+178 |         ),
+    |
+help: Replace with `lambda` with `dict`
+    |
+175 |             controller=NS(controllers={}),
+    -             get_controller_state=lambda: {},
+176 +             get_controller_state=dict,
+177 |             set_controller_state=lambda state: None,
+    |
+
+PIE807 [*] Prefer `dict` over useless lambda
+   --> tests/test_replay.py:179:24
+    |
+177 |             set_controller_state=lambda state: None,
+178 |         ),
+179 |         get_state_dict=lambda: {},
+    |                        ^^^^^^^^^^
+180 |         set_state_dict=lambda state: None,
+181 |     )
+    |
+help: Replace with `lambda` with `dict`
+    |
+178 |         ),
+    -         get_state_dict=lambda: {},
+179 +         get_state_dict=dict,
+180 |         set_state_dict=lambda state: None,
+    |
+
+Found 2 errors.
+[*] 2 fixable with `--fix`.

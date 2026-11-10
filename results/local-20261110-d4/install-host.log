@@ -1,0 +1,245 @@
+Downloading torch (166.6MiB)
+Downloading pillow (6.8MiB)
+Downloading pygments (1.2MiB)
+Downloading imageio-ffmpeg (64.8MiB)
+Downloading hf-xet (4.1MiB)
+Downloading numba (3.7MiB)
+Downloading jedi (4.7MiB)
+Downloading lxml (5.0MiB)
+Downloading pydantic-core (2.2MiB)
+Downloading ruff (10.1MiB)
+Downloading pyopengl (3.0MiB)
+Downloading transforms3d (1.3MiB)
+Downloading fonttools (5.2MiB)
+Downloading sympy (5.9MiB)
+Downloading kiwisolver (1.4MiB)
+Downloading h5py (5.2MiB)
+Downloading llvmlite (56.9MiB)
+Downloading numpy (17.1MiB)
+Downloading robosuite (149.6MiB)
+Downloading opencv-python (60.1MiB)
+Downloading matplotlib (9.4MiB)
+Downloading networkx (2.0MiB)
+Downloading mujoco (6.5MiB)
+Downloading scipy (33.6MiB)
+Downloading mani-skill (97.0MiB)
+Downloading mplib (11.5MiB)
+Downloading sapien (48.9MiB)
+   Building evdev==2.0.0
+ Downloading transforms3d
+ Downloading kiwisolver
+WARN Skipping file for setuptools: setuptools-0.6b1-py2.3.egg
+WARN Skipping file for setuptools: setuptools-0.6b1-py2.4.egg
+WARN Skipping file for setuptools: setuptools-0.6b2-py2.3.egg
+WARN Skipping file for setuptools: setuptools-0.6b2-py2.4.egg
+WARN Skipping file for setuptools: setuptools-0.6b3-py2.3.egg
+WARN Skipping file for setuptools: setuptools-0.6b3-py2.4.egg
+WARN Skipping file for setuptools: setuptools-0.6b4-py2.3.egg
+WARN Skipping file for setuptools: setuptools-0.6b4-py2.4.egg
+WARN Skipping file for setuptools: setuptools-0.6c1-py2.3.egg
+WARN Skipping file for setuptools: setuptools-0.6c1-py2.4.egg
+WARN Skipping file for setuptools: setuptools-0.6c10-1.src.rpm
+WARN Skipping file for setuptools: setuptools-0.6c10-py2.3.egg
+WARN Skipping file for setuptools: setuptools-0.6c10-py2.4.egg
+WARN Skipping file for setuptools: setuptools-0.6c10-py2.5.egg
+WARN Skipping file for setuptools: setuptools-0.6c10-py2.6.egg
+WARN Skipping file for setuptools: setuptools-0.6c10.win32-py2.3.exe
+WARN Skipping file for setuptools: setuptools-0.6c10.win32-py2.4.exe
+WARN Skipping file for setuptools: setuptools-0.6c10.win32-py2.5.exe
+WARN Skipping file for setuptools: setuptools-0.6c10.win32-py2.6.exe
+WARN Skipping file for setuptools: setuptools-0.6c11-1.src.rpm
+WARN Skipping file for setuptools: setuptools-0.6c11-py2.3.egg
+WARN Skipping file for setuptools: setuptools-0.6c11-py2.4.egg
+WARN Skipping file for setuptools: setuptools-0.6c11-py2.5.egg
+WARN Skipping file for setuptools: setuptools-0.6c11-py2.6.egg
+WARN Skipping file for setuptools: setuptools-0.6c11-py2.7.egg
+WARN Skipping file for setuptools: setuptools-0.6c11.win32-py2.3.exe
+WARN Skipping file for setuptools: setuptools-0.6c11.win32-py2.4.exe
+WARN Skipping file for setuptools: setuptools-0.6c11.win32-py2.5.exe
+WARN Skipping file for setuptools: setuptools-0.6c11.win32-py2.6.exe
+WARN Skipping file for setuptools: setuptools-0.6c11.win32-py2.7.exe
+WARN Skipping file for setuptools: setuptools-0.6c2-py2.3.egg
+WARN Skipping file for setuptools: setuptools-0.6c2-py2.4.egg
+WARN Skipping file for setuptools: setuptools-0.6c3-py2.3.egg
+WARN Skipping file for setuptools: setuptools-0.6c3-py2.4.egg
+WARN Skipping file for setuptools: setuptools-0.6c3-py2.5.egg
+WARN Skipping file for setuptools: setuptools-0.6c4-1.src.rpm
+WARN Skipping file for setuptools: setuptools-0.6c4-py2.3.egg
+WARN Skipping file for setuptools: setuptools-0.6c4-py2.4.egg
+WARN Skipping file for setuptools: setuptools-0.6c4-py2.5.egg
+WARN Skipping file for setuptools: setuptools-0.6c4.win32-py2.3.exe
+WARN Skipping file for setuptools: setuptools-0.6c4.win32-py2.4.exe
+WARN Skipping file for setuptools: setuptools-0.6c4.win32-py2.5.exe
+WARN Skipping file for setuptools: setuptools-0.6c5-1.src.rpm
+WARN Skipping file for setuptools: setuptools-0.6c5-py2.3.egg
+WARN Skipping file for setuptools: setuptools-0.6c5-py2.4.egg
+WARN Skipping file for setuptools: setuptools-0.6c5-py2.5.egg
+WARN Skipping file for setuptools: setuptools-0.6c5.win32-py2.3.exe
+WARN Skipping file for setuptools: setuptools-0.6c5.win32-py2.4.exe
+WARN Skipping file for setuptools: setuptools-0.6c5.win32-py2.5.exe
+WARN Skipping file for setuptools: setuptools-0.6c6-1.src.rpm
+WARN Skipping file for setuptools: setuptools-0.6c6-py2.3.egg
+WARN Skipping file for setuptools: setuptools-0.6c6-py2.4.egg
+WARN Skipping file for setuptools: setuptools-0.6c6-py2.5.egg
+WARN Skipping file for setuptools: setuptools-0.6c6.win32-py2.3.exe
+WARN Skipping file for setuptools: setuptools-0.6c6.win32-py2.4.exe
+WARN Skipping file for setuptools: setuptools-0.6c6.win32-py2.5.exe
+WARN Skipping file for setuptools: setuptools-0.6c7-1.src.rpm
+WARN Skipping file for setuptools: setuptools-0.6c7-py2.3.egg
+WARN Skipping file for setuptools: setuptools-0.6c7-py2.4.egg
+WARN Skipping file for setuptools: setuptools-0.6c7-py2.5.egg
+WARN Skipping file for setuptools: setuptools-0.6c7.win32-py2.3.exe
+WARN Skipping file for setuptools: setuptools-0.6c7.win32-py2.4.exe
+WARN Skipping file for setuptools: setuptools-0.6c7.win32-py2.5.exe
+WARN Skipping file for setuptools: setuptools-0.6c8-1.src.rpm
+WARN Skipping file for setuptools: setuptools-0.6c8-py2.3.egg
+WARN Skipping file for setuptools: setuptools-0.6c8-py2.4.egg
+WARN Skipping file for setuptools: setuptools-0.6c8-py2.5.egg
+WARN Skipping file for setuptools: setuptools-0.6c8.win32-py2.3.exe
+WARN Skipping file for setuptools: setuptools-0.6c8.win32-py2.4.exe
+WARN Skipping file for setuptools: setuptools-0.6c8.win32-py2.5.exe
+WARN Skipping file for setuptools: setuptools-0.6c9-1.src.rpm
+WARN Skipping file for setuptools: setuptools-0.6c9-py2.3.egg
+WARN Skipping file for setuptools: setuptools-0.6c9-py2.4.egg
+WARN Skipping file for setuptools: setuptools-0.6c9-py2.5.egg
+WARN Skipping file for setuptools: setuptools-0.6c9-py2.6.egg
+WARN Skipping file for setuptools: setuptools-0.6c9.win32-py2.3.exe
+WARN Skipping file for setuptools: setuptools-0.6c9.win32-py2.4.exe
+WARN Skipping file for setuptools: setuptools-0.6c9.win32-py2.5.exe
+WARN Skipping file for setuptools: setuptools-18.3.1-py3.4.egg
+ Downloading pygments
+ Downloading pydantic-core
+ Downloading networkx
+ Downloading numba
+ Downloading hf-xet
+ Downloading h5py
+ Downloading fonttools
+ Downloading lxml
+ Downloading sympy
+ Downloading pillow
+ Downloading mujoco
+      Built evdev==2.0.0
+ Downloading matplotlib
+ Downloading ruff
+ Downloading pyopengl
+ Downloading mplib
+ Downloading numpy
+ Downloading jedi
+ Downloading scipy
+ Downloading llvmlite
+ Downloading imageio-ffmpeg
+ Downloading opencv-python
+ Downloading sapien
+ Downloading torch
+ Downloading mani-skill
+ Downloading robosuite
+Prepared 107 packages in 24.53s
+Installed 107 packages in 245ms
+ + absl-py==2.5.1
+ + annotated-types==0.8.0
+ + anyio==4.16.0
+ + arm-pytorch-utilities==0.5.0
+ + asttokens==3.0.2
+ + certifi==2026.10.23
+ + charset-normalizer==3.5.2
+ + click==8.5.1
+ + cloudpickle==3.1.2
+ + contourpy==1.3.3
+ + cycler==0.12.1
+ + dacite==1.9.2
+ + defusedxml==0.7.1
+ + docstring-parser==0.18.0
+ + etils==1.15.0
+ + evdev==2.0.0
+ + executing==2.3.0
+ + farama-notifications==0.0.6
+ + filelock==4.2.10
+ + fonttools==4.68.0
+ + fsspec==2026.9.0
+ + gitdb==4.0.12
+ + gitpython==3.2.1
+ + glfw==2.11.0
+ + gymnasium==1.4.0
+ + h11==0.16.0
+ + h5py==3.16.0
+ + hf-xet==1.8.0
+ + httpcore2==2.16.0
+ + httpx2==2.16.0
+ + huggingface-hub==2.4.0
+ + idna==3.20
+ + imageio==2.38.1
+ + imageio-ffmpeg==0.8.1
+ + importlib-resources==7.1.0
+ + iniconfig==2.3.1
+ + ipython==9.18.1
+ + ipython-pygments-lexers==1.1.1
+ + jedi==0.20.1
+ + jinja2==3.1.6
+ + kiwisolver==1.5.1
+ + llvmlite==0.50.0
+ + lxml==6.1.3
+ + mani-skill==3.0.1
+ + markupsafe==3.0.4
+ + matplotlib==3.11.2
+ + matplotlib-inline==0.2.2
+ + mink==0.0.5
+ + mplib==0.1.1
+ + mpmath==1.3.0
+ + mujoco==3.3.7
+ + networkx==3.7
+ + numba==0.68.1
+ + numpy==1.26.4
+ + nvidia-ml-py==13.615.71
+ + opencv-python==4.11.0.86
+ + packaging==26.3
+ + parso==0.8.7
+ + pexpect==4.9.0
+ + pillow==13.0.0
+ + pluggy==1.7.0
+ + prompt-toolkit==3.0.53
+ + psutil==7.2.2
+ + ptyprocess==0.7.0
+ + pure-eval==0.2.4
+ + pydantic==2.14.3
+ + pydantic-core==2.50.4
+ + pygments==2.21.0
+ + pynput==1.8.2
+ + pyopengl==3.1.10
+ + pyparsing==3.3.3
+ + pyperclip==1.11.0
+ + pytest==8.4.2
+ + python-dateutil==4.0.0
+ + python-xlib==0.33
+ + pytorch-kinematics==0.7.6
+ + pytorch-seed==0.2.0
+ + pyyaml==6.0.3
+ + qpsolvers==4.13.0
+ + quadprog==0.1.14
+ + requests==2.34.2
+ + robosuite==1.5.2
+ + ruff==0.17.4
+ + sapien==3.0.3
+ + scipy==1.17.1
+ + setuptools==84.2.1
+ + six==1.17.0
+ + smmap==5.0.3
+ + stack-data==0.6.3
+ + sympy==1.13.1
+ + tabulate==0.10.0
+ + termcolor==3.3.0
+ + toppra==0.6.11
+ + torch==2.5.1+cpu
+ + tqdm==4.70.1
+ + traitlets==5.16.1
+ + transforms3d==0.4.2
+ + trimesh==5.2.0
+ + truststore==0.10.5
+ + typeguard==4.6.0
+ + typing-extensions==4.16.0
+ + typing-inspection==0.4.5
+ + tyro==1.0.17
+ + tzdata==2026.6
+ + urllib3==2.8.0
+ + wcwidth==0.9.4
+ + zipp==4.1.2
+3.0.3 3.3.7 2.5.1+cpu

@@ -1,0 +1,11 @@
+{
+  "decision": "GO for day-4 review of prefix reconstruction only; NO-GO for ManiSkill snapshot reconstruction and research launch",
+  "cloud_files_checked": 20,
+  "cloud_evidence_unchanged": true,
+  "lock_unchanged": true,
+  "elapsed_minutes_at_summary": 14.34415446917216,
+  "profiled_command_cpu_core_hours": 0.10676752694444444
+}
+PushCube-v1 wall 62.143108217045665 cpu 62.323751 maxima {'position': 0.0, 'angle': 5.960464477539063e-08, 'velocity': 0.0, 'qpos': 0.0, 'observation': 0.0, 'time': 0.0}
+PickCube-v1 wall 74.41113015892915 cpu 74.58657099999999 maxima {'position': 0.0, 'angle': 5.960464477539063e-08, 'velocity': 0.0, 'qpos': 0.0, 'observation': 0.0, 'time': 0.0}
+Lift wall 67.68533580610529 cpu 67.73894399999999 maxima {'position': 0.0, 'angle': 4.2146848510894035e-08, 'velocity': 0.0, 'qpos': 0.0, 'observation': 0.0, 'time': 0.0}

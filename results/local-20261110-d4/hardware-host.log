@@ -1,0 +1,24 @@
+NVIDIA RTX A4000, 550.163.01, 00000000:73:00.0
+crw-rw-rw- 1 root root 195, 254 Oct 26 14:52 /dev/nvidia-modeset
+crw-rw-rw- 1 root root 511,   0 Oct 26 14:52 /dev/nvidia-uvm
+crw-rw-rw- 1 root root 511,   1 Oct 26 14:52 /dev/nvidia-uvm-tools
+crw-rw-rw- 1 root root 195,   0 Oct 26 14:52 /dev/nvidia0
+crw-rw-rw- 1 root root 195, 255 Oct 26 14:52 /dev/nvidiactl
+
+/dev/dri:
+total 0
+drwxr-xr-x  2 root root        100 Nov  8 20:08 by-path
+crw-rw----+ 1 root video  226,   0 Nov  8 20:08 card0
+crw-rw----+ 1 root video  226,   1 Nov  8 20:08 card1
+crw-rw----+ 1 root render 226, 128 Nov  8 20:08 renderD128
+NVRM version: NVIDIA UNIX x86_64 Kernel Module  550.163.01  Tue Apr  8 12:41:17 UTC 2025
+GCC version:  gcc version 12.3.0 (Ubuntu 12.3.0-1ubuntu1~22.04.3) 
+73:00.0 VGA compatible controller [0300]: NVIDIA Corporation GA104GL [RTX A4000] [10de:24b0] (rev a1)
+	Subsystem: Dell GA104GL [RTX A4000] [1028:14ad]
+	Kernel driver in use: nvidia
+	Kernel modules: nvidiafb, nouveau, nvidia_drm, nvidia
+73:00.1 Audio device [0403]: NVIDIA Corporation GA104 High Definition Audio Controller [10de:228b] (rev a1)
+	Subsystem: Dell GA104 High Definition Audio Controller [1028:14ad]
+	Kernel driver in use: snd_hda_intel
+	Kernel modules: snd_hda_intel
+vulkaninfo unavailable; real task construction is decisive

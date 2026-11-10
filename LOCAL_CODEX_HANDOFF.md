@@ -1,6 +1,11 @@
 # Local Codex handoff — Ubuntu / NVIDIA RTX A4000
 
 Continue the bounded **DUAL-REC day-4 engineering qualification only**.
+The Ubuntu/A4000 continuation has now completed; see the local addendum in
+`QUALIFICATION_D4.md` and `results/local-20261110-d4/summary.json`. Both ManiSkill
+tasks qualified in explicit prefix mode, while snapshot replay failed. Lift
+snapshot replay and actual task-cube property checks passed. Stop for review;
+the original sequence below remains the reproduction and authorization boundary.
 Read `QUALIFICATION_D4.md` for the original evidence and limitations. No experiment,
 causal method, training, paper writing, GPU physics or NeuroSym Agent changes are
 authorized by this handoff. No scientific result or publication claim exists.
@@ -147,6 +152,28 @@ budget to spend during this handoff.
 recovery-choice conflicts, information versus physical-effect separation, robust
 planning baselines, model-error experiments and novelty. Passing D4 authorizes
 review of the next phase, not a paper claim or automatic campaign launch.
+
+## Reproducing the qualified local alternative
+
+The default `--replay-mode snapshot` intentionally retains the failed ManiSkill
+snapshot gate. After examining retained snapshot/fallback evidence, select
+`--replay-mode prefix` explicitly for each ManiSkill smoke and full run. Run
+commands separately with new output directories, for example:
+
+```sh
+timeout --signal=TERM --kill-after=15s 5m uv run python scripts/qualify.py --task PushCube-v1 --states 1 --replay-mode prefix --output results/local-push-prefix-smoke-new
+timeout --signal=TERM --kill-after=15s 20m uv run python scripts/qualify.py --task PushCube-v1 --states 20 --replay-mode prefix --output results/local-push-prefix20-new
+timeout --signal=TERM --kill-after=15s 5m uv run python scripts/qualify.py --task PickCube-v1 --states 1 --replay-mode prefix --output results/local-pick-prefix-smoke-new
+timeout --signal=TERM --kill-after=15s 20m uv run python scripts/qualify.py --task PickCube-v1 --states 20 --replay-mode prefix --output results/local-pick-prefix20-new
+timeout --signal=TERM --kill-after=15s 5m uv run python scripts/physics_properties.py --task PushCube-v1 --output results/local-properties-new/PushCube-v1.json
+timeout --signal=TERM --kill-after=15s 5m uv run python scripts/physics_properties.py --task PickCube-v1 --output results/local-properties-new/PickCube-v1.json
+```
+
+Each full run still depends on its task's passing smoke. Prefix mode rebuilds the
+scene and replays the full action history; it does not validate snapshot restore.
+`scripts/env.sh` now enforces two numerical-library threads. A restricted tool
+sandbox can hide otherwise functional GPU device nodes; test host visibility
+before diagnosing a driver failure or changing system packages.
 
 Transfer has been tested: a fresh bundle clone installed the frozen environment,
 passed all seven tests and lint, and completed a one-state Lift grasp/replay smoke.

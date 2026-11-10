@@ -29,6 +29,8 @@ def jsonable(value: Any) -> Any:
         return value.tolist()
     if isinstance(value, np.generic):
         return value.item()
+    if hasattr(value, "raw_pose"):
+        return {"raw_pose": jsonable(value.raw_pose)}
     if hasattr(value, "detach"):
         return value.detach().cpu().numpy().tolist()
     return value
@@ -81,6 +83,31 @@ class Snapshot:
     python: Any
     numpy: Any
     custom: dict
+
+
+def snapshot_data(snapshot: Snapshot) -> dict:
+    """Inspectable exposed state; this cannot include hidden solver caches."""
+    return jsonable(
+        {
+            "physics": snapshot.physics,
+            "python_rng": snapshot.python,
+            "numpy_rng": snapshot.numpy,
+            "custom": snapshot.custom,
+        }
+    )
+
+
+def snapshot_mismatches(expected: Snapshot, actual: Snapshot) -> list[str]:
+    left, right = snapshot_data(expected), snapshot_data(actual)
+    mismatches = [k for k in left if k != "custom" and left[k] != right[k]]
+    for key in left["custom"].keys() | right["custom"].keys():
+        if (
+            key not in left["custom"]
+            or key not in right["custom"]
+            or left["custom"][key] != right["custom"][key]
+        ):
+            mismatches.append(f"custom/{key}")
+    return sorted(mismatches)
 
 
 class RobosuiteReplay:
@@ -179,14 +206,21 @@ class ManiSkillReplay:
             "_elapsed_steps",
             "_main_seed",
             "_episode_seed",
-            "_main_rng",
-            "_episode_rng",
-            "_batched_main_rng",
-            "_batched_episode_rng",
         )
-        custom = {k: getattr(env, k) for k in names}
-        # Deep-copy together to preserve RNG aliases.
-        custom = copy.deepcopy(custom)
+        custom = {k: copy.deepcopy(getattr(env, k)) for k in names}
+        # BatchedRNG forwards even deepcopy/pickle hooks through __getattribute__.
+        # Save each underlying RandomState and restore it in place to retain the
+        # _episode_rng / _batched_episode_rng[0] alias without copying wrappers.
+        custom["rng_states"] = {
+            name: copy.deepcopy(rng.get_state()) for name, rng in self.rngs().items()
+        }
+        rngs = self.rngs()
+        custom["rng_aliases"] = [
+            (left, right)
+            for left in rngs
+            for right in rngs
+            if left < right and rngs[left] is rngs[right]
+        ]
         custom["torch"] = torch.get_rng_state().clone()
         custom["controller"] = copy.deepcopy(env.agent.get_controller_state())
         # Public controller snapshots omit interpolation counters/targets in
@@ -217,6 +251,13 @@ class ManiSkillReplay:
             custom,
         )
 
+    def rngs(self) -> dict:
+        rngs = {name: getattr(self.env, name) for name in ("_main_rng", "_episode_rng")}
+        for name in ("_batched_main_rng", "_batched_episode_rng"):
+            for index, rng in enumerate(getattr(self.env, name).rngs):
+                rngs[f"{name}/{index}"] = rng
+        return rngs
+
     def restore(self, snap: Snapshot) -> None:
         import torch
 
@@ -235,6 +276,11 @@ class ManiSkillReplay:
         for k, v in custom.items():
             if k.startswith("_"):
                 setattr(self.env, k, v)
+        rngs = self.rngs()
+        if rngs.keys() != snap.custom["rng_states"].keys():
+            raise RuntimeError("RNG layout changed since snapshot")
+        for name, state in snap.custom["rng_states"].items():
+            rngs[name].set_state(copy.deepcopy(state))
         for wrapper, elapsed in zip(
             self.wrappers, snap.custom["wrapper_elapsed"], strict=True
         ):

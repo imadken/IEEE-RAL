@@ -1,0 +1,23 @@
+{
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "machine": "x86_64",
+  "python": "3.12.12 (main, Oct 28 2025, 12:10:49) [Clang 20.1.4 ]",
+  "versions": {
+    "mani-skill": "3.0.1",
+    "sapien": "3.0.3",
+    "robosuite": "1.5.2",
+    "mujoco": "3.3.7",
+    "torch": "2.5.1+cpu",
+    "numpy": "1.26.4"
+  },
+  "nvidia": "NVIDIA RTX A4000, 550.163.01",
+  "vulkan_icds": [
+    "/usr/share/vulkan/icd.d/intel_icd.x86_64.json",
+    "/usr/share/vulkan/icd.d/intel_hasvk_icd.x86_64.json",
+    "/usr/share/vulkan/icd.d/radeon_icd.x86_64.json",
+    "/usr/share/vulkan/icd.d/nvidia_icd.json",
+    "/usr/share/vulkan/icd.d/lvp_icd.x86_64.json",
+    "/usr/share/vulkan/icd.d/virtio_icd.x86_64.json"
+  ],
+  "note": "CPU physics is required first. CPU-only PyTorch does not diagnose Vulkan rendering support. No driver installation is attempted."
+}

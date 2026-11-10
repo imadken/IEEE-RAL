@@ -1,0 +1,22 @@
+{
+  "status": "blocked_or_failed",
+  "error_type": "ValueError",
+  "error": "setting an array element with a sequence. The requested array has an inhomogeneous shape after 2 dimensions. The detected shape was (1, 3) + inhomogeneous part.",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/imad/Desktop/IEEE-RAL/scripts/qualify.py\", line 201, in main\n    else qualify_mani(args.task, args.output, args.states)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/imad/Desktop/IEEE-RAL/scripts/mani_runner.py\", line 115, in qualify\n    snapshot = adapter.capture()\n               ^^^^^^^^^^^^^^^^^\n  File \"/home/imad/Desktop/IEEE-RAL/src/dual_rec/replay.py\", line 189, in capture\n    custom = copy.deepcopy(custom)\n             ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/imad/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/copy.py\", line 136, in deepcopy\n    y = copier(x, memo)\n        ^^^^^^^^^^^^^^^\n  File \"/home/imad/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/copy.py\", line 221, in _deepcopy_dict\n    y[deepcopy(key, memo)] = deepcopy(value, memo)\n                             ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/imad/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/copy.py\", line 151, in deepcopy\n    rv = reductor(4)\n         ^^^^^^^^^^^\n  File \"/home/imad/Desktop/IEEE-RAL/.venv/lib/python3.12/site-packages/mani_skill/envs/utils/randomization/batched_rng.py\", line 61, in method\n    return np.array(\n           ^^^^^^^^^\nValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 2 dimensions. The detected shape was (1, 3) + inhomogeneous part.\n",
+  "task": "PickCube-v1",
+  "requested_states": 1,
+  "wall_seconds": 5.038724448066205,
+  "versions": {
+    "mani-skill": "3.0.1",
+    "sapien": "3.0.3",
+    "robosuite": "1.5.2",
+    "mujoco": "3.3.7",
+    "torch": "2.5.1+cpu",
+    "numpy": "1.26.4"
+  },
+  "platform": {
+    "python": "3.12.12 (main, Oct 28 2025, 12:10:49) [Clang 20.1.4 ]",
+    "cpu_count": 64,
+    "gpu_tested": false
+  }
+}

@@ -1,0 +1,91 @@
+Using CPython 3.12.12
+Creating virtual environment at: .venv
+WARN Retry attempt #0. Sleeping 318.546079ms before the next attempt
+WARN Retry attempt #0. Sleeping 118.651044ms before the next attempt
+WARN Retry attempt #0. Sleeping 466.481817ms before the next attempt
+WARN Retry attempt #0. Sleeping 100.132705ms before the next attempt
+WARN Retry attempt #0. Sleeping 751.619234ms before the next attempt
+WARN Retry attempt #0. Sleeping 425.808949ms before the next attempt
+WARN Retry attempt #0. Sleeping 980.341603ms before the next attempt
+WARN Retry attempt #0. Sleeping 860.08859ms before the next attempt
+WARN Retry attempt #0. Sleeping 356.770401ms before the next attempt
+WARN Retry attempt #0. Sleeping 454.020249ms before the next attempt
+WARN Retry attempt #0. Sleeping 461.563269ms before the next attempt
+WARN Retry attempt #0. Sleeping 580.132597ms before the next attempt
+WARN Retry attempt #0. Sleeping 930.001108ms before the next attempt
+WARN Retry attempt #0. Sleeping 946.568658ms before the next attempt
+WARN Retry attempt #0. Sleeping 912.648867ms before the next attempt
+WARN Retry attempt #0. Sleeping 762.648236ms before the next attempt
+WARN Retry attempt #0. Sleeping 480.304484ms before the next attempt
+WARN Retry attempt #0. Sleeping 878.848933ms before the next attempt
+WARN Retry attempt #0. Sleeping 314.120695ms before the next attempt
+WARN Retry attempt #0. Sleeping 44.077643ms before the next attempt
+WARN Retry attempt #0. Sleeping 293.263431ms before the next attempt
+WARN Retry attempt #0. Sleeping 116.944317ms before the next attempt
+WARN Retry attempt #0. Sleeping 134.036397ms before the next attempt
+WARN Retry attempt #0. Sleeping 822.928297ms before the next attempt
+WARN Retry attempt #0. Sleeping 759.083564ms before the next attempt
+WARN Retry attempt #0. Sleeping 81.702633ms before the next attempt
+WARN Retry attempt #0. Sleeping 584.398787ms before the next attempt
+WARN Retry attempt #0. Sleeping 727.12709ms before the next attempt
+WARN Retry attempt #0. Sleeping 334.248713ms before the next attempt
+WARN Retry attempt #0. Sleeping 677.653548ms before the next attempt
+WARN Retry attempt #0. Sleeping 213.83805ms before the next attempt
+WARN Retry attempt #0. Sleeping 455.72309ms before the next attempt
+WARN Retry attempt #0. Sleeping 444.9125ms before the next attempt
+WARN Retry attempt #0. Sleeping 756.158564ms before the next attempt
+WARN Retry attempt #0. Sleeping 497.978142ms before the next attempt
+WARN Retry attempt #0. Sleeping 177.261679ms before the next attempt
+WARN Retry attempt #0. Sleeping 327.577231ms before the next attempt
+WARN Retry attempt #0. Sleeping 948.631927ms before the next attempt
+WARN Retry attempt #0. Sleeping 659.774801ms before the next attempt
+WARN Retry attempt #0. Sleeping 745.832122ms before the next attempt
+WARN Retry attempt #0. Sleeping 814.878625ms before the next attempt
+WARN Retry attempt #0. Sleeping 566.649396ms before the next attempt
+WARN Retry attempt #0. Sleeping 698.260935ms before the next attempt
+WARN Retry attempt #0. Sleeping 487.484948ms before the next attempt
+WARN Retry attempt #0. Sleeping 37.437636ms before the next attempt
+WARN Retry attempt #0. Sleeping 757.491682ms before the next attempt
+WARN Retry attempt #0. Sleeping 211.613956ms before the next attempt
+WARN Retry attempt #0. Sleeping 408.491828ms before the next attempt
+WARN Retry attempt #0. Sleeping 865.416074ms before the next attempt
+WARN Retry attempt #0. Sleeping 226.714315ms before the next attempt
+WARN Retry attempt #1. Sleeping 1.15110995s before the next attempt
+WARN Retry attempt #1. Sleeping 1.801388869s before the next attempt
+WARN Retry attempt #1. Sleeping 976.677032ms before the next attempt
+WARN Retry attempt #1. Sleeping 1.344732488s before the next attempt
+WARN Retry attempt #1. Sleeping 1.731883516s before the next attempt
+WARN Retry attempt #1. Sleeping 1.885092515s before the next attempt
+WARN Retry attempt #1. Sleeping 1.139913326s before the next attempt
+WARN Retry attempt #1. Sleeping 1.479334819s before the next attempt
+WARN Retry attempt #1. Sleeping 926.416081ms before the next attempt
+WARN Retry attempt #1. Sleeping 509.282201ms before the next attempt
+WARN Retry attempt #1. Sleeping 162.021437ms before the next attempt
+WARN Retry attempt #1. Sleeping 93.018839ms before the next attempt
+WARN Retry attempt #1. Sleeping 1.94971581s before the next attempt
+WARN Retry attempt #1. Sleeping 1.71947151s before the next attempt
+WARN Retry attempt #1. Sleeping 114.654592ms before the next attempt
+WARN Retry attempt #1. Sleeping 1.682218726s before the next attempt
+WARN Retry attempt #1. Sleeping 1.395335928s before the next attempt
+WARN Retry attempt #2. Sleeping 1.65897141s before the next attempt
+WARN Retry attempt #2. Sleeping 2.522499678s before the next attempt
+WARN Retry attempt #1. Sleeping 1.832534817s before the next attempt
+WARN Retry attempt #1. Sleeping 1.276646916s before the next attempt
+WARN Retry attempt #2. Sleeping 31.314883ms before the next attempt
+WARN Retry attempt #1. Sleeping 1.843397158s before the next attempt
+WARN Retry attempt #1. Sleeping 1.527438857s before the next attempt
+WARN Retry attempt #1. Sleeping 1.414766118s before the next attempt
+WARN Retry attempt #1. Sleeping 358.169553ms before the next attempt
+WARN Retry attempt #1. Sleeping 428.168402ms before the next attempt
+  × Failed to download `pydantic==2.14.3`
+  ├─▶ Failed to fetch:
+  │   `https://files.pythonhosted.org/packages/72/b8/b864503789ef5c58597d2a7b4adbee62c26440ab1e682581fc6838df8947/pydantic-2.14.3-py3-none-any.whl`
+  ├─▶ Request failed after 3 retries
+  ├─▶ error sending request for url
+  │   (https://files.pythonhosted.org/packages/72/b8/b864503789ef5c58597d2a7b4adbee62c26440ab1e682581fc6838df8947/pydantic-2.14.3-py3-none-any.whl)
+  ├─▶ client error (Connect)
+  ├─▶ dns error
+  ╰─▶ failed to lookup address information: Temporary failure in name
+      resolution
+  help: `pydantic` (v2.14.3) was included because `dual-rec-qualification`
+        (v0.1.0) depends on `pydantic`

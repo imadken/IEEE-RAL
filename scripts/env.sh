@@ -6,7 +6,8 @@ export MPLCONFIGDIR="${MPLCONFIGDIR:-${DUAL_REC_ROOT}/.cache/matplotlib}"
 export NUMBA_CACHE_DIR="${NUMBA_CACHE_DIR:-${DUAL_REC_ROOT}/.cache/numba}"
 export XDG_CACHE_HOME="${XDG_CACHE_HOME:-${DUAL_REC_ROOT}/.cache}"
 export MUJOCO_GL="${MUJOCO_GL:-egl}"
-export OMP_NUM_THREADS="${OMP_NUM_THREADS:-2}"
-export OPENBLAS_NUM_THREADS="${OPENBLAS_NUM_THREADS:-2}"
-export MKL_NUM_THREADS="${MKL_NUM_THREADS:-2}"
+# This bounded qualification must not inherit a larger numerical-thread budget.
+export OMP_NUM_THREADS=2
+export OPENBLAS_NUM_THREADS=2
+export MKL_NUM_THREADS=2
 export CC="${CC:-gcc}"
