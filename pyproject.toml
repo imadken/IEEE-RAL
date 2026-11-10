@@ -1,0 +1,17 @@
+[project]
+name = "dual-rec-qualification"
+version = "0.1.0"
+requires-python = "==3.12.*"
+dependencies = [
+  "mani-skill==3.0.1", "sapien==3.0.3", "robosuite==1.5.2",
+  "mujoco==3.3.7", "torch==2.5.1+cpu", "numpy==1.26.4",
+  "pydantic>=2,<3",
+]
+[dependency-groups]
+dev = ["pytest>=8,<9", "ruff>=0.9,<1"]
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
