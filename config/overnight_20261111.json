@@ -1,0 +1,25 @@
+{
+  "version":"overnight-v1-20261111",
+  "d7b":{
+    "calibration_seeds":[3100,3101,3102,3103],
+    "development_seeds":[3100,3101,3102,3103,3104,3105,3106,3107,3108,3109,3110,3111],
+    "qualification_seeds":[4100,4101,4102,4103,4104,4105,4106,4107],
+    "friction_grid":[0.1,0.03,0.01],"offset_grid_m":[0.01,0.02,0.03],
+    "severity_selection_minimum_failures":2,"initial_max_steps":90,
+    "recoveries":["nominal","regrasp","conservative"],"horizon":70,
+    "minimum_qualification_failures":4,"minimum_matched_failed_seeds":4,
+    "reversal_margin":0.10,"minimum_uncertain_fraction":0.25,
+    "sensor_camera_resolution_m":0.005,"sensor_camera_period_steps":2,"sensor_delay_steps":1,
+    "sensor_joint_resolution":0.001,"sensor_velocity_resolution":0.01,
+    "sensor_force_resolution_N":0.5,"sensor_torque_resolution_Nm":0.05
+  },
+  "a":{"development_seeds_start":5100,"development_count":24,"qualification_seeds_start":6100,"qualification_count":16,"continuation_cap":1600},
+  "b":{
+    "seed_ranges":{"PushCube-v1":[7100,7101,7102,7103,7104,7105,7106],"PickCube-v1":[7200,7201,7202,7203,7204,7205,7206],"Lift":[7300,7301,7302,7303,7304,7305,7306]},
+    "conditions":{"PushCube-v1":["nominal","mass8","misaligned"],"PickCube-v1":["nominal","low_friction_001"],"Lift":["nominal","mass8"]},
+    "stages":["free","contact","transport"],"continuations":["nominal","alternative"],
+    "horizon":40,"physical_continuation_cap":1000,"planned_physical_continuations":882
+  },
+  "bootstrap_repetitions":2000,"analysis_seed":11817,
+  "utility_effort_cost":0.05,"utility_time_cost":0.05
+}

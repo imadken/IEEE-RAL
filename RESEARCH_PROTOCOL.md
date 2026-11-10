@@ -296,3 +296,178 @@ and scientific sample counts remain unchanged. The audit checks 144 scenario
 instances, 432 fresh recovery branches and the designated ten-seed subset.
 After reproduction, stop at D7. A different fault regime or action budget needs
 a new supervisor-approved preregistration, not edits to this evidence.
+
+## Overnight preregistration — 11 November 2026, v1
+
+The new supplied `DUAL_REC_OVERNIGHT_CODEX_PROMPT.md` supersedes the old stopping
+boundary for this invocation only. The requested root file was absent; the complete
+attached contract is preserved verbatim there. Base is audited D7 HEAD
+`66b464e64561ee18757b63e69e03b1b5b0abe5ab`; branch is
+`dual-rec/overnight-20261111`. No remote, authentication, push or PR is attempted.
+Prior D4/D7 evidence remains immutable. This section does not rewrite its outcomes.
+
+Decision graph: preflight -> D7B severity calibration -> freeze -> reserved D7B
+qualification. Only a complete D7B PASS permits A. NO-GO/INCONCLUSIVE or unavailable
+scientific support routes automatically to B. A prerequisite failure routes to B
+if resources permit. Invalid physics, GOLD replay disagreement, leakage, failed
+preservation, or exhausted global budget stops experimental work as BLOCKED.
+
+Global limits: eight elapsed hours including editing, twelve measured child CPU
+core-hours, eight billion new artifact bytes (worker stops at 7.5 billion for
+margin), two numerical threads, serial bounded simulation batches. D7B subcap is
+135 elapsed minutes; A/B study subcap 240 minutes. `overnight_command.py` owns
+bounded child process groups, CPU limits, periodic heartbeat/STATUS.json and
+append-only batch progress/exit/resource records. Ceilings are not time targets.
+
+### D7B: finite PickCube grasp scan and recovery qualification
+
+Initial robot execution is D4's controller: 20 approach, 25 descend, 15 close,
+30 lift/transport steps. No object teleportation, external force, reward edit or
+controller-limit manipulation. Calibration uses four new seeds 3100–3103. The
+finite severity grid is cube **and** both finger collision-material friction
+(static=dynamic) [0.1,0.03,0.01], or a grasp-center waypoint x offset
+[0.01,0.02,0.03] m (quarter, half, three-quarter of the 4 cm cube width).
+Nominal controls retain original materials and centered waypoints. Finger/cube
+material edits are fresh objects, with complete before/after readback; mass,
+inertia, COM and restitution remain unchanged. Changing cube material also changes
+cube/table friction. No contact-specific coefficient is claimed.
+
+PhysX documents average material combination as its default, but this pinned
+SAPIEN Python API does not expose a combine-mode getter. Record that limitation,
+not a verified effective coefficient. Setting both grasp surfaces avoids relying
+on a low coefficient on only one surface. These are plausible lubricated-contact
+hypotheses, not calibrated material measurements. Primary official reference:
+https://nvidia-omniverse.github.io/PhysX/physx/5.1.0/_build/physx/latest/class_px_material.html
+
+A failure is triggered causally during execution, after step 70, by three
+consecutive observations of no grasp plus cube lift <0.03 m while TCP is >0.06 m
+above the initial cube; or a previously lifted cube (>0.06 m above initial) drops
+at least 0.03 m without grasp. Stop the initial prefix at the event; otherwise
+observe through step 90. Mark ordinary non-success without that event separately.
+No recovery outcome participates in trigger/severity selection.
+
+Choose the least severe grid value causing at least two failures in four executed
+calibration seeds, provided nominal succeeds in at least three of four. Select
+only by this incidence/readback/plausibility rule. Preserve all 28 calibration
+runs. If either mechanism has no credible level, mark D7B NO-GO and enter B
+without inventing another value. Freeze chosen settings in a local commit before
+comparative recovery measurements or reserved-seed execution.
+
+The development cohort is at most twelve base seeds 3100–3111, reusing calibration
+seeds at the selected values. Qualification is eight untouched seeds 4100–4107.
+Each of three conditions (nominal, low friction, offset) is executed for every
+seed. Every recovery starts in a fresh environment at the same seed, physical
+edits and exact full action prefix; all prefix records, contact pairs and numeric
+sensor readings must meet frozen D4 parity. Never use ManiSkill snapshots.
+
+Three 70-step recoveries, identical per-step normalized action bounds +/-0.25 and
+closed gripper -1 except the declared regrasp-open segment:
+
+- nominal: target the observed task goal with the closed gripper throughout;
+- regrasp: 8 open/lift steps toward recovery-start TCP +0.10 m z; 14 open approach
+  steps toward current cube +0.10 m z; 12 open descend steps to current cube center;
+  12 close steps at the observed cube; 24 closed goal-transport steps;
+- conservative: closed gripper, first 20 steps target current cube +0.06 m z,
+  then transport toward goal; action translation clip +/-0.08 throughout.
+
+Utility is frozen as `(S - .05 E - .05 T + .10)/1.10`, S actual final task success,
+E mean normalized translation action norm (divide sqrt(3)*.25, clipped [0,1]),
+T executed steps/70. Report success separately; do not count initially successful
+controls as recovery successes. All declared recoveries are retained.
+
+Full sensors: complete original task state numeric channels, object velocities,
+robot drive targets/velocities, applied qf, incoming link joint spatial forces,
+current grasp/contact flags, time and full issued action history. No contact IDs,
+parameter values, labels, seeds or future outcomes enter features. Strict typed
+sensor frames isolate these from evaluation-only recipes. Histories stop at the
+decision event, padded only by last observed state and an explicit observed mask
+up to 90 steps; never by future measurements.
+
+The one lower-fidelity regime is fixed now, before outcomes: encoder resolution
+0.001 (rad or m per joint), velocity 0.01, link-force resolution 0.5 N / torque
+0.05 Nm after a three-sample trailing mean, and 10 Hz object/goal position tracking
+at 5 mm resolution with one control-step delay. Derive vision velocity from past
+sampled positions; do not use exact object velocity, named contacts, or simulator
+is_grasped in this regime (Panda has no added tactile hardware). Keep complete
+commands, proprioception and force history. This is an explicitly hypothesized
+sensor configuration, not a calibration claim or post hoc ambiguity mask.
+
+Reuse grouped-CV L2 logistic and RBF kernel logistic, training-only scaling and
+regularization grid [0.01,.1,1,10], four development seed folds. Freeze before
+qualification. Report both regimes and both classifiers; full-state separation
+must remain visible. Primary contrast is nominal minus regrasp on matched failed
+qualification cases. PASS requires both causes fail >=4/8, >=4 matched failed
+seeds, opposite utility means with magnitude >=.10 and paired 95% intervals
+excluding zero, plus >=25% and at least two matched failed seeds uncertain
+(probabilities .25–.75 for both models) in the realistic regime. Uncertainty alone
+is not a proof of unidentifiability. Fewer matched states or intervals crossing
+zero is INCONCLUSIVE/NO-GO as the failed criterion warrants; automatically run B.
+
+### Conditional A boundary
+
+Only if the above gate passes, preregister at most two brief physical probes and
+blind/adaptive information sets before new measurements, using development seeds
+5100–5123 and qualification seeds 6100–6115. Cap 1,600 continuations. Compare
+direct, probe-blind, probe-adaptive, information-gain and nominal decision-aware
+selection with common action/cost budgets. Blind high-level selection cannot see
+probe observations; low-level safety feedback remains common. Test leakage and
+paired component estimates. No favorable outcome or publication claim is presumed.
+If prerequisites fail, enter B once; no third project is authorized.
+
+### Conditional B matrix: restoration validity, registered before new measurements
+
+B does not assume ambiguous failures. It compares fresh full-prefix GOLD with the
+**unchanged existing** ManiSkillReplay/RobosuiteReplay adapters, never weakened to
+force an effect. PushCube conditions: nominal, consistent mass/inertia x8, and
+previously documented +0.07 m y pusher misalignment. PickCube: nominal and the
+fixed low-friction 0.01 cube/finger condition above, independent of recovery ranks.
+Lift/MuJoCo: nominal and consistent cube mass/inertia x8. Fixed task/models remain
+within condition; parameter edits occur before the first prefix action.
+
+Seven new independent seeds per task: PushCube 7100–7106, PickCube 7200–7206,
+Lift 7300–7306. No seed is shared with D7B/D7. Three stages: free-space at end of
+20-step approach (verify no robot-object contact), first observed robot-object
+contact after approach (Lift may use established two-finger grasp as an observed
+contact event), and the fixed post-contact phase boundary (PushCube after eight
+push steps, PickCube/Lift after five initial lift steps). Require earlier contact
+for post-contact sampling. Unreached stages are reported as such with denominators,
+never replaced by outcome-selected states.
+
+Two fixed 40-step continuation policies per task: nominal continuation and an
+alternative. Push nominal pushes toward goal closed; alternative is recontact
+(6 lift, 10 above/behind cube, 10 descend, 14 push). Pick nominal transports to
+goal closed; alternative is the conservative low-speed lift/transport profile
+(first 15 steps cube +0.06 m, then goal, clip .08). Lift nominal continues the
+existing OSC lift, alternative lifts slowly with translation clips .2 instead of
+.6 (same target/gripper). Freeze success/time/effort utility as above with horizon
+40; Lift action norm divides sqrt(3)*.6, ManiSkill sqrt(3)*.25.
+
+For each sampled condition/stage/action, generate one native reference continuation
+and its exact action tape; independently reset/replay prefix for GOLD, compare all
+prefix state/contact records and identical continuation tape, then restore the
+existing snapshot in the reference environment after its own native continuation
+and execute the **same tape** for TEST. This natural prior continuation is the
+snapshot-branch use being audited, not an injected degradation. Each action gets
+a new reference environment. Native/GOLD/TEST all count as physical branches:
+7 seeds x (3+2+2 task-conditions) x 3 stages x 2 policies x 3 = **882**, below 1,000.
+Log immediate TEST parity failure as invalid reconstruction, but retain its outcome
+to measure the consequence of using it; never relabel it qualified. Native-GOLD
+parity failure stops all experimental work for integrity diagnosis. TEST exceptions
+remain failed branches in denominators. No claim of hidden solver cache access.
+
+Outcomes: immediate and continuation numeric/contact errors and their distributions,
+restoration failures, per-action success/utility differences, preference reversals
+and sign changes in paired nominal-minus-alternative effects. Aggregate by task,
+condition and stage; bootstrap 2,000 times grouped by independent task seed, RNG
+11817. Include Wilson intervals. Distinguish physical divergence without decision
+change, and implementation/API omissions from intrinsic engine claims. Pairwise
+rank reversals count only when GOLD and TEST contrasts have opposite signs with
+both magnitude >=.01 (also report raw signs and >=.10); no tiny effort-only flip
+is called substantively important. Seven seeds give limited precision. MuJoCo is
+a positive implementation comparison, not a controlled engine-superiority trial.
+
+After D7B and the applicable study, independently recompute all summaries from
+compact trial records without the fitter, validate preserved hashes, run tests,
+lint/format and commit locally. Preserve negative evidence and unknown novelty.
+NO_PAPER_CLAIM unless a separately verified future contribution exists; no paper
+draft, later campaign, extra fault hunt or remote publication is authorized.
