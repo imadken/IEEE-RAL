@@ -1,0 +1,6 @@
+development-1000-native: failure=False
+development-1000-high_friction: failure=False
+development-1000-heavy_cube: failure=False
+development-1000-misaligned: failure=True
+development-1000-control_mu03: failure=False
+development-1000-control_mu05: failure=False

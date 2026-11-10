@@ -1,0 +1,40 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+________ test_bounded_worker_timeout_retains_status_and_final_manifest _________
+
+tmp_path = PosixPath('/tmp/pytest-of-imad/pytest-247/test_bounded_worker_timeout_re0')
+
+    def test_bounded_worker_timeout_retains_status_and_final_manifest(tmp_path):
+        import hashlib
+        import subprocess
+    
+        result = subprocess.run(
+            [
+                sys.executable,
+                "scripts/gate_command.py",
+                "--root",
+                str(tmp_path),
+                "--name",
+                "timeout-check",
+                "--timeout",
+                "1",
+                "--finalize",
+                "--",
+                sys.executable,
+                "-c",
+                "import time; time.sleep(30)",
+            ],
+            cwd=Path(__file__).resolve().parents[1],
+            capture_output=True,
+            text=True,
+            timeout=20,
+            check=False,
+        )
+>       assert result.returncode == 124
+E       AssertionError: assert 1 == 124
+E        +  where 1 = CompletedProcess(args=['/home/imad/Desktop/IEEE-RAL/.venv/bin/python3', 'scripts/gate_command.py', '--root', '/tmp/pyt...n main\n    resource.setrlimit(resource.RLIMIT_CPU, (cap - 1, cap))\nValueError: not allowed to raise maximum limit\n').returncode
+
+tests/test_gate.py:265: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_gate.py::test_bounded_worker_timeout_retains_status_and_final_manifest
+1 failed, 9 deselected in 0.37s

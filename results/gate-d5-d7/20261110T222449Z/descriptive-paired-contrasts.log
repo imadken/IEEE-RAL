@@ -1,0 +1,128 @@
+{
+  "control_mu03": {
+    "cohort": "all qualification setups; not matched-failure H1 evidence",
+    "recontact_minus_continue_utility": {
+      "mean": -0.002364010102761799,
+      "ci": [
+        -0.00844265620391058,
+        0.001731725914867166
+      ],
+      "independent_seeds": 8,
+      "confidence": 0.95
+    },
+    "recontact_minus_continue_success": {
+      "mean": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "independent_seeds": 8,
+      "confidence": 0.95
+    }
+  },
+  "control_mu05": {
+    "cohort": "all qualification setups; not matched-failure H1 evidence",
+    "recontact_minus_continue_utility": {
+      "mean": -0.0024594942319619145,
+      "ci": [
+        -0.008471802696833813,
+        0.0015665208335218994
+      ],
+      "independent_seeds": 8,
+      "confidence": 0.95
+    },
+    "recontact_minus_continue_success": {
+      "mean": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "independent_seeds": 8,
+      "confidence": 0.95
+    }
+  },
+  "heavy_cube": {
+    "cohort": "all qualification setups; not matched-failure H1 evidence",
+    "recontact_minus_continue_utility": {
+      "mean": -0.002306681620825396,
+      "ci": [
+        -0.008395057442537253,
+        0.0017962689859322978
+      ],
+      "independent_seeds": 8,
+      "confidence": 0.95
+    },
+    "recontact_minus_continue_success": {
+      "mean": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "independent_seeds": 8,
+      "confidence": 0.95
+    }
+  },
+  "high_friction": {
+    "cohort": "all qualification setups; not matched-failure H1 evidence",
+    "recontact_minus_continue_utility": {
+      "mean": -0.0025268717122489542,
+      "ci": [
+        -0.008490497242461953,
+        0.0014861116920376067
+      ],
+      "independent_seeds": 8,
+      "confidence": 0.95
+    },
+    "recontact_minus_continue_success": {
+      "mean": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "independent_seeds": 8,
+      "confidence": 0.95
+    }
+  },
+  "misaligned": {
+    "cohort": "all qualification setups; not matched-failure H1 evidence",
+    "recontact_minus_continue_utility": {
+      "mean": 0.5627833049982807,
+      "ci": [
+        0.2101969905104729,
+        0.7993821049448729
+      ],
+      "independent_seeds": 8,
+      "confidence": 0.95
+    },
+    "recontact_minus_continue_success": {
+      "mean": 0.625,
+      "ci": [
+        0.25,
+        0.875
+      ],
+      "independent_seeds": 8,
+      "confidence": 0.95
+    }
+  },
+  "native": {
+    "cohort": "all qualification setups; not matched-failure H1 evidence",
+    "recontact_minus_continue_utility": {
+      "mean": -0.002364010102761799,
+      "ci": [
+        -0.00844265620391058,
+        0.001731725914867166
+      ],
+      "independent_seeds": 8,
+      "confidence": 0.95
+    },
+    "recontact_minus_continue_success": {
+      "mean": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "independent_seeds": 8,
+      "confidence": 0.95
+    }
+  }
+}

@@ -1,0 +1,7934 @@
+{
+  "native": [
+    {
+      "seed": 1000,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1001,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1002,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1003,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1004,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1005,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1006,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1007,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1008,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1009,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1010,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1011,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1012,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1013,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1014,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1015,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2000,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2001,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2002,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2003,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2004,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2005,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2006,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2007,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    }
+  ],
+  "high_friction": [
+    {
+      "seed": 1000,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 1.2000000476837158,
+              "dynamic_friction": 1.2000000476837158,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1001,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 1.2000000476837158,
+              "dynamic_friction": 1.2000000476837158,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1002,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 1.2000000476837158,
+              "dynamic_friction": 1.2000000476837158,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1003,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 1.2000000476837158,
+              "dynamic_friction": 1.2000000476837158,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1004,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 1.2000000476837158,
+              "dynamic_friction": 1.2000000476837158,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1005,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 1.2000000476837158,
+              "dynamic_friction": 1.2000000476837158,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1006,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 1.2000000476837158,
+              "dynamic_friction": 1.2000000476837158,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1007,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 1.2000000476837158,
+              "dynamic_friction": 1.2000000476837158,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1008,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 1.2000000476837158,
+              "dynamic_friction": 1.2000000476837158,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1009,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 1.2000000476837158,
+              "dynamic_friction": 1.2000000476837158,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1010,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 1.2000000476837158,
+              "dynamic_friction": 1.2000000476837158,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1011,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 1.2000000476837158,
+              "dynamic_friction": 1.2000000476837158,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1012,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 1.2000000476837158,
+              "dynamic_friction": 1.2000000476837158,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1013,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 1.2000000476837158,
+              "dynamic_friction": 1.2000000476837158,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1014,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 1.2000000476837158,
+              "dynamic_friction": 1.2000000476837158,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1015,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 1.2000000476837158,
+              "dynamic_friction": 1.2000000476837158,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2000,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 1.2000000476837158,
+              "dynamic_friction": 1.2000000476837158,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2001,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 1.2000000476837158,
+              "dynamic_friction": 1.2000000476837158,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2002,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 1.2000000476837158,
+              "dynamic_friction": 1.2000000476837158,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2003,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 1.2000000476837158,
+              "dynamic_friction": 1.2000000476837158,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2004,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 1.2000000476837158,
+              "dynamic_friction": 1.2000000476837158,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2005,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 1.2000000476837158,
+              "dynamic_friction": 1.2000000476837158,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2006,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 1.2000000476837158,
+              "dynamic_friction": 1.2000000476837158,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2007,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 1.2000000476837158,
+              "dynamic_friction": 1.2000000476837158,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    }
+  ],
+  "heavy_cube": [
+    {
+      "seed": 1000,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.5120000243186951,
+          "inertia_kg_m2": [
+            0.00013653333007823676,
+            0.00013653333007823676,
+            0.00013653333007823676
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1001,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.5120000243186951,
+          "inertia_kg_m2": [
+            0.00013653333007823676,
+            0.00013653333007823676,
+            0.00013653333007823676
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1002,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.5120000243186951,
+          "inertia_kg_m2": [
+            0.00013653333007823676,
+            0.00013653333007823676,
+            0.00013653333007823676
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1003,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.5120000243186951,
+          "inertia_kg_m2": [
+            0.00013653333007823676,
+            0.00013653333007823676,
+            0.00013653333007823676
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1004,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.5120000243186951,
+          "inertia_kg_m2": [
+            0.00013653333007823676,
+            0.00013653333007823676,
+            0.00013653333007823676
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1005,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.5120000243186951,
+          "inertia_kg_m2": [
+            0.00013653333007823676,
+            0.00013653333007823676,
+            0.00013653333007823676
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1006,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.5120000243186951,
+          "inertia_kg_m2": [
+            0.00013653333007823676,
+            0.00013653333007823676,
+            0.00013653333007823676
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1007,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.5120000243186951,
+          "inertia_kg_m2": [
+            0.00013653333007823676,
+            0.00013653333007823676,
+            0.00013653333007823676
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1008,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.5120000243186951,
+          "inertia_kg_m2": [
+            0.00013653333007823676,
+            0.00013653333007823676,
+            0.00013653333007823676
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1009,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.5120000243186951,
+          "inertia_kg_m2": [
+            0.00013653333007823676,
+            0.00013653333007823676,
+            0.00013653333007823676
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1010,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.5120000243186951,
+          "inertia_kg_m2": [
+            0.00013653333007823676,
+            0.00013653333007823676,
+            0.00013653333007823676
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1011,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.5120000243186951,
+          "inertia_kg_m2": [
+            0.00013653333007823676,
+            0.00013653333007823676,
+            0.00013653333007823676
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1012,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.5120000243186951,
+          "inertia_kg_m2": [
+            0.00013653333007823676,
+            0.00013653333007823676,
+            0.00013653333007823676
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1013,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.5120000243186951,
+          "inertia_kg_m2": [
+            0.00013653333007823676,
+            0.00013653333007823676,
+            0.00013653333007823676
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1014,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.5120000243186951,
+          "inertia_kg_m2": [
+            0.00013653333007823676,
+            0.00013653333007823676,
+            0.00013653333007823676
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1015,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.5120000243186951,
+          "inertia_kg_m2": [
+            0.00013653333007823676,
+            0.00013653333007823676,
+            0.00013653333007823676
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2000,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.5120000243186951,
+          "inertia_kg_m2": [
+            0.00013653333007823676,
+            0.00013653333007823676,
+            0.00013653333007823676
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2001,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.5120000243186951,
+          "inertia_kg_m2": [
+            0.00013653333007823676,
+            0.00013653333007823676,
+            0.00013653333007823676
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2002,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.5120000243186951,
+          "inertia_kg_m2": [
+            0.00013653333007823676,
+            0.00013653333007823676,
+            0.00013653333007823676
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2003,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.5120000243186951,
+          "inertia_kg_m2": [
+            0.00013653333007823676,
+            0.00013653333007823676,
+            0.00013653333007823676
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2004,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.5120000243186951,
+          "inertia_kg_m2": [
+            0.00013653333007823676,
+            0.00013653333007823676,
+            0.00013653333007823676
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2005,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.5120000243186951,
+          "inertia_kg_m2": [
+            0.00013653333007823676,
+            0.00013653333007823676,
+            0.00013653333007823676
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2006,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.5120000243186951,
+          "inertia_kg_m2": [
+            0.00013653333007823676,
+            0.00013653333007823676,
+            0.00013653333007823676
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2007,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.5120000243186951,
+          "inertia_kg_m2": [
+            0.00013653333007823676,
+            0.00013653333007823676,
+            0.00013653333007823676
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    }
+  ],
+  "misaligned": [
+    {
+      "seed": 1000,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1001,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1002,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1003,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1004,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1005,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1006,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1007,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1008,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1009,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1010,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1011,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1012,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1013,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1014,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1015,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2000,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2001,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2002,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2003,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2004,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2005,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2006,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2007,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    }
+  ],
+  "control_mu03": [
+    {
+      "seed": 1000,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1001,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1002,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1003,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1004,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1005,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1006,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1007,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1008,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1009,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1010,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1011,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1012,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1013,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1014,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1015,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2000,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2001,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2002,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2003,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2004,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2005,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2006,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2007,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    }
+  ],
+  "control_mu05": [
+    {
+      "seed": 1000,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.5,
+              "dynamic_friction": 0.5,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1001,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.5,
+              "dynamic_friction": 0.5,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1002,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.5,
+              "dynamic_friction": 0.5,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1003,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.5,
+              "dynamic_friction": 0.5,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1004,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.5,
+              "dynamic_friction": 0.5,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1005,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.5,
+              "dynamic_friction": 0.5,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1006,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.5,
+              "dynamic_friction": 0.5,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1007,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.5,
+              "dynamic_friction": 0.5,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1008,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.5,
+              "dynamic_friction": 0.5,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1009,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.5,
+              "dynamic_friction": 0.5,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1010,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.5,
+              "dynamic_friction": 0.5,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1011,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.5,
+              "dynamic_friction": 0.5,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1012,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.5,
+              "dynamic_friction": 0.5,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1013,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.5,
+              "dynamic_friction": 0.5,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1014,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.5,
+              "dynamic_friction": 0.5,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 1015,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.5,
+              "dynamic_friction": 0.5,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2000,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.5,
+              "dynamic_friction": 0.5,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2001,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.5,
+              "dynamic_friction": 0.5,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2002,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.5,
+              "dynamic_friction": 0.5,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2003,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.5,
+              "dynamic_friction": 0.5,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2004,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.5,
+              "dynamic_friction": 0.5,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2005,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.5,
+              "dynamic_friction": 0.5,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2006,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.5,
+              "dynamic_friction": 0.5,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    },
+    {
+      "seed": 2007,
+      "edit": {
+        "control_step": 0,
+        "before": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.30000001192092896,
+              "dynamic_friction": 0.30000001192092896,
+              "restitution": 0.0
+            }
+          ]
+        },
+        "after": {
+          "mass_kg": 0.06400000303983688,
+          "inertia_kg_m2": [
+            1.7066666259779595e-05,
+            1.7066666259779595e-05,
+            1.7066666259779595e-05
+          ],
+          "center_of_mass_pose": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "shape_materials": [
+            {
+              "static_friction": 0.5,
+              "dynamic_friction": 0.5,
+              "restitution": 0.0
+            }
+          ]
+        }
+      },
+      "inertia_max_absolute_error": 0.0
+    }
+  ]
+}

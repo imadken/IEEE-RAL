@@ -1,0 +1,34 @@
+{
+  "version": "D5-D7-v1",
+  "task": "PushCube-v1",
+  "development_seeds": [1000,1001,1002,1003,1004,1005,1006,1007,1008,1009,1010,1011,1012,1013,1014,1015],
+  "qualification_seeds": [2000,2001,2002,2003,2004,2005,2006,2007],
+  "replay_seeds": [1000,1001,1002,1003,1004,1005,1006,1007,1008,1009],
+  "conditions": [
+    {"name":"native", "mass_scale":1.0, "friction":null, "alignment_y":0.0},
+    {"name":"high_friction", "mass_scale":1.0, "friction":1.2, "alignment_y":0.0},
+    {"name":"heavy_cube", "mass_scale":8.0, "friction":null, "alignment_y":0.0},
+    {"name":"misaligned", "mass_scale":1.0, "friction":null, "alignment_y":0.07},
+    {"name":"control_mu03", "mass_scale":1.0, "friction":0.3, "alignment_y":0.0},
+    {"name":"control_mu05", "mass_scale":1.0, "friction":0.5, "alignment_y":0.0}
+  ],
+  "families": [
+    {"name":"surface_vs_alignment", "conditions":["high_friction","misaligned"], "negative_control":false},
+    {"name":"surface_vs_payload", "conditions":["high_friction","heavy_cube"], "negative_control":false},
+    {"name":"mild_surface_control", "conditions":["control_mu03","control_mu05"], "negative_control":true}
+  ],
+  "normal_schedule": [[0,20],[1,25],[2,33]],
+  "recoveries": ["continue", "recontact", "slow"],
+  "recovery_horizon":50,
+  "failure_progress_m":0.01,
+  "failure_window":10,
+  "bootstrap_repetitions":2000,
+  "analysis_seed":7321,
+  "utility_effort_cost":0.05,
+  "utility_time_cost":0.05,
+  "preference_margin":0.10,
+  "minimum_ambiguous_fraction":0.20,
+  "minimum_matched_failure_test_seeds":4,
+  "classifier_regularization":[0.01,0.1,1.0,10.0],
+  "classifier_models":["logistic","rbf_kernel_logistic"]
+}

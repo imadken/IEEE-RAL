@@ -1,0 +1,40 @@
+RUF059 Unpacked variable `test_y` is never used
+   --> scripts/gate_analysis.py:249:28
+    |
+247 |     for family in config["families"]:
+248 |         name, conditions = family["name"], family["conditions"]
+249 |         full_rows, test_x, test_y, test_groups = family_arrays(
+    |                            ^^^^^^
+250 |             qualification, conditions
+251 |         )
+    |
+help: Prefix it with an underscore or any other dummy variable pattern
+    |
+248 |         name, conditions = family["name"], family["conditions"]
+    -         full_rows, test_x, test_y, test_groups = family_arrays(
+249 +         full_rows, test_x, _test_y, test_groups = family_arrays(
+250 |             qualification, conditions
+    |
+note: This is an unsafe fix and may change runtime behavior
+
+RUF059 Unpacked variable `test_groups` is never used
+   --> scripts/gate_analysis.py:249:36
+    |
+247 |     for family in config["families"]:
+248 |         name, conditions = family["name"], family["conditions"]
+249 |         full_rows, test_x, test_y, test_groups = family_arrays(
+    |                                    ^^^^^^^^^^^
+250 |             qualification, conditions
+251 |         )
+    |
+help: Prefix it with an underscore or any other dummy variable pattern
+    |
+248 |         name, conditions = family["name"], family["conditions"]
+    -         full_rows, test_x, test_y, test_groups = family_arrays(
+249 +         full_rows, test_x, test_y, _test_groups = family_arrays(
+250 |             qualification, conditions
+    |
+note: This is an unsafe fix and may change runtime behavior
+
+Found 2 errors.
+2 unsafe fixes available with `--fix --unsafe-fixes`.

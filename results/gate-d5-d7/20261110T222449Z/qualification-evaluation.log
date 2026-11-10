@@ -1,0 +1,28 @@
+{
+  "status": "NO-GO",
+  "qualification_failure_counts": {
+    "native": 0,
+    "high_friction": 0,
+    "heavy_cube": 0,
+    "misaligned": 8,
+    "control_mu03": 0,
+    "control_mu05": 0
+  },
+  "families": {
+    "surface_vs_alignment": {
+      "status": "NO-GO",
+      "matched_failures": 0,
+      "reversal": false
+    },
+    "surface_vs_payload": {
+      "status": "NO-GO",
+      "matched_failures": 0,
+      "reversal": false
+    },
+    "mild_surface_control": {
+      "status": "CONTROL",
+      "matched_failures": 0,
+      "reversal": false
+    }
+  }
+}

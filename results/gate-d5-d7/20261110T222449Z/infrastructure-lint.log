@@ -1,0 +1,23 @@
+PLW1509 `preexec_fn` argument is unsafe when using threads
+  --> scripts/gate_command.py:80:13
+   |
+78 |             env=env,
+79 |             start_new_session=True,
+80 |             preexec_fn=limits,
+   |             ^^^^^^^^^^^^^^^^^
+81 |         )
+82 |         timed_out = False
+   |
+
+BLE001 Do not catch blind exception: `Exception`
+   --> scripts/gate_rollouts.py:330:12
+    |
+328 |         )
+329 |         return 0
+330 |     except Exception as exc:
+    |            ^^^^^^^^^
+331 |         (args.output / "status.json").write_text(
+332 |             json.dumps(
+    |
+
+Found 2 errors.

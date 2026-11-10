@@ -1,0 +1,6 @@
+fit surface_vs_alignment/full/logistic: lambda=10.0
+fit surface_vs_alignment/full/rbf_kernel_logistic: lambda=0.01
+fit surface_vs_payload/full/logistic: lambda=0.1
+fit surface_vs_payload/full/rbf_kernel_logistic: lambda=0.01
+fit mild_surface_control/full/logistic: lambda=0.1
+fit mild_surface_control/full/rbf_kernel_logistic: lambda=0.01
