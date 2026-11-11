@@ -1,0 +1,37 @@
+{
+  "training_seeds": [
+    3100,
+    3101,
+    3102,
+    3103,
+    3104,
+    3105,
+    3106,
+    3107,
+    3108,
+    3109,
+    3110,
+    3111
+  ],
+  "qualification_seeds_unopened": [
+    4100,
+    4101,
+    4102,
+    4103,
+    4104,
+    4105,
+    4106,
+    4107
+  ],
+  "model_sha256": "db7ae0e53c65a10f3aa40967e8e7cc5b108caab3ce92f6ebba3dcf30ccf64702",
+  "hyperparameters": {
+    "full": {
+      "logistic": 0.1,
+      "rbf_kernel_logistic": 0.01
+    },
+    "realistic": {
+      "logistic": 1,
+      "rbf_kernel_logistic": 0.01
+    }
+  }
+}
