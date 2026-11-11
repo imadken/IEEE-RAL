@@ -1,0 +1,12 @@
+# Isolated REBOOT qualification environment; historical uv.lock is unchanged.
+annotated-types==0.8.0
+iniconfig==2.3.1
+numpy==1.26.4
+packaging==26.3
+pluggy==1.7.0
+pyarrow==19.0.1
+pydantic==2.12.3
+pydantic-core==2.41.4
+pytest==8.3.5
+typing-extensions==4.16.0
+typing-inspection==0.4.5
