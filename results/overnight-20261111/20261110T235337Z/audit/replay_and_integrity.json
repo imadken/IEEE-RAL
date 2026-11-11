@@ -1,0 +1,93 @@
+{
+  "prior_local_artifacts_preserved": 210,
+  "original_adapters_unchanged": true,
+  "locked_dependencies_and_guidance_preserved": true,
+  "D7B": {
+    "status": "NO-GO",
+    "reason": "Primary utility preference reversal did not meet opposite-sign and 0.10 criteria",
+    "failure_counts": {
+      "nominal": 0,
+      "friction": 7,
+      "offset": 6
+    },
+    "paired_failed_seeds": [
+      4101,
+      4102,
+      4104,
+      4105,
+      4106,
+      4107
+    ],
+    "primary_contrasts": {
+      "friction": {
+        "mean": 0.01733150191909728,
+        "ci": [
+          0.01341264793417614,
+          0.023664305550299178
+        ]
+      },
+      "offset": {
+        "mean": -0.7425448913952111,
+        "ci": [
+          -0.8948553177640481,
+          -0.43955709103269885
+        ]
+      }
+    },
+    "realistic_uncertain_seeds": [],
+    "qualification_recovery_pairs": 72,
+    "all_selected_scenarios": 60,
+    "fitter_consulted": false,
+    "all_means_and_intervals_recomputed": true,
+    "all_passive_point_metrics_recomputed": true
+  },
+  "B": {
+    "planned_rows": 294,
+    "stage_reached": 294,
+    "complete_native_gold_test_pairs": 294,
+    "restore_exceptions": 0,
+    "success_disagreements": 0,
+    "ranking_reversals_001": 0,
+    "attempted_continuations": 882,
+    "by_task": {
+      "PushCube-v1": {
+        "independent_base_seeds": 7,
+        "complete_pairs": 126,
+        "snapshot_continuation_passes": 0,
+        "contact_changed_pairs": 9,
+        "success_disagreements": 0,
+        "action_ranking_pairs": 63,
+        "raw_sign_reversals": 0,
+        "ranking_reversals_001": 0,
+        "ranking_reversals_010": 0
+      },
+      "PickCube-v1": {
+        "independent_base_seeds": 7,
+        "complete_pairs": 84,
+        "snapshot_continuation_passes": 0,
+        "contact_changed_pairs": 6,
+        "success_disagreements": 0,
+        "action_ranking_pairs": 42,
+        "raw_sign_reversals": 0,
+        "ranking_reversals_001": 0,
+        "ranking_reversals_010": 0
+      },
+      "Lift": {
+        "independent_base_seeds": 7,
+        "complete_pairs": 84,
+        "snapshot_continuation_passes": 84,
+        "contact_changed_pairs": 0,
+        "success_disagreements": 0,
+        "action_ranking_pairs": 42,
+        "raw_sign_reversals": 0,
+        "ranking_reversals_001": 0,
+        "ranking_reversals_010": 0
+      }
+    },
+    "all_gold_passed": true,
+    "all_outcomes_costs_contrasts_and_intervals_recomputed": true,
+    "fitter_consulted": false
+  },
+  "STOPPED_WITHIN_AUTHORIZED_BOUNDARY": true,
+  "NO_PAPER_CLAIM": true
+}

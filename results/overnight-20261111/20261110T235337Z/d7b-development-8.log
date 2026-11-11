@@ -1,0 +1,12 @@
+development seed=3108 fault=nominal event=None success=True
+development seed=3108 fault=friction event=missed_lift success=False
+development seed=3108 fault=offset event=None success=True
+development seed=3109 fault=nominal event=None success=True
+development seed=3109 fault=friction event=missed_lift success=False
+development seed=3109 fault=offset event=None success=True
+development seed=3110 fault=nominal event=None success=True
+development seed=3110 fault=friction event=None success=True
+development seed=3110 fault=offset event=None success=True
+development seed=3111 fault=nominal event=None success=True
+development seed=3111 fault=friction event=None success=False
+development seed=3111 fault=offset event=None success=True

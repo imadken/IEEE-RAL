@@ -1,0 +1,44 @@
+{
+  "status": "SELECTED",
+  "nominal_successes": 4,
+  "independent_calibration_seeds": 4,
+  "levels": {
+    "friction": [
+      {
+        "value": 0.1,
+        "failures": 0,
+        "total": 4
+      },
+      {
+        "value": 0.03,
+        "failures": 0,
+        "total": 4
+      },
+      {
+        "value": 0.01,
+        "failures": 2,
+        "total": 4
+      }
+    ],
+    "offset": [
+      {
+        "value": 0.01,
+        "failures": 0,
+        "total": 4
+      },
+      {
+        "value": 0.02,
+        "failures": 2,
+        "total": 4
+      },
+      {
+        "value": 0.03,
+        "failures": 2,
+        "total": 4
+      }
+    ]
+  },
+  "friction": 0.01,
+  "offset_x": 0.02,
+  "reason": "Least severity meeting the registered failure-incidence threshold; no recovery outcomes consulted"
+}

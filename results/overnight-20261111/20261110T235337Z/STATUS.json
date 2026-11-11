@@ -1,0 +1,37 @@
+{
+  "scientific_gates": {
+    "D7B": {
+      "status": "NO-GO",
+      "reason": "Primary utility preference reversal did not meet opposite-sign and 0.10 criteria",
+      "route": "B_COUNTERFACTUAL_REPLAY_AUDIT"
+    },
+    "B": {
+      "status": "COMPLETE_NO_OBSERVED_DECISION_CHANGE",
+      "all_gold_passed": true,
+      "success_disagreements": 0,
+      "raw_ranking_reversals": 0
+    }
+  },
+  "utc": "2026-11-11T00:56:33.608607+00:00",
+  "stage": "COMPLETE",
+  "run_id": "20261110T235337Z",
+  "active_pid": null,
+  "active_worker_pids": [],
+  "running": false,
+  "stage_starts": {
+    "PREFLIGHT": 1794354873.3076832,
+    "D7B": 1794355040.420812,
+    "B": 1794356653.2672787,
+    "ENGINEERING": 1794358123.0247743,
+    "VALIDATION": 1794358215.4732895,
+    "REPORT": 1794358402.4370291,
+    "FINAL_AUDIT": 1794358583.3080587
+  },
+  "total_wall_seconds": 3775.96253657341,
+  "worker_wall_seconds": 1841.9063776289113,
+  "total_cpu_seconds": 1786.50706,
+  "new_artifact_bytes": 62215204,
+  "provisional_gate_status": "SEE_SCIENTIFIC_REPORT",
+  "pending_work": "Manual publication only",
+  "STOPPED_WITHIN_AUTHORIZED_BOUNDARY": true
+}

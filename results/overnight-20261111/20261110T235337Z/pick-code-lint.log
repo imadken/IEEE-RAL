@@ -1,0 +1,88 @@
+F401 [*] `numpy` imported but unused
+  --> scripts/overnight_inspect.py:8:17
+   |
+ 6 | from pathlib import Path
+ 7 |
+ 8 | import numpy as np
+   |                 ^^
+ 9 |
+10 | sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+   |
+help: Remove unused import: `numpy`
+  |
+7 |
+  - import numpy as np
+8 |
+  |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> scripts/overnight_inspect.py:11:1
+   |
+10 |   sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+11 | / from mani_runner import make_env, record, scripted_action
+12 | | from dual_rec.physical_faults import body_parameters
+13 | | from dual_rec.replay import jsonable
+14 | | from dual_rec.validation import array
+   | |_____________________________________^
+15 |
+16 |   parser = argparse.ArgumentParser(description=__doc__)
+   |
+help: Organize imports
+   |
+11 | from mani_runner import make_env, record, scripted_action
+12 +
+13 | from dual_rec.physical_faults import body_parameters
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> scripts/overnight_pick.py:18:1
+   |
+17 |   sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+18 | / from mani_runner import make_env, record, scripted_action
+19 | | from dual_rec.overnight_pick import (
+20 | |     PickFault,
+21 | |     PickFrame,
+22 | |     apply_pick_fault,
+23 | |     event_trigger,
+24 | |     pick_recovery,
+25 | |     sensors,
+26 | | )
+27 | | from dual_rec.replay import jsonable
+28 | | from dual_rec.scenarios import normalized_utility
+29 | | from dual_rec.validation import array, compare, max_difference, passes
+   | |______________________________________________________________________^
+help: Organize imports
+   |
+18 | from mani_runner import make_env, record, scripted_action
+19 +
+20 | from dual_rec.overnight_pick import (
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> src/dual_rec/overnight_pick.py:3:1
+   |
+ 1 |   """Typed PickCube histories, explicit contact faults and frozen overnight controls."""
+ 2 |
+ 3 | / from __future__ import annotations
+ 4 | |
+ 5 | | import numpy as np
+ 6 | | from pydantic import Field
+ 7 | |
+ 8 | | from dual_rec.scenarios import AgentObservation, StrictModel
+ 9 | | from dual_rec.replay import jsonable
+10 | | from dual_rec.physical_faults import body_parameters
+11 | | from dual_rec.validation import array
+   | |_____________________________________^
+help: Organize imports
+   |
+7  |
+8  + from dual_rec.physical_faults import body_parameters
+9  + from dual_rec.replay import jsonable
+10 | from dual_rec.scenarios import AgentObservation, StrictModel
+   - from dual_rec.replay import jsonable
+   - from dual_rec.physical_faults import body_parameters
+11 | from dual_rec.validation import array
+   |
+
+Found 4 errors.
+[*] 4 fixable with `--fix`.

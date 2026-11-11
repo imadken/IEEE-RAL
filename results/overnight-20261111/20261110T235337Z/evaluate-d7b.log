@@ -1,0 +1,39 @@
+{
+  "status": "NO-GO",
+  "reason": "Primary utility preference reversal did not meet opposite-sign and 0.10 criteria",
+  "route": "B_COUNTERFACTUAL_REPLAY_AUDIT",
+  "failure_counts": {
+    "nominal": 0,
+    "friction": 7,
+    "offset": 6
+  },
+  "matched_failed_seeds": [
+    4101,
+    4102,
+    4104,
+    4105,
+    4106,
+    4107
+  ],
+  "contrasts": {
+    "friction": {
+      "mean": 0.01733150191909728,
+      "ci": [
+        0.01341264793417614,
+        0.023664305550299178
+      ],
+      "independent_seeds": 6,
+      "confidence": 0.95
+    },
+    "offset": {
+      "mean": -0.7425448913952111,
+      "ci": [
+        -0.8948553177640481,
+        -0.43955709103269885
+      ],
+      "independent_seeds": 6,
+      "confidence": 0.95
+    }
+  },
+  "uncertain_realistic_seeds": []
+}

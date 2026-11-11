@@ -1,0 +1,12 @@
+qualification seed=4100 fault=nominal event=None success=True
+qualification seed=4100 fault=friction event=missed_lift success=False
+qualification seed=4100 fault=offset event=None success=True
+qualification seed=4101 fault=nominal event=None success=True
+qualification seed=4101 fault=friction event=missed_lift success=False
+qualification seed=4101 fault=offset event=missed_lift success=False
+qualification seed=4102 fault=nominal event=None success=True
+qualification seed=4102 fault=friction event=missed_lift success=False
+qualification seed=4102 fault=offset event=missed_lift success=False
+qualification seed=4103 fault=nominal event=None success=True
+qualification seed=4103 fault=friction event=None success=True
+qualification seed=4103 fault=offset event=None success=False

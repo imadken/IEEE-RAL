@@ -1,0 +1,39 @@
+{
+  "adapter_source": "src/dual_rec/replay.py",
+  "adapter_sha256": "69316444c21bdd16186370d69020d4bee8b219ee1b51f9881a347fa65de40833",
+  "mani_skill_vendor_sources_sha256": {
+    "envs/sapien_env.py": "459196c275764eaf53ccba8e154e3207036399e54c8bdd45f9e7d0919970464b",
+    "envs/scene.py": "2e875f4a053fb5687bee3b7858716be3196bd8d6cae35fbf9ad110b031156fed",
+    "utils/structs/actor.py": "dacf82803b63928a4317f400adfb7766cb7863d914058acbe226c47c90f28f24",
+    "utils/structs/articulation.py": "fe3fa5782d32f2c1a3674e3b897362c8cc21eea899a583a0a63352cb852743a0"
+  },
+  "ManiSkill": {
+    "physics_api": "BaseEnv.get_state_dict/set_state_dict; ManiSkillScene.get_sim_state/set_sim_state",
+    "included": [
+      "registered dynamic actor poses and velocities",
+      "articulation root pose/velocity and qpos/qvel",
+      "public controller state",
+      "explicit controller transients",
+      "joint drive position/velocity targets",
+      "environment and wrapper elapsed steps",
+      "Python/NumPy/Torch and environment RNG states and aliases"
+    ],
+    "not_serialized": [
+      "static actor/model/material configuration (kept fixed)",
+      "applied joint forces (measured readback separately)",
+      "opaque contact solver caches (not exposed or claimed inspected)",
+      "arbitrary task/controller configurations outside the qualified tasks"
+    ]
+  },
+  "MuJoCo": {
+    "physics_api": "mj_getState/mj_setState with mjSTATE_INTEGRATION; mj_forward then integration-state reapplication",
+    "included": [
+      "integration fields including controls, applied forces and warmstart",
+      "simple controller/composite/robot/gripper/observable/environment fields",
+      "environment/Python/NumPy RNG"
+    ],
+    "scope": "Lift/Panda BASIC OSC_POSE without interpolation/cameras; same model within branch; derived kinematics/contact data recomputed, not arbitrary scene serialization"
+  },
+  "estimand": "Difference caused by this unchanged snapshot adapter after its native continuation, relative to fresh-prefix replay, using the identical native-generated action tape. Does not estimate two independently adapting closed-loop policies.",
+  "attribution_limit": "Exposed-state readback errors are measured; no solver-cache causal ablation or universal engine claim is authorized."
+}

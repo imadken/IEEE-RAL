@@ -1,0 +1,21 @@
+{
+  "accessed_utc": "2026-11-11T00:25:19.033101+00:00",
+  "sources": [
+    {
+      "url": "https://nvidia-omniverse.github.io/PhysX/physx/5.1.0/_build/physx/latest/class_px_material.html",
+      "scope": "Documented default combination; pinned SAPIEN getter unavailable, effective mode not independently verified"
+    },
+    {
+      "url": "https://nvidia-omniverse.github.io/PhysX/physx/5.1.1/docs/BestPractices.html",
+      "scope": "Known same-platform scene/event/order requirements for deterministic replay; not a claim about the wheel SDK revision"
+    },
+    {
+      "url": "https://mujoco.readthedocs.io/en/3.3.7/programming/simulation.html",
+      "scope": "Version-matched integration-state and warmstart requirements"
+    },
+    {
+      "url": "https://arxiv.org/abs/1709.06560",
+      "scope": "Existing reproducibility/reporting literature; no novelty inferred from an adapter error"
+    }
+  ]
+}

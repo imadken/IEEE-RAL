@@ -1,0 +1,522 @@
+{
+  "status": "NO-GO",
+  "reason": "Primary utility preference reversal did not meet opposite-sign and 0.10 criteria",
+  "route": "B_COUNTERFACTUAL_REPLAY_AUDIT",
+  "failure_counts": {
+    "nominal": 0,
+    "friction": 7,
+    "offset": 6
+  },
+  "matched_failed_seeds": [
+    4101,
+    4102,
+    4104,
+    4105,
+    4106,
+    4107
+  ],
+  "contrasts": {
+    "friction": {
+      "mean": 0.01733150191909728,
+      "ci": [
+        0.01341264793417614,
+        0.023664305550299178
+      ],
+      "independent_seeds": 6,
+      "confidence": 0.95
+    },
+    "offset": {
+      "mean": -0.7425448913952111,
+      "ci": [
+        -0.8948553177640481,
+        -0.43955709103269885
+      ],
+      "independent_seeds": 6,
+      "confidence": 0.95
+    }
+  },
+  "matrix": {
+    "nominal": {
+      "nominal": {
+        "all_setups": {
+          "independent_seeds": 8,
+          "successes": 8,
+          "wilson_95": [
+            0.6755924351161198,
+            1.0
+          ],
+          "utility": {
+            "mean": 0.9540181341731696,
+            "ci": [
+              0.9539939695818044,
+              0.9540410775260789
+            ],
+            "independent_seeds": 8,
+            "confidence": 0.95
+          }
+        },
+        "triggered_failures": {
+          "independent_seeds": 0,
+          "successes": 0,
+          "wilson_95": null,
+          "utility": null
+        }
+      },
+      "regrasp": {
+        "all_setups": {
+          "independent_seeds": 8,
+          "successes": 6,
+          "wilson_95": [
+            0.40927543031016883,
+            0.9285207872478909
+          ],
+          "utility": {
+            "mean": 0.7100892308369446,
+            "ci": [
+              0.4783320069607072,
+              0.9408676922171373
+            ],
+            "independent_seeds": 8,
+            "confidence": 0.95
+          }
+        },
+        "triggered_failures": {
+          "independent_seeds": 0,
+          "successes": 0,
+          "wilson_95": null,
+          "utility": null
+        }
+      },
+      "conservative": {
+        "all_setups": {
+          "independent_seeds": 8,
+          "successes": 8,
+          "wilson_95": [
+            0.6755924351161198,
+            1.0
+          ],
+          "utility": {
+            "mean": 0.949721116725062,
+            "ci": [
+              0.9496949570299225,
+              0.9497422711711497
+            ],
+            "independent_seeds": 8,
+            "confidence": 0.95
+          }
+        },
+        "triggered_failures": {
+          "independent_seeds": 0,
+          "successes": 0,
+          "wilson_95": null,
+          "utility": null
+        }
+      }
+    },
+    "friction": {
+      "nominal": {
+        "all_setups": {
+          "independent_seeds": 8,
+          "successes": 1,
+          "wilson_95": [
+            0.02241749145005667,
+            0.4708881822128535
+          ],
+          "utility": {
+            "mean": 0.15685947960736202,
+            "ci": [
+              0.04179897466913562,
+              0.3849530786167835
+            ],
+            "independent_seeds": 8,
+            "confidence": 0.95
+          }
+        },
+        "triggered_failures": {
+          "independent_seeds": 7,
+          "successes": 0,
+          "wilson_95": [
+            5.551115123125783e-17,
+            0.35433043506668743
+          ],
+          "utility": {
+            "mean": 0.04293413609066527,
+            "ci": [
+              0.04128374520158793,
+              0.04445365959154835
+            ],
+            "independent_seeds": 7,
+            "confidence": 0.95
+          }
+        }
+      },
+      "regrasp": {
+        "all_setups": {
+          "independent_seeds": 8,
+          "successes": 1,
+          "wilson_95": [
+            0.02241749145005667,
+            0.4708881822128535
+          ],
+          "utility": {
+            "mean": 0.14086660758817313,
+            "ci": [
+              0.02088838287340617,
+              0.3725212751963065
+            ],
+            "independent_seeds": 8,
+            "confidence": 0.95
+          }
+        },
+        "triggered_failures": {
+          "independent_seeds": 7,
+          "successes": 0,
+          "wilson_95": [
+            5.551115123125783e-17,
+            0.35433043506668743
+          ],
+          "utility": {
+            "mean": 0.025763979352546824,
+            "ci": [
+              0.019156823111447306,
+              0.030344777199728605
+            ],
+            "independent_seeds": 7,
+            "confidence": 0.95
+          }
+        }
+      },
+      "conservative": {
+        "all_setups": {
+          "independent_seeds": 8,
+          "successes": 0,
+          "wilson_95": [
+            0.0,
+            0.32440756488388023
+          ],
+          "utility": {
+            "mean": 0.03803695966405354,
+            "ci": [
+              0.03594946876435236,
+              0.0401324451704226
+            ],
+            "independent_seeds": 8,
+            "confidence": 0.95
+          }
+        },
+        "triggered_failures": {
+          "independent_seeds": 7,
+          "successes": 0,
+          "wilson_95": [
+            5.551115123125783e-17,
+            0.35433043506668743
+          ],
+          "utility": {
+            "mean": 0.0383732147613547,
+            "ci": [
+              0.03610726581288185,
+              0.04080623991564515
+            ],
+            "independent_seeds": 7,
+            "confidence": 0.95
+          }
+        }
+      }
+    },
+    "offset": {
+      "nominal": {
+        "all_setups": {
+          "independent_seeds": 8,
+          "successes": 1,
+          "wilson_95": [
+            0.02241749145005667,
+            0.4708881822128535
+          ],
+          "utility": {
+            "mean": 0.15687980202895302,
+            "ci": [
+              0.04181243555364651,
+              0.3851908334300551
+            ],
+            "independent_seeds": 8,
+            "confidence": 0.95
+          }
+        },
+        "triggered_failures": {
+          "independent_seeds": 6,
+          "successes": 0,
+          "wilson_95": [
+            2.7755575615628914e-17,
+            0.3903342879021653
+          ],
+          "utility": {
+            "mean": 0.04262943986807612,
+            "ci": [
+              0.04071952027571246,
+              0.044466712958322746
+            ],
+            "independent_seeds": 6,
+            "confidence": 0.95
+          }
+        }
+      },
+      "regrasp": {
+        "all_setups": {
+          "independent_seeds": 8,
+          "successes": 7,
+          "wilson_95": [
+            0.5291118177871464,
+            0.9775825085499433
+          ],
+          "utility": {
+            "mean": 0.8238752007974008,
+            "ci": [
+              0.5950218752283319,
+              0.9392632267858414
+            ],
+            "independent_seeds": 8,
+            "confidence": 0.95
+          }
+        },
+        "triggered_failures": {
+          "independent_seeds": 6,
+          "successes": 5,
+          "wilson_95": [
+            0.43649717781352987,
+            0.9699466302516935
+          ],
+          "utility": {
+            "mean": 0.7851743312632871,
+            "ci": [
+              0.4803035114186194,
+              0.9389909754724354
+            ],
+            "independent_seeds": 6,
+            "confidence": 0.95
+          }
+        }
+      },
+      "conservative": {
+        "all_setups": {
+          "independent_seeds": 8,
+          "successes": 1,
+          "wilson_95": [
+            0.02241749145005667,
+            0.4708881822128535
+          ],
+          "utility": {
+            "mean": 0.15216457580432322,
+            "ci": [
+              0.037508748977572066,
+              0.3798505016277154
+            ],
+            "independent_seeds": 8,
+            "confidence": 0.95
+          }
+        },
+        "triggered_failures": {
+          "independent_seeds": 6,
+          "successes": 0,
+          "wilson_95": [
+            2.7755575615628914e-17,
+            0.3903342879021653
+          ],
+          "utility": {
+            "mean": 0.038515376212666944,
+            "ci": [
+              0.03685251727570681,
+              0.04041482171893863
+            ],
+            "independent_seeds": 6,
+            "confidence": 0.95
+          }
+        }
+      }
+    }
+  },
+  "diagnostics": {
+    "full": {
+      "logistic": {
+        "all_setups": {
+          "auroc": 1.0,
+          "balanced_accuracy": 0.9375,
+          "brier": 0.04381606375488344,
+          "log_loss": 0.11748623158152798,
+          "ece_5_bins": 0.052376993349820364
+        },
+        "all_setups_clustered_95": {
+          "auroc": [
+            1.0,
+            1.0
+          ],
+          "balanced_accuracy": [
+            0.8125,
+            1.0
+          ],
+          "brier": [
+            2.2865663308395994e-05,
+            0.13137369682527023
+          ],
+          "log_loss": [
+            0.003836745136582117,
+            0.3434434547928717
+          ],
+          "ece_5_bins": [
+            0.0038250993592119234,
+            0.15786410369581208
+          ]
+        },
+        "matched_failures": {
+          "auroc": 1.0,
+          "balanced_accuracy": 0.9166666666666667,
+          "brier": 0.05840943276576508,
+          "log_loss": 0.1550688625595575,
+          "ece_5_bins": 0.06867675167534075
+        }
+      },
+      "rbf_kernel_logistic": {
+        "all_setups": {
+          "auroc": 0.890625,
+          "balanced_accuracy": 0.8125,
+          "brier": 0.19491088271560447,
+          "log_loss": 0.5800917506002303,
+          "ece_5_bins": 0.08766125011336323
+        },
+        "all_setups_clustered_95": {
+          "auroc": [
+            0.640625,
+            1.0
+          ],
+          "balanced_accuracy": [
+            0.625,
+            0.9375
+          ],
+          "brier": [
+            0.15940980310411432,
+            0.2401364087099814
+          ],
+          "log_loss": [
+            0.5066639736335165,
+            0.6729515629616888
+          ],
+          "ece_5_bins": [
+            0.04436820201437157,
+            0.3210224807473572
+          ]
+        },
+        "matched_failures": {
+          "auroc": 0.8611111111111112,
+          "balanced_accuracy": 0.8333333333333333,
+          "brier": 0.1932388230595281,
+          "log_loss": 0.5769493608033599,
+          "ece_5_bins": 0.07631371460915229
+        }
+      }
+    },
+    "realistic": {
+      "logistic": {
+        "all_setups": {
+          "auroc": 1.0,
+          "balanced_accuracy": 0.9375,
+          "brier": 0.03597544647123033,
+          "log_loss": 0.14722879296160138,
+          "ece_5_bins": 0.1198676160157215
+        },
+        "all_setups_clustered_95": {
+          "auroc": [
+            1.0,
+            1.0
+          ],
+          "balanced_accuracy": [
+            0.8125,
+            1.0
+          ],
+          "brier": [
+            0.01103791557237485,
+            0.0783900107979397
+          ],
+          "log_loss": [
+            0.08310002038462654,
+            0.2414884966997667
+          ],
+          "ece_5_bins": [
+            0.07690510937383638,
+            0.17567555827752096
+          ]
+        },
+        "matched_failures": {
+          "auroc": 1.0,
+          "balanced_accuracy": 0.9166666666666667,
+          "brier": 0.04005056322261379,
+          "log_loss": 0.14971059666858186,
+          "ece_5_bins": 0.11782830315622089
+        }
+      },
+      "rbf_kernel_logistic": {
+        "all_setups": {
+          "auroc": 0.609375,
+          "balanced_accuracy": 0.625,
+          "brier": 0.23861940086773892,
+          "log_loss": 0.6702155843401412,
+          "ece_5_bins": 0.0651944591983053
+        },
+        "all_setups_clustered_95": {
+          "auroc": [
+            0.3125,
+            0.859375
+          ],
+          "balanced_accuracy": [
+            0.375,
+            0.875
+          ],
+          "brier": [
+            0.2007611940104156,
+            0.27490223431477556
+          ],
+          "log_loss": [
+            0.593202467309401,
+            0.7436502329768421
+          ],
+          "ece_5_bins": [
+            0.05126740452332605,
+            0.3094653168971916
+          ]
+        },
+        "matched_failures": {
+          "auroc": 0.5555555555555556,
+          "balanced_accuracy": 0.5833333333333334,
+          "brier": 0.24352197317298652,
+          "log_loss": 0.6801077077006,
+          "ece_5_bins": 0.14148879758913152
+        }
+      }
+    }
+  },
+  "uncertain_realistic_seeds": [],
+  "training_seeds": [
+    3100,
+    3101,
+    3102,
+    3103,
+    3104,
+    3105,
+    3106,
+    3107,
+    3108,
+    3109,
+    3110,
+    3111
+  ],
+  "qualification_seeds": [
+    4100,
+    4101,
+    4102,
+    4103,
+    4104,
+    4105,
+    4106,
+    4107
+  ],
+  "no_snapshot_restores": true,
+  "sensor_availability_amendment": "v1.1 before fitting/qualification"
+}

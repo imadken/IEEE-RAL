@@ -1,0 +1,4 @@
+fit full/logistic regularization=0.1
+fit full/rbf_kernel_logistic regularization=0.01
+fit realistic/logistic regularization=1
+fit realistic/rbf_kernel_logistic regularization=0.01

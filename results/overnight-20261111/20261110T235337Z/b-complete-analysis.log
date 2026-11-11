@@ -1,0 +1,39 @@
+{
+  "planned_trial_rows": 294,
+  "stage_reached_rows": 294,
+  "stage_unreached_rows": 0,
+  "test_restore_failures": 0,
+  "all_gold_passed": true,
+  "complete_pairs": 294,
+  "snapshot_continuation_parity_passes": 84,
+  "success_disagreements": 0,
+  "independent_seeds_by_task": {
+    "Lift": [
+      7300,
+      7301,
+      7302,
+      7303,
+      7304,
+      7305,
+      7306
+    ],
+    "PickCube-v1": [
+      7200,
+      7201,
+      7202,
+      7203,
+      7204,
+      7205,
+      7206
+    ],
+    "PushCube-v1": [
+      7100,
+      7101,
+      7102,
+      7103,
+      7104,
+      7105,
+      7106
+    ]
+  }
+}

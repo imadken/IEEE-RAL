@@ -1,0 +1,5062 @@
+{
+  "cube_parameters": {
+    "mass_kg": 0.06400000303983688,
+    "inertia_kg_m2": [
+      1.7066666259779595e-05,
+      1.7066666259779595e-05,
+      1.7066666259779595e-05
+    ],
+    "center_of_mass_pose": [
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "shape_materials": [
+      {
+        "static_friction": 0.30000001192092896,
+        "dynamic_friction": 0.30000001192092896,
+        "restitution": 0.0
+      }
+    ]
+  },
+  "finger_materials": {
+    "panda_leftfinger": [
+      {
+        "static": 2.0,
+        "dynamic": 2.0,
+        "restitution": 0.0
+      },
+      {
+        "static": 2.0,
+        "dynamic": 2.0,
+        "restitution": 0.0
+      },
+      {
+        "static": 2.0,
+        "dynamic": 2.0,
+        "restitution": 0.0
+      },
+      {
+        "static": 2.0,
+        "dynamic": 2.0,
+        "restitution": 0.0
+      }
+    ],
+    "panda_rightfinger": [
+      {
+        "static": 2.0,
+        "dynamic": 2.0,
+        "restitution": 0.0
+      },
+      {
+        "static": 2.0,
+        "dynamic": 2.0,
+        "restitution": 0.0
+      },
+      {
+        "static": 2.0,
+        "dynamic": 2.0,
+        "restitution": 0.0
+      },
+      {
+        "static": 2.0,
+        "dynamic": 2.0,
+        "restitution": 0.0
+      }
+    ],
+    "panda_leftfinger_pad": [],
+    "panda_rightfinger_pad": []
+  },
+  "task_obs_keys": {
+    "agent": [
+      "qpos",
+      "qvel"
+    ],
+    "extra": [
+      "is_grasped",
+      "tcp_pose",
+      "goal_pos",
+      "obj_pose",
+      "tcp_to_obj_pos",
+      "obj_to_goal_pos"
+    ]
+  },
+  "joint_wrench_shape": [
+    1,
+    15,
+    6
+  ],
+  "combine_rule_exposed": false,
+  "nominal_trace": [
+    {
+      "step": 1,
+      "phase": 0,
+      "position": [
+        -0.0007482738583348691,
+        0.053643498569726944,
+        0.019999951124191284
+      ],
+      "tcp": [
+        [
+          0.009716511704027653,
+          0.04070785641670227,
+          0.1762867271900177,
+          -0.017434608191251755,
+          0.9997753500938416,
+          0.0015618503093719482,
+          0.011956547386944294
+        ]
+      ],
+      "contact": false,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 2,
+      "phase": 0,
+      "position": [
+        -0.0007484888192266226,
+        0.0536438450217247,
+        0.019999943673610687
+      ],
+      "tcp": [
+        [
+          0.005894562229514122,
+          0.0457664355635643,
+          0.16664665937423706,
+          -0.017420021817088127,
+          0.9997732639312744,
+          0.0015113651752471924,
+          0.012153182178735733
+        ]
+      ],
+      "contact": false,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 3,
+      "phase": 0,
+      "position": [
+        -0.000748498656321317,
+        0.053643837571144104,
+        0.019999952986836433
+      ],
+      "tcp": [
+        [
+          0.003283858299255371,
+          0.0500817745923996,
+          0.15678633749485016,
+          -0.01754523068666458,
+          0.9997702836990356,
+          0.002458512783050537,
+          0.012067207135260105
+        ]
+      ],
+      "contact": false,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 4,
+      "phase": 0,
+      "position": [
+        -0.000748491263948381,
+        0.0536438450217247,
+        0.019999898970127106
+      ],
+      "tcp": [
+        [
+          0.0008834712207317352,
+          0.05267512798309326,
+          0.14871905744075775,
+          -0.017611747607588768,
+          0.9997828006744385,
+          0.003401845693588257,
+          0.01061167474836111
+        ]
+      ],
+      "contact": false,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 5,
+      "phase": 0,
+      "position": [
+        -0.0007482660585083067,
+        0.05364349111914635,
+        0.019999952986836433
+      ],
+      "tcp": [
+        [
+          -0.0006334595382213593,
+          0.05384721979498863,
+          0.14380137622356415,
+          -0.01763170398771763,
+          0.9997948408126831,
+          0.0040337443351745605,
+          0.009118663147091866
+        ]
+      ],
+      "contact": false,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 6,
+      "phase": 0,
+      "position": [
+        -0.0007485044770874083,
+        0.053643837571144104,
+        0.019999876618385315
+      ],
+      "tcp": [
+        [
+          -0.0012399666011333466,
+          0.05417225882411003,
+          0.14138340950012207,
+          -0.017632929608225822,
+          0.9998015761375427,
+          0.004355459939688444,
+          0.008176436647772789
+        ]
+      ],
+      "contact": false,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 7,
+      "phase": 0,
+      "position": [
+        -0.0007485178066417575,
+        0.053643882274627686,
+        0.019999943673610687
+      ],
+      "tcp": [
+        [
+          -0.001333720050752163,
+          0.05411384999752045,
+          0.140387162566185,
+          -0.017625899985432625,
+          0.9998049736022949,
+          0.0044654011726379395,
+          0.0077057224698364735
+        ]
+      ],
+      "contact": false,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 8,
+      "phase": 0,
+      "position": [
+        -0.0007484889356419444,
+        0.0536438450217247,
+        0.019999893382191658
+      ],
+      "tcp": [
+        [
+          -0.00123506598174572,
+          0.05395178496837616,
+          0.14005008339881897,
+          -0.017616799101233482,
+          0.9998065829277039,
+          0.0044678449630737305,
+          0.007513824850320816
+        ]
+      ],
+      "contact": false,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 9,
+      "phase": 0,
+      "position": [
+        -0.0007482765940949321,
+        0.053643494844436646,
+        0.01999993622303009
+      ],
+      "tcp": [
+        [
+          -0.0011054808273911476,
+          0.05381045117974281,
+          0.1399647295475006,
+          -0.017608843743801117,
+          0.9998073577880859,
+          0.00443604588508606,
+          0.007451046258211136
+        ]
+      ],
+      "contact": false,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 10,
+      "phase": 0,
+      "position": [
+        -0.0007482765940949321,
+        0.053643494844436646,
+        0.01999993622303009
+      ],
+      "tcp": [
+        [
+          -0.00100051611661911,
+          0.053720198571681976,
+          0.13995642960071564,
+          -0.017603201791644096,
+          0.9998077750205994,
+          0.004404574166983366,
+          0.0074362256564199924
+        ]
+      ],
+      "contact": false,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 11,
+      "phase": 0,
+      "position": [
+        -0.0007482765940949321,
+        0.053643494844436646,
+        0.01999993622303009
+      ],
+      "tcp": [
+        [
+          -0.0009328089654445648,
+          0.0536729097366333,
+          0.1399645209312439,
+          -0.017600053921341896,
+          0.9998078346252441,
+          0.004382520914077759,
+          0.0074353404343128204
+        ]
+      ],
+      "contact": false,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 12,
+      "phase": 0,
+      "position": [
+        -0.0007482765940949321,
+        0.053643494844436646,
+        0.01999993622303009
+      ],
+      "tcp": [
+        [
+          -0.0008918857201933861,
+          0.05365241318941116,
+          0.13997235894203186,
+          -0.017598384991288185,
+          0.9998079538345337,
+          0.004370778799057007,
+          0.007437326479703188
+        ]
+      ],
+      "contact": false,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 13,
+      "phase": 0,
+      "position": [
+        -0.0007482765940949321,
+        0.053643494844436646,
+        0.01999993622303009
+      ],
+      "tcp": [
+        [
+          -0.0008706003427505493,
+          0.053644631057977676,
+          0.13997681438922882,
+          -0.017597459256649017,
+          0.9998080134391785,
+          0.004365295171737671,
+          0.0074388147331774235
+        ]
+      ],
+      "contact": false,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 14,
+      "phase": 0,
+      "position": [
+        -0.0007482765940949321,
+        0.053643494844436646,
+        0.01999993622303009
+      ],
+      "tcp": [
+        [
+          -0.0008565895259380341,
+          0.053642142564058304,
+          0.13997983932495117,
+          -0.017597397789359093,
+          0.9998079538345337,
+          0.004363208543509245,
+          0.007440014276653528
+        ]
+      ],
+      "contact": false,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 15,
+      "phase": 0,
+      "position": [
+        -0.0007482765940949321,
+        0.053643494844436646,
+        0.01999993622303009
+      ],
+      "tcp": [
+        [
+          -0.0008501596748828888,
+          0.05364146828651428,
+          0.13998180627822876,
+          -0.01759747788310051,
+          0.9998079538345337,
+          0.004362374544143677,
+          0.007443660870194435
+        ]
+      ],
+      "contact": false,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 16,
+      "phase": 0,
+      "position": [
+        -0.0007482765940949321,
+        0.053643494844436646,
+        0.01999993622303009
+      ],
+      "tcp": [
+        [
+          -0.0008445950224995613,
+          0.05364135652780533,
+          0.13998350501060486,
+          -0.017597544938325882,
+          0.9998079538345337,
+          0.004362135659903288,
+          0.00744659174233675
+        ]
+      ],
+      "contact": false,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 17,
+      "phase": 0,
+      "position": [
+        -0.0007482765940949321,
+        0.053643494844436646,
+        0.01999993622303009
+      ],
+      "tcp": [
+        [
+          -0.0008445242419838905,
+          0.05364116653800011,
+          0.1399834156036377,
+          -0.01759757474064827,
+          0.9998080134391785,
+          0.004362017381936312,
+          0.007446604315191507
+        ]
+      ],
+      "contact": false,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 18,
+      "phase": 0,
+      "position": [
+        -0.0007482765940949321,
+        0.053643494844436646,
+        0.01999993622303009
+      ],
+      "tcp": [
+        [
+          -0.0008445242419838905,
+          0.05364116653800011,
+          0.1399834156036377,
+          -0.01759757474064827,
+          0.9998080134391785,
+          0.004362017381936312,
+          0.007446604315191507
+        ]
+      ],
+      "contact": false,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 19,
+      "phase": 0,
+      "position": [
+        -0.0007482765940949321,
+        0.053643494844436646,
+        0.01999993622303009
+      ],
+      "tcp": [
+        [
+          -0.0008445242419838905,
+          0.05364116653800011,
+          0.1399834156036377,
+          -0.01759757474064827,
+          0.9998080134391785,
+          0.004362017381936312,
+          0.007446604315191507
+        ]
+      ],
+      "contact": false,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 20,
+      "phase": 0,
+      "position": [
+        -0.0007482765940949321,
+        0.053643494844436646,
+        0.01999993622303009
+      ],
+      "tcp": [
+        [
+          -0.0008445242419838905,
+          0.05364116653800011,
+          0.1399834156036377,
+          -0.01759757474064827,
+          0.9998080134391785,
+          0.004362017381936312,
+          0.007446604315191507
+        ]
+      ],
+      "contact": false,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 21,
+      "phase": 1,
+      "position": [
+        -0.0007482765940949321,
+        0.053643494844436646,
+        0.01999993622303009
+      ],
+      "tcp": [
+        [
+          0.0015806583687663078,
+          0.05387123301625252,
+          0.13446474075317383,
+          -0.017828471958637238,
+          0.9997650384902954,
+          0.004513353109359741,
+          0.011473115533590317
+        ]
+      ],
+      "contact": false,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 22,
+      "phase": 1,
+      "position": [
+        -0.0007482765940949321,
+        0.053643494844436646,
+        0.01999993622303009
+      ],
+      "tcp": [
+        [
+          0.0009718462824821472,
+          0.05382401868700981,
+          0.12482152879238129,
+          -0.01784609630703926,
+          0.999762237071991,
+          0.004539459478110075,
+          0.011676575988531113
+        ]
+      ],
+      "contact": false,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 23,
+      "phase": 1,
+      "position": [
+        -0.0007482765940949321,
+        0.053643494844436646,
+        0.01999993622303009
+      ],
+      "tcp": [
+        [
+          0.00038516800850629807,
+          0.05377200245857239,
+          0.11493194848299026,
+          -0.017847388982772827,
+          0.9997632503509521,
+          0.004549145232886076,
+          0.011584498919546604
+        ]
+      ],
+      "contact": false,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 24,
+      "phase": 1,
+      "position": [
+        -0.0007482765940949321,
+        0.053643494844436646,
+        0.01999993622303009
+      ],
+      "tcp": [
+        [
+          2.0652078092098236e-05,
+          0.053735774010419846,
+          0.10503311455249786,
+          -0.017847048118710518,
+          0.9997645020484924,
+          0.004555374383926392,
+          0.01147832628339529
+        ]
+      ],
+      "contact": false,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 25,
+      "phase": 1,
+      "position": [
+        -0.0007482765940949321,
+        0.053643494844436646,
+        0.01999993622303009
+      ],
+      "tcp": [
+        [
+          -0.00019854214042425156,
+          0.0537102036178112,
+          0.09513740241527557,
+          -0.017845993861556053,
+          0.9997656345367432,
+          0.004559039603918791,
+          0.011372826062142849
+        ]
+      ],
+      "contact": false,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 26,
+      "phase": 1,
+      "position": [
+        -0.0007482734508812428,
+        0.05364333093166351,
+        0.01999996416270733
+      ],
+      "tcp": [
+        [
+          -0.0003299945965409279,
+          0.053692787885665894,
+          0.08524459600448608,
+          -0.017844805493950844,
+          0.9997669458389282,
+          0.004560977220535278,
+          0.011268334463238716
+        ]
+      ],
+      "contact": true,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 27,
+      "phase": 1,
+      "position": [
+        -0.0007480118074454367,
+        0.053642913699150085,
+        0.01999993622303009
+      ],
+      "tcp": [
+        [
+          -0.00040819402784109116,
+          0.05368097871541977,
+          0.07535599172115326,
+          -0.01784309186041355,
+          0.999768078327179,
+          0.004562497138977051,
+          0.011165819130837917
+        ]
+      ],
+      "contact": true,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 28,
+      "phase": 1,
+      "position": [
+        -0.0007480194326490164,
+        0.053642891347408295,
+        0.019999925047159195
+      ],
+      "tcp": [
+        [
+          -0.0004550563171505928,
+          0.05367342010140419,
+          0.06547055393457413,
+          -0.01784157194197178,
+          0.9997692704200745,
+          0.004563480615615845,
+          0.011064643040299416
+        ]
+      ],
+      "contact": true,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 29,
+      "phase": 1,
+      "position": [
+        -0.0007480112253688276,
+        0.05364290252327919,
+        0.01999993622303009
+      ],
+      "tcp": [
+        [
+          -0.0004825890064239502,
+          0.05366886779665947,
+          0.055588498711586,
+          -0.017839839681982994,
+          0.9997702836990356,
+          0.00456461263820529,
+          0.010965281166136265
+        ]
+      ],
+      "contact": true,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 30,
+      "phase": 1,
+      "position": [
+        -0.0007480148924514651,
+        0.05364290624856949,
+        0.01999993808567524
+      ],
+      "tcp": [
+        [
+          -0.0004991935566067696,
+          0.05366603285074234,
+          0.045708999037742615,
+          -0.01783815398812294,
+          0.9997714757919312,
+          0.004565685987472534,
+          0.010866809636354446
+        ]
+      ],
+      "contact": true,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 31,
+      "phase": 1,
+      "position": [
+        -0.0007480204803869128,
+        0.05364289879798889,
+        0.019999917596578598
+      ],
+      "tcp": [
+        [
+          -0.0005090394988656044,
+          0.05366437882184982,
+          0.03583218902349472,
+          -0.01783646270632744,
+          0.9997724890708923,
+          0.0045669968239963055,
+          0.010769237764179707
+        ]
+      ],
+      "contact": true,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 32,
+      "phase": 1,
+      "position": [
+        -0.0007480261847376823,
+        0.05364290624856949,
+        0.01999993994832039
+      ],
+      "tcp": [
+        [
+          -0.0016550933942198753,
+          0.05354833975434303,
+          0.02800651639699936,
+          -0.017742259427905083,
+          0.9997901320457458,
+          0.004500716459006071,
+          0.009195392020046711
+        ]
+      ],
+      "contact": true,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 33,
+      "phase": 1,
+      "position": [
+        -0.0007480261265300214,
+        0.05364289507269859,
+        0.019999941810965538
+      ],
+      "tcp": [
+        [
+          -0.002363213337957859,
+          0.05347374454140663,
+          0.023378118872642517,
+          -0.01765160821378231,
+          0.9998046159744263,
+          0.004432349931448698,
+          0.007710047997534275
+        ]
+      ],
+      "contact": true,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 34,
+      "phase": 1,
+      "position": [
+        -0.0007482557557523251,
+        0.05364324152469635,
+        0.019999895244836807
+      ],
+      "tcp": [
+        [
+          -0.0024074912071228027,
+          0.05346554145216942,
+          0.02114788442850113,
+          -0.01759503409266472,
+          0.9998125433921814,
+          0.004386961460113525,
+          0.006794944405555725
+        ]
+      ],
+      "contact": true,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 35,
+      "phase": 1,
+      "position": [
+        -0.000748009595554322,
+        0.05364289879798889,
+        0.019999951124191284
+      ],
+      "tcp": [
+        [
+          -0.002103714272379875,
+          0.05349421873688698,
+          0.020261265337467194,
+          -0.01756739243865013,
+          0.9998160600662231,
+          0.004362672567367554,
+          0.0063544986769557
+        ]
+      ],
+      "contact": true,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 36,
+      "phase": 1,
+      "position": [
+        -0.0007482354412786663,
+        0.05364324897527695,
+        0.01999993994832039
+      ],
+      "tcp": [
+        [
+          -0.0017263144254684448,
+          0.05353275313973427,
+          0.019987277686595917,
+          -0.0175565667450428,
+          0.9998172521591187,
+          0.0043520331382751465,
+          0.006188047118484974
+        ]
+      ],
+      "contact": true,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 37,
+      "phase": 1,
+      "position": [
+        -0.0007482529035769403,
+        0.05364323407411575,
+        0.01999988965690136
+      ],
+      "tcp": [
+        [
+          -0.001407461240887642,
+          0.05356699973344803,
+          0.019939742982387543,
+          -0.017553668469190598,
+          0.9998176097869873,
+          0.004348158370703459,
+          0.006144750397652388
+        ]
+      ],
+      "contact": true,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 38,
+      "phase": 1,
+      "position": [
+        -0.0007482662331312895,
+        0.053643278777599335,
+        0.019999898970127106
+      ],
+      "tcp": [
+        [
+          -0.0011804485693573952,
+          0.05359254032373428,
+          0.019954435527324677,
+          -0.017553314566612244,
+          0.9998176097869873,
+          0.004347443114966154,
+          0.00614444212988019
+        ]
+      ],
+      "contact": true,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 39,
+      "phase": 1,
+      "position": [
+        -0.0007480191998183727,
+        0.05364289879798889,
+        0.01999993622303009
+      ],
+      "tcp": [
+        [
+          -0.0010358365252614021,
+          0.05360936000943184,
+          0.019975028932094574,
+          -0.01755412667989731,
+          0.9998175501823425,
+          0.004347562789916992,
+          0.006154746748507023
+        ]
+      ],
+      "contact": true,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 40,
+      "phase": 1,
+      "position": [
+        -0.0007480059866793454,
+        0.05364290624856949,
+        0.019999954849481583
+      ],
+      "tcp": [
+        [
+          -0.0009509045630693436,
+          0.05361965298652649,
+          0.019988059997558594,
+          -0.01755478046834469,
+          0.9998174905776978,
+          0.004347801208496094,
+          0.006163178011775017
+        ]
+      ],
+      "contact": true,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 41,
+      "phase": 1,
+      "position": [
+        -0.0007482426590286195,
+        0.05364324897527695,
+        0.01999988779425621
+      ],
+      "tcp": [
+        [
+          -0.000904696062207222,
+          0.05362550541758537,
+          0.019994370639324188,
+          -0.01755521260201931,
+          0.9998174905776978,
+          0.004348307847976685,
+          0.006168518681079149
+        ]
+      ],
+      "contact": true,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 42,
+      "phase": 1,
+      "position": [
+        -0.0007482472574338317,
+        0.05364324524998665,
+        0.01999988593161106
+      ],
+      "tcp": [
+        [
+          -0.0008775219321250916,
+          0.053628817200660706,
+          0.019996926188468933,
+          -0.017555249854922295,
+          0.9998173713684082,
+          0.0043485756032168865,
+          0.006170856766402721
+        ]
+      ],
+      "contact": true,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 43,
+      "phase": 1,
+      "position": [
+        -0.0007480080239474773,
+        0.05364290252327919,
+        0.019999951124191284
+      ],
+      "tcp": [
+        [
+          -0.0008624931797385216,
+          0.0536307767033577,
+          0.019998155534267426,
+          -0.017555447295308113,
+          0.9998173713684082,
+          0.004348724614828825,
+          0.00617242231965065
+        ]
+      ],
+      "contact": true,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 44,
+      "phase": 1,
+      "position": [
+        -0.0007482465007342398,
+        0.05364324524998665,
+        0.019999941810965538
+      ],
+      "tcp": [
+        [
+          -0.0008533019572496414,
+          0.053631752729415894,
+          0.01999882608652115,
+          -0.017555469647049904,
+          0.9998173713684082,
+          0.004349559545516968,
+          0.006173077039420605
+        ]
+      ],
+      "contact": true,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 45,
+      "phase": 1,
+      "position": [
+        -0.0007482545333914459,
+        0.05364324152469635,
+        0.01999988965690136
+      ],
+      "tcp": [
+        [
+          -0.0008476050570607185,
+          0.05363253876566887,
+          0.01999962329864502,
+          -0.017555702477693558,
+          0.999817430973053,
+          0.0043499767780303955,
+          0.006175882648676634
+        ]
+      ],
+      "contact": true,
+      "grasped": false,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 46,
+      "phase": 2,
+      "position": [
+        -0.0008484981954097748,
+        0.053467586636543274,
+        0.02004648931324482
+      ],
+      "tcp": [
+        [
+          -0.0008421698585152626,
+          0.05363471433520317,
+          0.020005032420158386,
+          -0.01755756139755249,
+          0.9998172521591187,
+          0.004351526033133268,
+          0.0061837173998355865
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 47,
+      "phase": 2,
+      "position": [
+        -0.000877564714755863,
+        0.05344854295253754,
+        0.020040186122059822
+      ],
+      "tcp": [
+        [
+          -0.0008663218468427658,
+          0.05365389585494995,
+          0.019975073635578156,
+          -0.017560286447405815,
+          0.9998171925544739,
+          0.004391788970679045,
+          0.0061552333645522594
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 48,
+      "phase": 2,
+      "position": [
+        -0.000865847512613982,
+        0.05347684398293495,
+        0.020045500248670578
+      ],
+      "tcp": [
+        [
+          -0.0008524730801582336,
+          0.0536859892308712,
+          0.019984722137451172,
+          -0.017566390335559845,
+          0.9998168349266052,
+          0.004444509744644165,
+          0.006167794577777386
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 49,
+      "phase": 2,
+      "position": [
+        -0.000862389337271452,
+        0.05351012945175171,
+        0.020043915137648582
+      ],
+      "tcp": [
+        [
+          -0.0008493652567267418,
+          0.05372020974755287,
+          0.019981972873210907,
+          -0.017572859302163124,
+          0.9998164176940918,
+          0.004501134157180786,
+          0.0061676353216171265
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 50,
+      "phase": 2,
+      "position": [
+        -0.0008553100633434951,
+        0.05354253947734833,
+        0.020044345408678055
+      ],
+      "tcp": [
+        [
+          -0.0008415598422288895,
+          0.05375174432992935,
+          0.01998259127140045,
+          -0.01757979393005371,
+          0.9998160004615784,
+          0.0045593674294650555,
+          0.006169796921312809
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 51,
+      "phase": 2,
+      "position": [
+        -0.0008478790405206382,
+        0.0535704679787159,
+        0.020044106990098953
+      ],
+      "tcp": [
+        [
+          -0.0008336417376995087,
+          0.05377998575568199,
+          0.019982218742370605,
+          -0.017587250098586082,
+          0.9998155832290649,
+          0.004619925748556852,
+          0.006169628351926804
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 52,
+      "phase": 2,
+      "position": [
+        -0.0008395904442295432,
+        0.05359385535120964,
+        0.02004392072558403
+      ],
+      "tcp": [
+        [
+          -0.0008250297978520393,
+          0.05380234494805336,
+          0.01998172700405121,
+          -0.01759530045092106,
+          0.9998152256011963,
+          0.004681050777435303,
+          0.0061688655987381935
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 53,
+      "phase": 2,
+      "position": [
+        -0.0008313935832120478,
+        0.05361194163560867,
+        0.020043861120939255
+      ],
+      "tcp": [
+        [
+          -0.0008166534826159477,
+          0.05381917580962181,
+          0.01998182386159897,
+          -0.017603693529963493,
+          0.9998147487640381,
+          0.004743337165564299,
+          0.006168148946017027
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 54,
+      "phase": 2,
+      "position": [
+        -0.0008236808935180306,
+        0.05362460017204285,
+        0.020043788477778435
+      ],
+      "tcp": [
+        [
+          -0.0008087353780865669,
+          0.0538303442299366,
+          0.019981570541858673,
+          -0.01761232130229473,
+          0.9998143315315247,
+          0.004806458484381437,
+          0.006166399456560612
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 55,
+      "phase": 2,
+      "position": [
+        -0.0008174311369657516,
+        0.05363335460424423,
+        0.020043538883328438
+      ],
+      "tcp": [
+        [
+          -0.0008027283474802971,
+          0.053837794810533524,
+          0.019981302320957184,
+          -0.017620814964175224,
+          0.9998139142990112,
+          0.004868239164352417,
+          0.006164531223475933
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 56,
+      "phase": 2,
+      "position": [
+        -0.0008125546737574041,
+        0.053639743477106094,
+        0.02004293166100979
+      ],
+      "tcp": [
+        [
+          -0.0007978826761245728,
+          0.053843311965465546,
+          0.019980773329734802,
+          -0.0176291111856699,
+          0.9998134970664978,
+          0.004929959774017334,
+          0.006162548437714577
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 57,
+      "phase": 2,
+      "position": [
+        -0.0008082796703092754,
+        0.0536445714533329,
+        0.020042553544044495
+      ],
+      "tcp": [
+        [
+          -0.0007942300289869308,
+          0.05384751036763191,
+          0.01998046785593033,
+          -0.01763738878071308,
+          0.9998129606246948,
+          0.004991352092474699,
+          0.0061604930087924
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 58,
+      "phase": 2,
+      "position": [
+        -0.0008047369192354381,
+        0.05364689603447914,
+        0.020042041316628456
+      ],
+      "tcp": [
+        [
+          -0.0007909061387181282,
+          0.05384894087910652,
+          0.019980184733867645,
+          -0.017646295949816704,
+          0.9998126029968262,
+          0.0050543248653411865,
+          0.0061583444476127625
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 59,
+      "phase": 2,
+      "position": [
+        -0.0008016856736503541,
+        0.053646910935640335,
+        0.02004164271056652
+      ],
+      "tcp": [
+        [
+          -0.0007879612967371941,
+          0.05384845659136772,
+          0.01997990906238556,
+          -0.017654461786150932,
+          0.999812126159668,
+          0.005116015672683716,
+          0.006156370975077152
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 60,
+      "phase": 2,
+      "position": [
+        -0.0007996136555448174,
+        0.05364684760570526,
+        0.02004082314670086
+      ],
+      "tcp": [
+        [
+          -0.0007864031940698624,
+          0.05384860932826996,
+          0.019979119300842285,
+          -0.017662374302744865,
+          0.9998117089271545,
+          0.005175560712814331,
+          0.006154262460768223
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 61,
+      "phase": 3,
+      "position": [
+        0.00537420017644763,
+        0.04961036890745163,
+        0.025022592395544052
+      ],
+      "tcp": [
+        [
+          0.005383982323110104,
+          0.049806859344244,
+          0.0249737948179245,
+          -0.018525373190641403,
+          0.999785304069519,
+          0.009185701608657837,
+          0.0013217069208621979
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 62,
+      "phase": 3,
+      "position": [
+        0.01391476858407259,
+        0.040877923369407654,
+        0.0342894047498703
+      ],
+      "tcp": [
+        [
+          0.013922291807830334,
+          0.041081350296735764,
+          0.0342382937669754,
+          -0.018677886575460434,
+          0.9997767806053162,
+          0.009823709726333618,
+          0.001059462781995535
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 63,
+      "phase": 3,
+      "position": [
+        0.01946602575480938,
+        0.031127316877245903,
+        0.04405442252755165
+      ],
+      "tcp": [
+        [
+          0.01947389543056488,
+          0.03133218735456467,
+          0.04400354623794556,
+          -0.018654799088835716,
+          0.9997771978378296,
+          0.009798883460462093,
+          0.0012735094642266631
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_table-workspace"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 64,
+      "phase": 3,
+      "position": [
+        0.022746935486793518,
+        0.02120126783847809,
+        0.05386102944612503
+      ],
+      "tcp": [
+        [
+          0.022755350917577744,
+          0.021406814455986023,
+          0.05380982905626297,
+          -0.01860281638801098,
+          0.9997789859771729,
+          0.009688048623502254,
+          0.001422364148311317
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "scene-0_cube",
+          "scene-0_table-workspace"
+        ]
+      ]
+    },
+    {
+      "step": 65,
+      "phase": 3,
+      "position": [
+        0.024662984535098076,
+        0.011539704166352749,
+        0.06366967409849167
+      ],
+      "tcp": [
+        [
+          0.02467174082994461,
+          0.011745750904083252,
+          0.06361851096153259,
+          -0.018494250252842903,
+          0.9997842311859131,
+          0.00933682918548584,
+          0.0015131025575101376
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    },
+    {
+      "step": 66,
+      "phase": 3,
+      "position": [
+        0.02574310079216957,
+        0.0038638089317828417,
+        0.07347504049539566
+      ],
+      "tcp": [
+        [
+          0.025752579793334007,
+          0.004071327857673168,
+          0.07342389225959778,
+          -0.018109284341335297,
+          0.9998051524162292,
+          0.007698923349380493,
+          0.0016007060185074806
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    },
+    {
+      "step": 67,
+      "phase": 3,
+      "position": [
+        0.026325564831495285,
+        -0.000678034673910588,
+        0.08327028155326843
+      ],
+      "tcp": [
+        [
+          0.026335906237363815,
+          -0.00047138449735939503,
+          0.08321918547153473,
+          -0.01776798628270626,
+          0.9998218417167664,
+          0.006147055886685848,
+          0.0016543359961360693
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    },
+    {
+      "step": 68,
+      "phase": 3,
+      "position": [
+        0.026648124679923058,
+        -0.0026963381096720695,
+        0.09306365251541138
+      ],
+      "tcp": [
+        [
+          0.026658920571208,
+          -0.0024908087216317654,
+          0.09301195293664932,
+          -0.017560122534632683,
+          0.9998312592506409,
+          0.005129307042807341,
+          0.0016805895138531923
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    },
+    {
+      "step": 69,
+      "phase": 3,
+      "position": [
+        0.026836032047867775,
+        -0.003203099127858877,
+        0.10285884886980057
+      ],
+      "tcp": [
+        [
+          0.0268471147865057,
+          -0.0029986281879246235,
+          0.10280714184045792,
+          -0.017470942810177803,
+          0.9998352527618408,
+          0.0046333069913089275,
+          0.0016923921648412943
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    },
+    {
+      "step": 70,
+      "phase": 3,
+      "position": [
+        0.02694818377494812,
+        -0.003026010235771537,
+        0.11265614628791809
+      ],
+      "tcp": [
+        [
+          0.026959415525197983,
+          -0.002821903210133314,
+          0.11260445415973663,
+          -0.017457744106650352,
+          0.9998361468315125,
+          0.004491061437875032,
+          0.0016973756719380617
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    },
+    {
+      "step": 71,
+      "phase": 3,
+      "position": [
+        0.02701606974005699,
+        -0.0026667998172342777,
+        0.1224541887640953
+      ],
+      "tcp": [
+        [
+          0.027027571573853493,
+          -0.0024627328384667635,
+          0.12240228801965714,
+          -0.017481593415141106,
+          0.9998354911804199,
+          0.004532992839813232,
+          0.001699996180832386
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    },
+    {
+      "step": 72,
+      "phase": 3,
+      "position": [
+        0.027057278901338577,
+        -0.0023562954738736153,
+        0.13225162029266357
+      ],
+      "tcp": [
+        [
+          0.0270686037838459,
+          -0.0021521286107599735,
+          0.13219982385635376,
+          -0.017518799751996994,
+          0.9998342990875244,
+          0.004642456769943237,
+          0.0017021824605762959
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    },
+    {
+      "step": 73,
+      "phase": 3,
+      "position": [
+        0.027082759886980057,
+        -0.002159569412469864,
+        0.14204733073711395
+      ],
+      "tcp": [
+        [
+          0.02709406241774559,
+          -0.0019551911391317844,
+          0.14199583232402802,
+          -0.017557095736265182,
+          0.9998331665992737,
+          0.004757195711135864,
+          0.0017052064649760723
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    },
+    {
+      "step": 74,
+      "phase": 3,
+      "position": [
+        0.027098489925265312,
+        -0.002063766121864319,
+        0.15184129774570465
+      ],
+      "tcp": [
+        [
+          0.02710987627506256,
+          -0.0018590646795928478,
+          0.15178947150707245,
+          -0.017592836171388626,
+          0.999832034111023,
+          0.004853636026382446,
+          0.001709009986370802
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    },
+    {
+      "step": 75,
+      "phase": 3,
+      "position": [
+        0.027108903974294662,
+        -0.0020326911471784115,
+        0.1616324931383133
+      ],
+      "tcp": [
+        [
+          0.027120092883706093,
+          -0.0018276902846992016,
+          0.16158100962638855,
+          -0.017626198008656502,
+          0.9998311400413513,
+          0.004928827751427889,
+          0.0017137646209448576
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    },
+    {
+      "step": 76,
+      "phase": 3,
+      "position": [
+        0.027115534991025925,
+        -0.0020337344612926245,
+        0.17142081260681152
+      ],
+      "tcp": [
+        [
+          0.027126401662826538,
+          -0.0018282495439052582,
+          0.17136910557746887,
+          -0.017658257856965065,
+          0.9998302459716797,
+          0.004988402593880892,
+          0.0017184640746563673
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    },
+    {
+      "step": 77,
+      "phase": 3,
+      "position": [
+        0.02712072804570198,
+        -0.002045192988589406,
+        0.1812068372964859
+      ],
+      "tcp": [
+        [
+          0.027131788432598114,
+          -0.0018394861835986376,
+          0.18115536868572235,
+          -0.01769062876701355,
+          0.9998293519020081,
+          0.005038827657699585,
+          0.0017243241891264915
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    },
+    {
+      "step": 78,
+      "phase": 3,
+      "position": [
+        0.027124442160129547,
+        -0.00205627060495317,
+        0.19098994135856628
+      ],
+      "tcp": [
+        [
+          0.027135487645864487,
+          -0.001850346801802516,
+          0.19093817472457886,
+          -0.017724011093378067,
+          0.9998285174369812,
+          0.0050851101987063885,
+          0.0017296040896326303
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    },
+    {
+      "step": 79,
+      "phase": 3,
+      "position": [
+        0.02712809294462204,
+        -0.0020632019732147455,
+        0.20077073574066162
+      ],
+      "tcp": [
+        [
+          0.027139082551002502,
+          -0.0018569508101791143,
+          0.20071908831596375,
+          -0.01775897853076458,
+          0.9998276233673096,
+          0.005130350589752197,
+          0.0017357002943754196
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    },
+    {
+      "step": 80,
+      "phase": 3,
+      "position": [
+        0.02713158167898655,
+        -0.002065731445327401,
+        0.21054914593696594
+      ],
+      "tcp": [
+        [
+          0.027142493054270744,
+          -0.0018592160195112228,
+          0.2104976773262024,
+          -0.017795491963624954,
+          0.9998267292976379,
+          0.005176067352294922,
+          0.0017416635528206825
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    },
+    {
+      "step": 81,
+      "phase": 3,
+      "position": [
+        0.027135053649544716,
+        -0.002065322594717145,
+        0.22032508254051208
+      ],
+      "tcp": [
+        [
+          0.027145998552441597,
+          -0.0018586015794426203,
+          0.22027364373207092,
+          -0.017833756282925606,
+          0.9998257756233215,
+          0.005222230684012175,
+          0.0017477392684668303
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    },
+    {
+      "step": 82,
+      "phase": 3,
+      "position": [
+        0.027138423174619675,
+        -0.002063135849311948,
+        0.2300989329814911
+      ],
+      "tcp": [
+        [
+          0.02714940905570984,
+          -0.0018562090117484331,
+          0.2300473153591156,
+          -0.017873995006084442,
+          0.9998248815536499,
+          0.005268782377243042,
+          0.001753955613821745
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    },
+    {
+      "step": 83,
+      "phase": 3,
+      "position": [
+        0.027142172679305077,
+        -0.0020602408330887556,
+        0.23987071216106415
+      ],
+      "tcp": [
+        [
+          0.027153197675943375,
+          -0.0018531593959778547,
+          0.23981934785842896,
+          -0.01791573502123356,
+          0.999823808670044,
+          0.00531575083732605,
+          0.0017602122388780117
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    },
+    {
+      "step": 84,
+      "phase": 3,
+      "position": [
+        0.02714621275663376,
+        -0.002057220321148634,
+        0.24964043498039246
+      ],
+      "tcp": [
+        [
+          0.027157176285982132,
+          -0.0018498701974749565,
+          0.2495892345905304,
+          -0.017959274351596832,
+          0.9998228549957275,
+          0.0053626601584255695,
+          0.0017662143800407648
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    },
+    {
+      "step": 85,
+      "phase": 3,
+      "position": [
+        0.027150718495249748,
+        -0.0020544040016829967,
+        0.25940874218940735
+      ],
+      "tcp": [
+        [
+          0.027161497622728348,
+          -0.001846732571721077,
+          0.25935736298561096,
+          -0.018004529178142548,
+          0.9998217225074768,
+          0.005409359931945801,
+          0.0017722174525260925
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    },
+    {
+      "step": 86,
+      "phase": 3,
+      "position": [
+        0.02715536393225193,
+        -0.0020516791846603155,
+        0.2691756784915924
+      ],
+      "tcp": [
+        [
+          0.02716630883514881,
+          -0.0018438748084008694,
+          0.2691243886947632,
+          -0.01805160567164421,
+          0.9998205900192261,
+          0.0054559106938540936,
+          0.0017782982904464006
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    },
+    {
+      "step": 87,
+      "phase": 3,
+      "position": [
+        0.027359813451766968,
+        -0.0020563285797834396,
+        0.27780550718307495
+      ],
+      "tcp": [
+        [
+          0.027370570227503777,
+          -0.001848162617534399,
+          0.277754008769989,
+          -0.018072912469506264,
+          0.9998182058334351,
+          0.005515456665307283,
+          0.0025853763800114393
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": false,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    },
+    {
+      "step": 88,
+      "phase": 3,
+      "position": [
+        0.027594953775405884,
+        -0.00206273072399199,
+        0.2836969196796417
+      ],
+      "tcp": [
+        [
+          0.02760581485927105,
+          -0.0018545512575656176,
+          0.2836455702781677,
+          -0.01807360164821148,
+          0.9998131990432739,
+          0.005585134029388428,
+          0.003970165271311998
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": true,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    },
+    {
+      "step": 89,
+      "phase": 3,
+      "position": [
+        0.027586093172430992,
+        -0.002059725346043706,
+        0.28681883215904236
+      ],
+      "tcp": [
+        [
+          0.02759680151939392,
+          -0.0018512269016355276,
+          0.2867680788040161,
+          -0.018085995689034462,
+          0.9998083114624023,
+          0.005650043487548828,
+          0.004941452294588089
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": true,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    },
+    {
+      "step": 90,
+      "phase": 3,
+      "position": [
+        0.027428818866610527,
+        -0.0020500135142356157,
+        0.288169801235199
+      ],
+      "tcp": [
+        [
+          0.027439454570412636,
+          -0.0018414740916341543,
+          0.2881197929382324,
+          -0.01811361126601696,
+          0.9998049139976501,
+          0.005708158016204834,
+          0.0054193721152842045
+        ]
+      ],
+      "contact": true,
+      "grasped": true,
+      "success": true,
+      "contacts": [
+        [
+          "panda_hand",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_leftfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ],
+        [
+          "panda_rightfinger",
+          "scene-0_cube"
+        ]
+      ]
+    }
+  ]
+}

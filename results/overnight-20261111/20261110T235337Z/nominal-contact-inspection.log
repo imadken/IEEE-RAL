@@ -1,0 +1,94 @@
+{
+  "cube_parameters": {
+    "mass_kg": 0.06400000303983688,
+    "inertia_kg_m2": [
+      1.7066666259779595e-05,
+      1.7066666259779595e-05,
+      1.7066666259779595e-05
+    ],
+    "center_of_mass_pose": [
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "shape_materials": [
+      {
+        "static_friction": 0.30000001192092896,
+        "dynamic_friction": 0.30000001192092896,
+        "restitution": 0.0
+      }
+    ]
+  },
+  "finger_materials": {
+    "panda_leftfinger": [
+      {
+        "static": 2.0,
+        "dynamic": 2.0,
+        "restitution": 0.0
+      },
+      {
+        "static": 2.0,
+        "dynamic": 2.0,
+        "restitution": 0.0
+      },
+      {
+        "static": 2.0,
+        "dynamic": 2.0,
+        "restitution": 0.0
+      },
+      {
+        "static": 2.0,
+        "dynamic": 2.0,
+        "restitution": 0.0
+      }
+    ],
+    "panda_rightfinger": [
+      {
+        "static": 2.0,
+        "dynamic": 2.0,
+        "restitution": 0.0
+      },
+      {
+        "static": 2.0,
+        "dynamic": 2.0,
+        "restitution": 0.0
+      },
+      {
+        "static": 2.0,
+        "dynamic": 2.0,
+        "restitution": 0.0
+      },
+      {
+        "static": 2.0,
+        "dynamic": 2.0,
+        "restitution": 0.0
+      }
+    ],
+    "panda_leftfinger_pad": [],
+    "panda_rightfinger_pad": []
+  },
+  "task_obs_keys": {
+    "agent": [
+      "qpos",
+      "qvel"
+    ],
+    "extra": [
+      "is_grasped",
+      "tcp_pose",
+      "goal_pos",
+      "obj_pose",
+      "tcp_to_obj_pos",
+      "obj_to_goal_pos"
+    ]
+  },
+  "joint_wrench_shape": [
+    1,
+    15,
+    6
+  ],
+  "combine_rule_exposed": false
+}
