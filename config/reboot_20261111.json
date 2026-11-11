@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "reviewed_base": "65965c96216748f0d930ef1546dd9aa70361b48d",
+  "run": "results/reboot-phase/20261111T204459Z",
+  "source_revision": "269d53958caf32913104c5a93f8ee4ed84704a0f",
+  "source_tree": "7dbfbc94c27bb0478f97598fc59f9fbea6b56061",
+  "repositories": [
+    {
+      "id": "REBOOT26/sample_recovery-demonstration",
+      "revision": "0633573d0438be1185bddebdf1a2c8f5505f7b2a",
+      "role": "sample_engineering_only",
+      "object": null,
+      "operation": null
+    },
+    {
+      "id": "REBOOT26/16mm-cylinder_install",
+      "revision": "77385af9a9acf3da3c76e8a8031e67623ff401e2",
+      "object": "cylinder",
+      "operation": "install",
+      "role": "expert"
+    },
+    {
+      "id": "REBOOT26/16mm-cylinder_remove",
+      "revision": "76aad32aa7aea67cadedd32c3ee57b21dfffd0ce",
+      "object": "cylinder",
+      "operation": "remove",
+      "role": "expert"
+    },
+    {
+      "id": "REBOOT26/16mm-cylinder_recovery_install",
+      "revision": "f1aec3a47371e2f5c0841e0fadd2021ecb60bb5f",
+      "object": "cylinder",
+      "operation": "install",
+      "role": "recovery"
+    },
+    {
+      "id": "REBOOT26/16mm-cylinder_recovery_remove",
+      "revision": "365c9bea6a0ba9628aeb81c4838725a19bebd131",
+      "object": "cylinder",
+      "operation": "remove",
+      "role": "recovery"
+    },
+    {
+      "id": "REBOOT26/usb-c_install",
+      "revision": "1f223f63cb070b95dadf2fedfe4e6a4bb914cccf",
+      "object": "usb_c",
+      "operation": "install",
+      "role": "expert"
+    },
+    {
+      "id": "REBOOT26/usb-c_remove",
+      "revision": "0aa5c24fcc2e2cdb87b6bc3b1ba6ed5a5b0014a5",
+      "object": "usb_c",
+      "operation": "remove",
+      "role": "expert"
+    },
+    {
+      "id": "REBOOT26/usbc_recovery_install",
+      "revision": "0ef0b37f0601fbafcc3bab07195a1fb5e756c6b4",
+      "object": "usb_c",
+      "operation": "install",
+      "role": "recovery"
+    },
+    {
+      "id": "REBOOT26/usbc_recovery_install2",
+      "revision": "83709ed9d1d7f733781e582d2e36702de4dd9685",
+      "object": "usb_c",
+      "operation": "install",
+      "role": "recovery"
+    },
+    {
+      "id": "REBOOT26/USBC_recovery_remove",
+      "revision": "beba0e619331a54bb04d1349de07cf4064410725",
+      "object": "usb_c",
+      "operation": "remove",
+      "role": "recovery"
+    },
+    {
+      "id": "REBOOT26/rj45-install",
+      "revision": "1b5f443c62c70677610d06d7d223b830d090b884",
+      "object": "rj45",
+      "operation": "install",
+      "role": "expert"
+    },
+    {
+      "id": "REBOOT26/rj45_remove",
+      "revision": "d61344baccbb93497d6b4b1d02f72ba13a422bc2",
+      "object": "rj45",
+      "operation": "remove",
+      "role": "expert"
+    },
+    {
+      "id": "REBOOT26/rj45_recovery_install",
+      "revision": "f6acd5b69394ffd4d2d8bd30079306c9e2061bbe",
+      "object": "rj45",
+      "operation": "install",
+      "role": "recovery"
+    },
+    {
+      "id": "REBOOT26/RJ45_recovery_remove",
+      "revision": "245c045b104eedbb85e0216d8a6a0a8c86375788",
+      "object": "rj45",
+      "operation": "remove",
+      "role": "recovery"
+    }
+  ],
+  "mechanical_metadata": {
+    "cylinder": {
+      "symmetry": "continuous",
+      "clearance_mm": 0.2,
+      "install_expert": [
+        "16mm-cylinder_install"
+      ],
+      "remove_expert": [
+        "16mm-cylinder_remove"
+      ],
+      "install_recovery": [
+        "16mm-cylinder_recovery_install"
+      ],
+      "remove_recovery": [
+        "16mm-cylinder_recovery_remove"
+      ]
+    },
+    "usb_c": {
+      "symmetry": "C2",
+      "clearance_mm": 0.09,
+      "install_expert": [
+        "usb-c_install"
+      ],
+      "remove_expert": [
+        "usb-c_remove"
+      ],
+      "install_recovery": [
+        "usbc_recovery_install",
+        "usbc_recovery_install2"
+      ],
+      "remove_recovery": [
+        "USBC_recovery_remove"
+      ]
+    },
+    "rj45": {
+      "symmetry": "C1",
+      "clearance_mm": 0.13,
+      "install_expert": [
+        "rj45-install"
+      ],
+      "remove_expert": [
+        "rj45_remove"
+      ],
+      "install_recovery": [
+        "rj45_recovery_install"
+      ],
+      "remove_recovery": [
+        "RJ45_recovery_remove"
+      ]
+    }
+  },
+  "primary_paper": "2609.22591v1",
+  "early_window": "failure_onset <= current time < recovery_start; annotations evaluation-only",
+  "sample_is_training_data": false,
+  "qualification_gates": [
+    "Correct episode-local event indexing with verified provenance",
+    "Both clean and failure data for fixed objects/operations",
+    "At least one actual frame in each retained onset-to-recovery window; invalid/ambiguous labels reported, never guessed from future actions",
+    "No train/test windows from a shared episode",
+    "No complete-duration or future-action inputs"
+  ],
+  "on_invalid_event_labels": "Case D: finish independent integrity and shortcut audit; DATA_BLOCKED; no PCRR training",
+  "limits": {
+    "wall_seconds": 28800,
+    "cpu_seconds": 36000,
+    "gpu_seconds": 7200,
+    "initial_download_bytes": 6000000000,
+    "new_bytes": 10000000000
+  }
+}
