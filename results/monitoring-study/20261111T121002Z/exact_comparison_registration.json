@@ -1,0 +1,20 @@
+{
+  "registered_utc": "2026-11-11T12:47:08.770706+00:00",
+  "authorization": "Case B exact semantic comparison and M4 reference under the frozen problem, not a new hypothesis or uncertainty regime",
+  "source_split": "development",
+  "selection": "First 64 eligible stored episodes in record order; exclude noise05 and invalidated; maximum12unknownatoms and6querygroups",
+  "budgets": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "objective": "Expected resolved continuation-validity classification, uniform model-consistent completions",
+  "methods": [
+    "M1",
+    "M3",
+    "M4"
+  ],
+  "crosscheck": "First4selectedcontextswithatmost8unknownatoms; execute each method on every completion",
+  "no_method_changes": true
+}

@@ -1,0 +1,36 @@
+{
+  "prior_files_preserved": 408,
+  "sealed_files_unchanged": 27,
+  "independent_audits": {
+    "baseline_development": {
+      "episodes": 768,
+      "decision_rows": 9216,
+      "recomputed_decisions": 9216,
+      "skipped_rows": 0,
+      "independent_parents": 8
+    },
+    "development": {
+      "episodes": 768,
+      "decision_rows": 18432,
+      "recomputed_decisions": 16916,
+      "skipped_rows": 1516,
+      "independent_parents": 8
+    },
+    "qualification": {
+      "episodes": 1344,
+      "decision_rows": 32256,
+      "recomputed_decisions": 29364,
+      "skipped_rows": 2892,
+      "independent_parents": 14
+    },
+    "smoke": {
+      "episodes": 192,
+      "decision_rows": 4608,
+      "recomputed_decisions": 3840,
+      "skipped_rows": 768,
+      "independent_parents": 2
+    }
+  },
+  "active_workers": [],
+  "qualification_source_commit": "a7786cbe4f87ec7be28f2d501f2b4650c4aa9dd7"
+}

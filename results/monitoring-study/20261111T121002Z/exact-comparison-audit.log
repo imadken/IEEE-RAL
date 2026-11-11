@@ -1,0 +1,213 @@
+{
+  "source_sha256": "40ec6c133340e2141aa79015b9d2ed7a0ba44270df7c68741e9ed83ac4a72819",
+  "selected_contexts": 64,
+  "context_budget_cases": 256,
+  "selected_parents": [
+    "blocks-strips-typed-01",
+    "blocks-strips-typed-02"
+  ],
+  "nontrivial_mixed_label_contexts": 33,
+  "checked_world_counts": [
+    1,
+    16,
+    1,
+    1
+  ],
+  "total_complete_policy_executions_for_crosscheck": 228,
+  "classification_strict_gaps_to_M4": {},
+  "by_budget": [
+    {
+      "budget": 0,
+      "methods": {
+        "M1": {
+          "mean_expected_resolution": {
+            "numerator": 31,
+            "denominator": 64,
+            "value": 0.484375
+          },
+          "mean_expected_queries": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          }
+        },
+        "M3": {
+          "mean_expected_resolution": {
+            "numerator": 31,
+            "denominator": 64,
+            "value": 0.484375
+          },
+          "mean_expected_queries": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          }
+        },
+        "M4": {
+          "mean_expected_resolution": {
+            "numerator": 31,
+            "denominator": 64,
+            "value": 0.484375
+          },
+          "mean_expected_queries": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0.0
+          }
+        }
+      },
+      "M3_minus_M1_expected_queries": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "M3_fewer_query_contexts": 0,
+      "M3_more_query_contexts": 0
+    },
+    {
+      "budget": 1,
+      "methods": {
+        "M1": {
+          "mean_expected_resolution": {
+            "numerator": 463,
+            "denominator": 512,
+            "value": 0.904296875
+          },
+          "mean_expected_queries": {
+            "numerator": 33,
+            "denominator": 64,
+            "value": 0.515625
+          }
+        },
+        "M3": {
+          "mean_expected_resolution": {
+            "numerator": 463,
+            "denominator": 512,
+            "value": 0.904296875
+          },
+          "mean_expected_queries": {
+            "numerator": 33,
+            "denominator": 64,
+            "value": 0.515625
+          }
+        },
+        "M4": {
+          "mean_expected_resolution": {
+            "numerator": 463,
+            "denominator": 512,
+            "value": 0.904296875
+          },
+          "mean_expected_queries": {
+            "numerator": 33,
+            "denominator": 64,
+            "value": 0.515625
+          }
+        }
+      },
+      "M3_minus_M1_expected_queries": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "M3_fewer_query_contexts": 0,
+      "M3_more_query_contexts": 0
+    },
+    {
+      "budget": 2,
+      "methods": {
+        "M1": {
+          "mean_expected_resolution": {
+            "numerator": 127,
+            "denominator": 128,
+            "value": 0.9921875
+          },
+          "mean_expected_queries": {
+            "numerator": 313,
+            "denominator": 512,
+            "value": 0.611328125
+          }
+        },
+        "M3": {
+          "mean_expected_resolution": {
+            "numerator": 127,
+            "denominator": 128,
+            "value": 0.9921875
+          },
+          "mean_expected_queries": {
+            "numerator": 313,
+            "denominator": 512,
+            "value": 0.611328125
+          }
+        },
+        "M4": {
+          "mean_expected_resolution": {
+            "numerator": 127,
+            "denominator": 128,
+            "value": 0.9921875
+          },
+          "mean_expected_queries": {
+            "numerator": 313,
+            "denominator": 512,
+            "value": 0.611328125
+          }
+        }
+      },
+      "M3_minus_M1_expected_queries": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "M3_fewer_query_contexts": 0,
+      "M3_more_query_contexts": 0
+    },
+    {
+      "budget": 3,
+      "methods": {
+        "M1": {
+          "mean_expected_resolution": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          },
+          "mean_expected_queries": {
+            "numerator": 317,
+            "denominator": 512,
+            "value": 0.619140625
+          }
+        },
+        "M3": {
+          "mean_expected_resolution": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          },
+          "mean_expected_queries": {
+            "numerator": 317,
+            "denominator": 512,
+            "value": 0.619140625
+          }
+        },
+        "M4": {
+          "mean_expected_resolution": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          },
+          "mean_expected_queries": {
+            "numerator": 317,
+            "denominator": 512,
+            "value": 0.619140625
+          }
+        }
+      },
+      "M3_minus_M1_expected_queries": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "M3_fewer_query_contexts": 0,
+      "M3_more_query_contexts": 0
+    }
+  ],
+  "scope": "Exact expectations on first64 eligible development contexts from two existing parents; not independent new tasks or a theorem of universal equivalence"
+}

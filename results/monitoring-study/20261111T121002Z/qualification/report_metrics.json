@@ -1,0 +1,4582 @@
+{
+  "primary_by_method": {
+    "M0": {
+      "metrics": {
+        "false_current_permission": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016,
+          "event_parents": 0,
+          "zero_event_parent_upper_95": 0.19263617565013536,
+          "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+        },
+        "invalid_continuation_permission": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016,
+          "event_parents": 0,
+          "zero_event_parent_upper_95": 0.19263617565013536,
+          "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+        },
+        "goal_completion": {
+          "mean": 0.38988095238095244,
+          "ci": [
+            0.378968253968254,
+            0.39981398809523805
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "valid_continuation": {
+          "mean": 0.38988095238095244,
+          "ci": [
+            0.378968253968254,
+            0.39981398809523805
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "abstention": {
+          "mean": 0.6101190476190476,
+          "ci": [
+            0.6001860119047618,
+            0.6210317460317459
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "unnecessary_abstention": {
+          "mean": 0.6101190476190476,
+          "ci": [
+            0.6001860119047618,
+            0.6210317460317459
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "justified_abstention": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "recovery_invoked": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "query_count": {
+          "mean": 1.7673611111111112,
+          "ci": [
+            1.7559523809523812,
+            1.779265873015873
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "simulated_cost": {
+          "mean": 5.501984126984127,
+          "ci": [
+            4.631932043650793,
+            6.300111607142857
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "decision_seconds": {
+          "mean": 0.0019274624571571915,
+          "ci": [
+            0.0017647153031551473,
+            0.0020823327647367332
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "query_seconds": {
+          "mean": 9.39552687452219e-06,
+          "ci": [
+            8.801102589969227e-06,
+            9.95489823138101e-06
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "classification_resolved": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        }
+      },
+      "parent_ids": [
+        "blocks-strips-typed-05",
+        "blocks-strips-typed-06",
+        "blocks-strips-typed-07",
+        "blocks-strips-typed-08",
+        "blocks-strips-typed-09",
+        "blocks-strips-typed-10",
+        "blocks-strips-typed-11",
+        "blocks-strips-typed-12",
+        "logistics-strips-typed-05",
+        "logistics-strips-typed-06",
+        "logistics-strips-typed-07",
+        "logistics-strips-typed-08",
+        "logistics-strips-typed-09",
+        "logistics-strips-typed-10"
+      ],
+      "n_permissions": 786,
+      "raw_false_current_permissions": 0.0,
+      "n_decisions": 2016,
+      "n_parents": 14
+    },
+    "M1": {
+      "metrics": {
+        "false_current_permission": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016,
+          "event_parents": 0,
+          "zero_event_parent_upper_95": 0.19263617565013536,
+          "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+        },
+        "invalid_continuation_permission": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016,
+          "event_parents": 0,
+          "zero_event_parent_upper_95": 0.19263617565013536,
+          "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+        },
+        "goal_completion": {
+          "mean": 0.8596230158730158,
+          "ci": [
+            0.8457341269841271,
+            0.8745163690476191
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "valid_continuation": {
+          "mean": 0.8596230158730158,
+          "ci": [
+            0.8457341269841271,
+            0.8745163690476191
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "abstention": {
+          "mean": 0.14037698412698413,
+          "ci": [
+            0.12548363095238094,
+            0.15426587301587302
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "unnecessary_abstention": {
+          "mean": 0.14037698412698413,
+          "ci": [
+            0.12548363095238094,
+            0.15426587301587302
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "justified_abstention": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "recovery_invoked": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "query_count": {
+          "mean": 1.040674603174603,
+          "ci": [
+            0.994035218253968,
+            1.083345734126984
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "simulated_cost": {
+          "mean": 8.804563492063492,
+          "ci": [
+            7.462785218253969,
+            10.033705357142853
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "decision_seconds": {
+          "mean": 0.0023337440604033572,
+          "ci": [
+            0.001969896687065586,
+            0.002682506470458946
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "query_seconds": {
+          "mean": 6.424808123570292e-06,
+          "ci": [
+            5.711687784544968e-06,
+            7.2104870317465e-06
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "classification_resolved": {
+          "mean": 0.8596230158730158,
+          "ci": [
+            0.8457341269841271,
+            0.8745163690476191
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        }
+      },
+      "parent_ids": [
+        "blocks-strips-typed-05",
+        "blocks-strips-typed-06",
+        "blocks-strips-typed-07",
+        "blocks-strips-typed-08",
+        "blocks-strips-typed-09",
+        "blocks-strips-typed-10",
+        "blocks-strips-typed-11",
+        "blocks-strips-typed-12",
+        "logistics-strips-typed-05",
+        "logistics-strips-typed-06",
+        "logistics-strips-typed-07",
+        "logistics-strips-typed-08",
+        "logistics-strips-typed-09",
+        "logistics-strips-typed-10"
+      ],
+      "n_permissions": 1733,
+      "raw_false_current_permissions": 0.0,
+      "n_decisions": 2016,
+      "n_parents": 14
+    },
+    "M2": {
+      "metrics": {
+        "false_current_permission": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016,
+          "event_parents": 0,
+          "zero_event_parent_upper_95": 0.19263617565013536,
+          "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+        },
+        "invalid_continuation_permission": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016,
+          "event_parents": 0,
+          "zero_event_parent_upper_95": 0.19263617565013536,
+          "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+        },
+        "goal_completion": {
+          "mean": 0.5749007936507937,
+          "ci": [
+            0.5565476190476191,
+            0.5932539682539684
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "valid_continuation": {
+          "mean": 0.5749007936507937,
+          "ci": [
+            0.5565476190476191,
+            0.5932539682539684
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "abstention": {
+          "mean": 0.42509920634920634,
+          "ci": [
+            0.4067460317460317,
+            0.44345238095238093
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "unnecessary_abstention": {
+          "mean": 0.42509920634920634,
+          "ci": [
+            0.4067460317460317,
+            0.44345238095238093
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "justified_abstention": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "recovery_invoked": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "query_count": {
+          "mean": 1.8571428571428577,
+          "ci": [
+            1.8571428571428572,
+            1.8571428571428572
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "simulated_cost": {
+          "mean": 7.165674603174603,
+          "ci": [
+            6.07280505952381,
+            8.175148809523808
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "decision_seconds": {
+          "mean": 0.0015647322341840388,
+          "ci": [
+            0.0013308473704542155,
+            0.001791109770163039
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "query_seconds": {
+          "mean": 9.744419205364668e-06,
+          "ci": [
+            8.825464433429594e-06,
+            1.1030057707795917e-05
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "classification_resolved": {
+          "mean": 0.5749007936507937,
+          "ci": [
+            0.5565476190476191,
+            0.5932539682539684
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        }
+      },
+      "parent_ids": [
+        "blocks-strips-typed-05",
+        "blocks-strips-typed-06",
+        "blocks-strips-typed-07",
+        "blocks-strips-typed-08",
+        "blocks-strips-typed-09",
+        "blocks-strips-typed-10",
+        "blocks-strips-typed-11",
+        "blocks-strips-typed-12",
+        "logistics-strips-typed-05",
+        "logistics-strips-typed-06",
+        "logistics-strips-typed-07",
+        "logistics-strips-typed-08",
+        "logistics-strips-typed-09",
+        "logistics-strips-typed-10"
+      ],
+      "n_permissions": 1159,
+      "raw_false_current_permissions": 0.0,
+      "n_decisions": 2016,
+      "n_parents": 14
+    },
+    "M3": {
+      "metrics": {
+        "false_current_permission": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016,
+          "event_parents": 0,
+          "zero_event_parent_upper_95": 0.19263617565013536,
+          "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+        },
+        "invalid_continuation_permission": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016,
+          "event_parents": 0,
+          "zero_event_parent_upper_95": 0.19263617565013536,
+          "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+        },
+        "goal_completion": {
+          "mean": 0.8596230158730158,
+          "ci": [
+            0.8457341269841271,
+            0.8740079365079365
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "valid_continuation": {
+          "mean": 0.8596230158730158,
+          "ci": [
+            0.8457341269841271,
+            0.8740079365079365
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "abstention": {
+          "mean": 0.14037698412698413,
+          "ci": [
+            0.1259920634920635,
+            0.15426587301587302
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "unnecessary_abstention": {
+          "mean": 0.14037698412698413,
+          "ci": [
+            0.1259920634920635,
+            0.15426587301587302
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "justified_abstention": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "recovery_invoked": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "query_count": {
+          "mean": 1.040674603174603,
+          "ci": [
+            0.994047619047619,
+            1.0833333333333333
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "simulated_cost": {
+          "mean": 8.804563492063492,
+          "ci": [
+            7.475632440476191,
+            10.035218253968253
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "decision_seconds": {
+          "mean": 0.002322071482864438,
+          "ci": [
+            0.001941842236576324,
+            0.002701258787725698
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "query_seconds": {
+          "mean": 6.670951690813081e-06,
+          "ci": [
+            5.662061772050543e-06,
+            7.86901000249181e-06
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "classification_resolved": {
+          "mean": 0.8596230158730158,
+          "ci": [
+            0.8457341269841271,
+            0.8740079365079365
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        }
+      },
+      "parent_ids": [
+        "blocks-strips-typed-05",
+        "blocks-strips-typed-06",
+        "blocks-strips-typed-07",
+        "blocks-strips-typed-08",
+        "blocks-strips-typed-09",
+        "blocks-strips-typed-10",
+        "blocks-strips-typed-11",
+        "blocks-strips-typed-12",
+        "logistics-strips-typed-05",
+        "logistics-strips-typed-06",
+        "logistics-strips-typed-07",
+        "logistics-strips-typed-08",
+        "logistics-strips-typed-09",
+        "logistics-strips-typed-10"
+      ],
+      "n_permissions": 1733,
+      "raw_false_current_permissions": 0.0,
+      "n_decisions": 2016,
+      "n_parents": 14
+    },
+    "M3_no_consequence": {
+      "metrics": {
+        "false_current_permission": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016,
+          "event_parents": 0,
+          "zero_event_parent_upper_95": 0.19263617565013536,
+          "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+        },
+        "invalid_continuation_permission": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016,
+          "event_parents": 0,
+          "zero_event_parent_upper_95": 0.19263617565013536,
+          "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+        },
+        "goal_completion": {
+          "mean": 0.8596230158730158,
+          "ci": [
+            0.8457341269841271,
+            0.8740079365079365
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "valid_continuation": {
+          "mean": 0.8596230158730158,
+          "ci": [
+            0.8457341269841271,
+            0.8740079365079365
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "abstention": {
+          "mean": 0.14037698412698413,
+          "ci": [
+            0.1259920634920635,
+            0.15426587301587302
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "unnecessary_abstention": {
+          "mean": 0.14037698412698413,
+          "ci": [
+            0.1259920634920635,
+            0.15426587301587302
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "justified_abstention": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "recovery_invoked": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "query_count": {
+          "mean": 1.040674603174603,
+          "ci": [
+            0.9925595238095237,
+            1.0813492063492063
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "simulated_cost": {
+          "mean": 8.804563492063492,
+          "ci": [
+            7.532155257936508,
+            10.061160714285716
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "decision_seconds": {
+          "mean": 0.00231530302548818,
+          "ci": [
+            0.001956960033330399,
+            0.002675960364181914
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "query_seconds": {
+          "mean": 7.244213304061088e-06,
+          "ci": [
+            5.691021215170622e-06,
+            9.01987379678296e-06
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        },
+        "classification_resolved": {
+          "mean": 0.8596230158730158,
+          "ci": [
+            0.8457341269841271,
+            0.8740079365079365
+          ],
+          "n_parents": 14,
+          "n_decisions": 2016
+        }
+      },
+      "parent_ids": [
+        "blocks-strips-typed-05",
+        "blocks-strips-typed-06",
+        "blocks-strips-typed-07",
+        "blocks-strips-typed-08",
+        "blocks-strips-typed-09",
+        "blocks-strips-typed-10",
+        "blocks-strips-typed-11",
+        "blocks-strips-typed-12",
+        "logistics-strips-typed-05",
+        "logistics-strips-typed-06",
+        "logistics-strips-typed-07",
+        "logistics-strips-typed-08",
+        "logistics-strips-typed-09",
+        "logistics-strips-typed-10"
+      ],
+      "n_permissions": 1733,
+      "raw_false_current_permissions": 0.0,
+      "n_decisions": 2016,
+      "n_parents": 14
+    }
+  },
+  "primary_M1_minus_M0": {
+    "left": "M1",
+    "right": "M0",
+    "n_parents": 14,
+    "n_paired_decisions": 2016,
+    "complete_pairing": true,
+    "left_only_decisions": 0,
+    "right_only_decisions": 0,
+    "parent_ids": [
+      "blocks-strips-typed-05",
+      "blocks-strips-typed-06",
+      "blocks-strips-typed-07",
+      "blocks-strips-typed-08",
+      "blocks-strips-typed-09",
+      "blocks-strips-typed-10",
+      "blocks-strips-typed-11",
+      "blocks-strips-typed-12",
+      "logistics-strips-typed-05",
+      "logistics-strips-typed-06",
+      "logistics-strips-typed-07",
+      "logistics-strips-typed-08",
+      "logistics-strips-typed-09",
+      "logistics-strips-typed-10"
+    ],
+    "metrics": {
+      "false_current_permission": {
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "invalid_continuation_permission": {
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "goal_completion": {
+        "mean": 0.4697420634920634,
+        "ci": [
+          0.44742063492063494,
+          0.4895833333333333
+        ]
+      },
+      "valid_continuation": {
+        "mean": 0.4697420634920634,
+        "ci": [
+          0.44742063492063494,
+          0.4895833333333333
+        ]
+      },
+      "abstention": {
+        "mean": -0.4697420634920634,
+        "ci": [
+          -0.4895833333333333,
+          -0.44742063492063494
+        ]
+      },
+      "unnecessary_abstention": {
+        "mean": -0.4697420634920634,
+        "ci": [
+          -0.4895833333333333,
+          -0.44742063492063494
+        ]
+      },
+      "justified_abstention": {
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "recovery_invoked": {
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "query_count": {
+        "mean": -0.7266865079365081,
+        "ci": [
+          -0.7728174603174603,
+          -0.6850074404761904
+        ]
+      },
+      "simulated_cost": {
+        "mean": 3.302579365079366,
+        "ci": [
+          2.7106398809523813,
+          3.852715773809524
+        ]
+      },
+      "decision_seconds": {
+        "mean": 0.00040628160324616595,
+        "ci": [
+          0.0001846046145175702,
+          0.0006230006910112615
+        ]
+      },
+      "query_seconds": {
+        "mean": -2.9707187509519005e-06,
+        "ci": [
+          -3.2955870708628074e-06,
+          -2.6492197133530495e-06
+        ]
+      }
+    }
+  },
+  "primary_M3_minus_M2": {
+    "left": "M3",
+    "right": "M2",
+    "n_parents": 14,
+    "n_paired_decisions": 2016,
+    "complete_pairing": true,
+    "left_only_decisions": 0,
+    "right_only_decisions": 0,
+    "parent_ids": [
+      "blocks-strips-typed-05",
+      "blocks-strips-typed-06",
+      "blocks-strips-typed-07",
+      "blocks-strips-typed-08",
+      "blocks-strips-typed-09",
+      "blocks-strips-typed-10",
+      "blocks-strips-typed-11",
+      "blocks-strips-typed-12",
+      "logistics-strips-typed-05",
+      "logistics-strips-typed-06",
+      "logistics-strips-typed-07",
+      "logistics-strips-typed-08",
+      "logistics-strips-typed-09",
+      "logistics-strips-typed-10"
+    ],
+    "metrics": {
+      "false_current_permission": {
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "invalid_continuation_permission": {
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "goal_completion": {
+        "mean": 0.2847222222222222,
+        "ci": [
+          0.2624007936507936,
+          0.3075396825396825
+        ]
+      },
+      "valid_continuation": {
+        "mean": 0.2847222222222222,
+        "ci": [
+          0.2624007936507936,
+          0.3075396825396825
+        ]
+      },
+      "abstention": {
+        "mean": -0.2847222222222222,
+        "ci": [
+          -0.3075396825396825,
+          -0.2624007936507936
+        ]
+      },
+      "unnecessary_abstention": {
+        "mean": -0.2847222222222222,
+        "ci": [
+          -0.3075396825396825,
+          -0.2624007936507936
+        ]
+      },
+      "justified_abstention": {
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "recovery_invoked": {
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "query_count": {
+        "mean": -0.8164682539682541,
+        "ci": [
+          -0.863095238095238,
+          -0.7748015873015873
+        ]
+      },
+      "simulated_cost": {
+        "mean": 1.638888888888889,
+        "ci": [
+          1.2831721230158728,
+          1.9920882936507935
+        ]
+      },
+      "decision_seconds": {
+        "mean": 0.0007573392486803987,
+        "ci": [
+          0.0005990357927571279,
+          0.0009213173940080441
+        ]
+      },
+      "query_seconds": {
+        "mean": -3.073467514551585e-06,
+        "ci": [
+          -4.289257254092104e-06,
+          -1.8702071241614973e-06
+        ]
+      }
+    }
+  },
+  "skipped": {
+    "M4:Exact unknown-atom limit is 12": 1548,
+    "M4:MODEL_MISSPECIFICATION_REGIME": 1344
+  },
+  "regime_pooled_budgets": {
+    "complete": {
+      "M0": {
+        "metrics": {
+          "false_current_permission": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 0,
+            "zero_event_parent_upper_95": 0.19263617565013536,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "invalid_continuation_permission": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 0,
+            "zero_event_parent_upper_95": 0.19263617565013536,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "goal_completion": {
+            "mean": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "valid_continuation": {
+            "mean": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "unnecessary_abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "justified_abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "recovery_invoked": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_count": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "simulated_cost": {
+            "mean": 9.047619047619047,
+            "ci": [
+              7.5,
+              10.452380952380953
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "decision_seconds": {
+            "mean": 0.0009759158956945785,
+            "ci": [
+              0.0009354067377855592,
+              0.001041161476894645
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_seconds": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "classification_resolved": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          }
+        },
+        "parent_ids": [
+          "blocks-strips-typed-05",
+          "blocks-strips-typed-06",
+          "blocks-strips-typed-07",
+          "blocks-strips-typed-08",
+          "blocks-strips-typed-09",
+          "blocks-strips-typed-10",
+          "blocks-strips-typed-11",
+          "blocks-strips-typed-12",
+          "logistics-strips-typed-05",
+          "logistics-strips-typed-06",
+          "logistics-strips-typed-07",
+          "logistics-strips-typed-08",
+          "logistics-strips-typed-09",
+          "logistics-strips-typed-10"
+        ],
+        "n_permissions": 672,
+        "raw_false_current_permissions": 0.0,
+        "n_decisions": 672,
+        "n_parents": 14
+      },
+      "M1": {
+        "metrics": {
+          "false_current_permission": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 0,
+            "zero_event_parent_upper_95": 0.19263617565013536,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "invalid_continuation_permission": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 0,
+            "zero_event_parent_upper_95": 0.19263617565013536,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "goal_completion": {
+            "mean": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "valid_continuation": {
+            "mean": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "unnecessary_abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "justified_abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "recovery_invoked": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_count": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "simulated_cost": {
+            "mean": 9.047619047619047,
+            "ci": [
+              7.571428571428571,
+              10.429166666666664
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "decision_seconds": {
+            "mean": 0.0007730396800546996,
+            "ci": [
+              0.0006755474564367129,
+              0.000864840475601557
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_seconds": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "classification_resolved": {
+            "mean": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          }
+        },
+        "parent_ids": [
+          "blocks-strips-typed-05",
+          "blocks-strips-typed-06",
+          "blocks-strips-typed-07",
+          "blocks-strips-typed-08",
+          "blocks-strips-typed-09",
+          "blocks-strips-typed-10",
+          "blocks-strips-typed-11",
+          "blocks-strips-typed-12",
+          "logistics-strips-typed-05",
+          "logistics-strips-typed-06",
+          "logistics-strips-typed-07",
+          "logistics-strips-typed-08",
+          "logistics-strips-typed-09",
+          "logistics-strips-typed-10"
+        ],
+        "n_permissions": 672,
+        "raw_false_current_permissions": 0.0,
+        "n_decisions": 672,
+        "n_parents": 14
+      },
+      "M2": {
+        "metrics": {
+          "false_current_permission": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 0,
+            "zero_event_parent_upper_95": 0.19263617565013536,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "invalid_continuation_permission": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 0,
+            "zero_event_parent_upper_95": 0.19263617565013536,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "goal_completion": {
+            "mean": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "valid_continuation": {
+            "mean": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "unnecessary_abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "justified_abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "recovery_invoked": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_count": {
+            "mean": 1.3928571428571428,
+            "ci": [
+              1.3928571428571428,
+              1.3928571428571428
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "simulated_cost": {
+            "mean": 10.44047619047619,
+            "ci": [
+              8.963690476190475,
+              11.822023809523806
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "decision_seconds": {
+            "mean": 0.001397599174413786,
+            "ci": [
+              0.0011877435026517126,
+              0.0015938390194042723
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_seconds": {
+            "mean": 7.027026662226057e-06,
+            "ci": [
+              6.643458055761931e-06,
+              7.409096932471064e-06
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "classification_resolved": {
+            "mean": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          }
+        },
+        "parent_ids": [
+          "blocks-strips-typed-05",
+          "blocks-strips-typed-06",
+          "blocks-strips-typed-07",
+          "blocks-strips-typed-08",
+          "blocks-strips-typed-09",
+          "blocks-strips-typed-10",
+          "blocks-strips-typed-11",
+          "blocks-strips-typed-12",
+          "logistics-strips-typed-05",
+          "logistics-strips-typed-06",
+          "logistics-strips-typed-07",
+          "logistics-strips-typed-08",
+          "logistics-strips-typed-09",
+          "logistics-strips-typed-10"
+        ],
+        "n_permissions": 672,
+        "raw_false_current_permissions": 0.0,
+        "n_decisions": 672,
+        "n_parents": 14
+      },
+      "M3": {
+        "metrics": {
+          "false_current_permission": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 0,
+            "zero_event_parent_upper_95": 0.19263617565013536,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "invalid_continuation_permission": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 0,
+            "zero_event_parent_upper_95": 0.19263617565013536,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "goal_completion": {
+            "mean": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "valid_continuation": {
+            "mean": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "unnecessary_abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "justified_abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "recovery_invoked": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_count": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "simulated_cost": {
+            "mean": 9.047619047619047,
+            "ci": [
+              7.595238095238096,
+              10.45238095238095
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "decision_seconds": {
+            "mean": 0.0007541154724700998,
+            "ci": [
+              0.0006627294725712134,
+              0.0008430211552833845
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_seconds": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "classification_resolved": {
+            "mean": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          }
+        },
+        "parent_ids": [
+          "blocks-strips-typed-05",
+          "blocks-strips-typed-06",
+          "blocks-strips-typed-07",
+          "blocks-strips-typed-08",
+          "blocks-strips-typed-09",
+          "blocks-strips-typed-10",
+          "blocks-strips-typed-11",
+          "blocks-strips-typed-12",
+          "logistics-strips-typed-05",
+          "logistics-strips-typed-06",
+          "logistics-strips-typed-07",
+          "logistics-strips-typed-08",
+          "logistics-strips-typed-09",
+          "logistics-strips-typed-10"
+        ],
+        "n_permissions": 672,
+        "raw_false_current_permissions": 0.0,
+        "n_decisions": 672,
+        "n_parents": 14
+      },
+      "M3_no_consequence": {
+        "metrics": {
+          "false_current_permission": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 0,
+            "zero_event_parent_upper_95": 0.19263617565013536,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "invalid_continuation_permission": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 0,
+            "zero_event_parent_upper_95": 0.19263617565013536,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "goal_completion": {
+            "mean": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "valid_continuation": {
+            "mean": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "unnecessary_abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "justified_abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "recovery_invoked": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_count": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "simulated_cost": {
+            "mean": 9.047619047619047,
+            "ci": [
+              7.523214285714286,
+              10.476785714285713
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "decision_seconds": {
+            "mean": 0.00076983307094668,
+            "ci": [
+              0.0006621867036561265,
+              0.0008767394586833514
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_seconds": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "classification_resolved": {
+            "mean": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          }
+        },
+        "parent_ids": [
+          "blocks-strips-typed-05",
+          "blocks-strips-typed-06",
+          "blocks-strips-typed-07",
+          "blocks-strips-typed-08",
+          "blocks-strips-typed-09",
+          "blocks-strips-typed-10",
+          "blocks-strips-typed-11",
+          "blocks-strips-typed-12",
+          "logistics-strips-typed-05",
+          "logistics-strips-typed-06",
+          "logistics-strips-typed-07",
+          "logistics-strips-typed-08",
+          "logistics-strips-typed-09",
+          "logistics-strips-typed-10"
+        ],
+        "n_permissions": 672,
+        "raw_false_current_permissions": 0.0,
+        "n_decisions": 672,
+        "n_parents": 14
+      }
+    },
+    "delayed": {
+      "M0": {
+        "metrics": {
+          "false_current_permission": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 0,
+            "zero_event_parent_upper_95": 0.19263617565013536,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "invalid_continuation_permission": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 0,
+            "zero_event_parent_upper_95": 0.19263617565013536,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "goal_completion": {
+            "mean": 0.49404761904761896,
+            "ci": [
+              0.494047619047619,
+              0.494047619047619
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "valid_continuation": {
+            "mean": 0.49404761904761896,
+            "ci": [
+              0.494047619047619,
+              0.494047619047619
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "abstention": {
+            "mean": 0.505952380952381,
+            "ci": [
+              0.5059523809523809,
+              0.5059523809523809
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "unnecessary_abstention": {
+            "mean": 0.505952380952381,
+            "ci": [
+              0.5059523809523809,
+              0.5059523809523809
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "justified_abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "recovery_invoked": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_count": {
+            "mean": 0.8928571428571429,
+            "ci": [
+              0.8928571428571429,
+              0.8928571428571429
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "simulated_cost": {
+            "mean": 7.458333333333333,
+            "ci": [
+              6.339285714285714,
+              8.517857142857142
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "decision_seconds": {
+            "mean": 0.0012482099749225504,
+            "ci": [
+              0.0011997448618612473,
+              0.0012985080677459509
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_seconds": {
+            "mean": 4.642493357615811e-06,
+            "ci": [
+              4.387438994377763e-06,
+              4.903378603991032e-06
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "classification_resolved": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          }
+        },
+        "parent_ids": [
+          "blocks-strips-typed-05",
+          "blocks-strips-typed-06",
+          "blocks-strips-typed-07",
+          "blocks-strips-typed-08",
+          "blocks-strips-typed-09",
+          "blocks-strips-typed-10",
+          "blocks-strips-typed-11",
+          "blocks-strips-typed-12",
+          "logistics-strips-typed-05",
+          "logistics-strips-typed-06",
+          "logistics-strips-typed-07",
+          "logistics-strips-typed-08",
+          "logistics-strips-typed-09",
+          "logistics-strips-typed-10"
+        ],
+        "n_permissions": 332,
+        "raw_false_current_permissions": 0.0,
+        "n_decisions": 672,
+        "n_parents": 14
+      },
+      "M1": {
+        "metrics": {
+          "false_current_permission": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 0,
+            "zero_event_parent_upper_95": 0.19263617565013536,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "invalid_continuation_permission": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 0,
+            "zero_event_parent_upper_95": 0.19263617565013536,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "goal_completion": {
+            "mean": 0.773809523809524,
+            "ci": [
+              0.75,
+              0.8035714285714286
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "valid_continuation": {
+            "mean": 0.773809523809524,
+            "ci": [
+              0.75,
+              0.8035714285714286
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "abstention": {
+            "mean": 0.2261904761904761,
+            "ci": [
+              0.19642857142857142,
+              0.25
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "unnecessary_abstention": {
+            "mean": 0.2261904761904761,
+            "ci": [
+              0.19642857142857142,
+              0.25
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "justified_abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "recovery_invoked": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_count": {
+            "mean": 0.5952380952380951,
+            "ci": [
+              0.5535714285714286,
+              0.6309523809523808
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "simulated_cost": {
+            "mean": 8.285714285714286,
+            "ci": [
+              6.981845238095238,
+              9.446428571428571
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "decision_seconds": {
+            "mean": 0.0013892773619902851,
+            "ci": [
+              0.00117247965791605,
+              0.0015839398321120476
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_seconds": {
+            "mean": 2.865817112338153e-06,
+            "ci": [
+              2.5486784319842367e-06,
+              3.1670632303021624e-06
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "classification_resolved": {
+            "mean": 0.773809523809524,
+            "ci": [
+              0.75,
+              0.8035714285714286
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          }
+        },
+        "parent_ids": [
+          "blocks-strips-typed-05",
+          "blocks-strips-typed-06",
+          "blocks-strips-typed-07",
+          "blocks-strips-typed-08",
+          "blocks-strips-typed-09",
+          "blocks-strips-typed-10",
+          "blocks-strips-typed-11",
+          "blocks-strips-typed-12",
+          "logistics-strips-typed-05",
+          "logistics-strips-typed-06",
+          "logistics-strips-typed-07",
+          "logistics-strips-typed-08",
+          "logistics-strips-typed-09",
+          "logistics-strips-typed-10"
+        ],
+        "n_permissions": 520,
+        "raw_false_current_permissions": 0.0,
+        "n_decisions": 672,
+        "n_parents": 14
+      },
+      "M2": {
+        "metrics": {
+          "false_current_permission": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 0,
+            "zero_event_parent_upper_95": 0.19263617565013536,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "invalid_continuation_permission": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 0,
+            "zero_event_parent_upper_95": 0.19263617565013536,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "goal_completion": {
+            "mean": 0.6026785714285714,
+            "ci": [
+              0.5803571428571429,
+              0.6279761904761906
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "valid_continuation": {
+            "mean": 0.6026785714285714,
+            "ci": [
+              0.5803571428571429,
+              0.6279761904761906
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "abstention": {
+            "mean": 0.39732142857142855,
+            "ci": [
+              0.3720238095238095,
+              0.4196428571428571
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "unnecessary_abstention": {
+            "mean": 0.39732142857142855,
+            "ci": [
+              0.3720238095238095,
+              0.4196428571428571
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "justified_abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "recovery_invoked": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_count": {
+            "mean": 1.3928571428571428,
+            "ci": [
+              1.3928571428571428,
+              1.3928571428571428
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "simulated_cost": {
+            "mean": 8.324404761904761,
+            "ci": [
+              7.164918154761905,
+              9.393005952380951
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "decision_seconds": {
+            "mean": 0.0013598969571397728,
+            "ci": [
+              0.0011484087527822429,
+              0.0015547790160088059
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_seconds": {
+            "mean": 8.253047001614635e-06,
+            "ci": [
+              6.559891577732439e-06,
+              1.1163732060161974e-05
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "classification_resolved": {
+            "mean": 0.6026785714285714,
+            "ci": [
+              0.5803571428571429,
+              0.6279761904761906
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          }
+        },
+        "parent_ids": [
+          "blocks-strips-typed-05",
+          "blocks-strips-typed-06",
+          "blocks-strips-typed-07",
+          "blocks-strips-typed-08",
+          "blocks-strips-typed-09",
+          "blocks-strips-typed-10",
+          "blocks-strips-typed-11",
+          "blocks-strips-typed-12",
+          "logistics-strips-typed-05",
+          "logistics-strips-typed-06",
+          "logistics-strips-typed-07",
+          "logistics-strips-typed-08",
+          "logistics-strips-typed-09",
+          "logistics-strips-typed-10"
+        ],
+        "n_permissions": 405,
+        "raw_false_current_permissions": 0.0,
+        "n_decisions": 672,
+        "n_parents": 14
+      },
+      "M3": {
+        "metrics": {
+          "false_current_permission": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 0,
+            "zero_event_parent_upper_95": 0.19263617565013536,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "invalid_continuation_permission": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 0,
+            "zero_event_parent_upper_95": 0.19263617565013536,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "goal_completion": {
+            "mean": 0.773809523809524,
+            "ci": [
+              0.75,
+              0.8035714285714286
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "valid_continuation": {
+            "mean": 0.773809523809524,
+            "ci": [
+              0.75,
+              0.8035714285714286
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "abstention": {
+            "mean": 0.2261904761904761,
+            "ci": [
+              0.19642857142857142,
+              0.25
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "unnecessary_abstention": {
+            "mean": 0.2261904761904761,
+            "ci": [
+              0.19642857142857142,
+              0.25
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "justified_abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "recovery_invoked": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_count": {
+            "mean": 0.5952380952380951,
+            "ci": [
+              0.5535714285714286,
+              0.630952380952381
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "simulated_cost": {
+            "mean": 8.285714285714286,
+            "ci": [
+              7.089285714285714,
+              9.410714285714286
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "decision_seconds": {
+            "mean": 0.0013675505861534647,
+            "ci": [
+              0.0011679062644491622,
+              0.0015677788137725742
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_seconds": {
+            "mean": 4.060042556375265e-06,
+            "ci": [
+              2.6438835404752306e-06,
+              6.666187151235395e-06
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "classification_resolved": {
+            "mean": 0.773809523809524,
+            "ci": [
+              0.75,
+              0.8035714285714286
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          }
+        },
+        "parent_ids": [
+          "blocks-strips-typed-05",
+          "blocks-strips-typed-06",
+          "blocks-strips-typed-07",
+          "blocks-strips-typed-08",
+          "blocks-strips-typed-09",
+          "blocks-strips-typed-10",
+          "blocks-strips-typed-11",
+          "blocks-strips-typed-12",
+          "logistics-strips-typed-05",
+          "logistics-strips-typed-06",
+          "logistics-strips-typed-07",
+          "logistics-strips-typed-08",
+          "logistics-strips-typed-09",
+          "logistics-strips-typed-10"
+        ],
+        "n_permissions": 520,
+        "raw_false_current_permissions": 0.0,
+        "n_decisions": 672,
+        "n_parents": 14
+      },
+      "M3_no_consequence": {
+        "metrics": {
+          "false_current_permission": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 0,
+            "zero_event_parent_upper_95": 0.19263617565013536,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "invalid_continuation_permission": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 0,
+            "zero_event_parent_upper_95": 0.19263617565013536,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "goal_completion": {
+            "mean": 0.773809523809524,
+            "ci": [
+              0.75,
+              0.8035714285714286
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "valid_continuation": {
+            "mean": 0.773809523809524,
+            "ci": [
+              0.75,
+              0.8035714285714286
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "abstention": {
+            "mean": 0.2261904761904761,
+            "ci": [
+              0.19642857142857142,
+              0.25
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "unnecessary_abstention": {
+            "mean": 0.2261904761904761,
+            "ci": [
+              0.19642857142857142,
+              0.25
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "justified_abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "recovery_invoked": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_count": {
+            "mean": 0.5952380952380951,
+            "ci": [
+              0.5535714285714286,
+              0.6309523809523808
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "simulated_cost": {
+            "mean": 8.285714285714286,
+            "ci": [
+              7.107142857142857,
+              9.43467261904762
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "decision_seconds": {
+            "mean": 0.0013738932823235655,
+            "ci": [
+              0.0011729485780701259,
+              0.0015800658467491125
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_seconds": {
+            "mean": 2.871093913979296e-06,
+            "ci": [
+              2.5667163797715193e-06,
+              3.1921095017293864e-06
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "classification_resolved": {
+            "mean": 0.773809523809524,
+            "ci": [
+              0.75,
+              0.8035714285714286
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          }
+        },
+        "parent_ids": [
+          "blocks-strips-typed-05",
+          "blocks-strips-typed-06",
+          "blocks-strips-typed-07",
+          "blocks-strips-typed-08",
+          "blocks-strips-typed-09",
+          "blocks-strips-typed-10",
+          "blocks-strips-typed-11",
+          "blocks-strips-typed-12",
+          "logistics-strips-typed-05",
+          "logistics-strips-typed-06",
+          "logistics-strips-typed-07",
+          "logistics-strips-typed-08",
+          "logistics-strips-typed-09",
+          "logistics-strips-typed-10"
+        ],
+        "n_permissions": 520,
+        "raw_false_current_permissions": 0.0,
+        "n_decisions": 672,
+        "n_parents": 14
+      }
+    },
+    "noise05": {
+      "M0": {
+        "metrics": {
+          "false_current_permission": {
+            "mean": 0.005952380952380952,
+            "ci": [
+              0.0,
+              0.017857142857142856
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 1,
+            "zero_event_parent_upper_95": null,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "invalid_continuation_permission": {
+            "mean": 0.005952380952380952,
+            "ci": [
+              0.0,
+              0.017857142857142856
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 1,
+            "zero_event_parent_upper_95": null,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "goal_completion": {
+            "mean": 0.9285714285714283,
+            "ci": [
+              0.9047619047619048,
+              0.9583333333333334
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "valid_continuation": {
+            "mean": 0.9285714285714283,
+            "ci": [
+              0.9047619047619048,
+              0.9583333333333334
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "abstention": {
+            "mean": 0.0654761904761905,
+            "ci": [
+              0.041666666666666664,
+              0.08928571428571429
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "unnecessary_abstention": {
+            "mean": 0.0654761904761905,
+            "ci": [
+              0.041666666666666664,
+              0.08928571428571429
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "justified_abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "recovery_invoked": {
+            "mean": 0.07142857142857142,
+            "ci": [
+              0.041666666666666664,
+              0.09523809523809525
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_count": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "simulated_cost": {
+            "mean": 8.595238095238095,
+            "ci": [
+              7.1125,
+              9.821428571428571
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "decision_seconds": {
+            "mean": 0.0009508040581879739,
+            "ci": [
+              0.0009330866378669659,
+              0.0009725733164183718
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_seconds": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "classification_resolved": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          }
+        },
+        "parent_ids": [
+          "blocks-strips-typed-05",
+          "blocks-strips-typed-06",
+          "blocks-strips-typed-07",
+          "blocks-strips-typed-08",
+          "blocks-strips-typed-09",
+          "blocks-strips-typed-10",
+          "blocks-strips-typed-11",
+          "blocks-strips-typed-12",
+          "logistics-strips-typed-05",
+          "logistics-strips-typed-06",
+          "logistics-strips-typed-07",
+          "logistics-strips-typed-08",
+          "logistics-strips-typed-09",
+          "logistics-strips-typed-10"
+        ],
+        "n_permissions": 628,
+        "raw_false_current_permissions": 4.0,
+        "n_decisions": 672,
+        "n_parents": 14
+      },
+      "M1": {
+        "metrics": {
+          "false_current_permission": {
+            "mean": 0.03571428571428571,
+            "ci": [
+              0.011904761904761904,
+              0.06547619047619048
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 5,
+            "zero_event_parent_upper_95": null,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "invalid_continuation_permission": {
+            "mean": 0.03571428571428571,
+            "ci": [
+              0.011904761904761904,
+              0.06547619047619048
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 5,
+            "zero_event_parent_upper_95": null,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "goal_completion": {
+            "mean": 0.6785714285714286,
+            "ci": [
+              0.6071428571428571,
+              0.7441964285714279
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "valid_continuation": {
+            "mean": 0.6785714285714286,
+            "ci": [
+              0.6071428571428571,
+              0.7441964285714279
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "abstention": {
+            "mean": 0.2857142857142857,
+            "ci": [
+              0.22023809523809526,
+              0.3511904761904762
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "unnecessary_abstention": {
+            "mean": 0.2857142857142857,
+            "ci": [
+              0.22023809523809526,
+              0.3511904761904762
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "justified_abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "recovery_invoked": {
+            "mean": 0.32142857142857145,
+            "ci": [
+              0.2558035714285714,
+              0.39285714285714285
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_count": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "simulated_cost": {
+            "mean": 6.1428571428571415,
+            "ci": [
+              5.023809523809525,
+              7.32157738095238
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "decision_seconds": {
+            "mean": 0.0007438908897234969,
+            "ci": [
+              0.0006468680954207056,
+              0.0008500284084047528
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_seconds": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "classification_resolved": {
+            "mean": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          }
+        },
+        "parent_ids": [
+          "blocks-strips-typed-05",
+          "blocks-strips-typed-06",
+          "blocks-strips-typed-07",
+          "blocks-strips-typed-08",
+          "blocks-strips-typed-09",
+          "blocks-strips-typed-10",
+          "blocks-strips-typed-11",
+          "blocks-strips-typed-12",
+          "logistics-strips-typed-05",
+          "logistics-strips-typed-06",
+          "logistics-strips-typed-07",
+          "logistics-strips-typed-08",
+          "logistics-strips-typed-09",
+          "logistics-strips-typed-10"
+        ],
+        "n_permissions": 480,
+        "raw_false_current_permissions": 24.0,
+        "n_decisions": 672,
+        "n_parents": 14
+      },
+      "M2": {
+        "metrics": {
+          "false_current_permission": {
+            "mean": 0.03571428571428571,
+            "ci": [
+              0.011904761904761904,
+              0.06547619047619048
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 5,
+            "zero_event_parent_upper_95": null,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "invalid_continuation_permission": {
+            "mean": 0.03571428571428571,
+            "ci": [
+              0.011904761904761904,
+              0.06547619047619048
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 5,
+            "zero_event_parent_upper_95": null,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "goal_completion": {
+            "mean": 0.6785714285714286,
+            "ci": [
+              0.6071428571428571,
+              0.75
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "valid_continuation": {
+            "mean": 0.6785714285714286,
+            "ci": [
+              0.6071428571428571,
+              0.75
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "abstention": {
+            "mean": 0.2857142857142857,
+            "ci": [
+              0.2202380952380952,
+              0.3511904761904763
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "unnecessary_abstention": {
+            "mean": 0.2857142857142857,
+            "ci": [
+              0.2202380952380952,
+              0.3511904761904763
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "justified_abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "recovery_invoked": {
+            "mean": 0.32142857142857145,
+            "ci": [
+              0.25,
+              0.39285714285714285
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_count": {
+            "mean": 1.3928571428571428,
+            "ci": [
+              1.3928571428571428,
+              1.3928571428571428
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "simulated_cost": {
+            "mean": 7.5357142857142865,
+            "ci": [
+              6.321279761904762,
+              8.714434523809524
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "decision_seconds": {
+            "mean": 0.0013501427342167258,
+            "ci": [
+              0.001140462088057705,
+              0.0015444751819034402
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_seconds": {
+            "mean": 7.126532312083458e-06,
+            "ci": [
+              6.691455148809057e-06,
+              7.53543584626944e-06
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "classification_resolved": {
+            "mean": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          }
+        },
+        "parent_ids": [
+          "blocks-strips-typed-05",
+          "blocks-strips-typed-06",
+          "blocks-strips-typed-07",
+          "blocks-strips-typed-08",
+          "blocks-strips-typed-09",
+          "blocks-strips-typed-10",
+          "blocks-strips-typed-11",
+          "blocks-strips-typed-12",
+          "logistics-strips-typed-05",
+          "logistics-strips-typed-06",
+          "logistics-strips-typed-07",
+          "logistics-strips-typed-08",
+          "logistics-strips-typed-09",
+          "logistics-strips-typed-10"
+        ],
+        "n_permissions": 480,
+        "raw_false_current_permissions": 24.0,
+        "n_decisions": 672,
+        "n_parents": 14
+      },
+      "M3": {
+        "metrics": {
+          "false_current_permission": {
+            "mean": 0.03571428571428571,
+            "ci": [
+              0.011904761904761904,
+              0.06547619047619047
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 5,
+            "zero_event_parent_upper_95": null,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "invalid_continuation_permission": {
+            "mean": 0.03571428571428571,
+            "ci": [
+              0.011904761904761904,
+              0.06547619047619047
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 5,
+            "zero_event_parent_upper_95": null,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "goal_completion": {
+            "mean": 0.6785714285714286,
+            "ci": [
+              0.6071428571428571,
+              0.75
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "valid_continuation": {
+            "mean": 0.6785714285714286,
+            "ci": [
+              0.6071428571428571,
+              0.75
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "abstention": {
+            "mean": 0.2857142857142857,
+            "ci": [
+              0.22023809523809526,
+              0.3511904761904762
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "unnecessary_abstention": {
+            "mean": 0.2857142857142857,
+            "ci": [
+              0.22023809523809526,
+              0.3511904761904762
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "justified_abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "recovery_invoked": {
+            "mean": 0.32142857142857145,
+            "ci": [
+              0.25,
+              0.39285714285714285
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_count": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "simulated_cost": {
+            "mean": 6.1428571428571415,
+            "ci": [
+              4.982142857142857,
+              7.369196428571429
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "decision_seconds": {
+            "mean": 0.0007100523317127398,
+            "ci": [
+              0.0006220845558086045,
+              0.0007973440630372525
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_seconds": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "classification_resolved": {
+            "mean": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          }
+        },
+        "parent_ids": [
+          "blocks-strips-typed-05",
+          "blocks-strips-typed-06",
+          "blocks-strips-typed-07",
+          "blocks-strips-typed-08",
+          "blocks-strips-typed-09",
+          "blocks-strips-typed-10",
+          "blocks-strips-typed-11",
+          "blocks-strips-typed-12",
+          "logistics-strips-typed-05",
+          "logistics-strips-typed-06",
+          "logistics-strips-typed-07",
+          "logistics-strips-typed-08",
+          "logistics-strips-typed-09",
+          "logistics-strips-typed-10"
+        ],
+        "n_permissions": 480,
+        "raw_false_current_permissions": 24.0,
+        "n_decisions": 672,
+        "n_parents": 14
+      },
+      "M3_no_consequence": {
+        "metrics": {
+          "false_current_permission": {
+            "mean": 0.03571428571428571,
+            "ci": [
+              0.011904761904761904,
+              0.05952380952380953
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 5,
+            "zero_event_parent_upper_95": null,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "invalid_continuation_permission": {
+            "mean": 0.03571428571428571,
+            "ci": [
+              0.011904761904761904,
+              0.05952380952380953
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 5,
+            "zero_event_parent_upper_95": null,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "goal_completion": {
+            "mean": 0.6785714285714286,
+            "ci": [
+              0.6071428571428571,
+              0.7440476190476192
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "valid_continuation": {
+            "mean": 0.6785714285714286,
+            "ci": [
+              0.6071428571428571,
+              0.7440476190476192
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "abstention": {
+            "mean": 0.2857142857142857,
+            "ci": [
+              0.22619047619047614,
+              0.3511904761904762
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "unnecessary_abstention": {
+            "mean": 0.2857142857142857,
+            "ci": [
+              0.22619047619047614,
+              0.3511904761904762
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "justified_abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "recovery_invoked": {
+            "mean": 0.32142857142857145,
+            "ci": [
+              0.25595238095238093,
+              0.39285714285714285
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_count": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "simulated_cost": {
+            "mean": 6.1428571428571415,
+            "ci": [
+              4.93452380952381,
+              7.386904761904761
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "decision_seconds": {
+            "mean": 0.0007029104318852272,
+            "ci": [
+              0.000615417792808633,
+              0.0007862209259699392
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_seconds": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "classification_resolved": {
+            "mean": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          }
+        },
+        "parent_ids": [
+          "blocks-strips-typed-05",
+          "blocks-strips-typed-06",
+          "blocks-strips-typed-07",
+          "blocks-strips-typed-08",
+          "blocks-strips-typed-09",
+          "blocks-strips-typed-10",
+          "blocks-strips-typed-11",
+          "blocks-strips-typed-12",
+          "logistics-strips-typed-05",
+          "logistics-strips-typed-06",
+          "logistics-strips-typed-07",
+          "logistics-strips-typed-08",
+          "logistics-strips-typed-09",
+          "logistics-strips-typed-10"
+        ],
+        "n_permissions": 480,
+        "raw_false_current_permissions": 24.0,
+        "n_decisions": 672,
+        "n_parents": 14
+      }
+    },
+    "invalidated": {
+      "M0": {
+        "metrics": {
+          "false_current_permission": {
+            "mean": 0.005952380952380952,
+            "ci": [
+              0.0,
+              0.01488095238095238
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 2,
+            "zero_event_parent_upper_95": null,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "invalid_continuation_permission": {
+            "mean": 0.1369047619047619,
+            "ci": [
+              0.11309523809523811,
+              0.15773809523809526
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 8,
+            "zero_event_parent_upper_95": null,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "goal_completion": {
+            "mean": 0.08482142857142858,
+            "ci": [
+              0.06398809523809525,
+              0.1056547619047619
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "valid_continuation": {
+            "mean": 0.08482142857142858,
+            "ci": [
+              0.06398809523809525,
+              0.1056547619047619
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "abstention": {
+            "mean": 0.7782738095238095,
+            "ci": [
+              0.7708333333333333,
+              0.7857142857142857
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "unnecessary_abstention": {
+            "mean": 0.1145833333333333,
+            "ci": [
+              0.05952380952380952,
+              0.1845238095238095
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "justified_abstention": {
+            "mean": 0.6636904761904762,
+            "ci": [
+              0.5922619047619049,
+              0.7232142857142857
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "recovery_invoked": {
+            "mean": 0.0386904761904762,
+            "ci": [
+              0.01488095238095238,
+              0.06547619047619048
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_count": {
+            "mean": 1.3898809523809526,
+            "ci": [
+              1.3854166666666667,
+              1.3928571428571428
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "simulated_cost": {
+            "mean": 2.7797619047619047,
+            "ci": [
+              2.394345238095238,
+              3.169642857142857
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "decision_seconds": {
+            "mean": 0.0017478223779194412,
+            "ci": [
+              0.0016185063123495117,
+              0.001867364150694768
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_seconds": {
+            "mean": 9.031111923312503e-06,
+            "ci": [
+              7.247758098639591e-06,
+              1.196587495325643e-05
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "classification_resolved": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          }
+        },
+        "parent_ids": [
+          "blocks-strips-typed-05",
+          "blocks-strips-typed-06",
+          "blocks-strips-typed-07",
+          "blocks-strips-typed-08",
+          "blocks-strips-typed-09",
+          "blocks-strips-typed-10",
+          "blocks-strips-typed-11",
+          "blocks-strips-typed-12",
+          "logistics-strips-typed-05",
+          "logistics-strips-typed-06",
+          "logistics-strips-typed-07",
+          "logistics-strips-typed-08",
+          "logistics-strips-typed-09",
+          "logistics-strips-typed-10"
+        ],
+        "n_permissions": 149,
+        "raw_false_current_permissions": 4.0,
+        "n_decisions": 672,
+        "n_parents": 14
+      },
+      "M1": {
+        "metrics": {
+          "false_current_permission": {
+            "mean": 0.13392857142857142,
+            "ci": [
+              0.09222470238095237,
+              0.19196428571428567
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 9,
+            "zero_event_parent_upper_95": null,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "invalid_continuation_permission": {
+            "mean": 0.15029761904761904,
+            "ci": [
+              0.1056547619047619,
+              0.2068452380952381
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 12,
+            "zero_event_parent_upper_95": null,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "goal_completion": {
+            "mean": 0.19345238095238096,
+            "ci": [
+              0.15323660714285714,
+              0.23962053571428552
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "valid_continuation": {
+            "mean": 0.19345238095238096,
+            "ci": [
+              0.15323660714285714,
+              0.23962053571428552
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "abstention": {
+            "mean": 0.65625,
+            "ci": [
+              0.5907738095238095,
+              0.7202752976190474
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "unnecessary_abstention": {
+            "mean": 0.056547619047619055,
+            "ci": [
+              0.03273809523809524,
+              0.08482142857142858
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "justified_abstention": {
+            "mean": 0.599702380952381,
+            "ci": [
+              0.5208333333333333,
+              0.681547619047619
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "recovery_invoked": {
+            "mean": 0.4732142857142857,
+            "ci": [
+              0.41517857142857145,
+              0.5312872023809522
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_count": {
+            "mean": 0.7708333333333333,
+            "ci": [
+              0.7276413690476189,
+              0.8184523809523808
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "simulated_cost": {
+            "mean": 3.330357142857143,
+            "ci": [
+              2.424107142857143,
+              4.321502976190476
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "decision_seconds": {
+            "mean": 0.0018293039857304567,
+            "ci": [
+              0.0015460566030274742,
+              0.0021145011543488913
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_seconds": {
+            "mean": 5.369103053540346e-06,
+            "ci": [
+              4.732937642464614e-06,
+              6.044224981104932e-06
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "classification_resolved": {
+            "mean": 0.7276785714285714,
+            "ci": [
+              0.7083333333333333,
+              0.7470238095238094
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          }
+        },
+        "parent_ids": [
+          "blocks-strips-typed-05",
+          "blocks-strips-typed-06",
+          "blocks-strips-typed-07",
+          "blocks-strips-typed-08",
+          "blocks-strips-typed-09",
+          "blocks-strips-typed-10",
+          "blocks-strips-typed-11",
+          "blocks-strips-typed-12",
+          "logistics-strips-typed-05",
+          "logistics-strips-typed-06",
+          "logistics-strips-typed-07",
+          "logistics-strips-typed-08",
+          "logistics-strips-typed-09",
+          "logistics-strips-typed-10"
+        ],
+        "n_permissions": 231,
+        "raw_false_current_permissions": 90.0,
+        "n_decisions": 672,
+        "n_parents": 14
+      },
+      "M2": {
+        "metrics": {
+          "false_current_permission": {
+            "mean": 0.055059523809523815,
+            "ci": [
+              0.029724702380952383,
+              0.08482142857142856
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 8,
+            "zero_event_parent_upper_95": null,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "invalid_continuation_permission": {
+            "mean": 0.06101190476190477,
+            "ci": [
+              0.03571428571428571,
+              0.08928571428571429
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 11,
+            "zero_event_parent_upper_95": null,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "goal_completion": {
+            "mean": 0.2619047619047619,
+            "ci": [
+              0.24404761904761907,
+              0.2827380952380953
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "valid_continuation": {
+            "mean": 0.2619047619047619,
+            "ci": [
+              0.24404761904761907,
+              0.2827380952380953
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "abstention": {
+            "mean": 0.6770833333333334,
+            "ci": [
+              0.6398809523809526,
+              0.7083333333333333
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "unnecessary_abstention": {
+            "mean": 0.09077380952380953,
+            "ci": [
+              0.04014136904761905,
+              0.14583333333333331
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "justified_abstention": {
+            "mean": 0.5863095238095237,
+            "ci": [
+              0.5163690476190477,
+              0.6547619047619048
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "recovery_invoked": {
+            "mean": 0.4613095238095238,
+            "ci": [
+              0.42113095238095244,
+              0.5029761904761905
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_count": {
+            "mean": 1.3928571428571428,
+            "ci": [
+              1.3928571428571428,
+              1.3928571428571428
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "simulated_cost": {
+            "mean": 4.34375,
+            "ci": [
+              3.596614583333333,
+              5.028422619047619
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "decision_seconds": {
+            "mean": 0.0012616291437769266,
+            "ci": [
+              0.0010650584962041605,
+              0.0014442002282175096
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_seconds": {
+            "mean": 7.311680487224035e-06,
+            "ci": [
+              6.921977841383999e-06,
+              7.70649380033969e-06
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "classification_resolved": {
+            "mean": 0.5892857142857143,
+            "ci": [
+              0.5491071428571429,
+              0.6279761904761906
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          }
+        },
+        "parent_ids": [
+          "blocks-strips-typed-05",
+          "blocks-strips-typed-06",
+          "blocks-strips-typed-07",
+          "blocks-strips-typed-08",
+          "blocks-strips-typed-09",
+          "blocks-strips-typed-10",
+          "blocks-strips-typed-11",
+          "blocks-strips-typed-12",
+          "logistics-strips-typed-05",
+          "logistics-strips-typed-06",
+          "logistics-strips-typed-07",
+          "logistics-strips-typed-08",
+          "logistics-strips-typed-09",
+          "logistics-strips-typed-10"
+        ],
+        "n_permissions": 217,
+        "raw_false_current_permissions": 37.0,
+        "n_decisions": 672,
+        "n_parents": 14
+      },
+      "M3": {
+        "metrics": {
+          "false_current_permission": {
+            "mean": 0.13392857142857142,
+            "ci": [
+              0.08928571428571429,
+              0.1904761904761905
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 9,
+            "zero_event_parent_upper_95": null,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "invalid_continuation_permission": {
+            "mean": 0.15029761904761904,
+            "ci": [
+              0.10416666666666666,
+              0.20684523809523808
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 12,
+            "zero_event_parent_upper_95": null,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "goal_completion": {
+            "mean": 0.20238095238095238,
+            "ci": [
+              0.1592261904761905,
+              0.24408482142857124
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "valid_continuation": {
+            "mean": 0.20238095238095238,
+            "ci": [
+              0.1592261904761905,
+              0.24408482142857124
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "abstention": {
+            "mean": 0.6473214285714287,
+            "ci": [
+              0.5863095238095238,
+              0.7113095238095237
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "unnecessary_abstention": {
+            "mean": 0.056547619047619055,
+            "ci": [
+              0.029761904761904764,
+              0.08333333333333334
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "justified_abstention": {
+            "mean": 0.5907738095238095,
+            "ci": [
+              0.5163690476190477,
+              0.6711309523809524
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "recovery_invoked": {
+            "mean": 0.4657738095238096,
+            "ci": [
+              0.41220238095238093,
+              0.5267857142857142
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_count": {
+            "mean": 0.7827380952380951,
+            "ci": [
+              0.7425223214285713,
+              0.8303943452380951
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "simulated_cost": {
+            "mean": 3.392857142857143,
+            "ci": [
+              2.455357142857143,
+              4.343787202380952
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "decision_seconds": {
+            "mean": 0.0018636944459146996,
+            "ci": [
+              0.0015738344411407265,
+              0.0021557119709974533
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_seconds": {
+            "mean": 5.220265371636266e-06,
+            "ci": [
+              4.596801625753176e-06,
+              5.953296845074788e-06
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "classification_resolved": {
+            "mean": 0.7202380952380951,
+            "ci": [
+              0.6979166666666667,
+              0.7395833333333334
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          }
+        },
+        "parent_ids": [
+          "blocks-strips-typed-05",
+          "blocks-strips-typed-06",
+          "blocks-strips-typed-07",
+          "blocks-strips-typed-08",
+          "blocks-strips-typed-09",
+          "blocks-strips-typed-10",
+          "blocks-strips-typed-11",
+          "blocks-strips-typed-12",
+          "logistics-strips-typed-05",
+          "logistics-strips-typed-06",
+          "logistics-strips-typed-07",
+          "logistics-strips-typed-08",
+          "logistics-strips-typed-09",
+          "logistics-strips-typed-10"
+        ],
+        "n_permissions": 237,
+        "raw_false_current_permissions": 90.0,
+        "n_decisions": 672,
+        "n_parents": 14
+      },
+      "M3_no_consequence": {
+        "metrics": {
+          "false_current_permission": {
+            "mean": 0.13392857142857142,
+            "ci": [
+              0.08928571428571429,
+              0.1889880952380953
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 9,
+            "zero_event_parent_upper_95": null,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "invalid_continuation_permission": {
+            "mean": 0.15029761904761904,
+            "ci": [
+              0.10267857142857144,
+              0.2068452380952381
+            ],
+            "n_parents": 14,
+            "n_decisions": 672,
+            "event_parents": 12,
+            "zero_event_parent_upper_95": null,
+            "bound_scope": "Probability a parent has any observed event under this tested schedule; not per-action physical safety"
+          },
+          "goal_completion": {
+            "mean": 0.19345238095238096,
+            "ci": [
+              0.15178571428571427,
+              0.23809523809523808
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "valid_continuation": {
+            "mean": 0.19345238095238096,
+            "ci": [
+              0.15178571428571427,
+              0.23809523809523808
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "abstention": {
+            "mean": 0.65625,
+            "ci": [
+              0.5967261904761905,
+              0.7202380952380951
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "unnecessary_abstention": {
+            "mean": 0.056547619047619055,
+            "ci": [
+              0.03125,
+              0.08482142857142858
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "justified_abstention": {
+            "mean": 0.599702380952381,
+            "ci": [
+              0.5223214285714286,
+              0.680096726190476
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "recovery_invoked": {
+            "mean": 0.4732142857142857,
+            "ci": [
+              0.4166666666666667,
+              0.5327380952380952
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_count": {
+            "mean": 0.7708333333333333,
+            "ci": [
+              0.7276785714285714,
+              0.8214285714285714
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "simulated_cost": {
+            "mean": 3.330357142857143,
+            "ci": [
+              2.415104166666667,
+              4.302120535714286
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "decision_seconds": {
+            "mean": 0.0018328964672816388,
+            "ci": [
+              0.001536047391259455,
+              0.0021064891549031016
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "query_seconds": {
+            "mean": 6.81812560374272e-06,
+            "ci": [
+              4.876204383479143e-06,
+              9.83798107058863e-06
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          },
+          "classification_resolved": {
+            "mean": 0.7276785714285714,
+            "ci": [
+              0.7053571428571429,
+              0.7470238095238094
+            ],
+            "n_parents": 14,
+            "n_decisions": 672
+          }
+        },
+        "parent_ids": [
+          "blocks-strips-typed-05",
+          "blocks-strips-typed-06",
+          "blocks-strips-typed-07",
+          "blocks-strips-typed-08",
+          "blocks-strips-typed-09",
+          "blocks-strips-typed-10",
+          "blocks-strips-typed-11",
+          "blocks-strips-typed-12",
+          "logistics-strips-typed-05",
+          "logistics-strips-typed-06",
+          "logistics-strips-typed-07",
+          "logistics-strips-typed-08",
+          "logistics-strips-typed-09",
+          "logistics-strips-typed-10"
+        ],
+        "n_permissions": 231,
+        "raw_false_current_permissions": 90.0,
+        "n_decisions": 672,
+        "n_parents": 14
+      }
+    }
+  },
+  "accurate_regime_query_relevance": {
+    "M0": {
+      "decisions": 4032,
+      "query_events": 4163,
+      "wholly_model_structurally_irrelevant_calls": 2615,
+      "total_atom_reads": 73944,
+      "atom_reads_outside_model_relevance_closure": 70839,
+      "observed_answer_outside_prior_model_events": 0
+    },
+    "M1": {
+      "decisions": 4032,
+      "query_events": 2498,
+      "wholly_model_structurally_irrelevant_calls": 0,
+      "total_atom_reads": 53591,
+      "atom_reads_outside_model_relevance_closure": 48748,
+      "observed_answer_outside_prior_model_events": 0
+    },
+    "M2": {
+      "decisions": 4032,
+      "query_events": 5616,
+      "wholly_model_structurally_irrelevant_calls": 4068,
+      "total_atom_reads": 100206,
+      "atom_reads_outside_model_relevance_closure": 97101,
+      "observed_answer_outside_prior_model_events": 0
+    },
+    "M3": {
+      "decisions": 4032,
+      "query_events": 2498,
+      "wholly_model_structurally_irrelevant_calls": 0,
+      "total_atom_reads": 52259,
+      "atom_reads_outside_model_relevance_closure": 47449,
+      "observed_answer_outside_prior_model_events": 0
+    }
+  },
+  "secondary_counts": {
+    "M0/complete": {
+      "decisions": 672,
+      "permissions": 672,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M1/complete": {
+      "decisions": 672,
+      "permissions": 672,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M2/complete": {
+      "decisions": 672,
+      "permissions": 672,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M3/complete": {
+      "decisions": 672,
+      "permissions": 672,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M3_no_consequence/complete": {
+      "decisions": 672,
+      "permissions": 672,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M4/complete": {
+      "decisions": 672,
+      "permissions": 672,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M0/missing10": {
+      "decisions": 672,
+      "permissions": 198,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M1/missing10": {
+      "decisions": 672,
+      "permissions": 562,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M2/missing10": {
+      "decisions": 672,
+      "permissions": 449,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M3/missing10": {
+      "decisions": 672,
+      "permissions": 562,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M3_no_consequence/missing10": {
+      "decisions": 672,
+      "permissions": 562,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M4/missing10": {
+      "decisions": 668,
+      "permissions": 559,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M0/missing30": {
+      "decisions": 672,
+      "permissions": 146,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M1/missing30": {
+      "decisions": 672,
+      "permissions": 417,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M2/missing30": {
+      "decisions": 672,
+      "permissions": 247,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M3/missing30": {
+      "decisions": 672,
+      "permissions": 417,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M3_no_consequence/missing30": {
+      "decisions": 672,
+      "permissions": 417,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M0/missing50": {
+      "decisions": 672,
+      "permissions": 146,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M1/missing50": {
+      "decisions": 672,
+      "permissions": 332,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M2/missing50": {
+      "decisions": 672,
+      "permissions": 200,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M3/missing50": {
+      "decisions": 672,
+      "permissions": 332,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M3_no_consequence/missing50": {
+      "decisions": 672,
+      "permissions": 332,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M0/structured": {
+      "decisions": 672,
+      "permissions": 296,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M1/structured": {
+      "decisions": 672,
+      "permissions": 547,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M2/structured": {
+      "decisions": 672,
+      "permissions": 388,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M3/structured": {
+      "decisions": 672,
+      "permissions": 547,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M3_no_consequence/structured": {
+      "decisions": 672,
+      "permissions": 547,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M4/structured": {
+      "decisions": 336,
+      "permissions": 275,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M0/delayed": {
+      "decisions": 672,
+      "permissions": 332,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M1/delayed": {
+      "decisions": 672,
+      "permissions": 520,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M2/delayed": {
+      "decisions": 672,
+      "permissions": 405,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M3/delayed": {
+      "decisions": 672,
+      "permissions": 520,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M3_no_consequence/delayed": {
+      "decisions": 672,
+      "permissions": 520,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M4/delayed": {
+      "decisions": 672,
+      "permissions": 520,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    },
+    "M0/noise05": {
+      "decisions": 672,
+      "permissions": 628,
+      "false_current": 4,
+      "invalid_suffix": 4,
+      "recovery_invocations": 48,
+      "certified_repairs": 4,
+      "repair_limit_hits": 40,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 5.206637024999971
+    },
+    "M1/noise05": {
+      "decisions": 672,
+      "permissions": 480,
+      "false_current": 24,
+      "invalid_suffix": 24,
+      "recovery_invocations": 216,
+      "certified_repairs": 24,
+      "repair_limit_hits": 338,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 35.97374344399981
+    },
+    "M2/noise05": {
+      "decisions": 672,
+      "permissions": 480,
+      "false_current": 24,
+      "invalid_suffix": 24,
+      "recovery_invocations": 216,
+      "certified_repairs": 24,
+      "repair_limit_hits": 336,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 35.86247639200001
+    },
+    "M3/noise05": {
+      "decisions": 672,
+      "permissions": 480,
+      "false_current": 24,
+      "invalid_suffix": 24,
+      "recovery_invocations": 216,
+      "certified_repairs": 24,
+      "repair_limit_hits": 338,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 35.88659247300039
+    },
+    "M3_no_consequence/noise05": {
+      "decisions": 672,
+      "permissions": 480,
+      "false_current": 24,
+      "invalid_suffix": 24,
+      "recovery_invocations": 216,
+      "certified_repairs": 24,
+      "repair_limit_hits": 336,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 36.04070254299997
+    },
+    "M0/invalidated": {
+      "decisions": 672,
+      "permissions": 149,
+      "false_current": 4,
+      "invalid_suffix": 92,
+      "recovery_invocations": 26,
+      "certified_repairs": 26,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 516,
+      "correctly_detected": 24,
+      "detection_query_total": 48,
+      "never_detected": 492,
+      "recovery_cpu_seconds": 0.10680742900004248
+    },
+    "M1/invalidated": {
+      "decisions": 672,
+      "permissions": 231,
+      "false_current": 90,
+      "invalid_suffix": 101,
+      "recovery_invocations": 318,
+      "certified_repairs": 60,
+      "repair_limit_hits": 333,
+      "actually_invalid_initially_unresolved": 516,
+      "correctly_detected": 318,
+      "detection_query_total": 340,
+      "never_detected": 198,
+      "recovery_cpu_seconds": 35.30542794599992
+    },
+    "M2/invalidated": {
+      "decisions": 672,
+      "permissions": 217,
+      "false_current": 37,
+      "invalid_suffix": 41,
+      "recovery_invocations": 310,
+      "certified_repairs": 131,
+      "repair_limit_hits": 77,
+      "actually_invalid_initially_unresolved": 516,
+      "correctly_detected": 289,
+      "detection_query_total": 582,
+      "never_detected": 227,
+      "recovery_cpu_seconds": 10.05158917000017
+    },
+    "M3/invalidated": {
+      "decisions": 672,
+      "permissions": 237,
+      "false_current": 90,
+      "invalid_suffix": 101,
+      "recovery_invocations": 313,
+      "certified_repairs": 66,
+      "repair_limit_hits": 313,
+      "actually_invalid_initially_unresolved": 516,
+      "correctly_detected": 313,
+      "detection_query_total": 341,
+      "never_detected": 203,
+      "recovery_cpu_seconds": 33.08732741500007
+    },
+    "M3_no_consequence/invalidated": {
+      "decisions": 672,
+      "permissions": 231,
+      "false_current": 90,
+      "invalid_suffix": 101,
+      "recovery_invocations": 318,
+      "certified_repairs": 60,
+      "repair_limit_hits": 333,
+      "actually_invalid_initially_unresolved": 516,
+      "correctly_detected": 318,
+      "detection_query_total": 340,
+      "never_detected": 198,
+      "recovery_cpu_seconds": 35.303051397999866
+    },
+    "M4/missing30": {
+      "decisions": 136,
+      "permissions": 97,
+      "false_current": 0,
+      "invalid_suffix": 0,
+      "recovery_invocations": 0,
+      "certified_repairs": 0,
+      "repair_limit_hits": 0,
+      "actually_invalid_initially_unresolved": 0,
+      "correctly_detected": 0,
+      "detection_query_total": 0,
+      "never_detected": 0,
+      "recovery_cpu_seconds": 0.0
+    }
+  },
+  "detection_scope": "Actually invalid nominal suffix AND initial model-relative status UNRESOLVED; detection is final method INVALID/CURRENT_INVALID. Undetected retained explicitly."
+}

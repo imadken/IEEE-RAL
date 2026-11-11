@@ -1,0 +1,285 @@
+# Independent scientific and implementation review
+
+Initial blind review: 11 November 2026, approximately 12:43–12:48 UTC. No
+qualification outcome records were opened during that phase. The root researcher
+authorized reading completed qualification results after 12:48 UTC; the separate
+post-qualification section below records that assessment. No source, protocol,
+dependency or experiment file was changed by either review. A second read-only
+reviewer checked recovery and semantics.
+
+The qualification seal identifies implementation commit
+a7786cbe4f87ec7be28f2d501f2b4650c4aa9dd7. SHA-256 verification of every entry in
+results/monitoring-study/20261111T121002Z/qualification_seal.json found all 27
+sealed files unchanged. Current HEAD may contain later administrative commits;
+the checked source still matches the pre-qualification seal.
+
+## Disposition
+
+No hidden actual-state input or unsound certification path was found in the
+reviewed deployed M1/M3 scheduler, exact reference or accepted recovery path.
+No change to the frozen method or additional benchmark is recommended. The
+major limitation is scientific: the primary experiment structurally reduces to
+truthful evaluation of a conjunction and cannot demonstrate a recovery-sensitive
+advantage from changing the order of disjoint necessary observation groups.
+
+## 1. Primary findings are certificate-acquisition controls
+
+observations.py:51 starts every episode at its validated nominal checkpoint
+state. Missing and structured regimes only remove readings (59–68); delayed
+readings invalidate the written atoms (69–83), leaving a sound partial view of
+the same nominal state. Actual world transitions occur only in the external
+invalidation regime (84–101). Noise changes reports, not the nominal world
+(103–110). Thus complete/missing/structured/delayed nominal continuations are
+valid by construction. The primary subset contains no genuinely invalid nominal
+suffixes under accurate sensing.
+
+This has a precise standard explanation. benchmarks.py:_model supplies only
+static/equality unit constraints for these domains. Dynamic observations are
+partitioned into disjoint predicate-kind groups; a fixed deterministic STRIPS
+continuation has a conjunctive regressed obligation. On a valid world, every
+unknown necessary group must be acquired to certify that conjunction. Each query
+resolves its entire group. M1 and M3 therefore both make min(B,k) additional calls
+and certify iff B >= k, where k is the number of unresolved necessary groups.
+Changing priority can change query order but not this success/count endpoint.
+
+This is classical conjunction/Boolean-function evaluation, not a new theorem.
+It supports an informative Case-B explanation if exact agreement is observed,
+not a field-wide claim that recovery-aware priorities never help. Even a blind
+always-continue strategy would face no true invalid nominal actions in this
+accurate subset, so zero observed current-action errors here cannot establish
+empirical safety discrimination. Unit counterexamples and conditional symbolic
+proof obligations remain separate evidence. Do not add new faults post hoc.
+
+## 2. Runtime inputs and priority are legitimately separated from evaluator truth
+
+methods.py receives Context and a sensing callback; the context excludes actual
+state, future outcomes and regime labels. experiment.py supplies sensor responses
+only for the query named by the scheduler; oracle_state is used afterwards for
+metric evaluation. The common context hash is checked after each method.
+
+M3's priority is frozen nominal-plan metadata, not estimated from held-out
+outcomes. benchmarks.py:_consequence begins at signed START support edges matching
+regressed obligations, follows only causal (condition-bearing) edges and counts
+remaining action descendants. It does not simply count predicate-name mentions.
+Its nominal support graph can be constructed from the validated reference plan
+and its regressed precondition witness; it is not the disturbed actual state.
+M1/M3 share candidates, exact certification, sensing and recovery. The
+M3_no_consequence code path restores M1's count-per-cost score exactly.
+
+This score is a proxy for causal consequence, not measured recovery cost, a
+learned risk score, or an optimal value-of-information calculation. Report it
+accordingly. No actual-state leak was found in this implementation path.
+
+## 3. M0 comparison has a deliberately different decision obligation
+
+methods.py:90–109 invokes unmodified upstream state_gate on the current action's
+preconditions, with common cumulative evidence and all declared dynamic atoms
+tracked. Upstream graph.py:build_graph builds incoming condition edges from those
+same preconditions, so omitting an explicit incoming-edge union in this checkpoint
+projection does not remove additional required literals for the generated graphs.
+Resource scheduling, post-action support checks and repeated embodied monitoring
+are outside this projection, as the protocol states.
+
+M0's global-unknown blocking is preserved. No batch-overwrite disadvantage is
+manufactured: cumulative previously valid readings are returned by the adapter.
+M0 uses the fixed periodic view schedule because upstream observe has no query
+argument. This adapter is not the published original embodied runtime.
+
+M0 permits a current action; M1/M3 certify a whole fixed retained suffix. A
+current-safe/suffix-invalid decision is not an incorrect current-action
+permission. experiment.py:59–89 correctly computes separate selected-first-action
+and selected-continuation outcomes. Any M0-to-M1 improvement is not pure evidence
+allocation efficiency, and none establishes M3's incremental contribution.
+
+## 4. Recovery soundness and one documentation precision correction
+
+The focused second reviewer found no hidden oracle input or unsound acceptance
+path. recovery.py accepts only evidence and the common action library, requires
+known preconditions during search, validates the complete repaired continuation,
+and rechecks its universal validity before returning success (146–154). A planner
+can miss a plan whose preconditions follow only via CNF implications because the
+upstream State.holds check does not derive those implications. This is conservative
+incompleteness, not false permission.
+
+Concrete cap precision: stats['expanded'] is initialized once per recover call
+(65), and checked by every Planner.plan invocation (74). Therefore the 2,000
+expanded-node limit is aggregate across repair rounds, whereas the 0.10 CPU-second
+limit resets per planner attempt. The protocol's 'per attempt' phrasing can be
+read more broadly. Record the implemented aggregate expansion cap; do not alter
+the sealed algorithm. It applies identically to every method.
+
+semantics.py rejects inconsistent evidence before permission. Decision-state
+constraints are intentionally not post-action invariants; the protocol explicitly
+states this. No unconditional physical guarantee follows from this finite model.
+
+## 5. Measurement names requiring narrow interpretation
+
+* experiment.py:104–105 sets detection_delay_queries to query count whenever the
+  final verdict is INVALID/CURRENT_INVALID. It does not restrict the statistic to
+  actually invalid, initially UNRESOLVED supports. Reporting it as that stronger
+  secondary detection-delay endpoint requires filtering/recomputation. Otherwise
+  describe it simply as calls before an invalidity verdict.
+* recovery_success means a certified repair sequence was returned. Actual goal
+  satisfaction is goal_completion. These can differ under noisy/stale evidence.
+* evidence_covers_truth is initial-K coverage (67–70), not final evidence coverage.
+  The independent audit separately computes final-K coverage.
+* irrelevant_atom_reads is a relevance-closure diagnostic conditional on evidence,
+  not a proof that observing a known but stale atom has no value. The separate
+  relevance audit distinguishes known reads and immediate query value; do not
+  turn a zero immediate-value result into global policy irrelevance (XOR is a
+  counterexample).
+* False-permission metric means in analysis are per attempted decision, with
+  parent-instance weighting. Permission denominators are also retained; say which
+  denominator a reported rate uses. Abstention is not counted as false permission.
+* valid_continuation and goal_completion coincide by the selected open-loop
+  sequence/goal definition. They are not two independent success confirmations.
+
+## 6. Statistics and publication claims
+
+analysis.py averages repeated schedules/checkpoints within each independent parent
+before stratified bootstrap resampling. M3–M1 comparisons match episode/budget and
+retain unmatched-denominator diagnostics. The frozen aggregate advantage gate,
+family effects, parent zero-event bounds and conditional M4 comparisons are
+represented. No invented empirical measurements were found in source.
+
+The two omitted Logistics qualification tasks are recorded planner timeouts, not
+replaced after outcome inspection. The remaining 14 parents do not support broad
+robotics generalization. Public IPC tasks with ideal symbolic channels are not
+ALFWorld comparative execution or embodied validation. No manuscript or
+publication-level novelty conclusion is warranted from this implementation alone.
+
+No significant difference is not equivalence. If primary M1/M3 differences are
+exactly zero, use the structural explanation above, and still restrict that claim
+to these model/query conditions. Model-misspecification stress errors are negative
+outcomes to preserve, not evidence that universal reasoning under its correct
+model was disproved. A claim of unconditional true-state safety would nonetheless
+be false under those stress assumptions.
+
+## Review resources and independence
+
+Work consisted of read-only source/protocol inspection and one SHA-256 check.
+The hash-check process exited 0 (tool-reported wall 0.137 s); its CPU was not
+separately measured. No experiment, dependency installation, paid call, GPU task
+or background research job was launched. The delegated focused review made no
+file changes or executions. All observations above precede reading qualification
+outcomes and recommend interpretation limits, not post hoc scoring changes.
+
+## 7. Post-qualification independent results review
+
+Result access began after explicit root authorization at approximately 12:48:47
+UTC. Reviewed qualification/status.json, qualification/audit.json,
+qualification/analysis/summary.json and stored episode/decision records. The
+standalone audit returned PASS: 1,344 episodes, 32,256 decision rows, 29,364
+evaluated rows and 2,892 declared M4 exclusions, 14 independent parent tasks,
+zero mismatches. This audit uses the standard-library interpreter independently
+implemented before qualification and imports no method or certifier code.
+
+### Primary comparison: NO-GO for the incremental method
+
+M3 minus M1 on the frozen primary subset (budgets 1–3, missing10/missing30/
+missing50/structured) has exactly zero goal-completion difference and zero query
+difference, with paired 95% intervals [0,0], on 2,016 paired decisions across
+14 parents. Both domain families agree. The independent standard-library
+bootstrap and main analysis reproduce these zero primary effects exactly.
+Neither frozen meaningful-advantage route passes. Decision-time differences are
+approximately -0.000012 seconds with an interval spanning zero; these are not a
+scientific contribution.
+
+The correct disposition is Case B and NO-GO for a method-paper campaign on this
+incremental scoring proposal. Exact agreement is consistent with the conjunction/
+disjoint-group characterization established before outcomes were opened. It does
+not prove equivalence in other decision models, and no new benchmark or scoring
+rule should now be introduced to manufacture a primary result.
+
+### Original-gate improvement is explained by the simple baseline
+
+The independent raw-row recomputation also compares M1 minus M0 on that same
+primary subset. A standard-library 2,000-resample parent bootstrap stratified by
+family, seed 71603, gives:
+
+| Effect, M1 minus M0 | Mean | Independent 95% interval |
+|---|---:|---:|
+| Goal completion | +0.469742 | [0.447421, 0.490575] |
+| Additional queries | -0.726687 | [-0.771329, -0.685020] |
+| Abstention | -0.469742 | [-0.490575, -0.447421] |
+| Simulated total cost | +3.302579 | [2.720226, 3.915675] |
+
+Blocks: goal +0.635417 [0.598090,0.669293] and queries -0.752604
+[-0.799479,-0.703993], 8 parents/1,152 paired decisions. Logistics: goal
++0.248843 [0.239583,0.259259] and queries -0.692130
+[-0.768519,-0.623843], 6 parents/864 paired decisions.
+
+These are query savings and lower unnecessary abstention, not lower total
+simulated cost: more successful executions consume more action steps. They are
+descriptive bootstrap intervals from an independent random-number stream, not
+bitwise reproductions of an unavailable M1–M0 table in the main analyzer. The
+shared primary episode subset, equal parent weighting and denominators are exact.
+The changes are attributable to required-obligation filtering and different gate
+contracts; M3 supplies no additional primary benefit.
+
+### Preserve the small secondary positive and the strong negative stress cases
+
+On external invalidation, B=2 and B=3 each show a descriptive M3 minus M1 goal
+difference of +0.017857, with reported paired intervals [0.005952,0.029762],
+168 paired decisions/14 parents per budget. At B=3, extra queries increase
++0.029762 [0.005952,0.053571]; at B=2, +0.017857
+[-0.011905,0.041667]. This is outside the primary endpoint, below the declared
+0.05 effect threshold, and occurs in the stale-evidence misspecification stress.
+It should be retained honestly rather than hidden, but does not reopen the gate.
+
+Across all four budgets in that stress (672 attempted decisions per method),
+M3 has 90 false current-action permissions and 101 invalid continuation
+permissions; M1 has the same counts. Goal completions are 136 for M3 versus 130
+for M1, with 526 versus 518 queries. These repeated observations are clustered
+under the 14 parent tasks, not 672 independent trials.
+
+In noise05, M1 and M3 each have 24 false current-action permissions, 24 invalid
+continuation permissions, 456 completions and zero queries among 672 attempts.
+Their initial evidence is fully Boolean but sometimes wrong, so neither starts
+the unresolved-only sensing loop. This is an actual stale/noise robustness
+limitation of that loop. M0 has 4 false current permissions and 624 completions
+in the same noise condition, with a different current-action gate contract.
+Do not claim that checking more nominal obligations automatically improves
+true-state reliability under corrupted evidence.
+
+Concrete preserved negative witness:
+`blocks-strips-typed-05/5/0/invalidated`, B=0, M3 status VALID and choice CONTINUE.
+The selected first action is `stack b a`, whose `holding b` precondition is false
+in the actual state after the existing `put-down b` disturbance action. Cached
+evidence still reports holding b=true. This is an evidence-coverage failure,
+not an invalid inference from that cached evidence under the declared model.
+Both the episode record and decision row identify the complete witness.
+
+Zero false current permissions in the accurate primary subset does not imply a
+rare-event guarantee. The exact one-sided 95% bound after zero event-bearing
+parents out of 14 is approximately 0.192636 for the tested parent-event notion,
+not a 1% per-action or physical safety bound.
+
+### Bounded exact reference
+
+M4 evaluated 2,484 decision rows. It excluded 1,548 rows for more than 12 unknown
+atoms and 1,344 noise/external-invalidation rows under the predeclared model-
+misspecification exclusion. The analyzer retains 112 matched classification
+comparison cells. No broad coverage or physical optimality conclusion follows.
+Its theoretical ceiling is expected resolved classification under the declared
+uniform-completion prior; empirical resolution frequency on nominal benchmark
+states is not automatically an upper bound for another evaluation distribution.
+
+### Evidence and resource trail
+
+The additional independent calculation is preserved in
+`results/monitoring-study/20261111T121002Z/independent-final-metric-review-1.log`.
+Its command ledger stores the complete Python -c source as argv, exit 0,
+3.4561 measured wall seconds and 3.4158 CPU seconds. The raw source files remain
+sealed and unchanged; no method, metric definition or score was changed.
+
+For conservative aggregate-worker accounting, this agent's lifetime begins at
+12:10:17 UTC and continues through the final message accompanying this note;
+that interval includes idle time and earlier positioning, oracle and audit work.
+Its focused delegated recovery reviewer occupied at most the 12:43–12:47 UTC
+window, with no commands/experiments or file changes. Counting those whole
+intervals gives an upper bound rather than pretending idle time was experimental
+compute. The earlier oracle and independent-audit commands, plus this final
+calculation, total approximately 8.84 measured CPU seconds in the shared ledger;
+read-only inspection CPU is not independently measured. No GPU or paid API use,
+new qualification run, background worker or unsealed method modification occurred.

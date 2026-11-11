@@ -1,0 +1,7 @@
+{
+  "checked_selected_contexts": 64,
+  "only_unit_background_constraints": 64,
+  "disjoint_query_groups": 64,
+  "all_query_costs_one": 64,
+  "all_unknown_regressed_obligations_queryable": 64
+}

@@ -1,0 +1,47 @@
+I001 [*] Import block is un-sorted or un-formatted
+  --> scripts/monitoring_report_metrics.py:11:1
+   |
+10 |   sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+11 | / from dual_rec.monitoring.analysis import PRIMARY_REGIMES, _load, _paired, _stats
+12 | | from dual_rec.monitoring.semantics import Model, certify
+13 | | from dual_rec.monitoring.contracts import Context
+   | |_________________________________________________^
+help: Organize imports
+   |
+11 | from dual_rec.monitoring.analysis import PRIMARY_REGIMES, _load, _paired, _stats
+12 + from dual_rec.monitoring.contracts import Context
+13 | from dual_rec.monitoring.semantics import Model, certify
+   - from dual_rec.monitoring.contracts import Context
+14 |
+   |
+
+F401 [*] `dual_rec.monitoring.semantics.Model` imported but unused
+  --> scripts/monitoring_report_metrics.py:12:43
+   |
+10 | sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+11 | from dual_rec.monitoring.analysis import PRIMARY_REGIMES, _load, _paired, _stats
+12 | from dual_rec.monitoring.semantics import Model, certify
+   |                                           ^^^^^
+13 | from dual_rec.monitoring.contracts import Context
+   |
+help: Remove unused import: `dual_rec.monitoring.semantics.Model`
+   |
+11 | from dual_rec.monitoring.analysis import PRIMARY_REGIMES, _load, _paired, _stats
+   - from dual_rec.monitoring.semantics import Model, certify
+12 + from dual_rec.monitoring.semantics import certify
+13 | from dual_rec.monitoring.contracts import Context
+   |
+
+SIM115 Use a context manager for opening files
+  --> scripts/monitoring_report_metrics.py:69:42
+   |
+67 |     episodes = {
+68 |         p["episode_id"]: p
+69 |         for p in (json.loads(s) for s in gzip.open(split / "episodes.jsonl.gz", "rt"))
+   |                                          ^^^^^^^^^
+70 |     }
+71 |     contexts = {}
+   |
+
+Found 3 errors.
+[*] 2 fixable with `--fix`.

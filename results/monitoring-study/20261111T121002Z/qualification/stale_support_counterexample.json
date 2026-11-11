@@ -1,0 +1,494 @@
+{
+  "episode": {
+    "episode_id": "blocks-strips-typed-05/5/0/invalidated",
+    "parent_id": "blocks-strips-typed-05",
+    "family": "blocks-strips-typed",
+    "split": "qualification",
+    "checkpoint": 5,
+    "schedule": 0,
+    "regime": "invalidated",
+    "context": {
+      "model": {
+        "atoms": [
+          "clear b",
+          "handempty",
+          "on b b",
+          "on c a",
+          "holding e",
+          "on c e",
+          "holding b",
+          "holding c",
+          "on d d",
+          "on a b",
+          "ontable c",
+          "holding d",
+          "on a c",
+          "on a e",
+          "clear a",
+          "on e c",
+          "ontable d",
+          "on a a",
+          "on b c",
+          "on d b",
+          "on c c",
+          "clear c",
+          "clear d",
+          "on d a",
+          "on e a",
+          "on e d",
+          "on e e",
+          "on b a",
+          "on b e",
+          "on b d",
+          "on d e",
+          "holding a",
+          "clear e",
+          "on e b",
+          "ontable b",
+          "on c b",
+          "on a d",
+          "on c d",
+          "on d c",
+          "ontable a",
+          "ontable e"
+        ],
+        "constraints": []
+      },
+      "evidence": {
+        "clear a": true,
+        "clear b": null,
+        "clear c": true,
+        "clear d": true,
+        "clear e": false,
+        "handempty": false,
+        "holding a": false,
+        "holding b": true,
+        "holding c": false,
+        "holding d": false,
+        "holding e": null,
+        "on a a": false,
+        "on a b": null,
+        "on a c": false,
+        "on a d": null,
+        "on a e": true,
+        "on b a": null,
+        "on b b": null,
+        "on b c": false,
+        "on b d": null,
+        "on b e": null,
+        "on c a": false,
+        "on c b": null,
+        "on c c": false,
+        "on c d": false,
+        "on c e": null,
+        "on d a": false,
+        "on d b": null,
+        "on d c": false,
+        "on d d": false,
+        "on d e": false,
+        "on e a": false,
+        "on e b": false,
+        "on e c": false,
+        "on e d": null,
+        "on e e": null,
+        "ontable a": false,
+        "ontable b": false,
+        "ontable c": true,
+        "ontable d": true,
+        "ontable e": true
+      },
+      "plan": [
+        {
+          "name": "stack b a",
+          "pre": [
+            {
+              "atom": "clear a",
+              "positive": true
+            },
+            {
+              "atom": "holding b",
+              "positive": true
+            }
+          ],
+          "add": [
+            "on b a",
+            "clear b",
+            "handempty"
+          ],
+          "delete": [
+            "holding b",
+            "clear a"
+          ]
+        },
+        {
+          "name": "pick-up c",
+          "pre": [
+            {
+              "atom": "clear c",
+              "positive": true
+            },
+            {
+              "atom": "handempty",
+              "positive": true
+            },
+            {
+              "atom": "ontable c",
+              "positive": true
+            }
+          ],
+          "add": [
+            "holding c"
+          ],
+          "delete": [
+            "ontable c",
+            "clear c",
+            "handempty"
+          ]
+        },
+        {
+          "name": "stack c b",
+          "pre": [
+            {
+              "atom": "clear b",
+              "positive": true
+            },
+            {
+              "atom": "holding c",
+              "positive": true
+            }
+          ],
+          "add": [
+            "clear c",
+            "handempty",
+            "on c b"
+          ],
+          "delete": [
+            "clear b",
+            "holding c"
+          ]
+        },
+        {
+          "name": "pick-up d",
+          "pre": [
+            {
+              "atom": "clear d",
+              "positive": true
+            },
+            {
+              "atom": "handempty",
+              "positive": true
+            },
+            {
+              "atom": "ontable d",
+              "positive": true
+            }
+          ],
+          "add": [
+            "holding d"
+          ],
+          "delete": [
+            "handempty",
+            "clear d",
+            "ontable d"
+          ]
+        },
+        {
+          "name": "stack d c",
+          "pre": [
+            {
+              "atom": "clear c",
+              "positive": true
+            },
+            {
+              "atom": "holding d",
+              "positive": true
+            }
+          ],
+          "add": [
+            "handempty",
+            "clear d",
+            "on d c"
+          ],
+          "delete": [
+            "holding d",
+            "clear c"
+          ]
+        }
+      ],
+      "goal": [
+        {
+          "atom": "on a e",
+          "positive": true
+        },
+        {
+          "atom": "on b a",
+          "positive": true
+        },
+        {
+          "atom": "on c b",
+          "positive": true
+        },
+        {
+          "atom": "on d c",
+          "positive": true
+        }
+      ],
+      "queries": [
+        {
+          "name": "clear",
+          "atoms": [
+            "clear b",
+            "clear a",
+            "clear c",
+            "clear d",
+            "clear e"
+          ],
+          "cost": 1
+        },
+        {
+          "name": "handempty",
+          "atoms": [
+            "handempty"
+          ],
+          "cost": 1
+        },
+        {
+          "name": "holding",
+          "atoms": [
+            "holding d",
+            "holding e",
+            "holding b",
+            "holding a",
+            "holding c"
+          ],
+          "cost": 1
+        },
+        {
+          "name": "on",
+          "atoms": [
+            "on b b",
+            "on c a",
+            "on c e",
+            "on d d",
+            "on a b",
+            "on a c",
+            "on a e",
+            "on e c",
+            "on a a",
+            "on b c",
+            "on d b",
+            "on c c",
+            "on d a",
+            "on e a",
+            "on e d",
+            "on e e",
+            "on b a",
+            "on b e",
+            "on d e",
+            "on b d",
+            "on e b",
+            "on c b",
+            "on a d",
+            "on c d",
+            "on d c"
+          ],
+          "cost": 1
+        },
+        {
+          "name": "ontable",
+          "atoms": [
+            "ontable c",
+            "ontable b",
+            "ontable d",
+            "ontable a",
+            "ontable e"
+          ],
+          "cost": 1
+        }
+      ],
+      "consequence": {
+        "clear a": 6.0,
+        "clear c": 5.0,
+        "clear d": 3.0,
+        "holding b": 6.0,
+        "on a e": 1.0,
+        "ontable c": 5.0,
+        "ontable d": 3.0
+      },
+      "schedule_offset": 5
+    },
+    "oracle_state": [
+      "ontable c",
+      "clear b",
+      "handempty",
+      "ontable b",
+      "on a e",
+      "clear a",
+      "ontable d",
+      "clear c",
+      "clear d",
+      "ontable e"
+    ],
+    "nominal_state": [
+      "ontable c",
+      "on a e",
+      "clear a",
+      "ontable d",
+      "clear c",
+      "holding b",
+      "clear d",
+      "ontable e"
+    ],
+    "sensor_answers": {
+      "clear a": true,
+      "clear b": true,
+      "clear c": true,
+      "clear d": true,
+      "clear e": false,
+      "handempty": true,
+      "holding a": false,
+      "holding b": false,
+      "holding c": false,
+      "holding d": false,
+      "holding e": false,
+      "on a a": false,
+      "on a b": false,
+      "on a c": false,
+      "on a d": false,
+      "on a e": true,
+      "on b a": false,
+      "on b b": false,
+      "on b c": false,
+      "on b d": false,
+      "on b e": false,
+      "on c a": false,
+      "on c b": false,
+      "on c c": false,
+      "on c d": false,
+      "on c e": false,
+      "on d a": false,
+      "on d b": false,
+      "on d c": false,
+      "on d d": false,
+      "on d e": false,
+      "on e a": false,
+      "on e b": false,
+      "on e c": false,
+      "on e d": false,
+      "on e e": false,
+      "ontable a": false,
+      "ontable b": true,
+      "ontable c": true,
+      "ontable d": true,
+      "ontable e": true
+    },
+    "source_hashes": {
+      "domain": "3ef85edaf88fac8dd668e6e0b49657551b94c37940d8c424eb9c27429f980d3d",
+      "problem": "59c0c700eabb5b5d8e787ebf51c070b7ecf1b62c36cd69a2e145ce2fa6f8bf02"
+    },
+    "evidence_timing": {
+      "measured_at": 5,
+      "available_at": 5,
+      "invalidated": [],
+      "unannounced_external_transition": "put-down b"
+    },
+    "disturbance_action": "put-down b"
+  },
+  "decision": {
+    "episode_id": "blocks-strips-typed-05/5/0/invalidated",
+    "parent_id": "blocks-strips-typed-05",
+    "family": "blocks-strips-typed",
+    "regime": "invalidated",
+    "checkpoint": 5,
+    "schedule": 0,
+    "method": "M3",
+    "budget": 0,
+    "context_sha256": "92d2bb6ca569c1e29d33c2803b18f72abcdcccfd344f73afad22592fa38557a9",
+    "oracle_current_valid": false,
+    "oracle_plan_valid": false,
+    "evidence_covers_truth": false,
+    "continuation_permitted": true,
+    "false_current_permission": 1,
+    "invalid_continuation_permission": 1,
+    "valid_continuation": 0,
+    "goal_completion": 0,
+    "abstention": 0,
+    "unnecessary_abstention": 0,
+    "justified_abstention": 0,
+    "recovery_invoked": 0,
+    "recovery_success": 0,
+    "query_count": 0,
+    "query_seconds": 0.0,
+    "decision_seconds": 0.0003452659584581852,
+    "recovery_seconds": 0.0,
+    "total_decision_seconds": 0.0003452659584581852,
+    "executed_actions": 0,
+    "simulated_cost": 0,
+    "irrelevant_atom_reads": 0,
+    "total_atom_reads": 0,
+    "detected_invalid": 0,
+    "detection_delay_queries": null,
+    "classification_resolved": 1,
+    "decision": {
+      "method": "M3",
+      "choice": "CONTINUE",
+      "evidence": {
+        "clear a": true,
+        "clear b": null,
+        "clear c": true,
+        "clear d": true,
+        "clear e": false,
+        "handempty": false,
+        "holding a": false,
+        "holding b": true,
+        "holding c": false,
+        "holding d": false,
+        "holding e": null,
+        "on a a": false,
+        "on a b": null,
+        "on a c": false,
+        "on a d": null,
+        "on a e": true,
+        "on b a": null,
+        "on b b": null,
+        "on b c": false,
+        "on b d": null,
+        "on b e": null,
+        "on c a": false,
+        "on c b": null,
+        "on c c": false,
+        "on c d": false,
+        "on c e": null,
+        "on d a": false,
+        "on d b": null,
+        "on d c": false,
+        "on d d": false,
+        "on d e": false,
+        "on e a": false,
+        "on e b": false,
+        "on e c": false,
+        "on e d": null,
+        "on e e": null,
+        "ontable a": false,
+        "ontable b": false,
+        "ontable c": true,
+        "ontable d": true,
+        "ontable e": true
+      },
+      "status": "VALID",
+      "query_names": [],
+      "query_atoms": [],
+      "query_answers": [],
+      "query_seconds": 0.0,
+      "decision_seconds": 0.0003452659584581852,
+      "query_irrelevant_atoms": 0,
+      "query_total_atoms": 0
+    },
+    "recovery": {
+      "success": false,
+      "reason": "NOT_INVOKED",
+      "plan": []
+    }
+  },
+  "interpretation": "Known evidence retains pre-disturbance holding fact; source-domain action invalidates it. Conditional SAT licensing remains valid under K, but true-state execution permission is incorrect. No physical execution claim."
+}

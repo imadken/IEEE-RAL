@@ -1,0 +1,51 @@
+{
+  "source_sha256": "72a1a2f3707f6879e1814829110a3af8031911154ea23d06a1210a706d98b91a",
+  "selection": "First64 existing-M4-eligible truthful development episodes in original record order; no outcome selection",
+  "objective": "Expected resolved VALID/INVALID classification under existing M4 uniform-completion prior; not task-success ceiling",
+  "selected_episodes": 64,
+  "selected_parents": 2,
+  "regime_counts": {
+    "complete": 14,
+    "missing10": 13,
+    "missing30": 13,
+    "missing50": 3,
+    "delayed": 13,
+    "structured": 8
+  },
+  "skipped_while_selecting": {
+    "existing_M4_size_limit": 15,
+    "nontruthful_or_stale_disturbance_regime": 26
+  },
+  "independent_complete_execution_crosschecks": 4,
+  "context_budget_cases_with_strict_gap_to_M4": {},
+  "M3_M1_comparison_by_budget": [
+    {
+      "budget": 0,
+      "M3_minus_M1_mean_expected_resolution": 0.0,
+      "M3_better_contexts": 0,
+      "M1_better_contexts": 0,
+      "tied_contexts": 64
+    },
+    {
+      "budget": 1,
+      "M3_minus_M1_mean_expected_resolution": 0.0,
+      "M3_better_contexts": 0,
+      "M1_better_contexts": 0,
+      "tied_contexts": 64
+    },
+    {
+      "budget": 2,
+      "M3_minus_M1_mean_expected_resolution": 0.0,
+      "M3_better_contexts": 0,
+      "M1_better_contexts": 0,
+      "tied_contexts": 64
+    },
+    {
+      "budget": 3,
+      "M3_minus_M1_mean_expected_resolution": 0.0,
+      "M3_better_contexts": 0,
+      "M1_better_contexts": 0,
+      "tied_contexts": 64
+    }
+  ]
+}

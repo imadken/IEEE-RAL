@@ -1,0 +1,40 @@
+{
+  "captured_utc": "2026-11-11T13:05:51.183270+00:00",
+  "campaign_elapsed_seconds": 3348.9890501499176,
+  "aggregate_agent_wall_upper_bound_seconds": 13395.95620059967,
+  "recorded_subprocess_wall_seconds": 835.5137517747935,
+  "recorded_subprocess_cpu_seconds": 1011.4176120000001,
+  "recorded_cpu_core_hours": 0.28094933666666666,
+  "cpu_scope": "Substantive commands plus isolated compatibility/install workers; nested planner CPU already included. Read-only bootstrap/editor/tool-service overhead is not CPU-metered.",
+  "gpu_physics_training_seconds": 0,
+  "unique_logical_bytes_before_seal": 738436411,
+  "unique_allocated_bytes_before_seal": 772595712,
+  "unique_file_inodes": 12818,
+  "manifest_metadata_reserve_bytes": 2000000,
+  "artifact_upper_bound_bytes": 774595712,
+  "command_rows": 71,
+  "compatibility_command_rows": 10,
+  "nonzero_command_rows": [
+    {
+      "name": "oracle-lint-1",
+      "exit_status": 1
+    },
+    {
+      "name": "implementation-lint",
+      "exit_status": 1
+    },
+    {
+      "name": "prequalification-lint",
+      "exit_status": 1
+    },
+    {
+      "name": "prequalification-format-check",
+      "exit_status": 1
+    },
+    {
+      "name": "report-source-lint",
+      "exit_status": 1
+    }
+  ],
+  "no_active_research_workers": true
+}

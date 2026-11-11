@@ -1,0 +1,15 @@
+{"episodes": 96, "decisions": 2304, "wall_seconds": 4.8296008771285415}
+{"episodes": 192, "decisions": 4608, "wall_seconds": 15.04551967815496}
+{"episodes": 288, "decisions": 6912, "wall_seconds": 23.351764566032216}
+{"episodes": 384, "decisions": 9216, "wall_seconds": 39.79401003103703}
+{"episodes": 480, "decisions": 11520, "wall_seconds": 52.628376064123586}
+{"episodes": 576, "decisions": 13824, "wall_seconds": 76.90087000303902}
+{"episodes": 672, "decisions": 16128, "wall_seconds": 100.03449209709652}
+{"episodes": 768, "decisions": 18432, "wall_seconds": 118.84015705692582}
+{"episodes": 864, "decisions": 20736, "wall_seconds": 163.66590566909872}
+{"episodes": 960, "decisions": 23040, "wall_seconds": 196.88540457515046}
+{"episodes": 1056, "decisions": 25344, "wall_seconds": 228.53270883113146}
+{"episodes": 1152, "decisions": 27648, "wall_seconds": 271.83978044008836}
+{"episodes": 1248, "decisions": 29952, "wall_seconds": 309.4158038571477}
+{"episodes": 1344, "decisions": 32256, "wall_seconds": 349.92068546498194}
+{"episodes": 1344, "decisions": 32256, "parents": ["blocks-strips-typed-05", "blocks-strips-typed-06", "blocks-strips-typed-07", "blocks-strips-typed-08", "blocks-strips-typed-09", "blocks-strips-typed-10", "blocks-strips-typed-11", "blocks-strips-typed-12", "logistics-strips-typed-05", "logistics-strips-typed-06", "logistics-strips-typed-07", "logistics-strips-typed-08", "logistics-strips-typed-09", "logistics-strips-typed-10"], "oracle_skips": {"Exact unknown-atom limit is 12": 1548, "MODEL_MISSPECIFICATION_REGIME": 1344}, "wall_seconds": 349.92267857003026, "methods": ["M0", "M1", "M2", "M3", "M3_no_consequence", "M4"], "split": "qualification"}

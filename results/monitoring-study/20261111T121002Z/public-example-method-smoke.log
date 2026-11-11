@@ -1,0 +1,3 @@
+{"episodes": 96, "decisions": 2304, "wall_seconds": 1.6430951179936528}
+{"episodes": 192, "decisions": 4608, "wall_seconds": 4.11707348190248}
+{"episodes": 192, "decisions": 4608, "parents": ["bicoord-build_bridge", "robotwin-move_can_pot"], "oracle_skips": {"Exact query-menu limit is 6": 576, "MODEL_MISSPECIFICATION_REGIME": 192}, "wall_seconds": 4.118524722056463, "methods": ["M0", "M1", "M2", "M3", "M3_no_consequence", "M4"], "split": "smoke"}
