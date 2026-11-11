@@ -2,7 +2,20 @@
 
 from __future__ import annotations
 
+import numpy as np
+
 from dual_rec.passive import mean_interval, wilson
+
+
+def descriptive(values):
+    if not values:
+        return None
+    return {
+        "min": float(np.min(values)),
+        "median": float(np.median(values)),
+        "p95": float(np.quantile(values, 0.95)),
+        "max": float(np.max(values)),
+    }
 
 
 def summarize_replay(rows: list[dict], repetitions=2000, seed=11817) -> dict:
@@ -54,6 +67,7 @@ def summarize_replay(rows: list[dict], repetitions=2000, seed=11817) -> dict:
                 ),
                 "immediate_invalid_count": sum(
                     not r.get("test_immediate_error", {}).get("contacts", False)
+                    or not r.get("test_immediate_error", {}).get("success", False)
                     or any(
                         r.get("test_immediate_error", {}).get(k, float("inf")) > limit
                         for k, limit in [
@@ -91,6 +105,45 @@ def summarize_replay(rows: list[dict], repetitions=2000, seed=11817) -> dict:
                         "time",
                     ]
                 },
+                "error_distributions": {
+                    phase: {
+                        key: descriptive(
+                            [
+                                r["test_immediate_error"][key]
+                                if phase == "immediate"
+                                else r["test_continuation"]["maxima"][key]
+                                for r in complete
+                            ]
+                        )
+                        for key in [
+                            "position",
+                            "angle",
+                            "velocity",
+                            "qpos",
+                            "observation",
+                            "time",
+                        ]
+                    }
+                    for phase in ["immediate", "continuation_max"]
+                },
+                "contact_disagreement_fraction": descriptive(
+                    [1 - r["test_continuation"]["contact_agreement"] for r in complete]
+                ),
+                "exposed_field_errors": {
+                    key: descriptive(
+                        [
+                            r["omitted_or_integration_fields_error"][key]
+                            for r in complete
+                        ]
+                    )
+                    for key in sorted(
+                        {
+                            key
+                            for r in complete
+                            for key in r.get("omitted_or_integration_fields_error", {})
+                        }
+                    )
+                },
             }
         lookup = {(r["seed"], r["policy"]): r for r in cell}
         rank = []
@@ -127,6 +180,18 @@ def summarize_replay(rows: list[dict], repetitions=2000, seed=11817) -> dict:
             "ranking_pairs": rank,
             "contrast_error": mean_interval(
                 [r["contrast_error"] for r in rank], repetitions, seed
+            ),
+            "gold_contrast": mean_interval(
+                [r["gold_contrast"] for r in rank], repetitions, seed
+            ),
+            "test_contrast": mean_interval(
+                [r["test_contrast"] for r in rank], repetitions, seed
+            ),
+            "ranking_reversal_001_wilson_95": wilson(
+                sum(r["reversal_001"] for r in rank), len(rank)
+            ),
+            "ranking_reversal_010_wilson_95": wilson(
+                sum(r["reversal_010"] for r in rank), len(rank)
             ),
             "ranking_reversal_001": mean_interval(
                 [r["reversal_001"] for r in rank], repetitions, seed

@@ -10,3 +10,10 @@ results/local*/
 results/gate-d5-d7/**/scenarios.jsonl.gz
 results/gate-d5-d7/**/recoveries.jsonl.gz
 results/gate-d5-d7/**/models.json.gz
+
+# Overnight raw histories/models stay local with SHA-256 inventories; compact
+# recipes, action tapes, errors, outcomes and predetermined examples are tracked.
+results/overnight-20261111/**/scenarios.jsonl.gz
+results/overnight-20261111/**/traces.jsonl.gz
+results/overnight-20261111/**/models.json.gz
+results/overnight-20261111/**/raw.jsonl.gz

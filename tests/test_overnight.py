@@ -185,6 +185,16 @@ def test_replay_audit_retains_failed_test_branches_and_rejects_invalid_gold():
     cell = summary["groups"]["fixture/nominal/contact"]
     assert summary["stage_reached_rows"] == 6 and summary["success_disagreements"] == 6
     assert cell["ranking_reversal_001"]["mean"] == 1
+    divergence_only = copy.deepcopy(rows)
+    for row in divergence_only:
+        row["test"] = copy.deepcopy(row["gold"])
+    negative = summarize_replay(divergence_only, 20)
+    assert negative["snapshot_continuation_parity_passes"] == 0
+    assert negative["success_disagreements"] == 0
+    assert (
+        negative["groups"]["fixture/nominal/contact"]["ranking_reversal_001"]["mean"]
+        == 0
+    )
     rows[0]["test"] = None
     summary = summarize_replay(rows, 20)
     assert (
@@ -232,3 +242,90 @@ def test_pick_material_scope_changes_both_grasp_surfaces_without_density_edit():
     assert result["cube_after"]["shape_materials"][0][
         "dynamic_friction"
     ] == pytest.approx(0.01)
+
+
+def test_preregistered_splits_and_branch_budget_are_disjoint():
+    cfg = json.loads(Path("config/overnight_20261111.json").read_text())
+    cohorts = [
+        set(cfg["d7b"]["development_seeds"]),
+        set(cfg["d7b"]["qualification_seeds"]),
+        set(range(5100, 5124)),
+        set(range(6100, 6116)),
+        *[set(seeds) for seeds in cfg["b"]["seed_ranges"].values()],
+    ]
+    assert sum(map(len, cohorts)) == len(set.union(*cohorts))
+    planned = (
+        sum(
+            len(cfg["b"]["seed_ranges"][t]) * len(c)
+            for t, c in cfg["b"]["conditions"].items()
+        )
+        * 3
+        * 2
+        * 3
+    )
+    assert planned == cfg["b"]["planned_physical_continuations"] == 882
+    assert planned < cfg["b"]["physical_continuation_cap"]
+
+
+def test_overnight_supervisor_kills_timed_out_worker_and_seals_finalization(tmp_path):
+    import subprocess
+    import time
+
+    (tmp_path / "initial.json").write_text(json.dumps({"started_epoch": time.time()}))
+    command = [sys.executable, "scripts/overnight_command.py", "--root", str(tmp_path)]
+    timed = subprocess.run(
+        command
+        + [
+            "--name",
+            "timeout",
+            "--stage",
+            "TEST",
+            "--timeout",
+            "11",
+            "--",
+            sys.executable,
+            "-c",
+            "import time; time.sleep(30)",
+        ],
+        check=False,
+        capture_output=True,
+        text=True,
+        timeout=25,
+    )
+    assert timed.returncode == 124, timed.stdout + timed.stderr
+    rows = [
+        json.loads(line)
+        for line in (tmp_path / "commands.jsonl").read_text().splitlines()
+    ]
+    assert rows[0]["termination_reason"] == "wall_or_stage_timeout"
+    assert json.loads((tmp_path / "STATUS.json").read_text())["running"] is False
+    done = subprocess.run(
+        command
+        + [
+            "--name",
+            "finish",
+            "--stage",
+            "FINAL",
+            "--finalize",
+            "--",
+            sys.executable,
+            "-c",
+            "print('finished')",
+        ],
+        check=False,
+        capture_output=True,
+        text=True,
+        timeout=20,
+    )
+    assert done.returncode == 0, done.stdout + done.stderr
+    status = json.loads((tmp_path / "STATUS.json").read_text())
+    assert status["STOPPED_WITHIN_AUTHORIZED_BOUNDARY"] and not status["running"]
+    manifest = json.loads((tmp_path / "completion_manifest.json").read_text())
+    assert (
+        "timeout.log" in manifest["artifacts"] and "finish.log" in manifest["artifacts"]
+    )
+    rows = [
+        json.loads(line)
+        for line in (tmp_path / "commands.jsonl").read_text().splitlines()
+    ]
+    assert status["total_cpu_seconds"] == sum(r["cpu_seconds"] for r in rows)

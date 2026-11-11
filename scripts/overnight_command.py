@@ -31,6 +31,26 @@ def write_status(root: Path, payload: dict) -> None:
     temporary.replace(root / "STATUS.json")
 
 
+def scientific_gates(root: Path) -> dict:
+    gates = {}
+    path = root / "d7b/evaluation/report.json"
+    if path.exists():
+        report = json.loads(path.read_text())
+        gates["D7B"] = {
+            "status": report["status"],
+            "reason": report["reason"],
+            "route": report["route"],
+        }
+    path = root / "b/analysis/report.json"
+    if path.exists():
+        report = json.loads(path.read_text())
+        gates["B"] = {
+            "status": "MEASUREMENTS_COMPLETE",
+            "all_gold_passed": report["all_gold_passed"],
+        }
+    return gates
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, required=True)
@@ -148,6 +168,7 @@ def main():
             if disk >= 7_500_000_000:
                 reason = "artifact_budget"
             heartbeat = {
+                "scientific_gates": scientific_gates(root),
                 "utc": datetime.now(UTC).isoformat(),
                 "stage": args.stage,
                 "run_id": root.name,
@@ -208,6 +229,7 @@ def main():
         except psutil.Error:
             continue
     final_status = {
+        "scientific_gates": scientific_gates(root),
         "utc": row["utc_end"],
         "stage": args.stage,
         "run_id": root.name,

@@ -57,6 +57,8 @@ class World:
                 "step": 0,
                 "mass_before": float(model.body_mass[body]),
                 "inertia_before": model.body_inertia[body].copy().tolist(),
+                "com_before": model.body_ipos[body].copy().tolist(),
+                "axes_before": model.body_iquat[body].copy().tolist(),
             }
             if condition == "mass8":
                 integration = np.empty(mujoco.mj_stateSize(model, self.adapter.spec))
@@ -69,6 +71,8 @@ class World:
             self.edit.update(
                 mass_after=float(model.body_mass[body]),
                 inertia_after=model.body_inertia[body].copy().tolist(),
+                com_after=model.body_ipos[body].copy().tolist(),
+                axes_after=model.body_iquat[body].copy().tolist(),
             )
             scale = 8 if condition == "mass8" else 1
             if not np.isclose(
@@ -78,6 +82,11 @@ class World:
                 np.asarray(self.edit["inertia_before"]) * scale,
             ):
                 raise RuntimeError("INVALID_PHYSICAL_EDIT")
+            if (
+                self.edit["com_before"] != self.edit["com_after"]
+                or self.edit["axes_before"] != self.edit["axes_after"]
+            ):
+                raise RuntimeError("INVALID_PHYSICAL_EDIT_COM_AXES")
             robot = self.env.robots[0]
             names = list(robot.robot_model.contact_geoms) + [
                 name
