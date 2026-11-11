@@ -213,15 +213,30 @@ def passive_features(history: list[dict | PickFrame], regime: str, maximum_step=
                 np.round(np.asarray(packet.task_state.extra.goal_pos[0]) / 0.005)
                 * 0.005
             )
-            force = np.mean(
-                [f.sensors.link_wrenches for f in frames[max(0, last - 2) : last + 1]],
-                axis=0,
-            )
-            resolutions = np.array([0.5, 0.5, 0.5, 0.05, 0.05, 0.05])
-            force = np.round(force / resolutions) * resolutions
+            targets = np.asarray(packet.drive_targets)
+            velocities = np.asarray(packet.drive_velocities)
+            # Standard robot controller signals, not hypothetical 6D sensors on
+            # every link. This is a commanded-effort estimate, not a measurement
+            # of contact impulse or a calibrated motor-current sensor.
+            efforts = []
+            for past in frames[max(0, last - 2) : last + 1]:
+                sensor = past.sensors
+                position = np.asarray(sensor.task_state.agent.qpos).ravel()
+                speed = np.asarray(sensor.task_state.agent.qvel).ravel()
+                effort = np.clip(
+                    1000 * (np.asarray(sensor.drive_targets) - position)
+                    + 100 * (np.asarray(sensor.drive_velocities) - speed),
+                    -100,
+                    100,
+                ) + np.asarray(sensor.applied_qf)
+                efforts.append(effort)
+            resolutions = np.r_[np.full(7, 0.05), np.full(2, 0.5)]
+            force = np.round(np.mean(efforts, axis=0) / resolutions) * resolutions
             values = np.r_[
                 np.round(q / 0.001) * 0.001,
                 np.round(v / 0.01) * 0.01,
+                targets,
+                velocities,
                 obj,
                 velocity,
                 goal,

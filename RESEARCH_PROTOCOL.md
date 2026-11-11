@@ -471,3 +471,22 @@ compact trial records without the fitter, validate preserved hashes, run tests,
 lint/format and commit locally. Preserve negative evidence and unknown novelty.
 NO_PAPER_CLAIM unless a separately verified future contribution exists; no paper
 draft, later campaign, extra fault hunt or remote publication is authorized.
+
+### Overnight sensor clarification v1.1 — before fitting or inspecting recovery matrices
+
+The nominal inspection exposes incoming spatial wrenches on 15 simulated links;
+that is not a standard Panda hardware sensor suite. The realistic regime therefore
+uses available encoder/velocity, drive-target and commanded-effort signals instead
+of pretending every link has an installed six-axis transducer. Before any passive
+model is fit or qualification data are opened, replace the v1 realistic-force
+projection with trailing-three-sample commanded-effort estimates:
+`clip(1000*(drive_target-qpos)+100*(drive_velocity-qvel), -100,100)+applied_qf`,
+using the pinned Panda's nominal stiffness/damping/force limits. Round the first
+seven joint torques to .05 Nm and two gripper forces to .5 N; retain drive targets
+and velocities. This is an observable controller-model estimate, not a calibrated
+current sensor or contact impulse. Full ideal-state baselines still receive the
+entire measured spatial-force history. Camera/encoder settings, fault grid,
+recovery controls, utility and all decision thresholds stay unchanged. This
+clarification is motivated solely by actual sensor availability, before any
+classifier performance or recovery matrix inspection; original v1 text remains
+above and in its preregistration commit. No claim of real-hardware calibration.
