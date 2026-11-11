@@ -167,3 +167,73 @@ Raw downloads, logs, NPZs, detailed results and plots stay in locally excluded
 RUN. The user's `.gitignore` bytes remain unchanged. Commit only scoped
 source/tests, protocol/report and compact necessary input configuration; never
 attempt GitHub authentication or pushing. Publication remains manual.
+
+## Supervised interface qualification rescue — 11 November 2026
+
+New authority: RecoverBench supervised execution qualification and conditional
+ACRR pilot. Reviewed commit `960ec091e1ff16d29fa89d5bf20c63847050886a`;
+branch `research/recoverbench-interface-qualification`; new evidence root
+`results/recoverbench-qualification-rescue/20261111T195432Z/` (RESCUE).
+The preceding protocol and negative findings are retained. The previous sealed
+run, downloads and isolated environment are read-only inputs. Set
+PYTHONDONTWRITEBYTECODE=1 and redirect Numba/cache output to RESCUE. No vendored
+source modification or lockfile change is authorized by this implementation.
+
+Stage A traces the official constructor, direct registered class, model and
+controller metadata. Compare path-canonicalized XML and compiled numeric model
+parameters with the seed HDF5 model XML where available. A seed model is a
+reference, not proof of the original failure-scene model's identity. Preserve
+the literal expected fingerprint and all failures. A minimal local PickPlace
+diagnostic adapter may reproduce the documented D0 sampler yaw restriction;
+label it adapted and never infer official compatibility from construction alone.
+
+Stage B uses six tapes per task: first lexicographic member of each existing
+task/category/degree cell, independent of previous success. Exact membership is
+in `config/recoverbench_qualification_20261111.json`. Compare the actual released
+source-validation replay checker (one constructed environment shared across the
+six calls), direct controls after fresh reset per tape, and independently
+reconstructed per-state FK. The source checker is not DataGenerator.generate.
+Both executable source comparisons use T pre-action states and the full T
+controls, capped at 1,500; neither inserts the target evaluator's neutral step.
+Save every control, before/after state, controller and gripper memory, contacts,
+first success and first divergence (>1e-8 absolute state-coordinate discrepancy).
+FK uses independent MuJoCo data and body/site transforms; derived features have
+separate hashes and cannot be credited as executed recovery or repaired controls.
+
+Stage C freezes eight Stack training scenes: first lexicographic eligible scene
+per existing category/degree cell, excluding Stage B source scenes, followed by
+two remaining globally lexicographic scenes. Exact IDs are in the same config;
+registration SHA-256 is
+`4c0f76578e0df4ae81ec98248dec6f8b3a59cfcf0ef064394b02b3f3160c31f7`.
+Use the pinned official generator/reset-and-inject procedure with no more than
+three attempts per scene. If prepared source files or required interfaces are
+unavailable, record the exact dependency and stop Stage C as instructed. Do not
+fabricate datagen_info, download training_data.tar, or substitute raw tape replay
+for generation. Independently execute any genuinely generated candidate from
+the matching target scene; retain initially solved scenes separately.
+
+ENGINEERING_GO requires at least Stack's justified simulator identity, understood
+action semantics, functioning official generation, at least four of eight
+scenes with independent qualified task recovery, two distinct trajectories and
+no hidden state resetting/leakage. Partial diagnostic execution with unresolved
+critical equivalence is INCONCLUSIVE; absence of trustworthy environment/source
+is ENGINEERING_NO_GO. Both stop method evaluation and finish the audit. Report
+BENCHMARK_COMPATIBILITY_BLOCKED / SOURCE_GENERATION_BLOCKED where applicable.
+
+Only ENGINEERING_GO activates Stage D. Before it executes, separately freeze
+source-disjoint Stack development/qualification IDs (at most 12 targets/category),
+qualified candidates/transfer, equal runtime features and horizon, physical hard/
+soft/uncertain checks and B1–B5. Compare B4 against both B2 and B3 with paired
+scene-level intervals and independently executed rejected candidates. No official
+evaluation scenes, new error categories or outcome-selected constraints enter
+this rescue. Without GO these methods, acceptance/rejection rates, frontier and
+method-effect confidence intervals remain N/A.
+
+New limits: five aggregate worker wall hours, six measured CPU core-hours,
+one GPU wall-hour only if necessary, four GB new files excluding byte-identical
+reused inputs. Bounded foreground workers log source hashes and actual costs;
+reserve 50 MB for repository/cache overhead. No paid API or model training.
+Run constructor/controller/model/alignment/FK/split/rollout/success/seal/budget
+regressions, applicable upstream tests, full maintained tests, Ruff and formatting.
+Independently audit raw records, append the cumulative report, seal locally and
+commit only scoped source/tests/config/docs. No research workers remain at exit.

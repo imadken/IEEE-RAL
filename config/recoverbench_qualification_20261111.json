@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "reviewed_base": "960ec091e1ff16d29fa89d5bf20c63847050886a",
+  "previous_run": "results/recoverbench-transfer/20261111T172759Z",
+  "run": "results/recoverbench-qualification-rescue/20261111T195432Z",
+  "upstream_revision": "88f6fedab46dd130a617e058f8d0d05a42c2ea3d",
+  "dataset_revision": "f2f9cfe9ad2135f40c0b47a70269cc806541b58d",
+  "source_selection": "First lexicographic archive member in each already-registered task/category/degree cell; no outcome selection",
+  "sources": [
+    {
+      "archive_member": "mimicgen_generated/pick_place/grasp_wrong_pose_D0/mg_v5_train_grasp_wrong_pose_D0_000_584674c8_004.npz",
+      "task": "pick_place",
+      "scene_id": "v5_train_grasp_wrong_pose_D0_000_584674c8",
+      "error": "grasp_wrong_pose",
+      "degree": "D0"
+    },
+    {
+      "archive_member": "mimicgen_generated/pick_place/grasp_wrong_pose_D1/mg_v5_train_grasp_wrong_pose_D1_000_e838a551_001.npz",
+      "task": "pick_place",
+      "scene_id": "v5_train_grasp_wrong_pose_D1_000_e838a551",
+      "error": "grasp_wrong_pose",
+      "degree": "D1"
+    },
+    {
+      "archive_member": "mimicgen_generated/pick_place/drop_at_wrong_place_D0/mg_v5_train_drop_at_wrong_place_D0_001_3ba9a1f1_000.npz",
+      "task": "pick_place",
+      "scene_id": "v5_train_drop_at_wrong_place_D0_001_3ba9a1f1",
+      "error": "drop_at_wrong_place",
+      "degree": "D0"
+    },
+    {
+      "archive_member": "mimicgen_generated/pick_place/drop_at_wrong_place_D1/mg_v5_train_drop_at_wrong_place_D1_001_860b515b_000.npz",
+      "task": "pick_place",
+      "scene_id": "v5_train_drop_at_wrong_place_D1_001_860b515b",
+      "error": "drop_at_wrong_place",
+      "degree": "D1"
+    },
+    {
+      "archive_member": "mimicgen_generated/pick_place/trajectory_regression_D0/mg_v5_train_trajectory_regression_D0_000_104eba60_000.npz",
+      "task": "pick_place",
+      "scene_id": "v5_train_trajectory_regression_D0_000_104eba60",
+      "error": "trajectory_regression",
+      "degree": "D0"
+    },
+    {
+      "archive_member": "mimicgen_generated/pick_place/trajectory_regression_D1/mg_v5_train_trajectory_regression_D1_004_fced0e1f_000.npz",
+      "task": "pick_place",
+      "scene_id": "v5_train_trajectory_regression_D1_004_fced0e1f",
+      "error": "trajectory_regression",
+      "degree": "D1"
+    },
+    {
+      "archive_member": "mimicgen_generated/stack/grasp_wrong_pose_D0/mg_v5_train_grasp_wrong_pose_D0_000_d9f18d42_007.npz",
+      "task": "stack",
+      "scene_id": "v5_train_grasp_wrong_pose_D0_000_d9f18d42",
+      "error": "grasp_wrong_pose",
+      "degree": "D0"
+    },
+    {
+      "archive_member": "mimicgen_generated/stack/grasp_wrong_pose_D1/mg_v5_train_grasp_wrong_pose_D1_000_10ea9ba8_001.npz",
+      "task": "stack",
+      "scene_id": "v5_train_grasp_wrong_pose_D1_000_10ea9ba8",
+      "error": "grasp_wrong_pose",
+      "degree": "D1"
+    },
+    {
+      "archive_member": "mimicgen_generated/stack/drop_at_wrong_place_D0/mg_v5_train_drop_at_wrong_place_D0_000_79e9d84f_000.npz",
+      "task": "stack",
+      "scene_id": "v5_train_drop_at_wrong_place_D0_000_79e9d84f",
+      "error": "drop_at_wrong_place",
+      "degree": "D0"
+    },
+    {
+      "archive_member": "mimicgen_generated/stack/drop_at_wrong_place_D1/mg_v5_train_drop_at_wrong_place_D1_000_91c29023_000.npz",
+      "task": "stack",
+      "scene_id": "v5_train_drop_at_wrong_place_D1_000_91c29023",
+      "error": "drop_at_wrong_place",
+      "degree": "D1"
+    },
+    {
+      "archive_member": "mimicgen_generated/stack/trajectory_regression_D0/mg_v5_train_trajectory_regression_D0_002_de117243_003.npz",
+      "task": "stack",
+      "scene_id": "v5_train_trajectory_regression_D0_002_de117243",
+      "error": "trajectory_regression",
+      "degree": "D0"
+    },
+    {
+      "archive_member": "mimicgen_generated/stack/trajectory_regression_D1/mg_v5_train_trajectory_regression_D1_000_df92dc27_000.npz",
+      "task": "stack",
+      "scene_id": "v5_train_trajectory_regression_D1_000_df92dc27",
+      "error": "trajectory_regression",
+      "degree": "D1"
+    }
+  ],
+  "generator_scene_selection": "Stack first lexicographic training scene per category/degree, excluding selected source scene IDs, then two remaining globally lexicographic scenes",
+  "generator_scenes": [
+    {
+      "scene_id": "v5_train_backfill_grasp_wrong_pose_D0_0020_02b1198d6e84",
+      "error": "grasp_wrong_pose",
+      "degree": "D0",
+      "parent": "demo_stack_demo_113"
+    },
+    {
+      "scene_id": "v5_train_backfill_grasp_wrong_pose_D1_0020_0384bfec6276",
+      "error": "grasp_wrong_pose",
+      "degree": "D1",
+      "parent": "demo_stack_demo_0"
+    },
+    {
+      "scene_id": "v5_train_backfill_drop_at_wrong_place_D0_0020_02ca8d4c91f4",
+      "error": "drop_at_wrong_place",
+      "degree": "D0",
+      "parent": "demo_stack_demo_110"
+    },
+    {
+      "scene_id": "v5_train_backfill_drop_at_wrong_place_D1_0020_02651c2fe368",
+      "error": "drop_at_wrong_place",
+      "degree": "D1",
+      "parent": "demo_stack_demo_106"
+    },
+    {
+      "scene_id": "v5_train_backfill_trajectory_regression_D0_0020_02b979b2e0c7",
+      "error": "trajectory_regression",
+      "degree": "D0",
+      "parent": "demo_stack_demo_100"
+    },
+    {
+      "scene_id": "v5_train_backfill_trajectory_regression_D1_0020_060e6dc723db",
+      "error": "trajectory_regression",
+      "degree": "D1",
+      "parent": "demo_stack_demo_109"
+    },
+    {
+      "scene_id": "v5_train_backfill_drop_at_wrong_place_D0_0021_035936b30db3",
+      "error": "drop_at_wrong_place",
+      "degree": "D0",
+      "parent": "demo_stack_demo_106"
+    },
+    {
+      "scene_id": "v5_train_backfill_drop_at_wrong_place_D0_0022_0384df7cc823",
+      "error": "drop_at_wrong_place",
+      "degree": "D0",
+      "parent": "demo_stack_demo_109"
+    }
+  ],
+  "generator_attempt_cap_per_scene": 3,
+  "source_variants": [
+    "official_source_checker_shared_environment",
+    "direct_controls_fresh_reset",
+    "offline_kinematics_not_rollout"
+  ],
+  "model_variants": [
+    "official_factory",
+    "strict_registered_class",
+    "adapted_pickplace_rotation_diagnostic",
+    "seed_xml_compiled_reference_not_scene_identity"
+  ],
+  "source_cap": 1500,
+  "equivalence_atol": 1e-12,
+  "first_divergence_tolerance": 1e-08,
+  "independent_success_gate": {
+    "required_scenes": 4,
+    "denominator": 8,
+    "distinct_trajectories": 2,
+    "qualified_model_required": true
+  },
+  "generation_missing_prepared_sources": "Stop Stage C and record dependency; do not fabricate datagen_info or download full recovery corpus",
+  "budgets": {
+    "aggregate_worker_wall_seconds": 18000,
+    "cpu_seconds": 21600,
+    "gpu_wall_seconds": 3600,
+    "new_bytes": 4000000000
+  }
+}
