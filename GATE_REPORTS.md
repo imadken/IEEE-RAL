@@ -283,3 +283,113 @@ and replay checks provide the substantive audit. Source/HEAD and exact GitHub
 URLs are provided in the final pushed-branch handoff.
 
 **STOPPED_AT_D7 = true. No self-authorization for D8–D10.**
+
+## 2026-11-11 overnight authorization: D7B PickCube qualification
+
+The separately supplied `DUAL_REC_OVERNIGHT_CODEX_PROMPT.md` authorizes this
+bounded session after the preceding D7 stop. Earlier outcomes and artifacts are
+preserved. Run: `results/overnight-20261111/20261110T235337Z`, base
+`66b464e64561ee18757b63e69e03b1b5b0abe5ab`, research branch
+`dual-rec/overnight-20261111`. Preregistration was committed at `68798cd`;
+incidence-selected severities at `5aeab8d`; development-only model seal at
+`00ec371`, before qualification. The sensor availability clarification v1.1 at
+`ec41846` preceded fitting and qualification. No reserved outcomes were used to
+choose severities, sensor degradation, controllers or hyperparameters.
+
+**D7B = NO-GO; automatic route = B_COUNTERFACTUAL_REPLAY_AUDIT. A was not run.**
+Both perturbations produced genuine event-triggered failures, but the friction
+contrast was an effort-only advantage far below the preregistered 0.10 utility
+margin. The declared realistic passive regime also had zero qualifying uncertain
+paired seeds. There is no qualified pair of mechanisms requiring meaningfully
+opposite recoveries under these fixed candidates. Information-versus-physical
+probe effects are **N/A**, because the intervention prerequisite did not pass.
+
+### Calibration and physical scope
+
+Four calibration seeds (3100–3103) are included in the twelve development seeds
+(3100–3111); qualification uses eight independent untouched seeds (4100–4107).
+All finite-grid levels were executed: nominal 4/4 initial successes; friction
+coefficients .10/.03/.01 produced 0/0/2 event failures out of four; grasp target
+x-offsets .01/.02/.03 m produced 0/2/2 event failures out of four. The least severe
+incidence-eligible choices were therefore .01 friction and .02 m offset, frozen
+without consulting recovery rankings. A .02 m offset is half the .04 m cube width.
+Offset affects executed grasp commands, not object placement or success labels.
+
+The friction edit changes the cube and both finger collision materials together;
+it also changes cube/table contact. Nominal cube friction is .3, finger friction
+2.0. This is a severe slick-contact stress test, not an isolated gripper-friction
+or real-hardware calibration. All mass, principal inertia and center-of-mass/axis
+readbacks are retained. The pinned binding did not expose a friction-combination
+getter. PhysX documents an average default, but the effective mode in the pinned
+wheel was not independently verified; changing both surfaces avoids relying on
+a one-sided material edit. See `preflight/contact_apis.json` and
+`preflight/official_sources.json`.
+
+Qualification initial outcomes retain all setups, including ordinary nonsuccess:
+
+| Condition | Initial success / 8 | Triggered failure / 8 | Nonsuccess without trigger / 8 |
+|---|---:|---:|---:|
+| Nominal | 8 | 0 | 0 |
+| Friction .01 | 1 | 7 | 0 |
+| Grasp offset .02 m | 1 | 6 | 1 |
+
+The trigger uses only past observations: a missed lift after step 70 sustained for
+three frames, or a previously observed lift followed by loss/drop; current task
+success suppresses triggering. The nontriggered offset nonsuccess is retained
+and excluded only from the explicitly defined triggered-failure estimand. No
+future recovery outcome determines membership. Comparisons of two fault classes
+condition on failure and are descriptive for these triggered states, not causal
+effects of changing fault class in a common state population.
+
+### Executed recovery and passive evidence
+
+All 60 selected development/qualification setups received all three 70-step
+continuations, including initially successful controls: **180/180 fresh-prefix
+reconstructions passed numerical, sensor-history and contact parity**. ManiSkill
+snapshots were never used for D7B. TimeLimit was fixed at 200 before collection,
+covering the full maximum 90+70 steps. Qualified recovery evidence is:
+
+| Triggered qualification population | Nominal success | Regrasp success | Conservative success |
+|---|---:|---:|---:|
+| Friction, n=7 base seeds | 0/7 | 0/7 | 0/7 |
+| Offset, n=6 base seeds | 0/6 | 5/6 | 0/6 |
+
+Wilson 95% intervals are [0,.3543] for 0/7, [0,.3903] for 0/6 and
+[.4365,.9699] for 5/6. Initially successful nominal controls are not counted as
+recovered failures. The six matched failed seed pairs are
+4101, 4102, 4104, 4105, 4106, 4107. Primary nominal-minus-regrasp utility:
+
+| Mechanism | Paired mean | Seed bootstrap 95% CI | Absolute mean >= .10 |
+|---|---:|---:|---|
+| Friction | +.0173315019 | [.0134126479, .0236643056] | No |
+| Offset | −.7425448914 | [−.8948553178, −.4395570910] | Yes |
+
+Intervals use 2,000 resamples of six independent base seeds, RNG 11817. All
+three recovery actions fail the triggered friction states; nominal's tiny
+advantage is lower action effort, not successful friction recovery. Fixed utility
+is `(success - .05*mean_normalized_effort - .05 + .10)/1.10`; all actions consume
+the same 70-step budget. Complete success/utility matrices and uncertainty are in
+`d7b/evaluation/report.json`, with all outcome rows and action tapes retained.
+
+The passive models train only on twelve development seed groups with grouped CV,
+then evaluate sixteen fault setups from eight qualification seed groups. The full
+regime includes ideal simulated state/action/wrench history; the realistic regime
+uses rounded encoders and drive signals, a controller-model effort estimate and
+a 5 mm, 10 Hz, one-step-delayed position camera. It is a sensor hypothesis, not a
+validated hardware model. No fault parameter, seed, contact-ID label or future
+recovery outcome enters deployed features.
+
+| Passive regime/model | AUROC [seed-clustered 95% CI] | Balanced accuracy [95% CI] | Brier | Log loss | ECE, 5 bins |
+|---|---|---|---:|---:|---:|
+| Full / linear logistic | 1.0000 [1,1] | .9375 [.8125,1] | .0438161 | .1174862 | .0523770 |
+| Full / RBF logistic | .890625 [.640625,1] | .8125 [.625,.9375] | .1949109 | .5800918 | .0876613 |
+| Realistic / linear logistic | 1.0000 [1,1] | .9375 [.8125,1] | .0359754 | .1472288 | .1198676 |
+| Realistic / RBF logistic | .609375 [.3125,.859375] | .625 [.375,.875] | .2386194 | .6702156 | .0651945 |
+
+The linear baseline ranks the causes perfectly but does not classify every setup
+correctly at threshold .5. The weaker realistic nonlinear baseline is not evidence
+of unavoidable ambiguity when the competent linear baseline separates the labels.
+Zero of six matched failed seeds has both fault setups in [.25,.75] for both
+realistic models, failing the declared uncertainty requirement. Complete
+predictions, calibration intervals, matched-failure metrics, CV scores and model
+hashes remain available; none is hidden by reporting only the strongest model.

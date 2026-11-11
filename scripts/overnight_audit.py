@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import subprocess
 from pathlib import Path
 
@@ -85,6 +86,24 @@ def check_distribution(values, reported):
     else:
         for name, q in [("min", 0), ("median", 0.5), ("p95", 0.95), ("max", 1)]:
             close(np.quantile(values, q), reported[name])
+
+
+def valid_error(error):
+    return bool(
+        error.get("contacts", False)
+        and error.get("success", False)
+        and all(
+            error.get(k, float("inf")) <= limit
+            for k, limit in [
+                ("position", 1e-5),
+                ("angle", 1e-4),
+                ("velocity", 1e-4),
+                ("qpos", 1e-4),
+                ("observation", 1e-4),
+                ("time", 1e-9),
+            ]
+        )
+    )
 
 
 def audit_physics(task, condition, edit):
@@ -319,6 +338,19 @@ def audit_pick(root, cfg):
         "reason": report["reason"],
         "failure_counts": counts,
         "paired_failed_seeds": paired,
+        "primary_contrasts": {
+            c: interval(
+                [
+                    lookup[s, c, "nominal"]["utility"]
+                    - lookup[s, c, "regrasp"]["utility"]
+                    for s in paired
+                ],
+                cfg["bootstrap_repetitions"],
+                cfg["analysis_seed"],
+            )
+            for c in ["friction", "offset"]
+        },
+        "realistic_uncertain_seeds": uncertain,
         "qualification_recovery_pairs": len(rows),
         "all_selected_scenarios": len(all_cases),
         "fitter_consulted": False,
@@ -377,6 +409,10 @@ def audit_b(root, cfg):
             )
         if row.get("test") is not None:
             assert len(row["test_errors"]) == 40
+            assert (
+                all(valid_error(e) for e in row["test_errors"])
+                == row["test_continuation"]["passed"]
+            )
             for key in ["position", "angle", "velocity", "qpos", "observation", "time"]:
                 close(
                     max(e[key] for e in row["test_errors"]),
@@ -417,6 +453,9 @@ def audit_b(root, cfg):
             assert stats["continuation_invalid_count"] == sum(
                 not r.get("test_continuation", {}).get("passed", False)
                 for r in attempted
+            )
+            assert stats["immediate_invalid_count"] == sum(
+                not valid_error(r.get("test_immediate_error", {})) for r in attempted
             )
             assert stats["contact_changed_pair_count"] == sum(
                 r["test_continuation"]["contact_agreement"] < 1 for r in pairs
@@ -476,6 +515,14 @@ def audit_b(root, cfg):
             test = a["test"]["utility"] - b["test"]["utility"]
             gold_values.append(gold)
             test_values.append(test)
+            stored = next(r for r in group["ranking_pairs"] if r["seed"] == s)
+            close(gold, stored["gold_contrast"])
+            close(test, stored["test_contrast"])
+            assert stored["raw_sign_reversal"] == (gold * test < 0)
+            for margin, key in [(0.01, "reversal_001"), (0.10, "reversal_010")]:
+                assert stored[key] == (
+                    gold * test < 0 and min(abs(gold), abs(test)) >= margin
+                )
             ranks.append(
                 (
                     test - gold,
@@ -527,6 +574,28 @@ def audit_b(root, cfg):
     ]
     attempted = sum(s["attempted_continuations"] for s in statuses)
     assert attempted <= 1000
+    tasks = {}
+    for task in cfg["b"]["seed_ranges"]:
+        cell = [r for r in complete if r["task"] == task]
+        groups = [g for g in report["groups"].values() if g["task"] == task]
+        rank_pairs = [r for g in groups for r in g["ranking_pairs"]]
+        tasks[task] = {
+            "independent_base_seeds": len({r["seed"] for r in cell}),
+            "complete_pairs": len(cell),
+            "snapshot_continuation_passes": sum(
+                r["test_continuation"]["passed"] for r in cell
+            ),
+            "contact_changed_pairs": sum(
+                r["test_continuation"]["contact_agreement"] < 1 for r in cell
+            ),
+            "success_disagreements": sum(
+                r["gold"]["success"] != r["test"]["success"] for r in cell
+            ),
+            "action_ranking_pairs": len(rank_pairs),
+            "raw_sign_reversals": sum(r["raw_sign_reversal"] for r in rank_pairs),
+            "ranking_reversals_001": sum(r["reversal_001"] for r in rank_pairs),
+            "ranking_reversals_010": sum(r["reversal_010"] for r in rank_pairs),
+        }
     return {
         "planned_rows": len(rows),
         "stage_reached": len(reached),
@@ -535,6 +604,7 @@ def audit_b(root, cfg):
         "success_disagreements": report["success_disagreements"],
         "ranking_reversals_001": int(rank_flip_total),
         "attempted_continuations": attempted,
+        "by_task": tasks,
         "all_gold_passed": True,
         "all_outcomes_costs_contrasts_and_intervals_recomputed": True,
         "fitter_consulted": False,
@@ -545,6 +615,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--verify-report", action="store_true")
     args = parser.parse_args()
     cfg = json.loads(Path("config/overnight_20261111.json").read_text())
     previous = json.loads((args.root / "prior_local_sha256.json").read_text())
@@ -568,6 +639,16 @@ def main():
         "STOPPED_WITHIN_AUTHORIZED_BOUNDARY": True,
         "NO_PAPER_CLAIM": True,
     }
+    if args.verify_report:
+        match = re.search(
+            r"<!-- OVERNIGHT_VERIFIED_STATISTICS_START -->\s*```json\s*(.*?)\s*```\s*<!-- OVERNIGHT_VERIFIED_STATISTICS_END -->",
+            Path("GATE_REPORTS.md").read_text(),
+            re.DOTALL,
+        )
+        assert match, "Missing independently checkable report statistics"
+        saved = json.loads(match[1])
+        assert saved == {"D7B": result["D7B"], "B": result["B"]}
+        result["human_report_statistics_verified"] = True
     args.output.open("x").write(json.dumps(result, indent=2, allow_nan=False))
     print(json.dumps(result, indent=2))
 

@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import gzip
 import hashlib
+import importlib.util
 import json
 from pathlib import Path
 
@@ -93,6 +94,53 @@ def main():
         "bytes": model_path.stat().st_size,
     }
     (output / "local_raw_sha256.json").open("x").write(json.dumps(raw, indent=2))
+    vendor_root = Path(importlib.util.find_spec("mani_skill").origin).parent
+    vendor_sources = {
+        name: hashlib.sha256((vendor_root / name).read_bytes()).hexdigest()
+        for name in [
+            "envs/sapien_env.py",
+            "envs/scene.py",
+            "utils/structs/actor.py",
+            "utils/structs/articulation.py",
+        ]
+    }
+    api_scope = {
+        "adapter_source": "src/dual_rec/replay.py",
+        "adapter_sha256": hashlib.sha256(
+            Path("src/dual_rec/replay.py").read_bytes()
+        ).hexdigest(),
+        "mani_skill_vendor_sources_sha256": vendor_sources,
+        "ManiSkill": {
+            "physics_api": "BaseEnv.get_state_dict/set_state_dict; ManiSkillScene.get_sim_state/set_sim_state",
+            "included": [
+                "registered dynamic actor poses and velocities",
+                "articulation root pose/velocity and qpos/qvel",
+                "public controller state",
+                "explicit controller transients",
+                "joint drive position/velocity targets",
+                "environment and wrapper elapsed steps",
+                "Python/NumPy/Torch and environment RNG states and aliases",
+            ],
+            "not_serialized": [
+                "static actor/model/material configuration (kept fixed)",
+                "applied joint forces (measured readback separately)",
+                "opaque contact solver caches (not exposed or claimed inspected)",
+                "arbitrary task/controller configurations outside the qualified tasks",
+            ],
+        },
+        "MuJoCo": {
+            "physics_api": "mj_getState/mj_setState with mjSTATE_INTEGRATION; mj_forward then integration-state reapplication",
+            "included": [
+                "integration fields including controls, applied forces and warmstart",
+                "simple controller/composite/robot/gripper/observable/environment fields",
+                "environment/Python/NumPy RNG",
+            ],
+            "scope": "Lift/Panda BASIC OSC_POSE without interpolation/cameras; same model within branch; derived kinematics/contact data recomputed, not arbitrary scene serialization",
+        },
+        "estimand": "Difference caused by this unchanged snapshot adapter after its native continuation, relative to fresh-prefix replay, using the identical native-generated action tape. Does not estimate two independently adapting closed-loop policies.",
+        "attribution_limit": "Exposed-state readback errors are measured; no solver-cache causal ablation or universal engine claim is authorized.",
+    }
+    (output / "api_scope.json").open("x").write(json.dumps(api_scope, indent=2))
     print(
         json.dumps(
             {
