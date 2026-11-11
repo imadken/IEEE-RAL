@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "scope": "Pinned public inputs and local raw-ledger references; generated evidence is not committed",
+  "run": "results/recoverbench-transfer/20261111T172759Z",
+  "upstream": {
+    "repository": "ErrorRecoveryBenchmark/ErrorRecoveryBenchmark",
+    "revision": "88f6fedab46dd130a617e058f8d0d05a42c2ea3d",
+    "archive_sha256": "41894e650435bd2fb780e71ab05cf44e1c29f87b97043c0e0e1982a0d18dbe7a"
+  },
+  "dataset_revision": "f2f9cfe9ad2135f40c0b47a70269cc806541b58d",
+  "archives": [
+    {
+      "name": "eval_data.tar",
+      "bytes": 26173440,
+      "sha256": "0c2e732286d623a4f437b55996a78f3e3c0d6260d093c839d2524dd65d2182b0",
+      "url": "https://huggingface.co/datasets/ErrorRecovery/ErrorRecoveryBenchmark/resolve/f2f9cfe9ad2135f40c0b47a70269cc806541b58d/eval_data.tar"
+    },
+    {
+      "name": "training_scenes.tar",
+      "bytes": 99297280,
+      "sha256": "ddac00ac207f02d6360fb8990ad9c22cc182c0d8b8e88f196859803c80b61740",
+      "url": "https://huggingface.co/datasets/ErrorRecovery/ErrorRecoveryBenchmark/resolve/f2f9cfe9ad2135f40c0b47a70269cc806541b58d/training_scenes.tar"
+    },
+    {
+      "name": "recovery_mimicgen_generated.tar",
+      "bytes": 126136320,
+      "sha256": "9f212d9b4c846578050a46d8cbb0e9c3cb9c880487a5b928c71ed58317fc6268",
+      "url": "https://huggingface.co/datasets/ErrorRecovery/ErrorRecoveryBenchmark/resolve/f2f9cfe9ad2135f40c0b47a70269cc806541b58d/recovery_mimicgen_generated.tar"
+    }
+  ],
+  "dependencies": [
+    {
+      "repository": "ARISE-Initiative/robosuite",
+      "revision": "c848ca848020d0c4ccdd10c5056bd06f2a195ba2",
+      "url": "https://codeload.github.com/ARISE-Initiative/robosuite/tar.gz/c848ca848020d0c4ccdd10c5056bd06f2a195ba2",
+      "bytes": 230109056,
+      "sha256": "3c1f22336c7dd9e9f09fd36f71c7351026b63680af8626068155ebc807dec861"
+    },
+    {
+      "repository": "NVlabs/mimicgen",
+      "revision": "72bd767c255545f462e7ccfb2731f2e5d4c1d9bb",
+      "url": "https://codeload.github.com/NVlabs/mimicgen/tar.gz/72bd767c255545f462e7ccfb2731f2e5d4c1d9bb",
+      "bytes": 16207237,
+      "sha256": "840d6c3f7e4771b0eee05a26b5e9a734d55a51f04a79673ed0e13d22597f2850"
+    },
+    {
+      "repository": "ARISE-Initiative/robosuite-task-zoo",
+      "revision": "74eab7f88214c21ca1ae8617c2b2f8d19718a9ed",
+      "url": "https://codeload.github.com/ARISE-Initiative/robosuite-task-zoo/tar.gz/74eab7f88214c21ca1ae8617c2b2f8d19718a9ed",
+      "bytes": 1682036,
+      "sha256": "71f9a3d813cde121179f4fa290ca4ebeda605d423fa6b65ebf550f7800983926"
+    }
+  ],
+  "released_patches": [
+    {
+      "dependency": "robosuite",
+      "patch_sha256": "11dcc39f3ca3ffd91f1553031e1f0d951f5fc7773a5173927e0f3a9066299393",
+      "changes": {
+        "robosuite/utils/binding_utils.py": {
+          "before": "f282a5a48dd215363ce3f981ce4126d91639c6e00fa530f0615cd5ab598372a8",
+          "after": "e9603feae90140cce682f6f4c4cbddab56933a3c08f5849733aa5badb58c3774"
+        },
+        "robosuite/models/objects/objects.py": {
+          "before": "dd16e0de5f8640a905d3e6914f1e726986b35cfb5f8e101bab44eaa7814c14a1",
+          "after": "9927e81f52596d36ecf4d21399fe5188bf9c6ea96ea91b3b108eb9f6d8a19330"
+        },
+        "robosuite/models/objects/generated_objects.py": {
+          "before": "47855db5e7c2ea36c9e8157ca736df713aecf816315ddca694362a500598dfd5",
+          "after": "dade64a259d686908df9331ded6509ff79ab598008b125d9bd4a948d53232bd0"
+        },
+        "robosuite/models/objects/primitive/box.py": {
+          "before": "1c352afe445f2d1b0545977396535d0210c7ad05e6b637364e83de3508ea90c1",
+          "after": "11df0ade30b9ab3180bf3dd7e60b05c183ccae20a045ea12a861601223c87452"
+        }
+      }
+    },
+    {
+      "dependency": "robosuite-task-zoo",
+      "patch_sha256": "573c7d387eb81737b970f6c11a879f7c2e43a0ea9033faf4a8f394e3090e0816",
+      "changes": {
+        "setup.py": {
+          "before": "ee1d8a0aee5c8f9d5fa2e07a0d6ba4be562f7439ea93fc9a2d5c24b1ed1575b3",
+          "after": "fab82451777d45ae676b536b481538dcc6461342feb6a29e86242d5f2e2f2edf"
+        }
+      }
+    }
+  ],
+  "seed_files": [
+    {
+      "task": "pick_place",
+      "revision": "33016f8a62c02334f929f2913af8fdd2a8a129e1",
+      "path": "source/pick_place.hdf5",
+      "bytes": 92016062,
+      "sha256": "18cb7d4e6947120e200b9ab27c041297f0056aaac20e43f1b79a49a3b3e4f723",
+      "url": "https://huggingface.co/datasets/amandlek/mimicgen_datasets/resolve/33016f8a62c02334f929f2913af8fdd2a8a129e1/source/pick_place.hdf5"
+    },
+    {
+      "task": "stack",
+      "revision": "33016f8a62c02334f929f2913af8fdd2a8a129e1",
+      "path": "core/stack_d0.hdf5",
+      "bytes": 1138107058,
+      "sha256": "3b687047f9d6446da762c9afe4fcb87d77a1a7c2ddf7527c56965311777868f3",
+      "url": "https://huggingface.co/datasets/amandlek/mimicgen_datasets/resolve/33016f8a62c02334f929f2913af8fdd2a8a129e1/core/stack_d0.hdf5"
+    }
+  ],
+  "raw_outcomes": {
+    "source-replay/outcomes.jsonl": "b2c945b25c9820b745d3b3b7ecf4fa6d88b8461af23debdefa08221955f39f66",
+    "transfer-audit/outcomes.jsonl": "bf2923460fefafef7ccda7812d8aa1e746a97c4d4ff4e97a8ab4d8da8be444de"
+  },
+  "environment_spec": "config/recoverbench_python310.txt",
+  "large_training_archive_downloaded": false
+}

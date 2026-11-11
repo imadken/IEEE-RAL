@@ -189,5 +189,177 @@
   "target_action_cap": 500,
   "source_gate_per_task": 0.8,
   "target_coverage_gate": 0.2,
-  "method_comparisons_authorized_only_after_engineering_go": true
+  "method_comparisons_authorized_only_after_engineering_go": true,
+  "fallback_transfer_registration_sha256": "66865d598e79f08dfbcc2c7767f5a2a94b376132e8b6d7a29f72cbb19b8d4d2d",
+  "fallback_training_audit_targets": [
+    {
+      "task": "pick_place",
+      "scene": "v5_train_backfill_grasp_wrong_pose_D0_0020_046c950ffaee",
+      "error": "grasp_wrong_pose",
+      "degree": "D0",
+      "source_group": "pick_place/demo_pick_place_demo_6"
+    },
+    {
+      "task": "pick_place",
+      "scene": "v5_train_backfill_grasp_wrong_pose_D0_0021_04a8c3ade0d2",
+      "error": "grasp_wrong_pose",
+      "degree": "D0",
+      "source_group": "pick_place/demo_pick_place_demo_3"
+    },
+    {
+      "task": "pick_place",
+      "scene": "v5_train_backfill_grasp_wrong_pose_D1_0020_03840f924cbb",
+      "error": "grasp_wrong_pose",
+      "degree": "D1",
+      "source_group": "pick_place/demo_pick_place_demo_9"
+    },
+    {
+      "task": "pick_place",
+      "scene": "v5_train_backfill_grasp_wrong_pose_D1_0023_0439667a8521",
+      "error": "grasp_wrong_pose",
+      "degree": "D1",
+      "source_group": "pick_place/demo_pick_place_demo_7"
+    },
+    {
+      "task": "pick_place",
+      "scene": "v5_train_backfill_drop_at_wrong_place_D0_0020_042781427efb",
+      "error": "drop_at_wrong_place",
+      "degree": "D0",
+      "source_group": "pick_place/demo_pick_place_demo_6"
+    },
+    {
+      "task": "pick_place",
+      "scene": "v5_train_backfill_drop_at_wrong_place_D0_0021_043cbecbacea",
+      "error": "drop_at_wrong_place",
+      "degree": "D0",
+      "source_group": "pick_place/demo_pick_place_demo_1"
+    },
+    {
+      "task": "pick_place",
+      "scene": "v5_train_backfill_drop_at_wrong_place_D1_0021_0374fe77dbe7",
+      "error": "drop_at_wrong_place",
+      "degree": "D1",
+      "source_group": "pick_place/demo_pick_place_demo_5"
+    },
+    {
+      "task": "pick_place",
+      "scene": "v5_train_backfill_drop_at_wrong_place_D1_0025_0494a08119bc",
+      "error": "drop_at_wrong_place",
+      "degree": "D1",
+      "source_group": "pick_place/demo_pick_place_demo_8"
+    },
+    {
+      "task": "pick_place",
+      "scene": "v5_train_backfill_trajectory_regression_D0_0020_038a3fda2ffa",
+      "error": "trajectory_regression",
+      "degree": "D0",
+      "source_group": "pick_place/demo_pick_place_demo_7"
+    },
+    {
+      "task": "pick_place",
+      "scene": "v5_train_backfill_trajectory_regression_D0_0021_0413cec11f65",
+      "error": "trajectory_regression",
+      "degree": "D0",
+      "source_group": "pick_place/demo_pick_place_demo_8"
+    },
+    {
+      "task": "pick_place",
+      "scene": "v5_train_backfill_trajectory_regression_D1_0022_020590843d70",
+      "error": "trajectory_regression",
+      "degree": "D1",
+      "source_group": "pick_place/demo_pick_place_demo_9"
+    },
+    {
+      "task": "pick_place",
+      "scene": "v5_train_backfill_trajectory_regression_D1_0023_021e7c9ce15b",
+      "error": "trajectory_regression",
+      "degree": "D1",
+      "source_group": "pick_place/demo_pick_place_demo_6"
+    },
+    {
+      "task": "stack",
+      "scene": "v5_train_backfill_grasp_wrong_pose_D0_0020_02b1198d6e84",
+      "error": "grasp_wrong_pose",
+      "degree": "D0",
+      "source_group": "stack/demo_stack_demo_113"
+    },
+    {
+      "task": "stack",
+      "scene": "v5_train_backfill_grasp_wrong_pose_D0_0021_02b38df65b99",
+      "error": "grasp_wrong_pose",
+      "degree": "D0",
+      "source_group": "stack/demo_stack_demo_108"
+    },
+    {
+      "task": "stack",
+      "scene": "v5_train_backfill_grasp_wrong_pose_D1_0020_0384bfec6276",
+      "error": "grasp_wrong_pose",
+      "degree": "D1",
+      "source_group": "stack/demo_stack_demo_0"
+    },
+    {
+      "task": "stack",
+      "scene": "v5_train_backfill_grasp_wrong_pose_D1_0021_03bacf2d0781",
+      "error": "grasp_wrong_pose",
+      "degree": "D1",
+      "source_group": "stack/demo_stack_demo_10"
+    },
+    {
+      "task": "stack",
+      "scene": "v5_train_backfill_drop_at_wrong_place_D0_0020_02ca8d4c91f4",
+      "error": "drop_at_wrong_place",
+      "degree": "D0",
+      "source_group": "stack/demo_stack_demo_110"
+    },
+    {
+      "task": "stack",
+      "scene": "v5_train_backfill_drop_at_wrong_place_D0_0021_035936b30db3",
+      "error": "drop_at_wrong_place",
+      "degree": "D0",
+      "source_group": "stack/demo_stack_demo_106"
+    },
+    {
+      "task": "stack",
+      "scene": "v5_train_backfill_drop_at_wrong_place_D1_0021_028ccc448404",
+      "error": "drop_at_wrong_place",
+      "degree": "D1",
+      "source_group": "stack/demo_stack_demo_100"
+    },
+    {
+      "task": "stack",
+      "scene": "v5_train_backfill_drop_at_wrong_place_D1_0023_039c65fe89cb",
+      "error": "drop_at_wrong_place",
+      "degree": "D1",
+      "source_group": "stack/demo_stack_demo_103"
+    },
+    {
+      "task": "stack",
+      "scene": "v5_train_backfill_trajectory_regression_D0_0020_02b979b2e0c7",
+      "error": "trajectory_regression",
+      "degree": "D0",
+      "source_group": "stack/demo_stack_demo_100"
+    },
+    {
+      "task": "stack",
+      "scene": "v5_train_backfill_trajectory_regression_D0_0021_03097ddf1afc",
+      "error": "trajectory_regression",
+      "degree": "D0",
+      "source_group": "stack/demo_stack_demo_109"
+    },
+    {
+      "task": "stack",
+      "scene": "v5_train_backfill_trajectory_regression_D1_0021_06417b283807",
+      "error": "trajectory_regression",
+      "degree": "D1",
+      "source_group": "stack/demo_stack_demo_112"
+    },
+    {
+      "task": "stack",
+      "scene": "v5_train_backfill_trajectory_regression_D1_0022_06c77720a1fe",
+      "error": "trajectory_regression",
+      "degree": "D1",
+      "source_group": "stack/demo_stack_demo_115"
+    }
+  ],
+  "fallback_transfer_rule": "Identity normalized OSC delta/gripper action tape; initialize target once, original one-neutral step, execute min(T,500), stop on first official success; do not synthesize tail controls"
 }
