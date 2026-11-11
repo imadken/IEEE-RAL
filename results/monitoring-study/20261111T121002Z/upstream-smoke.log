@@ -1,0 +1,107 @@
+{
+  "known_true": {
+    "resolved": true,
+    "required_truth": true,
+    "unknown": [],
+    "additional_calls": 0,
+    "executions": 0
+  },
+  "known_false": {
+    "resolved": true,
+    "required_truth": false,
+    "unknown": [],
+    "additional_calls": 0,
+    "executions": 0
+  },
+  "required_unknown": {
+    "resolved": false,
+    "required_truth": null,
+    "unknown": [
+      "p"
+    ],
+    "additional_calls": 3,
+    "executions": 0
+  },
+  "irrelevant_tracked_unknown": {
+    "resolved": false,
+    "required_truth": true,
+    "unknown": [
+      "unrelated"
+    ],
+    "additional_calls": 3,
+    "executions": 0
+  },
+  "irrelevant_untracked_unknown": {
+    "resolved": false,
+    "required_truth": true,
+    "unknown": [
+      "unrelated"
+    ],
+    "additional_calls": 3,
+    "executions": 0
+  },
+  "missing_overwrites_known": {
+    "resolved": false,
+    "required_truth": null,
+    "unknown": [
+      "p"
+    ],
+    "additional_calls": 3,
+    "executions": 0
+  },
+  "conflicting_sensor_visual": {
+    "resolved": false,
+    "required_truth": null,
+    "unknown": [
+      "p"
+    ],
+    "additional_calls": 3,
+    "executions": 0
+  },
+  "precondition_false": {
+    "status": "FAIL",
+    "failure": "PRECONDITION_FAILURE",
+    "additional_calls": 0,
+    "executions": 0,
+    "completed": [
+      -1
+    ]
+  },
+  "effect_unknown": {
+    "status": "UNRESOLVED",
+    "failure": null,
+    "additional_calls": 3,
+    "executions": 1,
+    "completed": [
+      -1
+    ]
+  },
+  "effect_pass": {
+    "status": "PASS",
+    "failure": null,
+    "additional_calls": 0,
+    "executions": 1,
+    "completed": [
+      -1,
+      0
+    ]
+  },
+  "goal_false": {
+    "status": "FAIL",
+    "failure": "GOAL_FAILURE",
+    "additional_calls": 0,
+    "executions": 0,
+    "completed": [
+      -1
+    ]
+  },
+  "goal_pass": {
+    "status": "PASS",
+    "failure": null,
+    "additional_calls": 0,
+    "executions": 0,
+    "completed": [
+      -1
+    ]
+  }
+}
