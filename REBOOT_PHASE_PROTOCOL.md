@@ -140,3 +140,65 @@ source/tests, this protocol, report and small necessary reproducibility manifest
 Raw metadata, Parquets, ranges, videos, predictions, tensors, logs and checkpoints
 stay locally excluded. `.gitignore` and historical lockfiles remain unchanged.
 No GitHub authentication or push; the user publishes the final local branch.
+
+## Overnight extension registered before fitting: 20261111T224622Z
+
+Authority: the supplied REBOOT overnight campaign, reviewed base
+`24f84001aff2c975c25f7f820ae6d8a901a58758`, branch
+`research/reboot-overnight-evidence`. This authorizes a different, restricted
+single-object annotation-agreement experiment; the original multi-object
+DATA_BLOCKED finding above remains unchanged. No mechanical-metadata transfer,
+physical recovery, certified false-positive or publication-readiness claim follows.
+
+The full frozen settings and exact recording/fold IDs are in
+`config/reboot_overnight_20261111T224622Z.json`; local outputs are
+`results/reboot-overnight/20261111T224622Z/`. Exact equality of state, action,
+timestamps and frame ordering joins all 60 sample aliases to cylinder recordings.
+The cohort contains 55 original-schema accepted positive-window recoveries and
+62 expert-source nominal references, each physical recording counted once.
+Sample entries 16,26,35,37,48 remain excluded with their raw labels visible.
+No compatible earlier signal pilot was present. Inputs are consumed read-only.
+
+Five role-balanced SHA-256 folds use evaluation k, calibration (k+1)%5, and the
+other three for fitting. All seeds 11/23/37 are used. B0 is shared; B1/B2/B3
+and the shared phase model run under Q and Q+C. Fixed 30-epoch GRU32 models,
+Adam .001, clipping 1 and equal-recording losses are retained after the
+synthetic-only three-epoch throughput smoke projected approximately ten minutes
+for the full neural matrix with a factor-two allowance. No comparative score
+has been inspected. Model/scaler/transition learning uses training recordings
+only; no test-based early stopping or architecture sweep is authorized.
+
+10-Hz features use received scored observations, backward differences over
+their actual source times, and the previously issued native-frame target.
+Only B0 sees elapsed time. The first alarm is a threshold streak spanning .1 s
+from recording start, with 2-microsecond timestamp tolerance. Calibration uses
+the lowest float64 threshold attaining at most floor(.1*N) reference alarms,
+with conservative ties. Score times satisfy t<H, where H is the registered
+training-only role-duration quantile rule. Three seed risk probabilities are
+averaged before main calibration; seed-specific calibration is descriptive.
+
+All training folds contain chronological phases 1–4 before recovery; phase 5
+has no pre-recovery support and will not receive an accuracy claim. Missing
+expert phase labels are masked. P0/P1/P2 use identical trained phase weights,
+with unfiltered, forward-filtered and .3-second EMA phase mixtures respectively.
+Allowed edges are observed training adjacency plus self edges, pseudocount 1;
+initial counts have fixed +1 smoothing. Originating phase is not current phase.
+Filtering constrains latent paths, not necessarily marginal-argmax transitions.
+
+Primary contrasts: B3–B2, P1–P0, P1–P2, each with timely, premature and
+reference-alarm differences and 2,000 paired role-stratified recording bootstraps.
+Always finish Q/Q+C, B0, .5/1-second interiors, onset-reset inflation,
+10%/30% packet loss, .2/.5-second availability delays and fixed training-event
+permutation B2 development checks. Thresholds remain fixed for sensor stress.
+After main predictions are sealed, compatible already-downloaded expert sources
+for the five other object/operation groups receive a nominal-shift diagnostic;
+no event sensitivity is inferred there. A streaming replay exposes model-level
+signals, not physical root causes. All negative results and absent categories stay.
+
+One locked foreground CPU worker, at most two threads; no GPU is available.
+Reuse CPU PyTorch and the earlier PyArrow installation read-only, with new caches.
+Limits: 10 campaign hours, 12 measured CPU core-hours, 2 GPU hours, 2 GB additional
+transfers and 4 GB new artifacts; reserve 45 minutes and .5 CPU hours for closing.
+Workers checkpoint individual fits/folds, append progress/ledger entries and
+can resume with the same commands. No extra topic, simulator, author contact,
+new data collection, video/weight downloads, push or credentials are authorized.
