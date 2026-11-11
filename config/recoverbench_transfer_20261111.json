@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "reviewed_base": "86fcf8e59d526b5b81eb798b5deb379d19d3eae8",
+  "source_revision": "88f6fedab46dd130a617e058f8d0d05a42c2ea3d",
+  "dataset_revision": "f2f9cfe9ad2135f40c0b47a70269cc806541b58d",
+  "dataset_tag": "v1.2.0",
+  "seed_revision": "33016f8a62c02334f929f2913af8fdd2a8a129e1",
+  "source_registration_sha256": "74c121bee6c653293402f31910cf713231314f19c53dab62205c068fd431f178",
+  "tasks": [
+    "pick_place",
+    "stack"
+  ],
+  "categories": {
+    "A": "grasp_wrong_pose",
+    "B": "drop_at_wrong_place",
+    "E": "trajectory_regression"
+  },
+  "sources": [
+    {
+      "archive_member": "mimicgen_generated/pick_place/grasp_wrong_pose_D0/mg_v5_train_grasp_wrong_pose_D0_000_584674c8_004.npz",
+      "task": "pick_place",
+      "scene_id": "v5_train_grasp_wrong_pose_D0_000_584674c8",
+      "error": "grasp_wrong_pose",
+      "degree": "D0"
+    },
+    {
+      "archive_member": "mimicgen_generated/pick_place/grasp_wrong_pose_D0/mg_v5_train_grasp_wrong_pose_D0_000_584674c8_009.npz",
+      "task": "pick_place",
+      "scene_id": "v5_train_grasp_wrong_pose_D0_000_584674c8",
+      "error": "grasp_wrong_pose",
+      "degree": "D0"
+    },
+    {
+      "archive_member": "mimicgen_generated/pick_place/grasp_wrong_pose_D1/mg_v5_train_grasp_wrong_pose_D1_000_e838a551_001.npz",
+      "task": "pick_place",
+      "scene_id": "v5_train_grasp_wrong_pose_D1_000_e838a551",
+      "error": "grasp_wrong_pose",
+      "degree": "D1"
+    },
+    {
+      "archive_member": "mimicgen_generated/pick_place/grasp_wrong_pose_D1/mg_v5_train_grasp_wrong_pose_D1_000_e838a551_004.npz",
+      "task": "pick_place",
+      "scene_id": "v5_train_grasp_wrong_pose_D1_000_e838a551",
+      "error": "grasp_wrong_pose",
+      "degree": "D1"
+    },
+    {
+      "archive_member": "mimicgen_generated/pick_place/drop_at_wrong_place_D0/mg_v5_train_drop_at_wrong_place_D0_001_3ba9a1f1_000.npz",
+      "task": "pick_place",
+      "scene_id": "v5_train_drop_at_wrong_place_D0_001_3ba9a1f1",
+      "error": "drop_at_wrong_place",
+      "degree": "D0"
+    },
+    {
+      "archive_member": "mimicgen_generated/pick_place/drop_at_wrong_place_D0/mg_v5_train_drop_at_wrong_place_D0_001_3ba9a1f1_003.npz",
+      "task": "pick_place",
+      "scene_id": "v5_train_drop_at_wrong_place_D0_001_3ba9a1f1",
+      "error": "drop_at_wrong_place",
+      "degree": "D0"
+    },
+    {
+      "archive_member": "mimicgen_generated/pick_place/drop_at_wrong_place_D1/mg_v5_train_drop_at_wrong_place_D1_001_860b515b_000.npz",
+      "task": "pick_place",
+      "scene_id": "v5_train_drop_at_wrong_place_D1_001_860b515b",
+      "error": "drop_at_wrong_place",
+      "degree": "D1"
+    },
+    {
+      "archive_member": "mimicgen_generated/pick_place/drop_at_wrong_place_D1/mg_v5_train_drop_at_wrong_place_D1_004_7dffc7cb_003.npz",
+      "task": "pick_place",
+      "scene_id": "v5_train_drop_at_wrong_place_D1_004_7dffc7cb",
+      "error": "drop_at_wrong_place",
+      "degree": "D1"
+    },
+    {
+      "archive_member": "mimicgen_generated/pick_place/trajectory_regression_D0/mg_v5_train_trajectory_regression_D0_000_104eba60_000.npz",
+      "task": "pick_place",
+      "scene_id": "v5_train_trajectory_regression_D0_000_104eba60",
+      "error": "trajectory_regression",
+      "degree": "D0"
+    },
+    {
+      "archive_member": "mimicgen_generated/pick_place/trajectory_regression_D0/mg_v5_train_trajectory_regression_D0_000_104eba60_006.npz",
+      "task": "pick_place",
+      "scene_id": "v5_train_trajectory_regression_D0_000_104eba60",
+      "error": "trajectory_regression",
+      "degree": "D0"
+    },
+    {
+      "archive_member": "mimicgen_generated/pick_place/trajectory_regression_D1/mg_v5_train_trajectory_regression_D1_004_fced0e1f_000.npz",
+      "task": "pick_place",
+      "scene_id": "v5_train_trajectory_regression_D1_004_fced0e1f",
+      "error": "trajectory_regression",
+      "degree": "D1"
+    },
+    {
+      "archive_member": "mimicgen_generated/pick_place/trajectory_regression_D1/mg_v5_train_trajectory_regression_D1_005_0bed9bd5_001.npz",
+      "task": "pick_place",
+      "scene_id": "v5_train_trajectory_regression_D1_005_0bed9bd5",
+      "error": "trajectory_regression",
+      "degree": "D1"
+    },
+    {
+      "archive_member": "mimicgen_generated/stack/grasp_wrong_pose_D0/mg_v5_train_grasp_wrong_pose_D0_000_d9f18d42_007.npz",
+      "task": "stack",
+      "scene_id": "v5_train_grasp_wrong_pose_D0_000_d9f18d42",
+      "error": "grasp_wrong_pose",
+      "degree": "D0"
+    },
+    {
+      "archive_member": "mimicgen_generated/stack/grasp_wrong_pose_D0/mg_v5_train_grasp_wrong_pose_D0_001_f0922b87_000.npz",
+      "task": "stack",
+      "scene_id": "v5_train_grasp_wrong_pose_D0_001_f0922b87",
+      "error": "grasp_wrong_pose",
+      "degree": "D0"
+    },
+    {
+      "archive_member": "mimicgen_generated/stack/grasp_wrong_pose_D1/mg_v5_train_grasp_wrong_pose_D1_000_10ea9ba8_001.npz",
+      "task": "stack",
+      "scene_id": "v5_train_grasp_wrong_pose_D1_000_10ea9ba8",
+      "error": "grasp_wrong_pose",
+      "degree": "D1"
+    },
+    {
+      "archive_member": "mimicgen_generated/stack/grasp_wrong_pose_D1/mg_v5_train_grasp_wrong_pose_D1_001_59ce7d9c_000.npz",
+      "task": "stack",
+      "scene_id": "v5_train_grasp_wrong_pose_D1_001_59ce7d9c",
+      "error": "grasp_wrong_pose",
+      "degree": "D1"
+    },
+    {
+      "archive_member": "mimicgen_generated/stack/drop_at_wrong_place_D0/mg_v5_train_drop_at_wrong_place_D0_000_79e9d84f_000.npz",
+      "task": "stack",
+      "scene_id": "v5_train_drop_at_wrong_place_D0_000_79e9d84f",
+      "error": "drop_at_wrong_place",
+      "degree": "D0"
+    },
+    {
+      "archive_member": "mimicgen_generated/stack/drop_at_wrong_place_D0/mg_v5_train_drop_at_wrong_place_D0_000_79e9d84f_001.npz",
+      "task": "stack",
+      "scene_id": "v5_train_drop_at_wrong_place_D0_000_79e9d84f",
+      "error": "drop_at_wrong_place",
+      "degree": "D0"
+    },
+    {
+      "archive_member": "mimicgen_generated/stack/drop_at_wrong_place_D1/mg_v5_train_drop_at_wrong_place_D1_000_91c29023_000.npz",
+      "task": "stack",
+      "scene_id": "v5_train_drop_at_wrong_place_D1_000_91c29023",
+      "error": "drop_at_wrong_place",
+      "degree": "D1"
+    },
+    {
+      "archive_member": "mimicgen_generated/stack/drop_at_wrong_place_D1/mg_v5_train_drop_at_wrong_place_D1_000_91c29023_001.npz",
+      "task": "stack",
+      "scene_id": "v5_train_drop_at_wrong_place_D1_000_91c29023",
+      "error": "drop_at_wrong_place",
+      "degree": "D1"
+    },
+    {
+      "archive_member": "mimicgen_generated/stack/trajectory_regression_D0/mg_v5_train_trajectory_regression_D0_002_de117243_003.npz",
+      "task": "stack",
+      "scene_id": "v5_train_trajectory_regression_D0_002_de117243",
+      "error": "trajectory_regression",
+      "degree": "D0"
+    },
+    {
+      "archive_member": "mimicgen_generated/stack/trajectory_regression_D0/mg_v5_train_trajectory_regression_D0_003_4d282554_000.npz",
+      "task": "stack",
+      "scene_id": "v5_train_trajectory_regression_D0_003_4d282554",
+      "error": "trajectory_regression",
+      "degree": "D0"
+    },
+    {
+      "archive_member": "mimicgen_generated/stack/trajectory_regression_D1/mg_v5_train_trajectory_regression_D1_000_df92dc27_000.npz",
+      "task": "stack",
+      "scene_id": "v5_train_trajectory_regression_D1_000_df92dc27",
+      "error": "trajectory_regression",
+      "degree": "D1"
+    },
+    {
+      "archive_member": "mimicgen_generated/stack/trajectory_regression_D1/mg_v5_train_trajectory_regression_D1_000_df92dc27_001.npz",
+      "task": "stack",
+      "scene_id": "v5_train_trajectory_regression_D1_000_df92dc27",
+      "error": "trajectory_regression",
+      "degree": "D1"
+    }
+  ],
+  "source_action_cap": 1500,
+  "target_action_cap": 500,
+  "source_gate_per_task": 0.8,
+  "target_coverage_gate": 0.2,
+  "method_comparisons_authorized_only_after_engineering_go": true
+}
