@@ -73,6 +73,8 @@ def main():
     if not command or Path(args.name).name != args.name:
         parser.error("Invalid name or command")
     root = args.root
+    if (root / "completion_manifest.json").exists():
+        raise SystemExit("Run already sealed; use a new evidence directory")
     initial = json.loads((root / "initial.json").read_text())
     journal = root / "commands.jsonl"
     rows = (
@@ -258,7 +260,7 @@ def main():
     write_status(root, final_status)
     with (root / "progress.jsonl").open("a") as stream:
         stream.write(json.dumps(final_status) + "\n")
-    if args.finalize:
+    if args.finalize and status_code == 0:
         if other_workers:
             raise RuntimeError(
                 "Cannot finalize while another bounded worker is running"

@@ -299,6 +299,7 @@ def test_overnight_supervisor_kills_timed_out_worker_and_seals_finalization(tmp_
             "TEST",
             "--timeout",
             "11",
+            "--finalize",
             "--",
             sys.executable,
             "-c",
@@ -316,6 +317,7 @@ def test_overnight_supervisor_kills_timed_out_worker_and_seals_finalization(tmp_
     ]
     assert rows[0]["termination_reason"] == "wall_or_stage_timeout"
     assert json.loads((tmp_path / "STATUS.json").read_text())["running"] is False
+    assert not (tmp_path / "completion_manifest.json").exists()
     done = subprocess.run(
         command
         + [
@@ -346,3 +348,25 @@ def test_overnight_supervisor_kills_timed_out_worker_and_seals_finalization(tmp_
         for line in (tmp_path / "commands.jsonl").read_text().splitlines()
     ]
     assert status["total_cpu_seconds"] == sum(r["cpu_seconds"] for r in rows)
+    before = (tmp_path / "commands.jsonl").read_bytes()
+    rejected = subprocess.run(
+        command
+        + [
+            "--name",
+            "after-seal",
+            "--stage",
+            "FINAL",
+            "--",
+            sys.executable,
+            "-c",
+            "print('must not execute')",
+        ],
+        check=False,
+        capture_output=True,
+        text=True,
+        timeout=20,
+    )
+    assert rejected.returncode != 0
+    assert "already sealed" in rejected.stderr
+    assert (tmp_path / "commands.jsonl").read_bytes() == before
+    assert not (tmp_path / "after-seal.log").exists()

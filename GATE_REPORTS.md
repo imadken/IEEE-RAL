@@ -555,7 +555,7 @@ Evidence paths relative to `results/overnight-20261111/20261110T235337Z`:
 - `audit/scenario_registry.jsonl`, `audit/recovery_actions.jsonl`, `audit/examples.jsonl.gz`: complete compact recipes/action tapes and fixed first-seed examples.
 - `b/*/trials.jsonl`, `status.json`, `b/analysis/report.json`: all 294 rows, per-step numeric/contact errors, outcomes and intervals.
 - `audit/replay_and_integrity.json`, `audit/final_verification.json`: independent compact-record recomputation without the fitter; final verification checks the report statistics below.
-- `audit/api_scope.json`, `audit/local_raw_sha256.json`, `preflight/hardware.json`, `preflight/integrity-final.json`: API/version/source/assets and local raw hashes.
+- `audit/api_scope.json`, `audit/local_raw_sha256.json`, `preflight/hardware.json`, `preflight/integrity-final-validated.json`: API/version/source/assets and local raw hashes. The earlier `integrity-final.json` is retained as an intermediate source inventory.
 - `commands.jsonl`, logs, `progress.jsonl`, `STATUS.json`, `completion_manifest.json`: exact bounded commands/exits, heartbeat, final SHA-256 inventory and resources.
 
 The final validation suite has **29 passing tests**, including timeout/finalization,
