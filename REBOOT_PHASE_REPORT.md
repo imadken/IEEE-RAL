@@ -377,3 +377,174 @@ event semantics and genuine session/operator information before proposing a
 full method campaign. Automatic relabeling from future human actions, another
 object selection, or a new model campaign is not justified by this evidence.
 The principal researcher should review the preserved audit before further work.
+
+
+## Overnight research extension: 20261111T224622Z
+
+The new supervised scope authorizes this single-object recording-level study; the original multi-object DATA_BLOCKED report above remains unchanged. All values below are measured out of fold, relative to released annotations.
+
+| Model | Input | Timely / evaluable | Premature / 55 | Reference alarms / 62 | Median detected delay; misses | Phase inference | Fit wall (s) |
+| --- | --- | ---: | ---: | ---: | --- | --- | ---: |
+| B0 | clock | 0/55 | 0/55 | 0/62 | N/A; 55 misses | — | 0.19 |
+| B1 | Q | 1/55 | 54/55 | 10/62 | 0.10s; 54 misses | — | 0.47 |
+| B2 | Q | 5/55 | 46/55 | 16/62 | 2.50s; 50 misses | — | 0.90 |
+| B3 | Q | 1/55 | 53/55 | 6/62 | 2.00s; 54 misses | — | 63.25 |
+| P0 | Q | 1/55 | 54/55 | 9/62 | 2.00s; 54 misses | unfiltered | 62.63 shared |
+| P1 | Q | 0/55 | 54/55 | 4/62 | N/A; 55 misses | forward filter | 62.63 shared |
+| P2 | Q | 1/55 | 54/55 | 12/62 | 2.00s; 54 misses | EMA .3s | 62.63 shared |
+| B1 | Q+C | 1/55 | 54/55 | 11/62 | 0.10s; 54 misses | — | 0.83 |
+| B2 | Q+C | 9/55 | 44/55 | 8/62 | 2.30s; 46 misses | — | 1.22 |
+| B3 | Q+C | 3/55 | 50/55 | 12/62 | 1.80s; 52 misses | — | 60.43 |
+| P0 | Q+C | 2/55 | 50/55 | 10/62 | 1.40s; 53 misses | unfiltered | 63.92 shared |
+| P1 | Q+C | 1/55 | 50/55 | 10/62 | 1.00s; 54 misses | forward filter | 63.92 shared |
+| P2 | Q+C | 2/55 | 50/55 | 11/62 | 1.40s; 53 misses | EMA .3s | 63.92 shared |
+
+P0/P1/P2 share one fit per fold/input/seed: their fit time is repeated for transparency, not three independent trainings. These detected-only medians exclude the stated misses. Reference alarms are not certified physical false positives.
+
+### What completed and what the data supports
+
+All five folds completed: five shared clock fits, ten ridge dynamics fits, ten ordinary window classifiers, thirty phase-free GRUs and thirty shared phase-head GRUs (seeds 11/23/37, 30 epochs), plus ten development-only permuted-label window fits. There are 95 checkpoints, 85 in the main comparison. All models, preprocessing and continuous OOF predictions remain local.
+
+The 60 sample aliases match cylinder-recovery state/action/timestamps and frame order exactly. They contribute 55 unique eligible recovery recordings, not 115; 62 unique cylinder-install expert-source references bring the cohort to 117. Original sample entries 16,26,35,37,48 remain excluded. Neither malformed phase IDs nor event times were repaired. Five deterministic role-balanced folds use k for evaluation, (k+1)%5 for calibration and three other folds for fitting. Shared collection conditions and overlapping training folds make this exploratory cross-fitting, not untouched confirmation.
+
+All training folds support chronological phases 1–4 before recovery, with no phase-5 supervision. Expert phase loss is masked. Originating failure phase is never substituted for chronological phase. Constant single-object symmetry/clearance cannot establish a mechanical-metadata benefit. No operator/session or cross-object failure-generalization claim is supported.
+
+### Primary paired effects
+
+Differences below are percentage points with 95% exploratory paired intervals from 2,000 recording-level, source-role-stratified resamples. Seeds, aliases and windows are not resampling units.
+
+| Input | Contrast | Timely difference [CI] | Premature difference [CI] | Reference-alarm difference [CI] |
+| --- | --- | --- | --- | --- |
+| Q | B3-B2 | -7.27 [-14.55, -1.82] | +12.73 [+3.64, +23.64] | -16.13 [-29.03, -4.84] |
+| Q | P1-P0 | -1.82 [-5.45, +0.00] | +0.00 [-5.45, +5.45] | -8.06 [-16.13, +0.00] |
+| Q | P1-P2 | -1.82 [-5.45, +0.00] | +0.00 [-5.45, +5.45] | -12.90 [-22.58, -4.84] |
+| QC | B3-B2 | -10.91 [-20.00, -1.82] | +10.91 [+1.82, +20.00] | +6.45 [-6.45, +19.35] |
+| QC | P1-P0 | -1.82 [-5.45, +0.00] | +0.00 [+0.00, +0.00] | +0.00 [-6.45, +6.45] |
+| QC | P1-P2 | -1.82 [-5.45, +0.00] | +0.00 [+0.00, +0.00] | -1.61 [-8.06, +3.23] |
+
+B3 has fewer timely detections than B2 in both regimes; the Q comparison also spends fewer reference alarms, so it is not uniform domination. P1 provides no timely benefit over either P0 or ordinary smoothing. Lower reference alarms without timely recognition are not recovery success. No favorable architecture, seed, threshold or scoring rule was substituted.
+
+### Timing, commands, uncertainty and robustness
+
+Only B0 receives elapsed time. It makes no alarms at its common-exposure calibrated point and detects no events. Human targets are lagged one native frame; Q-only remains essential because teleoperator commands can reveal reaction or collection procedure rather than an autonomous policy's evidence. Q+C improves B2 from 5 to 9 timely detections, but 44/55 first alarms remain premature; it does not rescue the GRU/phase hypothesis. Physical onset remains unvalidated and annotations are rounded.
+
+| Input/model | Clean timely | Drop 10% | Drop 30% | Delay .2s | Delay .5s | Optimistic onset reset |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Q/B1 | 1/55 | 1/55 | 1/55 | 1/55 | 1/55 | 55/55 |
+| Q/B2 | 5/55 | 7/55 | 6/55 | 6/55 | 8/55 | 48/55 |
+| Q/B3 | 1/55 | 1/55 | 1/55 | 1/55 | 1/55 | 51/55 |
+| Q/P0 | 1/55 | 0/55 | 0/55 | 1/55 | 1/55 | 51/55 |
+| Q/P1 | 0/55 | 0/55 | 0/55 | 0/55 | 1/55 | 51/55 |
+| Q/P2 | 1/55 | 0/55 | 0/55 | 1/55 | 1/55 | 51/55 |
+| QC/B1 | 1/55 | 1/55 | 1/55 | 1/55 | 1/55 | 55/55 |
+| QC/B2 | 9/55 | 10/55 | 7/55 | 10/55 | 11/55 | 52/55 |
+| QC/B3 | 3/55 | 3/55 | 1/55 | 3/55 | 3/55 | 51/55 |
+| QC/P0 | 2/55 | 2/55 | 2/55 | 2/55 | 2/55 | 51/55 |
+| QC/P1 | 1/55 | 1/55 | 1/55 | 1/55 | 1/55 | 50/55 |
+| QC/P2 | 2/55 | 2/55 | 2/55 | 2/55 | 2/55 | 51/55 |
+
+Thresholds are unchanged under synthetic packet loss/delay. Every condition's premature/reference alarms, exposure and censoring are in tables/summary.csv, not hidden behind timely counts. The onset-reset column deliberately erases the first premature alarm and restarts persistence; it is an invalid optimistic diagnostic, never the main result. For Q/B3 it changes 1/55 valid timely detections to 51/55. The first-alarm rule prevents that inflation.
+
+The .5/1-second interior analyses retain the original first alarm and report emptied interiors/timing ambiguity. They are stress offsets, not validated onset confidence bounds; paired comparisons use common eligible recording subsets. Full results and changed denominators are in summary.json/paired_effects.json. Missingness holds only received packets; derivatives use source timestamps. Delays hide both observations and commands initially. Prefix tests and independent reconstruction check that future data never fills a past score.
+
+All seed-specific calibrated recording outcomes are in tables/seed_results.csv, and all five fold numerators in tables/fold_results.csv. The fixed interval permutation uses only training donors and evaluates B2 on calibration-fold development recordings, not on main evaluation folds. It reduces development timely counts from 8 to 2 (Q) and 9 to 3 (Q+C), while 51/55 premature alarms persist. This does not validate the physical labels or eliminate collection-role shortcuts.
+
+### Boundary interiors and initialization variation
+
+| Input/model | Original timely/support | .5s interior | 1s interior |
+| --- | ---: | ---: | ---: |
+| Q/B2 | 5/55 | 5/53 | 5/51 |
+| Q/B3 | 1/55 | 1/53 | 1/51 |
+| Q/P1 | 0/55 | 0/53 | 0/51 |
+| QC/B2 | 9/55 | 8/53 | 6/51 |
+| QC/B3 | 3/55 | 3/53 | 2/51 |
+| QC/P1 | 1/55 | 1/53 | 1/51 |
+
+Two/four interiors become empty at .5/1s. Shrinking denominators are not new detections. Sensor-delay increases can simply move early alarms into the released window, rather than improve sensing. No offset is promoted to corrected ground truth.
+
+| Input/model | Seed 11 timely/premature/reference | Seed 23 | Seed 37 |
+| --- | --- | --- | --- |
+| Q/B3 | 2/48/9 | 1/51/9 | 8/45/8 |
+| Q/P0 | 1/54/5 | 0/52/9 | 0/55/12 |
+| Q/P1 | 1/50/8 | 0/52/4 | 1/54/6 |
+| Q/P2 | 1/54/5 | 0/52/9 | 1/54/10 |
+| QC/B3 | 3/50/7 | 2/51/5 | 2/49/17 |
+| QC/P0 | 4/49/6 | 2/51/12 | 2/51/7 |
+| QC/P1 | 4/48/7 | 2/51/10 | 2/48/10 |
+| QC/P2 | 4/49/7 | 3/51/12 | 2/51/10 |
+
+Each seed is calibrated on the same nominal-reference calibration group; denominators are 55 recovery and 62 reference recordings. The primary ensemble averages probabilities before calibration and is not an average of these counts. Initialization sensitivity is material: Q/B3 varies from 1 to 8 timely events; the favorable seed was not selected as the main result. Thus the negative primary contrast concerns the frozen ensemble, not every possible initialization.
+
+### What the phase layer changes
+
+Q: P0: 61.01% phase accuracy; 678 marginal-argmax edge violations; P1: 63.56% phase accuracy; 84 marginal-argmax edge violations; P2: 62.61% phase accuracy; 283 marginal-argmax edge violations.
+
+QC: P0: 64.98% phase accuracy; 582 marginal-argmax edge violations; P1: 70.94% phase accuracy; 116 marginal-argmax edge violations; P2: 67.34% phase accuracy; 265 marginal-argmax edge violations.
+
+Accuracy is restricted to annotated pre-recovery intervals; violation counts span the full scored replay and are not physical-recovery labels. Filtering improves this secondary phase measure but not the primary timely-recognition contrast. Observed edges/self loops, train-only counts and Laplace pseudocount 1 define the matrix. Initial counts receive fixed smoothing. Neural emissions are potentials, not calibrated generative likelihoods. Impossible normalization retains the prior state and emits a flagged unfiltered fallback. No such fallback is concealed.
+
+Positive latent paths use allowed edges; marginal-argmax labels need not. The regression counterexample has previous mass (.4,.6,0), transitions 0→{0,2}, 1→1, 2→2 and emissions (.01,.01,1): the marginal label switches 1→2 despite that edge being forbidden. Standard causal GRUs, forward filtering, EMA, task graphs and this distinction are not new theory. REBOOT already supplies the phase framework; ProTAS is the closest structured online segmentation component (references in the original report).
+
+### Limited external reference shift
+
+After the main prediction/model seal, frozen cylinder models were applied without refitting or threshold changes to 306 unique expert-source recordings. Identical named joint/gripper channels, order, dtype, robot/export and 30-Hz timing were checked; no mapping was chosen from performance. This is a native-export distribution diagnostic. Physical SI calibration is not independently certified, and the official source tree did not supply the custom robot driver. It is not cross-object failure detection.
+
+| Reference source | Q B3 alarm counts across five frozen folds | Q P1 counts | Q+C B3 counts | Q+C P1 counts | Unique recordings |
+| --- | --- | --- | --- | --- | ---: |
+| 16mm-cylinder_remove | 38,43,51,38,25 | 23,47,9,12,8 | 59,57,57,51,52 | 36,14,18,21,26 | 60 |
+| usb-c_install | 60,60,60,60,60 | 57,60,22,59,57 | 60,60,60,60,60 | 60,43,50,60,60 | 60 |
+| usb-c_remove | 60,60,60,60,60 | 60,60,52,60,60 | 60,60,60,60,60 | 58,11,26,54,57 | 60 |
+| rj45-install | 62,62,62,62,62 | 62,62,43,62,62 | 62,62,62,62,62 | 62,54,42,62,62 | 63 |
+| rj45_remove | 61,62,62,62,62 | 53,55,42,49,52 | 62,62,62,62,62 | 62,61,61,62,62 | 63 |
+
+These are five repeated analyses of each external recording, not 1,530 independent recordings. Alarm/exposure counts, score distributions and full-bundle latency are retained per recording/fold in external_outcomes.json. Very short recordings remain censored, with exposure availability explicit. High alarms are distribution sensitivity, not new failure labels. Unannotated recovery sources are excluded. Missing target events prohibit target sensitivity/delay or metadata-transfer claims.
+
+### Streaming replay and explanation examples
+
+The runtime accepts only timestamped current observations and previously issued targets. It carries recurrent and filtered state from recording start; labels, future duration and true phase are evaluator-only overlays. All four deterministic categories are attempted under both Q and Q+C, choosing earliest first-alarm time then canonical ID (non-alarming misses sort last). Absent categories remain explicit; Q/P1 has no timely example. Trace fields show actual motion/target residual, phase/emission distributions, allowed predecessor mass, filter score change, persistence and threshold. They explain model computation, not friction/misalignment or another physical cause.
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 \
+PYTHONPATH=src:results/reboot-phase/20261111T204459Z/env/lib/python3.12/site-packages \
+uv run --no-sync python -m dual_rec.reboot.overnight_replay --root results/reboot-overnight/20261111T224622Z \
+  --group recording:d7ab759bd690a02afba335860c4f44d4b794d86d60606e2794a67bc6cbc76651 --variant QC --method P1
+```
+
+Q: 3/4 categories present; maximum streaming/batch risk discrepancy 8.37e-08; packet mean inference 1.31–1.35 ms across examples. Per-category first-alarm agreement and traces are in streaming/examples_Q.json.
+
+QC: 4/4 categories present; maximum streaming/batch risk discrepancy 9.93e-08; packet mean inference 1.30–1.35 ms across examples. Per-category first-alarm agreement and traces are in streaming/examples_QC.json.
+
+The earliest missed-target example also has a premature first alarm, so those two categories share a recording in each input regime; they are not additional independent demonstrations. Full non-alarming/late cases remain in the outcome and prediction files.
+
+### Claims and next evidence
+
+| Established in this run | Unsupported here | Required next evidence |
+| --- | --- | --- |
+| Completed single-object trained OOF baseline/phase comparison and causal replay | Improved physical recovery, safety or causal root-cause identification | Prospective robot/policy evaluation, independently verified outcomes |
+| Phase filtering improves chronological phase accuracy/coherence in this sample | Improved timely recognition beyond ordinary smoothing | Frozen-model test on a new, counterbalanced collection session |
+| First-alarm accounting reveals heavy premature alarms; onset-reset evaluation inflates apparent success | Robust recognition of true physical onset or useful deployment performance | Independently adjudicated physical onset/recovery boundaries and nominal references |
+| Native external references expose distribution sensitivity | Cross-object failure sensitivity, mechanical-metadata benefit or operator generalization | Attributable target-object events, multiple objects per mechanical attribute and independent operators |
+
+The smallest useful next confirmation is an independently collected, counterbalanced cylinder session: matched start conditions/recording exposure across roles, externally annotated onset and human-recovery times, and a frozen comparison of B2/B3/P0/P1/P2 with Q and Q+C. Choose the number of independent calibration/evaluation recordings prospectively for alarm-rate resolution and paired uncertainty, not by recycling windows. A broader assembly claim additionally needs real event annotations on the other objects. No such collection or new campaign was launched. This package is not publication-ready and does not demonstrate the proposed recognition contribution.
+
+### Provisional positioning (not a manuscript)
+
+This exploratory REBOOT study separates causal motion evidence, command-assisted evidence, extra phase supervision, graph filtering and ordinary smoothing under identical recording-level folds. The measured result is a useful negative boundary: better phase coherence does not imply a better recovery-needed alarm. A superficially strong onset-reset evaluation largely disappears when first alarms are counted from recording start. This supports retaining the functioning baseline/replay package and correcting the evidence target before pursuing a stronger method claim. It does not establish novel temporal logic, task graphs, physical recovery improvement or a publishable positive PCRR result.
+
+### Verification, preservation, resources and resume
+
+The independent scorer imports neither detector nor main scorer. It independently joins raw aliases, checks train-only folds/grammar, reconstructs missingness/delay features, recomputes 190 threshold calibrations, first-alarm/boundary/seed outcomes, external alarms and 2,000-resample paired effects. See independent_audit.json for exact counts and hashes. Engineering tests are separate from scientific evidence. The final maintained test/lint/format outcomes and metering are in commands.jsonl; completion_manifest.json binds the final commit and every artifact.
+
+Existing CPU Torch and the earlier PyArrow installation were reused read-only, with new caches and no package/model/video downloads. Known-source housekeeping fetched one immutable official Git tree, found no attributable additional event files, and saved one unsent request draft. No authors were contacted. Initial per-backend two-thread pools incurred spin overlap; remaining workers use passive OpenMP and one-thread BLAS to keep the CPU worker bounded. GPU/paid APIs/simulators/robot executions are zero. Initial bootstrap/editor/tool overhead is unmetered; foreground worker/driver and closing CPU are measured. Final resources.json states wall/CPU, transfers and storage with scope.
+
+Historical report/protocol prefixes, all other maintained historical files, old completion seal and every consumed source file are verified at start/end. The historical lockfile and .gitignore are unchanged. No whole-release inventory or old physical study was repeated. Checkpointed workers use a process lock; resume an **unfinished, unsealed** run with the same worker and `python -m dual_rec.reboot.overnight_experiment --root RUN --stage train` then `--stage predict`. Existing complete fits are reused; completed sealed runs reject writing commands. All authorized analyses are complete, without detached workers. Local commits only; publication is manual.
+
+![alarm_frontier](results/reboot-overnight/20261111T224622Z/figures/alarm_frontier.png)
+
+![phase_comparison](results/reboot-overnight/20261111T224622Z/figures/phase_comparison.png)
+
+![streaming_timeline](results/reboot-overnight/20261111T224622Z/figures/streaming_timeline.png)
+
+Engineering validation: 15 focused tests passed; 261 maintained tests passed and four original environment-gated physics checks skipped. Lint and format checks passed (125 maintained Python files). These counts are not scientific sample sizes.
+
+Verified preseal checkpoint: campaign wall 3508.714s (conservative five-minute startup allowance), measured worker/driver/closing CPU 2394.010s; GPU 0; additional transfers <=1,000,000 bytes; logical artifacts 195,306,405 bytes and storage charge 245,306,405 bytes. Final reporting/archive/seal costs are added in resources.json. All limits passed.
