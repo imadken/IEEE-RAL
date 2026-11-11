@@ -281,6 +281,7 @@ def trial(task, seed, condition, stage, policy, horizon):
     try:
         prefix, records, reached, detection = prefix_to_stage(reference, stage)
         base = {
+            "completed_continuations": 0,
             "task": task,
             "seed": seed,
             "condition": condition,
@@ -318,6 +319,7 @@ def trial(task, seed, condition, stage, policy, horizon):
             compare(a, b) for a, b in zip(records, gold_prefix, strict=True)
         ]
         gold_trace = [gold.step(a) for a in actions]
+        base["completed_continuations"] = 2
         gold_errors = [compare(a, b) for a, b in zip(native, gold_trace, strict=True)]
         base["gold_prefix"] = summary_errors(prefix_errors)
         base["gold_continuation"] = summary_errors(gold_errors)
@@ -351,7 +353,9 @@ def trial(task, seed, condition, stage, policy, horizon):
                 key: max_difference(value, reference.exposed()[key])
                 for key, value in exposed_before.items()
             }
-            tested = [reference.step(a) for a in actions]
+            for a in actions:
+                tested.append(reference.step(a))
+            base["completed_continuations"] = 3
             errors = [compare(a, b) for a, b in zip(gold_trace, tested, strict=True)]
             base["test"] = outcome(tested, actions, task)
             base["test_continuation"] = summary_errors(errors)
@@ -366,6 +370,7 @@ def trial(task, seed, condition, stage, policy, horizon):
             }
             base["test"] = None
         base["continuation_actions"] = actions
+        base["test_steps_completed"] = len(tested)
         return (
             base,
             {"prefix": records, "native": native, "gold": gold_trace, "test": tested},
@@ -388,8 +393,20 @@ def main():
     args = parser.parse_args()
     cfg = json.loads(Path("config/overnight_20261111.json").read_text())["b"]
     seeds = cfg["seed_ranges"][args.task][args.offset : args.offset + args.count]
+    planned = len(seeds) * len(cfg["conditions"][args.task]) * 3 * 2 * 3
+    prior_reserved = 0
+    for status_file in args.output.parent.glob("*/status.json"):
+        previous = json.loads(status_file.read_text())
+        prior_reserved += (
+            previous.get("attempted_continuations", 0)
+            if previous["status"] == "completed"
+            else previous.get("planned_continuations", 0)
+        )
+    if prior_reserved + planned > cfg["physical_continuation_cap"]:
+        raise RuntimeError("B physical continuation budget boundary")
     args.output.mkdir(parents=True, exist_ok=False)
     count = 0
+    completed_count = 0
     try:
         with (
             (args.output / "trials.jsonl").open("x") as compact,
@@ -408,6 +425,7 @@ def main():
                                 cfg["horizon"],
                             )
                             count += branches
+                            completed_count += result["completed_continuations"]
                             compact.write(
                                 json.dumps(jsonable(result), allow_nan=False) + "\n"
                             )
@@ -443,7 +461,9 @@ def main():
                     "status": "completed",
                     "task": args.task,
                     "seeds": seeds,
-                    "physical_continuations": count,
+                    "attempted_continuations": count,
+                    "physical_continuations": completed_count,
+                    "planned_continuations": planned,
                 }
             )
         )
@@ -455,7 +475,9 @@ def main():
                     "status": "BLOCKED",
                     "task": args.task,
                     "seeds": seeds,
-                    "physical_continuations": count,
+                    "attempted_continuations": count,
+                    "physical_continuations": completed_count,
+                    "planned_continuations": planned,
                     "error": str(exc),
                     "traceback": traceback.format_exc(),
                 }
