@@ -460,3 +460,338 @@ equivalence, source replay and EEF cache issue before authorizing a qualified
 ACRR experiment. No additional research project, full campaign or manuscript
 was started. The branch is suitable for manual publication as a bounded
 negative engineering audit, subject to that scientific review.
+
+## 16. Supervised interface qualification rescue — 11 November 2026
+
+This section records the subsequent supervised contract; sections 1–15 and the
+previous sealed evidence are retained. Reviewed commit:
+`960ec091e1ff16d29fa89d5bf20c63847050886a`. New branch:
+`research/recoverbench-interface-qualification`. Evidence root:
+`results/recoverbench-qualification-rescue/20261111T195432Z/` (RESCUE).
+The new preregistration is committed before physical checks at `4d5c15a`;
+membership/config SHA-256 is
+`4c0f76578e0df4ae81ec98248dec6f8b3a59cfcf0ef064394b02b3f3160c31f7`.
+The final commit is recorded in `RESCUE/completion_manifest.json`.
+
+**Decision: INCONCLUSIVE, with BENCHMARK_COMPATIBILITY_BLOCKED and
+SOURCE_GENERATION_BLOCKED.** Some raw controls execute successfully, but no
+qualified official generator/candidate library has been established. Stage D
+was not activated. This is not METHOD_NO_GO, an ACRR result or a benchmark RSR.
+
+### 16.1 Scope, inputs and completed stages
+
+The exact RecoverBench, dataset, MimicGen, robosuite and task-zoo revisions and
+released patches remain those in section 1. No package, asset, vendored source,
+historical lockfile or expected fingerprint was changed. The existing Python
+3.10 environment and verified downloads are reused through local input-directory
+symlinks; no additional dataset archive or model was downloaded.
+
+Stage A constructor/model diagnosis and Stage B source/controller/FK audits
+completed. Stage C completed its required dependency preflight and stopped at
+the contract's explicit missing-prepared-source boundary; generation was not
+performed. The eight frozen generation scenes were not replaced. Stage D and
+its comparative/qualification runs were not authorized by the resulting gate.
+Independent outcome, physics, preservation, regression and resource checks
+completed. No evaluation scene was opened for new simulator execution or method
+selection in this rescue, and no research job remains running at closure.
+
+The exact source and scene memberships are in
+`config/recoverbench_qualification_20261111.json`. Six source tapes per task were
+selected as the first lexicographic member of each already fixed category/degree
+cell, independent of earlier outcomes: six distinct source scenes and four clean
+parent trajectories per task. The eight prospective Stack generation scenes
+cover all six category/degree cells plus two lexicographic additions; they have
+six clean parents. Their scene IDs are disjoint from the source-audit IDs, but
+some clean parents overlap. This is engineering qualification, not a disjoint
+training/confirmation split for a fitted selector.
+
+### 16.2 Environment constructor identity and adaptation
+
+The six constructor questions are resolved as follows:
+
+1. The released `error_benchmark/scripts/utils/script_utils.py:create_env`
+   reads PickPlace_D0 from the seed HDF5 metadata and calls `robosuite.make`.
+2. Registration resolves to pinned MimicGen's `PickPlace_D0.__init__`, which
+   calls the pinned robosuite `PickPlace.__init__` superclass.
+3. MimicGen itself adds `z_rotation=(0, pi/2)`; it is not present in the seed
+   kwargs used here. The superclass has no such constructor argument.
+4. The class is registered, but no working supported D0 constructor path was
+   found in this pinned pair or its released patch. The exact original TypeError
+   and full call sequence remain in `RESCUE/identity.json` and its command log.
+5. The factory catches **any** constructor exception, then tries PickPlace.
+   Its comment describes fallback for unregistered classes, but the code also
+   hides this registered-class constructor failure. Base PickPlace samples full
+   object yaw, whereas D0's declared intent restricts yaw to 0–90 degrees.
+   This changes reset-distribution semantics; matching state dimensions alone
+   does not establish benchmark identity after injection.
+6. Seed metadata specifies Sawyer/OSC_POSE for PickPlace_D0 and Panda/OSC_POSE
+   for Stack_D0. Actual robot/controller conventions match those channels;
+   PickPlace's class does not match. Stack_D0 constructs as registered. Both
+   still fail the original XML fingerprint check.
+
+A separate local `QualificationPickPlaceYawAdapter` calls the base implementation
+and changes only `CollisionObjectSampler.rotation` to (0, pi/2). This preserves
+the documented yaw intent without deleting an unsupported argument in vendored
+code. Construction and sampler bounds are tested. It remains explicitly
+**adapted**, is not substituted into the official factory and is not used for
+any source recovery rollout. Its compiled comparison with the base differs
+only in a visual site-color field in this diagnostic. This does not restore an
+official class/fingerprint contract. The original D0 failure is preserved.
+
+### 16.3 XML, compiled-model and physical-equivalence obligations
+
+`RESCUE/identity/` retains factory XML, original seed XML, source-supported path
+relocation of seed XML, and compressed compiled numeric parameter snapshots.
+`identity.json` records literal expected/actual fingerprints, actual classes,
+factory kwargs, robot/gripper names, controller gains/scales, body/joint/geometry/
+actuator/site names, version and time-step settings, and asset content hashes.
+Path canonicalization removes only known package-directory prefixes and retains
+physical attributes; it does not manufacture the expected fingerprint.
+
+Compiled seed-reference and factory models have matching named identities for
+both tasks. They nevertheless differ in 15 retained numeric fields per task.
+Large mass differences are specifically the **world-welded table/bins**:
+
+| Body | Factory mass | Seed-reference mass | Welded to world |
+|---|---:|---:|---|
+| Stack table | 32.000000 | 70.086836 | Yes |
+| PickPlace bin1 | 11.680000 | 24.365310 | Yes |
+| PickPlace bin2 | 13.480000 | 27.965310 | Yes |
+
+Those fixed-body masses are not evidence of a changed moving-object mass or the
+cause of replay failure. Other differences include small serialized numeric
+precision changes (maximum armature discrepancy 3.333333e-6), derived inertia
+fields and visual site sizes. Contact friction, collision masks, actuator gains
+and biases agree between these two references. See
+`RESCUE/compiled_model_detail.json` and the full compiled snapshots, which retain
+the differences rather than hiding them behind a chosen tolerance.
+
+The original **failure-scene** XML/compiled parameter snapshot is not supplied;
+seed clean-demo XML is available but its SHA-1 is not the recorded scene hash.
+Consequently, source model binding, all dynamic/contact equivalence and exact
+controller-initialization fidelity cannot be certified. Canonical XML differences
+are not solely path text; nor do these reference differences prove a changed
+failure-scene dynamics model. Both original strict fingerprint checks remain
+failed, so the alternative references do not qualify an official benchmark run.
+
+### 16.4 Source timing, controller memory and actual rollouts
+
+The exact generator is
+`error_benchmark/scripts/augmentation/3c_generate_from_error_scene.py` (the older
+section's `scripts/mimicgen/...` path was an attribution error; the evidence and
+source file inspected are retained). It resets normally, injects the post-error
+state directly with `sim.set_state_from_flattened`/`sim.forward`, then calls the
+pinned `DataGenerator.generate`. The latter selects source subtasks, applies
+object-relative pose warping and interpolation, converts each waypoint into a
+current-state normalized pose delta and executes it. It does not transplant an
+unchanged action tape to another scene.
+
+Pinned `WaypointTrajectory.execute` saves each state **before** executing its
+corresponding action. The sampled records have T states and T actions, at 0.05 s
+control intervals. The target evaluator's neutral action belongs to its initial
+observation procedure, not this recorded source format; neither source condition
+in this rescue inserts it. Controls have six normalized OSC pose components
+(1 maps to 0.05 m / 0.5 rad) plus the gripper command. Positive gripper commands
+close, negative commands open; the gripper's integrated `current_action` is not
+contained in a flat time/qpos/qvel state.
+
+The actual released source-validation checker restores via
+`EnvWrapper.set_sim_state_flat`, which additionally force-updates controller EEF
+caches and resets goal position/orientation. Raw generator-style injection does
+not do those cache/goal updates. The checker also shares an environment across
+source calls, while the frozen raw condition constructs and resets a fresh
+environment per tape. These change multiple initialization details together;
+the experiment is not a one-factor causal ablation of controller memory.
+OSC means operational-space control; no separate oscillator was introduced.
+
+A derived HDF5 input preserves the selected NPZ action/state arrays byte for
+byte and copies original seed env_args solely to invoke the actual source
+checker. It contains no invented datagen_info and is **not** a DataGenerator
+prepared source. Every before/after state, EEF rotation/position, gripper qpos/
+memory, controller caches/goals and contact record is saved in the 24 traces.
+
+| Task / execution condition | First-hit successes | Initially successful | Newly reached success | Full-tape terminal success |
+|---|---:|---:|---:|---:|
+| Stack / released source checker | 2/6 | 2/6 | 0/4 initially unsolved | 2/6 |
+| Stack / fresh raw injection and controls | 5/6 | 2/6 | 3/4 initially unsolved | 4/6 |
+| PickPlace / released source checker | 0/6 | 0/6 | 0/6 | 0/6 |
+| PickPlace / fresh raw injection and controls | 1/6 | 0/6 | 1/6 | 1/6 |
+
+All 24 rollouts executed the full recorded tapes: **9,862 controls**, with no
+neutral action or intermediate state assignment during a counted rollout.
+All diverge from the recorded pre-action physical state by the first saved
+post-action comparison (after action 1, registered 1e-8 coordinate threshold).
+Initial differences are at most 2.220446e-16, consistent with normalization
+roundoff. Controller/gripper state was not fully recorded in the released tapes,
+so exact original memory reconstruction is not established.
+
+Three initially unsolved raw Stack tapes reach success at actions 110, 119 and
+133; the two initially solved Stack tapes first satisfy the counted predicate at
+action 1. PickPlace's sole raw success occurs at **714**, beyond the target
+500-action budget; it cannot qualify a benchmark recovery. Per-error first-hit
+counts across D0/D1 are: Stack grasp 0→2, drop 2→2 (both initially solved),
+regression 0→1; PickPlace grasp/drop 0→0 and regression 0→1. Arrows denote
+checker→raw workflow, not ACRR improvement.
+
+Paired raw-minus-checker first-hit differences are +50 percentage points for
+Stack and +16.67 for PickPlace. Whole-clean-parent bootstrap intervals (2,000
+resamples, seed 20261111; four parents/task) are [0,75] and [0,60] percentage
+points. These wide, conditional diagnostic intervals include zero. Six tapes
+are not six independent parent trajectories, and these are neither official RSR
+intervals nor evidence that a particular cache fix improves a recovery policy.
+
+### 16.5 Independent EEF reconstruction and missing generation inputs
+
+For all 12 sampled tapes, **4,931 saved states** were independently reconstructed
+in separate native MuJoCo data, without overwriting a counted rollout. World
+site positions/rotations agree with parent-body plus local-site transforms and
+the simulator wrapper; maximum observed discrepancy is zero at stored precision.
+A separately implemented audit reproduces every derived EEF position/rotation.
+All 12 cached controller/stored EEF series remain constant under state forwards,
+while physical kinematics move. Maximum stored-versus-reconstructed displacement
+per tape ranges from 0.153081 to 0.771274 m.
+
+Separate `RESCUE/derived/source-*-kinematics.npz` files contain state and kinematic
+arrays only, with raw-source/output hashes in `derived/manifest.json`, executed
+code/reference-model hashes in `derived/provenance.json`, and explicit local-model
+scope. Taxonomy and source IDs are separate provenance, never a deployed feature
+array. This repairs feature extraction for the local model; it does **not**
+repair stored controls or establish the original failure-scene model identity.
+
+Stage C's exact preflight blocker is recorded in `generation_preflight.json`:
+
+- `data/mimicgen_prepared/stack_d0_prepared.hdf5`, required by the released
+  generator, is absent from the acquired source/data layouts.
+- The acquired raw Stack seed has **0/1,000** demos with datagen_info; PickPlace
+  has **0/10**. Missing prepared fields include EEF/target/object poses, gripper
+  actions, subtask termination signals and interface attributes.
+- Importing the actual pinned DataGenerator fails first with missing `gdown`.
+  `robomimic` and `torch` are also absent from the reused physics-only environment.
+- The official `mimicgen/scripts/prepare_src_dataset.py` preparation interface was
+  inspected. It was not replaced by synthetic labels, guessed waypoints or the
+  checker-only HDF5 conversion. The contract explicitly directs stopping Stage C
+  when prepared files/interfaces are unavailable; no environment modification or
+  full recovery-corpus download was used to bypass that boundary.
+
+Generation attempts: **0**; independently executed generated candidates: **0**.
+These are missing/unattempted outcomes, not 0/8 failures or a measured generation
+success rate. Four-of-eight scene coverage and two distinct qualified generated
+recoveries are not established. The source checker/raw-tape results above are
+not substituted for this missing generator qualification.
+
+### 16.6 Independent audits, errors and preservation
+
+The numerical auditor imports no executor. It checks literal action bytes,
+source alignment, finite states, 0.05 s steps, continuity between actions,
+first/terminal success, input/trace hashes, scene separation and derived-array
+fields. Final result: **PASS**, 24 rows / 9,862 controls, zero mismatches. A second
+direct-simulator implementation independently verifies **56 predicate snapshots**
+and all 4,931 feature positions/rotations: **PASS**, zero discrepancies. Agreement
+in these local-model checks does not waive model-identity uncertainty.
+
+An initial exact-equality initialization check flagged ten machine-roundoff
+residuals, all <=2.220446e-16. The failed audit and residual table are retained.
+The checker now retains the residual and uses 1e-12 initialization tolerance,
+well below the frozen 1e-8 trajectory-divergence threshold; a regression covers
+this case. No physical outcome, candidate, action, task predicate or divergence
+threshold changed. The actually executed prior auditor/driver source versions
+are archived and matched to their recorded hashes.
+
+An initial isolated test failed because the host budget-driver dependency
+`psutil` is absent from the frozen physics environment. That test is validated
+in the root environment and explicitly skipped in isolated runs; no package was
+installed into the sealed environment. A separate upstream test initially failed
+because its expected `shared/mimicgen_workspace` layout was absent. A **separate
+254-file byte-identical source copy** plus directory symlinks restores the
+documented dependency layout for those tests, with zero source-code patches.
+All 62 selected upstream tests then pass. The copy is for tests, not an adapted
+physics result or substitute prepared generator source.
+
+That first upstream invocation also wrote incidental pytest cache entries inside
+the old source directory. The changed cache was archived locally; only cache
+bytes whose reconstructed SHA-256 exactly matched the previous seal were
+restored, and the newly created failure-cache file was archived then removed.
+`RESCUE/cache_incident.json` records the incident. Subsequent pytest/TMPDIR/cache
+output is redirected into RESCUE. Final verification checks every old sealed
+file, absence of added files there, all 1,015 earlier historical files and all
+680 reviewed tracked files; only append-only additions to these two cumulative
+documents are allowed. This explicitly records the correction rather than
+claiming the incidental write never occurred.
+
+Constructor identity, sampler bounds, action scaling, controller refresh,
+kinematics, original success predicate, XML/compiled comparison, T/action timing,
+source/target separation, rollout continuity, qualification false acceptance,
+budget enforcement, append-only preservation and sealed-run rejection have
+regressions. The maintained suite passes **212 tests**, with four pinned-stack
+physics tests skipped in the root environment; the isolated suite passes
+**12 tests**, with the host-only budget test explicitly skipped. Those four
+physics tests execute in the isolated suite. Exact outputs are in
+`rescue-maintained-regression-final.log` / `rescue-isolated-regressions-final.log`.
+Ruff and formatting pass for maintained source/tests/scripts. Tests for ACRR's
+actual false rejection/acceptance or deployable feature leakage are **N/A**:
+there is no deployed selector. Array/provenance and gate checks are not relabeled
+as tests of an unimplemented method.
+
+### 16.7 Resources and reproduction
+
+The rescue began at **20:54:32 CET / 19:54:32 UTC**. New ceilings are five aggregate
+worker wall hours, six measured CPU core-hours, one GPU wall-hour if necessary,
+four GB new files excluding identical reused inputs. Main source diagnostics:
+339.766179 worker wall seconds / 346.817918 measured worker-plus-driver CPU
+seconds. Every substantive physics and test worker is bounded, foreground and
+logged with source hashes and exits. There was no GPU rendering, model training,
+paid API call, new dataset download or GitHub authentication/push.
+
+`RESCUE/resources.json` and the final completion manifest provide aggregate
+worker wall/CPU, closing-process CPU, session elapsed time, new artifact bytes
+and conservative external Git/cache/temp storage charges. The new run is roughly
+0.06 GB before sealing, including a conservative charge for the copied source
+files; verified old data/environment are reused. Initial metadata/tool/editor
+work is outside the worker meter; five seconds are additionally reserved for the
+small bootstrap worker, and no host-wide exact CPU claim is made. The final
+resource bounds include the measured closing checks and remain below all limits.
+
+The committed config fixes membership and every pin; no historical source file
+was edited. For reproduction, use a **fresh** RESCUE directory, reuse verified
+inputs with `data`/`upstream` directory symlinks, and copy the compact config to
+`registration.json`. Preserve the initial inventory before execution. The
+original environment path below is the reused pinned Python 3.10 environment:
+
+```sh
+export UV_CACHE_DIR=/tmp/dual-rec-uv-cache PYTHONPATH=src PYTHONDONTWRITEBYTECODE=1
+uv run --no-sync python scripts/recoverbench_qualification_command.py --root "$RESCUE" --name identity --timeout 180 -- \
+  uv run --no-project --python "$ORIGINAL/env/bin/python" python -m dual_rec.recoverbench.qualification --root "$RESCUE" --stage identity
+uv run --no-sync python scripts/recoverbench_qualification_command.py --root "$RESCUE" --name sources --timeout 1500 -- \
+  uv run --no-project --python "$ORIGINAL/env/bin/python" python -m dual_rec.recoverbench.qualification_replay --root "$RESCUE"
+uv run --no-sync python scripts/recoverbench_qualification_command.py --root "$RESCUE" --name generator-preflight --timeout 90 -- \
+  uv run --no-project --python "$ORIGINAL/env/bin/python" python -m dual_rec.recoverbench.qualification --root "$RESCUE" --stage generation-preflight
+uv run --no-sync python scripts/recoverbench_qualification_audit.py --root "$RESCUE"
+uv run --no-project --python "$ORIGINAL/env/bin/python" python scripts/recoverbench_qualification_audit.py --root "$RESCUE" --physics
+uv run --no-sync python scripts/recoverbench_qualification_analysis.py --root "$RESCUE"
+```
+
+Exact executed commands, preparation scripts, source versions and all failed
+attempts remain in RESCUE, including `workspace_manifest.json` for the unmodified
+upstream test layout. Raw data, logs, compiled arrays, derived NPZs and detailed
+outcomes stay locally excluded. `.gitignore` remains unchanged. Final source and
+evidence hashes and local commit are in `RESCUE/completion_manifest.json`.
+
+### 16.8 Scientific implication and stopping boundary
+
+This rescue establishes that source action semantics and initialization flow
+matter: some tapes reach the original task predicate under raw injection while
+the released source checker does not. It does not identify a unique causal
+controller fix or certify exact original-state/action replay. FK extraction can
+be made internally consistent for the local model; that is not a recovery-skill
+selection contribution. The original campaign's results remain valid descriptions
+of its own workflow, not universal failures of every recovery-generation path.
+
+The Stage A equivalence obligation and Stage C prepared-source/interface
+obligation remain unresolved. Hence **INCONCLUSIVE**, with the two explicit
+compatibility/source-generation blockers. B1–B5 comparisons, applicability
+acceptance/rejection, abstention, coverage frontier, B4–B2/B3 effects and their
+intervals remain **N/A**, not zero. H2–H4, methodological novelty, official Normal
+SR/RSR and physical robot generalization remain untested. No official held-out
+evaluation, new research direction, additional recovery policy or manuscript
+was started. This bounded audit is ready for the principal researcher's review
+and manual publication; a method pilot needs new qualified inputs/evidence.
