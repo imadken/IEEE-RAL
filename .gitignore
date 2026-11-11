@@ -17,3 +17,6 @@ results/overnight-20261111/**/scenarios.jsonl.gz
 results/overnight-20261111/**/traces.jsonl.gz
 results/overnight-20261111/**/models.json.gz
 results/overnight-20261111/**/raw.jsonl.gz
+*.log
+*.jsonl.gz
+results/evidence-revalidation/*
