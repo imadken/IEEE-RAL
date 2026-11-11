@@ -131,3 +131,104 @@ def test_recovery_actions_are_sensor_only_and_budget_bounded():
         assert np.abs(actions[:, :3]).max() <= 0.25
         if mode == "conservative":
             assert np.abs(actions[:, :3]).max() <= 0.08
+
+
+def test_replay_audit_retains_failed_test_branches_and_rejects_invalid_gold():
+    from dual_rec.replay_audit import summarize_replay
+
+    error = {
+        "position": 0.0,
+        "angle": 0.0,
+        "qpos": 0.0,
+        "velocity": 0.0,
+        "observation": 0.0,
+        "time": 0.0,
+        "contacts": True,
+        "success": True,
+    }
+    rows = []
+    for seed in range(3):
+        for policy in ["nominal", "alternative"]:
+            gold = 0.8 if policy == "nominal" else 0.2
+            test = 0.1 if policy == "nominal" else 0.9
+            rows.append(
+                {
+                    "task": "fixture",
+                    "seed": seed,
+                    "condition": "nominal",
+                    "stage": "contact",
+                    "policy": policy,
+                    "stage_reached": True,
+                    "gold_prefix": {"passed": True},
+                    "gold_continuation": {"passed": True},
+                    "gold": {"success": True, "utility": gold},
+                    "test": {"success": False, "utility": test},
+                    "test_immediate_error": error,
+                    "test_continuation": {
+                        "passed": False,
+                        "contact_agreement": 0.0,
+                        "maxima": {
+                            k: error[k]
+                            for k in [
+                                "position",
+                                "angle",
+                                "qpos",
+                                "velocity",
+                                "observation",
+                                "time",
+                            ]
+                        },
+                    },
+                }
+            )
+    summary = summarize_replay(rows, 20)
+    cell = summary["groups"]["fixture/nominal/contact"]
+    assert summary["stage_reached_rows"] == 6 and summary["success_disagreements"] == 6
+    assert cell["ranking_reversal_001"]["mean"] == 1
+    rows[0]["test"] = None
+    summary = summarize_replay(rows, 20)
+    assert (
+        summary["stage_reached_rows"] == 6
+        and summary["complete_pairs"] == 5
+        and summary["test_restore_failures"] == 1
+    )
+    rows[1]["gold_continuation"]["passed"] = False
+    with pytest.raises(ValueError):
+        summarize_replay(rows, 20)
+
+
+def test_pick_material_scope_changes_both_grasp_surfaces_without_density_edit():
+    from types import SimpleNamespace as NS
+
+    import sapien
+    from sapien.physx import PhysxCpuSystem, PhysxRigidDynamicComponent
+
+    from dual_rec.overnight_pick import PickFault, apply_pick_fault
+
+    scene = sapien.Scene([PhysxCpuSystem()])
+    actors = []
+    for index in range(3):
+        b = scene.create_actor_builder()
+        b.add_box_collision(half_size=[0.02] * 3)
+        actors.append(b.build(f"body-{index}"))
+    bodies = [a.find_component_by_type(PhysxRigidDynamicComponent) for a in actors]
+    env = NS(
+        cube=NS(_objs=[actors[0]]),
+        agent=NS(
+            robot=NS(
+                links=[
+                    NS(name=f"finger-{i}", _objs=[body])
+                    for i, body in enumerate(bodies[1:])
+                ]
+            )
+        ),
+    )
+    result = apply_pick_fault(env, PickFault(name="lubricated", friction=0.01))
+    assert result["cube_before"]["mass_kg"] == result["cube_after"]["mass_kg"]
+    assert (
+        result["cube_before"]["inertia_kg_m2"] == result["cube_after"]["inertia_kg_m2"]
+    )
+    assert all(x["dynamic"] == pytest.approx(0.01) for x in result["finger_after"])
+    assert result["cube_after"]["shape_materials"][0][
+        "dynamic_friction"
+    ] == pytest.approx(0.01)

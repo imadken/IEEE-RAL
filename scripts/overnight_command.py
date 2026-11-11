@@ -191,17 +191,33 @@ def main():
     }
     with journal.open("a") as stream:
         stream.write(json.dumps(row, allow_nan=False) + "\n")
+    completed_now = [json.loads(line) for line in journal.read_text().splitlines()]
+    other_workers = []
+    own_processes = {os.getpid()} | {
+        parent.pid for parent in psutil.Process(os.getpid()).parents()
+    }
+    for candidate in psutil.process_iter(["pid", "cmdline"]):
+        try:
+            argv = candidate.info["cmdline"] or []
+            if (
+                candidate.pid not in own_processes
+                and "scripts/overnight_command.py" in argv
+                and str(root) in argv
+            ):
+                other_workers.append(candidate.pid)
+        except psutil.Error:
+            continue
     final_status = {
         "utc": row["utc_end"],
         "stage": args.stage,
         "run_id": root.name,
-        "active_pid": None,
-        "running": False,
+        "active_pid": other_workers[0] if other_workers else None,
+        "active_worker_pids": other_workers,
+        "running": bool(other_workers),
         "stage_starts": starts,
         "total_wall_seconds": time.time() - initial["started_epoch"],
-        "worker_wall_seconds": sum(r["wall_seconds"] for r in rows)
-        + row["wall_seconds"],
-        "total_cpu_seconds": used_cpu + row["cpu_seconds"],
+        "worker_wall_seconds": sum(r["wall_seconds"] for r in completed_now),
+        "total_cpu_seconds": sum(r["cpu_seconds"] for r in completed_now),
         "new_artifact_bytes": artifact_bytes(root),
         "provisional_gate_status": "WORKER_PASSED"
         if status_code == 0
@@ -212,6 +228,10 @@ def main():
     with (root / "progress.jsonl").open("a") as stream:
         stream.write(json.dumps(final_status) + "\n")
     if args.finalize:
+        if other_workers:
+            raise RuntimeError(
+                "Cannot finalize while another bounded worker is running"
+            )
         final_status.update(
             stage="COMPLETE",
             provisional_gate_status="SEE_SCIENTIFIC_REPORT",
