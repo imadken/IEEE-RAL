@@ -9,6 +9,9 @@ The separately authorized bounded overnight session follows
 [DUAL_REC_OVERNIGHT_CODEX_PROMPT.md](DUAL_REC_OVERNIGHT_CODEX_PROMPT.md): one final
 PickCube qualification, then its conditional intervention pilot or independent
 counterfactual replay validity audit.
+The completed session followed **D7B → B**: PickCube was NO-GO; replay divergence
+did not change any sampled success outcome or action ranking. No paper claim or
+further experiment is authorized by that result.
 See [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md) for the frozen preregistration
 and [GATE_REPORTS.md](GATE_REPORTS.md) for measured outcomes. Work beyond the
 overnight contract requires separate review and authorization. Commits stay local;

@@ -44,9 +44,18 @@ def scientific_gates(root: Path) -> dict:
     path = root / "b/analysis/report.json"
     if path.exists():
         report = json.loads(path.read_text())
+        reversals = sum(
+            r["raw_sign_reversal"]
+            for g in report["groups"].values()
+            for r in g["ranking_pairs"]
+        )
         gates["B"] = {
-            "status": "MEASUREMENTS_COMPLETE",
+            "status": "COMPLETE_NO_OBSERVED_DECISION_CHANGE"
+            if report["success_disagreements"] == 0 and reversals == 0
+            else "COMPLETE_DECISION_CHANGE_OBSERVED",
             "all_gold_passed": report["all_gold_passed"],
+            "success_disagreements": report["success_disagreements"],
+            "raw_ranking_reversals": reversals,
         }
     return gates
 

@@ -267,6 +267,23 @@ def test_preregistered_splits_and_branch_budget_are_disjoint():
     assert planned < cfg["b"]["physical_continuation_cap"]
 
 
+def test_compact_action_cost_roundtrip_preserves_acquisition_precision():
+    import runpy
+
+    audit = runpy.run_path("scripts/overnight_audit.py")
+    tape = np.tile(np.array([0.11, 0.13, 0.17, -1], dtype=np.float32), (40, 1))
+    native = float((np.linalg.norm(tape[:, :3], axis=1) / (np.sqrt(3) * 0.25)).mean())
+    encoded = json.loads(json.dumps(tape.tolist()))
+    default = float(
+        (
+            np.linalg.norm(np.asarray(encoded)[:, :3], axis=1) / (np.sqrt(3) * 0.25)
+        ).mean()
+    )
+    assert default != native
+    assert audit["recorded_effort"](encoded, "PickCube-v1") == native
+    assert audit["recorded_effort"](encoded, "PushCube-v1") == native
+
+
 def test_overnight_supervisor_kills_timed_out_worker_and_seals_finalization(tmp_path):
     import subprocess
     import time

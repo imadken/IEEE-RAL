@@ -490,3 +490,66 @@ recovery controls, utility and all decision thresholds stay unchanged. This
 clarification is motivated solely by actual sensor availability, before any
 classifier performance or recovery matrix inspection; original v1 text remains
 above and in its preregistration commit. No claim of real-hardware calibration.
+
+### Overnight execution and independent reproduction records
+
+Execution root: `results/overnight-20261111/20261110T235337Z`. The immutable
+`commands.jsonl` rows contain exact argv, start/end UTC, exit status, measured
+child-process CPU, elapsed worker time, source hashes, source HEAD and package
+versions for every supervised research/validation worker. CPU accounting covers
+the worker process trees and small Git child commands; supervisor Python
+overhead and interactive editing are not included in that CPU figure. Global
+elapsed wall time includes editing and analysis. No dependency, driver, lockfile,
+vendor implementation or original snapshot adapter was changed. A few short
+metadata/formatting checks ran during simulation; simulation batches were serial.
+
+D7B used one four-seed calibration batch, three four-seed development batches,
+one development-only fit, then two four-seed qualification batches. The fixed B
+seed matrix was divided into Push offsets/counts (0/3,3/3,6/1), Pick (0/3,3/3,6/1),
+and Lift (0/1,1/2,3/3,6/1). The first Lift seed checked engineering API coverage
+before its remaining fixed seeds; this changed only batching, not sampling,
+parameters, controllers or analysis thresholds. Every physical worker has a
+900-second timeout and stops on GOLD reference or physical-integrity failure.
+The final summary must not be run until all matrix workers have exited zero.
+
+For numerical reanalysis on the qualified checkout, source `scripts/env.sh` and
+run the following with a **new output path** (never overwrite recorded evidence):
+
+```bash
+uv run python scripts/overnight_audit.py \
+  --root results/overnight-20261111/20261110T235337Z \
+  --output /tmp/overnight-independent-recheck.json --verify-report
+uv run pytest -q
+uv run ruff check src scripts tests
+uv run ruff format --check src scripts tests
+```
+
+The independent command uses separately implemented NumPy/bootstrap/binomial
+calculations and stored compact scenario/action/outcome/error records. It never
+loads development model weights for prediction or invokes the fitter; a local
+weight file is hashed when present. This is independent recomputation by the same
+executor, not an external scientific review. It checks base-seed clustering,
+qualification isolation, physical readbacks, costs, complete denominators,
+per-state policy parity, means, intervals, calibration metrics, decision reversals,
+the machine-checkable statistics in `GATE_REPORTS.md`, all 210 prior local evidence
+hashes and byte-identical original adapters. Original ignored raw files must be
+present for the preservation portion of that audit on this host.
+
+For physical reproduction, initialize a fresh run directory and its timestamp/hash
+ledgers, then replay the exact serial worker argv in `commands.jsonl`, replacing
+only the evidence root. Keep config/seeds, CPU physics, two numerical threads,
+tolerances, source revisions and stage ordering/seals fixed; do not rerun the
+fitter after opening reserved qualification. Prefix and continuation tapes plus
+readback in `audit/scenario_registry.jsonl`, `audit/recovery_actions.jsonl` and
+`b/*/trials.jsonl` fully specify the measured branches. Reproduction remains
+subject to fresh authorization and the same resource limits; these instructions
+do not authorize additional research.
+
+`audit/api_scope.json` identifies the pinned state APIs and vendor source hashes.
+`audit/local_raw_sha256.json` retains hashes and sizes of complete local compressed
+histories, suffix trajectories and weights. Raw files stay local; compact records,
+CV evidence, fixed first-seed examples, logs and source/asset manifests are committed.
+`completion_manifest.json` seals all run files and final source hashes/resources;
+its own hash and the final Git HEAD are reported in the final handoff. Finalization
+runs only after experiments, report verification and validation have finished;
+no experiment or later campaign follows it in this session.

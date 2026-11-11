@@ -393,3 +393,279 @@ Zero of six matched failed seeds has both fault setups in [.25,.75] for both
 realistic models, failing the declared uncertainty requirement. Complete
 predictions, calibration intervals, matched-failure metrics, CV scores and model
 hashes remain available; none is hidden by reporting only the strongest model.
+
+## 2026-11-11 overnight branch B: counterfactual replay validity
+
+**COMPLETE — negative decision result; NO_PAPER_CLAIM. Route: D7B → B.**
+All 294 planned task/condition/stage/action rows were reached and completed:
+882 physical continuations (294 native, 294 GOLD, 294 TEST), below the 1,000 cap.
+Each task has seven independent new base seeds; conditions, stages and actions
+are repeated measurements. Every GOLD prefix and continuation passed the frozen
+numerical/contact checks. No restore exception, excluded case, invalid physical
+edit or GOLD integrity failure occurred. The existing adapters were unchanged.
+
+All 210 ManiSkill TEST continuations fail strict parity, yet all 294 success
+outcomes agree with GOLD and all 147 paired action contrasts are identical.
+TEST-minus-GOLD utility and contrast errors are exactly zero in every sampled
+cell (paired bootstrap 95% CI [0,0], n=7 independent seeds per cell). These
+degenerate empirical intervals do not establish population equivalence. At the
+independent seed level, each task has 0/7 seeds with any success/ranking discrepancy
+across its fixed matrix: Wilson 95% interval [0,.3543]. Pooling 147 repeated ranking
+pairs as independent trials would give misleading precision. No significant,
+replicated decision discrepancy was observed; the proposed decision-fidelity
+contribution is not substantiated by this audit.
+
+### Complete comparisons and numerical errors
+
+| Task | Independent seeds | GOLD/TEST pairs | TEST continuation parity | Changed continuation contacts | Success disagreements | Raw / .01 / .10 rank reversals |
+|---|---:|---:|---:|---:|---:|---:|
+| PushCube-v1 | 7 | 126 | 0/126 | 9/126 | 0/126 | 0 / 0 / 0 of 63 |
+| PickCube-v1 | 7 | 84 | 0/84 | 6/84 | 0/84 | 0 / 0 / 0 of 42 |
+| Lift | 7 | 84 | 84/84 | 0/84 | 0/84 | 0 / 0 / 0 of 42 |
+
+| Task / condition / stage | GOLD = TEST successes: nominal / alternative | GOLD = TEST utility contrast [paired 95% CI] |
+|---|---:|---|
+| Lift/mass8/contact | 7/7 ; 7/7 | -0.006456 [-0.006562, -0.006336] |
+| Lift/mass8/free | 0/7 ; 0/7 | -0.000201 [-0.000238, -0.000164] |
+| Lift/mass8/transport | 7/7 ; 7/7 | -0.003545 [-0.003671, -0.003403] |
+| Lift/nominal/contact | 7/7 ; 7/7 | -0.004533 [-0.004559, -0.004506] |
+| Lift/nominal/free | 0/7 ; 0/7 | -0.000201 [-0.000238, -0.000164] |
+| Lift/nominal/transport | 7/7 ; 7/7 | -0.001291 [-0.001313, -0.001267] |
+| PickCube-v1/low_friction_001/contact | 0/7 ; 0/7 | -0.003088 [-0.004861, -0.001499] |
+| PickCube-v1/low_friction_001/free | 0/7 ; 0/7 | +0.000246 [-0.001428, +0.001990] |
+| PickCube-v1/low_friction_001/transport | 0/7 ; 0/7 | +0.000637 [-0.001468, +0.002572] |
+| PickCube-v1/nominal/contact | 0/7 ; 0/7 | -0.003088 [-0.004861, -0.001499] |
+| PickCube-v1/nominal/free | 0/7 ; 0/7 | +0.000246 [-0.001428, +0.001990] |
+| PickCube-v1/nominal/transport | 7/7 ; 5/7 | +0.260669 [+0.001993, +0.522824] |
+| PushCube-v1/mass8/contact | 7/7 ; 7/7 | -0.003033 [-0.005601, +0.000685] |
+| PushCube-v1/mass8/free | 0/7 ; 7/7 | -0.909761 [-0.912539, -0.905634] |
+| PushCube-v1/mass8/transport | 7/7 ; 7/7 | +0.002664 [-0.001491, +0.008812] |
+| PushCube-v1/misaligned/contact | 0/7 ; 7/7 | -0.908466 [-0.911183, -0.904488] |
+| PushCube-v1/misaligned/free | 0/7 ; 7/7 | -0.909328 [-0.912112, -0.905212] |
+| PushCube-v1/misaligned/transport | 0/7 ; 7/7 | -0.904760 [-0.910822, -0.898211] |
+| PushCube-v1/nominal/contact | 7/7 ; 7/7 | -0.002956 [-0.005537, +0.000777] |
+| PushCube-v1/nominal/free | 0/7 ; 7/7 | -0.909761 [-0.912539, -0.905634] |
+| PushCube-v1/nominal/transport | 7/7 ; 7/7 | +0.002766 [-0.001423, +0.008986] |
+
+Every action-comparison cell contains seven base seeds and two 40-step actions.
+Success columns list nominal/alternative successes, each out of seven; the values
+apply equally to GOLD and TEST. Utility contrasts are nominal minus alternative,
+with paired seed-bootstrap 95% intervals; GOLD and TEST contrasts are identical.
+Full per-action success Wilson intervals, utility errors, ranking incidences and
+error distributions remain in `b/analysis/report.json`; no unsuccessful action is
+omitted. This is not an all-failure or action-equivalence fixture: Push misalignment
+transport has 0/7 nominal versus 7/7 alternative successes, contrast −.904760
+[−.910822,−.898211]; Pick nominal transport has 7/7 versus 5/7 successes, contrast
++.260669 [.001993,.522824]. TEST preserves both preferences. Other cells have tied
+successes and only small preregistered effort differences.
+
+Position/angle maxima below are descriptive over repeated cases, not population
+intervals. Position is object displacement in metres; angle is orientation error
+in radians. The velocity vector mixes object linear/angular and robot joint
+channels, so its maximum has mixed channel units, not object-speed units.
+
+| Task | Max continuation position error (m) | Max angle error (rad) | Max velocity-channel error | Immediate invalid records |
+|---|---:|---:|---:|---:|
+| PushCube | .005727866418 | .2043977011 | 9.066441862 | 112/126 |
+| PickCube | .000940350289 | .0312605402 | 1.522980213 | 42/84 |
+| Lift | 0 | 4.214684851e-8 | 0 | 38/84 |
+
+Push continuation-contact changes occur in 9/126 cases across six base seeds
+(7100,7102–7106); Pick changes occur in 6/84 across three seeds (7201,7203,7205).
+Immediate contact-list mismatches are 112/126 Push and 42/84 Pick. Measured
+immediate object position, orientation, velocity, qpos, observation and time all
+remain within frozen tolerances, while the exact captured scene physics
+dictionary differs in every ManiSkill case. The mismatch is recorded as `physics`;
+its precise subfield is not localized by this experiment. Applied joint-force,
+drive-target and drive-velocity readback errors are zero throughout. This rules
+out a discrepancy in those measured fields, not every possible omitted state
+or a uniquely identified solver-cache cause.
+
+Lift has 84/84 matching continuations, including contact/transport payload controls.
+It does not have perfect immediate derived-state parity: 38/84 immediate records
+fail, including 30 position-limit violations, 16 angle-limit violations and four
+contact-list mismatches (overlapping sets). Maximum immediate position error is
+.000295499644 m; qpos, velocity, observation and time match. The adapter uses
+`mj_forward` to rebuild derived data after restoring integration state. The
+transient is consistent with comparing rebuilt kinematics against native cached
+data, but no causal ablation isolates that explanation. No MuJoCo exposed snapshot
+fields differ. Continuation position/velocity/qpos/observation/time errors are zero;
+angle error is at most 4.22e-8 rad. This supports the scoped continuation adapter,
+not general engine superiority.
+
+`audit/api_scope.json` and unchanged `src/dual_rec/replay.py` specify exact APIs
+and fields. ManiSkill uses registered actor/articulation state plus explicit
+controller, drive, time and RNG fields; static/model/material properties stay
+fixed and opaque contact caches are not claimed serialized. MuJoCo uses
+`mjSTATE_INTEGRATION` plus scoped controller/observable/RNG fields. Native feedback
+generates one action tape; GOLD and TEST execute that identical tape. Action effort
+and time costs therefore cancel within a policy. The result concerns these fixed
+continuations and binary success utility, not independently adapting closed-loop
+policies, continuous progress costs or arbitrary snapshot APIs.
+
+### Failed, skipped and limited checks
+
+| Check | Actual outcome | Disposition |
+|---|---|---|
+| Earlier D4/D7 and current ManiSkill snapshot parity | Failed; current 210/210 continuations invalid | Retained; only GOLD is ground truth |
+| D7B meaningful reversal | Failed: friction +.01733 < .10 | A prerequisite not met |
+| D7B realistic passive uncertainty | 0/6 qualifying paired seeds | Separate failed prerequisite retained |
+| A probe pilot and blind/adaptive leakage checks | Skipped conditionally | N/A; no probe effect estimated |
+| Early Ruff checks | Unused imports and import order failed | Corrected; failure logs retained |
+| First independent cost audit | Failed by 7.146e-10 on first compared effort | JSON lost float32 tape dtype; audit corrected and regression added; physics tolerances and outcomes unchanged |
+| Lift immediate parity | 38/84 fail | Retained separately from 84/84 continuation passes |
+| Restore exceptions / unreached stages / invalid GOLD | 0 / 0 / 0 | All planned denominators retained |
+| Friction-combination getter | Unavailable in pinned binding | Wheel mode unverified; no isolated gripper-friction claim |
+| Hardware sensor calibration / cross-platform determinism | Not tested | No transfer or universal simulator claim |
+| Decision-ranking-discrepancy finding | Zero raw or substantive reversals | Negative result; no further parameter search |
+| External scientific review / publication novelty | Not completed / unresolved | NO_PAPER_CLAIM; supervised review required |
+
+### Scientific conclusion and stopping boundary
+
+D7B provides genuine failed grasp mechanisms but no meaningful opposite optimal
+recovery under the fixed candidate set. The intervention decomposition is N/A.
+B establishes reproducible numerical/contact divergence under the existing
+unqualified ManiSkill restore while finding **no decision consequence in this
+matrix**. This is useful negative evidence and an adapter qualification result;
+it does not substantiate the proposed methodological decision-error contribution
+or establish that restoration fidelity cannot matter in other cases.
+
+State completeness is an existing concern: the version-matched
+[MuJoCo documentation](https://mujoco.readthedocs.io/en/3.3.7/programming/simulation.html)
+describes integration state and warmstart, while
+[PhysX determinism guidance](https://nvidia-omniverse.github.io/PhysX/physx/5.1.1/docs/BestPractices.html)
+describes scene/order requirements. That documentation version does not identify
+the SDK build in this wheel. Broader reproducibility work also predates this audit,
+e.g. [Henderson et al.](https://arxiv.org/abs/1709.06560). These are context, not
+proof of a new contribution. Publication-level novelty is unresolved; a paper claim
+is not supported by these results. A differentiated larger study would require
+supervised literature analysis, causal localization of omissions versus API misuse,
+independently replicated decision changes or a justified equivalence design,
+stronger outcome metrics/policy evaluation and larger held-out seed cohorts.
+
+Recommendation: stop the main DUAL-REC campaign and this fallback here; review
+the negative evidence and undertake a new supervised literature/scenario analysis
+before authorizing more research. No third project, full campaign, theorem, paper
+draft, push, authentication or remote publication was attempted.
+
+Evidence paths relative to `results/overnight-20261111/20261110T235337Z`:
+
+- `d7b/calibration/initials.json`, `selection.json`, development/qualification `initials.json`, `outcomes.jsonl`, `status.json`: every attempt and control.
+- `d7b/fitted/seal.json`, `audit/development_cv.json`, `d7b/evaluation/report.json`, `predictions.jsonl`: split seal, both model families and qualification.
+- `audit/scenario_registry.jsonl`, `audit/recovery_actions.jsonl`, `audit/examples.jsonl.gz`: complete compact recipes/action tapes and fixed first-seed examples.
+- `b/*/trials.jsonl`, `status.json`, `b/analysis/report.json`: all 294 rows, per-step numeric/contact errors, outcomes and intervals.
+- `audit/replay_and_integrity.json`, `audit/final_verification.json`: independent compact-record recomputation without the fitter; final verification checks the report statistics below.
+- `audit/api_scope.json`, `audit/local_raw_sha256.json`, `preflight/hardware.json`, `preflight/integrity-final.json`: API/version/source/assets and local raw hashes.
+- `commands.jsonl`, logs, `progress.jsonl`, `STATUS.json`, `completion_manifest.json`: exact bounded commands/exits, heartbeat, final SHA-256 inventory and resources.
+
+The final validation suite has **29 passing tests**, including timeout/finalization,
+dtype roundtrip, negative decision cases, failed-restore denominators, physics,
+split, sensor and replay checks. Final lint/format logs are retained. All 210 prior
+local artifacts, original adapters, AGENTS.md, pyproject.toml and uv.lock are
+verified unchanged. Large raw histories/weights remain local (23 files,
+51,277,370 bytes) and hash-addressed; compact evidence is committed. Exact final
+wall/worker CPU, artifact bytes, stage timing and source hashes are in
+`completion_manifest.json`; caps are 8h, 12 measured worker CPU core-hours and
+8 GB (artifact stop margin 7.5 GB). CPU accounting excludes supervisor/editing
+overhead as explained in the protocol. No dependency or driver was changed.
+
+**STOPPED_WITHIN_AUTHORIZED_BOUNDARY = true. No further experiment is authorized
+by this report. READY_FOR_MANUAL_PUSH after local finalization; publication is
+the user's action.**
+
+The statistics below are compared against fresh independent recomputation after
+the report is written. Rounded tables use those same audited records.
+
+
+<!-- OVERNIGHT_VERIFIED_STATISTICS_START -->
+```json
+{
+  "D7B": {
+    "status": "NO-GO",
+    "reason": "Primary utility preference reversal did not meet opposite-sign and 0.10 criteria",
+    "failure_counts": {
+      "nominal": 0,
+      "friction": 7,
+      "offset": 6
+    },
+    "paired_failed_seeds": [
+      4101,
+      4102,
+      4104,
+      4105,
+      4106,
+      4107
+    ],
+    "primary_contrasts": {
+      "friction": {
+        "mean": 0.01733150191909728,
+        "ci": [
+          0.01341264793417614,
+          0.023664305550299178
+        ]
+      },
+      "offset": {
+        "mean": -0.7425448913952111,
+        "ci": [
+          -0.8948553177640481,
+          -0.43955709103269885
+        ]
+      }
+    },
+    "realistic_uncertain_seeds": [],
+    "qualification_recovery_pairs": 72,
+    "all_selected_scenarios": 60,
+    "fitter_consulted": false,
+    "all_means_and_intervals_recomputed": true,
+    "all_passive_point_metrics_recomputed": true
+  },
+  "B": {
+    "planned_rows": 294,
+    "stage_reached": 294,
+    "complete_native_gold_test_pairs": 294,
+    "restore_exceptions": 0,
+    "success_disagreements": 0,
+    "ranking_reversals_001": 0,
+    "attempted_continuations": 882,
+    "by_task": {
+      "PushCube-v1": {
+        "independent_base_seeds": 7,
+        "complete_pairs": 126,
+        "snapshot_continuation_passes": 0,
+        "contact_changed_pairs": 9,
+        "success_disagreements": 0,
+        "action_ranking_pairs": 63,
+        "raw_sign_reversals": 0,
+        "ranking_reversals_001": 0,
+        "ranking_reversals_010": 0
+      },
+      "PickCube-v1": {
+        "independent_base_seeds": 7,
+        "complete_pairs": 84,
+        "snapshot_continuation_passes": 0,
+        "contact_changed_pairs": 6,
+        "success_disagreements": 0,
+        "action_ranking_pairs": 42,
+        "raw_sign_reversals": 0,
+        "ranking_reversals_001": 0,
+        "ranking_reversals_010": 0
+      },
+      "Lift": {
+        "independent_base_seeds": 7,
+        "complete_pairs": 84,
+        "snapshot_continuation_passes": 84,
+        "contact_changed_pairs": 0,
+        "success_disagreements": 0,
+        "action_ranking_pairs": 42,
+        "raw_sign_reversals": 0,
+        "ranking_reversals_001": 0,
+        "ranking_reversals_010": 0
+      }
+    },
+    "all_gold_passed": true,
+    "all_outcomes_costs_contrasts_and_intervals_recomputed": true,
+    "fitter_consulted": false
+  }
+}
+```
+<!-- OVERNIGHT_VERIFIED_STATISTICS_END -->

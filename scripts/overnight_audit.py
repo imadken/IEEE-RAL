@@ -106,6 +106,17 @@ def valid_error(error):
     )
 
 
+def recorded_effort(actions, task):
+    # JSON numbers lose ndarray dtype. Restore the acquisition action tape dtype
+    # before independently recomputing its recorded floating-point cost.
+    dtype = np.float64 if task == "Lift" else np.float32
+    bound = 0.6 if task == "Lift" else 0.25
+    tape = np.asarray(actions, dtype=dtype)
+    return float(
+        np.clip(np.linalg.norm(tape[:, :3], axis=1) / (np.sqrt(3) * bound), 0, 1).mean()
+    )
+
+
 def audit_physics(task, condition, edit):
     scale = 8 if condition == "mass8" else 1
     if task == "Lift":
@@ -392,13 +403,7 @@ def audit_b(root, cfg):
         assert row["gold_prefix"]["passed"] and row["gold_continuation"]["passed"]
         assert row["gold_prefix"]["steps"] == len(row["prefix_actions"]) + 1
         assert row["gold_continuation"]["steps"] == 40
-        bound = 0.6 if row["task"] == "Lift" else 0.25
-        effort = np.clip(
-            np.linalg.norm(np.asarray(row["continuation_actions"])[:, :3], axis=1)
-            / (np.sqrt(3) * bound),
-            0,
-            1,
-        ).mean()
+        effort = recorded_effort(row["continuation_actions"], row["task"])
         for method in ["native", "gold", "test"]:
             if row.get(method) is None:
                 continue
@@ -621,7 +626,15 @@ def main():
     previous = json.loads((args.root / "prior_local_sha256.json").read_text())
     for path, sha in previous.items():
         assert hashlib.sha256(Path(path).read_bytes()).hexdigest() == sha, path
-    base = json.loads((args.root / "initial.json").read_text())["base_sha"]
+    initial = json.loads((args.root / "initial.json").read_text())
+    for path, sha in initial["preserved_sha256"].items():
+        assert hashlib.sha256(Path(path).read_bytes()).hexdigest() == sha, path
+    base = initial["base_sha"]
+    assert Path(
+        "config/overnight_20261111.json"
+    ).read_bytes() == subprocess.check_output(
+        ["git", "show", "68798cd:config/overnight_20261111.json"]
+    )
     for path in [
         "src/dual_rec/replay.py",
         "scripts/mani_runner.py",
@@ -634,6 +647,7 @@ def main():
     result = {
         "prior_local_artifacts_preserved": len(previous),
         "original_adapters_unchanged": True,
+        "locked_dependencies_and_guidance_preserved": True,
         "D7B": audit_pick(args.root, cfg),
         "B": audit_b(args.root, cfg),
         "STOPPED_WITHIN_AUTHORIZED_BOUNDARY": True,
