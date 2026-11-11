@@ -9,6 +9,7 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from mani_runner import make_env, record, scripted_action
+
 from dual_rec.physical_faults import body_parameters
 from dual_rec.replay import jsonable
 from dual_rec.validation import array
