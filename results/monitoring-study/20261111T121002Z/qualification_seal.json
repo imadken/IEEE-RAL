@@ -1,0 +1,53 @@
+{
+  "sealed_utc": "2026-11-11T12:40:10.450451+00:00",
+  "implementation_commit": "a7786cbe4f87ec7be28f2d501f2b4650c4aa9dd7",
+  "registration_commit": "b5c28a9d228fa919e3e86ad7127e62fc62a71f5b",
+  "source_sha256": {
+    "MONITORING_STUDY_PROTOCOL.md": "7d81f33d11adaae1ab740fcbb4b52a0c3e5e9059d893685bb10ca46ac541d854",
+    "results/monitoring-study/20261111T121002Z/benchmarks/prepared_tasks.json": "e538af7eec62d074b9d9803d112840b790003d9581c2d2811903491a60e4b762",
+    "results/monitoring-study/20261111T121002Z/logiv_source_sha256.json": "3405b5711c8d835e2dbcad75c53a74db75837a4b61ea47baecbbc30db6e76465",
+    "scripts/monitoring_analysis.py": "3bc2870f835563c97038f024ca3ae006f5ce75de0172119bf5869b941768a258",
+    "scripts/monitoring_audit.py": "70bd366ba26b6533130ed0deb1453ff6b65d45ed6a48330db8f4123ae344f100",
+    "scripts/monitoring_command.py": "4dfe6c74732ad87951b16137e99b757fea70ca00ef4eab84d9e567278475008d",
+    "scripts/monitoring_fetch_reference.py": "e9169c7130c3dd93f29fa2440340584dfde5b0969a0638c935836911584fd66c",
+    "src/dual_rec/monitoring/__init__.py": "28e481bf29522f46f3ba096eafca6319e29a4602def2882e1736d941495c4af6",
+    "src/dual_rec/monitoring/analysis.py": "033c8c7baf697f66136ab98c95e7b57b41e597eb69677093ca46479b9a98638c",
+    "src/dual_rec/monitoring/benchmarks.py": "13e4b4c6e389ab54a06cd5607d8d1d112ae4433362d0a2a9679e8edd0b63472c",
+    "src/dual_rec/monitoring/contracts.py": "2687382a4eb25328b53aa9971ba6006bb5392ed84ffe7ccd5034677857e38eaf",
+    "src/dual_rec/monitoring/experiment.py": "e90d9444d765141cd6d4007f98ec313940acc696ead3a3709b5766ad56b49c2b",
+    "src/dual_rec/monitoring/methods.py": "bb804bdc7f871ed644d8817d05467b1399250703a2e6b182b2bb8b0c7f9bb311",
+    "src/dual_rec/monitoring/observations.py": "27138a3fa5b5a2716df967ea6f27b119703d81ed4903d0dcddee5b67bb2e8f3a",
+    "src/dual_rec/monitoring/oracle.py": "7bba805f60dcf3b955cfc5e7345609490bd889b82c9e04a9adb9661b5d15fcf1",
+    "src/dual_rec/monitoring/recovery.py": "a29535f97c32f52b424b098cca570e50705f0ab25f843d560468b4bcaa81484f",
+    "src/dual_rec/monitoring/relevance_audit.py": "fb7643295100e643fb0cee7bee32c86508105ef60404d17389e8de345da111e1",
+    "src/dual_rec/monitoring/semantics.py": "83566ca47a8d237a95c98ed9310fa8ae48e159fed7f8514ef845045c597831fd",
+    "src/dual_rec/monitoring/upstream.py": "0f9b666c00cfe0b168bcc44a60bb8ed7ea6368f8472b41807fb8374dba3ef927",
+    "tests/test_monitoring_analysis.py": "f88a4cded1227a0b0d42a6db3096472dbfc8bc11f609937587b35fa518278a17",
+    "tests/test_monitoring_benchmarks.py": "de16e01e8930b87061933a4c31a17fd41fdf5def1aef7d504f916790678cc068",
+    "tests/test_monitoring_methods.py": "458b8d2a518d9d6df73a8ed2df7961ca1b909b82ba2f27e4a2d2610744547fc9",
+    "tests/test_monitoring_oracle.py": "3cb8e009c317d392b3421dc837c612d2d3dbd373a6ac14638fbe611e2d20ac92",
+    "tests/test_monitoring_relevance.py": "b952f9a180794df90009fbadb00115f35268912ce3533b0c5b855a78af2b557e",
+    "tests/test_monitoring_semantics.py": "05c213cbe9dc81d22abc1be64d0b7a4f9057e967daa24edeaa9c2406efe06477",
+    "tests/test_monitoring_supervisor.py": "130e3758a51308089393c0083e9f43ee0f36fd452c1ff2413ff200e265880c51",
+    "tests/test_monitoring_upstream.py": "f13574b40c94ca76b2b9c816d468367f09491d8926a075d2231c692155494661"
+  },
+  "methods": [
+    "M0",
+    "M1",
+    "M2",
+    "M3",
+    "M3_no_consequence",
+    "M4"
+  ],
+  "budgets": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "qualification_parents": 14,
+  "development_goal_difference": 0.0,
+  "development_query_difference": 0.0,
+  "tuning_performed": false,
+  "qualification_outcomes_opened": false
+}
