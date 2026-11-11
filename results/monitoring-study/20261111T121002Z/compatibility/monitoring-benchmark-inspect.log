@@ -1,0 +1,61 @@
+{
+  "archive_sha256": "5df77ea759f2211a4106082839ddbbb790f1ba4e7d097ed732cf453f72aa36cf",
+  "games": 4027,
+  "first_names": [
+    "json_2.1.1/train/look_at_obj_in_light-AlarmClock-None-DeskLamp-301/trial_T20190907_174127_043461/game.tw-pddl",
+    "json_2.1.1/train/look_at_obj_in_light-AlarmClock-None-DeskLamp-301/trial_T20190907_174142_375532/game.tw-pddl",
+    "json_2.1.1/train/look_at_obj_in_light-AlarmClock-None-DeskLamp-301/trial_T20190907_174157_650656/game.tw-pddl",
+    "json_2.1.1/train/look_at_obj_in_light-AlarmClock-None-DeskLamp-302/trial_T20190908_192756_298295/game.tw-pddl",
+    "json_2.1.1/train/look_at_obj_in_light-AlarmClock-None-DeskLamp-302/trial_T20190908_192808_880740/game.tw-pddl",
+    "json_2.1.1/train/look_at_obj_in_light-AlarmClock-None-DeskLamp-302/trial_T20190908_192820_480968/game.tw-pddl",
+    "json_2.1.1/train/look_at_obj_in_light-AlarmClock-None-DeskLamp-303/trial_T20190908_144933_600228/game.tw-pddl",
+    "json_2.1.1/train/look_at_obj_in_light-AlarmClock-None-DeskLamp-303/trial_T20190908_144950_175895/game.tw-pddl"
+  ],
+  "last_names": [
+    "json_2.1.1/valid_unseen/pick_two_obj_and_place-SoapBar-None-GarbageCan-424/trial_T20190909_064053_839817/game.tw-pddl",
+    "json_2.1.1/valid_unseen/pick_two_obj_and_place-SoapBar-None-GarbageCan-424/trial_T20190909_064221_368939/game.tw-pddl",
+    "json_2.1.1/valid_unseen/pick_two_obj_and_place-SoapBar-None-GarbageCan-424/trial_T20190909_064309_357168/game.tw-pddl",
+    "json_2.1.1/valid_unseen/pick_two_obj_and_place-ToiletPaper-None-Cabinet-424/trial_T20190906_202926_527010/game.tw-pddl"
+  ],
+  "uncompressed_bytes": 344306996
+}
+{
+  "selected": "/tmp/monitoring-alfworld-games/json_2.1.1/train/look_at_obj_in_light-AlarmClock-None-DeskLamp-301/trial_T20190907_174127_043461/game.tw-pddl",
+  "keys": [
+    "pddl_domain",
+    "grammar",
+    "pddl_problem",
+    "solvable",
+    "walkthrough"
+  ],
+  "content_preview": "{'pddl_domain': \";; Specification in PDDL of the Alfred domain\\n;; Intended to be used with Fast Downward which supports PDDL 2.2 level 1 plus the :action-costs requirement from PDDL 3.1.\\n\\n(define (domain alfred)\\n (:requirements\\n    :adl\\n    :action-costs\\n    :typing\\n )\\n (:types\\n  agent\\n  location\\n  receptacle\\n  object\\n  rtype\\n  otype\\n  )\\n\\n\\n (:predicates\\n    (atLocation ?a - agent ?l - location)                     ; true if the agent is at the location\\n    (receptacleAtLocation ?r - receptacle ?l - location)      ; true if the receptacle is at the location (constant)\\n    (objectAtLocation ?o - object ?l - location)              ; true if the object is at the location\\n    (openable ?r - receptacle)                                ; true if a receptacle is openable\\n    (opened ?r - receptacle)                                  ; true if a receptacle is opened\\n    (inReceptacle ?o - object ?r - receptacle)                ; object ?o is in receptacle ?r\\n    (isReceptacleObject ?o - object)                          ; true if the object can have things put inside it\\n    (inReceptacleObject ?innerObject - object ?outerObject - object)                ; object ?innerObject is inside object ?outerObject\\n    (isReceptacleObjectFull ?o - object)                      ; true if the receptacle object contains something\\n    (wasInReceptacle ?o - object ?r - receptacle)             ; object ?o was or is in receptacle ?r now or some time in the past\\n    (checked ?r "
+}
+{
+  "selected": "/tmp/monitoring-alfworld-games/json_2.1.1/valid_seen/look_at_obj_in_light-AlarmClock-None-DeskLamp-323/trial_T20190909_044715_250790/game.tw-pddl",
+  "keys": [
+    "pddl_domain",
+    "grammar",
+    "pddl_problem",
+    "solvable",
+    "walkthrough"
+  ],
+  "content_preview": "{'pddl_domain': \";; Specification in PDDL of the Alfred domain\\n;; Intended to be used with Fast Downward which supports PDDL 2.2 level 1 plus the :action-costs requirement from PDDL 3.1.\\n\\n(define (domain alfred)\\n (:requirements\\n    :adl\\n    :action-costs\\n    :typing\\n )\\n (:types\\n  agent\\n  location\\n  receptacle\\n  object\\n  rtype\\n  otype\\n  )\\n\\n\\n (:predicates\\n    (atLocation ?a - agent ?l - location)                     ; true if the agent is at the location\\n    (receptacleAtLocation ?r - receptacle ?l - location)      ; true if the receptacle is at the location (constant)\\n    (objectAtLocation ?o - object ?l - location)              ; true if the object is at the location\\n    (openable ?r - receptacle)                                ; true if a receptacle is openable\\n    (opened ?r - receptacle)                                  ; true if a receptacle is opened\\n    (inReceptacle ?o - object ?r - receptacle)                ; object ?o is in receptacle ?r\\n    (isReceptacleObject ?o - object)                          ; true if the object can have things put inside it\\n    (inReceptacleObject ?innerObject - object ?outerObject - object)                ; object ?innerObject is inside object ?outerObject\\n    (isReceptacleObjectFull ?o - object)                      ; true if the receptacle object contains something\\n    (wasInReceptacle ?o - object ?r - receptacle)             ; object ?o was or is in receptacle ?r now or some time in the past\\n    (checked ?r "
+}
+{
+  "selected": "/tmp/monitoring-alfworld-games/json_2.1.1/valid_unseen/look_at_obj_in_light-AlarmClock-None-DeskLamp-308/trial_T20190908_222917_366542/game.tw-pddl",
+  "keys": [
+    "pddl_domain",
+    "grammar",
+    "pddl_problem",
+    "solvable",
+    "walkthrough"
+  ],
+  "content_preview": "{'pddl_domain': \";; Specification in PDDL of the Alfred domain\\n;; Intended to be used with Fast Downward which supports PDDL 2.2 level 1 plus the :action-costs requirement from PDDL 3.1.\\n\\n(define (domain alfred)\\n (:requirements\\n    :adl\\n    :action-costs\\n    :typing\\n )\\n (:types\\n  agent\\n  location\\n  receptacle\\n  object\\n  rtype\\n  otype\\n  )\\n\\n\\n (:predicates\\n    (atLocation ?a - agent ?l - location)                     ; true if the agent is at the location\\n    (receptacleAtLocation ?r - receptacle ?l - location)      ; true if the receptacle is at the location (constant)\\n    (objectAtLocation ?o - object ?l - location)              ; true if the object is at the location\\n    (openable ?r - receptacle)                                ; true if a receptacle is openable\\n    (opened ?r - receptacle)                                  ; true if a receptacle is opened\\n    (inReceptacle ?o - object ?r - receptacle)                ; object ?o is in receptacle ?r\\n    (isReceptacleObject ?o - object)                          ; true if the object can have things put inside it\\n    (inReceptacleObject ?innerObject - object ?outerObject - object)                ; object ?innerObject is inside object ?outerObject\\n    (isReceptacleObjectFull ?o - object)                      ; true if the receptacle object contains something\\n    (wasInReceptacle ?o - object ?r - receptacle)             ; object ?o was or is in receptacle ?r now or some time in the past\\n    (checked ?r "
+}
+{
+  "alfworld": "0.4.2",
+  "textworld": "1.7.0",
+  "fast-downward-textworld": "20.6.4",
+  "numpy": "2.5.4"
+}
+TEXTWORLD_IMPORT_OK

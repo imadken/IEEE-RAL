@@ -1,0 +1,404 @@
+{
+  "primary": {
+    "effect": {
+      "left": "M3",
+      "right": "M1",
+      "n_parents": 8,
+      "n_paired_decisions": 1152,
+      "complete_pairing": true,
+      "left_only_decisions": 0,
+      "right_only_decisions": 0,
+      "parent_ids": [
+        "blocks-strips-typed-01",
+        "blocks-strips-typed-02",
+        "blocks-strips-typed-03",
+        "blocks-strips-typed-04",
+        "logistics-strips-typed-01",
+        "logistics-strips-typed-02",
+        "logistics-strips-typed-03",
+        "logistics-strips-typed-04"
+      ],
+      "metrics": {
+        "false_current_permission": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "invalid_continuation_permission": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "goal_completion": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "valid_continuation": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "abstention": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "unnecessary_abstention": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "justified_abstention": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "recovery_invoked": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "query_count": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "simulated_cost": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "decision_seconds": {
+          "mean": -4.3946313881962043e-05,
+          "ci": [
+            -0.00012239527118759318,
+            3.2940315668383834e-05
+          ]
+        },
+        "query_seconds": {
+          "mean": -1.1657700977391667e-07,
+          "ci": [
+            -2.445756561226315e-07,
+            -1.3660206200761923e-08
+          ]
+        }
+      }
+    },
+    "family_effects": {
+      "blocks-strips-typed": {
+        "left": "M3",
+        "right": "M1",
+        "n_parents": 4,
+        "n_paired_decisions": 576,
+        "complete_pairing": true,
+        "left_only_decisions": 0,
+        "right_only_decisions": 0,
+        "parent_ids": [
+          "blocks-strips-typed-01",
+          "blocks-strips-typed-02",
+          "blocks-strips-typed-03",
+          "blocks-strips-typed-04"
+        ],
+        "metrics": {
+          "false_current_permission": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "invalid_continuation_permission": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "goal_completion": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "valid_continuation": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "unnecessary_abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "justified_abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "recovery_invoked": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "query_count": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "simulated_cost": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "decision_seconds": {
+            "mean": -0.0001241509166397413,
+            "ci": [
+              -0.00023669405588104076,
+              -3.111579361656267e-05
+            ]
+          },
+          "query_seconds": {
+            "mean": -1.9642094331276087e-07,
+            "ci": [
+              -4.527375697054797e-07,
+              -1.1915189032960269e-08
+            ]
+          }
+        }
+      },
+      "logistics-strips-typed": {
+        "left": "M3",
+        "right": "M1",
+        "n_parents": 4,
+        "n_paired_decisions": 576,
+        "complete_pairing": true,
+        "left_only_decisions": 0,
+        "right_only_decisions": 0,
+        "parent_ids": [
+          "logistics-strips-typed-01",
+          "logistics-strips-typed-02",
+          "logistics-strips-typed-03",
+          "logistics-strips-typed-04"
+        ],
+        "metrics": {
+          "false_current_permission": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "invalid_continuation_permission": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "goal_completion": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "valid_continuation": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "unnecessary_abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "justified_abstention": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "recovery_invoked": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "query_count": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "simulated_cost": {
+            "mean": 0.0,
+            "ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "decision_seconds": {
+            "mean": 3.625828887581722e-05,
+            "ci": [
+              -5.4670116999962687e-05,
+              0.00017109317074452216
+            ]
+          },
+          "query_seconds": {
+            "mean": -3.673307623507248e-08,
+            "ci": [
+              -1.4578957537499568e-07,
+              5.3582981409918936e-08
+            ]
+          }
+        }
+      }
+    },
+    "accurate_sensor_false_permission_decisions": 0,
+    "accurate_sensor_false_permission_by_method": {},
+    "route_a": false,
+    "route_b": false,
+    "complete_pairing": true,
+    "complete_primary_cell_grid": true,
+    "both_families_represented": true,
+    "meaningful_advantage": false,
+    "interpretation": "Pilot decision gate; no publication novelty or powered safety noninferiority claim"
+  },
+  "query_methods": {
+    "M0": {
+      "decisions": 3072,
+      "query_events": 2856,
+      "consistent_evidence_query_events": 2856,
+      "inconsistent_evidence_query_events": 0,
+      "wholly_model_structurally_irrelevant_calls": 1798,
+      "total_atom_reads": 45519,
+      "atom_reads_outside_model_relevance_closure": 43698,
+      "already_known_atom_reads": 31739,
+      "observed_answer_outside_prior_model_events": 295,
+      "exact_prefix_selected_events": 256,
+      "exact_examined_events": 218,
+      "exact_unknown_limit_skips": 38,
+      "exact_inconsistent_skips": 0,
+      "exact_prefix_omitted_events": 2600,
+      "zero_immediate_resolution_value_calls": 173,
+      "some_answer_resolves_previously_mixed_labels_calls": 45,
+      "all_answers_resolve_previously_mixed_labels_calls": 17,
+      "already_resolved_before_query_calls": 47
+    },
+    "M1": {
+      "decisions": 3072,
+      "query_events": 1610,
+      "consistent_evidence_query_events": 1610,
+      "inconsistent_evidence_query_events": 0,
+      "wholly_model_structurally_irrelevant_calls": 0,
+      "total_atom_reads": 30720,
+      "atom_reads_outside_model_relevance_closure": 28063,
+      "already_known_atom_reads": 18421,
+      "observed_answer_outside_prior_model_events": 171,
+      "exact_prefix_selected_events": 256,
+      "exact_examined_events": 206,
+      "exact_unknown_limit_skips": 50,
+      "exact_inconsistent_skips": 0,
+      "exact_prefix_omitted_events": 1354,
+      "zero_immediate_resolution_value_calls": 0,
+      "some_answer_resolves_previously_mixed_labels_calls": 206,
+      "all_answers_resolve_previously_mixed_labels_calls": 123,
+      "already_resolved_before_query_calls": 0
+    },
+    "M2": {
+      "decisions": 3072,
+      "query_events": 4224,
+      "consistent_evidence_query_events": 4224,
+      "inconsistent_evidence_query_events": 0,
+      "wholly_model_structurally_irrelevant_calls": 3166,
+      "total_atom_reads": 67456,
+      "atom_reads_outside_model_relevance_closure": 65635,
+      "already_known_atom_reads": 53676,
+      "observed_answer_outside_prior_model_events": 295,
+      "exact_prefix_selected_events": 256,
+      "exact_examined_events": 235,
+      "exact_unknown_limit_skips": 21,
+      "exact_inconsistent_skips": 0,
+      "exact_prefix_omitted_events": 3968,
+      "zero_immediate_resolution_value_calls": 200,
+      "some_answer_resolves_previously_mixed_labels_calls": 35,
+      "all_answers_resolve_previously_mixed_labels_calls": 11,
+      "already_resolved_before_query_calls": 124
+    },
+    "M3": {
+      "decisions": 3072,
+      "query_events": 1614,
+      "consistent_evidence_query_events": 1614,
+      "inconsistent_evidence_query_events": 0,
+      "wholly_model_structurally_irrelevant_calls": 0,
+      "total_atom_reads": 30300,
+      "atom_reads_outside_model_relevance_closure": 27651,
+      "already_known_atom_reads": 18114,
+      "observed_answer_outside_prior_model_events": 163,
+      "exact_prefix_selected_events": 256,
+      "exact_examined_events": 206,
+      "exact_unknown_limit_skips": 50,
+      "exact_inconsistent_skips": 0,
+      "exact_prefix_omitted_events": 1358,
+      "zero_immediate_resolution_value_calls": 0,
+      "some_answer_resolves_previously_mixed_labels_calls": 206,
+      "all_answers_resolve_previously_mixed_labels_calls": 123,
+      "already_resolved_before_query_calls": 0
+    }
+  }
+}

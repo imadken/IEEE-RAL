@@ -1,0 +1,57 @@
+UP033 [*] Use `@functools.cache` instead of `@functools.lru_cache(maxsize=None)`
+  --> src/dual_rec/monitoring/oracle.py:88:15
+   |
+86 |     query_atoms = tuple(tuple(sorted(query.atoms)) for query in queries)
+87 |
+88 |     @lru_cache(maxsize=None)
+   |               ^^^^^^^^^^^^^^
+89 |     def partition(
+90 |         indices: tuple[int, ...], query_index: int
+   |
+help: Rewrite with `@functools.cache
+   |
+9  | from fractions import Fraction
+   - from functools import lru_cache
+10 + from functools import lru_cache, cache
+11 |
+--------------------------------------------------------------------------------
+87 |
+   -     @lru_cache(maxsize=None)
+88 +     @cache
+89 |     def partition(
+   |
+
+UP033 [*] Use `@functools.cache` instead of `@functools.lru_cache(maxsize=None)`
+   --> src/dual_rec/monitoring/oracle.py:98:15
+    |
+ 96 |         return tuple(tuple(group) for group in groups.values())
+ 97 |
+ 98 |     @lru_cache(maxsize=None)
+    |               ^^^^^^^^^^^^^^
+ 99 |     def solve(
+100 |         indices: tuple[int, ...], remaining: int
+    |
+help: Rewrite with `@functools.cache
+   |
+9  | from fractions import Fraction
+   - from functools import lru_cache
+10 + from functools import lru_cache, cache
+11 |
+--------------------------------------------------------------------------------
+97 |
+   -     @lru_cache(maxsize=None)
+98 +     @cache
+99 |     def solve(
+   |
+
+B008 Do not perform function call `Lit` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable
+  --> tests/test_monitoring_oracle.py:13:67
+   |
+13 | def context_for(atoms, queries, *, constraints=(), plan=(), goal=(Lit(atom="p"),)):
+   |                                                                   ^^^^^^^^^^^^^
+14 |     return Context(
+15 |         model=Model(atoms=frozenset(atoms), constraints=constraints),
+   |
+
+Found 3 errors.
+[*] 2 fixable with `--fix`.

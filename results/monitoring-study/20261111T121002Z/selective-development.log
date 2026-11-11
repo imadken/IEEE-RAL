@@ -1,0 +1,9 @@
+{"episodes": 96, "decisions": 2304, "wall_seconds": 8.824257144937292}
+{"episodes": 192, "decisions": 4608, "wall_seconds": 14.020853122929111}
+{"episodes": 288, "decisions": 6912, "wall_seconds": 18.656315355794504}
+{"episodes": 384, "decisions": 9216, "wall_seconds": 27.809391310904175}
+{"episodes": 480, "decisions": 11520, "wall_seconds": 59.014564361888915}
+{"episodes": 576, "decisions": 13824, "wall_seconds": 82.17887053778395}
+{"episodes": 672, "decisions": 16128, "wall_seconds": 98.40432924800552}
+{"episodes": 768, "decisions": 18432, "wall_seconds": 141.66472093900666}
+{"episodes": 768, "decisions": 18432, "parents": ["blocks-strips-typed-01", "blocks-strips-typed-02", "blocks-strips-typed-03", "blocks-strips-typed-04", "logistics-strips-typed-01", "logistics-strips-typed-02", "logistics-strips-typed-03", "logistics-strips-typed-04"], "oracle_skips": {"Exact unknown-atom limit is 12": 748, "MODEL_MISSPECIFICATION_REGIME": 768}, "wall_seconds": 141.6667806338519, "methods": ["M0", "M1", "M2", "M3", "M3_no_consequence", "M4"], "split": "development"}

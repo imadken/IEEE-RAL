@@ -1,0 +1,30 @@
+unformatted: File would be reformatted
+  --> scripts/monitoring_command.py:41:61
+   |
+40 |     if external_record.exists():
+   -         cpu_used += json.loads(external_record.read_text())["recorded_process_cpu_seconds"]
+41 +         cpu_used += json.loads(external_record.read_text())[
+42 +             "recorded_process_cpu_seconds"
+43 +         ]
+44 |     if time.time() - initial["started_epoch"] >= 21600 or cpu_used >= 28700:
+   |
+
+unformatted: File would be reformatted
+  --> tests/test_monitoring_supervisor.py:25:29
+   |
+24 |     ]
+   -     result = subprocess.run(command, check=False, capture_output=True, text=True, timeout=8)
+25 +     result = subprocess.run(
+26 +         command, check=False, capture_output=True, text=True, timeout=8
+27 +     )
+28 |     assert result.returncode == 124
+--------------------------------------------------------------------------------
+34 |     (tmp_path / "completion_manifest.json").write_text("{}")
+   -     result = subprocess.run(command, check=False, capture_output=True, text=True, timeout=5)
+35 +     result = subprocess.run(
+36 +         command, check=False, capture_output=True, text=True, timeout=5
+37 +     )
+38 |     assert result.returncode != 0
+   |
+
+2 files would be reformatted, 49 files already formatted

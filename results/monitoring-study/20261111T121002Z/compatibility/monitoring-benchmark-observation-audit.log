@@ -1,0 +1,52 @@
+{
+  "task": "/tmp/monitoring-alfworld-games/json_2.1.1/train/look_at_obj_in_light-AlarmClock-None-DeskLamp-301/trial_T20190907_174127_043461/game.tw-pddl",
+  "purpose": "Check whether literal feedback can safely be equated with symbolic isOn truth; not method qualification",
+  "steps": [
+    {
+      "command": "go to dresser 1",
+      "visible_evidence": {
+        "feedback": "You arrive at dresser 1. On the dresser 1, you see a alarmclock 2, a desklamp 1, a keychain 3, a keychain 1, and a watch 1."
+      },
+      "oracle_only_lamp_facts": [],
+      "latency_ms": 116.809063,
+      "done": false
+    },
+    {
+      "command": "use desklamp 1",
+      "visible_evidence": {
+        "feedback": "You turn on the desklamp 1."
+      },
+      "oracle_only_lamp_facts": [
+        "istoggled(desklamp 1: object)",
+        "not_ison(desklamp 1: object)"
+      ],
+      "latency_ms": 112.360356,
+      "done": false
+    },
+    {
+      "command": "use desklamp 1",
+      "visible_evidence": {
+        "feedback": "You turn on the desklamp 1."
+      },
+      "oracle_only_lamp_facts": [
+        "istoggled(desklamp 1: object)",
+        "not_ison(desklamp 1: object)"
+      ],
+      "latency_ms": 110.993859,
+      "done": false
+    },
+    {
+      "command": "inventory",
+      "visible_evidence": {
+        "feedback": "You are not carrying anything."
+      },
+      "oracle_only_lamp_facts": [
+        "istoggled(desklamp 1: object)",
+        "not_ison(desklamp 1: object)"
+      ],
+      "latency_ms": 109.867736,
+      "done": false
+    }
+  ],
+  "source_grammar_rule": "toggleObject.feedback checks istoggled, while ToggleObject effects conditionally toggle isOn and unconditionally set isToggled"
+}

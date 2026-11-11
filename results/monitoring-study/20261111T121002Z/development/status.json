@@ -1,0 +1,28 @@
+{
+  "episodes": 768,
+  "decisions": 18432,
+  "parents": [
+    "blocks-strips-typed-01",
+    "blocks-strips-typed-02",
+    "blocks-strips-typed-03",
+    "blocks-strips-typed-04",
+    "logistics-strips-typed-01",
+    "logistics-strips-typed-02",
+    "logistics-strips-typed-03",
+    "logistics-strips-typed-04"
+  ],
+  "oracle_skips": {
+    "Exact unknown-atom limit is 12": 748,
+    "MODEL_MISSPECIFICATION_REGIME": 768
+  },
+  "wall_seconds": 141.6667806338519,
+  "methods": [
+    "M0",
+    "M1",
+    "M2",
+    "M3",
+    "M3_no_consequence",
+    "M4"
+  ],
+  "split": "development"
+}

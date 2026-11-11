@@ -1,0 +1,1 @@
+{"solved": true, "steps": ["pick-up b", "stack b a", "pick-up c", "stack c b", "pick-up d", "stack d c"], "source_domain": "/tmp/monitoring-public-pddl/ipc-2000/domains/blocks-strips-typed/domain.pddl", "source_problem": "/tmp/monitoring-public-pddl/ipc-2000/domains/blocks-strips-typed/instances/instance-1.pddl"}

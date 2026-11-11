@@ -1,0 +1,17 @@
+{
+  "solved": true,
+  "steps": [
+    "unstack b c",
+    "put-down b",
+    "unstack c a",
+    "put-down c",
+    "unstack a d",
+    "stack a b",
+    "pick-up c",
+    "stack c a",
+    "pick-up d",
+    "stack d c"
+  ],
+  "source_domain": "results/monitoring-study/20261111T121002Z/benchmarks/public-pddl/ipc-2000/domains/blocks-strips-typed/domain.pddl",
+  "source_problem": "results/monitoring-study/20261111T121002Z/benchmarks/public-pddl/ipc-2000/domains/blocks-strips-typed/instances/instance-2.pddl"
+}

@@ -1,0 +1,9 @@
+{"episodes": 96, "decisions": 1152, "wall_seconds": 1.4518938669934869}
+{"episodes": 192, "decisions": 2304, "wall_seconds": 3.084399941843003}
+{"episodes": 288, "decisions": 3456, "wall_seconds": 4.331425646785647}
+{"episodes": 384, "decisions": 4608, "wall_seconds": 6.771992841968313}
+{"episodes": 480, "decisions": 5760, "wall_seconds": 20.50811384082772}
+{"episodes": 576, "decisions": 6912, "wall_seconds": 30.705975614953786}
+{"episodes": 672, "decisions": 8064, "wall_seconds": 37.90091317985207}
+{"episodes": 768, "decisions": 9216, "wall_seconds": 58.11969349393621}
+{"episodes": 768, "decisions": 9216, "parents": ["blocks-strips-typed-01", "blocks-strips-typed-02", "blocks-strips-typed-03", "blocks-strips-typed-04", "logistics-strips-typed-01", "logistics-strips-typed-02", "logistics-strips-typed-03", "logistics-strips-typed-04"], "oracle_skips": {}, "wall_seconds": 58.121905656997114, "methods": ["M0", "M1", "M2"], "split": "development"}

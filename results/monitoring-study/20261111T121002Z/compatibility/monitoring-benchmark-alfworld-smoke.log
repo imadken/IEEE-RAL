@@ -1,0 +1,364 @@
+[
+  {
+    "task_path": "/tmp/monitoring-alfworld-games/json_2.1.1/train/look_at_obj_in_light-AlarmClock-None-DeskLamp-301/trial_T20190907_174127_043461/game.tw-pddl",
+    "task_sha256": "0cd491b45779b42b41308e0bc2d75e1c7f72423e8e12a022f55e9757b5fd558e",
+    "source_split": "train",
+    "source_walkthrough": [
+      "go to dresser 1",
+      "use desklamp 1",
+      "take alarmclock 2 from dresser 1"
+    ],
+    "initial_visible_evidence": {
+      "feedback": "-= Welcome to TextWorld, ALFRED! =-\n\nYou are in the middle of a room. Looking quickly around you, you see a bed 1, a desk 1, a drawer 17, a drawer 16, a drawer 15, a drawer 14, a drawer 13, a drawer 12, a drawer 11, a drawer 10, a drawer 9, a drawer 8, a drawer 7, a drawer 6, a drawer 5, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a dresser 1, a garbagecan 1, a shelf 6, a shelf 5, a shelf 4, a shelf 3, a shelf 2, and a shelf 1.\n\nYour task is to: look at alarmclock under the desklamp."
+    },
+    "steps": [
+      {
+        "command": "look",
+        "is_sensing_command": true,
+        "visible_evidence": {
+          "feedback": "You are in the middle of a room. Looking quickly around you, you see nothing."
+        },
+        "latency_ms": 98.759873,
+        "reward": 0,
+        "done": false,
+        "oracle_only_facts_added": [
+          "checked(loc 1: location)"
+        ],
+        "oracle_only_facts_removed": []
+      },
+      {
+        "command": "inventory",
+        "is_sensing_command": true,
+        "visible_evidence": {
+          "feedback": "You are not carrying anything."
+        },
+        "latency_ms": 96.183378,
+        "reward": 0,
+        "done": false,
+        "oracle_only_facts_added": [
+          "checked(agent1 : agent)"
+        ],
+        "oracle_only_facts_removed": []
+      },
+      {
+        "command": "go to dresser 1",
+        "is_sensing_command": false,
+        "visible_evidence": {
+          "feedback": "You arrive at dresser 1. On the dresser 1, you see a alarmclock 2, a desklamp 1, a keychain 3, a keychain 1, and a watch 1."
+        },
+        "latency_ms": 119.091508,
+        "reward": 0,
+        "done": false,
+        "oracle_only_facts_added": [
+          "atlocation(agent1 : agent, loc 4: location)",
+          "not_atlocation(agent1 : agent, loc 1: location)"
+        ],
+        "oracle_only_facts_removed": [
+          "atlocation(agent1 : agent, loc 1: location)"
+        ]
+      },
+      {
+        "command": "examine dresser 1",
+        "is_sensing_command": true,
+        "visible_evidence": {
+          "feedback": "On the dresser 1, you see a alarmclock 2, a desklamp 1, a keychain 3, a keychain 1, and a watch 1."
+        },
+        "latency_ms": 125.648039,
+        "reward": 0,
+        "done": false,
+        "oracle_only_facts_added": [
+          "checked(dresser 1: receptacle)"
+        ],
+        "oracle_only_facts_removed": []
+      },
+      {
+        "command": "use desklamp 1",
+        "is_sensing_command": false,
+        "visible_evidence": {
+          "feedback": "You turn on the desklamp 1."
+        },
+        "latency_ms": 113.036364,
+        "reward": 0,
+        "done": false,
+        "oracle_only_facts_added": [
+          "istoggled(desklamp 1: object)",
+          "not_ison(desklamp 1: object)"
+        ],
+        "oracle_only_facts_removed": []
+      },
+      {
+        "command": "take alarmclock 2 from dresser 1",
+        "is_sensing_command": false,
+        "visible_evidence": {
+          "feedback": "You pick up the alarmclock 2 from the dresser 1."
+        },
+        "latency_ms": 118.251845,
+        "reward": 1,
+        "done": true,
+        "oracle_only_facts_added": [
+          "holds(agent1 : agent, alarmclock 2: object)",
+          "holdsany(agent1 : agent)",
+          "not_inreceptacle(alarmclock 2: object, dresser 1: receptacle)",
+          "not_objectatlocation(alarmclock 2: object, loc 4: location)"
+        ],
+        "oracle_only_facts_removed": [
+          "inreceptacle(alarmclock 2: object, dresser 1: receptacle)",
+          "objectatlocation(alarmclock 2: object, loc 4: location)"
+        ]
+      }
+    ],
+    "goal_satisfied": true
+  },
+  {
+    "task_path": "/tmp/monitoring-alfworld-games/json_2.1.1/valid_seen/look_at_obj_in_light-AlarmClock-None-DeskLamp-323/trial_T20190909_044715_250790/game.tw-pddl",
+    "task_sha256": "cc1bd653b87a7371f7bcd951dd90743d4ad08db8ad1584a3be2e6163b07d0dd0",
+    "source_split": "valid_seen",
+    "source_walkthrough": [
+      "go to desk 1",
+      "use desklamp 1",
+      "take alarmclock 2 from desk 1"
+    ],
+    "initial_visible_evidence": {
+      "feedback": "-= Welcome to TextWorld, ALFRED! =-\n\nYou are in the middle of a room. Looking quickly around you, you see a bed 2, a bed 1, a desk 1, a drawer 11, a drawer 10, a drawer 9, a drawer 8, a drawer 7, a drawer 6, a drawer 5, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a dresser 1, a garbagecan 1, a safe 1, a sidetable 2, and a sidetable 1.\n\nYour task is to: look at alarmclock under the desklamp."
+    },
+    "steps": [
+      {
+        "command": "look",
+        "is_sensing_command": true,
+        "visible_evidence": {
+          "feedback": "You are in the middle of a room. Looking quickly around you, you see nothing."
+        },
+        "latency_ms": 72.706394,
+        "reward": 0,
+        "done": false,
+        "oracle_only_facts_added": [
+          "checked(loc 25: location)"
+        ],
+        "oracle_only_facts_removed": []
+      },
+      {
+        "command": "inventory",
+        "is_sensing_command": true,
+        "visible_evidence": {
+          "feedback": "You are not carrying anything."
+        },
+        "latency_ms": 68.466572,
+        "reward": 0,
+        "done": false,
+        "oracle_only_facts_added": [
+          "checked(agent1 : agent)"
+        ],
+        "oracle_only_facts_removed": []
+      },
+      {
+        "command": "go to desk 1",
+        "is_sensing_command": false,
+        "visible_evidence": {
+          "feedback": "You arrive at desk 1. On the desk 1, you see a alarmclock 2, a book 1, a bowl 1, a cd 2, a desklamp 1, a mug 2, a mug 1, a pen 2, and a pen 1."
+        },
+        "latency_ms": 104.351481,
+        "reward": 0,
+        "done": false,
+        "oracle_only_facts_added": [
+          "atlocation(agent1 : agent, loc 14: location)",
+          "not_atlocation(agent1 : agent, loc 25: location)"
+        ],
+        "oracle_only_facts_removed": [
+          "atlocation(agent1 : agent, loc 25: location)"
+        ]
+      },
+      {
+        "command": "examine desk 1",
+        "is_sensing_command": true,
+        "visible_evidence": {
+          "feedback": "On the desk 1, you see a alarmclock 2, a book 1, a bowl 1, a cd 2, a desklamp 1, a mug 2, a mug 1, a pen 2, and a pen 1."
+        },
+        "latency_ms": 102.673194,
+        "reward": 0,
+        "done": false,
+        "oracle_only_facts_added": [
+          "checked(desk 1: receptacle)"
+        ],
+        "oracle_only_facts_removed": []
+      },
+      {
+        "command": "use desklamp 1",
+        "is_sensing_command": false,
+        "visible_evidence": {
+          "feedback": "You turn on the desklamp 1."
+        },
+        "latency_ms": 99.528792,
+        "reward": 0,
+        "done": false,
+        "oracle_only_facts_added": [
+          "istoggled(desklamp 1: object)",
+          "not_ison(desklamp 1: object)"
+        ],
+        "oracle_only_facts_removed": []
+      },
+      {
+        "command": "take alarmclock 2 from desk 1",
+        "is_sensing_command": false,
+        "visible_evidence": {
+          "feedback": "You pick up the alarmclock 2 from the desk 1."
+        },
+        "latency_ms": 78.763248,
+        "reward": 1,
+        "done": true,
+        "oracle_only_facts_added": [
+          "holds(agent1 : agent, alarmclock 2: object)",
+          "holdsany(agent1 : agent)",
+          "not_inreceptacle(alarmclock 2: object, desk 1: receptacle)",
+          "not_objectatlocation(alarmclock 2: object, loc 14: location)"
+        ],
+        "oracle_only_facts_removed": [
+          "inreceptacle(alarmclock 2: object, desk 1: receptacle)",
+          "objectatlocation(alarmclock 2: object, loc 14: location)"
+        ]
+      }
+    ],
+    "goal_satisfied": true
+  },
+  {
+    "task_path": "/tmp/monitoring-alfworld-games/json_2.1.1/valid_unseen/look_at_obj_in_light-AlarmClock-None-DeskLamp-308/trial_T20190908_222917_366542/game.tw-pddl",
+    "task_sha256": "debf644284b20d488820b0b59c44d24c42d208cd99b2b25c01105e6bf6668859",
+    "source_split": "valid_unseen",
+    "source_walkthrough": [
+      "go to desk 2",
+      "take alarmclock 1 from desk 2",
+      "go to desk 1",
+      "use desklamp 1"
+    ],
+    "initial_visible_evidence": {
+      "feedback": "-= Welcome to TextWorld, ALFRED! =-\n\nYou are in the middle of a room. Looking quickly around you, you see a bed 1, a desk 2, a desk 1, a drawer 6, a drawer 5, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a garbagecan 1, a laundryhamper 1, a safe 1, a shelf 6, a shelf 5, a shelf 4, a shelf 3, a shelf 2, and a shelf 1.\n\nYour task is to: examine the alarmclock with the desklamp."
+    },
+    "steps": [
+      {
+        "command": "look",
+        "is_sensing_command": true,
+        "visible_evidence": {
+          "feedback": "You are in the middle of a room. Looking quickly around you, you see nothing."
+        },
+        "latency_ms": 66.800059,
+        "reward": 0,
+        "done": false,
+        "oracle_only_facts_added": [
+          "checked(loc 23: location)"
+        ],
+        "oracle_only_facts_removed": []
+      },
+      {
+        "command": "inventory",
+        "is_sensing_command": true,
+        "visible_evidence": {
+          "feedback": "You are not carrying anything."
+        },
+        "latency_ms": 65.354813,
+        "reward": 0,
+        "done": false,
+        "oracle_only_facts_added": [
+          "checked(agent1 : agent)"
+        ],
+        "oracle_only_facts_removed": []
+      },
+      {
+        "command": "go to desk 2",
+        "is_sensing_command": false,
+        "visible_evidence": {
+          "feedback": "You arrive at desk 2. On the desk 2, you see a alarmclock 1."
+        },
+        "latency_ms": 71.128534,
+        "reward": 0,
+        "done": false,
+        "oracle_only_facts_added": [
+          "atlocation(agent1 : agent, loc 24: location)",
+          "not_atlocation(agent1 : agent, loc 23: location)"
+        ],
+        "oracle_only_facts_removed": [
+          "atlocation(agent1 : agent, loc 23: location)"
+        ]
+      },
+      {
+        "command": "examine desk 2",
+        "is_sensing_command": true,
+        "visible_evidence": {
+          "feedback": "On the desk 2, you see a alarmclock 1."
+        },
+        "latency_ms": 73.060855,
+        "reward": 0,
+        "done": false,
+        "oracle_only_facts_added": [
+          "checked(desk 2: receptacle)"
+        ],
+        "oracle_only_facts_removed": []
+      },
+      {
+        "command": "take alarmclock 1 from desk 2",
+        "is_sensing_command": false,
+        "visible_evidence": {
+          "feedback": "You pick up the alarmclock 1 from the desk 2."
+        },
+        "latency_ms": 73.214241,
+        "reward": 0,
+        "done": false,
+        "oracle_only_facts_added": [
+          "holds(agent1 : agent, alarmclock 1: object)",
+          "holdsany(agent1 : agent)",
+          "not_inreceptacle(alarmclock 1: object, desk 2: receptacle)",
+          "not_objectatlocation(alarmclock 1: object, loc 24: location)"
+        ],
+        "oracle_only_facts_removed": [
+          "inreceptacle(alarmclock 1: object, desk 2: receptacle)",
+          "objectatlocation(alarmclock 1: object, loc 24: location)"
+        ]
+      },
+      {
+        "command": "go to desk 1",
+        "is_sensing_command": false,
+        "visible_evidence": {
+          "feedback": "You arrive at desk 1. On the desk 1, you see a bowl 1, a desklamp 1, a mug 1, and a pencil 1."
+        },
+        "latency_ms": 80.195289,
+        "reward": 0,
+        "done": false,
+        "oracle_only_facts_added": [
+          "atlocation(agent1 : agent, loc 14: location)",
+          "not_atlocation(agent1 : agent, loc 24: location)"
+        ],
+        "oracle_only_facts_removed": [
+          "atlocation(agent1 : agent, loc 24: location)"
+        ]
+      },
+      {
+        "command": "examine desk 1",
+        "is_sensing_command": true,
+        "visible_evidence": {
+          "feedback": "On the desk 1, you see a bowl 1, a desklamp 1, a mug 1, and a pencil 1."
+        },
+        "latency_ms": 78.269321,
+        "reward": 0,
+        "done": false,
+        "oracle_only_facts_added": [
+          "checked(desk 1: receptacle)"
+        ],
+        "oracle_only_facts_removed": []
+      },
+      {
+        "command": "use desklamp 1",
+        "is_sensing_command": false,
+        "visible_evidence": {
+          "feedback": "You turn on the desklamp 1."
+        },
+        "latency_ms": 73.246183,
+        "reward": 1,
+        "done": true,
+        "oracle_only_facts_added": [
+          "istoggled(desklamp 1: object)",
+          "not_ison(desklamp 1: object)"
+        ],
+        "oracle_only_facts_removed": []
+      }
+    ],
+    "goal_satisfied": true
+  }
+]

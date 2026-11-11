@@ -1,0 +1,151 @@
+# Monitoring study benchmark compatibility audit
+
+Audit date: 2026-11-11, worker start approximately12:10UTC. Repository untouched.
+Only /tmp contains this worker's changes. No GPU process, simulator, paid API,
+checkpoint download or repository dependency/lockfile modification occurred.
+
+## ALFWorld source and bounded actual execution
+
+Primary source: https://github.com/alfworld/alfworld
+Inspected immutable revision: aaba6870f86c5be6a08a491f32a50b906227bc3e
+(default master revision returned by GitHub API, dated2026-02-08).
+README explicitly permits text-only base install; visual/full extras unnecessary.
+Current source requirements differ from released PyPI0.4.2 metadata; record both.
+
+Executed isolated environment /tmp/monitoring-alfworld (Python3.12.12) with
+alfworld0.4.2, textworld1.7.0, fast-downward-textworld20.6.4, NumPy2.5.4.
+Full56-package version listing: /tmp/monitoring-alfworld-requirements.txt.
+Installation succeeded; historical repo NumPy1.26.4 and lock remain untouched.
+
+DO NOT run generic `alfworld-download`: inspected pinned script unconditionally
+fetches a177.9MB MaskRCNN checkpoint even without --extra. Instead downloaded:
+https://github.com/alfworld/alfworld/releases/download/0.4.2/json_2.1.3_tw-pddl.zip
+Header/release metadata and downloaded size agree:36,507,267bytes.
+Archive SHA256:5df77ea759f2211a4106082839ddbbb790f1ba4e7d097ed732cf453f72aa36cf
+Archive contains4,027 games; all contents total344,306,996 uncompressed bytes.
+Only three canonical game files were extracted,225,181bytes total.
+File names retain json_2.1.1/ even though release asset is named2.1.3.
+
+Selection was deterministic: lexicographically first game.tw-pddl in each native
+train,valid_seen,valid_unseen split; all happened to be alarmclock/desklamp tasks.
+This is compatibility selection, not a preregistered method qualification sample.
+Do not treat the three tasks as diverse task-family evidence or estimate a method
+effect from their completions.
+
+Actual native TextWorld execution:3/3 source walkthroughs reached native goal.
+Added native look,inventory,examine commands produced10 sensing responses.
+Measured audited environment-step latencies:65.35–125.65ms,median75.67ms.
+These include internal state update/info gathering, NOT VLM or physical latency.
+Native `checked(...)` facts change on sensing, including look and inventory.
+Queries cannot be treated as pure stateless hidden-bit revelations.
+
+Runtime-visible payload was whitelisted to {feedback: text}; complete facts were
+retained only in separate oracle audit fields. Raw GameState also contains private
+facts/applicable actions even when some info options are false; never pass it
+directly to deployed monitoring methods. Admissible commands and expert plans
+can disclose hidden action validity and were not runtime policy inputs.
+Offline source walkthroughs selected fixed execution actions for interface smoke.
+
+Evidence and executable reproduction scripts:
+- /tmp/monitoring_alfworld_smoke.py
+- /tmp/monitoring-alfworld-smoke.json
+- /tmp/monitoring-alfworld-games/ (exact three canonical game files)
+- /tmp/monitoring_alfworld_inspect.py
+- /tmp/monitoring-benchmark-source-manifest.json (task/source/binary hashes)
+- /tmp/monitoring-benchmark-commands.jsonl (commands,status,wall/CPU)
+- /tmp/monitoring-benchmark-*.log (retained complete command outputs)
+
+## Full ALFWorld monitoring-interface limitation
+
+The native task model contains disjunctive/existential preconditions, conditional
+effects, action costs, and observation actions with checked-state effects.
+The feedback grammar depends on state and ordered rule fallbacks. A parser that
+maps every phrase to an intuitive Boolean can be unsound; incomplete descriptions
+must not imply closed-world negatives.
+
+Concrete boundary case from actual source and execution: ToggleObject toggles
+isOn conditionally and sets isToggled unconditionally, while toggleObject.feedback
+and examineObject's "is on" phrase test isToggled. Two native `use desklamp1`
+commands both returned "You turn on..."; audited facts contained isToggled and
+not_isOn. This is evidence against treating the literal phrase as isOn=true;
+do not generalize it into an unverified paper-wide bug claim or alter benchmark
+semantics. isToggled and isOn are distinct declared predicates.
+
+Evidence: /tmp/monitoring_alfworld_observation_audit.py and
+/tmp/monitoring-alfworld-observation-audit.json. This is an interface audit, not
+an uncertainty regime chosen to favor any monitoring method.
+
+Conservative parsing is possible for narrow inventory, open/closed and positive
+containment cases after inspecting corresponding grammar. A complete checked
+feedback inversion, timestamp handling, belief update and ADL-to-grounded model
+adapter was NOT validated within this compatibility worker. Recommendation:
+keep actual3/3 native ALFWorld smoke distinct from the comparative qualification;
+report full ALFWorld monitor integration incomplete. Do not label exposed-state
+PDDL or ideal-symbolic-sensor experiments as native ALFWorld sensing comparisons.
+
+## Independent public PDDL families
+
+Canonical IPC source: https://github.com/potassco/pddl-instances
+Immutable revision:cf19edf7c53d1540ddbb396c642595e0926ee552
+Paths:
+ipc-2000/domains/blocks-strips-typed/domain.pddl
+ipc-2000/domains/blocks-strips-typed/instances/instance-1.pddl .. instance-12.pddl
+ipc-2000/domains/logistics-strips-typed/domain.pddl
+ipc-2000/domains/logistics-strips-typed/instances/instance-1.pddl .. instance-12.pddl
+
+Both are existing public STRIPS+typing domains; no custom favorable task generator.
+Files are under /tmp/monitoring-public-pddl/ with source_manifest.json providing
+source URLs, SHA256,size and Git blobSHA1 for all26 files. Both domain blobSHA1s
+and all24 instance blobSHA1s match independent immutable GitHub metadata.
+No source edits or substitutions were made.
+
+Predeclared suggested split accepted by root: development1–4,qualification5–12,
+in BOTH families; retain planning timeouts/failures, no gain-based task selection.
+These are symbolic planning benchmark families, not physical-robot validation.
+Neither supplies native sensors: missing/noisy/delayed Boolean query protocols
+added around these tasks must be explicitly labelled ideal/synthetic sensors.
+
+Planning utility /tmp/monitoring_fd_plan.py takes DOMAIN PROBLEM OUTPUT_JSON.
+Invoke with /tmp/monitoring-alfworld/bin/python; use timeout30s per instance.
+Native package supplies libdownward.so via Python fast_downward, not a standalone
+search executable. Utility uses pddl2sas(...optimize=True),solve_sas and
+get_last_plan. pddl2sas mutates sys.argv, so parse caller arguments beforehand.
+Actual canonical blocks instance1 solved in0.216s with six grounded actions;
+evidence /tmp/monitoring-ipc-plan.json. Other instance planning belongs to root's
+locked campaign and has not been silently asserted complete by this worker.
+
+## ManiSkill feasibility assessment (read-only; no new simulation)
+
+Existing scripts/mani_runner.py uses CPU physics,render_backend=none and state_dict
+observations. The qualified nominal PushCube/PickCube prefix controls, contact
+recording and local evidence can support a future limited monitoring demonstration
+without new failure physics. Construction uses A4000 device support for materials,
+not GPU physics. Snapshot reconstruction still fails; full-prefix mode is required.
+
+However, current observations include privileged object/TCP/goal poses and contact
+flags; there is no independently checked LOGIV symbolic observation/skill model,
+no calibrated sensing-query cost model and no long-horizon continuation benchmark.
+A replayed nominal trace cannot establish perception-grounding soundness or a
+publication-level monitoring advantage. Current authorization permits assessment;
+this worker did not execute ManiSkill or restart terminated physical experiments.
+
+## Resource accounting and preserved negatives
+
+Eight first measured subprocess commands used256.64CPU seconds; subsequent
+freeze and feedback audit add approximately2.97CPU seconds. Refreshed exact sums
+and unique inode-deduplicated artifact bytes are in
+/tmp/monitoring-benchmark-resources.json. All experimental/install subprocesses
+completed and no detached worker is left running.
+
+The preliminary200MB subtask assumption underestimated expanded dependencies:
+installed environment~340MB logical, cache~658MB logical, heavily hardlinked.
+Root was informed immediately and explicitly authorized proceeding below the
+global4GB ceiling. Do not add environment and cache sizes without inode deduping.
+The archive is36.5MB; no checkpoint data was downloaded.
+
+One read-only source path probe expected logic.py and returned exit2; the real
+package path is logic/__init__.py and was inspected. This was an inspection-path
+correction, not a failed benchmark installation or experimental trial.
+No compatibility failures were hidden; no positive monitoring-method result is
+asserted. This worker supports an executable symbolic assessment and separately
+verified ALFWorld compatibility, with robotics validation still missing.

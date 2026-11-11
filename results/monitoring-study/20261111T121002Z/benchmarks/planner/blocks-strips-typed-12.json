@@ -1,0 +1,27 @@
+{
+  "solved": true,
+  "steps": [
+    "unstack b c",
+    "put-down b",
+    "unstack c g",
+    "put-down c",
+    "unstack g e",
+    "put-down g",
+    "pick-up c",
+    "stack c g",
+    "unstack a d",
+    "stack a c",
+    "pick-up d",
+    "stack d a",
+    "unstack e f",
+    "put-down e",
+    "pick-up f",
+    "stack f d",
+    "pick-up b",
+    "stack b f",
+    "pick-up e",
+    "stack e b"
+  ],
+  "source_domain": "results/monitoring-study/20261111T121002Z/benchmarks/public-pddl/ipc-2000/domains/blocks-strips-typed/domain.pddl",
+  "source_problem": "results/monitoring-study/20261111T121002Z/benchmarks/public-pddl/ipc-2000/domains/blocks-strips-typed/instances/instance-12.pddl"
+}

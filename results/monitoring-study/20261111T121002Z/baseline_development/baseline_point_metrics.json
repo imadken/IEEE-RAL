@@ -1,0 +1,20 @@
+{
+  "M0": {
+    "goal_completion": 0.4427083333333333,
+    "false_current_permission": 0.0,
+    "abstention": 0.5572916666666666,
+    "query_count": 1.7256944444444444
+  },
+  "M1": {
+    "goal_completion": 0.8940972222222222,
+    "false_current_permission": 0.0,
+    "abstention": 0.10590277777777778,
+    "query_count": 0.9609375
+  },
+  "M2": {
+    "goal_completion": 0.6284722222222222,
+    "false_current_permission": 0.0,
+    "abstention": 0.3715277777777778,
+    "query_count": 1.8333333333333333
+  }
+}

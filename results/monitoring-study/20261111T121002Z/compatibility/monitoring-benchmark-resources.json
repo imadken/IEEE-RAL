@@ -1,0 +1,19 @@
+{
+  "scope": "Measured compatibility/install subprocesses; read-only source inspections and metadata calls not CPU-instrumented",
+  "unique_logical_bytes_all_worker_artifacts": 706063794,
+  "unique_allocated_bytes_all_worker_artifacts": 739127296,
+  "archive_bytes": 36507267,
+  "recorded_process_wall_seconds": 40.85982388816774,
+  "recorded_process_cpu_seconds": 259.613921,
+  "recorded_cpu_core_hours": 0.07211497805555556,
+  "commands": 10,
+  "nonzero_exits": [],
+  "source_inspection_nonzero_exit": {
+    "exit_status": 2,
+    "reason": "Expected logic.py while installed package exposes logic/__init__.py; corrected read-only path"
+  },
+  "worker_started_approximately_utc": "2026-11-11T12:10:03+00:00",
+  "no_detached_jobs": true,
+  "no_gpu": true,
+  "no_repository_changes": true
+}

@@ -1,0 +1,205 @@
+{
+  "files": [
+    {
+      "bytes": 1212,
+      "git_blob_sha1": "24eac8b9d49044e53c7402fdc0cb0e614a5685da",
+      "path": "ipc-2000/domains/blocks-strips-typed/domain.pddl",
+      "sha256": "3ef85edaf88fac8dd668e6e0b49657551b94c37940d8c424eb9c27429f980d3d",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/blocks-strips-typed/domain.pddl"
+    },
+    {
+      "bytes": 224,
+      "git_blob_sha1": "2b58a1a779f0a264a95b04733ed66fbddac92f27",
+      "path": "ipc-2000/domains/blocks-strips-typed/instances/instance-1.pddl",
+      "sha256": "a8985a24040f704a671ff4bc57655ab23252978473b4181db12bc3514ca46cec",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/blocks-strips-typed/instances/instance-1.pddl"
+    },
+    {
+      "bytes": 245,
+      "git_blob_sha1": "e91dbf3704efd06d8d3fb410ee6cfd046a1ec730",
+      "path": "ipc-2000/domains/blocks-strips-typed/instances/instance-10.pddl",
+      "sha256": "7adca92f5fd60531ee8d37cfa37e18de91096af3dd331fcd015ff58346bdefe5",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/blocks-strips-typed/instances/instance-10.pddl"
+    },
+    {
+      "bytes": 258,
+      "git_blob_sha1": "4f7f88a48f7c7675e8a06112d808c61f6955a23e",
+      "path": "ipc-2000/domains/blocks-strips-typed/instances/instance-11.pddl",
+      "sha256": "36d12394b6d80d5a866340ac2001115c5219f7d7fddc584fc6a3b62608aecb1b",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/blocks-strips-typed/instances/instance-11.pddl"
+    },
+    {
+      "bytes": 258,
+      "git_blob_sha1": "043554f33437cf3eedd2300d1a14461c5b85dd89",
+      "path": "ipc-2000/domains/blocks-strips-typed/instances/instance-12.pddl",
+      "sha256": "1f4ddd547f93682426088b7aeb656d6d5171b43b0294febd6612d09cad7d7667",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/blocks-strips-typed/instances/instance-12.pddl"
+    },
+    {
+      "bytes": 184,
+      "git_blob_sha1": "891502fb45d330fd1bb1d4719206aa4ae1c94b35",
+      "path": "ipc-2000/domains/blocks-strips-typed/instances/instance-2.pddl",
+      "sha256": "60116bab289cd3f8275296c68231987becf8114077f3ed03bc066b12c6d9db27",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/blocks-strips-typed/instances/instance-2.pddl"
+    },
+    {
+      "bytes": 211,
+      "git_blob_sha1": "0f2f5be4f2a6dc81af3d601ffe85efda4d78f4c0",
+      "path": "ipc-2000/domains/blocks-strips-typed/instances/instance-3.pddl",
+      "sha256": "68a93fbcdf24ebfb3cdb8718da2f74cb2cac5c224bcf1db7bb237b496edcc319",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/blocks-strips-typed/instances/instance-3.pddl"
+    },
+    {
+      "bytes": 218,
+      "git_blob_sha1": "e1e2a03908898ca1a20d33ce69517be37e8fbce1",
+      "path": "ipc-2000/domains/blocks-strips-typed/instances/instance-4.pddl",
+      "sha256": "cb8577dcf116ae2cfaf3c3fd628c944e07e107b8063501177c7ebbf7bfc365d7",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/blocks-strips-typed/instances/instance-4.pddl"
+    },
+    {
+      "bytes": 231,
+      "git_blob_sha1": "10d750f34974ec4e3735687b00faf0703e32320c",
+      "path": "ipc-2000/domains/blocks-strips-typed/instances/instance-5.pddl",
+      "sha256": "59c0c700eabb5b5d8e787ebf51c070b7ecf1b62c36cd69a2e145ce2fa6f8bf02",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/blocks-strips-typed/instances/instance-5.pddl"
+    },
+    {
+      "bytes": 204,
+      "git_blob_sha1": "9238342b8aee7d822f81e479fce4472d2277ab3f",
+      "path": "ipc-2000/domains/blocks-strips-typed/instances/instance-6.pddl",
+      "sha256": "5e35c771268e5560c1faffabc13d02870b770ff0d87c866f49afc9431e3ef6fe",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/blocks-strips-typed/instances/instance-6.pddl"
+    },
+    {
+      "bytes": 238,
+      "git_blob_sha1": "63e981c51587d270a7eabba3cfa0633caa2ae46a",
+      "path": "ipc-2000/domains/blocks-strips-typed/instances/instance-7.pddl",
+      "sha256": "7307ac3ee3b62c8534b188dd01a31ee7847410c1921616a899b76a187713fdaa",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/blocks-strips-typed/instances/instance-7.pddl"
+    },
+    {
+      "bytes": 277,
+      "git_blob_sha1": "9d722feb006043e6fa07e13c7e745a22f2595a6f",
+      "path": "ipc-2000/domains/blocks-strips-typed/instances/instance-8.pddl",
+      "sha256": "c4a84e10cbe311aa39a6155ab0f9d7f4c8dcac94c87e5dce0995d6c756d42403",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/blocks-strips-typed/instances/instance-8.pddl"
+    },
+    {
+      "bytes": 225,
+      "git_blob_sha1": "d0bb242f0ac56420fbb97628e8006cb556485485",
+      "path": "ipc-2000/domains/blocks-strips-typed/instances/instance-9.pddl",
+      "sha256": "b96fb816db32d3bbc9d9aa12f61614911532a2f25873c8dab8df54a94c789efd",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/blocks-strips-typed/instances/instance-9.pddl"
+    },
+    {
+      "bytes": 1748,
+      "git_blob_sha1": "2d710af90d465b5615214d42656a5760dbf82c1f",
+      "path": "ipc-2000/domains/logistics-strips-typed/domain.pddl",
+      "sha256": "8484b389b935a468e2542fe118705d7c2a63db33e08d3f9d1c436240549e4e39",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/logistics-strips-typed/domain.pddl"
+    },
+    {
+      "bytes": 520,
+      "git_blob_sha1": "9274e07fd014e99f58708523aa717f350149237e",
+      "path": "ipc-2000/domains/logistics-strips-typed/instances/instance-1.pddl",
+      "sha256": "0dd55e43d712be22aff84c9406b7f08e96c2126c0c681e4d71b90cc6af9ac221",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/logistics-strips-typed/instances/instance-1.pddl"
+    },
+    {
+      "bytes": 566,
+      "git_blob_sha1": "02a109083bd19ce4160f965b33c75d0d90f00646",
+      "path": "ipc-2000/domains/logistics-strips-typed/instances/instance-10.pddl",
+      "sha256": "9aa3819c9144f2f8e0ac3cc8c8fca787fd944e637229c886e7b2e1396b051952",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/logistics-strips-typed/instances/instance-10.pddl"
+    },
+    {
+      "bytes": 731,
+      "git_blob_sha1": "3926fafc51bdc3450f336fe0885cf7120b302cee",
+      "path": "ipc-2000/domains/logistics-strips-typed/instances/instance-11.pddl",
+      "sha256": "b04b500ab0ca86a594db97b1998c93ab90a9c79854ece513ba88c5549e7ff607",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/logistics-strips-typed/instances/instance-11.pddl"
+    },
+    {
+      "bytes": 727,
+      "git_blob_sha1": "162f44af2bc72bb61415775a398952e3d5e62fc9",
+      "path": "ipc-2000/domains/logistics-strips-typed/instances/instance-12.pddl",
+      "sha256": "4fd0308dc3a89da762cb8461c8e5b79f8b2013b241ae4aaa2200c9d56a30bff5",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/logistics-strips-typed/instances/instance-12.pddl"
+    },
+    {
+      "bytes": 526,
+      "git_blob_sha1": "4a175e69bbc66f70868d7e50aa3039ee9a9307b8",
+      "path": "ipc-2000/domains/logistics-strips-typed/instances/instance-2.pddl",
+      "sha256": "b7df7b4d9f494bf2744e0777113c475284d2fbd447d56ad92a6ef4bcb1b30c7f",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/logistics-strips-typed/instances/instance-2.pddl"
+    },
+    {
+      "bytes": 521,
+      "git_blob_sha1": "5098f212b024a554130f1b94227768f7fb1aa701",
+      "path": "ipc-2000/domains/logistics-strips-typed/instances/instance-3.pddl",
+      "sha256": "510909e51aa4747e6c5a5b5af0898ba93f8ad26fca7def4af6f0fd53ecb16f17",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/logistics-strips-typed/instances/instance-3.pddl"
+    },
+    {
+      "bytes": 553,
+      "git_blob_sha1": "6e2c59761d0dc5864af6b90b1e7a85b1f0114c59",
+      "path": "ipc-2000/domains/logistics-strips-typed/instances/instance-4.pddl",
+      "sha256": "ac4994868f420c700f8fb31f28036267ce4856cb1c867daa68512b60f0819686",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/logistics-strips-typed/instances/instance-4.pddl"
+    },
+    {
+      "bytes": 558,
+      "git_blob_sha1": "6f49d886d99fef695018cb57b2c30f24bf96d818",
+      "path": "ipc-2000/domains/logistics-strips-typed/instances/instance-5.pddl",
+      "sha256": "2ce0d8eb3d3d131c72cd4b90768888d7ec0bb457ab048c4ab52c293169e2e7fc",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/logistics-strips-typed/instances/instance-5.pddl"
+    },
+    {
+      "bytes": 555,
+      "git_blob_sha1": "62cf24148469f1c058884411ea7ba11399426545",
+      "path": "ipc-2000/domains/logistics-strips-typed/instances/instance-6.pddl",
+      "sha256": "4e85dbf2be5f665ea5dd21bad9d393a65b8beb7d290bb5ce66c27d0e6e2044f7",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/logistics-strips-typed/instances/instance-6.pddl"
+    },
+    {
+      "bytes": 571,
+      "git_blob_sha1": "cb358b7dc21b4e97502a7cd7261e1c407d9913a6",
+      "path": "ipc-2000/domains/logistics-strips-typed/instances/instance-7.pddl",
+      "sha256": "601a322f0acf72d4aa400c96b00ea76f8d9c1c9d3ffb9973d5b13606f5139995",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/logistics-strips-typed/instances/instance-7.pddl"
+    },
+    {
+      "bytes": 566,
+      "git_blob_sha1": "b0e4cc692e16ca533a2a8d09f4580cf22176057f",
+      "path": "ipc-2000/domains/logistics-strips-typed/instances/instance-8.pddl",
+      "sha256": "bc1b02369cb47ee219903b844b22f59e9d482e63b124e55960cf7f8da321474f",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/logistics-strips-typed/instances/instance-8.pddl"
+    },
+    {
+      "bytes": 571,
+      "git_blob_sha1": "e731577d842ceeb56c9926ee10b4d4ec595a06de",
+      "path": "ipc-2000/domains/logistics-strips-typed/instances/instance-9.pddl",
+      "sha256": "209f1586b426cf5166a61ce6e7903082437dfb5e26cfffcf12a3744f3178c272",
+      "source": "https://github.com/potassco/pddl-instances/blob/cf19edf7c53d1540ddbb396c642595e0926ee552/ipc-2000/domains/logistics-strips-typed/instances/instance-9.pddl"
+    }
+  ],
+  "revision": "cf19edf7c53d1540ddbb396c642595e0926ee552",
+  "split": {
+    "development": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "qualification": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  }
+}

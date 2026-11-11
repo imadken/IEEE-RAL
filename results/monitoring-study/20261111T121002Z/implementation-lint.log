@@ -1,0 +1,32 @@
+B023 Function definition does not bind loop variable `relevant`
+   --> src/dual_rec/monitoring/methods.py:146:59
+    |
+144 | …                     sum(
+145 | …                         context.consequence.get(atom, 1.0)
+146 | …                         for atom in query.atoms & relevant
+    |                                                     ^^^^^^^^
+147 | …                     )
+148 | …                     / query.cost
+    |
+
+B023 Function definition does not bind loop variable `relevant`
+   --> src/dual_rec/monitoring/methods.py:150:46
+    |
+148 |                             / query.cost
+149 |                         )
+150 |                     return len(query.atoms & relevant) / query.cost
+    |                                              ^^^^^^^^
+151 |
+152 |                 selected = min(candidates, key=lambda q: (-score(q), q.name))
+    |
+
+B023 Function definition does not bind loop variable `calls`
+  --> tests/test_monitoring_methods.py:53:17
+   |
+52 |             def sensor(name):
+53 |                 calls.append(name)
+   |                 ^^^^^
+54 |                 return {name: True}
+   |
+
+Found 3 errors.

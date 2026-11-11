@@ -88,10 +88,22 @@ def as_action(operator: "Operator") -> Action:
     )
 
 
-def ground_actions(task: "Task", max_actions: int = 50_000) -> tuple["Operator", ...]:
-    """Enumerate typed grounded actions, failing explicitly at the declared cap."""
+def ground_actions(
+    task: "Task",
+    max_actions: int = 50_000,
+    *,
+    skip_invalid: bool = False,
+    rejected: list[dict] | None = None,
+) -> tuple["Operator", ...]:
+    """Enumerate typed groundings, strict unless exclusion is explicitly opted in.
+
+    The optional common-library adaptation omits only inconsistent grounded
+    literals rejected by upstream's Operator. Every omission can be retained in
+    ``rejected``. This is not a claim to implement every native PDDL grounding.
+    """
     objects = task.constants | task.objects
     actions = []
+    attempted = 0
     for name, schema in sorted(task.actions.items()):
         arguments = [
             sorted(
@@ -100,13 +112,38 @@ def ground_actions(task: "Task", max_actions: int = 50_000) -> tuple["Operator",
             for kind in schema.parameters.values()
         ]
         for values in product(*arguments):
-            if len(actions) >= max_actions:
+            attempted += 1
+            if attempted > max_actions:
                 raise ValueError("Ground action limit exceeded")
+            if skip_invalid:
+                bindings = dict(zip(schema.parameters, values))
+                conditions = [
+                    {
+                        (
+                            tuple(bindings.get(part, part) for part in literal.atom),
+                            literal.positive,
+                        )
+                        for literal in literals
+                    }
+                    for literals in (schema.preconditions, schema.effects)
+                ]
+                if any(
+                    any((atom, not positive) in literals for atom, positive in literals)
+                    for literals in conditions
+                ):
+                    if rejected is not None:
+                        rejected.append(
+                            {
+                                "signature": [name, *values],
+                                "reason": "upstream_rejects_inconsistent_grounded_literals",
+                            }
+                        )
+                    continue
             actions.append(task.ground((name, *values)))
     return tuple(actions)
 
 
-def as_model(task: "Task") -> Model:
+def as_model(task: "Task", *, skip_invalid: bool = False) -> Model:
     """Declare all grounded variables and fixed static/equality facts.
 
     Static truth follows the public PDDL initial model and closed-world static
@@ -116,7 +153,7 @@ def as_model(task: "Task") -> Model:
     upstream = load_upstream()
     atoms = set(task.dynamic_atoms) | set(task.initial_state.facts)
     atoms.update(literal.atom for literal in task.goal)
-    for action in ground_actions(task):
+    for action in ground_actions(task, skip_invalid=skip_invalid):
         atoms.update(literal.atom for literal in action.preconditions | action.effects)
     fixed = tuple(
         (

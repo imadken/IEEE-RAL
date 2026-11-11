@@ -276,3 +276,28 @@ method changes. Commit this registration before method comparisons, and seal
 implementation/parameters before opening qualification outcomes. Finalize only
 after tests, Ruff, independent audit, source/evidence manifests and local commits.
 Publication is manual; no GitHub push or authentication attempt is permitted.
+
+## Pre-qualification implementation record
+
+Registration commit: `b5c28a9`. Original gate behavior and M0/M1/M2 development
+measurements precede M3 implementation. The final M3 design is exactly the fixed
+rule above; no weights were tuned. Eight development parents were evaluated;
+the primary M3–M1 goal and query differences were both zero. This negative result
+does not cancel held-out qualification or authorize a scoring revision.
+
+The independent development audit checks all 18,432 rows (including 1,516 explicit
+M4 exclusions), with zero mismatches. The complete repository suite passed
+85 tests before qualification. Lint/format fixture corrections and the earlier
+consequence-metadata correction are retained; none used qualification outcomes.
+
+For the secondary exact query-relevance audit, retain all structural-closure
+counts, and inspect the first 256 query events per method subject to twelve
+unknown atoms. Selection is record order, never outcome-based. Equal possible
+validity-label sets after every answer establish only zero *immediate* resolution
+value; XOR demonstrates why this is not global irrelevance. The full-model closure
+external to a query gives the stronger conservative irrelevance diagnostic.
+
+The source-code commit and a SHA-256 qualification seal are recorded immediately
+before the held-out worker is launched. Qualification instances 11–12 in Logistics
+hit the registered 30-second planning limit; all fourteen other held-out instances
+remain. No replacement or further integration search follows that exclusion.

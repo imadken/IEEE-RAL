@@ -1,0 +1,22 @@
+{
+  "episodes": 768,
+  "decisions": 9216,
+  "parents": [
+    "blocks-strips-typed-01",
+    "blocks-strips-typed-02",
+    "blocks-strips-typed-03",
+    "blocks-strips-typed-04",
+    "logistics-strips-typed-01",
+    "logistics-strips-typed-02",
+    "logistics-strips-typed-03",
+    "logistics-strips-typed-04"
+  ],
+  "oracle_skips": {},
+  "wall_seconds": 58.121905656997114,
+  "methods": [
+    "M0",
+    "M1",
+    "M2"
+  ],
+  "split": "development"
+}

@@ -1,0 +1,10 @@
+{
+  "solved": true,
+  "steps": [
+    "grasp-can left sauce-can kitchen-pot",
+    "lift-can left sauce-can",
+    "place-can-beside-pot left sauce-can kitchen-pot"
+  ],
+  "source_domain": "results/monitoring-study/20261111T121002Z/benchmarks/public-pddl/logiv/robotwin/move_can_pot/domain.pddl",
+  "source_problem": "results/monitoring-study/20261111T121002Z/benchmarks/public-pddl/logiv/robotwin/move_can_pot/problem.pddl"
+}

@@ -1,0 +1,6 @@
+{
+  "reason": "Remove transient public download signing parameters from publication copy; canonical release URL and HTTP statuses retained",
+  "original_sha256": "49ad4579599e9223363fe6b35b8bd2a659fd3eef78dc9777b055e17ff9bcaf83",
+  "publication_copy_sha256": "e3114d04423e8b35f66481495d9071ef42669a35fda7b49370fc23c285ef3a32",
+  "original_retained_path": "/tmp/monitoring-benchmark-asset-head.log"
+}

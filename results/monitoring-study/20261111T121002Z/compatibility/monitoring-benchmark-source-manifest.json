@@ -1,0 +1,61 @@
+{
+  "files": [
+    {
+      "path": "/tmp/monitoring-alfworld/lib/python3.12/site-packages/fast_downward/interface.py",
+      "bytes": 6745,
+      "sha256": "c5c23ec7d6d8acd845fb6788c8edd01f7d527ee1f0148ba333e7bacc517c151b"
+    },
+    {
+      "path": "/tmp/monitoring-alfworld/lib/python3.12/site-packages/fast_downward/libdownward.so",
+      "bytes": 32371400,
+      "sha256": "460acb519ab240fe49b107c8ba47246bbe54f207ef0965fbb35f3aa1a2f47b4d"
+    },
+    {
+      "path": "/tmp/monitoring-alfworld/lib/python3.12/site-packages/textworld/envs/pddl/pddl.py",
+      "bytes": 6746,
+      "sha256": "3795f5fb7471c7a4551e137267785ffb3e21e49653d17491d6be963b41f454b4"
+    },
+    {
+      "path": "/tmp/monitoring-alfworld/lib/python3.12/site-packages/textworld/envs/pddl/logic/__init__.py",
+      "bytes": 9813,
+      "sha256": "7c5ea3b0ddc21dc105c1e5c5979006a9d47365b556c10c048973bd62eb0ad35e"
+    },
+    {
+      "path": "/tmp/monitoring-alfworld/lib/python3.12/site-packages/alfworld/agents/environment/alfred_tw_env.py",
+      "bytes": 10728,
+      "sha256": "4d9166363e32f0fa70c63530a900785ddb45c79387a02ebcb9a21252869a8924"
+    },
+    {
+      "path": "/tmp/monitoring-alfworld/lib/python3.12/site-packages/alfworld/agents/utils/misc.py",
+      "bytes": 11315,
+      "sha256": "28972caffbf77c3ab2cfad9789a91cc02ace472f4a90769937c11024e18f5e44"
+    },
+    {
+      "path": "/tmp/monitoring-alfworld-games/json_2.1.1/train/look_at_obj_in_light-AlarmClock-None-DeskLamp-301/trial_T20190907_174127_043461/game.tw-pddl",
+      "bytes": 82824,
+      "sha256": "0cd491b45779b42b41308e0bc2d75e1c7f72423e8e12a022f55e9757b5fd558e"
+    },
+    {
+      "path": "/tmp/monitoring-alfworld-games/json_2.1.1/valid_seen/look_at_obj_in_light-AlarmClock-None-DeskLamp-323/trial_T20190909_044715_250790/game.tw-pddl",
+      "bytes": 74168,
+      "sha256": "cc1bd653b87a7371f7bcd951dd90743d4ad08db8ad1584a3be2e6163b07d0dd0"
+    },
+    {
+      "path": "/tmp/monitoring-alfworld-games/json_2.1.1/valid_unseen/look_at_obj_in_light-AlarmClock-None-DeskLamp-308/trial_T20190908_222917_366542/game.tw-pddl",
+      "bytes": 68189,
+      "sha256": "debf644284b20d488820b0b59c44d24c42d208cd99b2b25c01105e6bf6668859"
+    }
+  ],
+  "archive_sha256": "5df77ea759f2211a4106082839ddbbb790f1ba4e7d097ed732cf453f72aa36cf",
+  "smoke_goal_completions": 3,
+  "smoke_denominator": 3,
+  "actual_sensing_calls": 10,
+  "sensing_step_latency_ms": {
+    "min": 65.354813,
+    "median": 75.665088,
+    "max": 125.648039
+  },
+  "latency_scope": "Audited TextWorld step including complete internal state update/info gathering; not VLM or physical sensor latency",
+  "repository_edits": false,
+  "gpu_work": false
+}

@@ -1,0 +1,230 @@
+# Targeted positioning check — budget-aware verification
+
+Reviewer subtask start: 2026-11-11 12:10:17 UTC. Sources accessed 11 November
+2026. This is a bounded direct-equivalence check under the supplied execution
+contract, not an independent project-selection exercise. No repository files,
+dependencies, benchmark assets or prior research records were changed.
+
+## Immediate implementation constraints
+
+Pinned LOGIV verification source was inspected at revision
+0ea7a7ff765016a33409c54572d733bed4503d4d:
+https://github.com/Enqiao-Lu/LOGIV/blob/0ea7a7ff765016a33409c54572d733bed4503d4d/logiv/core/verification.py
+and symbolic definitions:
+https://github.com/Enqiao-Lu/LOGIV/blob/0ea7a7ff765016a33409c54572d733bed4503d4d/logiv/core/symbolic.py
+
+1. The concrete inefficiency premise is present in source. state_gate assesses
+   tracked_atoms union required atoms, with specific static/equality exclusions.
+   Resolution requires both known required literals AND an empty State.unknown.
+   Thus an unrelated unresolved atom can consume all extra observations or block
+   resolution. An unknown outside the assessed set can persist indefinitely.
+   This is a source-established operational condition; the root worker must
+   establish the actual outputs by execution smoke tests before reporting a
+   reproduced result.
+2. Observation calls are batches/frames in upstream Runtime.observe, followed by
+   Perception.assess on all requested atoms. There is no intrinsic one-predicate
+   cost per call. A selective-query adapter must explicitly declare its query
+   menu, grouping, costs and common handling for M0–M4. Otherwise a query-count
+   improvement can be caused by unequal observation granularity.
+3. State.truth is closed-world for atoms absent from BOTH facts and unknown.
+   Missing observations therefore must be explicitly marked unknown when the
+   study intends partial evidence. State.update removes prior values; None makes
+   an atom unknown. The verifier builds None evidence when both image and sensor
+   assessments are missing, so tracked previously known facts can become unknown.
+   Conflicting Boolean visual/sensor evidence also becomes unknown.
+4. Noisy or stale observations inserted as certain facts do not retain true-state
+   coverage automatically. Universal validity over the evidence's completions is
+   a symbolic guarantee conditional on its evidence/model assumptions. Measure
+   true-state false permission separately; never describe an oracle reveal as a
+   real sensing mechanism.
+
+## Three requested competitors
+
+### LOGIV
+
+Primary: https://arxiv.org/abs/2610.40016v3
+Methods: https://arxiv.org/html/2610.40016v3
+Status: v3 dated 2 November 2026; no main-conference acceptance verified here.
+Read §§III-A–C and Appendix execution/repair description. It already checks
+conditions supporting pending actions and the final goal, requests further
+evidence within a budget, distinguishes UNRESOLVED from confirmed failure, and
+validates retained-plan repair. Consequently causal graphs, downstream support
+checking, three-valued states and observation budgets are existing components.
+The allowed study's difference is HOW to allocate identical observation resources
+and whether recovery-sensitive priority adds value beyond exact relevance
+filtering. The source condition above motivates a faithful M0 check; merely
+removing unrelated unknowns establishes a baseline correction, not M3 novelty.
+
+### GAVEL
+
+Primary/version: https://arxiv.org/abs/2609.19315v1
+Methods: https://arxiv.org/html/2609.19315v1
+Status: preprint submitted 16 September 2026; no accepted venue verified.
+Read §§III-B, IV-C–G, V-A–D and conclusion. Its graph rolls actions forward,
+validates preconditions, goals and trace safety, and repairs failures implied by
+action semantics. It maintains object-location distributions and updates task
+order by expected search/navigation cost. The explicit T budget limits LLM plan
+generations, not a B=0–3 budget for observing causal-support predicates.
+This is close in verified graph execution and information-aware costs, but the
+inspected method does not supply the exact study's selective-support scheduler.
+Its broad verified-and-efficient-planning framing cannot be claimed anew.
+Evaluation uses a BEHAVIOR-1K-derived 2-D symbolic executor; 100 single-task
+outcomes were checked in OmniGibson, not every partial-observation multi-task
+condition. Its LoRA task-grounding and location-prior training make full pipeline
+reproduction unsuitable for the present checkpoint/training-free qualification.
+No primary code link was located in the arXiv record/HTML or bounded author-code
+search; this is not evidence that no public implementation exists.
+
+### Predictive vision-language monitoring
+
+Primary: https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2026.1870024/full
+Status: Frontiers in Robotics and AI 13:1870024, published 3 August 2026.
+Read §§3.2–3.3, 4.1–4.5 and limitations. A current frame, action, condition and
+prediction horizon elicit ordinal VLM risk; threshold crossings trigger a fallback
+and replanning. The paper already distinguishes relevant condition monitoring
+from broad scene checks and proactive from reactive intervention. It does not
+prove universal-completion validity or optimize the study's discrete sensing
+budget. Its timing and replanning summaries condition on successful trials, so
+the study must retain full attempted-case denominators instead.
+Code is public: https://github.com/juandpenan/ros2_feedback_planner
+Inspected revision: 3a344025ff2984ca94fa4a04def4bf02e0dab672, including README,
+feedback/feedback_server.py and manipulation configuration. Requires ROS2 Jazzy,
+Gazebo Harmonic, robot-stack dependencies and LLM services/local inference.
+Code implements continuous repeated frame-based inference while executing;
+the configuration's default Gemini models are incompatible with the no-paid-call
+campaign. It was not installed or executed; no local reproduction is claimed.
+
+## Direct classical equivalences (fatal only to broad novelty claims)
+
+1. **Stochastic Boolean function evaluation / sequential testing.** Primary
+   author PDF: https://www.cs.cmu.edu/afs/cs/user/srallen/www/papers/dnfeval.pdf
+   (Allen, Hellerstein, Kletenik, Ünlüyurt, author manuscript dated 23 Nov 2015,
+   titled Evaluation of Monotone DNF Formulas). §2 defines adaptive paid bit tests
+   until a Boolean function has a certificate, under an independent product
+   prior. For a fixed continuation, truthful per-atom queries and static finite
+   state, continuation validity is exactly such a Boolean decision function.
+   Compiling a plan to that function does not create a new sensing principle.
+   A conjunction with independent observations has classical sequential-testing
+   orderings; a failure-probability/cost heuristic is not new causal theory.
+
+2. **General correlated exact query optimization.** Primary:
+   https://arxiv.org/abs/2606.24672v1 and
+   https://arxiv.org/html/2606.24672v1
+   Zong, Lehtonen and Rintanen, Cost-Optimal Decision Diagrams for Stochastic
+   Boolean Function Evaluation, 23 June 2026 preprint (no accepted venue checked).
+   Read formal Definitions 1–3 and §5 Algorithm 1: conditional probabilities of
+   arbitrary partial assignments support exact expected-cost decision diagrams
+   through recursive branch-and-bound and caching, with terminal validity or
+   unsatisfiability checks. M4 enumeration/decision-tree optimization is therefore
+   a reference implementation, not a new algorithmic contribution. Its objective
+   is complete expected-cost evaluation, whereas this study also declares hard
+   budgets, abstention and recovery consequences. Do not transfer complexity
+   claims to the different budgeted objective without a proof.
+
+3. **Selective runtime verification.** Primary proceedings and PDF:
+   https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.CONCUR.2018.20
+   https://drops.dagstuhl.de/storage/00lipics/lipics-vol118-concur2018/LIPIcs.CONCUR.2018.20/LIPIcs.CONCUR.2018.20.pdf
+   Grigore and Kiefer, CONCUR 2018. Read definitions of observation policies and
+   feasible policies (§2), qualitative analysis (§3) and theorem scope. Selective
+   monitors skip observations to reduce expected cost while preserving the
+   deciding probability of observing everything. Non-hidden Markov chains admit
+   efficient near-optimal procrastinating monitors; unrestricted costs have
+   different computability boundaries. This is not the same model as robot action
+   intervention/recovery, but rules out novelty for selective monitoring with
+   preserved decision power alone. No theorem was mechanized in this review.
+
+4. **Resource-constrained robot sensing.** Primary university research record:
+   https://research.birmingham.ac.uk/en/publications/robot-plans-execution-for-information-gathering-tasks-with-resour/
+   DOI https://doi.org/10.1109/ECMR.2015.7324216
+   Wang, Dearden and Hawes, ECMR 2015. The primary metadata/abstract describes
+   offline MDP policies with online value-of-information observation choice under
+   resource constraints. The full paper was not retrieved from the primary
+   publisher here; no exact theorem/proof audit is claimed. This reinforces the
+   classical status of the general resource-aware observation-selection problem.
+
+## Disposition for the authorized campaign
+
+No inspected requested competitor establishes an exact equivalence to every
+operational detail of the proposed recovery-aware scoring rule. That is NOT a
+novelty finding. The static truthful-query core is SBFE, and general cost-aware
+monitoring is established prior art. A generic optimal query theorem or a claim
+that budget-aware verification itself is new would fail positioning.
+
+Proceed with the locked engineering/qualification stages, documenting the actual
+query interface and identical evidence/budget. The decisive empirical control is
+M3 versus M1, with the downstream-consequence ablation and exact reference. If
+all relevant predicates must be known for an AND certificate, changing query
+order cannot certify a true continuation before all unknown necessary literals
+are resolved; any gain may be early failure detection/recovery rather than better
+successful-continuation certification. Characterize that distinction and retain
+the negative finding if it occurs. Do not rescue M3 through post hoc benchmarks
+or scoring changes, and do not revive preferred-repair/locality claims.
+
+## Subtask resource record
+
+Local shell execution: one read-only cat of the supplied contract, exit 0,
+tool-reported wall 0.1027 s; CPU time was not separately instrumented. Other
+operations were read-only web/GitHub connector requests and this temporary note
+write. No installation, shell download, experiment, foreign module execution,
+GPU operation, paid API call or background job was launched by this subtask.
+The parent should count this agent's start-to-finish wall time in aggregate
+worker accounting; service-side request CPU is not reported as measured local
+experiment CPU. Only this note is a new local artifact from the subtask.
+
+## Follow-up preregistration/fairness review (12:14–12:17 UTC)
+
+The following issues were reviewed before the root worker's proposed protocol
+freeze. They are corrections to the experiment specification, not new methods or
+new research questions. No repository edits were made by this reviewer.
+
+* **Potentially fatal M0 adapter artifact:** predicate-kind batch views plus
+  tracked-all reassessment can erase evidence outside the selected view on every
+  observation. Then global resolution may be impossible even with enough calls
+  cumulatively. Use the same declared, timestamp-aware cumulative-evidence
+  adapter for every method, retaining still-valid observations outside a newly
+  queried view. Preserve raw overwrite behavior as a separate interface stress
+  case if tested. Explicitly describe this boundary: upstream verifier untouched
+  does not mean the sensing adapter is the original embodied runtime.
+* **Three-way semantics:** VALID means every allowed completion validates the
+  fixed continuation; INVALID means none do; a mixed set is UNRESOLVED. Existence
+  of one counterexample proves lack of certification, not known invalidity and
+  not permission to invoke a recovery selected using true state. Empty K-and-T
+  is INVALID_EVIDENCE, never vacuous VALID. Common recovery must obey these rules
+  and consume the same action/query resources and evidence as every method.
+* **Different obligations need separate metrics:** original M0 checks current
+  preconditions and support at its declared gates, whereas M1/M3 may certify an
+  entire fixed suffix. Current-action correctness and fixed-suffix validity are
+  different endpoints. A current-safe/suffix-invalid permission is not an unsafe
+  current action. A pre-action state_gate projection is a checkpoint study,
+  not complete LOGIV end-to-end reproduction or evidence of task completion.
+* **Relevance must use the whole model:** informative proxy predicates can occur
+  only in T rather than in the weakest precondition. Keep them in the shared
+  candidate query menu if they change the decision partition under T. M3 may
+  honestly score them poorly; do not eliminate them to favor a graph heuristic.
+* **Downstream consequence must follow actual support:** counting all later
+  mentions of the same predicate can include opposite-sign conditions or
+  consumers whose support is re-established by an intervening action. Count
+  signed-literal consumers reachable from the current support in the compiled
+  causal graph, respecting support replacement. Freeze weights/tie rules before
+  qualification. Removing the consequence term must leave the rest unchanged.
+* **Noise/staleness assumptions:** noisy evidence treated as a certain Boolean
+  fact can exclude the true state. Either encode the declared sensing error
+  support conservatively or preregister that condition as model-misspecification
+  stress, with conditional symbolic guarantees and measured true-state errors.
+  Historical measurements need explicit measured-at/available-at times and an
+  action/disturbance validity rule. A generic action-effect timestamp invalidation
+  does not cover undeclared exogenous changes.
+* **Exact oracle scope:** a uniform-over-completions oracle maximizing expected
+  resolved decisions under B is an exact reference for that objective and prior.
+  It is not automatically a ceiling for goal completion, latency or recovery
+  cost. Different objectives must not be compared as though they shared a bound.
+* **Statistical interpretation:** freeze a practically meaningful M3-versus-M1
+  effect threshold and incorrect-permission margin before qualification. Eight
+  held-out instances per public domain, with repeated schedules grouped by
+  parent, are a bounded qualification sample. An interval containing zero does
+  not establish equivalence; report uncertainty and Case B as an observed
+  similarity/unsupported advantage rather than proof of no possible gain.
+
+The public domain and instance list should be pinned before comparisons. A
+transparent ALFWorld integration failure followed by available public PDDL-domain
+assessment is authorized Case D; it does not establish embodied validation.
