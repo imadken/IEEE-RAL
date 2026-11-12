@@ -1,0 +1,208 @@
+"""Read-only legacy adapters and frozen future-evaluator package; no model training."""
+
+import argparse
+import copy
+import hashlib
+import json
+import shutil
+from pathlib import Path
+
+import numpy as np
+
+from dual_rec.contracts.checks import first_alarm
+from dual_rec.contracts.claims import AlarmEvidence, certify_alarm
+
+SOURCES = {}
+
+
+def load(p):
+    SOURCES[str(p)] = hashlib.sha256(p.read_bytes()).hexdigest()
+    return json.loads(p.read_text())
+
+
+def save(p, v):
+    p.write_text(json.dumps(v, indent=2) + "\n")
+
+
+def main(root):
+    old = Path("results/recovery-contracts/20261112T124115Z")
+    dest = root / "external_applications"
+    dest.mkdir(exist_ok=True)
+    reports = []
+    reboot_population_controls = []
+    for case in ["reboot_uncollapsed_aliases", "reboot_missing_temporal_target"]:
+        payload = load(old / f"contract_applications/{case}_input.json")
+        result = certify_alarm(
+            AlarmEvidence(task="REBOOT", parent=case, evidence=payload)
+        )
+        reboot_population_controls.append({"case": case, "certificate": result})
+    save(dest / "reboot_population_controls.json", reboot_population_controls)
+    labels = load(old / "contract_applications/failtime_event_labels_input.json")
+    registry = load(old / "failtime/fold0/cohort_qualification.json")
+    partitions = load(old / "crossfit_partitions.json")
+    ids = []
+    for fold in partitions:
+        design = load(
+            old / f"contract_applications/failtime_fold{fold['fold']}_design_input.json"
+        )
+        for sample in fold["splits"]["evaluation"]:
+            stream = load(
+                old / f"contract_applications/failtime_stream_{sample}_input.json"
+            )
+            e = {
+                k: v
+                for d in [labels, design, stream]
+                for k, v in d.items()
+                if v is not None
+            }
+            claim = AlarmEvidence(task="FailTime-Long", parent=sample, evidence=e)
+            out = certify_alarm(claim)
+            save(dest / (sample + ".json"), out)
+            reports.append(out)
+            ids.append(sample)
+    assert len(ids) == len(set(ids)) == 100
+    # Exactly the existing REBOOT score streams and original numerical tolerance.
+    reboot = Path("results/reboot-overnight/20261111T224622Z")
+    thresholds = load(reboot / "thresholds.json")
+    reg = load(reboot / "registry.json")
+    oldout = {
+        (r["group"], r["variant"], r["method"]): r
+        for r in load(reboot / "outcomes.json")
+        if r["stress"] == "clean" and r["boundary_delta"] == 0
+    }
+    reboot_results = []
+    for r in reg:
+        if not r["eligible"]:
+            continue
+        group = r["group"]
+        prediction_path = (
+            reboot
+            / f"predictions/fold{r['fold']}/Q/clean/evaluation/{group.split(':')[1]}.npz"
+        )
+        SOURCES[str(prediction_path)] = hashlib.sha256(
+            prediction_path.read_bytes()
+        ).hexdigest()
+        data = np.load(prediction_path)
+        theta = thresholds[f"{r['fold']}:Q:B3"]["threshold"]
+        alarm = oldout[(group, "Q", "B3")]["alarm_time"]
+        e = {
+            "alarm": {
+                "time": data["time"].tolist(),
+                "scores": data["B3"].tolist(),
+                "threshold": theta,
+                "tolerance": 2e-6,
+                "reported_alarm": alarm,
+            }
+        }
+        original = certify_alarm(AlarmEvidence(task="REBOOT", parent=group, evidence=e))
+        mutated = None
+        if r["role"] == "recovery":
+            bad = copy.deepcopy(e)
+            bad["alarm"]["reset_times"] = [r["onset"]]
+            keep = data["time"] >= r["onset"]
+            bad["alarm"]["reported_alarm"] = first_alarm(
+                data["time"][keep], data["B3"][keep], theta, 0.1, 2e-6
+            )
+            mutated = certify_alarm(
+                AlarmEvidence(task="REBOOT", parent=group, evidence=bad)
+            )
+            assert mutated["status"] == "REFUTED_CONTRACT"
+        reboot_results.append(
+            {"group": group, "original": original, "INVALID_reset": mutated}
+        )
+    save(dest / "reboot.json", reboot_results)
+    save(
+        root / "external_summary.json",
+        {
+            "failtime_records": len(reports),
+            "failtime_roles": {
+                role: sum(r["verdict"] == role for r in registry)
+                for role in ["fail", "success"]
+            },
+            "censored_onsets_retained": sum(
+                not r["onset_within_observed"] for r in registry
+            ),
+            "failtime_statuses": {
+                s: sum(r["status"] == s for r in reports)
+                for s in ["SUPPORTED", "REFUTED_CONTRACT", "INSUFFICIENT_EVIDENCE"]
+            },
+            "reboot_records": len(reboot_results),
+            "reboot_eligible_roles": {
+                role: sum(r["role"] == role and r["eligible"] for r in reg)
+                for role in ["recovery", "expert"]
+            },
+            "reboot_population_controls": reboot_population_controls,
+            "invalid_reset_witnesses": sum(
+                r["INVALID_reset"] is not None for r in reboot_results
+            ),
+            "scope": "Protocol evidence only, unchanged saved scores/models. No physical failure-onset or recovery-effect claim.",
+        },
+    )
+    package = root / "external_evaluator"
+    (package / "bundles").mkdir(parents=True, exist_ok=True)
+    answers = {}
+    allc = load(root / "all_certificates.json")
+    for task in ["PickCube-v1", "PushCube-v1", "Lift"]:
+        for route in [
+            "fresh_prefix",
+            "native_snapshot",
+            "physics",
+            "controller_memory",
+            "missing_provenance",
+            "parent_rng",
+        ]:
+            candidates = [
+                c
+                for c in allc
+                if c["method"] == "M"
+                and c["split"] == "confirmation"
+                and c["task"] == task
+                and c["route"] == route
+                and c["action"] == "recover"
+            ]
+            if not candidates:
+                continue
+            selected = min(candidates, key=lambda c: int(c["parent"]))
+            bundle = load(root / selected["bundle"])
+            name = task + "-" + route + ".json"
+            source = root / bundle["raw_trace_path"]
+            target = package / bundle["raw_trace_path"]
+            target.parent.mkdir(parents=True, exist_ok=True)
+            if not target.exists():
+                shutil.copyfile(source, target)
+            save(package / "bundles" / name, bundle)
+            answers[name] = selected["status"]
+    # Include only source code and public dependency declarations; no answer key.
+    for relative in [
+        "dual_rec/__init__.py",
+        "dual_rec/contracts/__init__.py",
+        "dual_rec/contracts/checks.py",
+        "dual_rec/contracts/claims.py",
+    ]:
+        p = package / "src" / relative
+        p.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(Path("src") / relative, p)
+    (package / "run.py").write_text(
+        """import os,subprocess,sys\nfrom pathlib import Path\np=Path(__file__).resolve().parent\nos.environ['PYTHONPATH']=str(p/'src')\nout=p/'outputs';out.mkdir(exist_ok=True)\nfor b in sorted((p/'bundles').glob('*.json')):\n c=out/(b.stem+'.certificate.json')\n command=[sys.executable,'-m','dual_rec.contracts.claims','--bundle',str(b),'--output',str(c)]\n if not c.exists():subprocess.run(command,check=True)\n subprocess.run(command+['--verify'],check=True)\n"""
+    )
+    (package / "requirements.txt").write_text("numpy==1.26.4\npydantic>=2,<3\n")
+    (package / "README.md").write_text(
+        "# Frozen verifier cases\n\nRun `uv run --no-sync python PATH/TO/external_evaluator/run.py` from the original qualified repository environment, or use an existing environment with requirements.txt dependencies. No simulator or trained weights are required. Outputs include independent-process raw-trace and certificate-hash verification. The answer key is deliberately outside this package. This is a future-evaluator package, not a completed human study. Source recorder provenance remains a trusted assumption.\n"
+    )
+    save(root / "secondary_source_hashes.json", SOURCES)
+    save(root / "evaluator_answer_key.json", answers)
+    save(
+        package / "SHA256.json",
+        {
+            str(p.relative_to(package)): hashlib.sha256(p.read_bytes()).hexdigest()
+            for p in package.rglob("*")
+            if p.is_file()
+        },
+    )
+    print({"external_bundles": len(answers), "human_evaluation": False})
+
+
+if __name__ == "__main__":
+    p = argparse.ArgumentParser()
+    p.add_argument("--root", type=Path, required=True)
+    main(p.parse_args().root)
