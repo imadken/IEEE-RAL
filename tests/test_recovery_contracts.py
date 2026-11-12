@@ -1,5 +1,6 @@
 """Known-valid/invalid evidence for each reusable obligation, without fits."""
 
+import gzip
 import json
 import runpy
 import tarfile
@@ -151,6 +152,7 @@ def test_review_archive_excludes_borrowed_raw_inputs_and_weights(tmp_path, monke
     (root / "literature").mkdir(parents=True)
     (root / "literature/inspection_manifest.json").write_text("{}")
     (root / "predictions.json").write_text('{"verified": true}')
+    (root / "action_trace.jsonl.gz").write_bytes(gzip.compress(b'{"step": 1}\n'))
     (root / "model.pt").write_bytes(b"checkpoint kept outside review archive")
     old = Path("old_data")
     old.mkdir()
@@ -163,5 +165,6 @@ def test_review_archive_excludes_borrowed_raw_inputs_and_weights(tmp_path, monke
     with tarfile.open(root / "supervisor_review.tar.gz") as archive:
         names = archive.getnames()
         assert "evidence/predictions.json" in names and "maintained/report.md" in names
+        assert "evidence/action_trace.jsonl.gz" in names
         assert not any("private_raw" in name or name.endswith(".pt") for name in names)
         assert archive.extractfile("maintained/report.md").read() == b"Review scope"

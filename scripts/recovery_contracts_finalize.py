@@ -77,7 +77,7 @@ def archive(root):
             or "literature" in relative.parts
         ):
             continue
-        if p.suffix in suffixes:
+        if p.suffix in suffixes or p.name.endswith(".jsonl.gz"):
             entries["evidence/" + str(relative)] = p
     literature = root / "literature/inspection_manifest.json"
     entries["evidence/literature/inspection_manifest.json"] = literature

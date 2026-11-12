@@ -580,6 +580,12 @@ traceback, fix and successful recheck remain in `commands.jsonl`, the original
 log and `resolved_worker_failures.json`. No dataset-specific identity is used
 to suppress this condition.
 
+Initial archive inspection also exposed an extension-filter omission of
+compressed action traces. The filter and archive regression test were corrected;
+the provisional unsealed archive is preserved locally, and
+`archive_packaging_revision.json` records the change. Final archive verification
+includes the compressed traces. This packaging correction changes no experiment.
+
 Final validation: **98 relevant contract/benchmark tests passed**, including
 24 contract tests; **4 additional actual pinned-stack physics tests passed**.
 The old simulator emits three existing deprecation warnings, retained in its
