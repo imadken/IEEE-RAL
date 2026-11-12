@@ -5,12 +5,18 @@ import copy
 import hashlib
 import json
 import shutil
+from collections import defaultdict
 from pathlib import Path
 
 import numpy as np
 
 from dual_rec.contracts.checks import first_alarm
-from dual_rec.contracts.claims import AlarmEvidence, certify_alarm
+from dual_rec.contracts.claims import (
+    AlarmEvidence,
+    MatchedEvidence,
+    certify_alarm,
+    matched_effect,
+)
 
 SOURCES = {}
 
@@ -22,6 +28,40 @@ def load(p):
 
 def save(p, v):
     p.write_text(json.dumps(v, indent=2) + "\n")
+
+
+def persist_matched_inputs(root, certificates):
+    grouped = defaultdict(list)
+    for c in certificates:
+        if c["method"] == "M" and c["route"] == "fresh_prefix":
+            grouped[(c["split"], c["task"], c["parent"], c["condition"])].append(c)
+    directory = root / "matched_bundles"
+    directory.mkdir(exist_ok=True)
+    index = []
+    for key, cs in sorted(grouped.items()):
+        if len(cs) != 2:
+            continue
+        cs.sort(key=lambda c: c["action"])
+        payload = {"branches": [load(root / c["bundle"]) for c in cs]}
+        ident = "-".join(key)
+        bundle = directory / (ident + ".bundle.json")
+        output = directory / (ident + ".certificate.json")
+        save(bundle, payload)
+        result = matched_effect(MatchedEvidence.model_validate(payload))
+        digest = hashlib.sha256(bundle.read_bytes()).hexdigest()
+        save(output, result | {"bundle_sha256": digest})
+        index.append(
+            dict(zip(["split", "task", "parent", "condition"], key, strict=True))
+            | {
+                "bundle": str(bundle.relative_to(root)),
+                "certificate": str(output.relative_to(root)),
+                "bundle_sha256": digest,
+                "branch_bundles": [c["bundle"] for c in cs],
+                "status": result["status"],
+            }
+        )
+    save(root / "paired_certificate_index.json", index)
+    return index
 
 
 def main(root):
@@ -58,6 +98,7 @@ def main(root):
             claim = AlarmEvidence(task="FailTime-Long", parent=sample, evidence=e)
             out = certify_alarm(claim)
             save(dest / (sample + ".json"), out)
+            save(dest / (sample + ".bundle.json"), claim.model_dump())
             reports.append(out)
             ids.append(sample)
     assert len(ids) == len(set(ids)) == 100
@@ -95,6 +136,11 @@ def main(root):
             }
         }
         original = certify_alarm(AlarmEvidence(task="REBOOT", parent=group, evidence=e))
+        bundle_name = "reboot-" + group.replace(":", "-") + ".bundle.json"
+        save(
+            dest / bundle_name,
+            AlarmEvidence(task="REBOOT", parent=group, evidence=e).model_dump(),
+        )
         mutated = None
         if r["role"] == "recovery":
             bad = copy.deepcopy(e)
@@ -105,6 +151,10 @@ def main(root):
             )
             mutated = certify_alarm(
                 AlarmEvidence(task="REBOOT", parent=group, evidence=bad)
+            )
+            save(
+                dest / ("INVALID-reset-" + bundle_name),
+                AlarmEvidence(task="REBOOT", parent=group, evidence=bad).model_dump(),
             )
             assert mutated["status"] == "REFUTED_CONTRACT"
         reboot_results.append(
@@ -142,6 +192,7 @@ def main(root):
     (package / "bundles").mkdir(parents=True, exist_ok=True)
     answers = {}
     allc = load(root / "all_certificates.json")
+    pair_index = persist_matched_inputs(root, allc)
     for task in ["PickCube-v1", "PushCube-v1", "Lift"]:
         for route in [
             "fresh_prefix",
@@ -172,6 +223,32 @@ def main(root):
                 shutil.copyfile(source, target)
             save(package / "bundles" / name, bundle)
             answers[name] = selected["status"]
+    for task in ["PickCube-v1", "PushCube-v1", "Lift"]:
+        choices = [
+            p for p in pair_index if p["split"] == "confirmation" and p["task"] == task
+        ]
+        if not choices:
+            continue
+        chosen = min(choices, key=lambda p: int(p["parent"]))
+        payload = load(root / chosen["bundle"])
+        name = task + "-matched-effect.json"
+        for branch in payload["branches"]:
+            source = root / branch["raw_trace_path"]
+            target = package / branch["raw_trace_path"]
+            target.parent.mkdir(parents=True, exist_ok=True)
+            if not target.exists():
+                shutil.copyfile(source, target)
+        save(package / "bundles" / name, payload)
+        answers[name] = chosen["status"]
+    failtime_bundle = dest / (min(ids) + ".bundle.json")
+    reset_bundle = min(dest.glob("INVALID-reset-*.bundle.json"))
+    for name, source in [
+        ("FailTime-online.json", failtime_bundle),
+        ("REBOOT-invalid-reset.json", reset_bundle),
+    ]:
+        payload = load(source)
+        save(package / "bundles" / name, payload)
+        answers[name] = certify_alarm(AlarmEvidence.model_validate(payload))["status"]
     # Include only source code and public dependency declarations; no answer key.
     for relative in [
         "dual_rec/__init__.py",
@@ -187,7 +264,7 @@ def main(root):
     )
     (package / "requirements.txt").write_text("numpy==1.26.4\npydantic>=2,<3\n")
     (package / "README.md").write_text(
-        "# Frozen verifier cases\n\nRun `uv run --no-sync python PATH/TO/external_evaluator/run.py` from the original qualified repository environment, or use an existing environment with requirements.txt dependencies. No simulator or trained weights are required. Outputs include independent-process raw-trace and certificate-hash verification. The answer key is deliberately outside this package. This is a future-evaluator package, not a completed human study. Source recorder provenance remains a trusted assumption.\n"
+        "# Frozen verifier cases\n\nRun `uv run --no-sync python PATH/TO/external_evaluator/run.py` from the original qualified repository environment, or use an existing environment with requirements.txt dependencies. No simulator or trained weights are required. Execution, matched-alternative and online-alarm bundles use the common API. Outputs include independent-process raw-trace and certificate-hash verification. Full-cohort uncertainty was independently audited in the main evidence root; this compact package carries representative records and their declared qualification counts. The answer key is deliberately outside this package. This is a future-evaluator package, not a completed human study. Source recorder provenance remains a trusted assumption.\n"
     )
     save(root / "secondary_source_hashes.json", SOURCES)
     save(root / "evaluator_answer_key.json", answers)
@@ -197,6 +274,8 @@ def main(root):
             str(p.relative_to(package)): hashlib.sha256(p.read_bytes()).hexdigest()
             for p in package.rglob("*")
             if p.is_file()
+            and p.name != "SHA256.json"
+            and "outputs" not in p.relative_to(package).parts
         },
     )
     print({"external_bundles": len(answers), "human_evaluation": False})

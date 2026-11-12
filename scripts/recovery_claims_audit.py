@@ -500,6 +500,62 @@ def audit(root):
         for status in ["SUPPORTED", "REFUTED_CONTRACT", "INSUFFICIENT_EVIDENCE"]:
             assert status_counts[key][status] == cell[status]
     review_verified = False
+    matched_inputs_verified = 0
+    if (root / "paired_certificate_index.json").exists():
+        child_status = {
+            c["bundle"]: c["status"] for c in certificates if c["method"] == "M"
+        }
+        originals = {
+            p["parent_cell"]: p["status"]
+            for p in read(root / "matched_certificates.json")
+        }
+        for item in read(root / "paired_certificate_index.json"):
+            payload = read(root / item["bundle"])
+            assert (
+                hashlib.sha256((root / item["bundle"]).read_bytes()).hexdigest()
+                == item["bundle_sha256"]
+            )
+            branches = payload["branches"]
+            assert len(branches) == len(item["branch_bundles"]) == 2
+            for b, source in zip(branches, item["branch_bundles"], strict=True):
+                assert b == read(root / source)
+            identity = all(
+                len({b[k] for b in branches}) == 1
+                for k in [
+                    "parent",
+                    "task",
+                    "model_hash",
+                    "history_hash",
+                    "controller_hash",
+                    "budget",
+                    "dt",
+                ]
+            )
+            statuses = [child_status[p] for p in item["branch_bundles"]]
+            missing = any(
+                b[k] is None
+                for b in branches
+                for k in ["model_hash", "history_hash", "controller_hash"]
+            )
+            expected = (
+                "REFUTED_CONTRACT"
+                if not identity
+                else "INSUFFICIENT_EVIDENCE"
+                if missing
+                else "REFUTED_CONTRACT"
+                if "REFUTED_CONTRACT" in statuses
+                else "INSUFFICIENT_EVIDENCE"
+                if "INSUFFICIENT_EVIDENCE" in statuses
+                else "SUPPORTED"
+            )
+            assert (
+                item["status"] == read(root / item["certificate"])["status"] == expected
+            )
+            ident = "-".join(
+                str(item[k]) for k in ["split", "task", "parent", "condition"]
+            )
+            assert originals[ident] == expected
+            matched_inputs_verified += 1
     if (root / "invalid_acceptance_bounds.json").exists():
         cfg = read(root / "registration.json")
         for cell in read(root / "invalid_acceptance_bounds.json"):
@@ -541,6 +597,7 @@ def audit(root):
         "effect_cells": len(read(root / "E_effects.json")),
         "status_matrices_verified": True,
         "first_observed_witnesses_recomputed": True,
+        "matched_input_bundles_verified": matched_inputs_verified,
         "invalid_acceptance_bounds_verified": review_verified,
         "scope": "Independent software arithmetic, same operator; no independent human evaluation; exact binomial conditional on distinct parent seeds within each condition/action domain",
     }

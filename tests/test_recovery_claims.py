@@ -229,3 +229,50 @@ def test_independent_alarm_audit_uses_contiguous_observed_runs(monkeypatch):
     assert alarm([0, 0.05, 0.1, 0.15], [1, 1, 1, 1], 1) == 0.1
     assert alarm([0, 0.05, 0.1, 0.15], [1, None, 1, 1], 1) is None
     assert alarm([0, 0.05, 0.1], [1, 1, 1], 2) is None
+
+
+def test_persisted_matched_claim_inputs_work_in_a_fresh_process(tmp_path, monkeypatch):
+    import json
+    import os
+    import subprocess
+    import sys
+    from pathlib import Path
+
+    monkeypatch.syspath_prepend(str(Path("scripts").resolve()))
+    from recovery_claims_secondary import persist_matched_inputs
+
+    inputs = tmp_path / "certificates"
+    inputs.mkdir()
+    records = []
+    for action in ["continue", "recover"]:
+        path = inputs / (action + ".json")
+        path.write_text(fixture_claim(action=action).model_dump_json())
+        records.append(
+            {
+                "method": "M",
+                "route": "fresh_prefix",
+                "split": "confirmation",
+                "task": "toy",
+                "parent": "p",
+                "condition": "nominal",
+                "action": action,
+                "bundle": str(path.relative_to(tmp_path)),
+            }
+        )
+    index = persist_matched_inputs(tmp_path, records)
+    assert len(index) == 1 and index[0]["status"] == "SUPPORTED"
+    payload = json.loads((tmp_path / index[0]["bundle"]).read_text())
+    assert len(payload["branches"]) == 2
+    command = [
+        sys.executable,
+        "-m",
+        "dual_rec.contracts.claims",
+        "--bundle",
+        str(tmp_path / index[0]["bundle"]),
+        "--output",
+        str(tmp_path / index[0]["certificate"]),
+        "--verify",
+    ]
+    subprocess.run(
+        command, check=True, capture_output=True, env=os.environ | {"PYTHONPATH": "src"}
+    )
