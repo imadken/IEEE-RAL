@@ -1,0 +1,262 @@
+{
+  "reviewed_base": "ec42c27c1a266cd1f2321de56f9b11490cbf95a4",
+  "hf_revision": "07aea9142616cf1f8047512bd53a4d9fcd5e7cee",
+  "github_revision": "63dafa9b703be0347d80f63d049304269f8d000f",
+  "scope": "Exploratory internally held-out Long pilot; qualification metadata and fixed fixtures were inspected before fitting. Not untouched confirmation or official Long train split.",
+  "splits": {
+    "train": [
+      "empty_bowl_insert_block_episode_24",
+      "empty_bowl_insert_block_episode_25",
+      "empty_bowl_insert_block_episode_26",
+      "empty_bowl_insert_block_episode_27",
+      "stack_cup_pyramid_episode_31",
+      "stack_cup_pyramid_episode_32",
+      "stack_cup_pyramid_episode_33",
+      "stack_cup_pyramid_episode_34",
+      "bottle_to_bowl_and_cover_episode_36",
+      "bottle_to_bowl_and_cover_episode_37",
+      "bottle_to_bowl_and_cover_episode_38",
+      "uncap_marker_draw_recap_episode_39",
+      "uncap_marker_draw_recap_episode_41",
+      "uncap_marker_draw_recap_episode_42",
+      "uncap_marker_draw_recap_episode_43",
+      "yellow_red_blocks_to_bowls_episode_0",
+      "yellow_red_blocks_to_bowls_episode_2",
+      "yellow_red_blocks_to_bowls_episode_4",
+      "balls_to_rack_episode_00",
+      "balls_to_rack_episode_01",
+      "balls_to_rack_episode_02",
+      "balls_to_rack_episode_03",
+      "balls_to_rack_episode_04",
+      "balls_to_rack_episode_05",
+      "balls_to_rack_episode_06",
+      "balls_to_rack_episode_07",
+      "balls_to_rack_episode_08",
+      "balls_to_rack_episode_09",
+      "balls_to_rack_episode_10",
+      "balls_to_rack_episode_11",
+      "balls_to_rack_episode_12",
+      "balls_to_rack_episode_13",
+      "balls_to_rack_episode_14",
+      "balls_to_rack_episode_15",
+      "balls_to_rack_episode_16",
+      "balls_to_rack_episode_17",
+      "balls_to_rack_episode_19",
+      "block_assembly_episode_00",
+      "block_assembly_episode_01",
+      "block_assembly_episode_03",
+      "block_assembly_episode_04",
+      "block_assembly_episode_05",
+      "block_assembly_episode_06",
+      "block_assembly_episode_07",
+      "block_assembly_episode_08",
+      "block_assembly_episode_09",
+      "block_assembly_episode_10",
+      "block_assembly_episode_11",
+      "block_assembly_episode_12",
+      "block_assembly_episode_13",
+      "blocks_to_bowls_episode_00",
+      "blocks_to_bowls_episode_01",
+      "blocks_to_bowls_episode_02",
+      "blocks_to_bowls_episode_03",
+      "blocks_to_bowls_episode_04",
+      "cube_stack_episode_00",
+      "cube_stack_episode_01",
+      "cube_stack_episode_02",
+      "cube_stack_episode_03",
+      "cube_stack_episode_04",
+      "cube_stack_episode_05",
+      "cube_stack_episode_06",
+      "cube_stack_episode_07",
+      "cube_stack_episode_08",
+      "cube_stack_episode_09",
+      "cube_stack_episode_10",
+      "cube_stack_episode_11",
+      "cube_stack_episode_12",
+      "cube_stack_episode_14",
+      "cube_stack_episode_15",
+      "cube_stack_episode_16",
+      "cube_stack_episode_17",
+      "cube_stack_episode_18",
+      "cube_stack_episode_19"
+    ],
+    "calibration": [
+      "balls_to_egg_carton_episode_13",
+      "balls_to_egg_carton_episode_28",
+      "balls_to_egg_carton_episode_29",
+      "balls_to_egg_carton_episode_30",
+      "handover_episode_00",
+      "handover_episode_01",
+      "handover_episode_02",
+      "handover_episode_03",
+      "handover_episode_04",
+      "handover_episode_05",
+      "handover_episode_06",
+      "handover_episode_07",
+      "handover_episode_08",
+      "handover_episode_09",
+      "handover_episode_10",
+      "handover_episode_12",
+      "handover_episode_13",
+      "handover_episode_14"
+    ],
+    "evaluation": [
+      "pour_ball_transfer_cup_episode_19",
+      "pour_ball_transfer_cup_episode_20",
+      "pour_ball_transfer_cup_episode_21",
+      "pour_ball_transfer_cup_episode_23",
+      "stabilize_and_insert_block_episode_6",
+      "stabilize_and_insert_block_episode_7",
+      "stabilize_and_insert_block_episode_8",
+      "stabilize_and_insert_block_episode_9"
+    ]
+  },
+  "task_groups": {
+    "aloha/pour_ball_transfer_cup": {
+      "fold": 0,
+      "split": "evaluation"
+    },
+    "aloha/empty_bowl_insert_block": {
+      "fold": 2,
+      "split": "train"
+    },
+    "aloha/balls_to_egg_carton": {
+      "fold": 1,
+      "split": "calibration"
+    },
+    "aloha/stack_cup_pyramid": {
+      "fold": 3,
+      "split": "train"
+    },
+    "aloha/bottle_to_bowl_and_cover": {
+      "fold": 4,
+      "split": "train"
+    },
+    "aloha/uncap_marker_draw_recap": {
+      "fold": 4,
+      "split": "train"
+    },
+    "aloha/yellow_red_blocks_to_bowls": {
+      "fold": 4,
+      "split": "train"
+    },
+    "aloha/stabilize_and_insert_block": {
+      "fold": 0,
+      "split": "evaluation"
+    },
+    "so101/balls_to_rack": {
+      "fold": 3,
+      "split": "train"
+    },
+    "so101/block_assembly": {
+      "fold": 2,
+      "split": "train"
+    },
+    "so101/blocks_to_bowls": {
+      "fold": 3,
+      "split": "train"
+    },
+    "so101/cube_stack": {
+      "fold": 2,
+      "split": "train"
+    },
+    "so101/handover": {
+      "fold": 1,
+      "split": "calibration"
+    }
+  },
+  "split_rule": "SHA256(failtime-online-v1|robot/task_id) integer modulo5;0eval,1cal,2/3/4train. Fixed without performance selection.",
+  "primary": {
+    "alpha": 0.1,
+    "persistence": 0.1,
+    "timely_window_seconds": 1.0,
+    "bounds": "onset<=first_alarm<=onset+1",
+    "input": "EEF16 only plus backward difference32 on causal10Hz last-native-packet-held decision grid; gripper units remain released coordinates; no command inputs"
+  },
+  "sensitivities": {
+    "alpha": [
+      0.05,
+      0.2
+    ],
+    "persistence": [
+      0.0,
+      0.2
+    ],
+    "stress": [
+      "drop0.1",
+      "drop0.3",
+      "delay0.2",
+      "delay0.5"
+    ],
+    "thresholds_frozen_across_stress_and_persistence": true
+  },
+  "models": [
+    "B0_time",
+    "B0_prior",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "MCSFA",
+    "MCSFA_no_mode",
+    "MCSFA_no_accum"
+  ],
+  "seeds": [
+    11,
+    23,
+    37
+  ],
+  "gru_epochs": 30,
+  "hyperparameters": {
+    "B3": "Original1s last/mean/std/slope,L2.01,train-only equal-recordscaling,LBFGS200,positiveweightcap10",
+    "B4": "GRU32 one layer,Adam.001 weight_decay.01,clipgrad1,30epochs,seeds11/23/37 probabilityensemble",
+    "modes": "sign gripperdelta and squaredxyzstep>trainingnominal20thpercentile perarm;36combinations",
+    "nominal": "robotglobal or mode mean/std(equalrecord),std>=1e-6,clip z to\u00b110;mode>=50frames and2successrecordings else robotglobal;unknownrobotabstains",
+    "sequential": "increment=mean(zvelocity16\u00b2)/max(trainingnominal90thpercentile,1e-6)-1;state=max(0,old+increment);noaccumusesincrement",
+    "B1": "PinnedmodalHammingPELT,penalty2,jump2,minsegment.2,snap\u00b1.2withinavailableprefix,minphase.5,upstreampruning,static15phasebudget,currentprefixcutcount;trainingnominal motionfloor. Exactprefixresulttimestampedatarrival,notbackdated."
+  },
+  "calibration": "max(two separate nextafter conservative recording-capacity thresholds), valid prefixes strictlybeforeonset only, nofiniteprefix reportedandexcluded; empiricalnotconformalguarantee",
+  "uncertainty": {
+    "seed": 20261112,
+    "draws": 2000,
+    "unit": "task_id",
+    "contrast_order": [
+      "B2",
+      "B3",
+      "B4",
+      "MCSFA_no_accum"
+    ],
+    "metrics": [
+      "timely",
+      "premature",
+      "clean_alarm",
+      "burden"
+    ],
+    "reset_rng_per_contrast": true
+  },
+  "gates": {
+    "G0": "40uniqueverifiedfailures25successes2tasks",
+    "G1": "developmentwithin-recordeventcontrastbeyondclock/context",
+    "G2": "MCSFA>=5ppTgain atnotgreaterbothalarmrates OR>=20%relativeburdenreduction withtimelyloss<=2pp;pairedCI favorable",
+    "G3": "task/platformeffectsnotonegroup/leakage"
+  },
+  "authority_sha256": "3a3e4c58c558d05511880fff931834a548ef4407c95ae290acba9e5fb5e43ea2",
+  "censoring": "Retainall100signals; handover_episode_10 onset45.233333 isoneframeafterlast45.20000076293945. Marktargetunobservable, do notclamplabel. Validcalibrationprefixwholeobservedhistory; G0only56inrangeonsets.",
+  "numerical_tolerance": 1e-07,
+  "input_sha256": {
+    "metadata/README.md": "33a16228fbe3773346ad21c9fcbe71616f4adc467e45b13c170561b04832f87c",
+    "metadata/failtime_short/test.json": "22157ddab17a504580d39d0d0b976dadbbf7bfd066ecfefae0a9710d011cbf3f",
+    "metadata/failtime_short/train.json": "a632db26233cf26a7fc6ed337ec31998fa9dff53f82bbd5c3fa998ead19d01a8",
+    "metadata/failtime_long/test.json": "14b1de4d92c2eb194215ca1608955f4704e86cde4a34a78628da1a10f3561e41",
+    "upstream/github_commit.json": "93425b40f809bab9d78370531098da4d46f455df40ae077bbc0a6112fc96d0f5",
+    "upstream/README.md": "42b584fb5205530aeea5c9e5c8d5bea28751e94527c719d9d74496c1628f76d2",
+    "upstream/protracer/evaluation.py": "c01cbd4e91e5bc76d35073ec0e77141832e83e8d986ffd37fb9bab7a8a3c29a8",
+    "upstream/protracer/data.py": "0c9eb7373ab67bf0be31d92d6bcfed31f30f127c9a7570e9a923329fe6152935",
+    "upstream/protracer/changepoint.py": "88f599af3e78284b435544f535ef9ebf907ed83abe94d514f4044a5bf21d18cc",
+    "upstream/data/failtime_short/test.json": "22157ddab17a504580d39d0d0b976dadbbf7bfd066ecfefae0a9710d011cbf3f",
+    "upstream/data/failtime_short/train.json": "a632db26233cf26a7fc6ed337ec31998fa9dff53f82bbd5c3fa998ead19d01a8",
+    "upstream/data/failtime_short/calibration.json": "de2034248fcf577783171b5501c3d08abd9fc41a4e39ef7f611417f6d861e24b",
+    "upstream/data/failtime_long/test.json": "14b1de4d92c2eb194215ca1608955f4704e86cde4a34a78628da1a10f3561e41"
+  },
+  "cohort_manifest_sha256": "e2f20ebe0c4f89fef050dafe229bf76e1ae73723617355b91afc225d64c6e784"
+}
