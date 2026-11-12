@@ -202,3 +202,66 @@ transfers and 4 GB new artifacts; reserve 45 minutes and .5 CPU hours for closin
 Workers checkpoint individual fits/folds, append progress/ledger entries and
 can resume with the same commands. No extra topic, simulator, author contact,
 new data collection, video/weight downloads, push or credentials are authorized.
+
+## Onset-specificity continuation registered 2026-11-12
+
+Authority: the supplied supervised onset-specificity continuation, reviewed base
+`c2e24d38b61e2a3d7db422c971342eab8cac4b7e`, branch
+`research/reboot-onset-specificity`. Original qualification and overnight results
+above remain unchanged. This is exploratory reanalysis/cross-fitting on exposed
+recordings, not untouched confirmation. Evidence:
+`results/reboot-onset-specificity/20261112T090003Z/`.
+
+The compact frozen specification is
+`config/reboot_onset_20261112T090003Z.json`; its consumed-input manifest binds
+1,506 immutable source/prediction/checkpoint files. Both supplied prior archive
+and completion-seal hashes were verified. The same 55 recovery and 62 nominal
+reference recordings, exact group memberships, five folds/horizons and neural
+ensembles are retained. No neural fitting, relabeling or new dataset is authorized.
+
+First reproduce all original first alarms. For each fixed score, compute the
+full-history persistence capacity ending at every decision timestamp, preserving
+.1-second persistence, 2-microsecond tolerance, ties and NaN resets. Compare
+pre-onset maximum A with target maximum B; timely first alarms require A<theta<=B.
+Keep negative-infinite empty capacities and explicit null reasons for undefined
+margins. Enumerate all finite raw-score breakpoints and immediately above ties
+for exact common-threshold tradeoffs. Hindsight ceilings use one threshold per
+fold/model, with BOTH reference and premature budgets at .05/.10/.20; maximize
+timely count, break ties toward the highest threshold. These are never deployed.
+
+C0 repeats nominal-reference calibration. C1 takes the maximum of separately
+calibrated nominal-reference and strictly pre-onset recovery-prefix thresholds.
+Use conservative ties, floor(alpha*n) per population, alpha .10 primary and
+.05/.20 sensitivities. Report invalid no-capacity prefixes; exclude them only
+from their calibration population's valid denominator. Every evaluation recording
+receives one constant threshold from recording start. Retain both population
+alarm rates, late/no-alarm/censoring outcomes, misses and fixed-threshold sensor
+stress. Evaluation outcomes cannot select calibration thresholds or alpha.
+
+Within-recording contrasts compare equal finite sample counts in the final
+pre-onset second and first target second, with .5-second gap sensitivity; all
+capacities retain their complete past. Include the clock control. Ten logistic
+source-role fits use only the first full second, original B2 summaries/settings,
+the three inherited training folds, and fixed .5 classification. The recovery
+with onset exactly 1s is excluded only from this diagnostic, leaving 116 records.
+Source role is never a deployed failure label. Ten B2-R fits use unchanged B2
+hyperparameters/loss/scaling rules on training recoveries alone, with pre-onset
+negatives, target positives and post-recovery masks. Twenty fits is a hard cap.
+
+Primary contrasts: Q B2-R/C1 versus B2/C1, and frozen P1/C1 versus P0/C1/P2/C1,
+at alpha .10. Retain Q+C and all alpha sensitivities and paired C1–C0 comparisons.
+Use 2,000 paired role-stratified recording bootstraps (seed 20261112) and Wilson
+rate intervals; shared collection dependence remains and [0,0] is not population
+equivalence. Select three smallest canonical IDs per available annotation-review
+category/model/input under C0/.10, preserving empty categories and raw labels.
+
+Independent code checks capacities, first-alarm equivalence, calibration masks,
+folds, new logistic predictions and denominators. Streaming changes only the
+registered C0/C1 threshold; identical score histories must be demonstrated.
+Append the measured report, three figures and a compact local review archive.
+One existing locked worker, at most two numerical threads, six wall hours,
+eight measured CPU hours, zero GPU/paid APIs, one GB new artifacts; reserve
+30 minutes/.5 CPU hours for closing. Only a small already-named reference page
+may be retrieved. Preserve old seals/weights, .gitignore and lockfiles; local
+commits only, no push, credentials or author contact. Stop when this fixed work
+is complete, regardless of sign; do not add another score or architecture.
