@@ -1,0 +1,184 @@
+{
+  "packets": {
+    "decisions": [
+      0,
+      0.1,
+      0.2
+    ],
+    "source_times": [
+      0,
+      0.1,
+      0.2
+    ],
+    "arrivals": [
+      0,
+      0.1,
+      0.2
+    ]
+  },
+  "alarm": {
+    "time": [
+      0,
+      0.1,
+      0.2
+    ],
+    "scores": [
+      0.2,
+      0.8,
+      0.8
+    ],
+    "threshold": 0.5,
+    "persistence": 0.1,
+    "reported_alarm": 0.2
+  },
+  "runtime": {
+    "fields": {
+      "q": "observation",
+      "robot": "static"
+    },
+    "allowed_static": [
+      "robot"
+    ]
+  },
+  "recordings": [
+    {
+      "record_id": "t",
+      "signal_hash": "e3b98a4da31a127d4bde6e43033f66ba274cab0eb7eb1c70ec41402bf6273dd8",
+      "task_group": "task_t",
+      "source_group": "source_t",
+      "partition": "train",
+      "role": "success"
+    },
+    {
+      "record_id": "s",
+      "signal_hash": "043a718774c572bd8a25adbeb1bfcd5c0256ae11cecf9f9c3f925d0e52beaf89",
+      "task_group": "task_s",
+      "source_group": "source_s",
+      "partition": "calibration",
+      "role": "success"
+    },
+    {
+      "record_id": "p",
+      "signal_hash": "148de9c5a7a44d19e56cd9ae1a554bf67847afb0c58f6e12fa29ac7ddfca9940",
+      "task_group": "task_p",
+      "source_group": "source_p",
+      "partition": "calibration",
+      "role": "failure"
+    },
+    {
+      "record_id": "e1",
+      "signal_hash": "8b5cc4df7eec7d32a7814eca4af047ae33b2d52342667715682e19c25b0b9faa",
+      "task_group": "task_e1",
+      "source_group": "source_e1",
+      "partition": "evaluation",
+      "role": "failure"
+    },
+    {
+      "record_id": "e2",
+      "signal_hash": "ac0f09c0f8bf5e7a4b063d863255f16d8ce9abe600e288d934cf313bcbff63eb",
+      "task_group": "task_e2",
+      "source_group": "source_e2",
+      "partition": "evaluation",
+      "role": "success"
+    }
+  ],
+  "calibration": {
+    "reference_ids": [
+      "s"
+    ],
+    "prefix_ids": [
+      "p"
+    ],
+    "selection_label_ids": [
+      "s",
+      "p"
+    ],
+    "reference_verdicts": {
+      "s": "success"
+    },
+    "prefix_stop": {
+      "p": 0.1
+    },
+    "onsets": {
+      "p": 0.2
+    }
+  },
+  "events": [
+    {
+      "record_id": "p",
+      "start": 0,
+      "end": 1,
+      "onset": 0.2,
+      "semantics": "retrospective_deviation",
+      "claimed_semantics": "retrospective_deviation"
+    }
+  ],
+  "simulator": {
+    "expected_class": "Task",
+    "actual_class": "Task",
+    "expected_controller": "OSC",
+    "actual_controller": "OSC",
+    "expected_dimension": 7,
+    "actual_dimension": 7,
+    "expected_dt": 0.05,
+    "actual_dt": 0.05,
+    "expected_model_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "actual_model_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "reference_kind": "recorded_scene",
+    "controller_memory_recorded": true
+  },
+  "execution": {
+    "kind": "actions_stepped",
+    "actions": 50,
+    "state_injections_after_start": 0,
+    "physics_time_advanced": 2.5,
+    "initial_success": false,
+    "reported_new_recovery": true,
+    "observed_success": true,
+    "original_predicate_checked": true
+  },
+  "accounting": {
+    "eligible_ids": [
+      "e1",
+      "e2"
+    ],
+    "evaluated_ids": [
+      "e1",
+      "e2"
+    ],
+    "exclusion_reasons": {},
+    "abstention_ids": [
+      "e1"
+    ],
+    "denominator": 2,
+    "uncertainty_unit": "task",
+    "independent_groups": 2
+  },
+  "branches": [
+    {
+      "checkpoint_id": "toy",
+      "state_hashes": [
+        "s",
+        "s"
+      ],
+      "policy_memory_hashes": [
+        "p",
+        "p"
+      ],
+      "actions": [
+        "continue",
+        "recover"
+      ],
+      "observed_outcomes": [
+        false,
+        true
+      ],
+      "costs": [
+        10,
+        5
+      ],
+      "declared_budget": 20,
+      "assignment": "matched_counterfactual"
+    }
+  ]
+}
