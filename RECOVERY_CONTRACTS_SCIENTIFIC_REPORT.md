@@ -585,6 +585,11 @@ compressed action traces. The filter and archive regression test were corrected;
 the provisional unsealed archive is preserved locally, and
 `archive_packaging_revision.json` records the change. Final archive verification
 includes the compressed traces. This packaging correction changes no experiment.
+The first full archive verifier reached its 300-second bound because member
+access order repeatedly restarted gzip decompression. Verification now follows
+the stored member order; a regression also rejects maintained files changed
+after packaging. The bounded stop and successful corrected verification are
+retained separately. These corrections change neither hash criteria nor results.
 
 Final validation: **98 relevant contract/benchmark tests passed**, including
 24 contract tests; **4 additional actual pinned-stack physics tests passed**.
@@ -694,7 +699,7 @@ grouping and claim; there is no hidden dataset-name waiver.
 
 The session uses one bounded foreground research worker at a time, at most two
 numerical threads, and no GPU, paid API, new dataset download or simulator
-reinstallation. Before packaging, measured worker CPU was below one core-hour
+reinstallation. Before initial packaging, measured worker CPU was below one core-hour
 and new run artifacts were about 193 MB. Final exact elapsed/CPU/byte accounting,
 including packaging and closing, is recorded in `resources.json`; it separately
 discloses a 300-CPU-second interactive allowance and a conservative 20 MB public

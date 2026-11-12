@@ -123,7 +123,9 @@ def verify(root):
     assert sha(Path(archive_info["path"])) == archive_info["sha256"]
     with tarfile.open(archive_info["path"]) as tar:
         inventory = json.load(tar.extractfile("ARCHIVE_SHA256.json"))
-        for name, expected in inventory.items():
+        # Match write order so gzip needs one forward pass, not a full
+        # decompression restart for each out-of-order member.
+        for name, expected in sorted(inventory.items()):
             assert not name.endswith((".pt", ".hdf5")) and "/env/" not in name
             assert (
                 hashlib.sha256(tar.extractfile(name).read()).hexdigest() == expected

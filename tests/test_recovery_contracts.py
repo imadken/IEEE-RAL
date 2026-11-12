@@ -168,3 +168,16 @@ def test_review_archive_excludes_borrowed_raw_inputs_and_weights(tmp_path, monke
         assert "evidence/action_trace.jsonl.gz" in names
         assert not any("private_raw" in name or name.endswith(".pt") for name in names)
         assert archive.extractfile("maintained/report.md").read() == b"Review scope"
+    # Exercise actual archive verification, isolating it from real input seals.
+    from dual_rec.failtime import experiment
+
+    monkeypatch.setattr(experiment, "verify_seal", lambda root: None)
+    original_read = finalize["verify"].__globals__["read"]
+    finalize["verify"].__globals__["read"] = lambda directory, name: (
+        original_read(directory, name) if name == "archive.json" else {"status": "PASS"}
+    )
+    finalize["verify"].__globals__["preserve"] = lambda root: {"status": "PASS"}
+    finalize["verify"](root)
+    report.write_text("Changed after packaging")
+    with pytest.raises(AssertionError):
+        finalize["verify"](root)
