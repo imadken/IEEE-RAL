@@ -1,0 +1,90 @@
+{
+  "reviewed_base": "901165216752ff656fef7de93491d617540839a7",
+  "run": "results/recovery-contracts/20261112T124115Z",
+  "authority_sha256": "df3acc11fbad7c3a37721ed17de74d2b17528db2159c943c06eac93bb958d152",
+  "failtime": {
+    "source_root": "results/failtime-online/20261112T101800Z",
+    "group_folds": {
+      "aloha/uncap_marker_draw_recap": 0,
+      "aloha/empty_bowl_insert_block": 1,
+      "aloha/pour_ball_transfer_cup": 2,
+      "aloha/balls_to_egg_carton": 3,
+      "aloha/yellow_red_blocks_to_bowls": 4,
+      "aloha/stabilize_and_insert_block": 0,
+      "aloha/bottle_to_bowl_and_cover": 1,
+      "aloha/stack_cup_pyramid": 2,
+      "so101/blocks_to_bowls": 0,
+      "so101/cube_stack": 1,
+      "so101/balls_to_rack": 2,
+      "so101/handover": 3,
+      "so101/block_assembly": 4
+    },
+    "group_rule": "Within robot sortedSHA256(recovery-contracts-v1|robot/task_id),roundrobin5;evalk,calk+1,trainothers",
+    "methods_frozen_from": "results/failtime-online/20261112T101800Z/registration.json",
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "epochs": 30,
+    "primary_alpha": 0.1,
+    "primary_persistence": 0.1,
+    "timely_window": 1,
+    "all_records": 100,
+    "censoring": "retainall57failures;reportobservablecounterpart;no onsetrepair",
+    "retrospective_readout": "earliestglobalmaximumoffiniterisk;offlineonly",
+    "bootstrap": {
+      "draws": 2000,
+      "seed": 20261112,
+      "unit": "task_id",
+      "sensitivity": "platform-stratifiedtaskresampling"
+    }
+  },
+  "recoverbench": {
+    "source_root": "results/recoverbench-qualification-rescue/20261111T195432Z",
+    "membership": "config/recoverbench_qualification_20261111.json",
+    "repeat_all_12_tapes_2_conditions": true,
+    "no_simulator_reinstall": true
+  },
+  "reboot": {
+    "source_root": "results/reboot-overnight/20261111T224622Z",
+    "annotation_root": "results/reboot-phase/20261111T204459Z",
+    "preserve_original_thresholds_and_intervals": true,
+    "hidden_onset_reset": "INVALID_DIAGNOSTIC_ONLY"
+  },
+  "prior_manifests": {
+    "results/recoverbench-transfer/20261111T172759Z/resources.json": "6b12c7faad4f3d487093c685ab8b9be09c6beb8187c696366649b1e1c63382fe",
+    "results/recoverbench-transfer/20261111T172759Z/completion_manifest.json": "c0bce17dff2a2a897fcd64b056e831dababf181eaafa867ff30fd03358912f5f",
+    "results/reboot-overnight/20261111T224622Z/resources.json": "67a1b99109f5d525e3fbf9d2f9af2c19bf01198529e075f324629b8a9e452b3b",
+    "results/reboot-overnight/20261111T224622Z/registration.json": "1a7252646e3d0001a2bd921ecc0539ca88c127e47e5bbe23fc307fbda9ace581",
+    "results/reboot-overnight/20261111T224622Z/completion_manifest.json": "f9d79bfc7df980a83e198ba33f1a0cfdf13a1222f53723a2deb80ffc12b7c07b",
+    "results/failtime-online/20261112T101800Z/resources.json": "9294ba2db47d99392247c0ba55c8f349fee218754c80f6aba701f4067422aa6f",
+    "results/failtime-online/20261112T101800Z/registration.json": "531153d18329394c37aac36364ec2166e82d367f1426ccbf17dd079dcf99d838",
+    "results/failtime-online/20261112T101800Z/completion_manifest.json": "c9fb0bff0cef82e5b16e93dbea7952517286ebc7f0852ca06c91adb64d8385cb",
+    "results/failtime-online/20261112T101800Z/archive.json": "29db29c10bbed78577c85d087a3ac1bfcfee73a5530a6b0959335201d2a3ea6e",
+    "results/reboot-phase/20261111T204459Z/resources.json": "f596df5956164bc89cea33136d88c31ebdc6694cb6a3c411de9be5b07388f050",
+    "results/reboot-phase/20261111T204459Z/repository_registration.json": "2edcbb3655e74f6890e14dd83c387d8422d1cace9556015af073024252931c11",
+    "results/reboot-phase/20261111T204459Z/completion_manifest.json": "e27d2cf81db7a0d6c86d5f833753aa06c4a56573f3250147292e99bf1cc4e46f",
+    "results/monitoring-study/20261111T121002Z/resources.json": "a9eb41c72d1584fd86c6a6bd4a6b39aafada95b0778ba9e5a0a3acbac4f7effc",
+    "results/monitoring-study/20261111T121002Z/completion_manifest.json": "5c7adee760d8e59621ea9322017790dc923be22e1fbecfa46c3b4ec0de4825d0",
+    "results/recoverbench-qualification-rescue/20261111T195432Z/resources.json": "a39638f97b8fb8c9f831863079e1590c14ed75acfe6dbce9fdfa8d3415cbd455",
+    "results/recoverbench-qualification-rescue/20261111T195432Z/registration.json": "4c0f76578e0df4ae81ec98248dec6f8b3a59cfcf0ef064394b02b3f3160c31f7",
+    "results/recoverbench-qualification-rescue/20261111T195432Z/completion_manifest.json": "dbb533416e991724025bc1c3c75ef9724dfb82e5a5f375fbe8cbce8d5678fcc1",
+    "results/overnight-20261111/20261110T235337Z/completion_manifest.json": "942341dc6273dc31ac84bf8771aabc01ee17f6dea81b465e7961467b6c72b5ce",
+    "results/evidence-revalidation/20261111T132101Z/resources.json": "4ffff61112c2b181bafbf4dd079d35060e5da4c64b2c1b780f2801aefe5a278d",
+    "results/evidence-revalidation/20261111T132101Z/completion_manifest.json": "00d753992cbd745706dea8e5140ff73ce5daec6ef72670cad7e94721feafddc5",
+    "results/evidence-revalidation/20261111T132101Z/benchmarks/resources.json": "45a2e8af5d97d0f903cb3999cfd2f780cdd953f9bcc2ec14a9037b7ad358053e",
+    "results/gate-d5-d7/20261110T222449Z/completion_manifest.json": "1f81c0794b81b4b5c8b5ece963068bb1ea72ec27c37229016963c54ef12ffbc3",
+    "results/reboot-onset-specificity/20261112T090003Z/resources.json": "801676f8ba3203fa5db8356608ea09a095d70e5b92021c946373ddfd3c0717d1",
+    "results/reboot-onset-specificity/20261112T090003Z/registration.json": "d47f3eec51a2cb6e22aad41776143f827e63ebb53342886e4ed734554b110c41",
+    "results/reboot-onset-specificity/20261112T090003Z/completion_manifest.json": "f8fc619598a864fd87dd6a2edb1702b9ca74021c922ae59036d5c39c1223b417",
+    "results/reboot-onset-specificity/20261112T090003Z/archive.json": "6e08b024cb4de153e40ed1785f903becfb23a152281e5ba11a0e440b53a9c0c6"
+  },
+  "resource_limits": {
+    "wall_seconds": 28800,
+    "cpu_seconds": 43200,
+    "new_bytes": 4000000000,
+    "download_bytes": 2000000000,
+    "gpu_seconds": 7200
+  }
+}
