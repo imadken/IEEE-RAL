@@ -129,7 +129,7 @@ def main(root):
             "reboot_records": len(reboot_results),
             "reboot_eligible_roles": {
                 role: sum(r["role"] == role and r["eligible"] for r in reg)
-                for role in ["recovery", "expert"]
+                for role in ["recovery", "reference"]
             },
             "reboot_population_controls": reboot_population_controls,
             "invalid_reset_witnesses": sum(
@@ -205,4 +205,6 @@ def main(root):
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--root", type=Path, required=True)
-    main(p.parse_args().root)
+    a = p.parse_args()
+    assert not (a.root / "completion_manifest.json").exists(), "Evidence sealed"
+    main(a.root)

@@ -44,6 +44,9 @@ def audit(root):
     physics_steps = 0
     continuations = 0
     traces_checked = 0
+    raw_expectations = {}
+    raw_hashes = {}
+    prefix_pairs_verified = 0
     for p in sorted((root / "parents").glob("*/*/*/outcomes.json")):
         records = read(p)
         meta = read(p.parent / "checkpoint.json")
@@ -52,9 +55,72 @@ def audit(root):
         physics_steps += meta.get("physics_control_steps", 0)
         with gzip.open(p.parent / "traces.json.gz", "rt") as f:
             raw = json.load(f)
+        relative = str((p.parent / "traces.json.gz").relative_to(root))
+        raw_hashes[relative] = hashlib.sha256(
+            (p.parent / "traces.json.gz").read_bytes()
+        ).hexdigest()
+        for key, trace in raw["traces"].items():
+            if key.endswith("/reference"):
+                continue
+            mode = key.split("/")[0]
+            reference = raw["traces"][mode + "/reference"]
+            if trace.get("prefix_history") and reference.get("prefix_history"):
+                assert len(trace["prefix_history"]) == len(reference["prefix_history"])
+                assert all(
+                    initial_score(a, b) <= 1
+                    for a, b in zip(
+                        trace["prefix_history"],
+                        reference["prefix_history"],
+                        strict=True,
+                    )
+                )
+                prefix_pairs_verified += 1
+
+            def memory_hash(value):
+                return (
+                    hashlib.sha256(
+                        json.dumps(value, sort_keys=True).encode()
+                    ).hexdigest()
+                    if value is not None
+                    else None
+                )
+
+            raw_expectations[(relative, key)] = {
+                "success": [bool(v["state"]["success"]) for v in trace["frames"]],
+                "times": [v["state"]["time"] for v in trace["frames"]],
+                "controller_hash": memory_hash(trace.get("controller_memory")),
+                "reference_controller_hash": memory_hash(
+                    reference.get("controller_memory")
+                ),
+                "completion_success": [
+                    bool(v["state"]["success"])
+                    for v in raw["traces"][mode + "/fresh_prefix"]["frames"]
+                ],
+                "actions": trace["row"]["actions"],
+                "task": trace["row"]["task"],
+                "parent": str(trace["row"]["seed"]),
+                "history_hash": trace["row"]["history_hash"],
+            }
         for r in records:
             if r["route"] == "missing_provenance":
                 continue
+            assert (
+                hashlib.sha256(
+                    json.dumps(r["model"], sort_keys=True).encode()
+                ).hexdigest()
+                == r["model_hash"]
+            )
+            assert (
+                hashlib.sha256(
+                    json.dumps(raw["prefix_actions"], sort_keys=True).encode()
+                ).hexdigest()
+                == r["history_hash"]
+            )
+            assert np.asarray(r["actions"]).shape == (
+                70,
+                7 if r["task"] == "Lift" else 4,
+            )
+            assert np.isfinite(r["actions"]).all()
             trace = raw["traces"][r["action"] + "/" + r["route"]]
             reference = raw["traces"][r["action"] + "/reference"]
             frames = trace["frames"]
@@ -171,12 +237,28 @@ def audit(root):
     # certificate digest. Independent contract status arithmetic follows actual
     # supplied observations, not the compared certify function.
     certificates = read(root / "all_certificates.json")
+    fidelity = {
+        tuple(r[k] for k in ["split", "task", "condition", "action", "route"]): r
+        for r in read(root / "B_fidelity.json")
+    }
     bundle_cache = {}
     for cert in certificates:
         name = cert["bundle"]
         if name not in bundle_cache:
             bundle_cache[name] = read(root / name)
         c = bundle_cache[name]
+        cohort = fidelity.get(
+            tuple(cert[k] for k in ["split", "task", "condition", "action", "route"])
+        )
+        assert c["qualification_parents"] == (cohort["qualified"] if cohort else 0)
+        assert c["discordances"] == (cohort["discordances"] if cohort else 0)
+        assert (
+            c["alpha"] == 0.005 and c["epsilon"] == 0.025 and c["cost_tolerance"] == 0.1
+        )
+        assert raw_hashes[c["raw_trace_path"]] == c["trace_hash"]
+        expected_raw = raw_expectations[(c["raw_trace_path"], c["raw_trace_key"])]
+        for field, value in expected_raw.items():
+            assert c[field] == value, (name, field)
         assert (
             hashlib.sha256((root / name).read_bytes()).hexdigest()
             == cert["bundle_sha256"]
@@ -282,7 +364,35 @@ def audit(root):
         if method == "no_unknown" and expected == "INSUFFICIENT_EVIDENCE":
             expected = "SUPPORTED"
         assert expected == cert["status"], (name, method, expected, cert["status"])
-        assert bool(cert["witness"]) == bool(known_bad) or method in ["B0", "no_memory"]
+        assert bool(cert["witness"]) == bool(known_bad)
+        ordered = [
+            (badbudget, "budget"),
+            (badparent, "parent_identity"),
+            (badmodel, "model_identity"),
+            (badhistory, "history_identity"),
+            (badaction, "first_wrong_control"),
+            (badcontroller, "controller_identity"),
+            (injected, "state_injection"),
+            (violation, "execution_contract"),
+            (wrongtime, "time"),
+        ]
+        if known_bad:
+            first = next(obligation for failed, obligation in ordered if failed)
+            assert cert["witness"]["obligation"] == first
+            if first == "first_wrong_control":
+                index = next(
+                    i
+                    for i, (a, b) in enumerate(
+                        zip(c["actions"], c["expected_actions"], strict=True)
+                    )
+                    if a != b
+                )
+                assert cert["witness"]["index"] == index
+            if first == "state_injection":
+                assert (
+                    cert["witness"]["index"] == 1
+                    and abs(c["times"][1] - c["times"][0]) < 1e-7
+                )
     for e in read(root / "E_effects.json"):
         chosen = [
             r
@@ -376,13 +486,62 @@ def audit(root):
             ]
             assert np.isclose(np.mean(delta), report["admission_difference"])
             assert np.allclose(np.quantile(bs, [0.025, 0.975]), report["ci95"])
+    status_counts = defaultdict(lambda: defaultdict(int))
+    for c in certificates:
+        key = tuple(
+            c[k] for k in ["split", "task", "condition", "control_status", "method"]
+        )
+        status_counts[key][c["status"]] += 1
+    for cell in read(root / "C_acceptance.json"):
+        key = tuple(
+            cell[k] for k in ["split", "task", "condition", "control_status", "method"]
+        )
+        assert sum(status_counts[key].values()) == cell["records"]
+        for status in ["SUPPORTED", "REFUTED_CONTRACT", "INSUFFICIENT_EVIDENCE"]:
+            assert status_counts[key][status] == cell[status]
+    review_verified = False
+    if (root / "invalid_acceptance_bounds.json").exists():
+        cfg = read(root / "registration.json")
+        for cell in read(root / "invalid_acceptance_bounds.json"):
+            cs = [
+                c
+                for c in certificates
+                if all(c[k] == cell[k] for k in ["split", "task", "method"])
+                and c["control_status"] == "invalid"
+            ]
+            assert len(cs) == cell["invalid_records"]
+            assert (
+                sum(c["status"] == "SUPPORTED" for c in cs) == cell["accepted_records"]
+            )
+            ids = sorted(cfg["seeds"][cell["task"]][cell["split"]])
+            seen, errors = 0, 0
+            for a, b in zip(ids[::2], ids[1::2], strict=True):
+                pair = [c for c in cs if int(c["parent"]) in (a, b)]
+                if pair:
+                    seen += 1
+                    errors += any(c["status"] == "SUPPORTED" for c in pair)
+            assert (
+                seen == cell["parent_pair_clusters"]
+                and errors == cell["clusters_with_acceptance"]
+            )
+            upper = (
+                float(beta.ppf(1 - cell["alpha"], errors + 1, seen - errors))
+                if errors < seen
+                else 1.0
+            )
+            assert abs(upper - cell["upper"]) < 1e-10
+        review_verified = True
     result = {
         "status": "PASS",
         "physical_traces": traces_checked,
+        "full_prefix_pairs_verified": prefix_pairs_verified,
         "physical_continuations": continuations,
         "physics_control_steps_recorded": physics_steps,
         "certificates": len(certificates),
         "effect_cells": len(read(root / "E_effects.json")),
+        "status_matrices_verified": True,
+        "first_observed_witnesses_recomputed": True,
+        "invalid_acceptance_bounds_verified": review_verified,
         "scope": "Independent software arithmetic, same operator; no independent human evaluation; exact binomial conditional on distinct parent seeds within each condition/action domain",
     }
     (root / "independent_audit.json").write_text(json.dumps(result, indent=2))
@@ -392,4 +551,6 @@ def audit(root):
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--root", type=Path, required=True)
-    audit(p.parse_args().root)
+    a = p.parse_args()
+    assert not (a.root / "completion_manifest.json").exists(), "Evidence sealed"
+    audit(a.root)

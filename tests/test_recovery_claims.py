@@ -191,3 +191,41 @@ def test_matched_interventions_require_same_physical_history_and_budget():
             )["status"]
             == "REFUTED_CONTRACT"
         )
+
+
+def test_review_archive_and_seal_detect_tampering(tmp_path, monkeypatch):
+    import json
+    from pathlib import Path
+
+    monkeypatch.syspath_prepend(str(Path("scripts").resolve()))
+    import recovery_claims_finalize as finalize
+
+    payloads = {
+        "initial.json": {"prior_files": {}},
+        "historical_seal_hashes.json": {},
+        "confirmation_freeze.json": {"source_sha256": {}},
+        "secondary_source_hashes.json": {},
+        "independent_audit.json": {"status": "PASS"},
+    }
+    for name, value in payloads.items():
+        (tmp_path / name).write_text(json.dumps(value))
+    monkeypatch.setattr(finalize, "maintained", list)
+    finalize.archive(tmp_path)
+    archive = tmp_path / "supervisor_review.tar.gz"
+    manifest = {"sha256": {archive.name: finalize.sha(archive)}, "source_sha256": {}}
+    (tmp_path / "completion_manifest.json").write_text(json.dumps(manifest))
+    finalize.verify(tmp_path)
+    archive.write_bytes(archive.read_bytes() + b"tampered")
+    with pytest.raises(AssertionError):
+        finalize.verify(tmp_path)
+
+
+def test_independent_alarm_audit_uses_contiguous_observed_runs(monkeypatch):
+    from pathlib import Path
+
+    monkeypatch.syspath_prepend(str(Path("scripts").resolve()))
+    from recovery_claims_secondary_audit import alarm
+
+    assert alarm([0, 0.05, 0.1, 0.15], [1, 1, 1, 1], 1) == 0.1
+    assert alarm([0, 0.05, 0.1, 0.15], [1, None, 1, 1], 1) is None
+    assert alarm([0, 0.05, 0.1], [1, 1, 1], 2) is None
