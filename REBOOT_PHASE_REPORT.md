@@ -548,3 +548,239 @@ Historical report/protocol prefixes, all other maintained historical files, old 
 Engineering validation: 15 focused tests passed; 261 maintained tests passed and four original environment-gated physics checks skipped. Lint and format checks passed (125 maintained Python files). These counts are not scientific sample sizes.
 
 Verified preseal checkpoint: campaign wall 3508.714s (conservative five-minute startup allowance), measured worker/driver/closing CPU 2394.010s; GPU 0; additional transfers <=1,000,000 bytes; logical artifacts 195,306,405 bytes and storage charge 245,306,405 bytes. Final reporting/archive/seal costs are added in resources.json. All limits passed.
+
+
+## 2026-11-12: onset specificity and matched-background calibration
+
+Evidence: `results/reboot-onset-specificity/20261112T090003Z`. Reviewed base `c2e24d38b61e2a3d7db422c971342eab8cac4b7e`; analysis registration committed as `ad4572f` before recalculating comparisons. This is exploratory reanalysis and cross-fitting of already exposed data, not untouched confirmation. All 117 canonical recordings, 55 eligible recoveries, 62 cylinder-install expert-source references, original exclusions/folds, seeds and horizons are retained.
+
+### Reproduction and exact score capacity
+
+All 1,638 historical outcome rows reproduced exactly with the original scorer. Training already included pre-onset negatives. The reviewed implementation calibrated only on nominal references; no historical scientific scorer or model defect was found or silently repaired. All 1,506 consumed sealed input files were verified, including the available prior archive and completion manifest with the authorized hashes.
+
+Counts below are individual nonempty A < theta <= B intervals / infeasible intervals / shared-fold hindsight ceiling at alpha .10 under BOTH budgets. A/B retain complete causal persistence history, including streaks crossing onset. Every raw score breakpoint and immediately above ties is checked. These are capacities of the fixed scores and threshold policy, not information limits or deployable calibrated performance.
+
+| Input/model | Feasible / 55 | Infeasible / 55 | Hindsight timely / 55 |
+| --- | --- | --- | --- |
+| Q/B0 | 54 | 1 | 0 |
+| Q/B1 | 19 | 36 | 2 |
+| Q/B2 | 46 | 9 | 17 |
+| Q/B3 | 25 | 30 | 6 |
+| Q/P0 | 25 | 30 | 7 |
+| Q/P1 | 20 | 35 | 4 |
+| Q/P2 | 25 | 30 | 6 |
+| Q/B2R | 50 | 5 | 9 |
+| QC/B0 | 54 | 1 | 0 |
+| QC/B1 | 21 | 34 | 3 |
+| QC/B2 | 50 | 5 | 24 |
+| QC/B3 | 30 | 25 | 9 |
+| QC/P0 | 30 | 25 | 8 |
+| QC/P1 | 41 | 14 | 16 |
+| QC/P2 | 31 | 24 | 8 |
+| QC/B2R | 52 | 3 | 11 |
+
+The clock B0 has many individual feasible intervals but a zero shared-threshold ceiling: per-recording feasibility alone does not establish event specificity. B2-R's calibrated timely count can exceed its budget-constrained ceiling because its realized evaluation reference alarms violate that ceiling's reference budget; the ceiling does not bound unconstrained counts. Oracle thresholds are stored only under `hindsight_only/` and rejected by the deployment loader.
+
+### Both alarm populations under fixed calibration
+
+C0 fits expert-reference capacities only. C1 uses the maximum of separately calibrated nominal-reference and strictly pre-onset recovery-prefix thresholds. The smallest conservative threshold uses nextafter above the permitted order statistic, retaining ties. No target or evaluation labels choose deployable thresholds. Nominal alarms are not certified physical false positives, and pre-annotation alarms do not prove physical normality. Calibration-fold reference counts are 12–13, valid prefixes 10–11; empirical integer budgets are coarse. B1 has one unavailable sample-41 prefix in each input because of its warmup, explicitly excluded from the valid-prefix denominator; it remains in evaluation. No other prefix is replaced or relabeled.
+
+Primary alpha .10. T/P/R denote timely / premature / reference alarms; recovery denominator 55, reference denominator 62. Delay is median seconds among detections only; misses are shown to prevent conditioning from hiding failures.
+
+| Input/model | C0 T/P/R | C1 T/P/R | C1 late / none | C1 misses | C1 delay s |
+| --- | --- | --- | --- | --- | --- |
+| Q/B0 | 0/0/0 | 0/0/0 | 0 / 55 | 55 | — |
+| Q/B1 | 1/54/10 | 0/7/0 | 7 / 41 | 55 | — |
+| Q/B2 | 5/46/16 | 14/6/0 | 30 / 5 | 41 | 3.20 |
+| Q/B3 | 1/53/6 | 3/9/0 | 19 / 24 | 52 | 2.30 |
+| Q/P0 | 1/54/9 | 2/8/0 | 13 / 32 | 53 | 0.20 |
+| Q/P1 | 0/54/4 | 2/6/0 | 1 / 46 | 53 | 1.80 |
+| Q/P2 | 1/54/12 | 2/8/0 | 13 / 32 | 53 | 0.20 |
+| Q/B2R | 12/0/11 | 12/0/11 | 41 / 2 | 43 | 3.35 |
+| QC/B0 | 0/0/0 | 0/0/0 | 0 / 55 | 55 | — |
+| QC/B1 | 1/54/11 | 0/7/0 | 7 / 41 | 55 | — |
+| QC/B2 | 9/44/8 | 16/16/0 | 23 / 0 | 39 | 1.90 |
+| QC/B3 | 3/50/12 | 8/9/0 | 35 / 3 | 47 | 2.80 |
+| QC/P0 | 2/50/10 | 5/9/0 | 18 / 23 | 50 | 2.70 |
+| QC/P1 | 1/50/10 | 10/8/0 | 18 / 19 | 45 | 2.35 |
+| QC/P2 | 2/50/11 | 5/9/0 | 17 / 24 | 50 | 2.70 |
+| QC/B2R | 10/0/11 | 10/0/11 | 40 / 5 | 45 | 2.85 |
+
+Fold-specific threshold ranges and realized calibration reference;prefix counts (fold order 0–4), primary alpha:
+
+| Input/model | C0 threshold range | C0 ref;prefix | C1 threshold range | C1 ref;prefix |
+| --- | --- | --- | --- | --- |
+| Q/B0 | 0.857891–0.874818 | 0/13;0/11, 0/12;0/11, 0/12;0/11, 0/12;0/11, 0/13;0/11 | 0.857891–0.874818 | 0/13;0/11, 0/12;0/11, 0/12;0/11, 0/12;0/11, 0/13;0/11 |
+| Q/B1 | 4.58651–11.5412 | 1/13;10/11, 1/12;10/10, 1/12;11/11, 1/12;11/11, 1/13;11/11 | 1645.78–2982.8 | 0/13;1/11, 0/12;1/10, 0/12;1/11, 0/12;1/11, 0/13;1/11 |
+| Q/B2 | 0.461184–0.865855 | 1/13;10/11, 1/12;8/11, 1/12;8/11, 1/12;9/11, 1/13;11/11 | 0.974699–0.996705 | 0/13;1/11, 0/12;1/11, 0/12;1/11, 0/12;1/11, 0/13;1/11 |
+| Q/B3 | 0.537482–0.563227 | 1/13;10/11, 1/12;11/11, 1/12;11/11, 1/12;10/11, 1/13;11/11 | 0.79423–0.845289 | 0/13;1/11, 0/12;1/11, 0/12;1/11, 0/12;1/11, 0/13;1/11 |
+| Q/P0 | 0.513097–0.527279 | 1/13;10/11, 1/12;11/11, 1/12;11/11, 1/12;11/11, 1/13;11/11 | 0.679684–0.716195 | 0/13;1/11, 0/12;1/11, 0/12;1/11, 0/12;1/11, 0/13;1/11 |
+| Q/P1 | 0.515811–0.569534 | 1/13;10/11, 1/12;11/11, 1/12;11/11, 1/12;11/11, 1/13;11/11 | 0.734841–0.768731 | 0/13;1/11, 0/12;1/11, 0/12;1/11, 0/12;1/11, 0/13;1/11 |
+| Q/P2 | 0.509552–0.523142 | 1/13;11/11, 1/12;11/11, 1/12;11/11, 1/12;11/11, 1/13;11/11 | 0.679897–0.717088 | 0/13;1/11, 0/12;1/11, 0/12;1/11, 0/12;1/11, 0/13;1/11 |
+| Q/B2R | 0.995236–0.998346 | 1/13;0/11, 1/12;0/11, 1/12;0/11, 1/12;0/11, 1/13;0/11 | 0.995236–0.998346 | 1/13;0/11, 1/12;0/11, 1/12;0/11, 1/12;0/11, 1/13;0/11 |
+| QC/B0 | 0.857891–0.874818 | 0/13;0/11, 0/12;0/11, 0/12;0/11, 0/12;0/11, 0/13;0/11 | 0.857891–0.874818 | 0/13;0/11, 0/12;0/11, 0/12;0/11, 0/12;0/11, 0/13;0/11 |
+| QC/B1 | 3.26359–12.2221 | 1/13;10/11, 1/12;10/10, 1/12;11/11, 1/12;11/11, 1/13;11/11 | 1537.06–2913.63 | 0/13;1/11, 0/12;1/10, 0/12;1/11, 0/12;1/11, 0/13;1/11 |
+| QC/B2 | 0.43596–0.815166 | 1/13;9/11, 1/12;8/11, 1/12;8/11, 1/12;10/11, 1/13;11/11 | 0.946623–0.996413 | 0/13;1/11, 0/12;1/11, 0/12;1/11, 0/12;1/11, 0/13;1/11 |
+| QC/B3 | 0.594262–0.69547 | 1/13;9/11, 1/12;9/11, 1/12;11/11, 1/12;10/11, 1/13;11/11 | 0.838441–0.868235 | 0/13;1/11, 0/12;1/11, 0/12;1/11, 0/12;1/11, 0/13;1/11 |
+| QC/P0 | 0.567866–0.632063 | 1/13;10/11, 1/12;9/11, 1/12;11/11, 1/12;10/11, 1/13;11/11 | 0.734046–0.763465 | 0/13;1/11, 0/12;1/11, 0/12;1/11, 0/12;1/11, 0/13;1/11 |
+| QC/P1 | 0.589278–0.66331 | 1/13;9/11, 1/12;9/11, 1/12;11/11, 1/12;10/11, 1/13;11/11 | 0.767892–0.804431 | 0/13;1/11, 0/12;1/11, 0/12;1/11, 0/12;1/11, 0/13;1/11 |
+| QC/P2 | 0.565425–0.631401 | 1/13;10/11, 1/12;9/11, 1/12;11/11, 1/12;10/11, 1/13;11/11 | 0.732298–0.763011 | 0/13;1/11, 0/12;1/11, 0/12;1/11, 0/12;1/11, 0/13;1/11 |
+| QC/B2R | 0.998388–0.999782 | 1/13;0/11, 1/12;0/11, 1/12;0/11, 1/12;0/11, 1/13;0/11 | 0.998388–0.999782 | 1/13;0/11, 1/12;0/11, 1/12;0/11, 1/12;0/11, 1/13;0/11 |
+
+Q/B2 C1 timely is 14/55 (25.5%; Wilson 95% 15.8–38.3%), premature 6/55 (10.9%), nominal 0/62 (Wilson upper 5.8%). Matched calibration retains event signal here while substantially reducing early alarms, but 41/55 events remain missed. All 55 target windows are observable; no target is removed to improve counts. Reference exposure is 1853.152 seconds per clean model/rule cell. Detailed exposure/censoring, delays and leads, rate intervals and every fold are in summary.json, outcomes.json and fold_counts.json.
+
+All fixed sensitivity cells are reported, without selecting a favorable alpha:
+
+| Input/model | alpha | C0 T/P/R | C1 T/P/R |
+| --- | --- | --- | --- |
+| Q/B0 | 0.05 | 0/0/0 | 0/0/0 |
+| Q/B0 | 0.2 | 0/0/0 | 0/0/0 |
+| Q/B1 | 0.05 | 1/54/8 | 0/5/0 |
+| Q/B1 | 0.2 | 1/54/11 | 0/13/0 |
+| Q/B2 | 0.05 | 7/41/7 | 12/2/0 |
+| Q/B2 | 0.2 | 4/47/18 | 14/14/0 |
+| Q/B3 | 0.05 | 1/50/3 | 5/4/0 |
+| Q/B3 | 0.2 | 1/53/9 | 3/14/0 |
+| Q/P0 | 0.05 | 1/54/5 | 2/4/0 |
+| Q/P0 | 0.2 | 0/55/21 | 2/15/0 |
+| Q/P1 | 0.05 | 1/53/1 | 1/3/0 |
+| Q/P1 | 0.2 | 0/54/10 | 2/16/0 |
+| Q/P2 | 0.05 | 1/54/3 | 3/4/0 |
+| Q/P2 | 0.2 | 1/54/17 | 1/16/0 |
+| Q/B2R | 0.05 | 10/0/5 | 10/0/5 |
+| Q/B2R | 0.2 | 12/2/19 | 12/2/19 |
+| QC/B0 | 0.05 | 0/0/0 | 0/0/0 |
+| QC/B0 | 0.2 | 0/0/0 | 0/0/0 |
+| QC/B1 | 0.05 | 1/54/6 | 0/5/0 |
+| QC/B1 | 0.2 | 1/54/13 | 0/13/0 |
+| QC/B2 | 0.05 | 9/41/4 | 14/7/0 |
+| QC/B2 | 0.2 | 8/46/17 | 19/20/1 |
+| QC/B3 | 0.05 | 3/48/4 | 4/6/0 |
+| QC/B3 | 0.2 | 3/50/13 | 9/13/0 |
+| QC/P0 | 0.05 | 2/49/2 | 5/4/0 |
+| QC/P0 | 0.2 | 3/51/15 | 5/14/0 |
+| QC/P1 | 0.05 | 3/47/4 | 6/2/0 |
+| QC/P1 | 0.2 | 2/50/14 | 12/11/0 |
+| QC/P2 | 0.05 | 2/49/2 | 7/3/0 |
+| QC/P2 | 0.2 | 3/50/15 | 5/14/0 |
+| QC/B2R | 0.05 | 8/0/7 | 8/0/7 |
+| QC/B2R | 0.2 | 13/0/18 | 13/0/18 |
+
+### Paired uncertainty, B2-R and phase filtering
+
+Exactly ten recovery-only B2-R detectors and ten first-second source-role logistic controls were fitted, five folds times two input regimes. No neural fit, hyperparameter search or other model optimization was performed. B2-R retains original windows, training-only equal-recording scaling, clipped features, positive weighting, L2 .01 and optimizer. Only recovery training recordings enter its fit; expert recordings remain in calibration/evaluation. Convergence metadata and training IDs are retained in all 20 checkpoints.
+
+Primary Q/.10 contrasts below are recording-level differences in percentage points, with 2,000 paired role-stratified bootstrap 95% intervals:
+
+
+All 20 prescribed fits completed; 20 report optimizer convergence. Per-fit objectives, iteration counts and hashes are retained in fit_summary.json.
+
+| Contrast | Timely pp [95%] | Premature pp [95%] | Reference pp [95%] |
+| --- | --- | --- | --- |
+| B2R/C1-B2/C1 | -3.6 [-16.4, 9.1] | -10.9 [-20.0, -3.6] | 17.7 [8.1, 27.4] |
+| P1/C1-P0/C1 | 0.0 [-7.3, 7.3] | -3.6 [-10.9, 3.6] | 0.0 [0.0, 0.0] |
+| P1/C1-P2/C1 | 0.0 [-7.3, 7.3] | -3.6 [-10.9, 3.6] | 0.0 [0.0, 0.0] |
+
+B2-R is not a uniform improvement: Q timely is 12 versus B2's 14, fewer premature alarms but more nominal alarms. C1 equals C0 for B2-R at the primary setting because nominal calibration dominates. Its zero premature evaluation rate does not certify safety. Q/P1 has exactly the same pooled timely count as P0/P2, with wide paired intervals. Q+C/P1 has 10 timely versus 5/5: +9.1 percentage points, paired 95% [1.8, 16.4] against either comparator. This is a positive exploratory secondary contrast under C1; all sensitivities remain in paired_effects.json. This secondary command-assisted result does not establish a primary Q benefit. Historical phase accuracy remains unchanged: Q P0/P1/P2 61.01/63.56/62.61%; Q+C 64.98/70.94/67.34%. Improved phase coherence is separate from alarm utility, and the prior negative phase-filter result is preserved.
+
+Paired C1–C0 differences for every model/input/alpha are retained in paired_effects.json, including nonprimary cells. Shared training folds and one collection/object limit uncertainty; recordings, not frames/seeds/aliases, are resampled. Wilson intervals do not remove within-collection dependence. A [0,0] bootstrap interval from identical zero indicators is not evidence of population equivalence. No unadjusted p-value or acceptance probability is used.
+
+### Within-recording and source-context controls
+
+One-second equal-sample windows retain full history; .5-second gaps are a fixed sensitivity, never label correction. The table reports included / 55, target-capacity-greater count, and median mean-score change. Clock contrasts explicitly expose ordinary progress trends. These annotation-delimited comparisons are not deployment success rates.
+
+| Input/model | Gap s | Included | Capacity increases | Median mean change |
+| --- | --- | --- | --- | --- |
+| Q/B0 | 0 | 55 | 48 | 0.0288 |
+| Q/B0 | 0.5 | 55 | 53 | 0.0497 |
+| Q/B2 | 0 | 55 | 42 | 0.0429 |
+| Q/B2 | 0.5 | 55 | 43 | 0.1137 |
+| Q/B3 | 0 | 55 | 34 | 0.0081 |
+| Q/B3 | 0.5 | 55 | 39 | 0.0220 |
+| Q/P0 | 0 | 55 | 30 | 0.0021 |
+| Q/P0 | 0.5 | 55 | 37 | 0.0061 |
+| Q/P1 | 0 | 55 | 31 | 0.0008 |
+| Q/P1 | 0.5 | 55 | 33 | 0.0040 |
+| Q/P2 | 0 | 55 | 30 | 0.0027 |
+| Q/P2 | 0.5 | 55 | 37 | 0.0066 |
+| QC/B0 | 0 | 55 | 48 | 0.0288 |
+| QC/B0 | 0.5 | 55 | 53 | 0.0497 |
+| QC/B2 | 0 | 55 | 40 | 0.0475 |
+| QC/B2 | 0.5 | 55 | 45 | 0.1458 |
+| QC/B3 | 0 | 55 | 35 | 0.0112 |
+| QC/B3 | 0.5 | 55 | 37 | 0.0232 |
+| QC/P0 | 0 | 55 | 37 | 0.0086 |
+| QC/P0 | 0.5 | 55 | 38 | 0.0179 |
+| QC/P1 | 0 | 55 | 36 | 0.0118 |
+| QC/P1 | 0.5 | 55 | 42 | 0.0203 |
+| QC/P2 | 0 | 55 | 37 | 0.0088 |
+| QC/P2 | 0.5 | 55 | 39 | 0.0193 |
+
+Source-role features contain only first-second causal Q or Q+C B2 summaries, no role/time/duration/name/phase annotation features. Sample 41's onset at 1s excludes it only here; 54 recoveries plus 62 references remain. Decision threshold is fixed .5. Results:
+
+| Input | AUROC [95%] | Balanced accuracy [95%] |
+| --- | --- | --- |
+| Q | 0.9818 [0.9459, 1.0000] | 0.9549 [0.9110, 0.9907] |
+| QC | 0.9907 [0.9725, 1.0000] | 0.9549 [0.9122, 0.9907] |
+
+Recording contexts are highly distinguishable before the released onset. Initial pose, preparation or style can be legitimate sources of these differences. This diagnostic does not establish fraud, annotation error or a causal confound, and does not rule out later event-specific information. Q/B2's positive within-recording contrast and calibrated detections support some event-associated signal alongside context differences; none identifies physical onset independently.
+
+### Robustness under unchanged thresholds
+
+C1 thresholds are transferred unchanged to saved streams. Primary-alpha T/P/R cells:
+
+| Input/model | Clean | 10% drop | 30% drop | .2s delay | .5s delay |
+| --- | --- | --- | --- | --- | --- |
+| Q/B0 | 0/0/0 | 0/0/0 | 0/0/0 | 0/0/0 | 0/0/0 |
+| Q/B1 | 0/7/0 | 0/7/0 | 0/7/0 | 0/7/0 | 0/7/0 |
+| Q/B2 | 14/6/0 | 14/6/0 | 12/9/0 | 14/6/0 | 13/6/0 |
+| Q/B3 | 3/9/0 | 3/9/0 | 3/9/0 | 3/9/0 | 3/9/0 |
+| Q/P0 | 2/8/0 | 2/8/0 | 2/8/0 | 2/8/0 | 2/8/0 |
+| Q/P1 | 2/6/0 | 2/7/0 | 2/7/0 | 2/6/0 | 2/6/0 |
+| Q/P2 | 2/8/0 | 2/8/0 | 2/8/0 | 2/8/0 | 2/8/0 |
+| Q/B2R | 12/0/11 | 12/0/12 | 12/0/13 | 12/0/11 | 12/0/11 |
+| QC/B0 | 0/0/0 | 0/0/0 | 0/0/0 | 0/0/0 | 0/0/0 |
+| QC/B1 | 0/7/0 | 0/7/0 | 0/7/0 | 0/7/0 | 0/7/0 |
+| QC/B2 | 16/16/0 | 18/14/0 | 17/15/0 | 18/14/0 | 17/14/0 |
+| QC/B3 | 8/9/0 | 7/11/0 | 9/9/0 | 8/9/0 | 8/9/0 |
+| QC/P0 | 5/9/0 | 6/9/0 | 4/11/0 | 5/9/0 | 4/9/0 |
+| QC/P1 | 10/8/0 | 8/9/0 | 8/9/0 | 10/8/0 | 10/8/0 |
+| QC/P2 | 5/9/0 | 6/9/0 | 4/11/0 | 5/9/0 | 4/9/0 |
+| QC/B2R | 10/0/11 | 11/0/12 | 8/0/13 | 9/0/11 | 7/0/11 |
+
+These are descriptive perturbations of the same recordings, not new samples. A delayed alarm moving into the released target window is not evidence that degraded sensing helps. Q+C uses previously issued native targets and remains an assisted-information regime.
+
+### Streaming, annotation review and independent verification
+
+streaming_parity.json checks the first-hash P1 example in each available C0 review category, deduplicated. C0/C1 risk streams are bitwise identical, first alarms match batch outcomes, and batch/step differences are below 1e-6. Runtime receives only packets and accumulated state; onset/recovery overlays are offline only. Traces show model motion, previous-target residual, phase/emission distributions, predecessor mass, persistence and threshold, not a physical causal explanation. Reproduce either rule with:
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 CUDA_VISIBLE_DEVICES='' \
+PYTHONPATH=src:results/reboot-phase/20261111T204459Z/env/lib/python3.12/site-packages \
+uv run --no-sync python -m dual_rec.reboot.overnight_replay --root results/reboot-overnight/20261111T224622Z \
+  --calibration-root results/reboot-onset-specificity/20261112T090003Z --calibration C1 --alpha .1 \
+  --group recording:042d41db25e25b6a7c61d6f6a387097e6247d33d034071a794d354889d8513ee --variant Q --method P1
+```
+
+annotation_review.json selects three smallest canonical hashes per available C0 category/model/input: premature infeasible, premature feasible, timely, and late/no-alarm miss (disjoint categories). Empty categories remain empty. Raw annotation bounds and provenance are unchanged; score and full-history capacity traces are in annotation_review_scores.npz. Numeric plots do not physically adjudicate labels, and no annotation was corrected.
+
+The independent analyzer imports neither main detector nor scorer. It directly streams thresholds, independently computes capacities, verifies every shared-threshold breakpoint, calibration masks/IDs/fold separation, all 56,160 outcomes, train-only new scalers and direct logistic predictions, and paired resampling. A supplementary independent check covers all 1,320 within-recording rows and source-role AUROC/uncertainty. Exact check counts/hashes are in independent_audit.json and independent_controls_audit.json. Tests/lint/resource evidence and intentional source changes are sealed at completion.
+
+The original Q/B3 onset-reset 1→51/55 comparison remains invalid optimistic accounting; it is neither adopted nor attributed to REBOOT authors. [Kim et al.](https://arxiv.org/abs/2109.05257) provide related context on inflated anomaly metrics from point adjustment; that is a different operation. Existing FAIL-Detect and Sentinel positioning remains applicable. This continuation adds no theoretical or new-method claim.
+
+### Disposition, preservation and local handoff
+
+Matched calibration improves the evaluated Q/B2 alarm tradeoff but leaves most events missed. Fixed-score capacities vary strongly; neither universal absence of signal nor a solved calibration problem is supported. The source-role control reveals context separability; B2-R trades fewer premature for more reference alarms. Primary Q phase-filter advantage remains unsupported. No physical recovery, intervention efficacy, cross-object failure sensitivity or publication-readiness claim follows.
+
+Local review bundle: `results/reboot-onset-specificity/20261112T090003Z/supervisor_review.tar.gz`; its exact SHA-256, final branch/commit, tests, storage/transfer and measured-worker CPU are in completion_manifest.json/resources.json. Raw outputs/logs/checkpoints stay untracked. `.gitignore`, historical lockfiles, old weights/seals and all unrelated files are preserved. The only historical source changes are configurable limits in the existing bounded worker and registered C0/C1 loading in the existing replay interface. Historical documentation prefixes are byte-preserved. No push, credentials, contact, GPU or detached research worker is used.
+
+Resume only an unfinished unsealed run using the existing locked worker and the registered stages in onset_specificity/onset_analysis; fitting reuses checkpoint hashes and refuses a 21st fit. Completed runs reject mutations. Commands and executed source hashes are in commands.jsonl; pre-format executed source snapshots remain under provenance/. All independent fixed stages are complete; no new campaign is authorized by these findings.
+
+![score_feasibility](results/reboot-onset-specificity/20261112T090003Z/figures/score_feasibility.png)
+
+![calibration_tradeoffs](results/reboot-onset-specificity/20261112T090003Z/figures/calibration_tradeoffs.png)
+
+![within_source_diagnostics](results/reboot-onset-specificity/20261112T090003Z/figures/within_source_diagnostics.png)
+
+
+Engineering validation: 13 focused onset tests; 62 maintained REBOOT tests passed. Maintained Ruff lint and format checks passed. Before report/archive/seal, measured worker/driver CPU was 397.804s and conservative session wall was 2922.357s. Final closing costs and artifact storage are added in resources.json. GPU and paid API use are zero.

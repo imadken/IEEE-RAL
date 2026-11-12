@@ -151,7 +151,16 @@ class StreamingDetector:
         }
 
 
-def replay(root, group, *, variant="Q", method="P1"):
+def replay(
+    root,
+    group,
+    *,
+    variant="Q",
+    method="P1",
+    calibration_root=None,
+    calibration="C0",
+    alpha=0.1,
+):
     registry = json.loads((root / "registry.json").read_text())
     row = next(r for r in registry if r["group"] == group and r["eligible"])
     fold = row["fold"]
@@ -166,6 +175,14 @@ def replay(root, group, *, variant="Q", method="P1"):
     threshold = json.loads((root / "thresholds.json").read_text())[
         f"{fold}:{variant}:{method}"
     ]["threshold"]
+    if calibration_root is not None:
+        from dual_rec.reboot.onset_analysis import deployment_threshold
+
+        threshold = deployment_threshold(
+            calibration_root, fold, variant, method, alpha, calibration
+        )
+    elif calibration != "C0" or alpha != 0.1:
+        raise ValueError("A registered continuation calibration root is required")
     bundle = models_for(root, fold, variant)
     detector = StreamingDetector(bundle, threshold, method=method, variant=variant)
     arrays = arrays_for([row])[group]
@@ -260,6 +277,9 @@ def main():
     parser.add_argument("--method", choices=("B3", "P0", "P1", "P2"), default="P1")
     parser.add_argument("--variant", choices=("Q", "QC"), default="Q")
     parser.add_argument("--examples", action="store_true")
+    parser.add_argument("--calibration-root", type=Path)
+    parser.add_argument("--calibration", choices=("C0", "C1"), default="C0")
+    parser.add_argument("--alpha", type=float, choices=(0.05, 0.1, 0.2), default=0.1)
     args = parser.parse_args()
     torch.set_num_threads(2)
     torch.set_num_interop_threads(1)
@@ -270,7 +290,13 @@ def main():
             examples(args.root, variant)
     else:
         for trace in replay(
-            args.root, args.group, variant=args.variant, method=args.method
+            args.root,
+            args.group,
+            variant=args.variant,
+            method=args.method,
+            calibration_root=args.calibration_root,
+            calibration=args.calibration,
+            alpha=args.alpha,
         ):
             print(json.dumps(trace))
 

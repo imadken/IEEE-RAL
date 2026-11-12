@@ -53,6 +53,14 @@ def main():
     with Path("/tmp/reboot-overnight-ieeeral.lock").open("a") as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         initial = json.loads((root / "initial.json").read_text())
+        limits = initial["limits"]
+        reserve = initial.get(
+            "reserve",
+            {"wall_seconds": 2700, "cpu_seconds": 1800, "new_bytes": 100_000_000},
+        )
+        wall_ceiling = limits["wall_seconds"] - reserve["wall_seconds"]
+        cpu_ceiling = limits["cpu_seconds"] - reserve["cpu_seconds"]
+        disk_ceiling = limits["new_bytes"] - reserve["new_bytes"]
         rows = [
             json.loads(s) for s in (root / "commands.jsonl").read_text().splitlines()
         ]
@@ -69,6 +77,7 @@ def main():
             "OMP_WAIT_POLICY": "PASSIVE",
             "KMP_BLOCKTIME": "0",
             "NUMEXPR_NUM_THREADS": "1",
+            "CUDA_VISIBLE_DEVICES": "",
             "UV_CACHE_DIR": str(root.resolve() / "cache/uv"),
             "TMPDIR": str(root.resolve() / "cache/tmp"),
             "MPLCONFIGDIR": str(root.resolve() / "cache/matplotlib"),
@@ -94,9 +103,9 @@ def main():
         try:
             with (root / (args.name + ".log")).open("x") as log:
                 if (
-                    prior_cpu >= 41400
-                    or time.time() - initial["started_epoch"] >= 33300
-                    or size(root) >= 3_900_000_000
+                    prior_cpu >= cpu_ceiling
+                    or time.time() - initial["started_epoch"] >= wall_ceiling
+                    or size(root) >= disk_ceiling
                 ):
                     raise ValueError("Reserved finalization resource boundary reached")
                 child = subprocess.Popen(
@@ -122,9 +131,9 @@ def main():
                         next_check = wall + 10
                     if (
                         wall >= args.timeout
-                        or cpu + prior_cpu >= 41400
-                        or time.time() - initial["started_epoch"] >= 33300
-                        or disk >= 3_900_000_000
+                        or cpu + prior_cpu >= cpu_ceiling
+                        or time.time() - initial["started_epoch"] >= wall_ceiling
+                        or disk >= disk_ceiling
                     ):
                         reason = "bounded_stop"
                         stop(child)
