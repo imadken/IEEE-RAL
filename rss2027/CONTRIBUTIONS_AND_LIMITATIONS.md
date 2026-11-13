@@ -1,50 +1,15 @@
-# DSRE Stage 1: central contribution and limitations
+# DSRE Stage1: contribution and limits after independent follow-up
 
-**Question.** When is a recovery intervention justified by the smallest set of
-actually observable facts, and what prevents justification when evidence is
-insufficient? Actions, simulator tasks, observation thresholds and utility remain
-fixed.
+The fixed question is what observable evidence suffices to justify a fixed recovery intervention relative to paired outcomes, and what prevents justification. DSRE supplies minimum finite-reference facts, explicit observation/repertoire/reference witnesses and a fixed observation-budget frontier.
 
-**Candidate contribution.** A reproducible finite-reference methodology connects
-paired robot intervention outcomes to minimum observable justifications, explicit
-observation/repertoire/reference-data witnesses, and a costed representation
-frontier. The unit of evidence is a qualified checkpoint with both fixed actions
-measured. Neither-success states distinguish inadequate repertoire from an
-observation collision; absent support is a separate reference limitation.
+The mathematical core is established: robust action intersections, pure-rule enumeration, minimum hitting sets and subset selection are not new. B7 is equivalent; short rules and trees remain strong same-information controls. The candidate contribution is an operational robot-intervention formulation and a reproducible characterization of sufficiency, necessity and insufficiency, not algorithmic superiority.
 
-**Established foundations.** Robust action intersections, refinement monotonicity,
-minimum pure rules, hitting sets and subset enumeration are prior principles.
-DSRE's actions and minimum explanations exactly match ordinary B7 under equal
-support/ties; two-literal rules match major settings. No new general algorithm,
-feasibility theory, active sensor or calibration method is claimed.
+A separately preregistered untouched suffix completed 333/333 new parents and 666/666 primary checkpoints, using frozen old references/routers and zero new fits. Pick successful strict recommendations change 145 to 187/332: +12.65 [+9.33, +16.27] pp. Failed-start successes change 16 to 18/109; required-recovery successes change +1. The decision-necessity decomposition retains both-success adequate choices separately. Unacceptable choices change 0 to 0. All class/action/support/literal results and adverse controls are preserved.
 
-**Measured findings.** On 422 old Pick checkpoints, b1 increases finite actionable
-mass183→235 and cross-fit successful strict recommendations202→242, with
-unacceptable choices1→2. Failed-start successes19→18 reveal that the all-start gain
-mostly maintains success. Push strict coverage stays zero despite415/422
-successful recoveries. These are reused development data, not untouched holdout.
+Strict CART2 action disagreements number 1; pure cap2 disagreements 1. Provisional .9 CART2 and B5 use different empirical purity standards, with Pick b1 good/bad counts 240/0 and 224/17. These are not calibrated operating points or evidence of a new controller.
 
-A frozen prospective run completed33 parents/task before an unexplained SIGTERM.
-Of133 qualified checkpoints,132 from complete parents form primary inference;
-one orphan is retained separately, and667/800 planned checkpoints lack qualified
-outcomes. Pick successes29→38/66 give+13.64pp paired95% interval[6.06,21.21], all
-nine additions among already-successful starts. Failed-start successes stay6/20;
-strict CART2 matches every decision. Provisional .9 CART succeeds53/66 with no
-observed error, versus38/66 strict DSRE. Push strict coverage remains0 while
-recovery succeeds66/66. No physical recovery improvement attributable to DSRE is
-shown.
+The earlier interrupted study remains immutable: 133 qualified checkpoints, 132 primary, one orphan excluded. The SIGTERM cause is unknown. Completed-parent pooling is secondary descriptive because earlier positive results were inspected before follow-up. The incomplete boundary parent is never replaced or remeasured.
 
-**Limits.** Two simulated tasks, two fixed interventions, binary terminal utility,
-deterministic branches, idealized poses and abstract predicate cost limit external
-validity. Only five fresh parents receive strict recovery. Zero observed error and
-degenerate bootstrap intervals are not population guarantees. The prospective
-cohort is incomplete, interruption-related selection bias is unresolved, no new
-future trajectories were duplicated, and interrupted-job CPU measurement was lost.
-No deployment calibration, real perception, hardware transfer or human study exists.
+Independent raw-physics, predicate/rule/tree and numerical audits verify the declared data and endpoints. Confirmation strengthens the bounded characterization, while method distinctiveness, end-to-end recovery benefit and calibration remain unestablished. Two simulated tasks, fixed binary utility, idealized poses and abstract predicate costs limit external validity; no hardware, stochastic-repeatability or human study is claimed.
 
-**Review status.** PAPER_DRAFT_READY: yes, complete anonymous six-page official-template
-PDF. FRESH_EVIDENCE_INCOMPLETE: audited subset available; full study not completed.
-RSS_STAGE1_RESEARCH_READINESS: NOT_ESTABLISHED for a strong submission; contribution
-distinctiveness and meaningful recovery utility remain substantive weaknesses.
-The principal researcher owns the submission decision. Nothing was submitted or
-pushed. The single roadmap is in `docs/DSRE_RSS2027_REVIEWER_CRITIQUE.md`.
+Scientific gate: **borderline preliminary characterization; strong RSS readiness not established**. The principal researcher retains the submission decision. No push, upload or submission is performed. Exact evidence, reproduction commands, resources and local commit are in the follow-up seal.

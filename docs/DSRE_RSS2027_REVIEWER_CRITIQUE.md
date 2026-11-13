@@ -1,143 +1,56 @@
-# DSRE RSS2027: stringent mock scientific review
+# DSRE RSS2027: scientific critique and rebuttal preparation
 
-This is a same-session adversarial assessment informed by separate numerical and
-recorded-physics implementations. It is not an external human review or acceptance
-prediction. The candidate paper and new evidence are complete for the authorized
-runtime-failure path. The prospective cohort is explicitly incomplete.
+This is a same-session adversarial review supported by separate raw-physics/rule/predicate and numerical implementations. It is not external human peer review or an acceptance prediction.
 
-## Overall assessment
+## Separate scientific gates
 
-**PAPER_DRAFT_READY: YES.** The complete anonymous six-page manuscript is in
-`rss2027/dsre_stage1.tex` and its rendered PDF; five content pages plus one reference
-page use the unchanged official class. The complete first draft predates the end of
-physics, and verified findings subsequently replaced its pending-result language.
+- **Independent confirmation:** COMPLETE_PREREGISTERED_SUFFIX; 333/333 new complete parents and 666/666 primary checkpoints. The earlier 133 qualified checkpoints and unexplained SIGTERM remain sealed separately; one old orphan is excluded.
+- **Preliminary characterization:** supported within the two-task, fixed-skill, declared-vocabulary protocol. Submission-worthiness is **borderline**, requiring principal-researcher judgment about the operational insight; formal six-page compliance does not establish a strong RSS contribution.
+- **Method distinctiveness:** not established. B7 is the same minimum pure-rule decision problem; pure cap2 rules disagree on 1 suffix actions. New data cannot turn an established enumeration/intersection principle into new theory.
+- **Recovery benefit:** failed-start successful recommendations change 16 to 18/109; required recover-only successes change +1. These are justified-decision coverage outcomes, not a new controller or an end-to-end physical-policy improvement.
+- **Calibration:** not performed. Distinct assigned/error parents are reported for every task/action/budget; confirmation is not an independent calibration population. Rare strata below 42 are identified in `scientific_gate.json`.
 
-**FRESH_EVIDENCE_INCOMPLETE.** There are133 qualified new checkpoints,132 from66
-complete parents (33/task), with one qualified orphan retained separately. No
-relaunch followed the unexpected SIGTERM. The signal cause is unknown. The fixed
-study planned800 checkpoints;667 lack qualified paired outcomes. This is a trusted
-available subset, not complete400-parent confirmation. Numerical/replay audits pass,
-but interruption-related missingness limits generalization and the wrapper's exact
-physics CPU measurement is unavailable.
+## New suffix-specific qualification of the earlier non-gain
 
-**RSS_STAGE1_RESEARCH_READINESS: NOT_ESTABLISHED for a strong submission.** A useful
-characterization and transparent implementation exist; a substantive distinct
-robotics contribution or meaningful recovery advantage beyond strong known rules
-has not been established. A polished draft and formal Stage1 eligibility do not
-resolve this. The principal researcher retains the final scientific decision.
+Failed-start coverage: +1.83 [+0.00, +4.67] pp. Recover-only coverage: +1.19 [+0.00, +3.90] pp. Both intervals include zero. The suffix adds two failed-start successes (one required continue, one required recover); therefore the earlier zero-gain finding is not silently generalized to the new cohort. Forty of the 42 additional successes still occur on initially successful states. This does not establish an end-to-end recovery-policy improvement.
 
-## Hardest objections
+The sole strict CART2/cap2 exception is a recover-only offset checkpoint requiring a three-fact certificate supported by five reference parents. B7 supplies exactly the same certificate. `fresh_control_exception.json` retains its raw source hash, decision and action-equation qualification; the observation is descriptive and introduces no new rule or controller.
 
-1. **The decision method is an ordinary pure rule.** B7 matches16,880 reused views
-   and264 new task/checkpoint/budget decisions, including the same minimum facts.
-   Two-literal rules reproduce major settings; a strict CART2 matches all fresh
-   decisions. Witness labels and a renderer do not establish a new algorithm.
-   The paper discloses this and frames an empirical methodology, but its added
-   scientific value beyond a careful application of known rule machinery is weak.
+## Central scientific interpretation
 
-2. **The feasibility theory is already covered.** Zhu/Leonard's robust feasible-action
-   intersection and refinement argument directly subsume the criterion. MDP minimum
-   explanations precede DSRE; DISCRET already connects outcome subgroups with rule
-   explanations. Exact subset search, hitting sets and deletion witnesses are not
-   novelty. No theorem or new algorithm is claimed in the revision. This corrects
-   positioning but does not, by itself, create a strong contribution.
+Untouched Pick b1 versus b0 yields +12.65 [+9.33, +16.27] pp successful strict coverage, with unacceptable choices 0 to 0. The gain decomposes as continue-only +14, recover-only +1, both-success +27, neither +0. Both-success choices are adequate without being uniquely required. The gain cannot be described only by its all-start percentage.
 
-3. **The headline gain is not failure recovery.** Old b1 adds40 successful strict
-   recommendations overall but loses one in the145 failed starts (19→18). Fresh
-   b1 adds9/66 (+13.64pp,[6.06,21.21]pp) entirely in already-successful starts;
-   failed-start successes remain6/20. These data substantiate representation-dependent
-   success-maintenance coverage, not improved physical recovery. A future framing
-   must not silently replace the fixed recovery question to obtain a win.
+Strict CART2 disagrees on 1 suffix actions and at Pick b1 gives 186 successes/0 unacceptable choices; DSRE gives 187/0. Provisional .9 CART gives 240/0, and B5 gives 224/17, using the same observables and reference. Their empirical-purity standard differs from strict universality. Any favorable observed operating point remains uncalibrated. B7 supplies identical decisions and minimum facts, precluding an algorithmic superiority claim.
 
-4. **The strongest controls are unfavorable.** Strict CART2 exactly matches fresh
-   actions; it uses more literals, but ordinary exact rules match DSRE's brevity.
-   Provisional .9 CART gives53/66 Pick successes with no observed errors compared
-   with DSRE38/66; the standard differs, but a broad utility superiority claim is
-   untenable. Ordinary B5 gives48/66 with5 errors. All controls receive identical
-   observables and outcomes; none is replaced by a weak detector/prompt baseline.
+The potentially useful insight is that evidence which increases finite and out-of-sample justification coverage need not resolve the states where recovery is required. Explicit paired outcomes and obstruction witnesses separate representation conflict, inadequate repertoire and missing reference support. The decision-necessity decomposition sharpens that characterization without changing the utility or solver. Its relevance beyond a careful known-rule application remains the main reviewer challenge.
 
-5. **Push zero coverage reflects the menu/reference.** The fixed vocabulary cannot
-   separate six old opposing-action edges and retains neither-success cases.
-   Always recover succeeds415/422 old and66/66 new checkpoints. This is a useful
-   counterexample to equating high skill success with universal observable
-   justification. It is not evidence that recovery is physically ineffective or
-   that raw poses and all possible sensors cannot distinguish the states.
+## Rebuttal preparation: hardest objections and evidence
 
-6. **Observation cost and physical applicability are unvalidated.** The six optional
-   channels summarize the same simulator-provided pose packet. Predicate count is
-   neither an actual sensor count nor measured sensing time, accuracy, energy or
-   acquisition cost. There is no real perception, new physical sensing or hardware
-   experiment. The paper's figure captions and method now state this explicitly.
+1. **“This is ordinary sufficient-rule enumeration.”** Agree on the mathematical core. The frozen same-grammar B7 identity and cap2 controls are retained. The claim is the operational robot-intervention formulation, constructive insufficiency distinctions and reproducible empirical characterization. Do not answer by inventing a new algorithm or claiming that witness formatting alone is novel. A stronger contribution needs evidence that this contract changes an actual robotics decision beyond a simple known-rule interface.
 
-7. **Finite reference purity has no deployment guarantee.** Reused cross-fit errors
-   include unseen neither-success outcomes and an absent b1 exact signature.
-   Zero fresh errors cannot establish zero population risk; only five independent
-   fresh parents receive recovery, and at most33 receive continue. The previous42
-   zero-error assigned-parent calibration criterion is not met, and confirmation
-   would not automatically be an independent calibration population anyway.
-   Bootstrap[0,0] differences do not prove population equivalence or safety.
+2. **“The action-intersection and observation-refinement theory already exists.”** Agree. Zhu/Leonard's partial-observability framework subsumes the feasibility core; Khan/Poupart/Black established minimal MDP decision explanations; DISCRET already synthesizes outcome-grounded subgroup rules. Anchors and probabilistic sufficient explanations target predictor sufficiency. The paper distinguishes its outcome target without claiming priority for these principles. The source-checked bibliography/ledger remains unchanged except factual count corrections.
 
-8. **Freshness improves evidential status but not breadth.** The fresh seeds,
-   channels, full reference, trees, support/ties and conditions were fixed before
-   outcomes. That is materially stronger than reused development cross-fitting.
-   Yet only33/200 planned parents per task complete, with a fixed-order truncation
-   and unresolved interruption cause. No new-seed future trajectory duplicates
-   were run under the1600-continuation cap. Checkpoint/controller fidelity and actual
-   action equations pass; stochastic repeatability and external validity remain open.
+3. **“Does it recover failures or just maintain success?”** Use the full necessity table, not a headline alone. Failed-start change is +2; required-recovery change is +1. Report any positive, zero or negative value exactly. Additional successful justification is not automatically an end-to-end recovery improvement because abstention execution semantics and calibrated routing were not physically evaluated.
 
-## Factual and presentation corrections completed
+4. **“Why does Push abstain if recovery works?”** The frozen reference contains compatible neither-success and opposing-action cases. Universal finite justification is different from high measured skill success in new seeds. All optional predicates remain uninformative for old Push classes. The raw poses differ, so neither the result nor its six unseparable edges prove that every sensor or continuous observation model must fail. Fixed controllers already use continuous poses; the limitation is the declared routing vocabulary and reference contract.
 
-- Corrected the independent checker to compare B7 actions/minimum explanations,
-  not diagnostic support metadata on abstentions. No decision disagreement was hidden.
-- Recomputed eleven exact-selector error views from seven unique Pick checkpoints:
-  ten neither-success views, one recover-only state wrongly assigned continue.
-  Inspected absent/adverse training signatures with source references retained internally.
-- Regenerated all initial-state, outcome-class, task, budget and grouped-fold tables,
-  paired parent uncertainty, and equal-information strong-baseline contrasts.
-- Replaced an inaccurate draft phrase that “most” checkpoints remain unjustifiable
-  with the exact174/422 remaining outside the all-six finite actionable classes.
-- Moved the primary figure earlier, filled the final content page with actual fresh
-  evidence, and kept finite-reference ceilings separate from cross-fit predictions.
-- Restored Times-compatible Type1 fonts under the official class using T1 encoding;
-  no font shrinking, margin changes, spacing tricks or template imitation.
-- Removed pending-result language after audit. Incomplete physics, no failed-start
-  gain, matched strict tree, stronger provisional operating point and NOT_CALIBRATED
-  remain prominent. Full source-to-claim and citation checks are separate artifacts.
+5. **“The stronger tree or empirical-risk rule is enough.”** Give the exact same-information counts and paired intervals, including adverse comparisons. A strict CART match is sample equality, not a theorem; B7 equality is mathematical. A provisional .9 leaf or .10 empirical-error rule changes the purity standard and has no deployment guarantee. Fewer literals than a tree path do not establish human interpretability or method superiority when ordinary exact rules match them.
 
-## Narrow primary-source novelty check
+6. **“The follow-up is selected after a positive preliminary result.”** Disclose the history. The prior 33 parents/task were inspected before authorization; the new 333 complete parents belong exclusively to the fixed untouched suffix and use the same pre-existing routers. Seed manifest, endpoint definitions, bootstrap seed and continuation policy preceded outcomes. Pooling is explicitly secondary descriptive and excludes the old orphan. No favorable replacement, threshold search or significance stopping occurred.
 
-The internal source-to-claim ledger contains exact verified URLs and bibliographic
-metadata. Khan/Poupart/Black(ICAPS2009) justify MDP actions; Anchors(AAAI2018) and
-probabilistic sufficient explanations(IJCAI2021) concern predictor sufficiency;
-DISCRET(ICML2024) synthesizes outcome-aware treatment rules. Zhu/Leonard(Applied
-Sciences2026) subsume the feasibility core. Ernst etal(Frontiers2026) develop explicit
-observable decision context. DA-GRD and RESCUE are2026 preprints, respectively active
-physical disambiguation and matched intervention-relative monitoring; acceptance
-venues are not invented. CAPE is verified ICRA2024 precondition-based corrective
-planning. Peddi/Bezzo is cited as its verified2023 preprint, because an acceptance
-venue was not independently established. ManiSkill3 is cited through its RSS2025
-proceedings entry, not an inferred venue for the arXiv title. This is a bounded
-closest-work check, not comprehensive novelty clearance.
+7. **“Zero observed errors imply safety.”** They do not. Finite purity and a two-parent support gate are not out-of-sample risk control. Bootstrap resampling cannot invent unseen failures and can produce [0,0]. Report actual assigned-parent strata versus the historical 42 zero-error requirement, while retaining NOT_CALIBRATED even for larger strata. Independent calibration, stochastic repeatability and deployment execution remain unfinished.
 
-## One roadmap to December4
+8. **“These are not real sensing costs or broad robotics evidence.”** Correct: all predicates summarize simulator pose interfaces; cost is Boolean-predicate count, not sensors, latency or energy. There are two tasks, two fixed skills and binary terminal utility. No hardware, real perception or human study was run. Do not generalize beyond the declared scope or relabel the offline observation design as physical active sensing.
 
-1. **Now: review the completed draft and adverse scientific gate.** Decide whether
-   the intervention-grounded witness/frontier characterization answers a robotics
-   question strongly enough beyond a standard outcome-rule interface. Do not claim
-   algorithmic novelty or suppress B7/CART equivalence.
-2. **Before final evidence freeze:** if a further study is separately authorized,
-   preregister it before outcomes and address the interrupted cohort and rare
-   recovery assignment. Do not resume or overwrite this sealed run, replenish seeds,
-   tune predicates/controllers, or convert the available subset into full confirmation.
-   Independent calibration and physical sensing-cost validation remain separate
-   unfinished scientific work, not tasks secretly performed in this session.
-3. **Before December4,23:59AoE:** incorporate only verified evidence, then repeat
-   citation, claim, anonymity, page/font and figure checks. Stage1 has no supplement;
-   the six-page PDF must remain self-contained. The principal researcher chooses
-   authors and submits manually. No automatic submission, push or outside upload.
-4. **After Stage1 only if invited:** keep the same DSRE question for rebuttal and
-   the invited Extension Charter/final work. Stage2 is not automatic. The official
-   schedule, not an assumption of acceptance, governs later incorporation of evidence.
+9. **“Can we trust the paired branches and restart handling?”** Use the new atomic parent markers, immutable attempt list, source hashes and independent per-chunk CPU/wall records. Canonical full prefixes, controller memory, model edits and actual action equations are audited. The new study has no native snapshot restore and no independently duplicated future trajectories. Successful chunking does not identify the old SIGTERM cause. Preserve incomplete traces and every earlier seal rather than repairing history.
 
-No alternate algorithm, detector, controller, failure condition, topic, publication
-submission or GitHub push was introduced to obtain a favorable result.
+## Factual corrections and presentation
+
+The old manuscript confused CART recommendations with successes: strict CART2 good counts are 201,224,224,217 (one bad each), not202,225,225,218; provisional b0 CART2 has 296 good/297 recommendations, not 297 good. Raw/aggregated evidence was correct. `presentation_errata.json` preserves the correction, and original paper bytes survive in `starting_files/` and git history. The malformed indicator command and stale Introduction future tense are corrected. Anonymous physical cases A–E now ground recover-only, both-success, neither-success and opposing-action examples in observed coordinates and measured outcomes.
+
+## Priorities before manual Stage1 submission
+
+1. Review whether the empirical sufficiency/necessity insight merits a Stage1 characterization paper despite exact-rule equivalence. Do not manufacture an algorithmic superiority claim or pivot the research question.
+2. Use only the verified final suffix figures, both initial-state populations, strongest baseline/error counts and explicit missingness. Keep pooled estimates secondary. Final page/font/anonymity/citation/claim audit must pass, with no supplement or external paper links.
+3. Treat independent calibration, stochastic repeats, actual observation cost, hardware transfer and practical witness usefulness as remaining scientific work. They were not silently completed here and are not implied by confirmation sample size.
+4. The principal researcher owns authorship and manual submission before December4,2026 23:59AoE. Nothing is pushed, uploaded or submitted. If invited, retain the same question during rebuttal and the Extension Charter; Stage2 is not automatic.

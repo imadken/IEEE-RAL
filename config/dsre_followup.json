@@ -1,0 +1,23 @@
+{
+  "reviewed_base": "45422ef455327db91e08752edb684181800971ed",
+  "previous_root": "results/dsre-rss2027/20261113T193554Z",
+  "pick_seed_first": 6000034,
+  "pick_seed_last": 6000199,
+  "push_seed_first": 7000033,
+  "push_seed_last": 7000199,
+  "excluded_boundary_parent": "PickCube-v1/6000033",
+  "maximum_parents": 333,
+  "maximum_checkpoints": 666,
+  "maximum_continuations": 1332,
+  "physics_wall_seconds": 10800,
+  "chunk_wall_seconds": 480,
+  "maximum_parents_per_chunk": 24,
+  "parent_wall_seconds": 120,
+  "unexpected_sigterm_limit": 2,
+  "bootstrap_draws": 4000,
+  "bootstrap_seed": 2026111322,
+  "pooled_bootstrap_seed": 2026111422,
+  "new_artifact_bytes": 1000000000,
+  "physics_artifact_reserve_bytes": 150000000,
+  "deployment": "NOT_CALIBRATED"
+}

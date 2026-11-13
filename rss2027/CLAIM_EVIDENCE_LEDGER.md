@@ -24,9 +24,9 @@ Initial physical qualification: `results/dsre-stage1/20261113T144253Z/` (Q).
 | Failed-start denominator145, already-successful277; failed success19,18,21,26 and bad0,1,1,5 | Exploratory subgroup, central adverse result | Same tables `initial_failure`/`initial_success`; complete outcome-category and fold slices included. Gains are not demonstrated physical recovery improvement. |
 | b1 all-start gain40/422=9.4787pp | Paired exploratory contrast | R/reused_paired_intervals.json; original 2000-draw D interval [6.6351,12.5592]pp preserved; independent 4000-draw interval reported explicitly in final revision, not silently substituted for the old estimate. |
 | B1_two agrees throughb2; b3 rec248/bad3 versus DSRE256/bad6 | Same-information grammar control | R/reused_stratified_tables.json, original model references in D/designs. Difference is more permissive grammar, not independent evidence of physical benefit. |
-| CART2 strict good202,225,225,218; bad1 each | Same-information control | Same tables `CART2_strict`; original four-category nodes/support; paired strong-control contrasts in R/reused_paired_intervals.json. |
+| CART2 strict good201,224,224,217; bad1 each (corrected recommendation/success transcription) | Same-information control | Same tables `CART2_strict`; original four-category nodes/support; paired strong-control contrasts in R/reused_paired_intervals.json. |
 | Exact=greedy atb1; b3 +8successful,+4bad,+1predicate | Selector comparison | D/metrics.json and R independent selector/B7 audit. Reused development result, not optimal active sensing. |
-| Pick CART2 .9 b0 good297/bad1; Push alwaysR415/422 | Provisional/constant controls | R/reused_stratified_tables.json; .9 empirical purity changes strictness. Push outcomes include neither5 and continue-only2 among seven R failures. |
+| Pick CART2 .9 b0 good296/bad1 (297 recommendations); Push alwaysR415/422 | Provisional/constant controls | R/reused_stratified_tables.json; .9 empirical purity changes strictness. Push outcomes include neither5 and continue-only2 among seven R failures. |
 | Six Push opposing edges, zero separable under menu | Finite obstruction graph | D/ambiguity_graph.json; worked_examples has opposite-action pair identical in all12 predicates. Raw poses differ; not a no-sensor theorem. |
 | Pick physical pair coordinates and effects | Post hoc illustrative examples | D/worked_examples.json (IDs internal), source raw trace hashes in Q/D. First can be separated from neither case by object-left predicate, pure R child2parents. Not example-driven threshold selection. |
 | Each strict held-out error | Independent adverse-case inspection | R/reused_error_inspection.json:11 exact-selector views,7unique IDs; ten neither-success views and one recover-only assigned continue. Training exact signatures contain no adverse matching label; one b1 complete signature absent. |
@@ -87,3 +87,34 @@ external manuscript upload is authorized or performed.
 Final output claims are checked against these artifacts by `dsre_paper_finish.py`.
 The paper now uses the independently regenerated4000-draw old-data interval
 [6.64,12.32]pp; the earlier2000-draw [6.64,12.56]pp is preserved and explained.
+
+## Independent follow-up registration and presentation corrections
+
+New evidence root: `results/dsre-followup/20261113T205403Z/`. The separate frozen suffix is166Pick parents (6000034..6000199) and167Push parents (7000033..7000199). The old boundary parent is excluded, old evidence is immutable, and the new estimator uses suffix-only data. `followup_preregistration.md`, `fresh_seed_manifest.json`, and `confirmation_freeze.json` precede new outcomes. The prior positive preliminary cohort was inspected before this decision. No models are retrained.
+
+`presentation_errata.json` records the earlier paper's CART recommendation-versus-success transcription errors and indicator-command typo. The measured tables were correct and are unchanged. Historical draft bytes are retained in `starting_files/` and the reviewed commit. `physical_examples.json` records source identifiers, raw predecision coordinates, predicate bits and paired outcomes for cases A–E; caseC is the prespecified lexicographically first initially-successful both-success Pick record. New figures count abstract Boolean predicates, never physical sensors or sensing latency.
+
+## Untouched suffix: final verified results
+
+Evidence root: `results/dsre-followup/20261113T205403Z`. Primary = new suffix only; old boundary and orphan excluded. Pooled results are secondary descriptive.
+
+| Claim | Evidence and scope |
+|---|---|
+| 333/333 complete new parents; 666/666 primary checkpoints; 0 missing/partial parents | followup_missingness.json and atomic parent_progress; separate untouched suffix, never replacement seeds. |
+| PickCube-v1, b0: rec/good/bad=145/145/0, N=332, parents=166 | suffix_results.json tables; minimum facts/support in suffix_decisions.json. |
+| PickCube-v1, b1: rec/good/bad=187/187/0, N=332, parents=166 | suffix_results.json tables; minimum facts/support in suffix_decisions.json. |
+| PushCube-v1, b0: rec/good/bad=0/0/0, N=334, parents=167 | suffix_results.json tables; minimum facts/support in suffix_decisions.json. |
+| PushCube-v1, b1: rec/good/bad=0/0/0, N=334, parents=167 | suffix_results.json tables; minimum facts/support in suffix_decisions.json. |
+| Pick b1-b0 successful strict coverage +12.65 [+9.33, +16.27] pp | suffix_results.json paired_intervals; 4000 paired parent draws, seed 2026111322. |
+| Pick failed-start good 16->18/109; required recover-only good difference +1 | decision_necessity_records and outcome-category tables; same binary utility, not a new score. |
+| Pick gain by category: C-only +14, R-only +1, both +27, neither +0 | Same paired records; interchangeable adequacy separated from required action. |
+| Strict CART2 disagreements 1; cap2 disagreements 1; B7 identity retained | suffix_results.json equivalences, independent Oracle/direct tree audit. CART sample equality is not a universal theorem. |
+| Pick b1 provisional CART2 good/bad 240/0; B5 224/17 | Same observables/reference; empirical .9/.10 criterion differs from strict finite purity. |
+| 666 traces, 93138 prefix states, 93240 controls; maximum action error 0 | independent_audit.json and replay_audit_records.json; no duplicated future trajectories or external human replication. |
+| Zero new model fits; eight old frozen CART trees reused | Frozen router bytes/source pins and scientific_reuse_regression.json. |
+| Every task/budget/action assignment and NOT_CALIBRATED | suffix_results.json assignment_counts; 42-parent criterion is not automatically met and confirmation is not independent calibration. |
+| Secondary pooled complete-parent analysis | pooled_secondary_results.json; previously inspected cohort included, orphan excluded, no untouched-confirmation claim. |
+| Anonymous cases A-E | physical_examples.json records actual raw source SHA256, predecision coordinates, timestamps and paired outcomes; illustrative development cases only. |
+| Exact formal statement, no new pure-rule theory | Existing method/specifications and verified prior-work entries above; indicator typo corrected without changing solver. |
+
+Final PDF page/font/anonymity and every main table/interval/physical value are checked in paper_format_audit.json and final_audit.json. Historical CART recommendation/success corrections are retained in presentation_errata.json. No paper upload, push or submission.
