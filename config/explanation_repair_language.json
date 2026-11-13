@@ -1,0 +1,29 @@
+{
+  "model": "EleutherAI/pythia-160m",
+  "revision": "50f5173d932e8e61f858120bcb800b97af589f46",
+  "runtime": [
+    "transformers==4.57.6",
+    "tokenizers==0.22.2",
+    "huggingface-hub==0.36.2",
+    "numpy==1.26.4"
+  ],
+  "torch": "reuse unchanged project torch==2.5.1+cpu via declared PYTHONPATH",
+  "device": "cpu",
+  "threads": 2,
+  "dtype": "float32",
+  "max_new_tokens": 96,
+  "do_sample": false,
+  "num_beams": 1,
+  "public_per_source": 3,
+  "development_cases": "four current authored examples (historical case excluded from this current-snapshot text interface), first-SHA current partial-flip trace example, and first3 SHA rows of each public source; no outcome or label selection",
+  "sampling_salt": "explanation-repair-language-v1",
+  "scope": "Small development language diagnostic only, not complete Week2 language comparisons; same one-shot example, model, full evidence and 96-token single-candidate cap in all four conditions; no prompt changes after outputs",
+  "context_policy": "No input truncation. If any condition exceeds the model context, skip that input for all conditions with an explicit reason. Cap-limited outputs remain marked and preserved.",
+  "methods": {
+    "proposed_language_adapter": "Extract only current observational assertions actually asserted in the original text, without correcting them. Put causal, action-model, historical, and unparsed content in unresolved. The fixed deterministic editor then repairs parsed claims.",
+    "contradiction_reprompt": "Revise the explanation against the supplied evidence, correcting contradictions and marking unknowns unresolved.",
+    "RARR_inspired_supplied_evidence": "Check each original assertion against the supplied ledger, then minimally revise unsupported content and preserve supported details. This is a single-pass supplied-evidence prompt adaptation, not RARR research/search reproduction.",
+    "language_evidence_regeneration": "Ignore the original explanation and generate current observational facts from the same supplied evidence, marking causes unknown."
+  },
+  "trace_metadata_policy": "Only observation IDs, facts, windows, visibility, kind and action are model-visible. Raw trace source paths and condition/seed provenance stay evaluator-only."
+}

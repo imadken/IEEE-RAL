@@ -1,0 +1,26 @@
+{
+  "version": "explanation-repair-dev-v1",
+  "objective": {
+    "replacement": 0.5,
+    "qualification": 0.8,
+    "removal": 1.0,
+    "supported_fact_loss": 3.0,
+    "group_size": 4
+  },
+  "sensitivity_loss_weights": [
+    0.0,
+    1.0,
+    3.0,
+    10.0
+  ],
+  "development_parents_per_task": 20,
+  "lift_preservation_parents": 5,
+  "historical_root": "results/recovery-claims/20261112T152155Z",
+  "historical_selection": "first20 seeds in the unchanged registered confirmation list, now reused as DEVELOPMENT ONLY; both registered conditions; first5 Lift",
+  "public_revision": "730ba3200e84b6f1c140a4d7a6569f3a42fe1928",
+  "selector": "Frozen observation-dominant selector: Pick current grasped true -> continue, false -> recover; Push current robot-object contact true -> continue, false -> recover; Lift -> continue; unknown -> abstain. Every method gets complete same projected history; no explanation-derived gain is identifiable in this first-session smoke. No outcome-based optimization.",
+  "new_physics": false,
+  "confirmation_authorized": false,
+  "language_baselines": "NOT_RUN unless an already available, permitted, frozen local backend is qualified; no installation or paid calls",
+  "observation_projection": "Explicit privileged simulator state-observation development probe, shared by all methods. Two time points: prefix first observation and qualified checkpoint. Pick grasped from observation.extra.is_grasped; Mani near_goal from observed obj_pose and goal_pos at fixed .03m; exposed physics robot_object_contact. Lift privileged grasp readout is only a preservation control. Full raw state and action outcomes evaluator-only."
+}
