@@ -1,0 +1,22 @@
+{
+  "version": "explanation-repair-week2-v1",
+  "week1_root": "results/explanation-repair/20261113T091510Z",
+  "week1_development": "development05",
+  "public_revision": "730ba3200e84b6f1c140a4d7a6569f3a42fe1928",
+  "methods": {"B0": "original", "B1": "generic", "B2": "delete", "B3": "regenerate", "B4": "proposed", "B5": "unconstrained"},
+  "objective": {"replacement": 0.5, "qualification": 0.8, "removal": 1.0, "supported_fact_loss": 3.0, "group_size": 4},
+  "common_candidate_limit": 4096,
+  "bootstrap_draws": 2000,
+  "bootstrap_seed": 20261113,
+  "public_review_membership": "review_subset_freeze.json: frozen before method evaluation",
+  "language_forms": ["bounded clause splitting with all residue retained", "literal object-state/spatial atoms using existing vocabulary", "before/after order between identifiable recorded commands", "explicit missing-step prefix claims", "dropped/blocking/action-failure/perception claims recognized as unestablished hypotheses", "historical clauses without an observed time anchor remain unknown"],
+  "evidence_policy": "No command proves its effect. Literal command-prefix sequence/presence/order are document facts, not physical cause or success. Repeated ambiguous action occurrences abstain. Public action physics are not invented.",
+  "regeneration_policy": "Same full ledger/model; native observations, model applicability and complete supplied command sequence; no E0-conditioned evidence or output length restriction",
+  "semantic_retention": "Unique supported propositions. A correctly rendered complete command prefix entails its literal order/presence/absence queries, so B3 receives that credit. Exact text changes alone do not constitute damaged explanations.",
+  "damage": "For independently qualified correct inputs: loss of supported original information or addition of an unsupported factual assertion; cosmetic changes counted separately",
+  "public_quality_labels": "UNAVAILABLE_UNADJUDICATED: no method-quality score against machine annotations",
+  "negative_controls": ["temporally misplaced versus correctly historical facts", "missing evidence", "multiple plausible unestablished causes", "contradictory observations", "correct explanation needing no repair", "commands without observed effects", "declared action applicability"],
+  "simulation": "NOT_RUN; reuse existing raw traces and independent interpreter",
+  "language_models": "NOT_REQUIRED_NOT_RUN",
+  "limits": {"wall_seconds": 14400, "cpu_seconds": 21600, "new_bytes": 1000000000}
+}

@@ -1,5 +1,64 @@
 # Evidence-preserving robot explanation repair: first local session
 
+## Week 2 continuation authority and frozen mechanism study
+
+The new authority is the Week 2 supervisor contract, preserved in the new evidence
+root. Start: `b46679401fdcc33f362bbf53a032d1b368c88181`; branch:
+`research/explanation-repair-week2`. Limits are four hours wall, six CPU core-hours,
+one GB new artifacts and zero GPU training. No simulator campaign, manuscript,
+language-model training, new dataset/controller or automatic Week 3 work is allowed.
+The prior session below is historical context; its sealed evidence stays immutable.
+
+First, independently recompute the original 595 results from raw simulator traces.
+Inspect B3's entire evidence set and verify B4's supported information is a subset;
+do not penalize a true regeneration merely because its wording differs. The public
+review membership is frozen before Week 2 method evaluation by task/origin and
+counterfactual template family using immutable SHA ordering, without selecting on
+method outcomes or coherence labels. These previously used rows remain exploratory.
+
+`config/explanation_repair_week2.json` freezes B0 original, B1 generic, B2 deletion,
+B3 evidence regeneration, B4 selective repair, B5 repair with both temporal and
+action-model constraints disabled. Original objective weights stay unchanged. All
+methods receive the same ledger, declared model, full supplied command prefix and
+permitted deterministic candidate ceiling; actual costs are measured, not equalized
+by weakening B3. No model calls or Pythia dependency are needed. B3 retains access
+to all history and emits a complete supplied command sequence independently of E0.
+
+The smallest adapter extension splits factual candidates, anchors object/action
+arguments to the released observations/command vocabulary, and recognizes common
+state/spatial, temporal-order, action-failure and causal forms. Unparsed residue is
+retained. Recognizing a hypothesis does not establish its truth. Historical statements
+without observed times use an explicit unknown clock and cannot borrow current facts.
+Command-log presence/order/sequence are literal document deductions, never proof of
+physical effects or unique causes. Ambiguous repeated occurrences abstain. No complete
+robot action physics, missing timestamp, gold repair or causal outcome is invented.
+
+Complete/partial syntactic extraction, grounded factual coverage, unknown-only
+outputs, and unparsed text are distinct. Public claim annotations are provisional,
+with blank independently adjudicated fields. A blind review sheet exposes original
+context, existing coherence labels/comments and dependencies, but no method outputs;
+machine suggestions live separately. No repair-quality metric is graded against
+the editor's own support labels or these unadjudicated suggestions. Missing gold
+labels must be reported, not filled by a same-model judge.
+
+The original independent raw-state interpreter scores the 595 simulator-derived
+inputs; authored negative controls are separate, with explicit oracle tables for
+temporal displacement, missing evidence, ambiguous causes, conflicts, unchanged
+correct claims, command/effect separation and declared applicability. They supplement
+all 750 released rows. Retention counts unique supported propositions; a correct
+complete command sequence entails literal order/presence/absence, giving B3 full
+credit. Damage means unsupported added assertions or lost supported information;
+cosmetic rewriting is separate. Diagnostic content has no post hoc saliency score:
+report original supported facts and content categories, with human utility unassessed.
+
+Paired uncertainty uses fixed 2,000 bootstrap draws grouped by task-parent on the
+simulator data, stratified by task; public coverage uses whole conservative episode/
+template-alias components, with limited grouping provenance explicitly disclosed.
+No public factual-quality confidence interval is fabricated without adjudicated
+claim labels. All controls, source hashes, failures, budgets and method outputs are
+preserved. After the fixed comparisons, answer the supervisor's five scientific
+questions even if no distinct advantage exists. Stop without Week 3 simulation.
+
 Authority is the supervisor's attached fixed scope, copied into the local evidence
 root. Reviewed/current starting HEAD is
 `c17d5a7e9a08626f6c7e63f73e6d94cbf6c5e71d`; the branch is

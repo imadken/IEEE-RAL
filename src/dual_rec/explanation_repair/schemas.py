@@ -10,7 +10,7 @@ from dual_rec.contracts.checks import Evidence
 
 
 class Window(Evidence):
-    clock: Literal["seconds", "snapshot", "plan_index"] = "seconds"
+    clock: Literal["seconds", "snapshot", "plan_index", "unknown"] = "seconds"
     start: float
     end: float
 
@@ -62,6 +62,7 @@ class ActionRule(Evidence):
 
 
 class ActionModel(Evidence):
+    command_log: bool = False
     rules: list[ActionRule] = Field(default_factory=list)
     persistent: list[Predicate] = Field(default_factory=list)
 

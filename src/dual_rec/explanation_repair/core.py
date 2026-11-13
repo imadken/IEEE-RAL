@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from itertools import product
 
+from .command_log import assess_log, render_log, sequence_claim
 from .schemas import (
     Claim,
     Decision,
@@ -102,6 +103,14 @@ def observe(
 def assess(
     bundle: RepairInput, claim: Claim, temporal=True, action_model=True
 ) -> Support:
+    if claim.window.clock == "unknown":
+        return Support(status="unknown", reason="No observed time anchor is available")
+    if (
+        claim.action == "command_log"
+        and claim.fact is not None
+        and claim.fact.entity == "command_log"
+    ):
+        return assess_log(bundle, claim, temporal, action_model)
     if claim.kind == "hypothesis":
         return Support(
             status="unknown",
@@ -148,6 +157,12 @@ def fact_identity(claim: Claim) -> tuple:
 
 
 def render_claim(claim: Claim, query: Window | None = None) -> str:
+    if (
+        claim.action == "command_log"
+        and claim.fact is not None
+        and claim.fact.entity == "command_log"
+    ):
+        return render_log(claim)
     if query is not None and claim.window != query:
         interval = claim.window
         point = (
@@ -249,6 +264,26 @@ def menu(bundle, claim, temporal, action_model):
                         for c, _ in replacements
                     ):
                         replacements.append((candidate, proof))
+        elif claim.action == "command_log":
+            if (
+                claim.fact.predicate == "order"
+                and action_model
+                and temporal
+                and support.status == "contradicted"
+            ):
+                import json
+
+                pair = json.loads(claim.fact.value)
+                candidate = claim.model_copy(
+                    update={
+                        "fact": claim.fact.model_copy(
+                            update={"value": json.dumps(pair[::-1])}
+                        )
+                    }
+                )
+                proof = assess(bundle, candidate, temporal, action_model)
+                if proof.status == "supported":
+                    replacements.append((candidate, proof))
         elif action_model:
             for value in (False, True):
                 candidate = claim.model_copy(
@@ -382,7 +417,19 @@ def edit(
     )
 
 
-def baselines(bundle: RepairInput) -> dict[str, RepairResult]:
+def run_method(bundle: RepairInput, method: str) -> RepairResult:
+    if method == "proposed":
+        return edit(bundle)
+    if method == "unconstrained":
+        return edit(bundle, temporal=False, action_model=False).model_copy(
+            update={"method": method}
+        )
+    if method == "no_temporal":
+        return edit(bundle, temporal=False)
+    if method == "no_action_model":
+        return edit(bundle, action_model=False)
+    if method not in {"original", "generic", "delete", "regenerate"}:
+        raise ValueError(f"Unknown repair method: {method}")
     original = [
         Decision(
             origin=c.id,
@@ -392,36 +439,39 @@ def baselines(bundle: RepairInput) -> dict[str, RepairResult]:
         )
         for c in bundle.claims
     ]
-    outputs = {
-        "original": finish(
+    if method == "original":
+        return finish(
             bundle,
             "original",
             original,
             list(bundle.unparsed),
             text=bundle.original_text,
         )
-    }
     contradiction = any(c.output.support.status == "contradicted" for c in original)
-    outputs["generic"] = finish(
-        bundle,
-        "generic",
-        [] if contradiction else original,
-        ["Detected contradiction; adapted parent fallback omits unavailable timestamps"]
-        if contradiction
-        else list(bundle.unparsed),
-        text=None if contradiction else bundle.original_text,
-    )
+    if method == "generic":
+        return finish(
+            bundle,
+            "generic",
+            [] if contradiction else original,
+            [
+                "Detected contradiction; adapted parent fallback omits unavailable timestamps"
+            ]
+            if contradiction
+            else list(bundle.unparsed),
+            text=None if contradiction else bundle.original_text,
+        )
     kept = [c for c in original if c.output.support.status == "supported"]
-    outputs["delete"] = finish(
-        bundle,
-        "delete",
-        kept,
-        [
-            f"Removed {len(original) - len(kept)} unsupported clauses; {len(bundle.unparsed)} unparsed spans"
-        ]
-        if len(kept) != len(original) or bundle.unparsed
-        else [],
-    )
+    if method == "delete":
+        return finish(
+            bundle,
+            "delete",
+            kept,
+            [
+                f"Removed {len(original) - len(kept)} unsupported clauses; {len(bundle.unparsed)} unparsed spans"
+            ]
+            if len(kept) != len(original) or bundle.unparsed
+            else [],
+        )
     generated = []
     seen = set()
     # Strong regeneration sees the complete same visible history, not just the
@@ -472,15 +522,38 @@ def baselines(bundle: RepairInput) -> dict[str, RepairResult]:
                         reason="Same declared action-model information",
                     )
                 )
-    outputs["regenerate"] = finish(
+    if bundle.model.command_log:
+        candidate = sequence_claim(bundle)
+        proof = assess(bundle, candidate)
+        if proof.status == "supported":
+            generated.append(
+                Decision(
+                    origin=candidate.id,
+                    operation="keep",
+                    output=Grounded(
+                        origin=candidate.id, claim=candidate, support=proof
+                    ),
+                    reason=proof.reason,
+                )
+            )
+    return finish(
         bundle,
         "regenerate",
         generated,
         [] if generated else ["No informative evidence"],
     )
-    outputs.update(
-        proposed=edit(bundle),
-        no_temporal=edit(bundle, temporal=False),
-        no_action_model=edit(bundle, action_model=False),
-    )
-    return outputs
+
+
+def baselines(bundle: RepairInput) -> dict[str, RepairResult]:
+    return {
+        name: run_method(bundle, name)
+        for name in (
+            "original",
+            "generic",
+            "delete",
+            "regenerate",
+            "proposed",
+            "no_temporal",
+            "no_action_model",
+        )
+    }

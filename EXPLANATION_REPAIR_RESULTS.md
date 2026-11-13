@@ -1,3 +1,301 @@
+# Explanation repair: Week 2 mechanism-validation results
+
+**The current method lacks evidence for a distinct contribution over strong
+evidence-only regeneration.** All six fixed comparisons completed. The public
+adapter now recognizes useful command-order subclaims, but natural-language repair
+quality remains unassessed without independently adjudicated labels. No simulator
+campaign, model training, large-language-model calls, manuscript or Week 3 work ran.
+
+Reviewed base: `b46679401fdcc33f362bbf53a032d1b368c88181`; branch:
+`research/explanation-repair-week2`. This is exploratory development and reanalysis,
+not held-out confirmation. Evidence root:
+`results/explanation-repair-week2/20261113T130926Z` (abbreviated W2 below).
+The final local source commit and resource totals are in W2's
+`completion_manifest.json`; publication remains manual. Logs, full results and the
+review archive stay local and are excluded using `.git/info/exclude`; `.gitignore`
+and `uv.lock` are unchanged. The historical first-session report is retained below.
+
+## Why the strongest baseline dominates
+
+A separate recomputation read the 85 sealed raw simulator cells, rather than the
+editor's support labels. On all 595 structured inputs, B3's true-information set is
+a **strict superset** of B4's. It emits 3,465 independently checked factual
+assertions, retains all 1,185 supported original facts, and produces 595 informative
+outputs. B4 emits 1,315 factual assertions and 425 informative outputs. B3 reads the
+same complete first/current observation history and declared transport-precondition
+model; it enumerates visible facts and supported applicability values without
+consulting future outcomes. B4 restricts its output to original claim slots and
+locally supported replacements. When the explanation contains only an unsupported
+battery story or unparseable prose, B4 falls back despite useful facts in the ledger.
+
+For `PickCube-v1/103343/nominal/unsupported`, B4 says the evidence does not establish
+a specific explanation. B3 reports the observed initial ungrasped/not-near-goal/no-
+contact state, the current grasped/near-goal/contact state and conditional transport
+eligibility. All seven facts are raw-oracle checked; none establishes the battery
+cause or a recovery guarantee. For the same cell's `action_model` variant, B4 keeps
+four current/model facts and B3 additionally retains the three historical facts.
+Full examples and their extra fact sets are in `strongest_baseline_investigation.json`.
+
+B3 does not use a hidden oracle, a larger evidence ledger, or an artificially narrow
+last-snapshot baseline. All methods share the same primitive inference access and
+4,096 candidate-evaluation ceiling; all observed runs meet it. B3 is a finite
+ledger/model pass; B4 enumerates at most four options per claim in groups of four.
+Runtime is measured rather than equalized by restricting B3's outputs. Cosmetic
+rewriting alone is not damage: B3 changes all 295 initially correct texts while
+losing no supported fact and adding no unsupported factual assertion.
+
+## Actual natural-language coverage and its boundary
+
+All original 750 rows at public revision
+`730ba3200e84b6f1c140a4d7a6569f3a42fe1928` were reused unchanged. Extraction splits
+clauses, grounds literal arguments to observation vocabulary, and matches identifiable
+commands. Historical states without an observed time anchor remain UNKNOWN.
+Dropped objects, blockage, perception mistakes and failed actions are recognized as
+unestablished hypotheses, not turned into observed causes. Commands never prove
+physical effects; repeated ambiguous command occurrences abstain. No action physics
+for the public tasks or missing timestamp was invented. Original context and all
+unparsed residue remain in the input/review artifacts.
+
+| Source | Rows | Complete syntactic recognition | Partial recognition | No claims | Any factual subclaim | Hypothesis-only extraction |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| RoboFail/expert | 91 | 14 | 2 | 75 | 0 | 16 |
+| RoboFail/GPT-3.5/REFLECT | 39 | 7 | 22 | 10 | 0 | 29 |
+| CounterFactual/template | 620 | 536 | 32 | 52 | 174 | 394 |
+| Total | 750 | 557 | 56 | 137 | 174 | 439 |
+
+The 557/750 complete and 56/750 partial values are **syntax coverage, not successful
+repairs or complete semantic understanding**. Only 174/750 (23.2%) have a factual
+subclaim, all command-order statements in the template corpus. No factual explanation
+claim was extracted from the 130 RoboFail examples. Hypothesis-only recognition does
+not license a factual explanation. Relative to the old zero-coverage whitelist,
+this is a working narrow interface with a substantial real-example limitation.
+
+A 2,000-draw grouped bootstrap over 68 conservative episode/template/exact-input
+alias components gives complete syntax coverage 74.27% [28.75%, 88.51%], partial
+7.47% [1.66%, 23.97%], factual-subclaim coverage 23.20% [0.00%, 39.21%]. These wide
+intervals expose template concentration; components can cross tasks and original
+counterfactual episode linkage is unavailable. They are coverage intervals only.
+
+| Method | Emitted factual slots | No factual output / 750 | Replacements | Rows with unresolved content |
+| --- | ---: | ---: | ---: | ---: |
+| B0 original | 174 | 576 | 0 | 193 |
+| B1 generic fallback | 121 | 629 | 0 | 246 |
+| B2 deletion | 76 | 674 | 0 | 728 |
+| B3 regeneration | 3,574 | 0 | 0 | 0 |
+| B4 selective repair | 129 | 621 | 53 | 707 |
+| B5 both constraints disabled | 0 | 750 | 0 | 750 |
+
+These are mechanical output counts, **not correctness, supported-retention or utility
+scores**. B0/B1 may retain unparsed original prose; their low unresolved count cannot
+mean it was checked. B3's zero unresolved fields describe regenerated ledger output,
+not resolution of the original cause. Its complete supplied command sequence has
+all original command-log order/presence information; no output-length cap or
+E0-dependent evidence privilege is used. A true complete sequence receives semantic
+credit for an original order fact in controlled evaluations. Do not mistake B5's
+public abstention for proof that robot-action reasoning improves actual explanations:
+its disabled model includes the simple literal command-log rule, and the public
+adapter extracted no physical action-precondition claims.
+
+For `CounterFactual/boilWater-8r5j2taz-autogen_wrong_order_c`, the original says
+“put pot on fourth stove burner after turn on second stove burner.” B4 renders the
+recorded opposite order: pot placement before burner toggle, explicitly without
+claiming effects. For `heatPotato-qx972cwr-autogen_wrong_order_c`, B4 similarly reverses
+the order subclaim and leaves the causal failure assertion unresolved. These are
+**plausible ledger repairs awaiting independent semantic review**, not graded
+natural-language successes. In `RoboFail/warmWater-6_gt_step_59_gt_exp`, “Wrong
+perception: glass and mug” becomes a recognized hypothesis plus unparsed residue;
+B4 abstains. A long explanation about a missing warm-water step also remains
+unresolved. `representative_public_examples.json` preserves all contexts, extracted
+clauses and exact outputs, including these failures. No grammar or weight was tuned
+after these results to improve the numbers.
+
+## Frozen blind annotation package
+
+`review_subset_freeze.json` selects 55 examples before the Week 2 method evaluation:
+first two salted-SHA rows per RoboFail task/origin and first one per counterfactual
+task/template stratum, without coherence-label or outcome selection. Some strata are
+sparse. The 76 source clauses appear in `review_blind.jsonl`, with complete original
+observations, command prefix, source E/C/N labels/comments and candidate dependencies.
+Independent reviewers must correct extraction before labeling each claim supported,
+contradicted or undetermined, specify time/model dependencies and information worth
+preserving. All adjudicated-label, reviewer and preservation fields are blank.
+
+`review_provisional_not_gold.jsonl` contains machine suggestions and evidence links
+separately, prominently marked unadjudicated. Existing public coherence labels and
+comments help review but do not establish gold repairs. There were **no independent
+human labels available**, no same-model judge and no scored NLP unsupported-assertion,
+retention, damage, repair-accuracy or useful-diagnostic-content endpoint. Numerical
+independence does not supply missing semantic annotation. These examples already
+informed development; even later adjudication would not make them untouched tests.
+
+## Matched simulator-oracle comparison
+
+The same 595 frozen inputs cover 45 old task-parent seeds, 85 cells and seven
+controlled explanation variants. There are 20 PickCube parents, 20 PushCube parents
+and five privileged Lift preservation controls. Both conditions/variants remain in
+each parent cluster. No new physical rollout or new recovery comparison occurred.
+Truth is recomputed from raw physical positions, observed goals, recorded grasp
+measurements and contact body names, plus the explicitly declared transport model.
+These assumptions do not prove general robot physics or unique failure causes.
+
+| Method | Unsupported / asserted factual atoms | Supported original retained / 1,185 | Informative / 595 | Damaged correct / 295 | No factual output |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| B0 original | 215/1,400 | 1,185 | 415 | 0 | 85 |
+| B1 generic fallback | 85/1,058 | 973 | 295 | 0 | 215 |
+| B2 deletion | 0/1,185 | 1,185 | 415 | 0 | 180 |
+| B3 regeneration | 0/3,465 | 1,185 | 595 | 0 | 0 |
+| B4 selective repair | 0/1,315 | 1,185 | 425 | 0 | 170 |
+| B5 both constraints disabled | 129/1,230 | 983 | 425 | 146 | 170 |
+
+Unsupported means contradicted **or not established**, not merely contradicted.
+B0's 215 comprise 130 false and 85 undetermined factual atoms; B1's 85 are
+undetermined. B5's 129 are contradicted, occurring on 73 inputs. Hypotheses do not
+inflate the factual-accuracy denominator. A correct input requires all parsed
+factual claims true, no hypothesis and no unparsed residue. Damage means losing
+supported original information or adding an unsupported assertion; exact wording
+changes are reported separately. Informative means at least one oracle-established
+fact, not a human judgment that the explanation is useful. No post hoc saliency or
+utility score was invented.
+
+Paired 95% percentile intervals use 2,000 fixed-seed task-stratified parent draws:
+
+| B4 difference | Unsupported-input fraction | Original-fact retention | Informative-output fraction | Correct-input damage |
+| --- | ---: | ---: | ---: | ---: |
+| vs B2 | 0 [0,0] pp | 0 [0,0] pp | +1.68 [1.68,1.68] pp | 0 [0,0] pp |
+| vs B3 | 0 [0,0] pp | 0 [0,0] pp | -28.57 [-28.57,-28.57] pp | 0 [0,0] pp |
+| vs B5 | -12.27 [-12.94,-11.60] pp | +17.05 [15.70,18.40] pp | 0 [0,0] pp | -49.49 [-52.20,-46.78] pp |
+
+B4 adds 130 true atoms versus deletion and ten informative outputs, but no retained-
+original-fact advantage. B3 adds 2,150 true atoms beyond B4 with no extra factual
+errors. Several intervals collapse because the same deterministic variants produce
+identical within-task counts, not because generalization is certain. Full paired
+comparisons with B0/B1, per-task counts and facts-per-input are in
+`trace_paired_uncertainty.json` and `trace_metrics.json`. Sample size is not 595
+independent robot trials. Nothing here changes the prior finding that the fixed
+recovery selector ignores explanations; offline factual editing is not physical
+recovery improvement.
+
+## Mechanism controls and computational cost
+
+Thirteen separately authored logical controls were frozen before outputs. Their
+positive truth tables are inspectable in `controls_frozen.jsonl`; facts outside those
+tables are unqualified, not separately classified as physical false versus unknown.
+They are not released-language gold or additional robot trials. They cover correct
+historical facts, stale facts at the wrong time, missing evidence, multiple plausible
+causes, conflicting observations, correct no-repair input, commands without effects,
+unanchored history, valid/blocked declared applicability, correct/incorrect command
+order and ambiguous repeated commands.
+
+B4 produces seven established factual outputs, no unqualified assertions, retains
+all four supported original facts and damages 0/4 correct inputs. B2 has four
+informative outputs; B3 has eleven, zero unqualified assertions and complete
+retention (including sequence-to-order entailment). B5 has two informative outputs,
+one unqualified assertion and damages 3/4 correct inputs. It wrongly rewrites a
+correct historical open-fridge fact using the current closed-fridge observation,
+and discards valid action applicability and correct command order. B4 abstains on
+missing/conflicting evidence, ambiguous causes, unanchored history and repeated
+command ambiguity. Shared constraints work on these designed logical cases;
+regeneration uses them too, so they do not isolate a new selective-editing contribution.
+
+| Method | Mean public method ms/input | Mean structured method ms/input |
+| --- | ---: | ---: |
+| B0 | 0.03075 | 0.06201 |
+| B1 | 0.02795 | 0.05321 |
+| B2 | 0.02656 | 0.05585 |
+| B3 | 0.23731 | 0.23524 |
+| B4 | 0.07030 | 0.21453 |
+| B5 | 0.04420 | 0.19440 |
+
+Single-pass `perf_counter_ns` timings exclude parsing, serialization and raw-source
+I/O. They include method support bookkeeping; no warmup/repeat-based performance
+claim is made. B4's smaller output is cheaper than full public regeneration in this
+run, but it has no factual output on 621/750 rows. The shared comparison worker took
+3.03 s wall / 2.85 CPU seconds including all populations and output I/O. Runtime
+alone is not a scientific diagnostic-content advantage. The whole bounded ledger,
+including raw-source audits and tests, is in `commands.jsonl`; peak RSS, exact wall,
+CPU, bytes, conservative small-orchestration reserve and final commit are recorded
+in `resources.json` / `completion_manifest.json`. No GPU training or new simulation
+resource was used; the 4 h / 6 CPU h / 1 GB ceilings were respected.
+
+## Independent verification and reproducibility
+
+A second implementation imports no editor/support code. It independently reconstructs
+raw-state facts, verifies every per-input numerical score, checks 2,975 B0–B4 outputs
+against the sealed prior run, and recomputes all 25 paired intervals using bootstrap
+multiplicity weights rather than concatenated rows. It also verifies source/frozen
+hashes, all public originals, the blind package's empty adjudication fields, coverage
+intervals and named negative controls. `independent_audit.json` records the result.
+This is independent code-path numerical verification by the same unattended session,
+not a separate human scientific review. The entire Week 1 sealed inventory and all
+13 historical seal files are rechecked at finalization. Unrelated document moves,
+`.gitignore`, `uv.lock` and previous evidence remain intact.
+
+Validation passed: the focused adapter/core subset had 33 passing tests; the
+complete suite had **382 passed, 4 skipped**. Ruff checking passed and all 191 Python
+files passed format checking; `git diff --check` passed. Exact outputs are in
+`validation.json` and bounded job logs. No workers are detached; finalization checks
+the exclusive worker lock and confirms no campaign workers remain.
+
+The compact local supervisor archive is W2/`supervisor_review.tar.gz`: source,
+protocol/report, frozen review membership/clauses, provisional annotations, measured
+tables, representative examples, audit, hashes and validation. Complete inputs and
+all 8,148 six-method outputs remain in W2 (4,500 public + 3,570 structured + 78
+controls); no raw logs/results are committed.
+
+Reproduce into a **fresh** root from the final local commit and existing sealed
+sources, never into W2:
+
+```bash
+export UV_CACHE_DIR=/tmp/dual-rec-uv-cache PYTHONDONTWRITEBYTECODE=1
+REPLAY_ROOT="results/explanation-repair-week2/replay-$(date -u +%Y%m%dT%H%M%SZ)"
+uv run --no-sync python scripts/explanation_repair_week2_finish.py --root "$REPLAY_ROOT" --stage initialize
+for stage in prepare run analyze audit; do
+  uv run --no-sync python scripts/reboot_overnight_worker.py \
+    --root "$REPLAY_ROOT" --name "$stage" --timeout 300 -- \
+    uv run --no-sync python "scripts/explanation_repair_week2_${stage}.py" --root "$REPLAY_ROOT"
+done
+uv run --no-sync python scripts/reboot_overnight_worker.py \
+  --root "$REPLAY_ROOT" --name validation --timeout 900 -- \
+  uv run --no-sync python scripts/explanation_repair_finish.py --root "$REPLAY_ROOT" --stage validate
+```
+
+Read-only seal verification of this completed run:
+
+```bash
+UV_CACHE_DIR=/tmp/dual-rec-uv-cache PYTHONDONTWRITEBYTECODE=1 uv run --no-sync python \
+  scripts/explanation_repair_week2_finish.py \
+  --root results/explanation-repair-week2/20261113T130926Z --stage verify
+```
+
+## Five scientific decisions
+
+1. **Actual natural-language repair:** a narrow command-order interface now runs and
+   proposes 53 replacements on released templates. General repair quality and even
+   these repairs' semantic fidelity remain unvalidated. RoboFail factual extraction
+   is still zero; parse/hypothesis recognition is not a correct repair.
+2. **Advantage over deletion/regeneration:** the structured editor adds a small
+   factual-completion benefit over deletion. No information/fidelity advantage over
+   strong regeneration exists on these data; regeneration is strictly more
+   informative on every structured input. Wording preservation is not diagnostic
+   benefit. Human focus/usefulness was not measured.
+3. **Action/time-specific advantage:** temporal/applicability constraints prevent
+   errors versus the unconstrained ablation and on authored controls, but B3 shares
+   those constraints. Public order checks are document reasoning, not validated
+   robot-action physics. No distinct robot-reasoning contribution is isolated.
+4. **Trustworthy labels:** raw-state truth is independently reproducible under stated
+   sensor/model assumptions; authored controls have explicit limited truth tables.
+   Public coherence labels are insufficient for repair evaluation. The 55-example
+   annotation package has no independent adjudication, so NLP quality is unassessed.
+5. **Feasible without a large LM:** bounded extraction/editing is computationally
+   feasible with existing dependencies and no language model. Broad language
+   competence and a distinct publishable contribution do not follow. The current
+   approach lacks evidence for that distinction. Stop at this scientific boundary;
+   do not add a heuristic, architecture, dataset, simulation campaign or manuscript.
+
+---
+
+## Historical Week 1 report (preserved)
+
 # Explanation repair: first-session measured results
 
 The authorized first session is complete: a working typed ledger, finite-menu editor,
