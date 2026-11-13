@@ -1,0 +1,15 @@
+{
+  "version": "dsre-supervisor-v1.1",
+  "reviewed_base": "c5d354f648946a6945b07897f1c5a82961370835",
+  "input_root": "results/dsre-stage1/20261113T144253Z",
+  "table_sha256": "46f13e374fd5d319e5987e12352074309163956db83b1f0ce9b3991a43d653e2",
+  "primary_beta": 0.10,
+  "sensitivity_beta": 0.05,
+  "descriptive_frontier_betas": [0.0, 0.05, 0.10, 0.25, 0.50],
+  "minimum_support": 2,
+  "bootstrap_draws": 2000,
+  "bootstrap_seed": 2026111301,
+  "calibration": {"alpha": 0.10, "total_delta": 0.05, "strata": ["PickCube-v1/continue", "PickCube-v1/recover", "PushCube-v1/continue", "PushCube-v1/recover"], "planning_parents_per_task": 200},
+  "no_new_training": true,
+  "no_new_physics": true
+}
