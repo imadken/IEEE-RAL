@@ -330,7 +330,7 @@ def main():
         return
     with a.output.open("x") as f:
         json.dump(result, f, indent=2)
-    print(result["status"], result["witness"])
+    print(result["status"], result.get("witness"))
 
 
 class MatchedEvidence(Evidence):

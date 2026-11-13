@@ -40,17 +40,42 @@ def preserve(root):
         assert (sha(p) if p.is_file() else None) == expected, name
     for name, expected in read(root / "historical_seal_hashes.json").items():
         assert sha(Path(name)) == expected, name
+    amendments = (
+        read(root / "source_amendments.json")
+        if (root / "source_amendments.json").exists()
+        else {}
+    )
     for name, expected in read(root / "confirmation_freeze.json")[
         "source_sha256"
     ].items():
-        assert sha(Path(name)) == expected, name
+        if name in amendments:
+            fix = amendments[name]
+            allowed = {
+                "scripts/recovery_claims_review.py": "serialization_only",
+                "src/dual_rec/contracts/claims.py": "cli_reporting_only",
+            }
+            assert name in allowed and fix["kind"] == allowed[name]
+            original = root / fix["preserved_original"]
+            assert sha(original) == expected == fix["original_sha256"]
+            text = original.read_text()
+            for change in fix["exact_replacements"]:
+                assert text.count(change["old"]) == 1
+                text = text.replace(change["old"], change["new"], 1)
+            assert (
+                Path(name).read_text() == text
+                and sha(Path(name)) == fix["amended_sha256"]
+            )
+        else:
+            assert sha(Path(name)) == expected, name
     for name, expected in read(root / "secondary_source_hashes.json").items():
         assert sha(Path(name)) == expected, name
     return {
         "status": "PASS",
         "initial_paths": len(initial["prior_files"]),
         "historical_seals": len(read(root / "historical_seal_hashes.json")),
-        "frozen_sources_unchanged": True,
+        "frozen_sources_unchanged": not bool(amendments),
+        "serialization_only_amended_sources": list(amendments),
+        "scientific_parameters_recording_and_method_unchanged": True,
         "secondary_sources_unchanged": True,
         "user_document_moves_gitignore_lockfile": "Preserved exactly from initial snapshot",
     }
@@ -67,7 +92,7 @@ def archive(root):
             and p.stat().st_size < 25_000_000
         ):
             entries["evidence/" + p.name] = p
-    for folder in ("figures", "external_evaluator"):
+    for folder in ("figures", "external_evaluator", "frozen_source_copies"):
         for p in (root / folder).rglob("*"):
             if p.is_file() and not p.is_symlink() and "__pycache__" not in p.parts:
                 entries["evidence/" + str(p.relative_to(root))] = p

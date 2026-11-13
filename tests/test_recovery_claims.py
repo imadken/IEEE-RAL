@@ -270,9 +270,28 @@ def test_persisted_matched_claim_inputs_work_in_a_fresh_process(tmp_path, monkey
         "--bundle",
         str(tmp_path / index[0]["bundle"]),
         "--output",
-        str(tmp_path / index[0]["certificate"]),
-        "--verify",
+        str(tmp_path / "fresh-paired-certificate.json"),
     ]
     subprocess.run(
         command, check=True, capture_output=True, env=os.environ | {"PYTHONPATH": "src"}
     )
+    subprocess.run(
+        command + ["--verify"],
+        check=True,
+        capture_output=True,
+        env=os.environ | {"PYTHONPATH": "src"},
+    )
+
+
+def test_review_json_supports_numpy_scalar_counts(tmp_path, monkeypatch):
+    import json
+    from pathlib import Path
+
+    import numpy as np
+
+    monkeypatch.syspath_prepend(str(Path("scripts").resolve()))
+    from recovery_claims_review import save
+
+    target = tmp_path / "counts.json"
+    save(target, {"count": np.int64(3)})
+    assert json.loads(target.read_text()) == {"count": 3}

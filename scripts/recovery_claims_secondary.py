@@ -3,8 +3,11 @@
 import argparse
 import copy
 import hashlib
+import importlib.metadata
 import json
+import os
 import shutil
+import sys
 from collections import defaultdict
 from pathlib import Path
 
@@ -65,6 +68,39 @@ def persist_matched_inputs(root, certificates):
 
 
 def main(root):
+    save(
+        root / "worker_runtime_versions.json",
+        {
+            "python": sys.version,
+            "executable": sys.executable,
+            "sys_path": sys.path,
+            "packages": {
+                n: importlib.metadata.version(n)
+                for n in [
+                    "numpy",
+                    "pydantic",
+                    "scipy",
+                    "mani-skill",
+                    "sapien",
+                    "robosuite",
+                    "mujoco",
+                    "torch",
+                ]
+            },
+            "worker_environment": {
+                k: os.environ.get(k)
+                for k in [
+                    "CUDA_VISIBLE_DEVICES",
+                    "OMP_NUM_THREADS",
+                    "OPENBLAS_NUM_THREADS",
+                    "MKL_NUM_THREADS",
+                    "NUMBA_NUM_THREADS",
+                    "PYTHONPATH",
+                ]
+            },
+            "scope": "Recorded in the same unchanged bounded-worker interpreter/path construction used for physics; historical borrowed analysis dependencies explicit. No packages installed or locks changed.",
+        },
+    )
     old = Path("results/recovery-contracts/20261112T124115Z")
     dest = root / "external_applications"
     dest.mkdir(exist_ok=True)
@@ -262,7 +298,12 @@ def main(root):
     (package / "run.py").write_text(
         """import os,subprocess,sys\nfrom pathlib import Path\np=Path(__file__).resolve().parent\nos.environ['PYTHONPATH']=str(p/'src')\nout=p/'outputs';out.mkdir(exist_ok=True)\nfor b in sorted((p/'bundles').glob('*.json')):\n c=out/(b.stem+'.certificate.json')\n command=[sys.executable,'-m','dual_rec.contracts.claims','--bundle',str(b),'--output',str(c)]\n if not c.exists():subprocess.run(command,check=True)\n subprocess.run(command+['--verify'],check=True)\n"""
     )
-    (package / "requirements.txt").write_text("numpy==1.26.4\npydantic>=2,<3\n")
+    (package / "requirements.txt").write_text(
+        "".join(
+            f"{name}=={importlib.metadata.version(name)}\n"
+            for name in ["numpy", "pydantic"]
+        )
+    )
     (package / "README.md").write_text(
         "# Frozen verifier cases\n\nRun `uv run --no-sync python PATH/TO/external_evaluator/run.py` from the original qualified repository environment, or use an existing environment with requirements.txt dependencies. No simulator or trained weights are required. Execution, matched-alternative and online-alarm bundles use the common API. Outputs include independent-process raw-trace and certificate-hash verification. Full-cohort uncertainty was independently audited in the main evidence root; this compact package carries representative records and their declared qualification counts. The answer key is deliberately outside this package. This is a future-evaluator package, not a completed human study. Source recorder provenance remains a trusted assumption.\n"
     )

@@ -45,13 +45,26 @@ def corrupt_header_checks(root):
     checks = []
     for task in ["PickCube-v1", "PushCube-v1", "Lift"]:
         source = next(
-            c
-            for c in certificates
-            if c["task"] == task
-            and c["split"] == "confirmation"
-            and c["method"] == "M"
-            and c["route"] == "fresh_prefix"
+            (
+                c
+                for c in certificates
+                if c["task"] == task
+                and c["split"] == "confirmation"
+                and c["method"] == "M"
+                and c["route"] == "fresh_prefix"
+                and c["F1"] == "PASS"
+            ),
+            None,
         )
+        if source is None:
+            checks.append(
+                {
+                    "task": task,
+                    "status": "BLOCKED",
+                    "reason": "No F1-qualified physical record for isolated declaration-corruption check",
+                }
+            )
+            continue
         original = read(root / source["bundle"])
         for mutation in ["budget", "time"]:
             bad = json.loads(json.dumps(original))
@@ -94,12 +107,37 @@ def corrupt_header_checks(root):
                 }
             )
     (root / "mechanical_control_checks.json").write_text(
-        json.dumps({"status": "PASS", "cases": checks}, indent=2) + "\n"
+        json.dumps(
+            {
+                "status": "INCOMPLETE"
+                if any(c["status"] == "BLOCKED" for c in checks)
+                else "PASS",
+                "cases": checks,
+            },
+            indent=2,
+        )
+        + "\n"
     )
 
 
 def run(root):
     old = Path("results/recovery-contracts/20261112T124115Z")
+    prior_seals = {}
+    for prior in [old, Path("results/reboot-overnight/20261111T224622Z")]:
+        seal = read(prior / "completion_manifest.json")
+        key = "sha256" if "sha256" in seal else "evidence_sha256"
+        prior_seals[prior] = seal[key]
+    verified_prior_members = set()
+
+    def verify_prior_member(path):
+        for parent, inventory in prior_seals.items():
+            if path.is_relative_to(parent):
+                assert (
+                    hashlib.sha256(path.read_bytes()).hexdigest()
+                    == inventory[str(path.relative_to(parent))]
+                )
+                verified_prior_members.add(str(path))
+
     registry = read(old / "failtime/fold0/cohort_qualification.json")
     assert sum(r["verdict"] == "fail" for r in registry) == 57
     assert sum(r["verdict"] == "success" for r in registry) == 43
@@ -118,9 +156,11 @@ def run(root):
             record = read(
                 old / f"contract_applications/failtime_stream_{sample}_input.json"
             )["alarm"]
-            with np.load(
+            risk_path = (
                 old / f"failtime/fold{fold['fold']}/risks/evaluation/clean/{sample}.npz"
-            ) as raw:
+            )
+            verify_prior_member(risk_path)
+            with np.load(risk_path) as raw:
                 assert np.allclose(raw["time"], record["time"])
                 assert np.allclose(
                     raw["MCSFA"], np.asarray(record["scores"], float), equal_nan=True
@@ -173,6 +213,7 @@ def run(root):
     sources = read(root / "secondary_source_hashes.json")
     for name, expected in sources.items():
         assert hashlib.sha256(Path(name).read_bytes()).hexdigest() == expected
+        verify_prior_member(Path(name))
     package = root / "external_evaluator"
     for name, expected in read(package / "SHA256.json").items():
         assert hashlib.sha256((package / name).read_bytes()).hexdigest() == expected
@@ -198,6 +239,7 @@ def run(root):
         "censored_onsets_retained": 1,
         "task_group_separation_verified": True,
         "external_fresh_process_cases": len(answers),
+        "reused_members_checked_against_historical_seals": len(verified_prior_members),
         "scope": "Independent numerical software paths, not an independent human study; saved models and annotations unchanged",
     }
     (root / "external_evaluator_smoke.json").write_text(

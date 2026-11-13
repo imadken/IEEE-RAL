@@ -26,6 +26,9 @@ PYTHONPATH=src uv run --no-sync python -m dual_rec.contracts.claims \
 
 Verification checks the bundle hash, recomputed certificate, raw trace hash, action
 array, observed success/time sequence and any selected completion outcome sequence.
+The CLI dispatches execution, matched-alternative and online-alarm inputs by their
+declared intended claim. The completed run persists 1,150 matched input bundles and
+their certificates in `paired_certificate_index.json`; each can use the same commands.
 Raw paths must remain inside the evidence root. No minimum-unsatisfiable-core or
 universal truth claim is made. Hashes preserve provenance, not authenticity of an
 arbitrary untrusted simulator. Source control, recording code and model construction
@@ -65,5 +68,14 @@ recovery_claims_audit.py independently checks physical outcomes, state gates, pa
 counts/effects, precision and certificate statuses. The evaluator package contains
 frozen mixed bundles and raw evidence; its answer key is separate. No independent
 human evaluation is claimed. No manuscript or publication files are generated.
+
+`recovery_claims_secondary.py` packages 23 frozen mixed cases with copied sources,
+exact dependency versions, selected raw traces and a separate answer key.
+`recovery_claims_secondary_audit.py` independently checks original score streams,
+historical seal membership, reset witnesses and first-write/verify CLI behavior.
+`recovery_claims_report.py` renders the measured tables and checks native selected
+endpoints and paired intervention contrasts against independently verified bundles.
+The full physical and secondary audits are prerequisites, rather than substitutes
+for these final report checks. See `RECOVERY_CLAIMS_EXPERIMENTAL_REPORT.md` for results.
 
 Maintained checks use `uv run --no-sync pytest -q tests` and Ruff over `src scripts tests`. Bare repository discovery includes vendored historical environments and is not a passing maintained-suite command. Whole-tree Ruff also includes preserved historical ad hoc scripts; those findings are retained without altering sealed evidence.

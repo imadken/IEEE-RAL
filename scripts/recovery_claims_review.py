@@ -8,6 +8,7 @@ from pathlib import Path
 import numpy as np
 
 from dual_rec.contracts.claims import discordance_upper
+from dual_rec.replay import jsonable
 
 
 def read(path):
@@ -15,7 +16,7 @@ def read(path):
 
 
 def save(path, value):
-    path.write_text(json.dumps(value, indent=2, allow_nan=False) + "\n")
+    path.write_text(json.dumps(jsonable(value), indent=2, allow_nan=False) + "\n")
 
 
 def run(root):
