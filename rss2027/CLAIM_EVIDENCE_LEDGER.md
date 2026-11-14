@@ -135,3 +135,18 @@ Evidence root: `results/dsre-operational/20261114T140659Z`. Protocol/source pins
 | No new model fits/controllers; old333-parent study preserved | Source hashes, regression and final preservation audit. |
 
 The new held-out effect and selected-execution parity are NOT ESTIMABLE: zero complete test parents and zero selected continuations. One secondary qualified pair is retained without promotion. See study_halt.json, missingness.json and selected_qualification_failure_diagnosis.json. The normalization candidate is an offline engineering patch, not an executed amended experiment.
+
+## Final postmortem-qualified159-parent continuation
+
+Evidence: `results/dsre-operational/20261114T180630Z`. Original873556b campaign remains sealed, including0/160test and failed8000180.
+
+| Claim | Exact source/scope |
+|---|---|
+| 159/159 untouched parents, 318 primary checkpoints | fresh_seed_manifest.json, atomic parent_progress, missingness.json;79Pick/80Push maximum, original contaminated parent excluded. |
+| Live preflight, unchanged controller/physics and repaired representation | qualification_results.json/seal, source_repair.json, independent full-frame verifier and mutation tests. |
+| Original calibration unchanged | calibration_link.json, identical decision/seal bytes,136 exact bounds; rare strata remain disabled. |
+| All 17 same-gate methods and primary paired uncertainty | operational_results.json, test_records.json, final_audit.json:numerical; parent resampling4000draws, original seeds. |
+| Selected repeats validate the same-parent estimator | independent_audit.json, selected decision/execution hashes and all-frame equality; no independent N added. |
+| Same twelve observation scenarios, old/new populations separate | historical_robustness.json, heldout_robustness.json; parent CI, no calibration transfer. |
+| Physical cases A--G and finite frontier | physical_examples.json raw source hashes; F support/repertoire overlap, G broad-rule generalization failure; historical frontier unchanged. |
+| Third-task status | breadth_feasibility.json, read-only source gate, no favorable task search or new controllers. |

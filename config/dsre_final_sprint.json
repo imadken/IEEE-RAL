@@ -1,0 +1,21 @@
+{
+  "base": "873556b54ce9f783326ee2c08bd0303447ed041d",
+  "prior_root": "results/dsre-operational/20261114T140659Z",
+  "maximum_parents": 159,
+  "physics_wall_seconds": 14400,
+  "session_wall_seconds": 36000,
+  "maximum_parents_per_chunk": 16,
+  "chunk_wall_seconds": 480,
+  "parent_wall_seconds": 120,
+  "artifact_soft_stop_bytes": 1800000000,
+  "bootstrap_draws": 4000,
+  "bootstrap_seed": 2026111401,
+  "corruption_seed": 2026111402,
+  "final_reserve_seconds": 5400,
+  "qualification_sources": [
+    "PickCube-v1/8000000-nominal",
+    "PickCube-v1/8000000-offset002",
+    "PushCube-v1/9000000-nominal",
+    "PushCube-v1/9000000-misaligned"
+  ]
+}

@@ -589,3 +589,7 @@ Reproduce analysis in a scratch copy of the frozen metadata and read-only links,
 No GitHub push, conference submission, manuscript upload, new dataset, GPU training or paid API. .gitignore, uv.lock, historical evidence and unrelated changes are preserved. Calibration and corrupted-input risk must not be conflated with hardware safety or an improved recovery controller.
 
 Measured clean inspected historical routing, all 17 methods together over 666 unique checkpoints: mean 8.8025 ms, median 0.0009 ms, p95 0.0029 ms, maximum 276.9906 ms. The frozen router memoizes identical queries; these are actual mixed cold/cached-call costs including common computations, not isolated per-method benchmarks or sensor/robot latency. Per-view times and literal/support counts are retained in the corresponding prediction records.
+
+## Separately qualified final-evidence continuation
+
+The historical operational campaign above remains unchanged. A newly preregistered postmortem continuation uses identical calibration and excludes the already attempted parent. It completed 159/159 untouched parents. See [DSRE_FINAL_OPERATIONAL_RESULTS.md](DSRE_FINAL_OPERATIONAL_RESULTS.md) and [DSRE_FINAL_ROBUSTNESS_AND_BREADTH.md](DSRE_FINAL_ROBUSTNESS_AND_BREADTH.md), with exact evidence `results/dsre-operational/20261114T180630Z`. No old result is silently replaced.

@@ -1,29 +1,26 @@
-# DSRE operational research scope
-
-The contract distinguishes factual observation, policy-label fidelity, measured
-action adequacy, decision necessity and generalization. Exact minimum pure rules,
-robust feasible-action intersections and Clopper-Pearson inference are established.
-B7 and the ordinary strict-then-risk wrapper remain equivalent. The contribution
-must be the intervention-grounded operational specification and measured
-consequences of stopping, risk qualification and imperfect observations. A shorter
-explanation than a tree path is not evidence of a new algorithm or human benefit.
+# DSRE contribution and boundaries
 
 
-New independent calibration/test: 360/360 and 0/160 parents. Exact results, bounds and scope are in docs/DSRE_RSS2027_STRENGTHENED_RESULTS.md.
 
-**Method:** scoped and mathematically checkable; algorithmic distinctiveness is not
-established. **Evidence:** 360/360 calibration and 0/160 test parents;
-calibration and held-out confirmation are distinct. The new operational result is
-incomplete if no full test parents exist. Retrospective comparisons remain exploratory;
-broad recovery, sensor transfer and third-task validation remain limited.
-**Paper:** the master has eight content pages plus references and Stage1 five plus one,
-with anonymous embedded fonts and final claim/format evidence in final_audit.json. The principal
-researcher must judge whether the operational insight is consequential enough for
-RSS. This report does not claim publication readiness, guaranteed acceptance or
-hardware recovery improvement. No push, upload or submission is performed.
+Pick's gated risk tier completes 110/158,
++18.99 [+13.92, +24.05] pp relative to strict DSRE. All 30 additional successes maintain
+already-successful starts; neither policy realizes a required Pick recovery.
+Push completes 159/160, including
+81 required recoveries and one inadequate action.
+The ordinary risk wrapper and calibrated CART1/CART2 match both operating points;
+on Push, B5 and always-recover also match. These results support the distinction
+between strict justification, risk eligibility and action quality, while providing
+no evidence of controller or prediction superiority. The confidence intervals
+describe the fixed seed-parent distribution, not general task diversity.
 
-## Actual failed operational gate
 
-The new calibration is complete, but the primary held-out operational effect is NOT ESTIMABLE: 0/160 test parents, one secondary paired checkpoint, no selected continuation. An offline contact list/tuple defect is sufficient to trigger the guard; failed live diagnostics were not saved. No physical parity is established. The explicit frozen halt was honored without repeats, model changes or replacement seeds. The papers therefore use only prominently labeled retrospective operational comparisons on the inspected old cohort. This is not independent prospective operational confirmation. A future fixed study must first qualify the corrected selected executor, then collect an untouched test allocation and sufficient rare-action assignments. Pick recover needs at least 56 more zero-error assigned parents under the global standard; no targeted replenishment is performed here.
 
-The method specification can pass its scoped mathematical gate, while the operational evidence gate remains INCOMPLETE. Formal paper compilation does not remove this scientific weakness or establish RSS readiness.
+**Method:** mathematically scoped and testable, with explicit established equivalences;
+new solver/calibration theory is not claimed. **Evidence:** assess actual completion,
+parity, baseline results, rare uncertified strata and breadth from the numerical
+report. **Paper:** format and claim audit evidence is separate from significance.
+The first page must present the intervention problem/product and the strongest
+actual evidence, without implying human trust, hardware recovery or acceptance.
+No publication readiness or guaranteed acceptance follows automatically.
+
+Exact operational results: docs/DSRE_FINAL_OPERATIONAL_RESULTS.md; evidence `results/dsre-operational/20261114T180630Z`.

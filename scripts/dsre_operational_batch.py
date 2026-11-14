@@ -22,7 +22,8 @@ def selected_branch(cell, summary, root, router, calibration, deadline):
     # The typed packet exposes only frozen predecision predicates. Paired labels
     # are never arguments to routing, and calibration was sealed before test.
     packet = packet_from_summary(summary, read(root / "frozen_routers.json"))
-    decision = router.route(packet)["DSRE_risk"]
+    decisions = router.route(packet)
+    decision = decisions["DSRE_risk"]
     action = gated_action(
         "DSRE_risk", cell.task, decision["action"], calibration["strata"]
     )
@@ -34,6 +35,15 @@ def selected_branch(cell, summary, root, router, calibration, deadline):
         "proposed_action": decision["action"],
         "action": action,
         "decision": decision,
+        "all_method_actions": {
+            method: {
+                "proposal": value["action"],
+                "gated": gated_action(
+                    method, cell.task, value["action"], calibration["strata"]
+                ),
+            }
+            for method, value in decisions.items()
+        },
         "calibration_sha256": sha(root / "calibration_decision.json"),
         "decision_frozen_epoch": time.time(),
         "scope": "Independent selected-branch reset execution, after paired measurement; route accepts no outcome labels and was frozen before outcomes. This is an execution repeat, not another independent seed.",
@@ -50,21 +60,40 @@ def selected_branch(cell, summary, root, router, calibration, deadline):
             },
         )
         return
+    if sha(Path(summary["source"])) != summary["source_sha256"]:
+        atomic(
+            directory / "failure.json",
+            {"phase": "source", "reason": "Source hash mismatch"},
+        )
+        raise ValueError("Selected execution source hash mismatch")
     with gzip.open(summary["source"], "rt") as stream:
         raw = json.load(stream)
     condition = "misaligned" if cell.condition == "misaligned" else "nominal"
     world = World(cell.task, cell.seed, condition)
     world.wrapped._max_episode_steps = 200
+    diagnostic = {"phase": "prefix", "source_sha256": summary["source_sha256"]}
     try:
         states = [world.state()]
         for command in raw["prefix_actions"]:
             states.append(world.step(command))
-        errors = [compare(a, b) for a, b in zip(raw["prefix"], states, strict=True)]
+        diagnostic["prefix_states"] = jsonable(states)
+        errors = [
+            compare(a, jsonable(b)) for a, b in zip(raw["prefix"], states, strict=True)
+        ]
         memory = jsonable(world.adapter.capture().custom)
         start = world.state(refresh=True)
+        diagnostic.update(
+            prefix_states=jsonable(states),
+            prefix_errors=errors,
+            controller_memory=memory,
+            model_edit=jsonable(world.edit),
+            start=jsonable(start),
+            memory_matches=memory == raw["canonical_controller_memory"],
+            model_matches=world.edit == raw["model"]["edit"],
+        )
         if (
             not all(passes(e) for e in errors)
-            or not passes(compare(raw["canonical_start"], start))
+            or not passes(compare(raw["canonical_start"], jsonable(start)))
             or memory != raw["canonical_controller_memory"]
             or world.edit != raw["model"]["edit"]
         ):
@@ -73,6 +102,7 @@ def selected_branch(cell, summary, root, router, calibration, deadline):
             )
         tcp = array(world.env.agent.tcp.pose.p).reshape(3).copy()
         frames = []
+        diagnostic.update(phase="future", frames=frames)
         for j in range(70):
             if time.monotonic() >= deadline:
                 raise TimeoutError("Parent selected execution exceeded reserve")
@@ -88,9 +118,10 @@ def selected_branch(cell, summary, root, router, calibration, deadline):
             )
         paired = raw["traces"][action]
         future_errors = [
-            compare(a["state"], b["state"])
+            compare(a["state"], jsonable(b["state"]))
             for a, b in zip(paired["frames"], frames, strict=True)
         ]
+        diagnostic["future_errors"] = future_errors
         result = {
             "status": "QUALIFIED_SELECTED_EXECUTION",
             "action": action,
@@ -98,6 +129,7 @@ def selected_branch(cell, summary, root, router, calibration, deadline):
             "initial_tcp": tcp.tolist(),
             "start": jsonable(start),
             "prefix_errors": errors,
+            "prefix_states": jsonable(states),
             "controller_memory": memory,
             "model_edit": world.edit,
             "frames": frames,
@@ -126,6 +158,43 @@ def selected_branch(cell, summary, root, router, calibration, deadline):
             or result["terminal_success"] != result["paired_terminal_success"]
         ):
             raise ValueError("Selected execution disagrees with measured paired branch")
+    except Exception as error:
+        diagnostic["reason"] = str(error)
+        diagnostic["first_failed_prefix_index"] = next(
+            (
+                i
+                for i, e in enumerate(diagnostic.get("prefix_errors", []))
+                if not passes(e)
+            ),
+            None,
+        )
+        diagnostic["first_failed_future_index"] = next(
+            (
+                i
+                for i, e in enumerate(diagnostic.get("future_errors", []))
+                if not passes(e)
+            ),
+            None,
+        )
+        with gzip.open(directory / "incomplete_execution.json.gz", "wt") as stream:
+            json.dump(jsonable(diagnostic), stream, allow_nan=False)
+        atomic(
+            directory / "failure.json",
+            {
+                k: v
+                for k, v in diagnostic.items()
+                if k
+                not in (
+                    "prefix_states",
+                    "prefix_errors",
+                    "frames",
+                    "controller_memory",
+                    "start",
+                    "model_edit",
+                )
+            },
+        )
+        raise
     finally:
         world.close()
 
