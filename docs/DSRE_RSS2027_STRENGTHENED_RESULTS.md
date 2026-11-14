@@ -1,297 +1,591 @@
-# DSRE RSS2027: independent prospective follow-up
+# DSRE: operational recovery justification, calibration and observation robustness
 
-Primary status: **COMPLETE**, 333/333 new complete parents, 666/666 primary checkpoints, 666 qualified checkpoints. No seed replacement or retraining.
+Evidence: `results/dsre-operational/20261114T140659Z`. Base `c2f77332f0a72b7f3930e846c1d4e0a8f82da67b`; branch `research/dsre-operational-full-paper`. Exact local commit, archive and resource accounting are in completion_manifest.json.
 
-Evidence: `results/dsre-followup/20261113T205403Z`. Earlier interrupted evidence: `results/dsre-rss2027/20261113T193554Z/`, immutable. Reviewed base `45422ef455327db91e08752edb684181800971ed`. Branch `research/dsre-rss2027-independent-followup`; exact local commit and archive SHA appear in the new completion manifest.
+Registered 520 new parents: 360 calibration plus 160 disjoint test. Completed 360/520; new test 0/160 parents, 0/320 checkpoints. Missing/partial IDs and all secondary qualified cells are explicit in missingness.json. Prior 333-parent follow-up and earlier interrupted cohort remain sealed and unchanged.
 
-## Research claim and cohort separation
+## Scientific and operational contract
 
-The fixed question is what observable evidence suffices to justify a fixed recovery intervention relative to paired measured outcomes, and what obstructs justification. Minimum-literal DSRE, its witnesses, support/ties, two skills, observations and horizon remain unchanged. B7 is the same decision problem. A finite-reference certificate is not a deployment risk guarantee.
+The fixed question is which observable facts suffice to justify a fixed robot intervention relative to paired outcomes, and why justification fails. Exact sufficient rules, support/ties, two skills, horizon, utility and witnesses remain unchanged. B7 and the equally wrapped ordinary risk rule are mathematically equivalent; no new pure-rule algorithm or controller is claimed. Runtime schemas forbid outcome labels and require common facts to agree across comparators. No new model fits were performed. Four existing depth-1/2 trees at budget one are loaded without training; full-reference outcomes remain development only.
 
-The earlier 33 complete parents/task and positive preliminary results were inspected before this separately preregistered follow-up. The primary population is exclusively Pick 6000034..6000199 (166 parents), Push 7000033..7000199 (167 parents), both unchanged conditions. The original Pick 6000033 boundary parent is excluded; its orphan stays in the earlier study only. Frozen reference/routers and eight existing small CART trees are byte-identical; **zero new fits**. The old 844 development checkpoints never absorb prospective outcomes.
+Abstention is defer/stop and contributes zero to unconditional autonomous completion. Conditional success among actions is separate. Initially unsuccessful means terminal task success is false at the decision checkpoint; it does not assert a separately annotated failure event or that a normal unfinished prefix is a failure. Required recovery means recover-only adequacy relative to the two fixed skills and horizon. Neither-success actions are inadequate even if intervention regret relative to the best available action is zero.
 
-`followup_preregistration.md`, sorted seed manifest and `confirmation_freeze.json` were frozen before outcomes. Execution retains the original schedule after filtering. The seed/archive/directory overlap audit passed before physics. `scientific_reuse_regression.json` proves the entire existing physics implementation hash is unchanged. New code only schedules chunks, accounts resources, analyzes and presents the fixed comparisons.
+All new paired measurements use unchanged CPU physics, complete reset/action-prefix reconstruction and controller/model checks. The registered test planned an additional calibrated selected branch after a fresh reset/prefix. Its first guard failed before a continuation, so no selected repeat was completed. Paired outcome lookup remains deterministic counterfactual estimation and is not misrepresented as a standalone online campaign.
 
-## Orchestration and missingness
+## Independent calibration and exact bounds
 
-15 synchronous chunks consumed 5216.45seconds of the10800-second physics ceiling. Chunk resource rows are independently retained in `chunks/` and outer worker CPU/wall rows in `commands.jsonl`. At most 480 seconds/24 parents per chunk and 120 seconds per parent, with 120 seconds reserved before launch. Each complete parent has an fsync/atomic marker for two qualified cells. Source/prefix/controller/model inconsistencies halt; uncommitted interrupted parents are never repeated.
+Actual calibration: 360/360 parents. Primary target: assigned-parent any-error probability <=10% for task/action strata, under the two registered conditions and fixed seed distribution. Any bad assigned condition marks that parent erroneous. All 17 methods use global delta=.05/(4*17), requiring 69 zero-error assigned parents; primary four-stratum diagnostic delta=.0125 requires 42. Only the stricter global gate enables actions. The bound is not for arbitrary time points, shifted observations, hardware or checkpoint-weighted sampling.
 
-Partial/missing parents: 0. Qualified secondary-only cells: 0. Exact IDs/reasons are in `followup_missingness.json`. Cohort completeness is not inferred from a clean chunk exit. The previous SIGTERM cause remains unknown; this run does not retroactively diagnose it.
+| Method | Task/action | Assigned parents | Erroneous parents | Primary diagnostic upper | Global-family upper | Operational status |
+|---|---|---:|---:|---:|---:|---|
+| DSRE_strict | PickCube-v1/continue | 180 | 0 | 2.405% | 3.929% | CERTIFIED_PARENT_ACTION_SCOPE |
+| DSRE_strict | PickCube-v1/recover | 13 | 0 | 28.615% | 42.594% | NOT_CERTIFIED |
+| DSRE_strict | PushCube-v1/continue | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| DSRE_strict | PushCube-v1/recover | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| B7 | PickCube-v1/continue | 180 | 0 | 2.405% | 3.929% | CERTIFIED_PARENT_ACTION_SCOPE |
+| B7 | PickCube-v1/recover | 13 | 0 | 28.615% | 42.594% | NOT_CERTIFIED |
+| B7 | PushCube-v1/continue | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| B7 | PushCube-v1/recover | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| DSRE_risk | PickCube-v1/continue | 180 | 1 | 3.492% | 5.194% | CERTIFIED_PARENT_ACTION_SCOPE |
+| DSRE_risk | PickCube-v1/recover | 13 | 0 | 28.615% | 42.594% | NOT_CERTIFIED |
+| DSRE_risk | PushCube-v1/continue | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| DSRE_risk | PushCube-v1/recover | 180 | 1 | 3.492% | 5.194% | CERTIFIED_PARENT_ACTION_SCOPE |
+| B7_risk | PickCube-v1/continue | 180 | 1 | 3.492% | 5.194% | CERTIFIED_PARENT_ACTION_SCOPE |
+| B7_risk | PickCube-v1/recover | 13 | 0 | 28.615% | 42.594% | NOT_CERTIFIED |
+| B7_risk | PushCube-v1/continue | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| B7_risk | PushCube-v1/recover | 180 | 1 | 3.492% | 5.194% | CERTIFIED_PARENT_ACTION_SCOPE |
+| B1_one_strict | PickCube-v1/continue | 134 | 0 | 3.217% | 5.242% | CERTIFIED_PARENT_ACTION_SCOPE |
+| B1_one_strict | PickCube-v1/recover | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| B1_one_strict | PushCube-v1/continue | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| B1_one_strict | PushCube-v1/recover | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| B1_two_strict | PickCube-v1/continue | 180 | 0 | 2.405% | 3.929% | CERTIFIED_PARENT_ACTION_SCOPE |
+| B1_two_strict | PickCube-v1/recover | 12 | 0 | 30.592% | 45.188% | NOT_CERTIFIED |
+| B1_two_strict | PushCube-v1/continue | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| B1_two_strict | PushCube-v1/recover | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| CART1_strict | PickCube-v1/continue | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| CART1_strict | PickCube-v1/recover | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| CART1_strict | PushCube-v1/continue | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| CART1_strict | PushCube-v1/recover | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| CART2_strict | PickCube-v1/continue | 180 | 0 | 2.405% | 3.929% | CERTIFIED_PARENT_ACTION_SCOPE |
+| CART2_strict | PickCube-v1/recover | 11 | 0 | 32.858% | 48.104% | NOT_CERTIFIED |
+| CART2_strict | PushCube-v1/continue | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| CART2_strict | PushCube-v1/recover | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| CART2_pruned_strict | PickCube-v1/continue | 180 | 0 | 2.405% | 3.929% | CERTIFIED_PARENT_ACTION_SCOPE |
+| CART2_pruned_strict | PickCube-v1/recover | 11 | 0 | 32.858% | 48.104% | NOT_CERTIFIED |
+| CART2_pruned_strict | PushCube-v1/continue | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| CART2_pruned_strict | PushCube-v1/recover | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| CART1_beta10 | PickCube-v1/continue | 180 | 1 | 3.492% | 5.194% | CERTIFIED_PARENT_ACTION_SCOPE |
+| CART1_beta10 | PickCube-v1/recover | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| CART1_beta10 | PushCube-v1/continue | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| CART1_beta10 | PushCube-v1/recover | 180 | 1 | 3.492% | 5.194% | CERTIFIED_PARENT_ACTION_SCOPE |
+| CART2_beta10 | PickCube-v1/continue | 180 | 1 | 3.492% | 5.194% | CERTIFIED_PARENT_ACTION_SCOPE |
+| CART2_beta10 | PickCube-v1/recover | 11 | 0 | 32.858% | 48.104% | NOT_CERTIFIED |
+| CART2_beta10 | PushCube-v1/continue | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| CART2_beta10 | PushCube-v1/recover | 180 | 1 | 3.492% | 5.194% | CERTIFIED_PARENT_ACTION_SCOPE |
+| B5_beta10 | PickCube-v1/continue | 180 | 13 | 12.770% | 15.396% | NOT_CERTIFIED |
+| B5_beta10 | PickCube-v1/recover | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| B5_beta10 | PushCube-v1/continue | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| B5_beta10 | PushCube-v1/recover | 180 | 1 | 3.492% | 5.194% | CERTIFIED_PARENT_ACTION_SCOPE |
+| B0_continue | PickCube-v1/continue | 180 | 105 | 66.598% | 69.780% | NOT_CERTIFIED |
+| B0_continue | PickCube-v1/recover | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| B0_continue | PushCube-v1/continue | 180 | 180 | 100.000% | 100.000% | NOT_CERTIFIED |
+| B0_continue | PushCube-v1/recover | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| B0_recover | PickCube-v1/continue | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| B0_recover | PickCube-v1/recover | 180 | 51 | 36.539% | 40.003% | NOT_CERTIFIED |
+| B0_recover | PushCube-v1/continue | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| B0_recover | PushCube-v1/recover | 180 | 1 | 3.492% | 5.194% | CERTIFIED_PARENT_ACTION_SCOPE |
+| full_signature_strict | PickCube-v1/continue | 180 | 0 | 2.405% | 3.929% | CERTIFIED_PARENT_ACTION_SCOPE |
+| full_signature_strict | PickCube-v1/recover | 16 | 2 | 41.954% | 54.044% | NOT_CERTIFIED |
+| full_signature_strict | PushCube-v1/continue | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| full_signature_strict | PushCube-v1/recover | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| greedy_pure_rule | PickCube-v1/continue | 180 | 0 | 2.405% | 3.929% | CERTIFIED_PARENT_ACTION_SCOPE |
+| greedy_pure_rule | PickCube-v1/recover | 13 | 0 | 28.615% | 42.594% | NOT_CERTIFIED |
+| greedy_pure_rule | PushCube-v1/continue | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| greedy_pure_rule | PushCube-v1/recover | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| policy_faithful | PickCube-v1/continue | 180 | 1 | 3.492% | 5.194% | CERTIFIED_PARENT_ACTION_SCOPE |
+| policy_faithful | PickCube-v1/recover | 11 | 0 | 32.858% | 48.104% | NOT_CERTIFIED |
+| policy_faithful | PushCube-v1/continue | 0 | 0 | 100.000% | 100.000% | NOT_CERTIFIED |
+| policy_faithful | PushCube-v1/recover | 180 | 1 | 3.492% | 5.194% | CERTIFIED_PARENT_ACTION_SCOPE |
 
-## New suffix-only primary results
+Primary unqualified strata and remaining sample limitations:
 
-Counts below are recommendations / selected-action terminal successes / unacceptable choices, with abstention outside the success numerator. Each pair has two separate full-prefix reset branches, 70 controls/3.5 seconds, unchanged terminal task success. Same-information provisional B5 (.10 error) and CART (.9 purity) change the empirical justification standard and are not strict certificates.
+- DSRE_risk|PickCube-v1|recover: 13 assigned, 0 erroneous. At least 56 additional independent assigned parents with no additional errors would be needed to reach the global zero-error minimum. More unassigned nominal trials do not directly qualify this action. A future independently fixed cohort must preserve the assignment distribution or state its changed estimand; this is a sample limitation, not authorization for replenishment.
+- DSRE_risk|PushCube-v1|continue: 0 assigned, 0 erroneous. At least 69 additional independent assigned parents with no additional errors would be needed to reach the global zero-error minimum. More unassigned nominal trials do not directly qualify this action. A future independently fixed cohort must preserve the assignment distribution or state its changed estimand; this is a sample limitation, not authorization for replenishment.
 
-### PickCube-v1
+Calibration selection is outcome-independent; the immutable decision/seal precedes every test parent. No threshold, allocation, rule, action or reference is updated from test labels. Empty/underpowered strata stay NOT CERTIFIED. No targeted replenishment was performed. Conditional certification is limited to enabled strata and stated simulator/observation scope.
 
-| Budget | Method | All starts rec / good / bad | Initially failed rec / good / bad | Initially successful rec / good / bad |
-|---|---|---:|---:|---:|
-| 0 | DSRE | 145 / 145 / 0 | 16 / 16 / 0 | 129 / 129 / 0 |
-| 0 | B7 | 145 / 145 / 0 | 16 / 16 / 0 | 129 / 129 / 0 |
-| 0 | B1_two_strict | 145 / 145 / 0 | 16 / 16 / 0 | 129 / 129 / 0 |
-| 0 | CART1_strict | 0 / 0 / 0 | 0 / 0 / 0 | 0 / 0 / 0 |
-| 0 | CART2_strict | 145 / 145 / 0 | 16 / 16 / 0 | 129 / 129 / 0 |
-| 0 | B5_beta10 | 240 / 224 / 16 | 17 / 1 / 16 | 223 / 223 / 0 |
-| 0 | CART2_beta10 | 240 / 240 / 0 | 17 / 17 / 0 | 223 / 223 / 0 |
-| 0 | B0_continue | 332 / 224 / 108 | 109 / 1 / 108 | 223 / 223 / 0 |
-| 0 | B0_recover | 332 / 248 / 84 | 109 / 84 / 25 | 223 / 164 / 59 |
-| 1 | DSRE | 187 / 187 / 0 | 18 / 18 / 0 | 169 / 169 / 0 |
-| 1 | B7 | 187 / 187 / 0 | 18 / 18 / 0 | 169 / 169 / 0 |
-| 1 | B1_two_strict | 186 / 186 / 0 | 17 / 17 / 0 | 169 / 169 / 0 |
-| 1 | CART1_strict | 0 / 0 / 0 | 0 / 0 / 0 | 0 / 0 / 0 |
-| 1 | CART2_strict | 186 / 186 / 0 | 17 / 17 / 0 | 169 / 169 / 0 |
-| 1 | B5_beta10 | 241 / 224 / 17 | 18 / 1 / 17 | 223 / 223 / 0 |
-| 1 | CART2_beta10 | 240 / 240 / 0 | 17 / 17 / 0 | 223 / 223 / 0 |
-| 1 | B0_continue | 332 / 224 / 108 | 109 / 1 / 108 | 223 / 223 / 0 |
-| 1 | B0_recover | 332 / 248 / 84 | 109 / 84 / 25 | 223 / 164 / 59 |
+## Disjoint held-out operational results
 
-| Budget | Outcome class | Checkpoints / parents | Strict DSRE rec / good / bad | Continue / recover assigned |
-|---|---|---:|---:|---:|
-| 0 | continue_only | 60 / 47 | 36 / 36 / 0 | 36 / 0 |
-| 0 | recover_only | 84 / 84 | 16 / 16 / 0 | 0 / 16 |
-| 0 | both | 164 / 120 | 93 / 93 / 0 | 93 / 0 |
-| 0 | neither | 24 / 24 | 0 / 0 / 0 | 0 / 0 |
-| 1 | continue_only | 60 / 47 | 50 / 50 / 0 | 50 / 0 |
-| 1 | recover_only | 84 / 84 | 17 / 17 / 0 | 0 / 17 |
-| 1 | both | 164 / 120 | 120 / 120 / 0 | 120 / 0 |
-| 1 | neither | 24 / 24 | 0 / 0 / 0 | 0 / 0 |
+Counts are recommendations / successful / unacceptable. All denominators include deferral; reported autonomous completion counts are exactly successful selected actions. Proposed and globally gated modes are separated. Full-signature is upper-information, not a fair minimum-explanation length competitor; policy-faithful explains a tree label rather than action adequacy.
 
-### PushCube-v1
+### PickCube-v1: proposal
 
-| Budget | Method | All starts rec / good / bad | Initially failed rec / good / bad | Initially successful rec / good / bad |
-|---|---|---:|---:|---:|
-| 0 | DSRE | 0 / 0 / 0 | 0 / 0 / 0 | 0 / 0 / 0 (empty) |
-| 0 | B7 | 0 / 0 / 0 | 0 / 0 / 0 | 0 / 0 / 0 (empty) |
-| 0 | B1_two_strict | 0 / 0 / 0 | 0 / 0 / 0 | 0 / 0 / 0 (empty) |
-| 0 | CART1_strict | 0 / 0 / 0 | 0 / 0 / 0 | 0 / 0 / 0 (empty) |
-| 0 | CART2_strict | 0 / 0 / 0 | 0 / 0 / 0 | 0 / 0 / 0 (empty) |
-| 0 | B5_beta10 | 334 / 334 / 0 | 334 / 334 / 0 | 0 / 0 / 0 (empty) |
-| 0 | CART2_beta10 | 334 / 334 / 0 | 334 / 334 / 0 | 0 / 0 / 0 (empty) |
-| 0 | B0_continue | 334 / 167 / 167 | 334 / 167 / 167 | 0 / 0 / 0 (empty) |
-| 0 | B0_recover | 334 / 334 / 0 | 334 / 334 / 0 | 0 / 0 / 0 (empty) |
-| 1 | DSRE | 0 / 0 / 0 | 0 / 0 / 0 | 0 / 0 / 0 (empty) |
-| 1 | B7 | 0 / 0 / 0 | 0 / 0 / 0 | 0 / 0 / 0 (empty) |
-| 1 | B1_two_strict | 0 / 0 / 0 | 0 / 0 / 0 | 0 / 0 / 0 (empty) |
-| 1 | CART1_strict | 0 / 0 / 0 | 0 / 0 / 0 | 0 / 0 / 0 (empty) |
-| 1 | CART2_strict | 0 / 0 / 0 | 0 / 0 / 0 | 0 / 0 / 0 (empty) |
-| 1 | B5_beta10 | 334 / 334 / 0 | 334 / 334 / 0 | 0 / 0 / 0 (empty) |
-| 1 | CART2_beta10 | 334 / 334 / 0 | 334 / 334 / 0 | 0 / 0 / 0 (empty) |
-| 1 | B0_continue | 334 / 167 / 167 | 334 / 167 / 167 | 0 / 0 / 0 (empty) |
-| 1 | B0_recover | 334 / 334 / 0 | 334 / 334 / 0 | 0 / 0 / 0 (empty) |
+| Method | N | Rec/good/bad | Deferred | Conditional good | Autonomous completion | Initially unsuccessful good/N | Required recovery good | Unnecessary recovery, initially successful |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| DSRE_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B7 | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| DSRE_risk | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B7_risk | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B1_one_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B1_two_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| CART1_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| CART2_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| CART2_pruned_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| CART1_beta10 | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| CART2_beta10 | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B5_beta10 | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B0_continue | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B0_recover | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| full_signature_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| greedy_pure_rule | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| policy_faithful | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+### PickCube-v1: calibrated
 
-| Budget | Outcome class | Checkpoints / parents | Strict DSRE rec / good / bad | Continue / recover assigned |
-|---|---|---:|---:|---:|
-| 0 | continue_only | 0 / 0 | 0 / 0 / 0 | 0 / 0 |
-| 0 | recover_only | 167 / 167 | 0 / 0 / 0 | 0 / 0 |
-| 0 | both | 167 / 167 | 0 / 0 / 0 | 0 / 0 |
-| 0 | neither | 0 / 0 | 0 / 0 / 0 | 0 / 0 |
-| 1 | continue_only | 0 / 0 | 0 / 0 / 0 | 0 / 0 |
-| 1 | recover_only | 167 / 167 | 0 / 0 / 0 | 0 / 0 |
-| 1 | both | 167 / 167 | 0 / 0 / 0 | 0 / 0 |
-| 1 | neither | 0 / 0 | 0 / 0 / 0 | 0 / 0 |
+| Method | N | Rec/good/bad | Deferred | Conditional good | Autonomous completion | Initially unsuccessful good/N | Required recovery good | Unnecessary recovery, initially successful |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| DSRE_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B7 | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| DSRE_risk | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B7_risk | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B1_one_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B1_two_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| CART1_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| CART2_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| CART2_pruned_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| CART1_beta10 | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| CART2_beta10 | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B5_beta10 | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B0_continue | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B0_recover | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| full_signature_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| greedy_pure_rule | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| policy_faithful | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+### PushCube-v1: proposal
 
-## Paired uncertainty and decision necessity
+| Method | N | Rec/good/bad | Deferred | Conditional good | Autonomous completion | Initially unsuccessful good/N | Required recovery good | Unnecessary recovery, initially successful |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| DSRE_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B7 | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| DSRE_risk | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B7_risk | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B1_one_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B1_two_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| CART1_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| CART2_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| CART2_pruned_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| CART1_beta10 | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| CART2_beta10 | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B5_beta10 | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B0_continue | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B0_recover | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| full_signature_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| greedy_pure_rule | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| policy_faithful | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+### PushCube-v1: calibrated
 
-4000 paired parent-bootstrap draws, PCG64 seed 2026111322+taskindex, two-sided 2.5/97.5 percentiles. Both conditions resample together; all complete task parents remain the sampling frame for subgroup ratios. These are suffix-only estimates under fixed routers. Bootstrap [0,0] can reflect no observed variation and is not a population error bound or proof of equality.
+| Method | N | Rec/good/bad | Deferred | Conditional good | Autonomous completion | Initially unsuccessful good/N | Required recovery good | Unnecessary recovery, initially successful |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| DSRE_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B7 | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| DSRE_risk | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B7_risk | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B1_one_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B1_two_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| CART1_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| CART2_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| CART2_pruned_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| CART1_beta10 | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| CART2_beta10 | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B5_beta10 | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B0_continue | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| B0_recover | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| full_signature_strict | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| greedy_pure_rule | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
+| policy_faithful | 0 | 0/0/0 | 0 | N/A | NOT ESTIMABLE | 0/0 | 0 | 0 |
 
-| Task | Population | b1-b0 successful/checkpoint [95%] | Coverage difference [95%] | Unacceptable/checkpoint difference [95%] |
-|---|---|---:|---:|---:|
-| PickCube-v1 | all | +12.65 [+9.33, +16.27] pp | +12.65 [+9.33, +16.27] pp | +0.00 [+0.00, +0.00] pp |
-| PickCube-v1 | initial_failure | +1.83 [+0.00, +4.67] pp | +1.83 [+0.00, +4.67] pp | +0.00 [+0.00, +0.00] pp |
-| PickCube-v1 | initial_success | +17.94 [+13.46, +22.55] pp | +17.94 [+13.46, +22.55] pp | +0.00 [+0.00, +0.00] pp |
-| PickCube-v1 | recover_only | +1.19 [+0.00, +3.90] pp | +1.19 [+0.00, +3.90] pp | +0.00 [+0.00, +0.00] pp |
-| PickCube-v1 | continue_only | +23.33 [+12.24, +34.38] pp | +23.33 [+12.24, +34.38] pp | +0.00 [+0.00, +0.00] pp |
-| PickCube-v1 | both | +16.46 [+11.76, +21.21] pp | +16.46 [+11.76, +21.21] pp | +0.00 [+0.00, +0.00] pp |
-| PickCube-v1 | neither | +0.00 [+0.00, +0.00] pp | +0.00 [+0.00, +0.00] pp | +0.00 [+0.00, +0.00] pp |
-| PushCube-v1 | all | +0.00 [+0.00, +0.00] pp | +0.00 [+0.00, +0.00] pp | +0.00 [+0.00, +0.00] pp |
-| PushCube-v1 | initial_failure | +0.00 [+0.00, +0.00] pp | +0.00 [+0.00, +0.00] pp | +0.00 [+0.00, +0.00] pp |
-| PushCube-v1 | initial_success | N/A (empty population) | N/A (empty population) | N/A (empty population) |
-| PushCube-v1 | recover_only | +0.00 [+0.00, +0.00] pp | +0.00 [+0.00, +0.00] pp | +0.00 [+0.00, +0.00] pp |
-| PushCube-v1 | continue_only | N/A (empty population) | N/A (empty population) | N/A (empty population) |
-| PushCube-v1 | both | +0.00 [+0.00, +0.00] pp | +0.00 [+0.00, +0.00] pp | +0.00 [+0.00, +0.00] pp |
-| PushCube-v1 | neither | N/A (empty population) | N/A (empty population) | N/A (empty population) |
+**No complete held-out test parent exists. All test rates and effects are NOT ESTIMABLE; zero counts are empty populations, not measured zero success or error.** The first test parent failed the selected reset qualification before any selected continuation. One independently qualified paired checkpoint is retained as secondary evidence; it is never promoted to a completed parent. The remaining 159 parents are untouched. See study_halt.json and selected_qualification_failure_diagnosis.json. No physics was resumed, no seeds replaced and no frozen source amended.
 
-| Task | Outcome class | b0 good | b1 good | Difference | Failed-start difference |
+## Calibration cohort: descriptive, gates fitted on these errors
+
+| Task | Method | N | Gated good/bad/defer | Initially unsuccessful good/N | Required recoveries | Maintained success |
+|---|---|---:|---:|---:|---:|---:|
+| PickCube-v1 | DSRE_strict | 360 | 183/0/177 | 2/109 | 0 | 181 |
+| PickCube-v1 | B7 | 360 | 183/0/177 | 2/109 | 0 | 181 |
+| PickCube-v1 | DSRE_risk | 360 | 254/1/105 | 4/109 | 0 | 250 |
+| PickCube-v1 | B7_risk | 360 | 254/1/105 | 4/109 | 0 | 250 |
+| PickCube-v1 | B1_one_strict | 360 | 134/0/226 | 2/109 | 0 | 132 |
+| PickCube-v1 | B1_two_strict | 360 | 183/0/177 | 2/109 | 0 | 181 |
+| PickCube-v1 | CART1_strict | 360 | 0/0/360 | 0/109 | 0 | 0 |
+| PickCube-v1 | CART2_strict | 360 | 183/0/177 | 2/109 | 0 | 181 |
+| PickCube-v1 | CART2_pruned_strict | 360 | 183/0/177 | 2/109 | 0 | 181 |
+| PickCube-v1 | CART1_beta10 | 360 | 255/1/104 | 4/109 | 0 | 251 |
+| PickCube-v1 | CART2_beta10 | 360 | 255/1/104 | 4/109 | 0 | 251 |
+| PickCube-v1 | B5_beta10 | 360 | 0/0/360 | 0/109 | 0 | 0 |
+| PickCube-v1 | B0_continue | 360 | 0/0/360 | 0/109 | 0 | 0 |
+| PickCube-v1 | B0_recover | 360 | 0/0/360 | 0/109 | 0 | 0 |
+| PickCube-v1 | full_signature_strict | 360 | 185/0/175 | 2/109 | 0 | 183 |
+| PickCube-v1 | greedy_pure_rule | 360 | 183/0/177 | 2/109 | 0 | 181 |
+| PickCube-v1 | policy_faithful | 360 | 255/1/104 | 4/109 | 0 | 251 |
+| PushCube-v1 | DSRE_strict | 360 | 0/0/360 | 0/360 | 0 | 0 |
+| PushCube-v1 | B7 | 360 | 0/0/360 | 0/360 | 0 | 0 |
+| PushCube-v1 | DSRE_risk | 360 | 359/1/0 | 359/360 | 183 | 0 |
+| PushCube-v1 | B7_risk | 360 | 359/1/0 | 359/360 | 183 | 0 |
+| PushCube-v1 | B1_one_strict | 360 | 0/0/360 | 0/360 | 0 | 0 |
+| PushCube-v1 | B1_two_strict | 360 | 0/0/360 | 0/360 | 0 | 0 |
+| PushCube-v1 | CART1_strict | 360 | 0/0/360 | 0/360 | 0 | 0 |
+| PushCube-v1 | CART2_strict | 360 | 0/0/360 | 0/360 | 0 | 0 |
+| PushCube-v1 | CART2_pruned_strict | 360 | 0/0/360 | 0/360 | 0 | 0 |
+| PushCube-v1 | CART1_beta10 | 360 | 359/1/0 | 359/360 | 183 | 0 |
+| PushCube-v1 | CART2_beta10 | 360 | 359/1/0 | 359/360 | 183 | 0 |
+| PushCube-v1 | B5_beta10 | 360 | 359/1/0 | 359/360 | 183 | 0 |
+| PushCube-v1 | B0_continue | 360 | 0/0/360 | 0/360 | 0 | 0 |
+| PushCube-v1 | B0_recover | 360 | 359/1/0 | 359/360 | 183 | 0 |
+| PushCube-v1 | full_signature_strict | 360 | 0/0/360 | 0/360 | 0 | 0 |
+| PushCube-v1 | greedy_pure_rule | 360 | 0/0/360 | 0/360 | 0 | 0 |
+| PushCube-v1 | policy_faithful | 360 | 359/1/0 | 359/360 | 183 | 0 |
+
+Primary gated outcome decomposition for this same labeled population:
+
+| Task | Outcome/start subgroup | N | Good/bad/defer | Required recovery | Maintained success |
 |---|---|---:|---:|---:|---:|
-| PickCube-v1 | continue_only | 36 | 50 | +14 | +1 |
-| PickCube-v1 | recover_only | 16 | 17 | +1 | +1 |
-| PickCube-v1 | both | 93 | 120 | +27 | +0 |
-| PickCube-v1 | neither | 0 | 0 | +0 | +0 |
-| PushCube-v1 | continue_only | 0 | 0 | +0 | +0 |
-| PushCube-v1 | recover_only | 0 | 0 | +0 | +0 |
-| PushCube-v1 | both | 0 | 0 | +0 | +0 |
-| PushCube-v1 | neither | 0 | 0 | +0 | +0 |
+| PickCube-v1 | continue_only | 70 | 70/0/0 | 0 | 66 |
+| PickCube-v1 | recover_only | 83 | 0/1/82 | 0 | 0 |
+| PickCube-v1 | both | 185 | 184/0/1 | 0 | 184 |
+| PickCube-v1 | neither | 22 | 0/0/22 | 0 | 0 |
+| PickCube-v1 | initial_success | 251 | 250/0/1 | 0 | 250 |
+| PickCube-v1 | initial_failure | 109 | 4/1/104 | 0 | 0 |
+| PushCube-v1 | continue_only | 1 | 0/1/0 | 0 | 0 |
+| PushCube-v1 | recover_only | 183 | 183/0/0 | 183 | 0 |
+| PushCube-v1 | both | 176 | 176/0/0 | 0 | 0 |
+| PushCube-v1 | neither | 0 | 0/0/0 | 0 | 0 |
+| PushCube-v1 | initial_success | 0 | 0/0/0 | 0 | 0 |
+| PushCube-v1 | initial_failure | 360 | 359/1/0 | 183 | 0 |
+## Previously inspected 333-parent follow-up: exploratory application of new gates, not new held-out confirmation
 
-**PickCube-v1:** added successful recommendations on initially unsuccessful starts = +2; added required-recovery successes in recover-only states = +1. Both-success adequate choices do not establish that recovery was necessary. This decomposition uses the original binary outcomes, not a new utility or solver.
+| Task | Method | N | Gated good/bad/defer | Initially unsuccessful good/N | Required recoveries | Maintained success |
+|---|---|---:|---:|---:|---:|---:|
+| PickCube-v1 | DSRE_strict | 332 | 170/0/162 | 1/109 | 0 | 169 |
+| PickCube-v1 | B7 | 332 | 170/0/162 | 1/109 | 0 | 169 |
+| PickCube-v1 | DSRE_risk | 332 | 224/0/108 | 1/109 | 0 | 223 |
+| PickCube-v1 | B7_risk | 332 | 224/0/108 | 1/109 | 0 | 223 |
+| PickCube-v1 | B1_one_strict | 332 | 129/0/203 | 0/109 | 0 | 129 |
+| PickCube-v1 | B1_two_strict | 332 | 170/0/162 | 1/109 | 0 | 169 |
+| PickCube-v1 | CART1_strict | 332 | 0/0/332 | 0/109 | 0 | 0 |
+| PickCube-v1 | CART2_strict | 332 | 170/0/162 | 1/109 | 0 | 169 |
+| PickCube-v1 | CART2_pruned_strict | 332 | 170/0/162 | 1/109 | 0 | 169 |
+| PickCube-v1 | CART1_beta10 | 332 | 224/0/108 | 1/109 | 0 | 223 |
+| PickCube-v1 | CART2_beta10 | 332 | 224/0/108 | 1/109 | 0 | 223 |
+| PickCube-v1 | B5_beta10 | 332 | 0/0/332 | 0/109 | 0 | 0 |
+| PickCube-v1 | B0_continue | 332 | 0/0/332 | 0/109 | 0 | 0 |
+| PickCube-v1 | B0_recover | 332 | 0/0/332 | 0/109 | 0 | 0 |
+| PickCube-v1 | full_signature_strict | 332 | 171/0/161 | 1/109 | 0 | 170 |
+| PickCube-v1 | greedy_pure_rule | 332 | 170/0/162 | 1/109 | 0 | 169 |
+| PickCube-v1 | policy_faithful | 332 | 224/0/108 | 1/109 | 0 | 223 |
+| PushCube-v1 | DSRE_strict | 334 | 0/0/334 | 0/334 | 0 | 0 |
+| PushCube-v1 | B7 | 334 | 0/0/334 | 0/334 | 0 | 0 |
+| PushCube-v1 | DSRE_risk | 334 | 334/0/0 | 334/334 | 167 | 0 |
+| PushCube-v1 | B7_risk | 334 | 334/0/0 | 334/334 | 167 | 0 |
+| PushCube-v1 | B1_one_strict | 334 | 0/0/334 | 0/334 | 0 | 0 |
+| PushCube-v1 | B1_two_strict | 334 | 0/0/334 | 0/334 | 0 | 0 |
+| PushCube-v1 | CART1_strict | 334 | 0/0/334 | 0/334 | 0 | 0 |
+| PushCube-v1 | CART2_strict | 334 | 0/0/334 | 0/334 | 0 | 0 |
+| PushCube-v1 | CART2_pruned_strict | 334 | 0/0/334 | 0/334 | 0 | 0 |
+| PushCube-v1 | CART1_beta10 | 334 | 334/0/0 | 334/334 | 167 | 0 |
+| PushCube-v1 | CART2_beta10 | 334 | 334/0/0 | 334/334 | 167 | 0 |
+| PushCube-v1 | B5_beta10 | 334 | 334/0/0 | 334/334 | 167 | 0 |
+| PushCube-v1 | B0_continue | 334 | 0/0/334 | 0/334 | 0 | 0 |
+| PushCube-v1 | B0_recover | 334 | 334/0/0 | 334/334 | 167 | 0 |
+| PushCube-v1 | full_signature_strict | 334 | 0/0/334 | 0/334 | 0 | 0 |
+| PushCube-v1 | greedy_pure_rule | 334 | 0/0/334 | 0/334 | 0 | 0 |
+| PushCube-v1 | policy_faithful | 334 | 334/0/0 | 334/334 | 167 | 0 |
 
-**PushCube-v1:** added successful recommendations on initially unsuccessful starts = +0; added required-recovery successes in recover-only states = +0. Both-success adequate choices do not establish that recovery was necessary. This decomposition uses the original binary outcomes, not a new utility or solver.
+Primary gated outcome decomposition for this same labeled population:
 
-## Strong controls, actions, support and explanations
+| Task | Outcome/start subgroup | N | Good/bad/defer | Required recovery | Maintained success |
+|---|---|---:|---:|---:|---:|
+| PickCube-v1 | continue_only | 60 | 60/0/0 | 0 | 59 |
+| PickCube-v1 | recover_only | 84 | 0/0/84 | 0 | 0 |
+| PickCube-v1 | both | 164 | 164/0/0 | 0 | 164 |
+| PickCube-v1 | neither | 24 | 0/0/24 | 0 | 0 |
+| PickCube-v1 | initial_success | 223 | 223/0/0 | 0 | 223 |
+| PickCube-v1 | initial_failure | 109 | 1/0/108 | 0 | 0 |
+| PushCube-v1 | continue_only | 0 | 0/0/0 | 0 | 0 |
+| PushCube-v1 | recover_only | 167 | 167/0/0 | 167 | 0 |
+| PushCube-v1 | both | 167 | 167/0/0 | 0 | 0 |
+| PushCube-v1 | neither | 0 | 0/0/0 | 0 | 0 |
+| PushCube-v1 | initial_success | 0 | 0/0/0 | 0 | 0 |
+| PushCube-v1 | initial_failure | 334 | 334/0/0 | 167 | 0 |
 
-| Task/budget comparator | Actual action disagreements |
-|---|---:|
-| PickCube-v1|0|DSRE-B7 | 0 / 332 |
-| PickCube-v1|0|DSRE-B1_two_strict | 0 / 332 |
-| PickCube-v1|0|DSRE-CART1_strict | 145 / 332 |
-| PickCube-v1|0|DSRE-CART2_strict | 0 / 332 |
-| PickCube-v1|1|DSRE-B7 | 0 / 332 |
-| PickCube-v1|1|DSRE-B1_two_strict | 1 / 332 |
-| PickCube-v1|1|DSRE-CART1_strict | 187 / 332 |
-| PickCube-v1|1|DSRE-CART2_strict | 1 / 332 |
-| PushCube-v1|0|DSRE-B7 | 0 / 334 |
-| PushCube-v1|0|DSRE-B1_two_strict | 0 / 334 |
-| PushCube-v1|0|DSRE-CART1_strict | 0 / 334 |
-| PushCube-v1|0|DSRE-CART2_strict | 0 / 334 |
-| PushCube-v1|1|DSRE-B7 | 0 / 334 |
-| PushCube-v1|1|DSRE-B1_two_strict | 0 / 334 |
-| PushCube-v1|1|DSRE-CART1_strict | 0 / 334 |
-| PushCube-v1|1|DSRE-CART2_strict | 0 / 334 |
+### Exploratory historical paired effects; not the missing primary estimate
 
-| Task/budget comparator | Population | DSRE success difference [95%] | DSRE unacceptable difference [95%] |
-|---|---|---:|---:|
-| PickCube-v1|b0|DSRE-CART2_strict | all | +0.00 [+0.00, +0.00] pp | +0.00 [+0.00, +0.00] pp |
-| PickCube-v1|b0|DSRE-CART2_strict | initial_failure | +0.00 [+0.00, +0.00] pp | +0.00 [+0.00, +0.00] pp |
-| PickCube-v1|b0|DSRE-B5_beta10 | all | -23.80 [-31.02, -16.87] pp | -4.82 [-7.23, -2.71] pp |
-| PickCube-v1|b0|DSRE-B5_beta10 | initial_failure | +13.76 [+7.14, +20.91] pp | -14.68 [-21.78, -8.41] pp |
-| PickCube-v1|b0|DSRE-CART2_beta10 | all | -28.61 [-35.24, -22.59] pp | +0.00 [+0.00, +0.00] pp |
-| PickCube-v1|b0|DSRE-CART2_beta10 | initial_failure | -0.92 [-2.89, +0.00] pp | +0.00 [+0.00, +0.00] pp |
-| PickCube-v1|b1|DSRE-CART2_strict | all | +0.30 [+0.00, +0.90] pp | +0.00 [+0.00, +0.00] pp |
-| PickCube-v1|b1|DSRE-CART2_strict | initial_failure | +0.92 [+0.00, +2.91] pp | +0.00 [+0.00, +0.00] pp |
-| PickCube-v1|b1|DSRE-B5_beta10 | all | -11.14 [-15.66, -6.33] pp | -5.12 [-7.53, -3.01] pp |
-| PickCube-v1|b1|DSRE-B5_beta10 | initial_failure | +15.60 [+9.17, +22.86] pp | -15.60 [-22.86, -9.17] pp |
-| PickCube-v1|b1|DSRE-CART2_beta10 | all | -15.96 [-19.58, -12.35] pp | +0.00 [+0.00, +0.00] pp |
-| PickCube-v1|b1|DSRE-CART2_beta10 | initial_failure | +0.92 [+0.00, +2.91] pp | +0.00 [+0.00, +0.00] pp |
-| PushCube-v1|b0|DSRE-CART2_strict | all | +0.00 [+0.00, +0.00] pp | +0.00 [+0.00, +0.00] pp |
-| PushCube-v1|b0|DSRE-CART2_strict | initial_failure | +0.00 [+0.00, +0.00] pp | +0.00 [+0.00, +0.00] pp |
-| PushCube-v1|b0|DSRE-B5_beta10 | all | -100.00 [-100.00, -100.00] pp | +0.00 [+0.00, +0.00] pp |
-| PushCube-v1|b0|DSRE-B5_beta10 | initial_failure | -100.00 [-100.00, -100.00] pp | +0.00 [+0.00, +0.00] pp |
-| PushCube-v1|b0|DSRE-CART2_beta10 | all | -100.00 [-100.00, -100.00] pp | +0.00 [+0.00, +0.00] pp |
-| PushCube-v1|b0|DSRE-CART2_beta10 | initial_failure | -100.00 [-100.00, -100.00] pp | +0.00 [+0.00, +0.00] pp |
-| PushCube-v1|b1|DSRE-CART2_strict | all | +0.00 [+0.00, +0.00] pp | +0.00 [+0.00, +0.00] pp |
-| PushCube-v1|b1|DSRE-CART2_strict | initial_failure | +0.00 [+0.00, +0.00] pp | +0.00 [+0.00, +0.00] pp |
-| PushCube-v1|b1|DSRE-B5_beta10 | all | -100.00 [-100.00, -100.00] pp | +0.00 [+0.00, +0.00] pp |
-| PushCube-v1|b1|DSRE-B5_beta10 | initial_failure | -100.00 [-100.00, -100.00] pp | +0.00 [+0.00, +0.00] pp |
-| PushCube-v1|b1|DSRE-CART2_beta10 | all | -100.00 [-100.00, -100.00] pp | +0.00 [+0.00, +0.00] pp |
-| PushCube-v1|b1|DSRE-CART2_beta10 | initial_failure | -100.00 [-100.00, -100.00] pp | +0.00 [+0.00, +0.00] pp |
+| Task/contrast | Population | Completion difference [95%] |
+|---|---|---:|
+| PickCube-v1/DSRE_risk-DSRE_strict | all | +16.27 [+12.95, +19.88] pp |
+| PickCube-v1/DSRE_risk-DSRE_strict | initial_failure | +0.00 [+0.00, +0.00] pp |
+| PickCube-v1/DSRE_risk-DSRE_strict | initial_success | +24.22 [+20.09, +28.09] pp |
+| PickCube-v1/DSRE_risk-DSRE_strict | recover_only | +0.00 [+0.00, +0.00] pp |
+| PickCube-v1/DSRE_risk-B7_risk | all | +0.00 [+0.00, +0.00] pp |
+| PickCube-v1/DSRE_risk-B7_risk | initial_failure | +0.00 [+0.00, +0.00] pp |
+| PickCube-v1/DSRE_risk-B7_risk | initial_success | +0.00 [+0.00, +0.00] pp |
+| PickCube-v1/DSRE_risk-B7_risk | recover_only | +0.00 [+0.00, +0.00] pp |
+| PickCube-v1/DSRE_risk-CART2_beta10 | all | +0.00 [+0.00, +0.00] pp |
+| PickCube-v1/DSRE_risk-CART2_beta10 | initial_failure | +0.00 [+0.00, +0.00] pp |
+| PickCube-v1/DSRE_risk-CART2_beta10 | initial_success | +0.00 [+0.00, +0.00] pp |
+| PickCube-v1/DSRE_risk-CART2_beta10 | recover_only | +0.00 [+0.00, +0.00] pp |
+| PickCube-v1/DSRE_risk-B5_beta10 | all | +67.47 [+63.86, +71.08] pp |
+| PickCube-v1/DSRE_risk-B5_beta10 | initial_failure | +0.92 [+0.00, +2.91] pp |
+| PickCube-v1/DSRE_risk-B5_beta10 | initial_success | +100.00 [+100.00, +100.00] pp |
+| PickCube-v1/DSRE_risk-B5_beta10 | recover_only | +0.00 [+0.00, +0.00] pp |
+| PickCube-v1/DSRE_risk-B0_recover | all | +67.47 [+63.86, +71.08] pp |
+| PickCube-v1/DSRE_risk-B0_recover | initial_failure | +0.92 [+0.00, +2.91] pp |
+| PickCube-v1/DSRE_risk-B0_recover | initial_success | +100.00 [+100.00, +100.00] pp |
+| PickCube-v1/DSRE_risk-B0_recover | recover_only | +0.00 [+0.00, +0.00] pp |
+| PushCube-v1/DSRE_risk-DSRE_strict | all | +100.00 [+100.00, +100.00] pp |
+| PushCube-v1/DSRE_risk-DSRE_strict | initial_failure | +100.00 [+100.00, +100.00] pp |
+| PushCube-v1/DSRE_risk-DSRE_strict | initial_success | N/A |
+| PushCube-v1/DSRE_risk-DSRE_strict | recover_only | +100.00 [+100.00, +100.00] pp |
+| PushCube-v1/DSRE_risk-B7_risk | all | +0.00 [+0.00, +0.00] pp |
+| PushCube-v1/DSRE_risk-B7_risk | initial_failure | +0.00 [+0.00, +0.00] pp |
+| PushCube-v1/DSRE_risk-B7_risk | initial_success | N/A |
+| PushCube-v1/DSRE_risk-B7_risk | recover_only | +0.00 [+0.00, +0.00] pp |
+| PushCube-v1/DSRE_risk-CART2_beta10 | all | +0.00 [+0.00, +0.00] pp |
+| PushCube-v1/DSRE_risk-CART2_beta10 | initial_failure | +0.00 [+0.00, +0.00] pp |
+| PushCube-v1/DSRE_risk-CART2_beta10 | initial_success | N/A |
+| PushCube-v1/DSRE_risk-CART2_beta10 | recover_only | +0.00 [+0.00, +0.00] pp |
+| PushCube-v1/DSRE_risk-B5_beta10 | all | +0.00 [+0.00, +0.00] pp |
+| PushCube-v1/DSRE_risk-B5_beta10 | initial_failure | +0.00 [+0.00, +0.00] pp |
+| PushCube-v1/DSRE_risk-B5_beta10 | initial_success | N/A |
+| PushCube-v1/DSRE_risk-B5_beta10 | recover_only | +0.00 [+0.00, +0.00] pp |
+| PushCube-v1/DSRE_risk-B0_recover | all | +0.00 [+0.00, +0.00] pp |
+| PushCube-v1/DSRE_risk-B0_recover | initial_failure | +0.00 [+0.00, +0.00] pp |
+| PushCube-v1/DSRE_risk-B0_recover | initial_success | N/A |
+| PushCube-v1/DSRE_risk-B0_recover | recover_only | +0.00 [+0.00, +0.00] pp |
 
-| Task | Budget | Strict action | Assigned checkpoints / parents | Error parents |
+## Primary paired uncertainty and strong controls
+
+4000 seed-parent paired draws, PCG64 seed2026111401+taskindex, both conditions kept together. All task parents remain the subgroup resampling frame. These effect intervals are distinct from the exact binomial calibration gate. Zero-variation intervals are not population safety bounds.
+
+| Task, risk-tier minus comparator | Population | Completion difference [95%] | Unacceptable difference [95%] | Required-recovery difference [95%] |
+|---|---|---:|---:|---:|
+| PickCube-v1, DSRE_risk-DSRE_strict | all | N/A | N/A | N/A |
+| PickCube-v1, DSRE_risk-DSRE_strict | initial_failure | N/A | N/A | N/A |
+| PickCube-v1, DSRE_risk-DSRE_strict | initial_success | N/A | N/A | N/A |
+| PickCube-v1, DSRE_risk-DSRE_strict | recover_only | N/A | N/A | N/A |
+| PickCube-v1, DSRE_risk-B7_risk | all | N/A | N/A | N/A |
+| PickCube-v1, DSRE_risk-B7_risk | initial_failure | N/A | N/A | N/A |
+| PickCube-v1, DSRE_risk-B7_risk | initial_success | N/A | N/A | N/A |
+| PickCube-v1, DSRE_risk-B7_risk | recover_only | N/A | N/A | N/A |
+| PickCube-v1, DSRE_risk-CART2_beta10 | all | N/A | N/A | N/A |
+| PickCube-v1, DSRE_risk-CART2_beta10 | initial_failure | N/A | N/A | N/A |
+| PickCube-v1, DSRE_risk-CART2_beta10 | initial_success | N/A | N/A | N/A |
+| PickCube-v1, DSRE_risk-CART2_beta10 | recover_only | N/A | N/A | N/A |
+| PickCube-v1, DSRE_risk-B5_beta10 | all | N/A | N/A | N/A |
+| PickCube-v1, DSRE_risk-B5_beta10 | initial_failure | N/A | N/A | N/A |
+| PickCube-v1, DSRE_risk-B5_beta10 | initial_success | N/A | N/A | N/A |
+| PickCube-v1, DSRE_risk-B5_beta10 | recover_only | N/A | N/A | N/A |
+| PickCube-v1, DSRE_risk-B0_recover | all | N/A | N/A | N/A |
+| PickCube-v1, DSRE_risk-B0_recover | initial_failure | N/A | N/A | N/A |
+| PickCube-v1, DSRE_risk-B0_recover | initial_success | N/A | N/A | N/A |
+| PickCube-v1, DSRE_risk-B0_recover | recover_only | N/A | N/A | N/A |
+| PushCube-v1, DSRE_risk-DSRE_strict | all | N/A | N/A | N/A |
+| PushCube-v1, DSRE_risk-DSRE_strict | initial_failure | N/A | N/A | N/A |
+| PushCube-v1, DSRE_risk-DSRE_strict | initial_success | N/A | N/A | N/A |
+| PushCube-v1, DSRE_risk-DSRE_strict | recover_only | N/A | N/A | N/A |
+| PushCube-v1, DSRE_risk-B7_risk | all | N/A | N/A | N/A |
+| PushCube-v1, DSRE_risk-B7_risk | initial_failure | N/A | N/A | N/A |
+| PushCube-v1, DSRE_risk-B7_risk | initial_success | N/A | N/A | N/A |
+| PushCube-v1, DSRE_risk-B7_risk | recover_only | N/A | N/A | N/A |
+| PushCube-v1, DSRE_risk-CART2_beta10 | all | N/A | N/A | N/A |
+| PushCube-v1, DSRE_risk-CART2_beta10 | initial_failure | N/A | N/A | N/A |
+| PushCube-v1, DSRE_risk-CART2_beta10 | initial_success | N/A | N/A | N/A |
+| PushCube-v1, DSRE_risk-CART2_beta10 | recover_only | N/A | N/A | N/A |
+| PushCube-v1, DSRE_risk-B5_beta10 | all | N/A | N/A | N/A |
+| PushCube-v1, DSRE_risk-B5_beta10 | initial_failure | N/A | N/A | N/A |
+| PushCube-v1, DSRE_risk-B5_beta10 | initial_success | N/A | N/A | N/A |
+| PushCube-v1, DSRE_risk-B5_beta10 | recover_only | N/A | N/A | N/A |
+| PushCube-v1, DSRE_risk-B0_recover | all | N/A | N/A | N/A |
+| PushCube-v1, DSRE_risk-B0_recover | initial_failure | N/A | N/A | N/A |
+| PushCube-v1, DSRE_risk-B0_recover | initial_success | N/A | N/A | N/A |
+| PushCube-v1, DSRE_risk-B0_recover | recover_only | N/A | N/A | N/A |
+
+### Four outcome classes and initially successful versus unsuccessful starts
+
+| Task | Primary gated population | N | Rec/good/bad | Continue/recover | Maintained-success completions | Initially unsuccessful completions | Required-recovery completions |
+|---|---|---:|---:|---:|---:|---:|---:|
+| PickCube-v1 | initial_success | 0 | 0/0/0 | 0/0 | 0 | 0 | 0 |
+| PickCube-v1 | initial_failure | 0 | 0/0/0 | 0/0 | 0 | 0 | 0 |
+| PickCube-v1 | continue_only | 0 | 0/0/0 | 0/0 | 0 | 0 | 0 |
+| PickCube-v1 | recover_only | 0 | 0/0/0 | 0/0 | 0 | 0 | 0 |
+| PickCube-v1 | both | 0 | 0/0/0 | 0/0 | 0 | 0 | 0 |
+| PickCube-v1 | neither | 0 | 0/0/0 | 0/0 | 0 | 0 | 0 |
+| PushCube-v1 | initial_success | 0 | 0/0/0 | 0/0 | 0 | 0 | 0 |
+| PushCube-v1 | initial_failure | 0 | 0/0/0 | 0/0 | 0 | 0 | 0 |
+| PushCube-v1 | continue_only | 0 | 0/0/0 | 0/0 | 0 | 0 | 0 |
+| PushCube-v1 | recover_only | 0 | 0/0/0 | 0/0 | 0 | 0 | 0 |
+| PushCube-v1 | both | 0 | 0/0/0 | 0/0 | 0 | 0 | 0 |
+| PushCube-v1 | neither | 0 | 0/0/0 | 0/0 | 0 | 0 | 0 |
+
+### Condition-level matched comparisons
+
+| Task | Condition | Method | Globally gated rec/good/bad | Deferred |
 |---|---|---|---:|---:|
-| PickCube-v1 | 0 | continue | 129 / 129 | 0 |
-| PickCube-v1 | 0 | recover | 16 / 16 | 0 |
-| PickCube-v1 | 1 | continue | 170 / 166 | 0 |
-| PickCube-v1 | 1 | recover | 17 / 17 | 0 |
-| PushCube-v1 | 0 | continue | 0 / 0 | 0 |
-| PushCube-v1 | 0 | recover | 0 / 0 | 0 |
-| PushCube-v1 | 1 | continue | 0 / 0 | 0 |
-| PushCube-v1 | 1 | recover | 0 / 0 | 0 |
 
-**NOT_CALIBRATED.** The previous 42 zero-error assigned independent parents/stratum requirement is not inferred from total cohort size. `suffix_results.json` reports every stratum including zero and actual assignment counts to compare with 42. Even larger strata are confirmation, not independent calibration. No deployment error bound or executable authorization is issued.
+## Qualified selected physical execution
 
-| Task | Budget | Strict recommendations | Total literals | Support rows sum | Support parents sum |
-|---|---|---:|---:|---:|
-| PickCube-v1 | 0 | 145 | 161 | 21557 | 21557 |
-| PickCube-v1 | 1 | 187 | 246 | 30377 | 30213 |
-| PushCube-v1 | 0 | 0 | 0 | 0 | 0 |
-| PushCube-v1 | 1 | 0 | 0 | 0 | 0 |
+New selected-action continuations: 0; stopped/deferred checkpoints: 0; future-trajectory disagreements: 0; independently rederived action discrepancy maximum: 0. Every executed branch has a separate reset/prefix, outcome-free decision payload and calibration hash. Repeated branches share their original parent and never inflate statistical N.
 
-Reference/query scope, all minimum-fact certificates, necessary-literal and obstruction witnesses are in `suffix_decisions.json`. Actual channel costs are Pick b0=0, b1=1 and Push b0=b1=0 by fixed minimum-cost ties. These are abstract Boolean-predicate counts from the same simulator pose interface, not sensors or measured sensing latency.
+## Observation corruption: inspected historical cohort, offline only
 
-## Secondary pooled description
+Use the already inspected 333-parent/666-checkpoint suffix, not independent calibration. The same corrupted predecision packet is shared by methods; original branch outcomes are unchanged. Twelve scenarios are all reported. Gaussian replicates and two conditions never become independent parents. Applying the clean gate under corruption does not transfer certification. False-fact confidence means a proposed explanation asserts a fact contradicted by the original clean telemetry; it is distinct from actual bad actions and from statistical confidence.
 
-The following pool includes only completed parents from both studies. It excludes the old orphan and new partial parents. It is **SECONDARY_DESCRIPTIVE_POOL**, not untouched independent confirmation: earlier positive results were inspected before follow-up authorization. Frozen routers are identical. A distinct 4000-draw bootstrap uses seed 2026111422+taskindex; suffix estimates remain primary.
+| Task | Method | Input scenario | Proposed good/bad/deferred | Stable actions/N | Stable certificates/N | Contradicted-fact proposals | Payload bytes / scalar fields |
+|---|---|---|---:|---:|---:|---:|---:|
 
-### PickCube-v1
+**Selected physical execution parity is NOT ASSESSABLE.** Zero future disagreements and zero maximum action discrepancy above mean zero executed branches, not observed perfect agreement. The first guard failed before a selected continuation; its live diagnostics were not retained. The offline contact list/tuple regression demonstrates a sufficient software defect, not actual selected-trajectory parity. qualification_normalization_candidate.patch is unexecuted future engineering repair; the frozen attempted runner and evidence remain unchanged.
 
-| Budget | Method | All starts rec / good / bad | Initially failed rec / good / bad | Initially successful rec / good / bad |
-|---|---|---:|---:|---:|
-| 0 | DSRE | 174 / 174 / 0 | 22 / 22 / 0 | 152 / 152 / 0 |
-| 0 | B7 | 174 / 174 / 0 | 22 / 22 / 0 | 152 / 152 / 0 |
-| 0 | B1_two_strict | 174 / 174 / 0 | 22 / 22 / 0 | 152 / 152 / 0 |
-| 0 | CART1_strict | 0 / 0 / 0 | 0 / 0 / 0 | 0 / 0 / 0 |
-| 0 | CART2_strict | 174 / 174 / 0 | 22 / 22 / 0 | 152 / 152 / 0 |
-| 0 | B5_beta10 | 293 / 272 / 21 | 24 / 3 / 21 | 269 / 269 / 0 |
-| 0 | CART2_beta10 | 293 / 293 / 0 | 24 / 24 / 0 | 269 / 269 / 0 |
-| 0 | B0_continue | 398 / 272 / 126 | 129 / 3 / 126 | 269 / 269 / 0 |
-| 0 | B0_recover | 398 / 300 / 98 | 129 / 98 / 31 | 269 / 202 / 67 |
-| 1 | DSRE | 225 / 225 / 0 | 24 / 24 / 0 | 201 / 201 / 0 |
-| 1 | B7 | 225 / 225 / 0 | 24 / 24 / 0 | 201 / 201 / 0 |
-| 1 | B1_two_strict | 224 / 224 / 0 | 23 / 23 / 0 | 201 / 201 / 0 |
-| 1 | CART1_strict | 0 / 0 / 0 | 0 / 0 / 0 | 0 / 0 / 0 |
-| 1 | CART2_strict | 224 / 224 / 0 | 23 / 23 / 0 | 201 / 201 / 0 |
-| 1 | B5_beta10 | 294 / 272 / 22 | 25 / 3 / 22 | 269 / 269 / 0 |
-| 1 | CART2_beta10 | 293 / 293 / 0 | 24 / 24 / 0 | 269 / 269 / 0 |
-| 1 | B0_continue | 398 / 272 / 126 | 129 / 3 / 126 | 269 / 269 / 0 |
-| 1 | B0_recover | 398 / 300 / 98 | 129 / 98 / 31 | 269 / 202 / 67 |
+| PickCube-v1 | DSRE_strict | clean | 187/0/145 | 332/332 | 332/332 | 0 | 638.7/24.0 |
+| PickCube-v1 | DSRE_risk | clean | 241/0/91 | 332/332 | 332/332 | 0 | 638.7/24.0 |
+| PickCube-v1 | B7_risk | clean | 241/0/91 | 332/332 | 332/332 | 0 | 638.7/24.0 |
+| PickCube-v1 | B5_beta10 | clean | 224/17/91 | 332/332 | 332/332 | 0 | 638.7/24.0 |
+| PickCube-v1 | CART2_beta10 | clean | 240/0/92 | 332/332 | 332/332 | 0 | 638.7/24.0 |
+| PickCube-v1 | policy_faithful | clean | 240/0/92 | 332/332 | 332/332 | 0 | 638.7/24.0 |
+| PushCube-v1 | DSRE_strict | clean | 0/0/334 | 334/334 | 334/334 | 0 | 620.2/24.0 |
+| PushCube-v1 | DSRE_risk | clean | 334/0/0 | 334/334 | 334/334 | 0 | 620.2/24.0 |
+| PushCube-v1 | B7_risk | clean | 334/0/0 | 334/334 | 334/334 | 0 | 620.2/24.0 |
+| PushCube-v1 | B5_beta10 | clean | 334/0/0 | 334/334 | 334/334 | 0 | 620.2/24.0 |
+| PushCube-v1 | CART2_beta10 | clean | 334/0/0 | 334/334 | 334/334 | 0 | 620.2/24.0 |
+| PushCube-v1 | policy_faithful | clean | 334/0/0 | 334/334 | 334/334 | 0 | 620.2/24.0 |
+| PickCube-v1 | DSRE_strict | missing_optional | 145/0/187 | 290/332 | 290/332 | 0 | 638.7/24.0 |
+| PickCube-v1 | DSRE_risk | missing_optional | 240/0/92 | 331/332 | 290/332 | 0 | 638.7/24.0 |
+| PickCube-v1 | B7_risk | missing_optional | 240/0/92 | 331/332 | 290/332 | 0 | 638.7/24.0 |
+| PickCube-v1 | B5_beta10 | missing_optional | 224/16/92 | 331/332 | 331/332 | 0 | 638.7/24.0 |
+| PickCube-v1 | CART2_beta10 | missing_optional | 16/0/316 | 108/332 | 108/332 | 0 | 638.7/24.0 |
+| PickCube-v1 | policy_faithful | missing_optional | 16/0/316 | 108/332 | 108/332 | 0 | 638.7/24.0 |
+| PushCube-v1 | DSRE_strict | missing_optional | 0/0/334 | 334/334 | 334/334 | 0 | 620.2/24.0 |
+| PushCube-v1 | DSRE_risk | missing_optional | 334/0/0 | 334/334 | 334/334 | 0 | 620.2/24.0 |
+| PushCube-v1 | B7_risk | missing_optional | 334/0/0 | 334/334 | 334/334 | 0 | 620.2/24.0 |
+| PushCube-v1 | B5_beta10 | missing_optional | 334/0/0 | 334/334 | 334/334 | 0 | 620.2/24.0 |
+| PushCube-v1 | CART2_beta10 | missing_optional | 334/0/0 | 334/334 | 334/334 | 0 | 620.2/24.0 |
+| PushCube-v1 | policy_faithful | missing_optional | 334/0/0 | 334/334 | 334/334 | 0 | 620.2/24.0 |
+| PickCube-v1 | DSRE_strict | missing_history | 186/0/146 | 331/332 | 331/332 | 0 | 328.0/12.0 |
+| PickCube-v1 | DSRE_risk | missing_history | 240/0/92 | 331/332 | 331/332 | 0 | 328.0/12.0 |
+| PickCube-v1 | B7_risk | missing_history | 240/0/92 | 331/332 | 331/332 | 0 | 328.0/12.0 |
+| PickCube-v1 | B5_beta10 | missing_history | 224/16/92 | 331/332 | 331/332 | 0 | 328.0/12.0 |
+| PickCube-v1 | CART2_beta10 | missing_history | 240/0/92 | 332/332 | 332/332 | 0 | 328.0/12.0 |
+| PickCube-v1 | policy_faithful | missing_history | 240/0/92 | 332/332 | 332/332 | 0 | 328.0/12.0 |
+| PushCube-v1 | DSRE_strict | missing_history | 0/0/334 | 334/334 | 334/334 | 0 | 308.4/12.0 |
+| PushCube-v1 | DSRE_risk | missing_history | 334/0/0 | 334/334 | 334/334 | 0 | 308.4/12.0 |
+| PushCube-v1 | B7_risk | missing_history | 334/0/0 | 334/334 | 334/334 | 0 | 308.4/12.0 |
+| PushCube-v1 | B5_beta10 | missing_history | 334/0/0 | 334/334 | 334/334 | 0 | 308.4/12.0 |
+| PushCube-v1 | CART2_beta10 | missing_history | 0/0/334 | 0/334 | 0/334 | 0 | 308.4/12.0 |
+| PushCube-v1 | policy_faithful | missing_history | 0/0/334 | 0/334 | 334/334 | 0 | 308.4/12.0 |
+| PickCube-v1 | DSRE_strict | missing_pose | 129/0/203 | 274/332 | 274/332 | 0 | 285.5/6.0 |
+| PickCube-v1 | DSRE_risk | missing_pose | 129/0/203 | 220/332 | 220/332 | 0 | 285.5/6.0 |
+| PickCube-v1 | B7_risk | missing_pose | 129/0/203 | 220/332 | 220/332 | 0 | 285.5/6.0 |
+| PickCube-v1 | B5_beta10 | missing_pose | 129/0/203 | 220/332 | 220/332 | 0 | 285.5/6.0 |
+| PickCube-v1 | CART2_beta10 | missing_pose | 0/0/332 | 92/332 | 92/332 | 0 | 285.5/6.0 |
+| PickCube-v1 | policy_faithful | missing_pose | 0/0/332 | 92/332 | 92/332 | 0 | 285.5/6.0 |
+| PushCube-v1 | DSRE_strict | missing_pose | 0/0/334 | 334/334 | 334/334 | 0 | 264.0/6.0 |
+| PushCube-v1 | DSRE_risk | missing_pose | 334/0/0 | 334/334 | 334/334 | 0 | 264.0/6.0 |
+| PushCube-v1 | B7_risk | missing_pose | 334/0/0 | 334/334 | 334/334 | 0 | 264.0/6.0 |
+| PushCube-v1 | B5_beta10 | missing_pose | 334/0/0 | 334/334 | 334/334 | 0 | 264.0/6.0 |
+| PushCube-v1 | CART2_beta10 | missing_pose | 0/0/334 | 0/334 | 0/334 | 0 | 264.0/6.0 |
+| PushCube-v1 | policy_faithful | missing_pose | 0/0/334 | 0/334 | 334/334 | 0 | 264.0/6.0 |
+| PickCube-v1 | DSRE_strict | noise001_r0 | 195/0/137 | 318/332 | 317/332 | 11 | 638.4/24.0 |
+| PickCube-v1 | DSRE_risk | noise001_r0 | 241/0/91 | 332/332 | 317/332 | 11 | 638.4/24.0 |
+| PickCube-v1 | B7_risk | noise001_r0 | 241/0/91 | 332/332 | 317/332 | 11 | 638.4/24.0 |
+| PickCube-v1 | B5_beta10 | noise001_r0 | 224/17/91 | 332/332 | 331/332 | 0 | 638.4/24.0 |
+| PickCube-v1 | CART2_beta10 | noise001_r0 | 239/0/93 | 331/332 | 317/332 | 14 | 638.4/24.0 |
+| PickCube-v1 | policy_faithful | noise001_r0 | 239/0/93 | 331/332 | 331/332 | 0 | 638.4/24.0 |
+| PushCube-v1 | DSRE_strict | noise001_r0 | 0/0/334 | 334/334 | 334/334 | 0 | 619.9/24.0 |
+| PushCube-v1 | DSRE_risk | noise001_r0 | 334/0/0 | 334/334 | 334/334 | 0 | 619.9/24.0 |
+| PushCube-v1 | B7_risk | noise001_r0 | 334/0/0 | 334/334 | 334/334 | 0 | 619.9/24.0 |
+| PushCube-v1 | B5_beta10 | noise001_r0 | 334/0/0 | 334/334 | 334/334 | 0 | 619.9/24.0 |
+| PushCube-v1 | CART2_beta10 | noise001_r0 | 334/0/0 | 334/334 | 334/334 | 0 | 619.9/24.0 |
+| PushCube-v1 | policy_faithful | noise001_r0 | 334/0/0 | 334/334 | 334/334 | 0 | 619.9/24.0 |
+| PickCube-v1 | DSRE_strict | noise001_r1 | 195/0/137 | 316/332 | 315/332 | 12 | 638.2/24.0 |
+| PickCube-v1 | DSRE_risk | noise001_r1 | 241/0/91 | 330/332 | 315/332 | 12 | 638.2/24.0 |
+| PickCube-v1 | B7_risk | noise001_r1 | 241/0/91 | 330/332 | 315/332 | 12 | 638.2/24.0 |
+| PickCube-v1 | B5_beta10 | noise001_r1 | 224/17/91 | 330/332 | 329/332 | 1 | 638.2/24.0 |
+| PickCube-v1 | CART2_beta10 | noise001_r1 | 238/0/94 | 330/332 | 316/332 | 14 | 638.2/24.0 |
+| PickCube-v1 | policy_faithful | noise001_r1 | 238/0/94 | 330/332 | 330/332 | 0 | 638.2/24.0 |
+| PushCube-v1 | DSRE_strict | noise001_r1 | 0/0/334 | 334/334 | 334/334 | 0 | 619.8/24.0 |
+| PushCube-v1 | DSRE_risk | noise001_r1 | 334/0/0 | 334/334 | 334/334 | 0 | 619.8/24.0 |
+| PushCube-v1 | B7_risk | noise001_r1 | 334/0/0 | 334/334 | 334/334 | 0 | 619.8/24.0 |
+| PushCube-v1 | B5_beta10 | noise001_r1 | 334/0/0 | 334/334 | 334/334 | 0 | 619.8/24.0 |
+| PushCube-v1 | CART2_beta10 | noise001_r1 | 334/0/0 | 334/334 | 334/334 | 0 | 619.8/24.0 |
+| PushCube-v1 | policy_faithful | noise001_r1 | 334/0/0 | 334/334 | 334/334 | 0 | 619.8/24.0 |
+| PickCube-v1 | DSRE_strict | noise001_r2 | 201/0/131 | 314/332 | 313/332 | 16 | 638.6/24.0 |
+| PickCube-v1 | DSRE_risk | noise001_r2 | 240/0/92 | 331/332 | 313/332 | 16 | 638.6/24.0 |
+| PickCube-v1 | B7_risk | noise001_r2 | 240/0/92 | 331/332 | 313/332 | 16 | 638.6/24.0 |
+| PickCube-v1 | B5_beta10 | noise001_r2 | 224/16/92 | 331/332 | 330/332 | 0 | 638.6/24.0 |
+| PickCube-v1 | CART2_beta10 | noise001_r2 | 238/0/94 | 330/332 | 313/332 | 17 | 638.6/24.0 |
+| PickCube-v1 | policy_faithful | noise001_r2 | 238/0/94 | 330/332 | 330/332 | 0 | 638.6/24.0 |
+| PushCube-v1 | DSRE_strict | noise001_r2 | 0/0/334 | 334/334 | 334/334 | 0 | 620.0/24.0 |
+| PushCube-v1 | DSRE_risk | noise001_r2 | 334/0/0 | 334/334 | 334/334 | 0 | 620.0/24.0 |
+| PushCube-v1 | B7_risk | noise001_r2 | 334/0/0 | 334/334 | 334/334 | 0 | 620.0/24.0 |
+| PushCube-v1 | B5_beta10 | noise001_r2 | 334/0/0 | 334/334 | 334/334 | 0 | 620.0/24.0 |
+| PushCube-v1 | CART2_beta10 | noise001_r2 | 334/0/0 | 334/334 | 334/334 | 0 | 620.0/24.0 |
+| PushCube-v1 | policy_faithful | noise001_r2 | 334/0/0 | 334/334 | 334/334 | 0 | 620.0/24.0 |
+| PickCube-v1 | DSRE_strict | noise005_r0 | 215/2/115 | 296/332 | 296/332 | 33 | 638.3/24.0 |
+| PickCube-v1 | DSRE_risk | noise005_r0 | 243/2/87 | 323/332 | 296/332 | 33 | 638.3/24.0 |
+| PickCube-v1 | B7_risk | noise005_r0 | 243/2/87 | 323/332 | 296/332 | 33 | 638.3/24.0 |
+| PickCube-v1 | B5_beta10 | noise005_r0 | 224/21/87 | 328/332 | 322/332 | 5 | 638.3/24.0 |
+| PickCube-v1 | CART2_beta10 | noise005_r0 | 239/2/91 | 326/332 | 299/332 | 33 | 638.3/24.0 |
+| PickCube-v1 | policy_faithful | noise005_r0 | 239/2/91 | 326/332 | 326/332 | 6 | 638.3/24.0 |
+| PushCube-v1 | DSRE_strict | noise005_r0 | 0/0/334 | 334/334 | 334/334 | 0 | 619.3/24.0 |
+| PushCube-v1 | DSRE_risk | noise005_r0 | 334/0/0 | 334/334 | 334/334 | 0 | 619.3/24.0 |
+| PushCube-v1 | B7_risk | noise005_r0 | 334/0/0 | 334/334 | 334/334 | 0 | 619.3/24.0 |
+| PushCube-v1 | B5_beta10 | noise005_r0 | 334/0/0 | 334/334 | 334/334 | 0 | 619.3/24.0 |
+| PushCube-v1 | CART2_beta10 | noise005_r0 | 334/0/0 | 334/334 | 295/334 | 39 | 619.3/24.0 |
+| PushCube-v1 | policy_faithful | noise005_r0 | 334/0/0 | 334/334 | 334/334 | 0 | 619.3/24.0 |
+| PickCube-v1 | DSRE_strict | noise005_r1 | 225/3/104 | 289/332 | 289/332 | 42 | 638.3/24.0 |
+| PickCube-v1 | DSRE_risk | noise005_r1 | 243/3/86 | 319/332 | 289/332 | 42 | 638.3/24.0 |
+| PickCube-v1 | B7_risk | noise005_r1 | 243/3/86 | 319/332 | 289/332 | 42 | 638.3/24.0 |
+| PickCube-v1 | B5_beta10 | noise005_r1 | 224/22/86 | 327/332 | 317/332 | 6 | 638.3/24.0 |
+| PickCube-v1 | CART2_beta10 | noise005_r1 | 240/1/91 | 323/332 | 293/332 | 39 | 638.3/24.0 |
+| PickCube-v1 | policy_faithful | noise005_r1 | 240/1/91 | 323/332 | 323/332 | 9 | 638.3/24.0 |
+| PushCube-v1 | DSRE_strict | noise005_r1 | 0/0/334 | 334/334 | 334/334 | 0 | 619.6/24.0 |
+| PushCube-v1 | DSRE_risk | noise005_r1 | 334/0/0 | 334/334 | 334/334 | 0 | 619.6/24.0 |
+| PushCube-v1 | B7_risk | noise005_r1 | 334/0/0 | 334/334 | 334/334 | 0 | 619.6/24.0 |
+| PushCube-v1 | B5_beta10 | noise005_r1 | 334/0/0 | 334/334 | 334/334 | 0 | 619.6/24.0 |
+| PushCube-v1 | CART2_beta10 | noise005_r1 | 334/0/0 | 334/334 | 288/334 | 46 | 619.6/24.0 |
+| PushCube-v1 | policy_faithful | noise005_r1 | 334/0/0 | 334/334 | 334/334 | 0 | 619.6/24.0 |
+| PickCube-v1 | DSRE_strict | noise005_r2 | 215/0/117 | 292/332 | 292/332 | 34 | 638.5/24.0 |
+| PickCube-v1 | DSRE_risk | noise005_r2 | 246/0/86 | 317/332 | 292/332 | 34 | 638.5/24.0 |
+| PickCube-v1 | B7_risk | noise005_r2 | 246/0/86 | 317/332 | 292/332 | 34 | 638.5/24.0 |
+| PickCube-v1 | B5_beta10 | noise005_r2 | 224/22/86 | 321/332 | 316/332 | 9 | 638.5/24.0 |
+| PickCube-v1 | CART2_beta10 | noise005_r2 | 239/0/93 | 325/332 | 300/332 | 30 | 638.5/24.0 |
+| PickCube-v1 | policy_faithful | noise005_r2 | 239/0/93 | 325/332 | 325/332 | 5 | 638.5/24.0 |
+| PushCube-v1 | DSRE_strict | noise005_r2 | 0/0/334 | 334/334 | 334/334 | 0 | 619.6/24.0 |
+| PushCube-v1 | DSRE_risk | noise005_r2 | 334/0/0 | 334/334 | 334/334 | 0 | 619.6/24.0 |
+| PushCube-v1 | B7_risk | noise005_r2 | 334/0/0 | 334/334 | 334/334 | 0 | 619.6/24.0 |
+| PushCube-v1 | B5_beta10 | noise005_r2 | 334/0/0 | 334/334 | 334/334 | 0 | 619.6/24.0 |
+| PushCube-v1 | CART2_beta10 | noise005_r2 | 334/0/0 | 334/334 | 289/334 | 45 | 619.6/24.0 |
+| PushCube-v1 | policy_faithful | noise005_r2 | 334/0/0 | 334/334 | 334/334 | 0 | 619.6/24.0 |
+| PickCube-v1 | DSRE_strict | delay1 | 187/0/145 | 332/332 | 332/332 | 0 | 638.9/24.0 |
+| PickCube-v1 | DSRE_risk | delay1 | 241/0/91 | 332/332 | 332/332 | 0 | 638.9/24.0 |
+| PickCube-v1 | B7_risk | delay1 | 241/0/91 | 332/332 | 332/332 | 0 | 638.9/24.0 |
+| PickCube-v1 | B5_beta10 | delay1 | 224/17/91 | 332/332 | 332/332 | 0 | 638.9/24.0 |
+| PickCube-v1 | CART2_beta10 | delay1 | 240/0/92 | 332/332 | 332/332 | 0 | 638.9/24.0 |
+| PickCube-v1 | policy_faithful | delay1 | 240/0/92 | 332/332 | 332/332 | 0 | 638.9/24.0 |
+| PushCube-v1 | DSRE_strict | delay1 | 0/0/334 | 334/334 | 334/334 | 0 | 620.2/24.0 |
+| PushCube-v1 | DSRE_risk | delay1 | 334/0/0 | 334/334 | 334/334 | 0 | 620.2/24.0 |
+| PushCube-v1 | B7_risk | delay1 | 334/0/0 | 334/334 | 334/334 | 0 | 620.2/24.0 |
+| PushCube-v1 | B5_beta10 | delay1 | 334/0/0 | 334/334 | 334/334 | 0 | 620.2/24.0 |
+| PushCube-v1 | CART2_beta10 | delay1 | 334/0/0 | 334/334 | 334/334 | 0 | 620.2/24.0 |
+| PushCube-v1 | policy_faithful | delay1 | 334/0/0 | 334/334 | 334/334 | 0 | 620.2/24.0 |
+| PickCube-v1 | DSRE_strict | delay5 | 187/6/139 | 321/332 | 321/332 | 11 | 638.8/24.0 |
+| PickCube-v1 | DSRE_risk | delay5 | 235/6/91 | 326/332 | 321/332 | 11 | 638.8/24.0 |
+| PickCube-v1 | B7_risk | delay5 | 235/6/91 | 326/332 | 321/332 | 11 | 638.8/24.0 |
+| PickCube-v1 | B5_beta10 | delay5 | 224/17/91 | 332/332 | 326/332 | 0 | 638.8/24.0 |
+| PickCube-v1 | CART2_beta10 | delay5 | 224/16/92 | 316/332 | 311/332 | 21 | 638.8/24.0 |
+| PickCube-v1 | policy_faithful | delay5 | 224/16/92 | 316/332 | 316/332 | 16 | 638.8/24.0 |
+| PushCube-v1 | DSRE_strict | delay5 | 0/0/334 | 334/334 | 334/334 | 0 | 620.6/24.0 |
+| PushCube-v1 | DSRE_risk | delay5 | 334/0/0 | 334/334 | 334/334 | 0 | 620.6/24.0 |
+| PushCube-v1 | B7_risk | delay5 | 334/0/0 | 334/334 | 334/334 | 0 | 620.6/24.0 |
+| PushCube-v1 | B5_beta10 | delay5 | 334/0/0 | 334/334 | 334/334 | 0 | 620.6/24.0 |
+| PushCube-v1 | CART2_beta10 | delay5 | 334/0/0 | 334/334 | 168/334 | 166 | 620.6/24.0 |
+| PushCube-v1 | policy_faithful | delay5 | 334/0/0 | 334/334 | 334/334 | 0 | 620.6/24.0 |
 
-| Budget | Outcome class | Checkpoints / parents | Strict DSRE rec / good / bad | Continue / recover assigned |
-|---|---|---:|---:|---:|
-| 0 | continue_only | 70 / 54 | 41 / 41 / 0 | 41 / 0 |
-| 0 | recover_only | 98 / 98 | 21 / 21 / 0 | 0 / 21 |
-| 0 | both | 202 / 146 | 112 / 112 / 0 | 112 / 0 |
-| 0 | neither | 28 / 28 | 0 / 0 / 0 | 0 / 0 |
-| 1 | continue_only | 70 / 54 | 57 / 57 / 0 | 57 / 0 |
-| 1 | recover_only | 98 / 98 | 22 / 22 / 0 | 0 / 22 |
-| 1 | both | 202 / 146 | 146 / 146 / 0 | 146 / 0 |
-| 1 | neither | 28 / 28 | 0 / 0 / 0 | 0 / 0 |
+Every method/scenario/mode/condition/category result is retained in observation_robustness.json and robustness_records.json. The fixed 1 mm boundary-proximity flag is retained per record. Serialized bytes/scalars describe the observed-history interface, not distinct physical sensors or acquisition cost. Abstract predicates and certificate lengths are separate; shared raw pose fields supply several predicates. Routing times include the documented all-method cached computation path, not physical sensing/actuation latency.
 
-### PushCube-v1
+## Preserved history, physical cases and breadth blocker
 
-| Budget | Method | All starts rec / good / bad | Initially failed rec / good / bad | Initially successful rec / good / bad |
-|---|---|---:|---:|---:|
-| 0 | DSRE | 0 / 0 / 0 | 0 / 0 / 0 | 0 / 0 / 0 (empty) |
-| 0 | B7 | 0 / 0 / 0 | 0 / 0 / 0 | 0 / 0 / 0 (empty) |
-| 0 | B1_two_strict | 0 / 0 / 0 | 0 / 0 / 0 | 0 / 0 / 0 (empty) |
-| 0 | CART1_strict | 0 / 0 / 0 | 0 / 0 / 0 | 0 / 0 / 0 (empty) |
-| 0 | CART2_strict | 0 / 0 / 0 | 0 / 0 / 0 | 0 / 0 / 0 (empty) |
-| 0 | B5_beta10 | 400 / 400 / 0 | 400 / 400 / 0 | 0 / 0 / 0 (empty) |
-| 0 | CART2_beta10 | 400 / 400 / 0 | 400 / 400 / 0 | 0 / 0 / 0 (empty) |
-| 0 | B0_continue | 400 / 200 / 200 | 400 / 200 / 200 | 0 / 0 / 0 (empty) |
-| 0 | B0_recover | 400 / 400 / 0 | 400 / 400 / 0 | 0 / 0 / 0 (empty) |
-| 1 | DSRE | 0 / 0 / 0 | 0 / 0 / 0 | 0 / 0 / 0 (empty) |
-| 1 | B7 | 0 / 0 / 0 | 0 / 0 / 0 | 0 / 0 / 0 (empty) |
-| 1 | B1_two_strict | 0 / 0 / 0 | 0 / 0 / 0 | 0 / 0 / 0 (empty) |
-| 1 | CART1_strict | 0 / 0 / 0 | 0 / 0 / 0 | 0 / 0 / 0 (empty) |
-| 1 | CART2_strict | 0 / 0 / 0 | 0 / 0 / 0 | 0 / 0 / 0 (empty) |
-| 1 | B5_beta10 | 400 / 400 / 0 | 400 / 400 / 0 | 0 / 0 / 0 (empty) |
-| 1 | CART2_beta10 | 400 / 400 / 0 | 400 / 400 / 0 | 0 / 0 / 0 (empty) |
-| 1 | B0_continue | 400 / 200 / 200 | 400 / 200 / 200 | 0 / 0 / 0 (empty) |
-| 1 | B0_recover | 400 / 400 / 0 | 400 / 400 / 0 | 0 / 0 / 0 (empty) |
+The previous untouched suffix remains 333 parents/666 checkpoints/1332 continuations: Pick strict145->187/332, +12.65pp[9.33,16.27]; initially unsuccessful16->18/109, one extra required recovery; zero observed strict errors. Forty of42 additions were initially successful, B7 was exact, CART2/cap2 differed once, provisional CART240/332 exceeded strict187/332. Push strict0/334 versus recovery334/334 remains intact. Neither prior cohort nor the inspected preliminary33 parents/task is used as new calibration. Historical raw seals and the old unknown SIGTERM cause are unchanged.
 
-| Budget | Outcome class | Checkpoints / parents | Strict DSRE rec / good / bad | Continue / recover assigned |
-|---|---|---:|---:|---:|
-| 0 | continue_only | 0 / 0 | 0 / 0 / 0 | 0 / 0 |
-| 0 | recover_only | 200 / 200 | 0 / 0 / 0 | 0 / 0 |
-| 0 | both | 200 / 200 | 0 / 0 / 0 | 0 / 0 |
-| 0 | neither | 0 / 0 | 0 / 0 / 0 | 0 / 0 |
-| 1 | continue_only | 0 / 0 | 0 / 0 / 0 | 0 / 0 |
-| 1 | recover_only | 200 / 200 | 0 / 0 / 0 | 0 / 0 |
-| 1 | both | 200 / 200 | 0 / 0 / 0 | 0 / 0 |
-| 1 | neither | 0 / 0 | 0 / 0 / 0 | 0 / 0 |
+Old physical cases and raw-source hashes remain in the previous physical_examples.json: three-fact/five-parent recovery evidence versus a neither-success collision, both-success adequacy without necessity, and Push opposing actions sharing all12 predicates. These are illustrative reference examples, not threshold tuning. The full manuscript retains these alongside new operational evidence.
 
-## Physical examples, historical errata and independent audit
+Lift/Panda is blocked by the pre-outcome source-semantic gate: the old alternative is a nominal speed clip, with210/210 both-success starts and no registered failed-start recovery contrast. No new third-task physics, controller, fault or task selection occurred. This remains a material breadth limitation.
 
-`physical_examples.json` ties anonymous cases A–E to recorded predecision geometry, timestamps, predicate bits, measured paired outcomes and source identifiers. A recover-only Pick case (dx=-.03401m) and neither-success case (dx=+.05460m) share F0 but differ in the left predicate. The first has a three-fact minimum recovery certificate (goal not near, progress, object left of goal) supported by five independent reference parents; its full-signature child has two parents. The second remains inadequate. A both-success case illustrates an adequate but interchangeable decision. A Push recover-only/continue-only pair shares all 12 predicates; this is observation ambiguity, whereas the neither-success Pick case is repertoire inadequacy. Raw poses differ, so this is not an impossibility theorem for all sensors.
+## Reproduction, tests and evidence integrity
 
-The old paper accidentally labeled CART recommendation counts as successes. Correct old strict CART2 successes are 201,224,224,217 with one unacceptable choice each (recommendations 202,225,225,218). Old provisional CART2 b0 has 296 successes/297 recommendations and one error. Sealed data/figures and the independent previous aggregation were correct. This revision corrects text/ledger and the malformed indicator command; `presentation_errata.json`, git history and `starting_files/` preserve original bytes. No outcomes or model settings change.
+Immutable verification: `PYTHONPATH=src:scripts UV_CACHE_DIR=/tmp/dual-rec-uv-cache PYTHONDONTWRITEBYTECODE=1 uv run --no-sync python scripts/dsre_operational_finish.py --root results/dsre-operational/20261114T140659Z --stage verify`.
+Recompute independent raw-action/rule, CP, paired-bootstrap, corruption and PDF audits without changing sealed evidence: `PYTHONPATH=src:scripts OPENBLAS_NUM_THREADS=1 UV_CACHE_DIR=/tmp/dual-rec-uv-cache PYTHONDONTWRITEBYTECODE=1 uv run --no-sync python scripts/dsre_operational_finish.py --root results/dsre-operational/20261114T140659Z --stage reproduce`. This creates only a scratch audit directory with read-only input links and prints its output path. It runs no physics, training or recalibration.
+Regressions: `UV_CACHE_DIR=/tmp/dual-rec-uv-cache PYTHONDONTWRITEBYTECODE=1 uv run --no-sync pytest`; maintained-source lint: `UV_CACHE_DIR=/tmp/dual-rec-uv-cache uv run --no-sync ruff check src scripts tests`. An additional root-wide `ruff check .` found eight pre-existing errors in immutable results/monitoring-study scripts; those historical files were preserved. The original physics is reproduced only as a separately preregistered campaign on an unused manifest, never by resuming or overwriting this sealed root.
 
-Independent audit **PASS**: 666 new traces, 93138prefix states, 93240actual intervention controls, maximum action discrepancy 0; 13320 prediction views independently checked against raw labels, including abstentions. Main solver/feature code is checked against separate integer-mask rules, raw-pose predicates, action equations and direct CART leaf evaluation. Necessary-literal and obstruction witnesses are verified. These are two same-session implementations, not external human replication. Full-prefix/controller fidelity is measured; future trajectories are not independently duplicated.
+Reproduce analysis in a scratch copy of the frozen metadata and read-only links, never in the sealed root. See commands.jsonl for the exact bounded worker commands and protocol/source hashes. The scientific scripts and config are pinned in confirmation_freeze.json. Calibration decision/seal predates all test attempts. Regression, independent raw physics/rule/direct-tree/CP and separate numerical audits are retained; these are separate same-session implementations, not external human replication. All tests, PDF font/anonymity/page checks, archive hashes, worker usage and the exact local commit appear in the final seal.
 
-## Reproduction, tests, resources and scientific gate
+No GitHub push, conference submission, manuscript upload, new dataset, GPU training or paid API. .gitignore, uv.lock, historical evidence and unrelated changes are preserved. Calibration and corrupted-input risk must not be conflated with hardware safety or an improved recovery controller.
 
-Use `uv run --no-sync python scripts/dsre_followup_finish.py --root results/dsre-followup/20261113T205403Z --stage verify` for immutable verification. To reproduce analysis without physics or modifying sealed evidence:
-
-```bash
-SOURCE=results/dsre-followup/20261113T205403Z
-R=$(mktemp -d /tmp/dsre-followup-review-XXXXXX)
-cp "$SOURCE"/confirmation_freeze.json "$SOURCE"/fresh_seed_manifest.json "$SOURCE"/frozen_routers.json "$R"/
-ln -s "$PWD/$SOURCE/parent_progress" "$R/parent_progress"
-ln -s "$PWD/$SOURCE/fresh" "$R/fresh"
-export PYTHONPATH=src:scripts OPENBLAS_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 UV_CACHE_DIR=/tmp/dual-rec-uv-cache
-uv run --no-sync timeout 600 python scripts/dsre_followup_analysis.py --root "$R"
-uv run --no-sync pytest -q tests/test_dsre_followup.py tests/test_dsre_paper.py
-/tmp/tectonic-rss2027-bin/tectonic --only-cached --untrusted --keep-logs --outdir rss2027 rss2027/dsre_stage1.tex
-```
-
-The exact original chunk commands, per-chunk wall/CPU records, source/input hashes, initial unused manifest, all missingness and the final compact archive are in this evidence root. New physics cannot be replayed in this sealed root: attempts and atomic markers prohibit repeats; any later new campaign requires a separate preregistration. The previous SIGTERM and CPU gap remain unchanged in the old study. New total measured resource use, tests, preservation proof, exact branch/commit and zero-worker audit are attested in the new completion manifest. Nothing is submitted, pushed or uploaded.
-
-Method distinctiveness, recovery benefit, independent confirmation, calibration and submission-worthiness are assessed separately in `DSRE_RSS2027_REVIEWER_CRITIQUE.md`. Formal six-page compliance is separate from the scientific judgment. A positive all-start coverage result alone cannot establish an improved physical recovery method.
+Measured clean inspected historical routing, all 17 methods together over 666 unique checkpoints: mean 8.8025 ms, median 0.0009 ms, p95 0.0029 ms, maximum 276.9906 ms. The frozen router memoizes identical queries; these are actual mixed cold/cached-call costs including common computations, not isolated per-method benchmarks or sensor/robot latency. Per-view times and literal/support counts are retained in the corresponding prediction records.

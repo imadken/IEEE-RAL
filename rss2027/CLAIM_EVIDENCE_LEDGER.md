@@ -118,3 +118,20 @@ Evidence root: `results/dsre-followup/20261113T205403Z`. Primary = new suffix on
 | Exact formal statement, no new pure-rule theory | Existing method/specifications and verified prior-work entries above; indicator typo corrected without changing solver. |
 
 Final PDF page/font/anonymity and every main table/interval/physical value are checked in paper_format_audit.json and final_audit.json. Historical CART recommendation/success corrections are retained in presentation_errata.json. No paper upload, push or submission.
+
+## Operational full-paper campaign
+
+Evidence root: `results/dsre-operational/20261114T140659Z`. Protocol/source pins precede new physics; calibration seal precedes test.
+
+| Claim | Evidence and limitation |
+|---|---|
+| 360/360 calibration, 0/160 test parents | fresh_seed_manifest.json, atomic parent_progress, calibration_seal.json, missingness.json; no replacement or old-data calibration. |
+| Parent-action exact risk; global method family | calibration_plan.json, calibration_decision.json, independent SciPy bounds; 69 zero-error assignments globally versus42 diagnostic. |
+| 0 new selected executions, 0 future disagreements | selected raw sources; repeats are not new independent parents. |
+| All17 common-risk baseline comparisons and defer/stop | operational_results.json and test_records.json; full-signature is upper-information, policy-faithful targets labels. |
+| Twelve frozen observation scenarios on inspected old suffix | observation_robustness.json, robustness_records.json; no physical sensor deployment or calibration transfer. |
+| No qualified third recovery task | third_task_audit.json; Lift source-semantic prerequisite failed before new physics. |
+| Existing mathematical equivalences remain | Frozen ordinary rules/oracles and exact action comparisons; no algorithmic superiority. |
+| No new model fits/controllers; old333-parent study preserved | Source hashes, regression and final preservation audit. |
+
+The new held-out effect and selected-execution parity are NOT ESTIMABLE: zero complete test parents and zero selected continuations. One secondary qualified pair is retained without promotion. See study_halt.json, missingness.json and selected_qualification_failure_diagnosis.json. The normalization candidate is an offline engineering patch, not an executed amended experiment.

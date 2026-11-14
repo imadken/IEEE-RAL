@@ -1,15 +1,29 @@
-# DSRE Stage1: contribution and limits after independent follow-up
+# DSRE operational research scope
 
-The fixed question is what observable evidence suffices to justify a fixed recovery intervention relative to paired outcomes, and what prevents justification. DSRE supplies minimum finite-reference facts, explicit observation/repertoire/reference witnesses and a fixed observation-budget frontier.
+The contract distinguishes factual observation, policy-label fidelity, measured
+action adequacy, decision necessity and generalization. Exact minimum pure rules,
+robust feasible-action intersections and Clopper-Pearson inference are established.
+B7 and the ordinary strict-then-risk wrapper remain equivalent. The contribution
+must be the intervention-grounded operational specification and measured
+consequences of stopping, risk qualification and imperfect observations. A shorter
+explanation than a tree path is not evidence of a new algorithm or human benefit.
 
-The mathematical core is established: robust action intersections, pure-rule enumeration, minimum hitting sets and subset selection are not new. B7 is equivalent; short rules and trees remain strong same-information controls. The candidate contribution is an operational robot-intervention formulation and a reproducible characterization of sufficiency, necessity and insufficiency, not algorithmic superiority.
 
-A separately preregistered untouched suffix completed 333/333 new parents and 666/666 primary checkpoints, using frozen old references/routers and zero new fits. Pick successful strict recommendations change 145 to 187/332: +12.65 [+9.33, +16.27] pp. Failed-start successes change 16 to 18/109; required-recovery successes change +1. The decision-necessity decomposition retains both-success adequate choices separately. Unacceptable choices change 0 to 0. All class/action/support/literal results and adverse controls are preserved.
+New independent calibration/test: 360/360 and 0/160 parents. Exact results, bounds and scope are in docs/DSRE_RSS2027_STRENGTHENED_RESULTS.md.
 
-Strict CART2 action disagreements number 1; pure cap2 disagreements 1. Provisional .9 CART2 and B5 use different empirical purity standards, with Pick b1 good/bad counts 240/0 and 224/17. These are not calibrated operating points or evidence of a new controller.
+**Method:** scoped and mathematically checkable; algorithmic distinctiveness is not
+established. **Evidence:** 360/360 calibration and 0/160 test parents;
+calibration and held-out confirmation are distinct. The new operational result is
+incomplete if no full test parents exist. Retrospective comparisons remain exploratory;
+broad recovery, sensor transfer and third-task validation remain limited.
+**Paper:** the master has eight content pages plus references and Stage1 five plus one,
+with anonymous embedded fonts and final claim/format evidence in final_audit.json. The principal
+researcher must judge whether the operational insight is consequential enough for
+RSS. This report does not claim publication readiness, guaranteed acceptance or
+hardware recovery improvement. No push, upload or submission is performed.
 
-The earlier interrupted study remains immutable: 133 qualified checkpoints, 132 primary, one orphan excluded. The SIGTERM cause is unknown. Completed-parent pooling is secondary descriptive because earlier positive results were inspected before follow-up. The incomplete boundary parent is never replaced or remeasured.
+## Actual failed operational gate
 
-Independent raw-physics, predicate/rule/tree and numerical audits verify the declared data and endpoints. Confirmation strengthens the bounded characterization, while method distinctiveness, end-to-end recovery benefit and calibration remain unestablished. Two simulated tasks, fixed binary utility, idealized poses and abstract predicate costs limit external validity; no hardware, stochastic-repeatability or human study is claimed.
+The new calibration is complete, but the primary held-out operational effect is NOT ESTIMABLE: 0/160 test parents, one secondary paired checkpoint, no selected continuation. An offline contact list/tuple defect is sufficient to trigger the guard; failed live diagnostics were not saved. No physical parity is established. The explicit frozen halt was honored without repeats, model changes or replacement seeds. The papers therefore use only prominently labeled retrospective operational comparisons on the inspected old cohort. This is not independent prospective operational confirmation. A future fixed study must first qualify the corrected selected executor, then collect an untouched test allocation and sufficient rare-action assignments. Pick recover needs at least 56 more zero-error assigned parents under the global standard; no targeted replenishment is performed here.
 
-Scientific gate: **borderline preliminary characterization; strong RSS readiness not established**. The principal researcher retains the submission decision. No push, upload or submission is performed. Exact evidence, reproduction commands, resources and local commit are in the follow-up seal.
+The method specification can pass its scoped mathematical gate, while the operational evidence gate remains INCOMPLETE. Formal paper compilation does not remove this scientific weakness or establish RSS readiness.

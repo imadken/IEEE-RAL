@@ -1,56 +1,89 @@
-# DSRE RSS2027: scientific critique and rebuttal preparation
+# DSRE operational full-paper: adversarial scientific assessment
 
-This is a same-session adversarial review supported by separate raw-physics/rule/predicate and numerical implementations. It is not external human peer review or an acceptance prediction.
+This is a same-session adversarial review, not external peer review. The complete
+calibration/test allocation is preregistered and every estimate is sourced to the
+new evidence root `results/dsre-operational/20261114T140659Z`. Prior inspected data are excluded from calibration.
 
-## Separate scientific gates
+## Method
 
-- **Independent confirmation:** COMPLETE_PREREGISTERED_SUFFIX; 333/333 new complete parents and 666/666 primary checkpoints. The earlier 133 qualified checkpoints and unexplained SIGTERM remain sealed separately; one old orphan is excluded.
-- **Preliminary characterization:** supported within the two-task, fixed-skill, declared-vocabulary protocol. Submission-worthiness is **borderline**, requiring principal-researcher judgment about the operational insight; formal six-page compliance does not establish a strong RSS contribution.
-- **Method distinctiveness:** not established. B7 is the same minimum pure-rule decision problem; pure cap2 rules disagree on 1 suffix actions. New data cannot turn an established enumeration/intersection principle into new theory.
-- **Recovery benefit:** failed-start successful recommendations change 16 to 18/109; required recover-only successes change +1. These are justified-decision coverage outcomes, not a new controller or an end-to-end physical-policy improvement.
-- **Calibration:** not performed. Distinct assigned/error parents are reported for every task/action/budget; confirmation is not an independent calibration population. Rare strata below 42 are identified in `scientific_gate.json`.
+The contract distinguishes factual observation, policy-label fidelity, measured
+action adequacy, decision necessity and generalization. Exact minimum pure rules,
+robust feasible-action intersections and Clopper-Pearson inference are established.
+B7 and the ordinary strict-then-risk wrapper remain equivalent. The contribution
+must be the intervention-grounded operational specification and measured
+consequences of stopping, risk qualification and imperfect observations. A shorter
+explanation than a tree path is not evidence of a new algorithm or human benefit.
 
-## New suffix-specific qualification of the earlier non-gain
+## Evidence
 
-Failed-start coverage: +1.83 [+0.00, +4.67] pp. Recover-only coverage: +1.19 [+0.00, +3.90] pp. Both intervals include zero. The suffix adds two failed-start successes (one required continue, one required recover); therefore the earlier zero-gain finding is not silently generalized to the new cohort. Forty of the 42 additional successes still occur on initially successful states. This does not establish an end-to-end recovery-policy improvement.
+Completed calibration: 360/360 parents. Disjoint test:
+0/160 parents and 0/320 checkpoints.
+Global method/task/action multiplicity is accounted for. Certification concerns
+parent-any-error under the fixed two-condition seeded simulator scope. It cannot
+be generalized to checkpoint-weighted deployment or arbitrary future sensors.
+Every primary action stratum, including zero assignments, appears in the report.
+Rare Pick recovery is not made certifiable by collecting more nominal continues.
+The fixed allocation was never replenished based on results.
 
-The sole strict CART2/cap2 exception is a recover-only offset checkpoint requiring a three-fact certificate supported by five reference parents. B7 supplies exactly the same certificate. `fresh_control_exception.json` retains its raw source hash, decision and action-equation qualification; the observation is descriptive and introduces no new rule or controller.
+Operational tables include deferral as zero completion, all four outcome categories,
+initially unsuccessful/successful subsets, matched-condition baselines and paired
+uncertainty. New selected-branch execution checks are explicitly repeated reset
+executions of an already paired parent. They do not create additional independent
+trials or justify calling the study a standalone closed-loop system evaluation.
 
-## Central scientific interpretation
+The inspected 333-parent robustness cohort is offline observation corruption. Its
+clean calibrated gate cannot retain a formal guarantee under shifted inputs.
+Observation bytes and predicate counts are not physical sensing costs. Lift failed
+the source-semantic prerequisite and supplies no distinct recovery breadth result.
 
-Untouched Pick b1 versus b0 yields +12.65 [+9.33, +16.27] pp successful strict coverage, with unacceptable choices 0 to 0. The gain decomposes as continue-only +14, recover-only +1, both-success +27, neither +0. Both-success choices are adequate without being uniquely required. The gain cannot be described only by its all-start percentage.
+## Two strongest remaining reviewer objections
 
-Strict CART2 disagrees on 1 suffix actions and at Pick b1 gives 186 successes/0 unacceptable choices; DSRE gives 187/0. Provisional .9 CART gives 240/0, and B5 gives 224/17, using the same observables and reference. Their empirical-purity standard differs from strict universality. Any favorable observed operating point remains uncalibrated. B7 supplies identical decisions and minimum facts, precluding an algorithmic superiority claim.
+1. **The same ordinary rules/tree with the same statistical gate may be sufficient.**
+   The manuscript must show the exact operating tables and equivalences prominently.
+   An operational distinction between finite justification, appropriate action and
+   calibration can be scientifically informative without a new algorithm. If the
+   strongest ordinary comparator matches, method superiority remains unestablished.
 
-The potentially useful insight is that evidence which increases finite and out-of-sample justification coverage need not resolve the states where recovery is required. Explicit paired outcomes and obstruction witnesses separate representation conflict, inadequate repertoire and missing reference support. The decision-necessity decomposition sharpens that characterization without changing the utility or solver. Its relevance beyond a careful known-rule application remains the main reviewer challenge.
+2. **The new held-out operational study is incomplete; two simple simulator tasks
+   and sparse recovery assignments do not establish a broad trustworthy system.** The record must retain the failed selected-execution guard, actual 0/160 test parents and blocked third
+   task, idealized observed poses, horizon-specific utility, finite deterministic
+   seed scope and all NOT CERTIFIED actions. A meaningful third intervention and
+   independently assigned rare-action cohorts remain necessary before a broad
+   deployment claim. No new controller or hand-selected fault is invented here.
 
-## Rebuttal preparation: hardest objections and evidence
+## Rebuttal preparation
 
-1. **“This is ordinary sufficient-rule enumeration.”** Agree on the mathematical core. The frozen same-grammar B7 identity and cap2 controls are retained. The claim is the operational robot-intervention formulation, constructive insufficiency distinctions and reproducible empirical characterization. Do not answer by inventing a new algorithm or claiming that witness formatting alone is novel. A stronger contribution needs evidence that this contract changes an actual robotics decision beyond a simple known-rule interface.
+- Explain exact B7 identity directly; do not claim novel pure-rule or hitting-set
+  mathematics. Cite Khan, Anchors, DISCRET and robust partial observability in their
+  actual scopes. B5 is an adaptation, not a reproduction of DISCRET.
+- Answer operational relevance using completion with defer/stop, not conditional
+  precision alone. Separate initially successful maintenance, continue-only success,
+  recover-only necessity and neither-success inadequacy.
+- Answer risk questions with actual assigned/error parent counts, both diagnostic
+  and global-family bounds and the immutable test-time gate. Zero observed errors
+  are not zero risk. No calibration outcome changes the models or reference.
+- Answer replay validity with full-prefix/controller/model/source checks, actual
+  selected-repeat counts and every guard failure. No selected execution means
+  parity is unassessed. Future duplicates share their parent and do not increase N.
+- Answer robustness with the whole frozen grid, boundary cases, UNKNOWN handling,
+  false-fact confidence and bad actions, including unfavorable ordinary baselines.
+  No clean-scope guarantee transfers to a corrupted input model.
 
-2. **“The action-intersection and observation-refinement theory already exists.”** Agree. Zhu/Leonard's partial-observability framework subsumes the feasibility core; Khan/Poupart/Black established minimal MDP decision explanations; DISCRET already synthesizes outcome-grounded subgroup rules. Anchors and probabilistic sufficient explanations target predictor sufficiency. The paper distinguishes its outcome target without claiming priority for these principles. The source-checked bibliography/ledger remains unchanged except factual count corrections.
+## Readiness in three dimensions
 
-3. **“Does it recover failures or just maintain success?”** Use the full necessity table, not a headline alone. Failed-start change is +2; required-recovery change is +1. Report any positive, zero or negative value exactly. Additional successful justification is not automatically an end-to-end recovery improvement because abstention execution semantics and calibrated routing were not physically evaluated.
+**Method:** scoped and mathematically checkable; algorithmic distinctiveness is not
+established. **Evidence:** 360/360 calibration and 0/160 test parents;
+calibration and held-out confirmation are distinct. The new operational result is
+incomplete if no full test parents exist. Retrospective comparisons remain exploratory;
+broad recovery, sensor transfer and third-task validation remain limited.
+**Paper:** the master has eight content pages plus references and Stage1 five plus one,
+with anonymous embedded fonts and final claim/format evidence in final_audit.json. The principal
+researcher must judge whether the operational insight is consequential enough for
+RSS. This report does not claim publication readiness, guaranteed acceptance or
+hardware recovery improvement. No push, upload or submission is performed.
 
-4. **“Why does Push abstain if recovery works?”** The frozen reference contains compatible neither-success and opposing-action cases. Universal finite justification is different from high measured skill success in new seeds. All optional predicates remain uninformative for old Push classes. The raw poses differ, so neither the result nor its six unseparable edges prove that every sensor or continuous observation model must fail. Fixed controllers already use continuous poses; the limitation is the declared routing vocabulary and reference contract.
+## Actual failed operational gate
 
-5. **“The stronger tree or empirical-risk rule is enough.”** Give the exact same-information counts and paired intervals, including adverse comparisons. A strict CART match is sample equality, not a theorem; B7 equality is mathematical. A provisional .9 leaf or .10 empirical-error rule changes the purity standard and has no deployment guarantee. Fewer literals than a tree path do not establish human interpretability or method superiority when ordinary exact rules match them.
+The new calibration is complete, but the primary held-out operational effect is NOT ESTIMABLE: 0/160 test parents, one secondary paired checkpoint, no selected continuation. An offline contact list/tuple defect is sufficient to trigger the guard; failed live diagnostics were not saved. No physical parity is established. The explicit frozen halt was honored without repeats, model changes or replacement seeds. The papers therefore use only prominently labeled retrospective operational comparisons on the inspected old cohort. This is not independent prospective operational confirmation. A future fixed study must first qualify the corrected selected executor, then collect an untouched test allocation and sufficient rare-action assignments. Pick recover needs at least 56 more zero-error assigned parents under the global standard; no targeted replenishment is performed here.
 
-6. **“The follow-up is selected after a positive preliminary result.”** Disclose the history. The prior 33 parents/task were inspected before authorization; the new 333 complete parents belong exclusively to the fixed untouched suffix and use the same pre-existing routers. Seed manifest, endpoint definitions, bootstrap seed and continuation policy preceded outcomes. Pooling is explicitly secondary descriptive and excludes the old orphan. No favorable replacement, threshold search or significance stopping occurred.
-
-7. **“Zero observed errors imply safety.”** They do not. Finite purity and a two-parent support gate are not out-of-sample risk control. Bootstrap resampling cannot invent unseen failures and can produce [0,0]. Report actual assigned-parent strata versus the historical 42 zero-error requirement, while retaining NOT_CALIBRATED even for larger strata. Independent calibration, stochastic repeatability and deployment execution remain unfinished.
-
-8. **“These are not real sensing costs or broad robotics evidence.”** Correct: all predicates summarize simulator pose interfaces; cost is Boolean-predicate count, not sensors, latency or energy. There are two tasks, two fixed skills and binary terminal utility. No hardware, real perception or human study was run. Do not generalize beyond the declared scope or relabel the offline observation design as physical active sensing.
-
-9. **“Can we trust the paired branches and restart handling?”** Use the new atomic parent markers, immutable attempt list, source hashes and independent per-chunk CPU/wall records. Canonical full prefixes, controller memory, model edits and actual action equations are audited. The new study has no native snapshot restore and no independently duplicated future trajectories. Successful chunking does not identify the old SIGTERM cause. Preserve incomplete traces and every earlier seal rather than repairing history.
-
-## Factual corrections and presentation
-
-The old manuscript confused CART recommendations with successes: strict CART2 good counts are 201,224,224,217 (one bad each), not202,225,225,218; provisional b0 CART2 has 296 good/297 recommendations, not 297 good. Raw/aggregated evidence was correct. `presentation_errata.json` preserves the correction, and original paper bytes survive in `starting_files/` and git history. The malformed indicator command and stale Introduction future tense are corrected. Anonymous physical cases A–E now ground recover-only, both-success, neither-success and opposing-action examples in observed coordinates and measured outcomes.
-
-## Priorities before manual Stage1 submission
-
-1. Review whether the empirical sufficiency/necessity insight merits a Stage1 characterization paper despite exact-rule equivalence. Do not manufacture an algorithmic superiority claim or pivot the research question.
-2. Use only the verified final suffix figures, both initial-state populations, strongest baseline/error counts and explicit missingness. Keep pooled estimates secondary. Final page/font/anonymity/citation/claim audit must pass, with no supplement or external paper links.
-3. Treat independent calibration, stochastic repeats, actual observation cost, hardware transfer and practical witness usefulness as remaining scientific work. They were not silently completed here and are not implied by confirmation sample size.
-4. The principal researcher owns authorship and manual submission before December4,2026 23:59AoE. Nothing is pushed, uploaded or submitted. If invited, retain the same question during rebuttal and the Extension Charter; Stage2 is not automatic.
+The method specification can pass its scoped mathematical gate, while the operational evidence gate remains INCOMPLETE. Formal paper compilation does not remove this scientific weakness or establish RSS readiness.
