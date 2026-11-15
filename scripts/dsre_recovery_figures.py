@@ -25,8 +25,8 @@ def draw(root):
     ]
     labels = ["Strict", "Risk", "Ordinary", "CART2", "Fixed C", "Fixed R"]
     n = result["checkpoints"]
-    fig, axes = plt.subplots(1, 3, figsize=(10.2, 2.55))
-    plt.rcParams.update({"font.size": 9})
+    plt.rcParams.update({"font.size": 8, "axes.titlesize": 9})
+    fig, axes = plt.subplots(1, 3, figsize=(7.05, 2.4))
     classes = ["continue_only", "recover_only", "both", "neither"]
     colors = ["#4477aa", "#228833", "#66ccee", "#cc6677"]
     count = [result["paired_classes"].get(c, 0) for c in classes]
@@ -55,7 +55,7 @@ def draw(root):
         bottom += values
         data[field] = values.tolist()
     axes[1].set_xticks(range(len(names)), labels, rotation=35, ha="right")
-    axes[1].set_title("Own calibrated decisions; STOP=0")
+    axes[1].set_title("Own calibrated decisions\nSTOP=0 selective credit")
     axes[1].set_ylim(0, n * 1.18)
     axes[1].legend(frameon=False, ncol=3, fontsize=7, loc="upper center")
     required = [
@@ -73,7 +73,7 @@ def draw(root):
         label="All recover-only states",
     )
     axes[2].set_xticks(range(len(names)), labels, rotation=35, ha="right")
-    axes[2].set_title("Required recoveries actually selected")
+    axes[2].set_title("Selected necessary recoveries")
     axes[2].legend(frameon=False, fontsize=7)
     for ax in axes:
         ax.spines[["top", "right"]].set_visible(False)

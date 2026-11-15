@@ -108,8 +108,10 @@ R=results/dsre-operational/20261115T082827Z-recovery-evidence
 uv run --no-sync python scripts/dsre_recovery_control.py "$R" --stage calibration
 uv run --no-sync python scripts/dsre_recovery_analysis.py calibrate "$R"
 uv run --no-sync python scripts/dsre_recovery_test.py register "$R"
+uv run --no-sync python scripts/dsre_recovery_sensitivity.py register "$R"
 uv run --no-sync python scripts/dsre_recovery_test.py control "$R"
 uv run --no-sync python scripts/dsre_recovery_analysis.py analyze "$R"
+uv run --no-sync python scripts/dsre_recovery_sensitivity.py analyze "$R"
 uv run --no-sync python scripts/dsre_recovery_audit.py audit "$R"
 ```
 
@@ -125,3 +127,23 @@ cohort and scientific settings remain unchanged. `test_registration.json`,
 `execution_started.json` establish this order. Independent audits include the
 initial-prefix controls that the inherited World counter omits; CPU/wall accounting
 comes from whole bounded chunks, including subprocess startup.
+
+Publication recovery: the complete original commit graph was subsequently imported
+through an isolated, five-minute-bounded GitHub Actions transfer using a verified
+Git bundle and a repository-scoped token. It issued an ordinary nonforced push.
+The public research branch was fetched back at
+`1f435d4559ef67033067e1441baf6c74b249ceb3`; both `9f42bb8` and public `6670fa5`
+are ancestors. Run43710508611 completed successfully. No workstation credentials
+were requested. The transfer workflow is isolated from the research branch;
+its temporary branch will be removed after the final evidence transfer. The
+anonymity restriction on the blind paper remains unchanged.
+
+The unchanged historical STOP sensitivity compositions are also registered for
+the new cohort before its first future continuation: original STOP=0, current
+success at STOP without an inferred hold outcome, fixed STOP-to-continue and
+fixed STOP-to-recover. These are offline compositions of existing paired branches,
+never new controllers, chosen fallbacks or transferred calibration guarantees.
+The independent baseline and risk standards remain unchanged. A known-data
+software check on previously inspected parent8000000 verifies that selected
+nonSTOP actions are retained and that fixed-fallback success/error counts differ
+correctly from constant-action counts. No new scientific trials are added.
