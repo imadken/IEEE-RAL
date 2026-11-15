@@ -97,3 +97,70 @@ def test_risk_scope_does_not_transfer():
 def test_future_input_rejected():
     with pytest.raises(ValueError, match="Future observation"):
         bounded_evidence(history(), scope(0, time=0.5))
+
+
+@pytest.mark.parametrize("conflicting", [True, False])
+def test_robust_tree_checks_both_unknown_branch_completions(conflicting):
+    from types import SimpleNamespace
+    from typing import ClassVar
+
+    from dual_rec.dsre.features import PRIMARY
+    from dual_rec.dsre.measurement import RobustRouter
+    from dual_rec.dsre.operational import PolicyInput
+
+    calls = []
+
+    class FrozenPoint:
+        settings: ClassVar[dict] = {
+            "PickCube-v1": (
+                None,
+                None,
+                SimpleNamespace(
+                    table=SimpleNamespace(
+                        scope=SimpleNamespace(
+                            features=PRIMARY + ("object_left_of_goal_02",)
+                        )
+                    )
+                ),
+            )
+        }
+
+        def route(self, packet):
+            calls.append(packet.values[0])
+            action = (
+                None
+                if packet.values[0] is None
+                else "recover"
+                if conflicting and packet.values[0]
+                else "continue"
+            )
+            record = {
+                "action": action,
+                "evidence": [],
+                "support": 4,
+                "independent_parents": 2,
+            }
+            return {
+                name: dict(record)
+                for name in (
+                    "DSRE_strict",
+                    "B7",
+                    "DSRE_risk",
+                    "B7_risk",
+                    "CART1_strict",
+                    "CART2_strict",
+                    "CART1_beta10",
+                    "CART2_beta10",
+                    "CART2_pruned_strict",
+                )
+            }
+
+    router = RobustRouter.__new__(RobustRouter)
+    router.point, router.cache = FrozenPoint(), {}
+    full = (None,) + (False,) * 11
+    packet = PolicyInput(task="PickCube-v1", values=full[:7], full_values=full)
+    result = router.route(packet)["CART2_beta10"]
+    assert calls == [None, False, True]
+    assert result["completion_count"] == 2
+    assert result["action"] == (None if conflicting else "continue")
+    assert all(f["feature"] != PRIMARY[0] for f in result["evidence"])
