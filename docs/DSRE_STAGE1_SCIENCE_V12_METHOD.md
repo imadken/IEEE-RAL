@@ -1,4 +1,4 @@
-# DSRE v1.2: measurement-robust observable evidence
+# DSRE v 1.2: measurement-robust observable evidence
 
 This research extension answers the original question: what is the smallest
 observable evidence sufficient to justify a fixed recovery intervention relative
@@ -30,9 +30,9 @@ not transfer even to a marginal condition that was seen historically.
 Pilot seeds `13000000..13000004` are shared across the five arms; there are five
 independent parents per arm, not 25 independent parents. Each pilot branch is
 executed twice to qualify future trajectory/contact/controller parity. Registered
-primary seeds `14000000..14000191` have first64 development/characterization
-parents and next128 untouched confirmation parents. Every condition of a seed
-stays grouped. All192 parents' recommendations are sealed before any primary
+primary seeds `14000000..14000191` have first 64 development/characterization
+parents and next 128 untouched confirmation parents. Every condition of a seed
+stays grouped. All 192 parents' recommendations are sealed before any primary
 continuation; no new fitting or risk calibration is planned. Historical seed
 manifests, attempted execution identifiers and previous seals are checked before
 collection. Failed qualification arms are retained and unavailable, never replaced.
@@ -79,7 +79,7 @@ evidence, not the proof of invariance.
 Delay has no declared motion envelope. A current-state pose from an earlier
 timestamp therefore establishes no current-state-dependent predicate, including
 the gripper predicate. The descriptive five-control/250-ms stress uses the actual
-recorded prefix packet, only when its time difference is exactly0.25s. These
+recorded prefix packet, only when its time difference is exactly 0.25s. These
 are two names for one stress, not two independent experiments. No extrapolated
 pose or bounded-motion assumption is invented.
 
@@ -105,7 +105,7 @@ clean source is not a method/action guarantee: the separately sealed original
 calibration must also enable that exact policy/action. Altered sensor or OOD
 regimes are never marked statistically qualified.
 
-All17 frozen policies are retained. DSRE and robust B7 see identical
+All 17 frozen policies are retained. DSRE and robust B7 see identical
 invariant/UNKNOWN inputs and remain exactly equivalent, as do their strict-first
 risk wrappers. B1 one/two-literal and B5 rules use the same facts. Robust CART1/2
 enumerates every Boolean completion of unknown primary inputs and returns an
@@ -118,18 +118,35 @@ explanation-length differences are not an optimizer-superiority claim.
 
 The simple margin comparator requires all six/registered-seven inputs invariant,
 then uses original point DSRE strict; robust DSRE can instead use any sufficient
-invariant subset. Fixed actions use no observation advantage. The12-fact
+invariant subset. Fixed actions use no observation advantage. The 12-fact
 full-signature method is explicitly an extra-information control, not a matched
 seven-fact baseline. Original CART/DSRE results with missing inputs are reported
 separately from the completion-aware robust interface. No method inherits a
 different method's bound.
+
+The rule equivalence is structural, not just an observed tie. For a partial
+query, both strict procedures enumerate subsets of the same known literals,
+match reference UNKNOWN values conservatively, require the same two independent
+parents, and accept an action precisely when every compatible qualified row
+accepts it. At each minimum length they use the same support/action/feature
+tie breaking. Their feasible certificates and selected action/evidence therefore
+coincide for every partial query. Applying the same measurement adapter preserves
+this identity. Adding the identical strict-first two-literal 10%-reference-error
+fallback also preserves risk-wrapper identity. Typed witnesses are additional
+diagnostic outputs, not an optimization improvement over ordinary rules.
+
+These quantifiers cannot be conflated: invariant literals are valid for all
+telemetry in the declared error set; finite certificates are valid for all
+compatible rows in the fixed reference; neither statement alone establishes
+success for all real states or a population-risk guarantee. Counterexample
+witnesses and separate calibration make the missing implication explicit.
 
 ## Mechanism and statistical analysis
 
 On each named paired table, action feasibility is the fraction with at least one
 successful action. Observation sufficiency is the mass of exact feature-signature
 classes with a common successful action. Policy coverage reports adequate,
-inadequate and STOP separately. Compute6/7/12-fact and robust ternary signature
+inadequate and STOP separately. Compute 6/7/12-fact and robust ternary signature
 versions; exact full-pose signatures are an unattainable-information diagnostic
 whose singletons can overfit the hindsight table. Exact ternary-pattern ceilings
 describe that interface partition, not validity over overlapping measurement sets
@@ -144,8 +161,8 @@ Bounded radii are `0,1,5 mm`; uniform-in-box corruptions have three fixed
 replicates per nonzero radius. Every method receives the identical corruptions.
 Raw physical pairs are reused for sensor-only experiments. Required recoveries
 exclude initially successful preventive opportunities. Parent-group bootstrap
-uses4000 draws/seed2026111504, preserving every condition and corruption per
+uses 4000 draws/seed 2026111504, preserving every condition and corruption per
 parent; empty denominators are unavailable. CIs are descriptive, without a
 multiple-comparison superiority claim. Fixed stopping/resource rules precede all
-new outcomes:10 simulation hours,16 session hours,4GiB artifacts, at least one
+new outcomes: 10 simulation hours, 16 session hours, 4 GiB artifacts, at least one
 hour analysis reserve, <=12 parents/15 minutes per checkpoint.

@@ -213,7 +213,7 @@ def figures(root):
     fig.text(
         0.04,
         -0.06,
-        "Prior clean gates retain their original scope. ALL new-source proposals are unqualified. Exact-signature ceilings are not deployed policies; risk-tier decisions need not lie below a strict hindsight ceiling.\nMeasurement bound is coordinate-wise per pose/frame; finger encoders are assumed exact. Two registered historical conditions; five prespecified approach offsets in the new source.",
+        "Prior clean gates retain their original scope. ALL new-source proposals are unqualified. Exact-signature ceilings are not deployed policies; frozen test policies use a different reference/risk criterion, so these masses do not bound test policy performance.\nMeasurement bound is coordinate-wise per pose/frame; finger encoders are assumed exact. Two registered historical conditions; five prespecified approach offsets in the new source.",
         fontsize=9,
     )
     fig.tight_layout()
