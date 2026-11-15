@@ -115,8 +115,8 @@ uv run --no-sync python scripts/dsre_recovery_sensitivity.py analyze "$R"
 uv run --no-sync python scripts/dsre_recovery_audit.py audit "$R"
 ```
 
-Quantitative results and the final scientific gate will be appended only after
-calibration/test completion or a fixed scientific/resource boundary.
+Quantitative results and the final scientific gate are recorded below after
+completion of both fixed cohorts and independent verification.
 
 The test orchestrator strengthens the timing constraint: all160 parents and all5440
 method/condition recommendations are sealed together before the first test outcome.
@@ -147,3 +147,290 @@ The independent baseline and risk standards remain unchanged. A known-data
 software check on previously inspected parent8000000 verifies that selected
 nonSTOP actions are retained and that fixed-fallback success/error counts differ
 correctly from constant-action counts. No new scientific trials are added.
+
+## 8. Completed recovery-evidence study (2026-11-15)
+
+The fixed experiment is complete: 1,597 calibration candidate parents and all 160
+untouched test parents were processed without a qualification halt. DSRE, its
+seven Pick facts, fixed two skills, thresholds, reference tables and prior
+experiments were unchanged. There were no new fits. The independent calibration
+passes, and the untouched test establishes11 physically necessary simulated
+recoveries. It does **not** establish a unique algorithm advantage.
+
+### Calibration and sampling funnel
+
+Calibration seeds11000000–11001596 were screened from the prespecified4000-seed
+frame; the unused suffix was not substituted or inspected for futures. Selection
+used predecision assignments only. Every policy retained exactly its own first 112
+recovery-assigned parents; error counts never determined stopping. Conditions of
+a parent count once, with any assigned-condition failure marking its parent.
+Policies with no clean recovery assignment do not require an unused stratum to
+qualify their continue decisions. The confidence budget remains.05/(4*17).
+
+DSRE required 1,532 screens to reach its quota, CART2 required 1,597, and the
+full-signature control required 1,368. Constant recover used its own first 112
+parents and 224 conditions. Globally, 3,194 checkpoints were screened and 384
+recovery continuations executed on 272 unique parents. Reused outcomes do not
+create additional independent trials. Continue futures were not measured during
+this calibration. All excluded and qualification attempts remain in the funnel.
+
+| Frozen policy | Original R parents/errors | New R parents/errors | New upper | Pooled upper | R enabled |
+|---|---:|---:|---:|---:|---|
+| DSRE_strict | 13/0 | 112/0 | 6.239% | 5.609% | yes |
+| B7 | 13/0 | 112/0 | 6.239% | 5.609% | yes |
+| DSRE_risk | 13/0 | 112/0 | 6.239% | 5.609% | yes |
+| B7_risk | 13/0 | 112/0 | 6.239% | 5.609% | yes |
+| B1_one_strict | 0/0 | 0/0 | 100.000% | 100.000% | no |
+| B1_two_strict | 12/0 | 112/0 | 6.239% | 5.653% | yes |
+| CART1_strict | 0/0 | 0/0 | 100.000% | 100.000% | no |
+| CART2_strict | 11/0 | 112/0 | 6.239% | 5.697% | yes |
+| CART2_pruned_strict | 11/0 | 112/0 | 6.239% | 5.697% | yes |
+| CART1_beta10 | 0/0 | 0/0 | 100.000% | 100.000% | no |
+| CART2_beta10 | 11/0 | 112/0 | 6.239% | 5.697% | yes |
+| B5_beta10 | 0/0 | 0/0 | 100.000% | 100.000% | no |
+| B0_continue | 0/0 | 0/0 | 100.000% | 100.000% | no |
+| B0_recover | 180/51 | 112/32 | 43.644% | 37.448% | no |
+| full_signature_strict | 16/2 | 112/14 | 25.192% | 24.216% | no |
+| greedy_pure_rule | 13/0 | 112/0 | 6.239% | 5.609% | yes |
+| policy_faithful | 11/0 | 112/0 | 6.239% | 5.697% | yes |
+
+The original DSRE recovery stratum13/0 had a42.594% upper bound. New112/0
+gives6.239%; compatible pooled125/0 gives5.609%. CART2's pooled sample is 123/0
+with 5.697%. Because original calibration was inspected, enabling additionally
+requires the independent fixed-size new-only bound to pass. The formal target
+is the clean **assigned-parent any-error event** across the two conditions,
+not a per-condition, arbitrary checkpoint or hardware guarantee. Historical
+continue and Push gates remain unchanged. Full-signature14/112 and constant
+recover32/112 errors remain negative evidence; neither recovery gate is enabled.
+
+### Untouched paired test and actual recovery
+
+Seeds12000000–12000159 are disjoint from calibration and prior manifests. All 160
+parents, 320 checkpoints and 640 continuations completed. All 5,440 method/condition
+recommendations and gates were sealed globally before the first future branch.
+The four physical classes are continue-only 53, recover-only 82, both 165 and
+neither20. Of82 recover-only checkpoints,81 start unsuccessful and one is a
+preventive intervention opportunity from an already-successful checkpoint.
+
+Strict and risk DSRE each select11 recoveries; every one is an initially failed
+recover-only case. Its measured recover succeeds and matched continue fails.
+No selected recovery is harmful or merely maintains a both-success state.
+Required recovery coverage is 11/81=13.580%, parent-bootstrap95% interval
+[6.451%,21.430%]. All-recover-only coverage is separately 11/82=13.415%, interval
+[6.410%,21.176%]. All 70 other failed-start recover-only states are deferred.
+The single inadequate continue is the missed preventive opportunity.
+
+| Own calibrated policy | Adequate | Inadequate | STOP | Continue / recover | Required R | Maintained / failed-start completion |
+|---|---:|---:|---:|---:|---:|---:|
+| DSRE_strict | 174 | 0 | 146 | 163/11 | 11 | 156/18 |
+| B7 | 174 | 0 | 146 | 163/11 | 11 | 156/18 |
+| DSRE_risk | 229 | 1 | 90 | 219/11 | 11 | 210/19 |
+| B7_risk | 229 | 1 | 90 | 219/11 | 11 | 210/19 |
+| B1_one_strict | 119 | 0 | 201 | 119/0 | 0 | 112/7 |
+| B1_two_strict | 172 | 0 | 148 | 163/9 | 9 | 156/16 |
+| CART1_strict | 0 | 0 | 320 | 0/0 | 0 | 0/0 |
+| CART2_strict | 172 | 0 | 148 | 163/9 | 9 | 156/16 |
+| CART2_pruned_strict | 172 | 0 | 148 | 163/9 | 9 | 156/16 |
+| CART1_beta10 | 218 | 1 | 101 | 219/0 | 0 | 210/8 |
+| CART2_beta10 | 227 | 1 | 92 | 219/9 | 9 | 210/17 |
+| B5_beta10 | 0 | 0 | 320 | 0/0 | 0 | 0/0 |
+| B0_continue | 0 | 0 | 320 | 0/0 | 0 | 0/0 |
+| B0_recover | 0 | 0 | 320 | 0/0 | 0 | 0/0 |
+| full_signature_strict | 164 | 0 | 156 | 164/0 | 0 | 157/7 |
+| greedy_pure_rule | 174 | 0 | 146 | 163/11 | 11 | 156/18 |
+| policy_faithful | 227 | 1 | 92 | 219/9 | 9 | 210/17 |
+
+Risk coverage is 230/320=71.875% [68.125%,75.938%]. Conditional inadequacy is
+1/230=0.435%, descriptive bootstrap interval[0,1.339%]. There are70 physically
+actionable deferrals and 20 neither-success deferrals. This is an opportunity
+count, not a claim that their available observations supplied a valid certificate.
+The11 held-out recovery parents alone have a48.104% zero-error diagnostic upper
+bound. Qualification comes from the independent 112-parent calibration; zero-width
+empirical bootstrap intervals do not prove safety.
+
+| Paired risk-minus comparator | Completion-credit difference, pp [95% interval] | Required recovery difference, pp [95% interval] |
+|---|---:|---:|
+| DSRE_strict | 17.188 [13.438, 20.938] | 0.000 [0.000, 0.000] |
+| B7_risk | 0.000 [0.000, 0.000] | 0.000 [0.000, 0.000] |
+| CART1_beta10 | 3.438 [1.562, 5.625] | 3.438 [1.562, 5.625] |
+| CART2_beta10 | 0.625 [0.000, 1.562] | 0.625 [0.000, 1.562] |
+| B0_continue | 71.562 [67.805, 75.312] | 3.438 [1.562, 5.625] |
+| B0_recover | 71.562 [67.805, 75.312] | 3.438 [1.562, 5.625] |
+| full_signature_strict | 20.312 [16.562, 24.062] | 3.438 [1.562, 5.625] |
+
+Ordinary risk rules equal DSRE risk mathematically and on every measured action.
+CART2 selects nine required recoveries; the two-checkpoint difference is 0.625pp
+[0,1.563], which does not establish superiority. Risk-minus-strict adds55
+successful credits:54 maintain success, one is a natural continuation and zero
+are additional required recoveries. It also introduces one inadequate continue.
+The new recovery eligibility is a consequence of additional independent
+qualification of the existing skill, not a new controller or explanation-induced
+change to its trajectories.
+
+Raw fixed continue/recover succeed on 218/247 of 320 checkpoints respectively.
+Their matched difference is+9.063pp [1.875,15.938], but raw recover incurs73
+inadequate actions, including 53 harmful recoveries on continue-only states.
+Thus raw always-recover completes more tasks than selective risk229, while
+failing the matched risk standard. Its own calibrated policy defers. The
+selected 11 recoveries each improve over matched continue; their empirical
+conditional effect is 1.0, with a degenerate descriptive bootstrap interval.
+This is simulated paired-intervention evidence, not physical robot deployment.
+
+### Preregistered endpoint and secondary STOP sensitivity
+
+The primary endpoint remains selected successful-action credit with STOP=0.
+Current success at STOP is not a measured terminal hold outcome. The historical
+fixed STOP-to-continue/recover compositions were registered for the new cohort
+before its first future outcome; they retain every selected nonSTOP action.
+Both compositions are reported, without outcome-selected fallbacks or inherited
+calibration guarantees.
+
+| Policy | Primary good/bad/STOP | Already successful at original STOP | STOP-to-continue good/bad | STOP-to-recover good/bad |
+|---|---:|---:|---:|---:|
+| DSRE_strict | 174/0/146 | 55 | 229/91 | 291/29 |
+| DSRE_risk | 229/1/90 | 0 | 229/91 | 299/21 |
+| B7_risk | 229/1/90 | 0 | 229/91 | 299/21 |
+| CART2_beta10 | 227/1/92 | 0 | 227/93 | 299/21 |
+| B0_continue | 0/0/320 | 211 | 218/102 | 247/73 |
+| B0_recover | 0/0/320 | 211 | 218/102 | 247/73 |
+
+The risk-minus-strict primary gap17.188pp [13.438,20.938] becomes0 [0,0]
+under continue fallback and 2.500pp [0.625,4.375] under recover fallback. Risk
+and CART2 converge under recover fallback, while continue fallback retains their
+two-checkpoint difference. The299/21 risk recover composition realizes81 required
+recoveries but remains unqualified. Its higher completion follows executing
+additional branches, not improved explanation or controller methodology.
+
+Historical evidence is unchanged: the earlier159-parent Pick risk-versus-strict
+gain was30 maintenance credits and zero qualified recoveries; Push constant
+recover matched 159/160 and 81 required recoveries while strict deferred everywhere.
+Old STOP sensitivity and the negative observation-corruption findings remain
+explicit in the paper and earlier sealed evidence.
+
+### Independent verification and engineering corrections
+
+The raw-state physics audit checks all 640 new test continuations and 44,800 future
+states, including prefix/contact/model/controller-memory parity and independently
+transcribed action equations. Calibration384 continuations and 26,880 future
+states also pass. A known inspected parent supplies four additional cold-process
+replays matching all 280 future states; these are qualification, not independent
+trials. The historical failed8000180 parent remains preserved and was not rerun.
+
+Independent integer-mask rules/trees supply56,224 checks; all 68 calibration
+strata are rebuilt from raw terminal labels. There are54,536 raw-label count
+checks and 136 independently weighted paired intervals. A separate raw-label
+population/STOP audit verifies340 intervals and 68 held-out assignment bounds.
+It confirms every main table and paired contrast survived the reporting fix.
+
+The initial coverage-label implementation included one already-successful
+recover-only checkpoint in the required-recovery denominator. The registered
+definition excludes successful starts. Both 82-state recover-only and 81-state
+failed-start populations are now reported. The original source/output are
+retained, with a documented amendment and regression test. No action, threshold,
+cohort, calibration decision, raw outcome or primary count changed.
+
+Tests:529 passed, four skipped. Full source Ruff checks and formatting are
+required in the final verification record. The PDF is six pages, five content
+and one references, with embedded Type1 fonts, unchanged official class, no
+identifying links/metadata, no overflow and all six pages visually reviewed.
+The13 existing citations were checked against primary records; preprints retain
+their identified status. Stage2/full-master TeX and PDF remain byte-identical.
+
+### Scientific reviewer critique and readiness
+
+This is an internal adversarial review supported by independent numerical and
+physics implementations, not external peer review. The calibration and actual
+necessary-recovery evidence pass their frozen gates. The strongest remaining
+limitations are:
+
+- Exact equivalence with ordinary B7 and its risk wrapper prevents an optimizer
+  or unique-policy novelty claim. The CART difference includes zero.
+- Only11/81 required recoveries are selected; most risk-versus-strict improvement
+  remains maintenance, and fallback accounting can erase the primary gap.
+- Two deterministic simulated tasks, two fixed skills and coarsened idealized
+  predicates provide limited robotics breadth. Raw poses can distinguish states
+  aliased by the declared Boolean interface.
+- Calibration bounds concern assigned-parent events, not arbitrary conditions,
+  time points, individual explanations, sensor shifts or hardware safety.
+- Full-signature reference purity fails independent calibration, and the old
+  corruption study shows fragile factual explanations. Finite exactness does not
+  establish complete physical knowledge, interpretability or sensing efficiency.
+
+**Gate:** engineering, independent calibration, actual paired recovery evidence
+and Stage1 formatting pass. Unique method superiority is not established.
+A coherent evidence-sufficiency study is ready for supervisor review; a strong
+RSS novelty/breadth case remains limited. No publication-readiness, conference
+submission or hardware recovery-improvement claim is made.
+
+### Resources, source hashes and preservation
+
+Charged simulation wall: 22153.316789s (6.153699h) /16h, including all screening and qualification. Remaining: 35446.683211s. Measured bounded-worker CPU: 22166.722865s (6.157423 core-hours); supervisor/tool overhead is excluded. Controls: 757,864. New artifacts before packaging: 350,995,220 bytes /4GiB. Final packaging bytes are recorded in the release receipt. No new model fits or training jobs were launched.
+
+All original user deletions and untracked documents, historical seals, `.gitignore`,
+`uv.lock`, the existing lockfile and unrelated jobs are preserved. Branch:
+`research/dsre-rss2027-recovery-evidence-20261115`. The full original commit graph
+was already published non-destructively at 1f435d4; final publication/commit
+verification is recorded in `release_receipt.json`. No force push or conference
+submission is performed. The named public repository can reveal authorship and
+is never linked from the blind paper.
+
+| Source/input | SHA256 |
+|---|---|
+| `src/dual_rec/dsre/operational.py` | `3e7e2c4d4c5a96cc6e3dab2ab8302d8e2598bd1e0efd3ef3bf69953dc4afe000` |
+| `src/dual_rec/dsre/features.py` | `fe2b4f7d56e469bfbcbee0ee22e4a9de8e7fe3f94f8f50f9a9827e89d951af98` |
+| `src/dual_rec/overnight_pick.py` | `581b19e967b833a95d0530f74c8b6ec22bdc391ffcebfaf5303c03208f08a253` |
+| `scripts/dsre_paper_physics.py` | `acf871447082318913fcdf7de397ed27bed35bb49b17c521433926d353b2d077` |
+| `config/dsre_operational.json` | `852d5dd2d7e5e1c2c69f90185c5d0a4bbf737fac65b22d79908d3e9583644100` |
+| `results/dsre-operational/20261115T082827Z-recovery-evidence/plan.json` | `310c5c58555276181b93ad51d23419d5d55d8b6300455e890f52dab317fa9d34` |
+| `results/dsre-operational/20261115T082827Z-recovery-evidence/frozen_routers.json` | `9b5a44f27e881aca6eab999b3614b9bf2f9ac728efbbfb74290406f760805603` |
+| `results/dsre-operational/20261115T082827Z-recovery-evidence/calibration_decision.json` | `14129da5615857f222edd8075abb5419962d4a139156f00fd110ee7ccb5f813d` |
+| `results/dsre-operational/20261115T082827Z-recovery-evidence/test_recommendation_seal.json` | `716fada589a586598b7e0c9bb3089bdfdf5377051142f21ccb64da00f9ffd5ca` |
+
+### Evidence and reproduction
+
+Complete local evidence root:
+`results/dsre-operational/20261115T082827Z-recovery-evidence/`.
+Key seals: `confirmation_freeze.json`, `calibration_seal.json`,
+`calibration_audit_seal.json`, `test_recommendation_seal.json` and
+`completion_manifest.json`. Independent reports: `physics_audit.json`,
+`numerical_audit.json`, `sensitivity_population_audit.json`,
+`scientific_reviewer_assessment.json` and `stage1_pdf_audit.json`.
+
+Compact supervisor packet: the local `supervisor_review.tar.gz`, also published
+as `rss2027/dsre_recovery_evidence_review.tar.gz`. It contains frozen models,
+all calibration/test manifests and minimal outcome/decision data, exact results,
+audits and paper assets. Raw physics traces, caches and execution logs stay local.
+No labels are invented for unmeasured calibration futures.
+
+From the repository, numerical reproduction from the compact packet is:
+
+```bash
+REVIEW=$(mktemp -d /tmp/dsre-review.XXXXXX)
+tar -xzf rss2027/dsre_recovery_evidence_review.tar.gz -C "$REVIEW"
+UV_CACHE_DIR=/tmp/dual-rec-uv-cache PYTHONPATH=src uv run --no-sync python "$REVIEW/verify_compact.py" "$REVIEW"
+```
+
+For full raw-state audit/reanalysis, retain the original evidence at its recorded
+paths and use a scratch output root so sealed originals are never overwritten:
+
+```bash
+R=results/dsre-operational/20261115T082827Z-recovery-evidence
+SCRATCH=$(mktemp -d /tmp/dsre-raw-audit.XXXXXX)
+cp "$R/"*.json "$SCRATCH/"
+for d in calibration test qualification progress; do
+  ln -s "$PWD/$R/$d" "$SCRATCH/$d"
+done
+export UV_CACHE_DIR=/tmp/dual-rec-uv-cache PYTHONDONTWRITEBYTECODE=1
+export PYTHONPATH="src:scripts:$PWD/results/reboot-phase/20261111T204459Z/env/lib/python3.12/site-packages"
+export OPENBLAS_NUM_THREADS=1
+uv run --no-sync python scripts/dsre_recovery_analysis.py analyze "$SCRATCH"
+uv run --no-sync python scripts/dsre_recovery_audit.py audit "$SCRATCH"
+uv run --no-sync python scripts/dsre_recovery_numerical.py "$SCRATCH"
+uv run --no-sync python scripts/dsre_recovery_sensitivity.py analyze "$SCRATCH"
+uv run --no-sync python scripts/dsre_recovery_sensitivity_audit.py "$SCRATCH"
+```
+
+The package's frozen source hashes, environment and qualification are required
+for physics reproduction. Never repeat parents into an attempted or sealed root.
+The data-acquisition commands above describe the completed study, not permission
+to extend or replace its cohorts.

@@ -39,8 +39,8 @@ def draw(root):
     bottom = np.zeros(len(names))
     data = {}
     for field, color, label in [
-        ("successful", "#228833", "Adequate"),
-        ("unacceptable", "#cc6677", "Inadequate"),
+        ("successful", "#228833", "Good"),
+        ("unacceptable", "#cc6677", "Bad"),
         ("deferred", "#bbbbbb", "STOP"),
     ]:
         values = np.array(
