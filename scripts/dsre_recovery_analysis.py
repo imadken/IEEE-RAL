@@ -279,7 +279,7 @@ def analyze(root):
                     ],
                     conly,
                 ),
-                "valid_evidence_rejection": (
+                "deferred_physically_actionable": (
                     [
                         int(r["deferred"] and (ronly[i] or both[i] or conly[i]))
                         for i, r in enumerate(rs)
@@ -336,6 +336,26 @@ def analyze(root):
         ),
         "scope": "Matched reset outcomes of frozen skills. No new controller or improvement attributable to explanation algorithm; ordinary rules and trees compared at own calibrated gates.",
     }
+    recover_mask = [int(r["action"] == "recover") for r in clean]
+    outcome_delta = [
+        int(r["outcomes"]["recover_value"]) - int(r["outcomes"]["continue_value"])
+        for r in rows
+    ]
+    physical["paired_fixed_recover_minus_continue"] = ratio_interval(
+        outcome_delta, [1] * len(rows), groups, indices
+    )
+    physical["selected_recover_minus_matched_continue"] = ratio_interval(
+        [v * mask for v, mask in zip(outcome_delta, recover_mask, strict=True)],
+        recover_mask,
+        groups,
+        indices,
+    )
+    physical["required_fraction_among_selected_recover"] = ratio_interval(
+        [v * mask for v, mask in zip(ronly, recover_mask, strict=True)],
+        recover_mask,
+        groups,
+        indices,
+    )
     assignment_errors = {}
     for mode in ("proposal", "calibrated"):
         for method in METHODS:
