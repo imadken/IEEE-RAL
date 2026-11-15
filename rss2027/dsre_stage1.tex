@@ -1,0 +1,199 @@
+\documentclass[conference]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={When Is Robot Recovery Justified? Decision-Sufficient Explanations and the Limits of Observation},pdfauthor={},pdfsubject={Anonymous Stage 1 research paper},pdfkeywords={}}
+\newcommand{\Good}{\operatorname{Good}}
+\title{When Is Robot Recovery Justified?\\Decision-Sufficient Explanations and the Limits of Observation}
+\author{Anonymous Authors}
+\begin{document}
+\maketitle
+\begin{abstract}
+A robot may possess an effective recovery skill yet lack the observations needed to justify executing it. We introduce Decision-Sufficient Recovery Explanations (DSRE), a framework that grounds recovery recommendations in paired intervention outcomes and constructs minimum observable certificates for adequate actions. When a certificate is unavailable, concrete counterexamples distinguish observational ambiguity, inadequate recovery capabilities, and insufficient reference support. We establish a finite-reference observation-refinement property and couple exact certificates with independent statistical qualification of selective intervention decisions. In two simulated manipulation tasks, adding one observable predicate increases PickCube finite-reference justifiability from 183/422 to 235/422 checkpoints, while PushCube admits no strict certificate despite successful recovery at 159/160 held-out checkpoints. On a frozen 159-parent test, risk-qualified action selection achieves 110/158 PickCube and 159/160 PushCube successful autonomous-completion credits under the registered abstention protocol. These findings expose a measurable gap between intervention efficacy, observable justification, and risk-qualified execution, and provide a systematic basis for deciding what additional evidence can contribute to robot recovery.
+\end{abstract}
+
+\section{Introduction}
+Robot recovery requires deciding not only whether a skill can succeed, but whether observations justify its use. Identical observable facts may conceal different action requirements; in other states, neither available intervention succeeds. These possibilities create distinct needs for additional observation, recovery capability, or reference evidence. Figure~\ref{fig:mechanism} illustrates them using paired physical continuations.
+
+We ask: \emph{What observable evidence suffices to justify a recovery action, and what prevents justification when such evidence is unavailable?} We formulate Decision-Sufficient Recovery Explanations (DSRE) as an intervention-grounded evidence contract. A certificate identifies minimum predecision facts supporting an adequate action across compatible reference states. Otherwise, constructive witnesses identify observation conflicts, inadequate skills, or missing reference support. A separate calibration gate qualifies selective execution.
+
+Our contributions are an intervention-adequacy formulation grounded in paired outcomes, exact minimum-evidence certificates with typed insufficiency witnesses, and prospective experiments quantifying observation sufficiency, calibrated decisions, and sensitivity to corrupted observations.
+
+\begin{figure}[!ht]
+\centering\includegraphics[width=\columnwidth]{figures/stage1_mechanism.png}
+\caption{Actual reference cases, with C/R denoting continue/recover terminal success. Push D/E share all twelve declared facts but require opposite actions; their raw signed object--goal offsets differ. Pick B has no adequate skill. Pick A admits a minimum certificate after refinement; F has insufficient support. These are distinct, sometimes overlapping, evidence obligations.}
+\label{fig:mechanism}
+\end{figure}
+
+\section{Related Work}
+Minimal sufficient MDP explanations justify actions using reward structure~\cite{khan2009}; Anchors~\cite{anchors} and probabilistic sufficient explanations~\cite{pse} study prediction stability. DISCRET~\cite{discret} develops outcome-aware treatment rules, and observation-consistent action intersection characterizes decision feasibility~\cite{partial}. DSRE grounds sufficiency in \emph{measured robot intervention adequacy} and supplies typed physical counterexamples when observed evidence cannot justify an action.
+
+Robot recovery includes precondition-based correction~\cite{cape}, tree monitoring~\cite{peddi}, and context-sensitive observation~\cite{ernst}. DA-GRD~\cite{dagrd} studies tactile disambiguation; RESCUE~\cite{rescue} evaluates intervention outcomes. We study existing predecision pose evidence and paired continuations. Selective classification~\cite{selective2017} and exact binomial inference~\cite{clopper1934} underpin the independent statistical qualification of the resulting action rules.
+
+\section{Finite Intervention-Evidence Contract}
+\subsection{Scope, adequacy and observable support}
+Let $s$ be a robot--environment state and $x=F(s)$ its predecision predicate signature, possibly using an earlier timestamped observation. The fixed repertoire is $\mathcal A=\{c,r\}$, continue and recover. Skill $a$ executes for a fixed horizon with terminal binary task utility $U(s,a)$. Qualified reference $R$ contains both physical outcomes and seed-parent identifiers. Define
+\begin{equation}
+\Good(s)=\{a\in\mathcal A:U(s,a)=1\}.
+\label{eq:good}
+\end{equation}
+Adequacy is membership in $\Good(s)$, not treatment effect or recovery necessity. Either, both or neither action may work. A neither-success checkpoint makes both choices inadequate even though regret relative to two failing skills is zero.
+
+For a conjunction $E$ of known literals of $x$, let $M_R(E,x)$ contain reference rows not contradicted by $E$. UNKNOWN reference facts remain compatible; UNKNOWN query values cannot be asserted, including as false literals. A strict action certificate $(E,a)$ requires matching task, skills, horizon, observation and outcome scope, qualified matching outcomes, and
+\begin{equation}
+\begin{gathered}
+|\{\mathrm{parent}(s):s\in M_R(E,x)\}|\ge 2,\\
+a\in\bigcap_{s\in M_R(E,x)}\Good(s).
+\end{gathered}
+\label{eq:certificate}
+\end{equation}
+Two-parent support prevents vacuous or single-parent justification, not generalization error. Conditions of one parent count once; missing outcomes or scope mismatch block certification.
+
+\subsection{Exact search, outputs and witnesses}
+For each query, the fixed solver enumerates conjunctions of known literals in increasing cardinality, retains those satisfying~\eqref{eq:certificate}, and returns a minimum. Canonical ties prefer greater matched-row support, then continue, then lexicographic facts. Cached bit masks accelerate the exact search. If no certificate exists, the robot abstains and returns all applicable scoped obstructions:
+\begin{enumerate}
+\item \emph{Observation conflict}: compatible states have disjoint nonempty adequate-action sets, witnessed by a continue-only/recover-only pair.
+\item \emph{Repertoire inadequacy}: a compatible state has $\Good=\varnothing$; observation alone cannot supply an adequate skill.
+\item \emph{Reference insufficiency}: insufficient independent support, missing/unqualified outcomes or scope mismatch; a knowledge gap, not physical impossibility.
+\end{enumerate}
+Together with a certificate, these are the four outputs in Fig.~\ref{fig:mechanism}. Diagnoses can overlap. Why-not witnesses show compatible failing rows, without identifying the unknown current state with them. Certificates retain rows, outcomes, support and scope identity.
+
+\noindent\textbf{Exactness within the declared vocabulary.} Exhaustive cardinality-ordered enumeration returns a smallest admissible conjunction. With complete qualified reference outcomes, each literal of a minimum nonempty certificate has a necessity witness: removing it expands support, cannot reduce parent support, and must admit an action-inadequate row or a smaller certificate would exist. Missing-label failures require a missing-evidence witness instead. Direct search costs $O(nd2^d)$ for $d$ known facts and $n$ rows; exactness is a classical finite search property.
+
+Under matched support and tie-breaking, B7 exhaustive pure outcome-aware rules produce the same minimum certificates, while the strict-first ordinary risk wrapper reproduces the DSRE risk tier. These exact equivalences provide independent implementation checks; agreement with CART is evaluated empirically.
+
+\subsection{Finite observation refinement and a worked case}
+For complete deterministic signatures, partition the same fixed reference into classes $Z$. Its descriptive actionable ceiling is
+\begin{equation}
+C_R(F)=\frac{1}{|R|}\sum_Z |Z|\,\mathbb I\!\left[\bigcap_{s\in Z}\Good(s)\ne\varnothing\right].
+\label{eq:ceiling}
+\end{equation}
+\textbf{Finite refinement property.} If $F'$ refines $F$ on this same reference, $C_R(F')\ge C_R(F)$. Every child of an actionable class retains its common action, proving monotonicity by summing child masses. A neither-success row remains unjustifiable under any refinement because its own $\Good$ is empty. This classical property assumes complete deterministic predicates; it is not an unseen-state guarantee or equality with conservative supported-rule coverage under UNKNOWN.
+
+In Pick cases A/B, the six primary bits are both 001111, but signed object--goal offsets are $-.03401$ and $+.05460$ m. A is recover-only; B is neither-success. The registered additional predicate, object.x$-$goal.x$<-.02$ m, separates them. A's minimum recovery certificate needs three facts: goal not near, progress, and object left of goal. It matches five independent reference parents, while the exact-signature recovery child has two. B remains inadequate. In Push D/E, all twelve facts match although offsets differ (Fig.~\ref{fig:mechanism}); no fact in this menu resolves the opposing actions. Different sensors or raw-coordinate reasoning could do so. The limit belongs to the declared interface, not to sensing in general.
+
+\begin{figure*}[t]
+\centering\includegraphics[width=\textwidth]{figures/stage1_outcomes.png}
+\caption{Separate quantities on the same held-out physical checkpoints. Left of each dotted divider: actual ungated continue/recover outcomes. Right: successful recommended-action credit under each frozen global gate, with STOP=0. Maintenance, required recovery, other unsuccessful-start completion, inadequate actions and deferral are distinct. Ord./CART denotes ordinary risk rules and CART2 .9, which match the risk tier; Gated R applies the constant recover policy's own gate.}
+\label{fig:outcomes}
+\end{figure*}
+
+\section{Experimental Protocol and Risk Qualification}
+\subsection{Falsifiable hypotheses and measurements}
+We evaluate four statements, with evidence status reported in Secs.~V--VII. \textbf{H1:} observable detail can expand the finite set of justifiable interventions, without necessarily increasing required recoveries or held-out action quality. \textbf{H2:} strict justification, physical action efficacy and risk-qualified autonomous coverage differ at manipulation checkpoints. \textbf{H3:} witnesses distinguish an unobservable action conflict from an absent adequate skill; added observation alone cannot fix the latter. \textbf{H4:} perturbing clean observations can invalidate factual certificates without changing independently measured physical outcomes.
+
+The development reference has 844 qualified pairs, 422/task and 211 seed parents/task, after 76 exclusions from 920 candidates. Both conditions of a seed stay together: Pick nominal/2-cm offset and Push nominal/misaligned. The unchanged scripted skills run 70 controls over 3.5 s. Pick recover performs staged regrasp; Push recover lifts and repositions behind the object before pushing. Terminal task success defines utility. All source trajectories use qualified full action-prefix replay in ManiSkill~\cite{maniskill}; no controller or model is trained in this analysis.
+
+Six primary pose/proprioception facts test object--goal distance$\le.03$m; hand--object distance$\le.04$m; goal-distance reduction and object displacement$\ge.005$m; summed absolute finger positions$\le.04$m; and hand height above object$>.03$m. Earlier prefix observations supply progress/displacement. The fixed optional Pick fact is signed x-offset$<-.02$m; the full optional menu adds six facts. These idealized observations exclude privileged contact/grasp, condition IDs and future outcomes. Predicate count is not sensor count, latency or energy.
+
+\subsection{Independent clean parent-action qualification}
+The router retains a strict certificate; otherwise it searches conjunctions of at most two literals with two-parent support and matched-row empirical error$\le.10$. It minimizes literal count, then empirical error, then applies the strict support/action/fact ties. A separate gate may veto, never substitute, a proposal. For task $t$ and action $a$, let $I_{g,a}=1$ if the frozen method assigns $a$ in either registered condition of parent $g$, and let $V_{g,a}=1$ if any such assignment fails. The target is
+\begin{equation}
+ p_{t,a}=\Pr(V_{g,a}=1\mid I_{g,a}=1,t)\le.10.
+\label{eq:risk}
+\end{equation}
+For $k$ erroneous among $n$ assigned calibration parents, the one-sided Clopper--Pearson bound~\cite{clopper1934} is
+\begin{equation}
+ U=\begin{cases}1,&n=0\text{ or }k=n,\\
+ B^{-1}_{k+1,n-k}(1-\delta),&\text{otherwise},\end{cases}
+\end{equation}
+where $B_{u,v}$ is the Beta CDF. Qualification requires $U\le.10$. All 17 fixed methods share $\delta=.05/(4\cdot17)$, a simultaneous 95\% family standard for two tasks and two actions. It assumes independent seed parents, a frozen assignment rule and the declared clean simulator distribution. It does not establish arbitrary-time, noisy-sensor or hardware safety. Conditions are grouped rather than treated as independent samples.
+
+Independent calibration uses 180 parents/task. For risk-tier Pick continue and Push recover, $n/k=180/1$ gives $U=5.194\%$ each. Pick recover has $13/0$, $U=42.594\%$, and remains NOT CERTIFIED; Push continue has no assignments. Globally, zero errors require 69 assigned parents; the four-stratum diagnostic requires 42 but never overrides the global gate. Finite purity and statistical qualification are separate: two supporting parents do not certify deployment risk. Test and corruption outcomes never change the bounds.
+
+\begin{table*}[t]
+\caption{All 17 frozen methods, grouped only where their measured gated operating points coincide. Entries are successful/inadequate/STOP; every denominator includes deferral. Raw physical outcomes are stated separately. .9/.10 are empirical purity/error settings, not transferred safety bounds.}
+\label{tab:methods}\centering
+\begin{tabular}{lrr}\toprule
+Method or equal operating-point group & Pick (N=158) & Push (N=160)\\\midrule
+Strict DSRE, exact B7, pure-2, CART2 strict/pruned, greedy & 80/0/78 & 0/0/160\\
+Risk tier, ordinary risk wrapper, CART1/2 .9, policy-faithful & 110/0/48 & 159/1/0\\
+Pure one-literal rule & 59/0/99 & 0/0/160\\
+CART1 strict & 0/0/158 & 0/0/160\\
+B5 empirical error .10 & 0/0/158 & 159/1/0\\
+Always continue, own gate & 0/0/158 & 0/0/160\\
+Always recover, own gate & 0/0/158 & 159/1/0\\
+Full-signature strict (12 facts; extra information) & 81/0/77 & 0/0/160\\
+\bottomrule\end{tabular}
+\end{table*}
+
+\subsection{Prospective test and engineering provenance}
+The first test parent failed a stored-list/live-tuple contact comparison. That inspected parent remains excluded, never rerun or replaced. A new freeze specified the remaining 79 Pick and 80 Push parents with both conditions: a disclosed postmortem deviation from planned 160, not 160 pristine trials. Three comparisons normalized serialization while retaining strict numeric/contact/action/source/model/memory guards. Before fresh outcomes, four inspected calibration states replayed both actions under independent frame checks, including nonempty contacts and successful/failing branches. Mutation tests still reject genuine changes.
+
+All 159 untouched-at-freeze parents completed, giving 318 checkpoints. Each branch uses seeded reset and full canonical prefix. Outcome-free packets seal all 17 proposals/gates before selected-primary repeats. All 270 repeats match paired branches frame-by-frame; 48 STOPs trigger no continuation. These check deterministic execution, not new independent trials or deployment episodes. References, predicates, tree nodes, thresholds, support and ties remain frozen.
+
+\section{Intervention Efficacy and Decision Quality}
+\subsection{Physical potential versus the registered primary metric}
+The four actual outcome classes, C-only/R-only/both/neither, are $37/31/73/17$ for Pick and $1/81/78/0$ for Push. Thus raw continue/recover succeeds on $110/104$ of 158 Pick checkpoints and $79/159$ of 160 Push checkpoints, without conditioning on a recommendation. These measure physical potential, not qualified performance (Fig.~\ref{fig:outcomes}, left bars).
+
+The \emph{preregistered primary} selective autonomous-completion metric is
+\begin{equation}
+ A(\pi)=\frac1N\sum_{i:\,\pi(x_i)\ne\mathrm{STOP}}U(s_i,\pi(x_i)).
+\label{eq:credit}
+\end{equation}
+STOP contributes zero credit even if task success is already true at the checkpoint. This convention measures autonomous completion under the prescribed router; it does not measure whether holding would preserve physical success. Conditional success among recommendations and inadequate actions remain separate. Initially unsuccessful means checkpoint task success is false, not a separately annotated failure event. A required recovery is a successful recover from an initially unsuccessful recover-only state relative to the two fixed skills and horizon.
+
+
+
+
+
+\subsection{Primary effects and the strongest ordinary controls}
+Table~\ref{tab:methods} uses the same information and global risk standard: six facts on Push, seven on Pick; full-signature alone uses twelve. CART predicts four outcome classes; pruned CART2 requires ten parents. Policy-faithful rules preserve tree labels, a different target from adequacy despite tied operating points.
+
+Risk tier versus strict yields $110/158$ versus $80/158$ Pick completions: $+18.99$ percentage points, paired 95\% CI $[13.92,24.05]$. Push yields $159/160$ versus $0/160$: $+99.38$ pp, CI $[98.12,100.00]$. These registered contrasts are over strict abstention, not always-recover. Unchanged intervals use 4000 paired parent draws, both conditions together, PCG64 seeds 2026111401/2026111402 for Pick/Push; subgroup ratios retain all task parents. Degenerate intervals are not safety bounds.
+
+Pick primary recommendations are 110/110 successful, with 48 STOPs and no inadequate action; 108 maintain initially successful starts and two complete initially unsuccessful starts. Strict has 78 maintained and the same two unsuccessful-start completions. All 30 extra credits are maintenance; neither gated method realizes a required Pick recovery. The unchanged rare-action gate still excludes five successful ungated recovery proposals. Push has 159/160 successful recommendations, one inadequate action, 81 required recoveries and 78 other unsuccessful-start completions. Thus high completion is not synonymous with necessary recovery.
+
+Ordinary risk rules are identical; calibrated CART1/2 match every clean gated action here. Risk minus CART2 completion is $0.00$ pp, CI $[0.00,0.00]$, for both tasks. Push always-recover independently qualifies and matches $159/160$, while strict coverage is zero. The comparison supports H2: physical efficacy, evidence sufficiency and calibrated coverage measure different properties of the same recovery decision.
+
+\begin{figure*}[t]
+\centering\includegraphics[width=\textwidth]{figures/stage1_limits.png}
+\caption{Left: exact actionable mass on the same 422-row task reference; numerals are row counts, not held-out successes or sensor counts. Right: registered secondary corruption of new Pick observations, with fixed actual paired outcomes; rates average three 5-mm noise replicates within each original parent. Bars show parent-bootstrap 95\% intervals. Contradicted facts and physically inadequate proposals are separate; clean statistical qualification does not transfer.}
+\label{fig:limits}
+\end{figure*}
+
+\section{Abstention Policy Sensitivity}
+\label{sec:stop}
+Table~\ref{tab:stop} rescores the same sealed decisions and branches without redefining the primary endpoint. A retains registered STOP=0 credit. B records how many deferred checkpoints are already task-successful, leaving the action and defer count unchanged. It assigns no terminal hold outcome: no such hold was executed. C replaces every STOP by a fixed continue or a fixed recover, retaining every originally selected action. Both fixed compositions are post hoc policy sensitivity, not DSRE or deployed/independently calibrated controllers. Their descriptively recounted errors inherit no gate or guarantee; outcomes never choose the fallback.
+
+\begin{table}[t]
+\caption{Post hoc sensitivity, selected matched controls. A: primary good/bad/STOP. B: already-successful at STOP, not a hold outcome. C: fixed fallback good/bad, unqualified. Ordinary risk and CART1/2 .9 equal Risk; exact B7 equals Strict in all columns.}
+\label{tab:stop}\centering
+\begin{tabular}{lrrrr}\toprule
+Task/policy & A & B & C:STOP$\to$c & C:STOP$\to$r\\\midrule
+Pick Strict & 80/0/78 & 30 & 110/48 & 133/25\\
+Pick Risk & 110/0/48 & 0 & 110/48 & 141/17\\
+Pick gated C/R & 0/0/158 & 108 & 110/48 & 104/54\\
+Push Strict/C & 0/0/160 & 0 & 79/81 & 159/1\\
+Push Risk/R & 159/1/0 & 0 & 159/1 & 159/1\\
+\bottomrule\end{tabular}
+\end{table}
+
+With STOP$\to$c, the Pick risk-minus-strict completion difference is $0.00$ pp, CI $[0.00,0.00]$; with STOP$\to$r it is $+5.06$ pp, CI $[1.90,8.86]$. Push differences become $+50.00$ pp, CI $[48.12,51.88]$, and $0.00$ pp, CI $[0.00,0.00]$, respectively. Secondary intervals use the same parent groups/seeds; empty strata add zero counts and no trials. Under B, all 30 extra primary Pick credits correspond exactly to already-successful strict deferrals. Under C, simple fallback can remove the primary gap or improve completion counts, while accepting additional inadequate actions. For example, Pick risk$\to$r gives 141 successes but 17 inadequate actions, versus 110 and zero under the original gate. No human escalation cost, hold effect or new risk qualification is inferred. These gains depend on abstention; action adequacy and justification remain distinct.
+
+\section{Evidence Refinement and Observation Robustness}
+\subsection{Finite ceilings versus out-of-sample outcomes}
+The fixed-reference Pick ceiling rises from $183/422$ at the primary vocabulary to $235/422$ with one optional fact and $248/422$ with all six; Push stays zero (Fig.~\ref{fig:limits}). This establishes the finite-reference refinement effect in H1. In exploratory grouped cross-fitting on inspected development data, one extra fact changes Pick strict successes $202\to242/422$, but inadequate choices $1\to2$ and initially unsuccessful successes $19\to18/145$. Finite monotonicity does not imply improved out-of-sample quality or required recovery. The separately frozen historical 333-parent follow-up likewise increased Pick strict successes $145\to187/332$, with 40 of 42 additions maintaining existing success and only one extra required recovery. Its provisional CART2 .9 reached $240/332$ under a different purity standard. Those studies remain distinct from the new calibrated test.
+
+
+
+\subsection{Grounded insufficiency and factual fragility}
+Cases A/B and D/E support H3 relative to this finite interface: an existing signed-x observation separates one recoverable state from a no-skill state, whereas all twelve facts fail to separate Push opposing actions. Raw poses differ, so this is not a universal impossibility theorem. A further qualified Pick case F has only one compatible independent parent under all twelve facts and neither skill adequate: reference and repertoire gaps overlap. Conversely, a preserved cross-fit case with zero exact-signature training support admits a supported broader pure continue rule, although continue fails and recover succeeds. An absent exact signature is not automatically an emitted reference-gap diagnosis. Finite support checks can miss unrepresented adverse outcomes.
+
+For H4, the fixed twelve-scenario input grid covers missing selected facts/history/pose, 1/5-mm pose noise with three fixed replicates, and 50/250-ms prefix-pose delay. All methods receive the same corrupted packet; measured physical outcomes never change. On new Pick test outcomes, strict inadequate proposals rise from $0.00\%$ clean to $2.32\%$ at 5 mm and $3.80\%$ at 250 ms. At 5 mm, $14.56\%$ of strict views use facts contradicted by clean telemetry. Push strict continues abstaining. Its risk proposal remains effectively constant recover, while CART's action can remain stable despite contradicted explanatory facts. UNKNOWN remains unknown, not false. These results support factual fragility under this offline shift, not a robustness guarantee, online sensor-fault detector or altered-controller experiment. Repetitions and conditions are not independent parents.
+
+\section{Discussion and Conclusion}
+DSRE connects observable evidence to the physical adequacy of robot recovery interventions. Minimum certificates identify facts that justify an action within a qualified reference. Counterexample witnesses separate observation conflicts, inadequate recovery repertoires and missing reference support. PickCube shows how one added observation increases the strictly justifiable region. PushCube exhibits the complementary phenomenon: an effective recovery skill need not admit a strict certificate under the declared predicate interface.
+
+Independent statistical qualification yields 110/158 PickCube and 159/160 PushCube successful credits under the registered selective-completion metric. Outcome-aware rules and calibrated CART attain the same operating points. Fixed-fallback sensitivity shows that completion gains depend on how abstention is handled and on the associated risk tradeoff. In PickCube, the additional credits principally preserve successful starts while rare recoveries remain unqualified. Thus recovery efficacy, justifiability and decision coverage require separate measurement.
+
+The evidence is scoped to two deterministic simulated tasks, fixed skills and idealized observations; corrupt inputs expose fragility beyond clean calibration. Extending the intervention repertoire and observation interface will test the framework in richer recovery decisions. DSRE provides a reproducible formulation for relating intervention outcomes, minimum supporting evidence and the limits of observable justification.
+
+\clearpage
+\bibliographystyle{plainnat}
+\bibliography{operational_references}
+\end{document}
