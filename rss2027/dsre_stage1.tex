@@ -17,11 +17,11 @@ Reliable recovery requires distinguishing an effective intervention from one jus
 \end{abstract}
 
 \section{Introduction}
-A manipulation robot can possess an effective recovery skill yet lack sufficient observation to justify using it. Identical observations can hide opposing action requirements; alternatively, neither skill may work. Acquiring evidence, revising skills and obtaining reference support address different problems. Figure~\ref{fig:mechanism} grounds this distinction in actual paired simulator continuations.
+Robot recovery requires deciding not only whether a skill can succeed, but whether observations justify its use. Identical observable facts may conceal different action requirements; in other states, neither available intervention succeeds. These possibilities create distinct needs for additional observation, recovery capability, or reference evidence. Figure~\ref{fig:mechanism} illustrates them using paired physical continuations.
 
-We ask: \emph{When can available predecision observations justify an adequate intervention, what minimum evidence establishes that decision relative to a declared action/outcome model, and what explains failure of justification?} DSRE makes this an executable evidence contract: a minimum action certificate or scoped observation, repertoire and reference witnesses, followed by a separate statistical eligibility gate. The scientific product is the connection between these proof obligations and measured manipulation decisions. Established rules and risk bounds implement the contract.
+We ask: \emph{What observable evidence suffices to justify a recovery action, and what prevents justification when such evidence is unavailable?} We formulate Decision-Sufficient Recovery Explanations (DSRE) as an intervention-grounded evidence contract. A certificate identifies minimum predecision facts supporting an adequate action across compatible reference states. Otherwise, constructive witnesses identify observation conflicts, inadequate skills, or missing reference support. A separate calibration gate qualifies selective execution.
 
-We contribute the paired-outcome evidence interface, grounded insufficiency witnesses, and a controlled characterization of justification, abstention and observation fragility. Ordinary controls reveal when evidence buys no additional required recovery.
+Our contributions are an intervention-adequacy formulation grounded in paired outcomes, exact minimum-evidence certificates with typed insufficiency witnesses, and prospective experiments quantifying observation sufficiency, calibrated decisions, and sensitivity to corrupted observations.
 
 \begin{figure}[!ht]
 \centering\includegraphics[width=\columnwidth]{figures/stage1_mechanism.png}
