@@ -180,6 +180,19 @@ def ratio_interval(numerator, denominator, groups, indices):
     }
 
 
+def recovery_populations(rows):
+    """Separate counterfactual recovery need from recovery of a failed start."""
+    recover_only = [
+        int(not r["outcomes"]["continue_value"] and r["outcomes"]["recover_value"])
+        for r in rows
+    ]
+    required = [
+        int(only and not r["initial_success"])
+        for only, r in zip(recover_only, rows, strict=True)
+    ]
+    return recover_only, required
+
+
 def analyze(root):
     verify_freeze(root)
     assert (
@@ -240,10 +253,7 @@ def analyze(root):
     indices = rng.integers(0, n, (4000, n))
     uncertainty = {}
     contrasts = {}
-    ronly = [
-        int(not r["outcomes"]["continue_value"] and r["outcomes"]["recover_value"])
-        for r in rows
-    ]
+    ronly, required = recovery_populations(rows)
     both = [
         int(r["outcomes"]["continue_value"] and r["outcomes"]["recover_value"])
         for r in rows
@@ -266,6 +276,13 @@ def analyze(root):
                     [r["recommended"] for r in rs],
                 ),
                 "required_recovery": (
+                    [
+                        int(required[i] and r["action"] == "recover")
+                        for i, r in enumerate(rs)
+                    ],
+                    required,
+                ),
+                "recover_only_coverage": (
                     [
                         int(ronly[i] and r["action"] == "recover")
                         for i, r in enumerate(rs)
@@ -351,7 +368,7 @@ def analyze(root):
         indices,
     )
     physical["required_fraction_among_selected_recover"] = ratio_interval(
-        [v * mask for v, mask in zip(ronly, recover_mask, strict=True)],
+        [v * mask for v, mask in zip(required, recover_mask, strict=True)],
         recover_mask,
         groups,
         indices,

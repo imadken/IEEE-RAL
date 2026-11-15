@@ -87,3 +87,29 @@ def test_entire_test_cohort_must_be_decided_before_any_outcome(tmp_path, monkeyp
     sealed = json.loads((tmp_path / "test_recommendation_seal.json").read_text())
     assert sealed["parents"] == 160 and len(sealed["decisions"]) == 160
     assert sealed["method_decisions"] == 5440
+
+
+def test_successful_start_with_recover_only_future_is_prevention_not_required_recovery():
+    from dsre_recovery_analysis import recovery_populations
+
+    rows = [
+        {
+            "initial_success": True,
+            "outcomes": {"continue_value": False, "recover_value": True},
+        },
+        {
+            "initial_success": False,
+            "outcomes": {"continue_value": False, "recover_value": True},
+        },
+        {
+            "initial_success": False,
+            "outcomes": {"continue_value": True, "recover_value": True},
+        },
+        {
+            "initial_success": False,
+            "outcomes": {"continue_value": False, "recover_value": False},
+        },
+    ]
+    recover_only, required = recovery_populations(rows)
+    assert recover_only == [1, 1, 0, 0]
+    assert required == [0, 1, 0, 0]
