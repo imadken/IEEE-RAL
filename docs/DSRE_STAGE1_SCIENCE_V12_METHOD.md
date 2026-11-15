@@ -89,7 +89,11 @@ Only invariant literals enter the original `ParentIndex` minimum-cardinality
 search, with the original two-parent support, reference table and tie breaking.
 Every asserted literal is stable under the declared measurement set; the
 certificate remains a finite-table claim about measured paired outcomes.
-An interval crossing a threshold is an observation-instability witness. Existing
+An interval crossing a threshold is a possible-instability/undecidability
+witness. Because distance/progress enclosures are conservative, this alone does
+not prove that both truth values are attainable in the original coordinate box.
+Constructive examples separately retain a permitted corrupted measurement, its
+known source telemetry and the actual flipped asserted fact. Existing
 reference-support, conflicting-action and both-actions-fail witnesses remain
 available and may overlap. Removing an invariant literal still exposes the
 solver's original necessity counterexample when a minimum certificate exists.
