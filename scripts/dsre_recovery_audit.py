@@ -34,12 +34,22 @@ def audit_parent(root, stage, progress, compare_prior=False):
     directory = root / stage / str(p["seed"])
     dec = read(directory / "decision.json")
     assert sha(directory / "decision.json") == p["decision_sha256"]
+    if stage == "test":
+        cohort = read(root / "test_recommendation_seal.json")
+        begun = read(directory / "execution_started.json")
+        assert cohort["parents"] == 160 and len(cohort["decisions"]) == 160
+        assert cohort["decisions"][str(p["seed"])] == p["decision_sha256"]
+        assert begun["cohort_seal_sha256"] == sha(
+            root / "test_recommendation_seal.json"
+        )
+        assert dec["sealed_epoch"] <= cohort["epoch"] <= begun["epoch"]
     checks = {
         "cells": 0,
         "prefix_states": 0,
         "future_states": 0,
         "contact_states": 0,
         "continuations": 0,
+        "all_simulated_controls": 0,
     }
     for cell_index, cell in enumerate(p["cells"]):
         c = cell["condition"]
@@ -58,6 +68,7 @@ def audit_parent(root, stage, progress, compare_prior=False):
         assert raw["packet"]["full_values"] == primary + optional
         state_equal(raw["prefix"][-1], raw["canonical_start"])
         assert len(raw["prefix"]) == len(raw["prefix_actions"]) + 1
+        checks["all_simulated_controls"] += 2 * len(raw["prefix_actions"])
         assert set(raw["proposals"]) == set(METHODS)
         for m in METHODS:
             assert (
@@ -119,6 +130,7 @@ def audit_parent(root, stage, progress, compare_prior=False):
                 == execution["terminal_success"]
             )
             checks["continuations"] += 1
+            checks["all_simulated_controls"] += len(raw["prefix_actions"]) + 70
         checks["cells"] += 1
     return checks
 

@@ -336,6 +336,27 @@ def analyze(root):
         ),
         "scope": "Matched reset outcomes of frozen skills. No new controller or improvement attributable to explanation algorithm; ordinary rules and trees compared at own calibrated gates.",
     }
+    assignment_errors = {}
+    for mode in ("proposal", "calibrated"):
+        for method in METHODS:
+            for action in ("continue", "recover"):
+                selected = [
+                    r
+                    for r in records
+                    if r["method"] == method
+                    and r["mode"] == mode
+                    and r["action"] == action
+                ]
+                assigned = {r["group"] for r in selected}
+                failed = {r["group"] for r in selected if r["unacceptable"]}
+                assignment_errors[f"{method}|{mode}|{action}"] = {
+                    "assigned_parents": len(assigned),
+                    "error_parents": len(failed),
+                    "assigned_checkpoints": len(selected),
+                    "upper": exact_upper(len(failed), len(assigned)),
+                    "scope": "Held-out diagnostic only; any assigned-condition parent error; no calibration gate update.",
+                }
+    atomic(root / "test_assignment_errors.json", assignment_errors)
     result = {
         "status": "COMPLETE" if n == 160 else "INCOMPLETE_COHORT",
         "parents": n,

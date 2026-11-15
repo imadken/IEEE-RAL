@@ -107,10 +107,21 @@ R=results/dsre-operational/20261115T082827Z-recovery-evidence
 # Registration and golden-parent qualification were completed before new seeds.
 uv run --no-sync python scripts/dsre_recovery_control.py "$R" --stage calibration
 uv run --no-sync python scripts/dsre_recovery_analysis.py calibrate "$R"
-uv run --no-sync python scripts/dsre_recovery_control.py "$R" --stage test
+uv run --no-sync python scripts/dsre_recovery_test.py register "$R"
+uv run --no-sync python scripts/dsre_recovery_test.py control "$R"
 uv run --no-sync python scripts/dsre_recovery_analysis.py analyze "$R"
 uv run --no-sync python scripts/dsre_recovery_audit.py audit "$R"
 ```
 
 Quantitative results and the final scientific gate will be appended only after
 calibration/test completion or a fixed scientific/resource boundary.
+
+The test orchestrator strengthens the timing constraint: all160 parents and all5440
+method/condition recommendations are sealed together before the first test outcome.
+A separate screen-only pass uses the same frozen prefix and predicate code;
+future branches then reset and replay those sealed prefixes. The original seed
+cohort and scientific settings remain unchanged. `test_registration.json`,
+`test_recommendation_manifest.json`, `test_recommendation_seal.json` and each
+`execution_started.json` establish this order. Independent audits include the
+initial-prefix controls that the inherited World counter omits; CPU/wall accounting
+comes from whole bounded chunks, including subprocess startup.

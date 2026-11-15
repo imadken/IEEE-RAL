@@ -59,3 +59,31 @@ def test_parent_bootstrap_keeps_correlated_condition_denominators():
     assert result["lower"] == 0.025 and result["upper"] == 0.975
     empty = ratio_interval([0] * 4, [0] * 4, groups, indices)
     assert empty["estimate"] is None
+
+
+def test_entire_test_cohort_must_be_decided_before_any_outcome(tmp_path, monkeypatch):
+    import json
+
+    import dsre_recovery_test as cohort
+    import pytest
+
+    monkeypatch.setattr(cohort, "verify", lambda root: None)
+    (tmp_path / "test_screen_progress").mkdir()
+    seeds = list(range(12000000, 12000160))
+    (tmp_path / "test_registration.json").write_text(json.dumps({"test_seeds": seeds}))
+    for i, seed in enumerate(seeds):
+        d = tmp_path / "test" / str(seed)
+        d.mkdir(parents=True)
+        (d / "decision.json").write_text("{}")
+        (tmp_path / "test_screen_progress" / f"{i:04d}.json").write_text(
+            json.dumps({"seed": seed, "status": "COMPLETE"})
+        )
+    first = tmp_path / "test" / str(seeds[0])
+    (first / "execution_started.json").write_text("{}")
+    with pytest.raises(AssertionError):
+        cohort.seal(tmp_path)
+    (first / "execution_started.json").unlink()
+    cohort.seal(tmp_path)
+    sealed = json.loads((tmp_path / "test_recommendation_seal.json").read_text())
+    assert sealed["parents"] == 160 and len(sealed["decisions"]) == 160
+    assert sealed["method_decisions"] == 5440
