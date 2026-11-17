@@ -1,0 +1,48 @@
+{
+  "description": "Supervisor mathematical/design checks only; no robot outcomes generated.",
+  "marginal_grid_cases": 441,
+  "max_exact_harm_error": 1.1102230246251565e-16,
+  "exact_marginal_nonidentification_cases_at_alpha_0_1": 153,
+  "random_interval_rectangles": 256,
+  "max_rectangle_error": 0.0,
+  "paired_constraint_nesting_cases": 256,
+  "certificate_exhaustive_cases": 64,
+  "same_marginal_worlds": [
+    [
+      0.4,
+      0.2,
+      0.0,
+      0.4
+    ],
+    [
+      0.0,
+      0.6,
+      0.4,
+      0.0
+    ]
+  ],
+  "naive_independence_counterexample": {
+    "joint": [
+      0.2,
+      0.6,
+      0.2,
+      0.0
+    ],
+    "predicted_harm": 0.08000000000000002,
+    "actual_harm": 0.2
+  },
+  "routing_counterexample": {
+    "full_region_harm": 0.08000000000000002,
+    "chosen_subregion_harm": 0.8
+  },
+  "zero_error_upper_bounds_per_prespecified_tail": {
+    "32": 0.18284042136711248,
+    "64": 0.096031207047009,
+    "96": 0.06509182228687337,
+    "128": 0.049227265350446116,
+    "256": 0.024924241584504427
+  },
+  "nonrandomized_logs_claim": "No causal certificate without supported identification assumptions.",
+  "test_status": "PASS",
+  "source_sha256": "810b849850d64f0e798727d1602e5b64494b989f7b18b7b4ac79f05807de18dc"
+}
