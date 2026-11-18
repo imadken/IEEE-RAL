@@ -75,6 +75,10 @@ Use existing qualified paired PickCube, PushCube, and independently trained logg
 
 Report these **as separate quantities**, not as an additive population decomposition or a new optimizer victory. Include physically grounded opposing-action and neither-success witnesses. Stratify by true task and condition; hidden source labels cannot be used as predictor features. Reproduce baseline exact equivalence. Provide cost per observed action, not merely sample count.
 
+### Supervisor exploratory falsification check on the OLD PickCube calibration
+
+I independently reanalyzed the already inspected five-condition, 1,280-checkpoint PickCube dual-obligation calibration table. Grouping by the first 6, 7 or 12 recorded Boolean predicates gives 10, 15 and 52 full signatures, respectively. Among groups with at least ten checkpoint rows, **zero** had all three *empirical point-estimate* properties: gain at least .05, paired observed harm at most .10, yet the sharp upper harm bound from single-arm marginals above .10. This is NOT a proof that physically paired-only cases do not exist; the observations are correlated within 256 parents, and these are neither statistical confidence claims nor untouched data. It is a warning that physical pairing may add NO certifiability for the current coarse Pick vocabulary. The final study must report this possibility and cannot claim the pairing/identification component beats ordinary rules when its actual target regions are already log-identifiable. The source and independently executable diagnostic are preserved as `DSRE_FINAL_EXISTING_DATA_CHECK.json` and `DSRE_FINAL_EXISTING_DATA_DIAGNOSTIC.py`.
+
 ### E2. ONE genuinely prospective new-source PushCube one-arm study
 
 PushCube is not selected as a favorable new task: it is a historically qualified pushing contact mechanism and was present throughout DSRE development. Prespecify it as a **contrast to PickCube**, with no new controller or fault search. The point of this study is whether the *same* obligation-specific evidence method correctly handles a second source distribution, not whether DSRE wins over the obvious recovery baseline.
@@ -107,7 +111,7 @@ Combine the existing Pick logged/paired evidence with new Push results. At match
 ### E5. Independent scientific gate and manuscript handoff
 
 Deliver three tightly connected claim tests:
-H1: there are physically relevant recovery regions for which paired outcome evidence provides stronger harm identification than randomized one-arm logs, even at comparable sample sizes. (A methodological/measurement contrast, not novel Frechet theory.)
+H1: the method distinguishes when randomized one-arm evidence suffices and when the requested obligation remains nonidentified; **whether paired-only certifiable situations occur in each physical task is an empirical question, not a presupposed positive result.** (A methodological/measurement contrast, not novel Frechet theory.)
 H2: obligation-specific minimum evidence constructs validity-limited certificates across both pick and push, with correct support/identifiability and counterexample witnesses.
 H3: the same method identifies both recovery-beneficial and unnecessary/harmful intervention regimes, with an independently qualified operational tradeoff and no asserted algorithm dominance.
 
