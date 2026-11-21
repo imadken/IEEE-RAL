@@ -1,0 +1,23 @@
+# Simulation-only RPD: V4.5 source-qualification and Stage 1 closure (21 Nov 2026)
+
+This research-side supervision note does not include the anonymous manuscript, private author details, full paper source, or empirical H1/H2 results.
+
+## Research question
+A diagnostic robot contact action can both reveal a fault mode and change the set of fixed recovery policies that still complete the task by a common deadline. Measure any probe-induced recovery-option erasure against an equal-duration neutral hold, with evaluator-only offline matched branches. The scientific object is the *matched postfailure correction-set difference*, not a new generic contingent planner. No real robot or hardware validation is proposed.
+
+## Completed evidence audit
+The preserved earlier source qualification for nominal simulated insertion screened 12 candidates: 7 contact-eligible and 5 ineligible, below the eight-root gate. Of 49 distinct post-root terminal continuations, zero achieved the declared stable task goal and zero met all whole-path constraints. Separate replay repetitions numbered 14. TCP tracking residual, grasp-slip translation and rotation, and peg-fixture force monitors each flagged violations on all 49 branches. These are **source-development outcomes**, not a valid H1/H2 population null or a proof that diagnostic actions are harmless. An unchanged rerun of the same protocol is not useful.
+
+A subsequent source-development version must first demonstrate (1) successful nominal goal-compliant insertion, then (2) a registered postfailure state with successful correction following a neutral hold, then (3) controller/clock/source parity, then (4) a fresh source qualification of 12 disjoint seeds requiring at least 8 eligible roots and 6 post-hold-recoverable roots. No confirmation seeds or policy test outcomes may be inspected during source development.
+
+## Prospective predictor and decision evaluation
+Use 384 independently eligible discovery parents: 256 fit and 128 disjoint audit, plus 64 additional disjoint fixed-amplitude dose-response parents. Five-fold parent-grouped CV uses the 256 fit parents only. The audit must check 20 examples of each of 3 source modes, complete 23-channel x10-tick observations, finite normalized predicted class probabilities, absence of evaluator-label leakage and an independently injected known-signal positive control. On 128 positive-control items, >=116 correctly decoded satisfy both >=90% accuracy and one-sided 95% CP lower >80%. DO NOT gate on favorable actual probe information improvement or erasure, which would preselect H1-positive outcomes.
+
+The H1 primary prevalence q_IG covers every predecision-eligible confirmation parent, including cases where the frozen selector directly recovers or abstains. Report selection rate rho_IG, hold-recoverability fraction h, both fixed-probe q_p over the entire eligible population, and the conditional q_IG/h for h>0. A small upper bound on q_IG limits that selector, but cannot establish that both probes are intrinsically benign; physical claims require simultaneously small fixed-probe bounds.
+
+The H1/H2 confirmation cohort remains 1024 independent eligible parents, with a cap of 2560 screening candidates. If the cap binds, report attrition and realized n; recalibrate the one-sided paired violation test's composite-null critical value for realized n BEFORE seeing any confirmation outcomes. The critical value -2.2 is certified for n=1024 only. No seed replacement or relaxed hypothesis threshold is permitted. Episode budget excluding screening/source qualification: 10112 episodes across model fit/audit, dose response and paired confirmation plus direct controls.
+
+## Verified closest literature
+Jun Kobayashi, *When Identifiability Is Not Enough*, IEEE RA-L 11(10):11039-11045 (2026), explicitly links calibration information gathering and finite-horizon downstream control. Wang et al., *DA-GRD*, arXiv:2609.29065 (2026 preprint), explicitly models possible object movement under tactile probing and stops when remaining hypotheses support a common executable grasp. RPD should not claim to be the first to model either physical interaction or task-relevant active diagnosis; it studies the matched time-controlled loss of an operational fixed recovery repertoire after failure.
+
+The anonymous Stage 1 paper must remain outside this public branch. A complete six-page submission artifact should be built from the latest LOCAL V4.4 LaTeX, integrating the already prepared V4.5 replacements; an older V2.1 manuscript must not be relabeled as V4.5. Do not push the anonymous paper or submit it automatically.
