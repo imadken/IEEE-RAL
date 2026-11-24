@@ -1,0 +1,1 @@
+{"passed": true, "clean_copied_files": 199, "matched_outputs": ["research/rpd_source_isolation_20261119/final_audit/summary.json", "research/rpd_source_isolation_20261119/technical_matches.json"], "new_physics": 0}

@@ -1,0 +1,1 @@
+{"registered_rows": 1080, "collision_check_passed": true, "new_physics": 0}

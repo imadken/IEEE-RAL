@@ -1,0 +1,41 @@
+{
+  "commands": [
+    {
+      "command": "uv run --no-sync pytest -q",
+      "exit_code": 3,
+      "result": "FAILED_COLLECTION_ARCHIVED_THIRD_PARTY_TESTS",
+      "log": "validation/pytest_full.txt"
+    },
+    {
+      "command": "uv run --no-sync pytest -q tests",
+      "exit_code": 0,
+      "passed": 645,
+      "skipped": 6,
+      "wall_seconds": 44.19,
+      "log": "validation/pytest_maintained.txt"
+    },
+    {
+      "command": "uv run --no-sync pytest -q tests/test_dsre_closure.py",
+      "exit_code": 0,
+      "passed": 10,
+      "log": "validation/pytest_closure.txt"
+    },
+    {
+      "command": "uv run --no-sync ruff check scripts/dsre_closure_*.py tests/test_dsre_closure.py",
+      "exit_code": 0,
+      "log": "validation/ruff_check.txt"
+    },
+    {
+      "command": "uv run --no-sync ruff format --check scripts/dsre_closure_*.py tests/test_dsre_closure.py",
+      "exit_code": 0,
+      "log": "validation/ruff_format.txt"
+    }
+  ],
+  "context": "Maintained tests are explicitly scoped to tests/; do not collect downloaded historical upstream test suites under results/. All runs offline.",
+  "final_maintained_rerun": {
+    "command": "uv run --no-sync pytest -q tests",
+    "exit_code": 0,
+    "log": "validation/pytest_final_maintained.txt",
+    "summary": "645 passed, 6 skipped in 44.78s"
+  }
+}

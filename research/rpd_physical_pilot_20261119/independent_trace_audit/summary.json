@@ -1,0 +1,3188 @@
+{
+  "passed": true,
+  "tasks": {
+    "PickCube-v1": {
+      "decision": "SOURCE_NOT_QUALIFIED",
+      "registered_parents": 10,
+      "qualified_complete_parents": 0,
+      "attempted_parents": 1,
+      "planned_episodes": 540,
+      "attempted_episodes": 38,
+      "complete_episodes": 38,
+      "failed_episodes": 0,
+      "ineligible_episodes": 0,
+      "unattempted_episodes": 502,
+      "parents": [
+        {
+          "parent_index": 0,
+          "attempted_rows": 38,
+          "completed_rows": 38,
+          "failed_rows": 0,
+          "ineligible_rows": 0,
+          "missing_rows": 16,
+          "qualified": false,
+          "prefix_replay_agreement": true,
+          "root_controller_memory_agreement": true,
+          "K": {
+            "empty": null,
+            "micro_lift": null,
+            "release_settle": null,
+            "micro_lift/micro_lift": null,
+            "micro_lift/release_settle": null,
+            "release_settle/micro_lift": null,
+            "release_settle/release_settle": null,
+            "neutral10": null,
+            "neutral20": null
+          },
+          "root": {
+            "signature": [
+              7,
+              64,
+              1,
+              -189,
+              -4,
+              259,
+              89,
+              -1,
+              -3,
+              0,
+              1,
+              0,
+              -4,
+              0,
+              5,
+              11,
+              12
+            ],
+            "evaluator_root_pose_cell": [
+              1,
+              1
+            ]
+          },
+          "outcomes_repeat0": {
+            "release_settle": {
+              "continue": {
+                "macro_end": false,
+                "deadline": false
+              },
+              "recover": {
+                "macro_end": true,
+                "deadline": true
+              },
+              "STOP": {
+                "macro_end": null,
+                "deadline": false
+              }
+            },
+            "micro_lift": {
+              "recover": {
+                "macro_end": true,
+                "deadline": true
+              },
+              "STOP": {
+                "macro_end": null,
+                "deadline": false
+              },
+              "continue": {
+                "macro_end": true,
+                "deadline": true
+              }
+            },
+            "micro_lift/release_settle": {
+              "continue": {
+                "macro_end": false,
+                "deadline": false
+              },
+              "STOP": {
+                "macro_end": null,
+                "deadline": false
+              },
+              "recover": {
+                "macro_end": true,
+                "deadline": true
+              }
+            },
+            "micro_lift/micro_lift": {
+              "recover": {
+                "macro_end": true,
+                "deadline": true
+              },
+              "STOP": {
+                "macro_end": null,
+                "deadline": false
+              },
+              "continue": {
+                "macro_end": true,
+                "deadline": true
+              }
+            },
+            "empty": {
+              "STOP": {
+                "macro_end": null,
+                "deadline": false
+              },
+              "continue": {
+                "macro_end": true,
+                "deadline": true
+              },
+              "recover": {
+                "macro_end": true,
+                "deadline": true
+              }
+            },
+            "release_settle/micro_lift": {
+              "continue": {
+                "macro_end": false,
+                "deadline": false
+              },
+              "STOP": {
+                "macro_end": null,
+                "deadline": false
+              },
+              "recover": {
+                "macro_end": true,
+                "deadline": true
+              }
+            },
+            "release_settle/release_settle": {
+              "continue": {
+                "macro_end": false,
+                "deadline": false
+              }
+            }
+          },
+          "failures": []
+        },
+        {
+          "parent_index": 1,
+          "attempted_rows": 0,
+          "completed_rows": 0,
+          "failed_rows": 0,
+          "ineligible_rows": 0,
+          "missing_rows": 54,
+          "qualified": false,
+          "prefix_replay_agreement": null,
+          "root_controller_memory_agreement": true,
+          "K": {
+            "empty": null,
+            "micro_lift": null,
+            "release_settle": null,
+            "micro_lift/micro_lift": null,
+            "micro_lift/release_settle": null,
+            "release_settle/micro_lift": null,
+            "release_settle/release_settle": null,
+            "neutral10": null,
+            "neutral20": null
+          },
+          "root": null,
+          "outcomes_repeat0": {},
+          "failures": []
+        },
+        {
+          "parent_index": 2,
+          "attempted_rows": 0,
+          "completed_rows": 0,
+          "failed_rows": 0,
+          "ineligible_rows": 0,
+          "missing_rows": 54,
+          "qualified": false,
+          "prefix_replay_agreement": null,
+          "root_controller_memory_agreement": true,
+          "K": {
+            "empty": null,
+            "micro_lift": null,
+            "release_settle": null,
+            "micro_lift/micro_lift": null,
+            "micro_lift/release_settle": null,
+            "release_settle/micro_lift": null,
+            "release_settle/release_settle": null,
+            "neutral10": null,
+            "neutral20": null
+          },
+          "root": null,
+          "outcomes_repeat0": {},
+          "failures": []
+        },
+        {
+          "parent_index": 3,
+          "attempted_rows": 0,
+          "completed_rows": 0,
+          "failed_rows": 0,
+          "ineligible_rows": 0,
+          "missing_rows": 54,
+          "qualified": false,
+          "prefix_replay_agreement": null,
+          "root_controller_memory_agreement": true,
+          "K": {
+            "empty": null,
+            "micro_lift": null,
+            "release_settle": null,
+            "micro_lift/micro_lift": null,
+            "micro_lift/release_settle": null,
+            "release_settle/micro_lift": null,
+            "release_settle/release_settle": null,
+            "neutral10": null,
+            "neutral20": null
+          },
+          "root": null,
+          "outcomes_repeat0": {},
+          "failures": []
+        },
+        {
+          "parent_index": 4,
+          "attempted_rows": 0,
+          "completed_rows": 0,
+          "failed_rows": 0,
+          "ineligible_rows": 0,
+          "missing_rows": 54,
+          "qualified": false,
+          "prefix_replay_agreement": null,
+          "root_controller_memory_agreement": true,
+          "K": {
+            "empty": null,
+            "micro_lift": null,
+            "release_settle": null,
+            "micro_lift/micro_lift": null,
+            "micro_lift/release_settle": null,
+            "release_settle/micro_lift": null,
+            "release_settle/release_settle": null,
+            "neutral10": null,
+            "neutral20": null
+          },
+          "root": null,
+          "outcomes_repeat0": {},
+          "failures": []
+        },
+        {
+          "parent_index": 5,
+          "attempted_rows": 0,
+          "completed_rows": 0,
+          "failed_rows": 0,
+          "ineligible_rows": 0,
+          "missing_rows": 54,
+          "qualified": false,
+          "prefix_replay_agreement": null,
+          "root_controller_memory_agreement": true,
+          "K": {
+            "empty": null,
+            "micro_lift": null,
+            "release_settle": null,
+            "micro_lift/micro_lift": null,
+            "micro_lift/release_settle": null,
+            "release_settle/micro_lift": null,
+            "release_settle/release_settle": null,
+            "neutral10": null,
+            "neutral20": null
+          },
+          "root": null,
+          "outcomes_repeat0": {},
+          "failures": []
+        },
+        {
+          "parent_index": 6,
+          "attempted_rows": 0,
+          "completed_rows": 0,
+          "failed_rows": 0,
+          "ineligible_rows": 0,
+          "missing_rows": 54,
+          "qualified": false,
+          "prefix_replay_agreement": null,
+          "root_controller_memory_agreement": true,
+          "K": {
+            "empty": null,
+            "micro_lift": null,
+            "release_settle": null,
+            "micro_lift/micro_lift": null,
+            "micro_lift/release_settle": null,
+            "release_settle/micro_lift": null,
+            "release_settle/release_settle": null,
+            "neutral10": null,
+            "neutral20": null
+          },
+          "root": null,
+          "outcomes_repeat0": {},
+          "failures": []
+        },
+        {
+          "parent_index": 7,
+          "attempted_rows": 0,
+          "completed_rows": 0,
+          "failed_rows": 0,
+          "ineligible_rows": 0,
+          "missing_rows": 54,
+          "qualified": false,
+          "prefix_replay_agreement": null,
+          "root_controller_memory_agreement": true,
+          "K": {
+            "empty": null,
+            "micro_lift": null,
+            "release_settle": null,
+            "micro_lift/micro_lift": null,
+            "micro_lift/release_settle": null,
+            "release_settle/micro_lift": null,
+            "release_settle/release_settle": null,
+            "neutral10": null,
+            "neutral20": null
+          },
+          "root": null,
+          "outcomes_repeat0": {},
+          "failures": []
+        },
+        {
+          "parent_index": 8,
+          "attempted_rows": 0,
+          "completed_rows": 0,
+          "failed_rows": 0,
+          "ineligible_rows": 0,
+          "missing_rows": 54,
+          "qualified": false,
+          "prefix_replay_agreement": null,
+          "root_controller_memory_agreement": true,
+          "K": {
+            "empty": null,
+            "micro_lift": null,
+            "release_settle": null,
+            "micro_lift/micro_lift": null,
+            "micro_lift/release_settle": null,
+            "release_settle/micro_lift": null,
+            "release_settle/release_settle": null,
+            "neutral10": null,
+            "neutral20": null
+          },
+          "root": null,
+          "outcomes_repeat0": {},
+          "failures": []
+        },
+        {
+          "parent_index": 9,
+          "attempted_rows": 0,
+          "completed_rows": 0,
+          "failed_rows": 0,
+          "ineligible_rows": 0,
+          "missing_rows": 54,
+          "qualified": false,
+          "prefix_replay_agreement": null,
+          "root_controller_memory_agreement": true,
+          "K": {
+            "empty": null,
+            "micro_lift": null,
+            "release_settle": null,
+            "micro_lift/micro_lift": null,
+            "micro_lift/release_settle": null,
+            "release_settle/micro_lift": null,
+            "release_settle/release_settle": null,
+            "neutral10": null,
+            "neutral20": null
+          },
+          "root": null,
+          "outcomes_repeat0": {},
+          "failures": []
+        }
+      ],
+      "comparisons": [
+        {
+          "parent_index": 0,
+          "history": [
+            "micro_lift"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null,
+          "probe_contact_control_frames": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "contact_probe": true,
+          "sampled_geometry_during_probe_allowed": true,
+          "probe_object_displacement_m": 0.007820434722205597,
+          "probe_tcp_displacement_m": 0.00782277007480913,
+          "both_macro_paths_sampled_allowed": true,
+          "hold_macro_paths_sampled_allowed": false,
+          "mechanistic_contact_response": false
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "release_settle"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null,
+          "probe_contact_control_frames": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "contact_probe": true,
+          "sampled_geometry_during_probe_allowed": true,
+          "probe_object_displacement_m": 0.04532205557832283,
+          "probe_tcp_displacement_m": 0.0059246977205844355,
+          "both_macro_paths_sampled_allowed": true,
+          "hold_macro_paths_sampled_allowed": false,
+          "mechanistic_contact_response": false
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "micro_lift",
+            "micro_lift"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null,
+          "probe_contact_control_frames": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "contact_probe": true,
+          "sampled_geometry_during_probe_allowed": true,
+          "probe_object_displacement_m": 0.009875657090204368,
+          "probe_tcp_displacement_m": 0.009877804321736417,
+          "both_macro_paths_sampled_allowed": true,
+          "hold_macro_paths_sampled_allowed": false,
+          "mechanistic_contact_response": false
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "micro_lift",
+            "release_settle"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null,
+          "probe_contact_control_frames": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "contact_probe": true,
+          "sampled_geometry_during_probe_allowed": true,
+          "probe_object_displacement_m": 0.04414367414121259,
+          "probe_tcp_displacement_m": 0.007726069250615013,
+          "both_macro_paths_sampled_allowed": true,
+          "hold_macro_paths_sampled_allowed": false,
+          "mechanistic_contact_response": false
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "release_settle",
+            "micro_lift"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null,
+          "probe_contact_control_frames": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "contact_probe": true,
+          "sampled_geometry_during_probe_allowed": true,
+          "probe_object_displacement_m": 0.045322055043449,
+          "probe_tcp_displacement_m": 0.009405541569816293,
+          "both_macro_paths_sampled_allowed": true,
+          "hold_macro_paths_sampled_allowed": false,
+          "mechanistic_contact_response": false
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "release_settle",
+            "release_settle"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null,
+          "probe_contact_control_frames": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "contact_probe": true,
+          "sampled_geometry_during_probe_allowed": true,
+          "probe_object_displacement_m": 0.045322055043449,
+          "probe_tcp_displacement_m": 0.0059246977205844355,
+          "both_macro_paths_sampled_allowed": false,
+          "hold_macro_paths_sampled_allowed": false,
+          "mechanistic_contact_response": false
+        },
+        {
+          "parent_index": 1,
+          "history": [
+            "micro_lift"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 1,
+          "history": [
+            "release_settle"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 1,
+          "history": [
+            "micro_lift",
+            "micro_lift"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 1,
+          "history": [
+            "micro_lift",
+            "release_settle"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 1,
+          "history": [
+            "release_settle",
+            "micro_lift"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 1,
+          "history": [
+            "release_settle",
+            "release_settle"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 2,
+          "history": [
+            "micro_lift"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 2,
+          "history": [
+            "release_settle"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 2,
+          "history": [
+            "micro_lift",
+            "micro_lift"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 2,
+          "history": [
+            "micro_lift",
+            "release_settle"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 2,
+          "history": [
+            "release_settle",
+            "micro_lift"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 2,
+          "history": [
+            "release_settle",
+            "release_settle"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 3,
+          "history": [
+            "micro_lift"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 3,
+          "history": [
+            "release_settle"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 3,
+          "history": [
+            "micro_lift",
+            "micro_lift"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 3,
+          "history": [
+            "micro_lift",
+            "release_settle"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 3,
+          "history": [
+            "release_settle",
+            "micro_lift"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 3,
+          "history": [
+            "release_settle",
+            "release_settle"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 4,
+          "history": [
+            "micro_lift"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 4,
+          "history": [
+            "release_settle"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 4,
+          "history": [
+            "micro_lift",
+            "micro_lift"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 4,
+          "history": [
+            "micro_lift",
+            "release_settle"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 4,
+          "history": [
+            "release_settle",
+            "micro_lift"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 4,
+          "history": [
+            "release_settle",
+            "release_settle"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 5,
+          "history": [
+            "micro_lift"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 5,
+          "history": [
+            "release_settle"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 5,
+          "history": [
+            "micro_lift",
+            "micro_lift"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 5,
+          "history": [
+            "micro_lift",
+            "release_settle"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 5,
+          "history": [
+            "release_settle",
+            "micro_lift"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 5,
+          "history": [
+            "release_settle",
+            "release_settle"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 6,
+          "history": [
+            "micro_lift"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 6,
+          "history": [
+            "release_settle"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 6,
+          "history": [
+            "micro_lift",
+            "micro_lift"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 6,
+          "history": [
+            "micro_lift",
+            "release_settle"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 6,
+          "history": [
+            "release_settle",
+            "micro_lift"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 6,
+          "history": [
+            "release_settle",
+            "release_settle"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 7,
+          "history": [
+            "micro_lift"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 7,
+          "history": [
+            "release_settle"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 7,
+          "history": [
+            "micro_lift",
+            "micro_lift"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 7,
+          "history": [
+            "micro_lift",
+            "release_settle"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 7,
+          "history": [
+            "release_settle",
+            "micro_lift"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 7,
+          "history": [
+            "release_settle",
+            "release_settle"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 8,
+          "history": [
+            "micro_lift"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 8,
+          "history": [
+            "release_settle"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 8,
+          "history": [
+            "micro_lift",
+            "micro_lift"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 8,
+          "history": [
+            "micro_lift",
+            "release_settle"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 8,
+          "history": [
+            "release_settle",
+            "micro_lift"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 8,
+          "history": [
+            "release_settle",
+            "release_settle"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 9,
+          "history": [
+            "micro_lift"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 9,
+          "history": [
+            "release_settle"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 9,
+          "history": [
+            "micro_lift",
+            "micro_lift"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 9,
+          "history": [
+            "micro_lift",
+            "release_settle"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 9,
+          "history": [
+            "release_settle",
+            "micro_lift"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 9,
+          "history": [
+            "release_settle",
+            "release_settle"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        }
+      ],
+      "known_comparisons": 0,
+      "mechanistic_contact_comparisons": 0,
+      "erasure_comparisons_all_known": 0,
+      "creation_comparisons_all_known": 0,
+      "sampled_allowed_mechanistic_erasure_comparisons": 0,
+      "parent_indices_with_mechanistic_allowed_erasure": [],
+      "response_distinctness_including_timestamp": {
+        "micro_lift": 1,
+        "release_settle": 1
+      },
+      "root_signature_groups": 1,
+      "root_signature_groups_with_varying_hidden_pose_cell": 0,
+      "worker_wall_seconds": 0,
+      "compressed_task_bytes": 7517324,
+      "startup_and_episode_seconds": [
+        {
+          "startup": 0.41344346400001086,
+          "episode": 2.29343840299407
+        },
+        {
+          "startup": 0.408643017988652,
+          "episode": 2.321626260993071
+        },
+        {
+          "startup": 0.4447909959999379,
+          "episode": 2.3849319920118432
+        },
+        {
+          "startup": 0.4323174119926989,
+          "episode": 2.440761380974436
+        },
+        {
+          "startup": 0.3845529069949407,
+          "episode": 2.250528187985765
+        },
+        {
+          "startup": 0.43375118501717225,
+          "episode": 2.366974102013046
+        },
+        {
+          "startup": 0.478567641985137,
+          "episode": 2.3730428439739626
+        },
+        {
+          "startup": 0.4427736359939445,
+          "episode": 2.3933181930042338
+        },
+        {
+          "startup": 0.39823248199536465,
+          "episode": 2.347458491974976
+        },
+        {
+          "startup": 0.5625430709915236,
+          "episode": 2.5422545130131766
+        },
+        {
+          "startup": 0.4044004300085362,
+          "episode": 2.253786632005358
+        },
+        {
+          "startup": 0.4823953220038675,
+          "episode": 2.423209467990091
+        },
+        {
+          "startup": 0.477905962994555,
+          "episode": 2.466096552001545
+        },
+        {
+          "startup": 0.47253660901333205,
+          "episode": 2.4604146369965747
+        },
+        {
+          "startup": 0.37521548802033067,
+          "episode": 2.3407450939994305
+        },
+        {
+          "startup": 0.4445116480055731,
+          "episode": 2.429593364999164
+        },
+        {
+          "startup": 0.4614538599853404,
+          "episode": 2.4519556809973437
+        },
+        {
+          "startup": 0.4095728049869649,
+          "episode": 2.4000632149982266
+        },
+        {
+          "startup": 0.39679975202307105,
+          "episode": 2.2492664590245113
+        },
+        {
+          "startup": 0.4449886929942295,
+          "episode": 2.317447222012561
+        },
+        {
+          "startup": 0.4674190160003491,
+          "episode": 2.2686888549942523
+        },
+        {
+          "startup": 5.131090986978961,
+          "episode": 7.164759662991855
+        },
+        {
+          "startup": 0.4204733539954759,
+          "episode": 2.1228040249843616
+        },
+        {
+          "startup": 0.38668104499811307,
+          "episode": 2.4125187789904885
+        },
+        {
+          "startup": 0.38523883698508143,
+          "episode": 2.2877181159856264
+        },
+        {
+          "startup": 0.430730318010319,
+          "episode": 2.546673553995788
+        },
+        {
+          "startup": 0.4613271519774571,
+          "episode": 2.352583728992613
+        },
+        {
+          "startup": 0.4448625649965834,
+          "episode": 2.146629883995047
+        },
+        {
+          "startup": 0.4737940820050426,
+          "episode": 2.2362264980038162
+        },
+        {
+          "startup": 0.4479209040000569,
+          "episode": 2.766480923979543
+        },
+        {
+          "startup": 0.48736213002121076,
+          "episode": 2.338144033012213
+        },
+        {
+          "startup": 0.4878003979974892,
+          "episode": 2.404465537983924
+        },
+        {
+          "startup": 0.40361899000708945,
+          "episode": 2.233350791007979
+        },
+        {
+          "startup": 0.4340212089882698,
+          "episode": 2.516570531006437
+        },
+        {
+          "startup": 0.4192471239948645,
+          "episode": 2.262940006010467
+        },
+        {
+          "startup": 0.5425192450056784,
+          "episode": 2.6111455429927446
+        },
+        {
+          "startup": 0.47161595500074327,
+          "episode": 2.30555628699949
+        },
+        {
+          "startup": 0.48832768597640097,
+          "episode": 2.523418558994308
+        }
+      ],
+      "native_controls": 5890,
+      "outcome_counts_correlated_branches": {
+        "False": 20,
+        "True": 18
+      },
+      "stops": [],
+      "no_new_discovery_or_calibration_or_test_parents": true
+    },
+    "PushCube-v1": {
+      "decision": "SOURCE_NOT_QUALIFIED",
+      "registered_parents": 10,
+      "qualified_complete_parents": 0,
+      "attempted_parents": 1,
+      "planned_episodes": 540,
+      "attempted_episodes": 38,
+      "complete_episodes": 38,
+      "failed_episodes": 0,
+      "ineligible_episodes": 0,
+      "unattempted_episodes": 502,
+      "parents": [
+        {
+          "parent_index": 0,
+          "attempted_rows": 38,
+          "completed_rows": 38,
+          "failed_rows": 0,
+          "ineligible_rows": 0,
+          "missing_rows": 16,
+          "qualified": false,
+          "prefix_replay_agreement": true,
+          "root_controller_memory_agreement": true,
+          "K": {
+            "empty": null,
+            "forward_tap": null,
+            "lateral_sweep": null,
+            "forward_tap/forward_tap": null,
+            "forward_tap/lateral_sweep": null,
+            "lateral_sweep/forward_tap": null,
+            "lateral_sweep/lateral_sweep": null,
+            "neutral10": null,
+            "neutral20": null
+          },
+          "root": {
+            "signature": [
+              0,
+              83,
+              -3,
+              -167,
+              0,
+              257,
+              75,
+              -1,
+              3,
+              0,
+              7,
+              0,
+              -4,
+              0,
+              14,
+              -3,
+              4
+            ],
+            "evaluator_root_pose_cell": [
+              2,
+              2
+            ]
+          },
+          "outcomes_repeat0": {
+            "forward_tap/forward_tap": {
+              "recover": {
+                "macro_end": true,
+                "deadline": true
+              },
+              "STOP": {
+                "macro_end": null,
+                "deadline": false
+              },
+              "continue": {
+                "macro_end": true,
+                "deadline": true
+              }
+            },
+            "lateral_sweep": {
+              "STOP": {
+                "macro_end": null,
+                "deadline": false
+              },
+              "recover": {
+                "macro_end": true,
+                "deadline": true
+              },
+              "continue": {
+                "macro_end": true,
+                "deadline": true
+              }
+            },
+            "empty": {
+              "continue": {
+                "macro_end": true,
+                "deadline": true
+              },
+              "STOP": {
+                "macro_end": null,
+                "deadline": false
+              },
+              "recover": {
+                "macro_end": true,
+                "deadline": true
+              }
+            },
+            "lateral_sweep/forward_tap": {
+              "continue": {
+                "macro_end": true,
+                "deadline": true
+              },
+              "STOP": {
+                "macro_end": null,
+                "deadline": false
+              },
+              "recover": {
+                "macro_end": true,
+                "deadline": true
+              }
+            },
+            "forward_tap": {
+              "STOP": {
+                "macro_end": null,
+                "deadline": false
+              },
+              "recover": {
+                "macro_end": true,
+                "deadline": true
+              },
+              "continue": {
+                "macro_end": true,
+                "deadline": true
+              }
+            },
+            "lateral_sweep/lateral_sweep": {
+              "continue": {
+                "macro_end": true,
+                "deadline": true
+              }
+            },
+            "forward_tap/lateral_sweep": {
+              "recover": {
+                "macro_end": true,
+                "deadline": true
+              },
+              "continue": {
+                "macro_end": true,
+                "deadline": true
+              },
+              "STOP": {
+                "macro_end": null,
+                "deadline": false
+              }
+            }
+          },
+          "failures": []
+        },
+        {
+          "parent_index": 1,
+          "attempted_rows": 0,
+          "completed_rows": 0,
+          "failed_rows": 0,
+          "ineligible_rows": 0,
+          "missing_rows": 54,
+          "qualified": false,
+          "prefix_replay_agreement": null,
+          "root_controller_memory_agreement": true,
+          "K": {
+            "empty": null,
+            "forward_tap": null,
+            "lateral_sweep": null,
+            "forward_tap/forward_tap": null,
+            "forward_tap/lateral_sweep": null,
+            "lateral_sweep/forward_tap": null,
+            "lateral_sweep/lateral_sweep": null,
+            "neutral10": null,
+            "neutral20": null
+          },
+          "root": null,
+          "outcomes_repeat0": {},
+          "failures": []
+        },
+        {
+          "parent_index": 2,
+          "attempted_rows": 0,
+          "completed_rows": 0,
+          "failed_rows": 0,
+          "ineligible_rows": 0,
+          "missing_rows": 54,
+          "qualified": false,
+          "prefix_replay_agreement": null,
+          "root_controller_memory_agreement": true,
+          "K": {
+            "empty": null,
+            "forward_tap": null,
+            "lateral_sweep": null,
+            "forward_tap/forward_tap": null,
+            "forward_tap/lateral_sweep": null,
+            "lateral_sweep/forward_tap": null,
+            "lateral_sweep/lateral_sweep": null,
+            "neutral10": null,
+            "neutral20": null
+          },
+          "root": null,
+          "outcomes_repeat0": {},
+          "failures": []
+        },
+        {
+          "parent_index": 3,
+          "attempted_rows": 0,
+          "completed_rows": 0,
+          "failed_rows": 0,
+          "ineligible_rows": 0,
+          "missing_rows": 54,
+          "qualified": false,
+          "prefix_replay_agreement": null,
+          "root_controller_memory_agreement": true,
+          "K": {
+            "empty": null,
+            "forward_tap": null,
+            "lateral_sweep": null,
+            "forward_tap/forward_tap": null,
+            "forward_tap/lateral_sweep": null,
+            "lateral_sweep/forward_tap": null,
+            "lateral_sweep/lateral_sweep": null,
+            "neutral10": null,
+            "neutral20": null
+          },
+          "root": null,
+          "outcomes_repeat0": {},
+          "failures": []
+        },
+        {
+          "parent_index": 4,
+          "attempted_rows": 0,
+          "completed_rows": 0,
+          "failed_rows": 0,
+          "ineligible_rows": 0,
+          "missing_rows": 54,
+          "qualified": false,
+          "prefix_replay_agreement": null,
+          "root_controller_memory_agreement": true,
+          "K": {
+            "empty": null,
+            "forward_tap": null,
+            "lateral_sweep": null,
+            "forward_tap/forward_tap": null,
+            "forward_tap/lateral_sweep": null,
+            "lateral_sweep/forward_tap": null,
+            "lateral_sweep/lateral_sweep": null,
+            "neutral10": null,
+            "neutral20": null
+          },
+          "root": null,
+          "outcomes_repeat0": {},
+          "failures": []
+        },
+        {
+          "parent_index": 5,
+          "attempted_rows": 0,
+          "completed_rows": 0,
+          "failed_rows": 0,
+          "ineligible_rows": 0,
+          "missing_rows": 54,
+          "qualified": false,
+          "prefix_replay_agreement": null,
+          "root_controller_memory_agreement": true,
+          "K": {
+            "empty": null,
+            "forward_tap": null,
+            "lateral_sweep": null,
+            "forward_tap/forward_tap": null,
+            "forward_tap/lateral_sweep": null,
+            "lateral_sweep/forward_tap": null,
+            "lateral_sweep/lateral_sweep": null,
+            "neutral10": null,
+            "neutral20": null
+          },
+          "root": null,
+          "outcomes_repeat0": {},
+          "failures": []
+        },
+        {
+          "parent_index": 6,
+          "attempted_rows": 0,
+          "completed_rows": 0,
+          "failed_rows": 0,
+          "ineligible_rows": 0,
+          "missing_rows": 54,
+          "qualified": false,
+          "prefix_replay_agreement": null,
+          "root_controller_memory_agreement": true,
+          "K": {
+            "empty": null,
+            "forward_tap": null,
+            "lateral_sweep": null,
+            "forward_tap/forward_tap": null,
+            "forward_tap/lateral_sweep": null,
+            "lateral_sweep/forward_tap": null,
+            "lateral_sweep/lateral_sweep": null,
+            "neutral10": null,
+            "neutral20": null
+          },
+          "root": null,
+          "outcomes_repeat0": {},
+          "failures": []
+        },
+        {
+          "parent_index": 7,
+          "attempted_rows": 0,
+          "completed_rows": 0,
+          "failed_rows": 0,
+          "ineligible_rows": 0,
+          "missing_rows": 54,
+          "qualified": false,
+          "prefix_replay_agreement": null,
+          "root_controller_memory_agreement": true,
+          "K": {
+            "empty": null,
+            "forward_tap": null,
+            "lateral_sweep": null,
+            "forward_tap/forward_tap": null,
+            "forward_tap/lateral_sweep": null,
+            "lateral_sweep/forward_tap": null,
+            "lateral_sweep/lateral_sweep": null,
+            "neutral10": null,
+            "neutral20": null
+          },
+          "root": null,
+          "outcomes_repeat0": {},
+          "failures": []
+        },
+        {
+          "parent_index": 8,
+          "attempted_rows": 0,
+          "completed_rows": 0,
+          "failed_rows": 0,
+          "ineligible_rows": 0,
+          "missing_rows": 54,
+          "qualified": false,
+          "prefix_replay_agreement": null,
+          "root_controller_memory_agreement": true,
+          "K": {
+            "empty": null,
+            "forward_tap": null,
+            "lateral_sweep": null,
+            "forward_tap/forward_tap": null,
+            "forward_tap/lateral_sweep": null,
+            "lateral_sweep/forward_tap": null,
+            "lateral_sweep/lateral_sweep": null,
+            "neutral10": null,
+            "neutral20": null
+          },
+          "root": null,
+          "outcomes_repeat0": {},
+          "failures": []
+        },
+        {
+          "parent_index": 9,
+          "attempted_rows": 0,
+          "completed_rows": 0,
+          "failed_rows": 0,
+          "ineligible_rows": 0,
+          "missing_rows": 54,
+          "qualified": false,
+          "prefix_replay_agreement": null,
+          "root_controller_memory_agreement": true,
+          "K": {
+            "empty": null,
+            "forward_tap": null,
+            "lateral_sweep": null,
+            "forward_tap/forward_tap": null,
+            "forward_tap/lateral_sweep": null,
+            "lateral_sweep/forward_tap": null,
+            "lateral_sweep/lateral_sweep": null,
+            "neutral10": null,
+            "neutral20": null
+          },
+          "root": null,
+          "outcomes_repeat0": {},
+          "failures": []
+        }
+      ],
+      "comparisons": [
+        {
+          "parent_index": 0,
+          "history": [
+            "forward_tap"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null,
+          "probe_contact_control_frames": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "contact_probe": true,
+          "sampled_geometry_during_probe_allowed": true,
+          "probe_object_displacement_m": 0.008251736504640481,
+          "probe_tcp_displacement_m": 0.00821168869696752,
+          "both_macro_paths_sampled_allowed": true,
+          "hold_macro_paths_sampled_allowed": false,
+          "mechanistic_contact_response": false
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "lateral_sweep"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null,
+          "probe_contact_control_frames": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "contact_probe": true,
+          "sampled_geometry_during_probe_allowed": true,
+          "probe_object_displacement_m": 0.003529296511791677,
+          "probe_tcp_displacement_m": 0.007703894631859276,
+          "both_macro_paths_sampled_allowed": true,
+          "hold_macro_paths_sampled_allowed": false,
+          "mechanistic_contact_response": false
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "forward_tap",
+            "forward_tap"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null,
+          "probe_contact_control_frames": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "contact_probe": true,
+          "sampled_geometry_during_probe_allowed": true,
+          "probe_object_displacement_m": 0.01600021774481805,
+          "probe_tcp_displacement_m": 0.015956234760005194,
+          "both_macro_paths_sampled_allowed": true,
+          "hold_macro_paths_sampled_allowed": false,
+          "mechanistic_contact_response": false
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "forward_tap",
+            "lateral_sweep"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null,
+          "probe_contact_control_frames": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "contact_probe": true,
+          "sampled_geometry_during_probe_allowed": true,
+          "probe_object_displacement_m": 0.008287008993294969,
+          "probe_tcp_displacement_m": 0.011090406722915265,
+          "both_macro_paths_sampled_allowed": true,
+          "hold_macro_paths_sampled_allowed": false,
+          "mechanistic_contact_response": false
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "lateral_sweep",
+            "forward_tap"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null,
+          "probe_contact_control_frames": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "contact_probe": true,
+          "sampled_geometry_during_probe_allowed": true,
+          "probe_object_displacement_m": 0.008393367328789914,
+          "probe_tcp_displacement_m": 0.011250971907767658,
+          "both_macro_paths_sampled_allowed": true,
+          "hold_macro_paths_sampled_allowed": false,
+          "mechanistic_contact_response": false
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "lateral_sweep",
+            "lateral_sweep"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null,
+          "probe_contact_control_frames": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "contact_probe": true,
+          "sampled_geometry_during_probe_allowed": true,
+          "probe_object_displacement_m": 0.0035292813267794104,
+          "probe_tcp_displacement_m": 0.015523313989366664,
+          "both_macro_paths_sampled_allowed": false,
+          "hold_macro_paths_sampled_allowed": false,
+          "mechanistic_contact_response": false
+        },
+        {
+          "parent_index": 1,
+          "history": [
+            "forward_tap"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 1,
+          "history": [
+            "lateral_sweep"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 1,
+          "history": [
+            "forward_tap",
+            "forward_tap"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 1,
+          "history": [
+            "forward_tap",
+            "lateral_sweep"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 1,
+          "history": [
+            "lateral_sweep",
+            "forward_tap"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 1,
+          "history": [
+            "lateral_sweep",
+            "lateral_sweep"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 2,
+          "history": [
+            "forward_tap"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 2,
+          "history": [
+            "lateral_sweep"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 2,
+          "history": [
+            "forward_tap",
+            "forward_tap"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 2,
+          "history": [
+            "forward_tap",
+            "lateral_sweep"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 2,
+          "history": [
+            "lateral_sweep",
+            "forward_tap"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 2,
+          "history": [
+            "lateral_sweep",
+            "lateral_sweep"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 3,
+          "history": [
+            "forward_tap"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 3,
+          "history": [
+            "lateral_sweep"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 3,
+          "history": [
+            "forward_tap",
+            "forward_tap"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 3,
+          "history": [
+            "forward_tap",
+            "lateral_sweep"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 3,
+          "history": [
+            "lateral_sweep",
+            "forward_tap"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 3,
+          "history": [
+            "lateral_sweep",
+            "lateral_sweep"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 4,
+          "history": [
+            "forward_tap"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 4,
+          "history": [
+            "lateral_sweep"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 4,
+          "history": [
+            "forward_tap",
+            "forward_tap"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 4,
+          "history": [
+            "forward_tap",
+            "lateral_sweep"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 4,
+          "history": [
+            "lateral_sweep",
+            "forward_tap"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 4,
+          "history": [
+            "lateral_sweep",
+            "lateral_sweep"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 5,
+          "history": [
+            "forward_tap"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 5,
+          "history": [
+            "lateral_sweep"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 5,
+          "history": [
+            "forward_tap",
+            "forward_tap"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 5,
+          "history": [
+            "forward_tap",
+            "lateral_sweep"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 5,
+          "history": [
+            "lateral_sweep",
+            "forward_tap"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 5,
+          "history": [
+            "lateral_sweep",
+            "lateral_sweep"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 6,
+          "history": [
+            "forward_tap"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 6,
+          "history": [
+            "lateral_sweep"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 6,
+          "history": [
+            "forward_tap",
+            "forward_tap"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 6,
+          "history": [
+            "forward_tap",
+            "lateral_sweep"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 6,
+          "history": [
+            "lateral_sweep",
+            "forward_tap"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 6,
+          "history": [
+            "lateral_sweep",
+            "lateral_sweep"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 7,
+          "history": [
+            "forward_tap"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 7,
+          "history": [
+            "lateral_sweep"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 7,
+          "history": [
+            "forward_tap",
+            "forward_tap"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 7,
+          "history": [
+            "forward_tap",
+            "lateral_sweep"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 7,
+          "history": [
+            "lateral_sweep",
+            "forward_tap"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 7,
+          "history": [
+            "lateral_sweep",
+            "lateral_sweep"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 8,
+          "history": [
+            "forward_tap"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 8,
+          "history": [
+            "lateral_sweep"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 8,
+          "history": [
+            "forward_tap",
+            "forward_tap"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 8,
+          "history": [
+            "forward_tap",
+            "lateral_sweep"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 8,
+          "history": [
+            "lateral_sweep",
+            "forward_tap"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 8,
+          "history": [
+            "lateral_sweep",
+            "lateral_sweep"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 9,
+          "history": [
+            "forward_tap"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 9,
+          "history": [
+            "lateral_sweep"
+          ],
+          "delay_ticks": 10,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 9,
+          "history": [
+            "forward_tap",
+            "forward_tap"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 9,
+          "history": [
+            "forward_tap",
+            "lateral_sweep"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 9,
+          "history": [
+            "lateral_sweep",
+            "forward_tap"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        },
+        {
+          "parent_index": 9,
+          "history": [
+            "lateral_sweep",
+            "lateral_sweep"
+          ],
+          "delay_ticks": 20,
+          "K_hold": null,
+          "K_probe": null,
+          "status": "UNKNOWN",
+          "erasure": null,
+          "creation": null,
+          "lost": null,
+          "gained": null
+        }
+      ],
+      "known_comparisons": 0,
+      "mechanistic_contact_comparisons": 0,
+      "erasure_comparisons_all_known": 0,
+      "creation_comparisons_all_known": 0,
+      "sampled_allowed_mechanistic_erasure_comparisons": 0,
+      "parent_indices_with_mechanistic_allowed_erasure": [],
+      "response_distinctness_including_timestamp": {
+        "forward_tap": 1,
+        "lateral_sweep": 1
+      },
+      "root_signature_groups": 1,
+      "root_signature_groups_with_varying_hidden_pose_cell": 0,
+      "worker_wall_seconds": 0,
+      "compressed_task_bytes": 5617937,
+      "startup_and_episode_seconds": [
+        {
+          "startup": 0.4519052069808822,
+          "episode": 1.5988198429986369
+        },
+        {
+          "startup": 0.4002523859962821,
+          "episode": 1.4448735759942792
+        },
+        {
+          "startup": 0.40801593198557384,
+          "episode": 1.5363063809927553
+        },
+        {
+          "startup": 0.4260522059921641,
+          "episode": 1.5399380290182307
+        },
+        {
+          "startup": 0.39962909699534066,
+          "episode": 1.4552572339889593
+        },
+        {
+          "startup": 0.47996545597561635,
+          "episode": 1.6277616959996521
+        },
+        {
+          "startup": 0.45966040799976327,
+          "episode": 1.6420241180167068
+        },
+        {
+          "startup": 0.42021358499187045,
+          "episode": 1.4967724079906475
+        },
+        {
+          "startup": 0.4776547509827651,
+          "episode": 1.6776568249915726
+        },
+        {
+          "startup": 0.4014970540010836,
+          "episode": 1.5295568619912956
+        },
+        {
+          "startup": 0.44603967797593214,
+          "episode": 1.5951148890017066
+        },
+        {
+          "startup": 0.4049983189906925,
+          "episode": 1.4472526509780437
+        },
+        {
+          "startup": 0.45082518199342303,
+          "episode": 1.5732813579961658
+        },
+        {
+          "startup": 5.04051031099516,
+          "episode": 6.173543025011895
+        },
+        {
+          "startup": 0.40648785402299836,
+          "episode": 1.5630671970138792
+        },
+        {
+          "startup": 0.4635442449944094,
+          "episode": 1.6023242140072398
+        },
+        {
+          "startup": 0.3843653019866906,
+          "episode": 1.440050868986873
+        },
+        {
+          "startup": 0.48999886398087256,
+          "episode": 1.5869890759931877
+        },
+        {
+          "startup": 0.42672078200848773,
+          "episode": 1.5034793430240825
+        },
+        {
+          "startup": 0.4299750610080082,
+          "episode": 1.5267223789996933
+        },
+        {
+          "startup": 0.4665005200076848,
+          "episode": 1.595870671008015
+        },
+        {
+          "startup": 0.4521229070087429,
+          "episode": 1.5435035550035536
+        },
+        {
+          "startup": 0.4326537779998034,
+          "episode": 1.5114737790136132
+        },
+        {
+          "startup": 0.4175467879977077,
+          "episode": 1.5040375070238952
+        },
+        {
+          "startup": 0.4561950529750902,
+          "episode": 1.6226091659918893
+        },
+        {
+          "startup": 0.37915880599757656,
+          "episode": 1.4337635340052657
+        },
+        {
+          "startup": 0.3888602160150185,
+          "episode": 1.4468796440050937
+        },
+        {
+          "startup": 0.4148091889801435,
+          "episode": 1.4736156770086382
+        },
+        {
+          "startup": 0.41818434998276643,
+          "episode": 1.5289610539912246
+        },
+        {
+          "startup": 0.43514111699187197,
+          "episode": 1.5606824170099571
+        },
+        {
+          "startup": 0.47732849800377153,
+          "episode": 1.7121265849855263
+        },
+        {
+          "startup": 0.4292098320147488,
+          "episode": 1.5305285720096435
+        },
+        {
+          "startup": 0.44332150599802844,
+          "episode": 1.5393107019772287
+        },
+        {
+          "startup": 0.4350079619907774,
+          "episode": 1.5786869050061796
+        },
+        {
+          "startup": 0.40281516799586825,
+          "episode": 1.5085900929989293
+        },
+        {
+          "startup": 0.3843567569856532,
+          "episode": 1.4688207849976607
+        },
+        {
+          "startup": 0.41275789702194743,
+          "episode": 1.5843749180203304
+        },
+        {
+          "startup": 0.40928041000734083,
+          "episode": 1.4900661720021162
+        }
+      ],
+      "native_controls": 5434,
+      "outcome_counts_correlated_branches": {
+        "False": 12,
+        "True": 26
+      },
+      "stops": [],
+      "no_new_discovery_or_calibration_or_test_parents": true
+    }
+  },
+  "scope": "Technical feasibility only, independent parentN<=10 per task; no prevalence, causal-population, calibrated-success, force or continuous-time safety guarantee.",
+  "new_full_stage2_parents": 0,
+  "manuscript_edits": 0
+}

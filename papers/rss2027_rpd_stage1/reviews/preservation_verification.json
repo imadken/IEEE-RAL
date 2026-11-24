@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "starting_commit": "b9f4496867a670fbf829609efbf6b13299209969",
+  "baseline_path_checks": 1933,
+  "protected_absences": 27,
+  "historical_size_mtime_checks": 185513,
+  "preexisting_status_entries_unchanged": 59,
+  "original_v2": {
+    "original_v2_files": 9,
+    "template_hashes_passed": true,
+    "class_unmodified": true
+  },
+  "new_physics": 0,
+  "scope": "Content hashes for inventoried source/manuscript/user paths; historical size/mtime plus separately rechecked sealed manifests. Metadata checks alone are not full historical byte hashes."
+}

@@ -1,0 +1,336 @@
+{
+  "passed": true,
+  "phases": {
+    "native_pilot": {
+      "registered": 4,
+      "completed": 4,
+      "remaining": 0,
+      "status_counts": {
+        "QUALIFIED": 4
+      },
+      "attempted_parents": 4,
+      "unopened_parents": 0,
+      "attempted_incomplete_parents": []
+    },
+    "discovery": {
+      "registered": 128,
+      "completed": 128,
+      "remaining": 0,
+      "status_counts": {
+        "COMPLETE": 128
+      },
+      "attempted_parents": 128,
+      "unopened_parents": 0,
+      "attempted_incomplete_parents": []
+    },
+    "calibration": {
+      "registered": 1024,
+      "completed": 1024,
+      "remaining": 0,
+      "status_counts": {
+        "COMPLETE": 1024
+      },
+      "attempted_parents": 1024,
+      "unopened_parents": 0,
+      "attempted_incomplete_parents": []
+    },
+    "test": {
+      "registered": 256,
+      "completed": 256,
+      "remaining": 0,
+      "status_counts": {
+        "COMPLETE": 256
+      },
+      "attempted_parents": 256,
+      "unopened_parents": 0,
+      "attempted_incomplete_parents": []
+    },
+    "insertion_pilot": {
+      "registered": 48,
+      "completed": 48,
+      "remaining": 0,
+      "status_counts": {
+        "QUALIFIED": 48
+      },
+      "attempted_parents": 48,
+      "unopened_parents": 0,
+      "attempted_incomplete_parents": []
+    },
+    "insertion_confirmation": {
+      "registered": 96,
+      "completed": 0,
+      "remaining": 96,
+      "status_counts": {},
+      "attempted_parents": 0,
+      "unopened_parents": 96,
+      "attempted_incomplete_parents": []
+    }
+  },
+  "counts": {
+    "source_hashes": 394,
+    "native_continuity_hashes": 27,
+    "historical_regression_CP_endpoints": 8,
+    "historical_regression_LP_extrema": 10,
+    "CP_endpoints": 16,
+    "LP_extrema": 20,
+    "whitelisted_model_reads": 8,
+    "all_cube_obligation_minimum_queries": 192,
+    "physical_branches": 1824,
+    "prefix_controls": 103680,
+    "future_controls": 155600,
+    "native_repeat_future_states": 560,
+    "minimum_scope_certificates": 128
+  },
+  "maximum_numerical_discrepancy": 9.992007221626409e-16,
+  "policies": {
+    "DSRE": {
+      "n": 256,
+      "success": 253,
+      "recover": 128,
+      "default_continue": 128,
+      "harm": 0,
+      "required_rescues": 126,
+      "futile": 2,
+      "redundant": 0,
+      "completion_CP95": [
+        0.9661367173637085,
+        0.9975767612461293
+      ],
+      "harm_per_recover_CP95": [
+        0.0,
+        0.02840805344354391
+      ],
+      "gain": 0.4921875,
+      "gain_parent_bootstrap95": [
+        0.4296875,
+        0.55078125
+      ],
+      "certificate_literal_mean": 1.0
+    },
+    "exact_B7": {
+      "n": 256,
+      "success": 253,
+      "recover": 128,
+      "default_continue": 128,
+      "harm": 0,
+      "required_rescues": 126,
+      "futile": 2,
+      "redundant": 0,
+      "completion_CP95": [
+        0.9661367173637085,
+        0.9975767612461293
+      ],
+      "harm_per_recover_CP95": [
+        0.0,
+        0.02840805344354391
+      ],
+      "gain": 0.4921875,
+      "gain_parent_bootstrap95": [
+        0.4296875,
+        0.55078125
+      ],
+      "certificate_literal_mean": null
+    },
+    "direct_partial_ID": {
+      "n": 256,
+      "success": 253,
+      "recover": 128,
+      "default_continue": 128,
+      "harm": 0,
+      "required_rescues": 126,
+      "futile": 2,
+      "redundant": 0,
+      "completion_CP95": [
+        0.9661367173637085,
+        0.9975767612461293
+      ],
+      "harm_per_recover_CP95": [
+        0.0,
+        0.02840805344354391
+      ],
+      "gain": 0.4921875,
+      "gain_parent_bootstrap95": [
+        0.4296875,
+        0.55078125
+      ],
+      "certificate_literal_mean": null
+    },
+    "CART_same_gate": {
+      "n": 256,
+      "success": 253,
+      "recover": 128,
+      "default_continue": 128,
+      "harm": 0,
+      "required_rescues": 126,
+      "futile": 2,
+      "redundant": 0,
+      "completion_CP95": [
+        0.9661367173637085,
+        0.9975767612461293
+      ],
+      "harm_per_recover_CP95": [
+        0.0,
+        0.02840805344354391
+      ],
+      "gain": 0.4921875,
+      "gain_parent_bootstrap95": [
+        0.4296875,
+        0.55078125
+      ],
+      "certificate_literal_mean": null
+    },
+    "always_continue": {
+      "n": 256,
+      "success": 127,
+      "recover": 0,
+      "default_continue": 256,
+      "harm": 0,
+      "required_rescues": 0,
+      "futile": 0,
+      "redundant": 0,
+      "completion_CP95": [
+        0.43324998684458077,
+        0.5590289869716013
+      ],
+      "harm_per_recover_CP95": [
+        0.0,
+        1.0
+      ],
+      "gain": 0.0,
+      "gain_parent_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "certificate_literal_mean": null
+    },
+    "always_recover": {
+      "n": 256,
+      "success": 252,
+      "recover": 256,
+      "default_continue": 0,
+      "harm": 2,
+      "required_rescues": 127,
+      "futile": 2,
+      "redundant": 125,
+      "completion_CP95": [
+        0.960479243466625,
+        0.9957267275142454
+      ],
+      "harm_per_recover_CP95": [
+        0.0009475342881075717,
+        0.02793491420405472
+      ],
+      "gain": 0.48828125,
+      "gain_parent_bootstrap95": [
+        0.42578125,
+        0.55078125
+      ],
+      "certificate_literal_mean": null
+    },
+    "outcome_regression_same_gate": {
+      "n": 256,
+      "success": 253,
+      "recover": 128,
+      "default_continue": 128,
+      "harm": 0,
+      "required_rescues": 126,
+      "futile": 2,
+      "redundant": 0,
+      "completion_CP95": [
+        0.9661367173637085,
+        0.9975767612461293
+      ],
+      "harm_per_recover_CP95": [
+        0.0,
+        0.02840805344354391
+      ],
+      "gain": 0.4921875,
+      "gain_parent_bootstrap95": [
+        0.4296875,
+        0.55078125
+      ],
+      "certificate_literal_mean": null
+    }
+  },
+  "equal_action_counts_vs_DSRE": {
+    "DSRE": 256,
+    "exact_B7": 256,
+    "direct_partial_ID": 256,
+    "CART_same_gate": 256,
+    "always_continue": 128,
+    "always_recover": 128,
+    "outcome_regression_same_gate": 256
+  },
+  "four_cells": {
+    "11": 125,
+    "01": 127,
+    "10": 2,
+    "00": 2
+  },
+  "paired_hindsight_completion": 254,
+  "unselected_rescue_opportunities": 1,
+  "source_qualified_test": 256,
+  "registered_test": 256,
+  "statistical_scope": "Exact per-method frozen-cell C family. T intervals descriptive independent-parent; no across-method/task joint95, no optional-pilot PAC claim.",
+  "physics_worker_seconds": 13099.530185937881,
+  "physics_processes": 1824,
+  "compressed_campaign_bytes": 115018850,
+  "production_inference_imported": false,
+  "historical_preservation_rechecked": false,
+  "auditor_sha256": "a47b71d7ee65ded8332cb7fc5318c9d222973fa50a5bdbb66437d6233f13cfb9",
+  "insertion": {
+    "insertion_pilot": {
+      "raw_completed": 48,
+      "eligible_checkpoints": 48,
+      "no_decision_checkpoint": 0,
+      "four_cells_observed": {
+        "00": 22,
+        "01": 25,
+        "11": 1
+      },
+      "missing_continue": 0,
+      "missing_recover": 0,
+      "known_continue_successes": 1,
+      "known_recover_successes": 26,
+      "known_any_action_success": 26,
+      "scope": "Exploratory eligible-checkpoint empirical bounds only, not calibrated population guarantees; no-checkpoint parents retain their separate raw denominator and receive no invented action outcomes",
+      "continue_empirical_completion_bounds": [
+        0.020833333333333332,
+        0.020833333333333332
+      ],
+      "recover_empirical_completion_bounds": [
+        0.5416666666666666,
+        0.5416666666666666
+      ],
+      "recover_harm_empirical_bounds": [
+        0.0,
+        0.0
+      ],
+      "recover_gain_empirical_bounds": [
+        0.5208333333333334,
+        0.5208333333333334
+      ]
+    },
+    "insertion_confirmation": {
+      "raw_completed": 0,
+      "eligible_checkpoints": 0,
+      "no_decision_checkpoint": 0,
+      "four_cells_observed": {},
+      "missing_continue": 0,
+      "missing_recover": 0,
+      "known_continue_successes": 0,
+      "known_recover_successes": 0,
+      "known_any_action_success": 0,
+      "scope": "Exploratory eligible-checkpoint empirical bounds only, not calibrated population guarantees; no-checkpoint parents retain their separate raw denominator and receive no invented action outcomes"
+    }
+  },
+  "DSRE_minus_always_R_completion": {
+    "net_parents": 1,
+    "mean": 0.00390625,
+    "paired_parent_bootstrap95": [
+      -0.0078125,
+      0.015625
+    ],
+    "interpretation": "Descriptive comparison; no across-method significance or algorithm dominance claim"
+  }
+}

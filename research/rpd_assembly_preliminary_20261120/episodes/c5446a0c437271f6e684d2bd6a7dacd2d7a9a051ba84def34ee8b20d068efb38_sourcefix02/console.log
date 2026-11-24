@@ -1,0 +1,3 @@
+/home/imad/.config/matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /tmp/matplotlib-jz8c_0x1 because there was an issue with the default path (/home/imad/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+{"job_id": "c5446a0c437271f6e684d2bd6a7dacd2d7a9a051ba84def34ee8b20d068efb38", "status": "COMPLETE", "eligibility": {"disposition": "KNOWN_ELIGIBLE", "reasons": []}}

@@ -1,0 +1,1 @@
+Mathematical audit passed 1681 exact marginals; max error 2.220446049250313e-16

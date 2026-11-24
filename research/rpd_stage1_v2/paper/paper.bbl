@@ -1,0 +1,95 @@
+\begin{thebibliography}{12}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bohg et~al.(2017)Bohg, Hausman, Sankaran, Brock, Kragic, Schaal, and
+  Sukhatme]{bohg2017}
+Jeannette Bohg, Karol Hausman, Bharath Sankaran, Oliver Brock, Danica Kragic,
+  Stefan Schaal, and Gaurav~S. Sukhatme.
+\newblock Interactive perception: Leveraging action in perception and
+  perception in action.
+\newblock \emph{IEEE Transactions on Robotics}, 33\penalty0 (6):\penalty0
+  1273--1291, 2017.
+
+\bibitem[Clopper and Pearson(1934)]{clopper1934}
+C.~J. Clopper and E.~S. Pearson.
+\newblock The use of confidence or fiducial limits illustrated in the case of
+  the binomial.
+\newblock \emph{Biometrika}, 26\penalty0 (4):\penalty0 404--413, 1934.
+
+\bibitem[Eysenbach et~al.(2018)Eysenbach, Gu, Ibarz, and Levine]{eysenbach2018}
+Benjamin Eysenbach, Shane Gu, Julian Ibarz, and Sergey Levine.
+\newblock Leave no trace: Learning to reset for safe and autonomous
+  reinforcement learning.
+\newblock In \emph{International Conference on Learning Representations}, 2018.
+
+\bibitem[Grinsztajn et~al.(2021)Grinsztajn, Ferret, Pietquin, Preux, and
+  Geist]{grinsztajn2021}
+Nathan Grinsztajn, Johan Ferret, Olivier Pietquin, Philippe Preux, and Matthieu
+  Geist.
+\newblock There is no turning back: A self-supervised approach for
+  reversibility-aware reinforcement learning.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~34, 2021.
+
+\bibitem[Kobayashi(2026)]{kobayashi2026}
+Jun Kobayashi.
+\newblock When identifiability is not enough: Terminal controllability in
+  task-compatible active calibration.
+\newblock bioRxiv, doi:10.64898/2026.06.11.731593, version 2, preprint, 2026.
+
+\bibitem[Maurer and Pontil(2009)]{maurer2009}
+Andreas Maurer and Massimiliano Pontil.
+\newblock Empirical bernstein bounds and sample variance penalization.
+\newblock arXiv:0907.3740, 2009.
+
+\bibitem[Ragan et~al.(2024)Ragan, Riviere, Hadaegh, and Chung]{ragan2024}
+James Ragan, Benjamin Riviere, Fred~Y. Hadaegh, and Soon-Jo Chung.
+\newblock Online tree-based planning for active spacecraft fault estimation and
+  collision avoidance.
+\newblock \emph{Science Robotics}, 9\penalty0 (93):\penalty0 eadn4722, 2024.
+
+\bibitem[Sheng et~al.(2024)Sheng, Parker, and Feng]{sheng2024}
+Shili Sheng, David Parker, and Lu~Feng.
+\newblock Safe {POMDP} online planning via shielding.
+\newblock In \emph{IEEE International Conference on Robotics and Automation},
+  2024.
+
+\bibitem[Tang et~al.(2023)Tang, Lin, Akinola, Handa, Sukhatme, Ramos, Fox, and
+  Narang]{tang2023}
+Bingjie Tang, Michael~A. Lin, Iretiayo~A. Akinola, Ankur Handa, Gaurav~S.
+  Sukhatme, Fabio Ramos, Dieter Fox, and Yashraj~S. Narang.
+\newblock {IndustReal}: Transferring contact-rich assembly tasks from
+  simulation to reality.
+\newblock In \emph{Robotics: Science and Systems}, 2023.
+
+\bibitem[Tao et~al.(2025)Tao, Xiang, Shukla, Qin, Hinrichsen, Yuan, Bao, Lin,
+  Liu, Chan, Gao, Li, Mu, Xiao, Gurha, Rajesh, Choi, Chen, Huang, Calandra,
+  Chen, Luo, and Su]{tao2025}
+Stone Tao, Fanbo Xiang, Arth Shukla, Yuzhe Qin, Xander Hinrichsen, Xiaodi Yuan,
+  Chen Bao, Xinsong Lin, Yulin Liu, Tse-Kai Chan, Yuan Gao, Xuanlin Li,
+  Tongzhou Mu, Nan Xiao, Arnav Gurha, Viswesh~Nagaswamy Rajesh, Yong~Woo Choi,
+  Yen-Ru Chen, Zhiao Huang, Roberto Calandra, Rui Chen, Shan Luo, and Hao Su.
+\newblock Demonstrating {GPU} parallelized robot simulation and rendering for
+  generalizable embodied {AI} with {ManiSkill3}.
+\newblock In \emph{Robotics: Science and Systems}, 2025.
+
+\bibitem[Wang et~al.(2026)Wang, Sun, Li, Bai, Chuah, Liang, Li, and
+  Yau]{wang2026}
+Haoran Wang, Yuteng Sun, Yuanjie Li, Ruofei Bai, Meng Yee~(Michael) Chuah,
+  Wenyu Liang, Jun Li, and Wei-Yun Yau.
+\newblock {DA-GRD}: Decision-aware grasp-relevant disambiguation for tactile
+  recovery under perception-to-execution mismatches.
+\newblock arXiv:2609.29065, preprint, 2026.
+
+\bibitem[Wilks(1938)]{wilks1938}
+S.~S. Wilks.
+\newblock The large-sample distribution of the likelihood ratio for testing
+  composite hypotheses.
+\newblock \emph{The Annals of Mathematical Statistics}, 9\penalty0
+  (1):\penalty0 60--62, 1938.
+
+\end{thebibliography}

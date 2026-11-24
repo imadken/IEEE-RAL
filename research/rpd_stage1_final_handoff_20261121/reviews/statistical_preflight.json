@@ -1,0 +1,200 @@
+{
+  "status": "INDEPENDENT_PUBLIC_DESIGN_CHECK_NOT_MANUSCRIPT_VERIFICATION",
+  "n": 1024,
+  "epsilon": "1/50",
+  "critical": "-11/5",
+  "bernstein_coefficients": 1025,
+  "all_nonnegative": true,
+  "maximum_coefficient": "0.023485662185796033165560791688108230961334650874967",
+  "argmax_k": 9,
+  "exact_integer_type_I_below_025": true,
+  "integer_certificate_sha256": "442c925cef62690ad4a84137e943792ff18b08007604d76b4c496c48e6d7ff9c",
+  "small_n_exhaustive_oracles": [
+    {
+      "n": 3,
+      "critical": "-1",
+      "t": "1/3",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 3,
+      "critical": "-1",
+      "t": "1/2",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 3,
+      "critical": "-1",
+      "t": "2/3",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 3,
+      "critical": "-3/2",
+      "t": "1/3",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 3,
+      "critical": "-3/2",
+      "t": "1/2",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 3,
+      "critical": "-3/2",
+      "t": "2/3",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 3,
+      "critical": "-11/5",
+      "t": "1/3",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 3,
+      "critical": "-11/5",
+      "t": "1/2",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 3,
+      "critical": "-11/5",
+      "t": "2/3",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 5,
+      "critical": "-1",
+      "t": "1/3",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 5,
+      "critical": "-1",
+      "t": "1/2",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 5,
+      "critical": "-1",
+      "t": "2/3",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 5,
+      "critical": "-3/2",
+      "t": "1/3",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 5,
+      "critical": "-3/2",
+      "t": "1/2",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 5,
+      "critical": "-3/2",
+      "t": "2/3",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 5,
+      "critical": "-11/5",
+      "t": "1/3",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 5,
+      "critical": "-11/5",
+      "t": "1/2",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 5,
+      "critical": "-11/5",
+      "t": "2/3",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 8,
+      "critical": "-1",
+      "t": "1/3",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 8,
+      "critical": "-1",
+      "t": "1/2",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 8,
+      "critical": "-1",
+      "t": "2/3",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 8,
+      "critical": "-3/2",
+      "t": "1/3",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 8,
+      "critical": "-3/2",
+      "t": "1/2",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 8,
+      "critical": "-3/2",
+      "t": "2/3",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 8,
+      "critical": "-11/5",
+      "t": "1/3",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 8,
+      "critical": "-11/5",
+      "t": "1/2",
+      "exact_rational_equality": true
+    },
+    {
+      "n": 8,
+      "critical": "-11/5",
+      "t": "2/3",
+      "exact_rational_equality": true
+    }
+  ],
+  "independent_rational_oracles_passed": 27,
+  "hypothetical_powers": {
+    "scope": "HYPOTHETICAL_DESIGN_RATES_NOT_PHYSICAL_RESULTS",
+    "n": 1024,
+    "q_alternative": 0.15,
+    "eta_alternative": 0.8,
+    "completion_discordance": 0.2,
+    "completion_delta": 0.12,
+    "violation_discordance": 0.025,
+    "violation_delta": 0,
+    "h1_min_erasures": 123,
+    "h1_joint_power": 0.9974005175851818,
+    "zero_event_CP_upper_alpha_025": 0.003595940406834479,
+    "h2_completion_CP_product_power": 0.9925748163311496,
+    "h2_violation_exact_score_power": 0.9637414194917082,
+    "h2_old_CP_product_power": 0.6778167721653163,
+    "h2_joint_union_lower": 0.9563162358228579,
+    "CP_product_scope": "Explicit reconstruction; private V4.4 code absent"
+  },
+  "old_CP_product_n640_power": 0.33926612354343016,
+  "known_signal_116_of_128_CP_lower_95": 0.8525318602930274,
+  "known_signal_pipeline_executed": false,
+  "realized_n_warning": "Critical value must be independently recalibrated/registered for any other n before outcomes",
+  "wall_seconds": 35.48489869298646
+}

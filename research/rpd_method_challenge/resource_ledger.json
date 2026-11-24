@@ -1,0 +1,42 @@
+{
+  "registered_limits": {
+    "calendar_hours": 48,
+    "offline_experiment_seconds": 3600,
+    "new_artifact_bytes": 100000000,
+    "new_physics": 0
+  },
+  "started_utc": "2026-11-19T12:42:51.327529+00:00",
+  "numerical_work_complete_utc": "2026-11-19T13:55:07.549732+00:00",
+  "elapsed_calendar_seconds_before_packaging": 4336.222202777863,
+  "individually_measured_major_runs_wall_seconds": {
+    "final_frozen_run": 56.10437870500027,
+    "portable_reproduction": 8.759213588986313,
+    "research/rpd_method_challenge/development_full_run/run_receipt.json": 55.38018748399918,
+    "research/rpd_method_challenge/development_audit/audit_summary.json": 4.813065260008443
+  },
+  "major_runs_sum_seconds": 125.05684503799421,
+  "minor_timing_limit": "Short initial unit/source probes and reference arithmetic were not individually retained as cumulative CPU timings; do not interpret the major-run sum as a precise total. Final full run and portable reproduction have exact wall/child-CPU receipts.",
+  "current_bytes_by_root": {
+    "research/rpd_method_challenge": 1660650,
+    "/tmp/rpd-literature": 1908128,
+    "/tmp/rpd-portable-reproduction-20261119": 2604796
+  },
+  "final_repository_bytes": "See integrity_manifest.json after compact packaging",
+  "largest_transient_paper_download_bytes": 52470568,
+  "transient_pdf_storage": "Each downloaded PDF removed after checksum and verified text extraction; no full papers redistributed",
+  "python": "3.12.12",
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "pydantic": "2.14.3",
+    "pytest": "8.4.2",
+    "ruff": "0.17.4"
+  },
+  "peak_memory": "NOT_MEASURED",
+  "new_physics_processes": 0,
+  "new_robot_outcomes": 0,
+  "new_calibrated_physical_predicates": 0,
+  "dependency_changes": 0,
+  "new_paid_api": 0,
+  "future58worker_hours": "PROPOSED_ONLY_NOT_AUTHORIZED_OR_SPENT"
+}

@@ -1,0 +1,147 @@
+{
+  "passed": true,
+  "raw_seals": [
+    {
+      "seal": "results/dsre-evidence-aware/20261117-prospective/raw_evidence_seal.json",
+      "sha256": "194f28adbc90bf21282f6209d9aa30a9aa9f6f8251b197f2b0b1837f3ca8e5fb",
+      "members": 37132,
+      "exact_original_gzip_reconstructions": 0,
+      "passed": true
+    },
+    {
+      "seal": "results/dsre-evidence-aware/20261118-final-science/raw_evidence_seal.json",
+      "sha256": "fbe94a2972359a53a1a1de83e7f8e4b6f1c43807fc05681537ab563721181a46",
+      "members": 12339,
+      "exact_original_gzip_reconstructions": 0,
+      "passed": true
+    }
+  ],
+  "original_zero_control_failure_reproductions": [
+    {
+      "raw": "results/dsre-evidence-aware/20261118-source-eligibility/physics/PegInsertionSide-v1/calibration/259/independent_reproduction_1.json.gz",
+      "spec": {
+        "task": "PegInsertionSide-v1",
+        "phase": "calibration",
+        "index": 259,
+        "seed": 180937078,
+        "offset": -0.003,
+        "observation_protocol": "Peg-observation-v2"
+      },
+      "native_error": "UPSTREAM_SCREW_PLANNING_FAILED",
+      "controls": 0,
+      "checkpoint": false,
+      "outcome": null,
+      "sha256": "2328a7d59331317fca5de20a9d009ee6d75fef1ed8b203e34160e1ca80964cc2"
+    },
+    {
+      "raw": "results/dsre-evidence-aware/20261118-source-eligibility/physics/PegInsertionSide-v1/calibration/259/independent_reproduction_2.json.gz",
+      "spec": {
+        "task": "PegInsertionSide-v1",
+        "phase": "calibration",
+        "index": 259,
+        "seed": 180937078,
+        "offset": -0.003,
+        "observation_protocol": "Peg-observation-v2"
+      },
+      "native_error": "UPSTREAM_SCREW_PLANNING_FAILED",
+      "controls": 0,
+      "checkpoint": false,
+      "outcome": null,
+      "sha256": "47d52d2ce335e7c378ae165d4a85c6508a29bf524624f424606914d5fcffba3a"
+    }
+  ],
+  "native_source_fingerprints": 27,
+  "later_nonzero_prefix_guard": {
+    "epoch": 1794993539.188002,
+    "spec": {
+      "task": "PegInsertionSide-v1",
+      "phase": "calibration",
+      "index": 364,
+      "seed": 85558356,
+      "offset": -0.006,
+      "observation_protocol": "Peg-observation-v2"
+    },
+    "stage": "screen",
+    "reason": "Unqualified prefix failure; no automatic exclusion",
+    "status": "HARD_QUALIFICATION_FAILURE"
+  },
+  "old_insertion": {
+    "discovery": 128,
+    "calibration_outcomes": 0,
+    "test_decisions": 0,
+    "registered_calibration": 1024,
+    "registered_test": 256,
+    "status": "RETIRED_SOURCE_BLOCKED; no restart authorized"
+  },
+  "new_insertion_pilot": {
+    "registered": 48,
+    "qualified": 48,
+    "four_cells": {
+      "00": 22,
+      "01": 25,
+      "11": 1
+    },
+    "missing_endpoints": 0,
+    "continue_only_diversity": 0,
+    "conditional_confirmation_completed": 0,
+    "conditional_reserved": 96,
+    "extended": false
+  },
+  "input_sha256": {
+    "results/dsre-evidence-aware/20261117-prospective/raw_evidence_seal.json": "194f28adbc90bf21282f6209d9aa30a9aa9f6f8251b197f2b0b1837f3ca8e5fb",
+    "results/dsre-evidence-aware/20261118-final-science/raw_evidence_seal.json": "fbe94a2972359a53a1a1de83e7f8e4b6f1c43807fc05681537ab563721181a46",
+    "results/dsre-evidence-aware/20261118-source-eligibility/independent_source_reproductions.json": "b330026ab9dcb3c54c66ef98b41f3a37b61351a306a1d59622f3f62a1d8d30cf",
+    "results/dsre-evidence-aware/20261118-source-eligibility/physics/PegInsertionSide-v1/calibration/259/independent_reproduction_1.json.gz": "2328a7d59331317fca5de20a9d009ee6d75fef1ed8b203e34160e1ca80964cc2",
+    "results/dsre-evidence-aware/20261118-source-eligibility/physics/PegInsertionSide-v1/calibration/259/independent_reproduction_2.json.gz": "47d52d2ce335e7c378ae165d4a85c6508a29bf524624f424606914d5fcffba3a",
+    "results/dsre-evidence-aware/20261118-source-eligibility/prospective/PegInsertionSide-v1/SOURCE_GUARD_FAILURE.json": "1e871911364c3d4f4aa5b2bcc867a5fbfbf73577d6cf8da3dfdc6b9721bce730",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/44.json": "765c3246ac1d5e3e4cd0cea51caa7414dc81b893ed09e67f50f9080952c553a6",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/35.json": "efabeb71962d4fa3613f28a9b9d58d23341dc784be8ab67d58dde4801914fdec",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/5.json": "47d57ee579fb5279227d433ec12af9318ffc666f57ad71bfba56d7ef6212cd84",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/39.json": "af068ec6cad518b9dc65de3d8dd2248722d296871765375297ab96d0bd93f460",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/26.json": "6647c70f3c62d5d484d5f05b036660bcd5e7c7b63183eab5befb262b3eb24622",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/31.json": "b013175c9f9cb3280ca2b0b27b9931f734c45c7c4594fc275b672cf130cdc56e",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/15.json": "d0038001fba6b80b73826dc788ab89e920d40ac435c20d8dd90c7e72b2aabdbf",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/33.json": "8ced4ee43077439af5b7c83d4e730fa0ddab26c62ae9a81b5d45f78792cc4c58",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/23.json": "3a085121c1b29ac2bdff3fb66174b4d72f1e8169fef1e01dc6a78eb16baf9267",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/6.json": "0ab6f9dd181b35adcf5668cb3cff6eab9c0a7a8741a2fce274b306c263055749",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/19.json": "2931d1fc5a8f2d21b2d05db557250ecb624eda8bbd8acc9d177b9e5a20404e66",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/38.json": "902c5dc8813ee5a422dd241fa6c9d959c642a257898f70dc355197984b2634fa",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/4.json": "b1944a5d4977c0fcb73c76eb1573738c2bfa6068a8070eca050bed5c39775c1b",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/12.json": "88e193bf7baf034c065a1d2c2c9fc7d0a93d314295ddceb45bef4f1e36934358",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/13.json": "9d5919b562c0a9f963480ef107e408a7a3f6e8eb6edda65bd0b9ca54249304dd",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/18.json": "70cdfe4d2653349ca2f57e1bde4b47b846ff9ec9c2153950f0e59a5be6146f7e",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/8.json": "99b58f8cc571588d4e348f4898dd6b1ec3a01b92500428f3a14c6cff942da16f",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/17.json": "ef9277a0193aa86be0782c4d56d51d4971d3efb2d7feff36bad4b4dc4057f068",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/30.json": "fe2c1eb71a0a8d56ecb823f6f6b1e5098194ab37cf7efbce2b2e538e006cda65",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/34.json": "b37194d1915ac8f9cd9f145581afc13557f8cbd0d584ab6fac25d74085d2dc9f",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/7.json": "50cf0fc78f17190225af4d585f74169a962647b42ba47614aa843dd76b83fcfb",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/25.json": "ba177f39a8af11127629b11e5aa87e97eaad982690ed867d270c6f1055cd2b0d",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/3.json": "efbb1ae32f9b8e2f65d2fd3f0e909aff73bf1f2275edf47963cfc6fb358e8356",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/2.json": "44f2bf854e8244350f77f6d1dee9ce3bc775c830d19c117309224608b2438304",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/27.json": "0e785e9f1028370a53004f90b3dcf111f6ea25b07507f81609f2c028817e5e03",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/28.json": "65e12960f199193391e661a66d2a07f8bebdddb4a53acc1bbd84dec4d72ef43d",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/32.json": "924aa581bb00b7b686e5f20996805af95329af09b6e9aaad462ab3b6d40b3628",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/40.json": "8eecbafe9dc281537a1a1c933f12e45eece0b743edc7a451a01d9d304c29014d",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/9.json": "5cd13ba2da8b4e9eaaad365914066c76be8406bdb20dd2970df4ded79b7b3d95",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/21.json": "7bdf908260d00f28f980ba7c5b943205743f2785b5aff3da948ec659338aede3",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/45.json": "ac79a6c302ded1abe8a128413ed92756239fec62ad7de833e906f5aa64ebf3d8",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/42.json": "9b6ad43448d4e541f42feb3ea121edc45c54fba6454509ee2e1d72696593ae2b",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/47.json": "63726c6380831ffd7df3ba2b123a1c4168ca63816011f53d9171408f1b52cddc",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/14.json": "0c44be20276a3eea6ec8a98d5b78325fb280671632e23a114aa8a1497f7024cd",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/36.json": "4637e2684120a39aacd5adaf9a051c537404e27d5ab8d6b6b34d946f522d8355",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/11.json": "073c96b4e070544cf4108f80c71f2b56cbc8df1214141b64505ec48e1c9ac549",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/37.json": "8bb633448940f27430690e586c1570b5f00619fb0e3061753a6d055249c33ed4",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/0.json": "b3184ffabbf8e5330f093575107061b8449dc9f73a918421ba00969aab9f4e7d",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/20.json": "862274c18a6442cb0207f2243a0a840c3d68f0f3c159863692d08a548a0010fe",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/10.json": "22060ea8775ceb6e561bd97dbae3e954847936a9be64f465bad6a9d77619fe9b",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/16.json": "72061a1d5ef2cf6961b9a79c2ff86708d3f6fa836d641f3e39bdce1201a41663",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/29.json": "02952d96e9569ae13aef92793fd3456484c14739158d18013dc1d2d73b4fd4db",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/22.json": "6addd04cb64e8e369c7ffb6a86178ab99eba221fa223717378167a2d64f9c1f2",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/1.json": "491762ead03c6cdcc91148e086486228747326466bee1fa411448ef05aaadef3",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/43.json": "60573eb1fda3221368b9550eeb6c0638403bfa70b866a53542bc7d2e77ccec5d",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/46.json": "daff9e344844437ead4c08b51f0cbb5902000fe06e1917c91bb807411a7a6fa2",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/24.json": "17060f34704d726203c07d5ce7a910dfd26b0955cc16dade66f3339058757b06",
+    "results/dsre-evidence-aware/20261118-final-science/records/insertion_pilot/41.json": "f6bf53f80202d2857c53c5e73022eb2407d51390bcce75fa64538a925dd0016c",
+    "results/dsre-evidence-aware/20261118-final-science/insertion_extension_decision.json": "668f225996f657b21f0cd5890c710bed0414cff3b6782fb8dc877a6429ce2df3"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "branch": "research/dsre-rss2027-stage1-story-20261118",
+  "commit": "036a5849763453a46523624542f8281e5436de4f",
+  "tree": "d6a40e29b3c205b8c9b98f90b56bce74be275a26",
+  "blobs": [
+    {
+      "path": "docs/DSRE_RSS2027_STAGE1_MANUSCRIPT_EXECUTION_CODEX_20261118.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03222854df282ba60f3781d92defa5cbec3d7348",
+      "size": 14568,
+      "url": "https://api.github.com/repos/imadken/IEEE-RAL/git/blobs/03222854df282ba60f3781d92defa5cbec3d7348"
+    },
+    {
+      "path": "docs/DSRE_RSS2027_STAGE1_SCIENTIFIC_STORY_LOCK_20261118.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07a2c098e7dd621b2fcf19c581f6c350beadd2b4",
+      "size": 21533,
+      "url": "https://api.github.com/repos/imadken/IEEE-RAL/git/blobs/07a2c098e7dd621b2fcf19c581f6c350beadd2b4"
+    }
+  ],
+  "source": "GitHub connected tool; pinned Git tree",
+  "local_base": "d917a69d47f3102123030eaf565f4623dad86525"
+}

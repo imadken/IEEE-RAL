@@ -1,0 +1,1 @@
+{"audit": "PickCube-v1", "counts": {"discovery": 128, "calibration": 1024, "test": 256, "test_pairs": 256, "calibration_screens_with_checkpoint": 1024, "acquisition_pairs": 330, "whitelisted_data_reads": 32191, "independent_metric_counts": 1458, "independent_metric_intervals": 972, "scored_models": 21}, "CP_bands": 240, "failures": []}

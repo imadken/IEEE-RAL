@@ -1,0 +1,392 @@
+{
+  "schema": "RPD_ASSEMBLY_NOMINAL_SOURCE_V1",
+  "candidates": [
+    {
+      "candidate_id": "RPD-assembly-v1/qual/0",
+      "phase": "qual",
+      "index": 0,
+      "native_geometry_seed": 4154722997,
+      "fault_seed_sha256": "0eb81297b332ab9c7ed0e81d0623323e13914cb2fcdacc202a7835322b148d96"
+    },
+    {
+      "candidate_id": "RPD-assembly-v1/qual/1",
+      "phase": "qual",
+      "index": 1,
+      "native_geometry_seed": 3854457797,
+      "fault_seed_sha256": "b934f29b56739b73d9a0c55083cebb28aba82510f739cbfbdeed0550d08d3137"
+    },
+    {
+      "candidate_id": "RPD-assembly-v1/qual/2",
+      "phase": "qual",
+      "index": 2,
+      "native_geometry_seed": 592036884,
+      "fault_seed_sha256": "7159ebbccfc1633c43a63255bad70222effdbe7a44e3e1d5711f7b7ab1c1c326"
+    },
+    {
+      "candidate_id": "RPD-assembly-v1/qual/3",
+      "phase": "qual",
+      "index": 3,
+      "native_geometry_seed": 3166486979,
+      "fault_seed_sha256": "f3aeabf3e00107045b58be689bdfeeed8b0b2a531cf208cca06ef0a972ae33f4"
+    },
+    {
+      "candidate_id": "RPD-assembly-v1/qual/4",
+      "phase": "qual",
+      "index": 4,
+      "native_geometry_seed": 3025267022,
+      "fault_seed_sha256": "3cece9554f5bee1e3c78a1c50b45ecbeef3963d448668f932f9c6e81a73b34fc"
+    },
+    {
+      "candidate_id": "RPD-assembly-v1/qual/5",
+      "phase": "qual",
+      "index": 5,
+      "native_geometry_seed": 3287287879,
+      "fault_seed_sha256": "c4dbe75ae231320612373d5cf3aa8729872e09eb5462cdcb8b09c4098d5912ad"
+    },
+    {
+      "candidate_id": "RPD-assembly-v1/qual/6",
+      "phase": "qual",
+      "index": 6,
+      "native_geometry_seed": 3830235874,
+      "fault_seed_sha256": "778d05774ed3aa09cebc859f434f6c43870fb0ee7f66e529a06e0c22240a32fa"
+    },
+    {
+      "candidate_id": "RPD-assembly-v1/qual/7",
+      "phase": "qual",
+      "index": 7,
+      "native_geometry_seed": 2065283442,
+      "fault_seed_sha256": "bced7e1ce529939d26ddebd92029d88ec753a69f7b74dda62438ad922a334ba7"
+    },
+    {
+      "candidate_id": "RPD-assembly-v1/qual/8",
+      "phase": "qual",
+      "index": 8,
+      "native_geometry_seed": 425148959,
+      "fault_seed_sha256": "6bd5b868574d76b9a40dbbe1108103cc3f820f84d7a56d2938962b45ef326871"
+    },
+    {
+      "candidate_id": "RPD-assembly-v1/qual/9",
+      "phase": "qual",
+      "index": 9,
+      "native_geometry_seed": 4101500041,
+      "fault_seed_sha256": "56b6d10b9bccedca76e5d430dd819db168a5cdb63e5106bd494111f1c7c57f4a"
+    },
+    {
+      "candidate_id": "RPD-assembly-v1/qual/10",
+      "phase": "qual",
+      "index": 10,
+      "native_geometry_seed": 238173511,
+      "fault_seed_sha256": "632771cda6c9bc6e68937d624d1aae7ca1e409aa81b68d2491bb1abf84443ec6"
+    },
+    {
+      "candidate_id": "RPD-assembly-v1/qual/11",
+      "phase": "qual",
+      "index": 11,
+      "native_geometry_seed": 3635775129,
+      "fault_seed_sha256": "201b005c172d9085fb631ed95d72e8d2171077cf8a9d5fb82336e9d8921ecbcf"
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/0",
+      "phase": "exploratory",
+      "index": 0,
+      "native_geometry_seed": 1967227150,
+      "fault_seed_sha256": "3d0774e71b01d891cf7c68d574f919f8c5d6c85fb6fc37a77f5e5163924a8c43"
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/1",
+      "phase": "exploratory",
+      "index": 1,
+      "native_geometry_seed": 595298951,
+      "fault_seed_sha256": "7b72c84087efa63601ba2c81adb048af014f8bfd304d764d0a8e27d023825d79"
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/2",
+      "phase": "exploratory",
+      "index": 2,
+      "native_geometry_seed": 475173355,
+      "fault_seed_sha256": "9e4e4f9eb7f0ba5db204f4f12e27b353e42613b104c582a3c087500b41caa837"
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/3",
+      "phase": "exploratory",
+      "index": 3,
+      "native_geometry_seed": 2854127960,
+      "fault_seed_sha256": "29b48e20eead431bea4b4da75e7118153adfeb6bfe66fe3abb11e143a4a0e441"
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/4",
+      "phase": "exploratory",
+      "index": 4,
+      "native_geometry_seed": 898137369,
+      "fault_seed_sha256": "71db8d0c34f7228f330020c976faaa42209da5dbe704a6215ad0d0afc93d3eb5"
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/5",
+      "phase": "exploratory",
+      "index": 5,
+      "native_geometry_seed": 3836344850,
+      "fault_seed_sha256": "c4fcd99152482d9234504d1e952b0a1f8d82ddce87fd92fb60234bf66c1b342a"
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/6",
+      "phase": "exploratory",
+      "index": 6,
+      "native_geometry_seed": 154355143,
+      "fault_seed_sha256": "6b8c6a8f91849a968db5c6ca2ef6d58c1c4fb7baca4cbb251abde71d3227a703"
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/7",
+      "phase": "exploratory",
+      "index": 7,
+      "native_geometry_seed": 1887697762,
+      "fault_seed_sha256": "0ca2e0ff5f1c280f35c6414c2fccf5fad53a8080cf916a367207ec505aff6bfe"
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/8",
+      "phase": "exploratory",
+      "index": 8,
+      "native_geometry_seed": 2297790018,
+      "fault_seed_sha256": "519be795955c0fd80f2ae123e46082c4e3808012e49f7f3d397c890eeb637a71"
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/9",
+      "phase": "exploratory",
+      "index": 9,
+      "native_geometry_seed": 3328681439,
+      "fault_seed_sha256": "c022ec342988ec29e312182fcb33908b7fa478769786af65a2c2c7dba279e9dd"
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/10",
+      "phase": "exploratory",
+      "index": 10,
+      "native_geometry_seed": 328146368,
+      "fault_seed_sha256": "f2291f01d87246cca12c90b0575b0db0aa3d94a23bc240bb0b90000514c3d618"
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/11",
+      "phase": "exploratory",
+      "index": 11,
+      "native_geometry_seed": 1019109887,
+      "fault_seed_sha256": "7b393ebad2bdb4e6ba49ece2dbdb4940b7bda6041e4efd50864b62a6c963c236"
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/12",
+      "phase": "exploratory",
+      "index": 12,
+      "native_geometry_seed": 3683336330,
+      "fault_seed_sha256": "f76691e29a8afa162ecc5f6e1eabe1235933cdc65eb8387b5bcdc69a27ec6d84"
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/13",
+      "phase": "exploratory",
+      "index": 13,
+      "native_geometry_seed": 1810710903,
+      "fault_seed_sha256": "17e30f29ccf8a0393f0baa86114e6777ab03be93a21b5eea1815c401eb8bad55"
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/14",
+      "phase": "exploratory",
+      "index": 14,
+      "native_geometry_seed": 2468763961,
+      "fault_seed_sha256": "5bbdd4bdda08c94317157ba27c0ca2b67940de3745fd4dd01966e03eae6608ad"
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/15",
+      "phase": "exploratory",
+      "index": 15,
+      "native_geometry_seed": 2675856536,
+      "fault_seed_sha256": "866d6c871c31b5ba68d96dc8b57e4f7092a1d6f795ecaa32f53c1cc7e890f45d"
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/16",
+      "phase": "exploratory",
+      "index": 16,
+      "native_geometry_seed": 3420597705,
+      "fault_seed_sha256": "f8273d15f66ecaf8ec8cad09646d9cd814f7574eb10647d894535fc1323ec4f4"
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/17",
+      "phase": "exploratory",
+      "index": 17,
+      "native_geometry_seed": 986936650,
+      "fault_seed_sha256": "7ccc8d0d6a3a6a4bef84b0afec1430f56276b64b92ad9f9d029e36b8fdbe7f5b"
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/18",
+      "phase": "exploratory",
+      "index": 18,
+      "native_geometry_seed": 2210982265,
+      "fault_seed_sha256": "73ff8fe340314bb21cc1eca8e6f727d1ab006a0e1f9dc2029306eb702df3f2f4"
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/19",
+      "phase": "exploratory",
+      "index": 19,
+      "native_geometry_seed": 3101705871,
+      "fault_seed_sha256": "846e660c444a60590691b95d8dd56887ff8db12069e5d01386b23d52c294e41e"
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/20",
+      "phase": "exploratory",
+      "index": 20,
+      "native_geometry_seed": 1942233826,
+      "fault_seed_sha256": "aa81ebdedf7a136cff65b6b481da8d343ff9ce123f84eb6018fbccbd0debbffb"
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/21",
+      "phase": "exploratory",
+      "index": 21,
+      "native_geometry_seed": 2672902546,
+      "fault_seed_sha256": "dc7896e46b6dc8f9978189da79467500e3f21b1f71fc3440f3bd851764a65a0e"
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/22",
+      "phase": "exploratory",
+      "index": 22,
+      "native_geometry_seed": 572208046,
+      "fault_seed_sha256": "829d66f814f6caac79b04ffb2b3973be3e021346d6771579bbe962add2b7dacf"
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/23",
+      "phase": "exploratory",
+      "index": 23,
+      "native_geometry_seed": 155565762,
+      "fault_seed_sha256": "72d2deedbbe8ce8f85d4898c6e4e0e4ee9dd955fbebc5e68a6b3f1887da7df23"
+    }
+  ],
+  "source_sha256": {
+    ".venv/lib/python3.12/site-packages/mani_skill/envs/tasks/tabletop/peg_insertion_side.py": "79761d7a7b17ebdbd974c58f7427abcd3a50ec115f0340f6ed5d282a0d48fc6e",
+    ".venv/lib/python3.12/site-packages/mani_skill/agents/robots/panda/panda.py": "2a98a2133b49e5a94a83d05019c0ab833ad6767f85ff1bf66265cd9247cb0fda",
+    ".venv/lib/python3.12/site-packages/mani_skill/agents/controllers/pd_ee_pose.py": "318110fe18cb879eae00ca106f0117eed94679b79ee00ee226bacd38e4755f97",
+    ".venv/lib/python3.12/site-packages/mani_skill/agents/controllers/utils/kinematics.py": "9e83b6f5bf63c4f54a88a85bd4ba1a4dcf728bd88c154df92b9d9dfe3df14408",
+    ".venv/lib/python3.12/site-packages/mani_skill/utils/structs/types.py": "86451c45e986ce7f789e01edecaa9ba6c3f89a08c3960ddb212ca0cf4499e156",
+    ".venv/lib/python3.12/site-packages/mani_skill/envs/scene.py": "2e875f4a053fb5687bee3b7858716be3196bd8d6cae35fbf9ad110b031156fed",
+    ".venv/lib/python3.12/site-packages/mani_skill/envs/sapien_env.py": "459196c275764eaf53ccba8e154e3207036399e54c8bdd45f9e7d0919970464b",
+    ".venv/lib/python3.12/site-packages/mani_skill/utils/registration.py": "5e553c27ed82de4f8807f42819ac4c4cacc4a4a4ffbee23c3d6b91282d146060",
+    ".venv/lib/python3.12/site-packages/mani_skill/utils/structs/base.py": "a10eea2dcc544631dacd8add6b4ce241b5210a24227d15b90fc757ef25261593",
+    ".venv/lib/python3.12/site-packages/mani_skill/utils/structs/actor.py": "dacf82803b63928a4317f400adfb7766cb7863d914058acbe226c47c90f28f24",
+    ".venv/lib/python3.12/site-packages/mani_skill/utils/structs/articulation.py": "fe3fa5782d32f2c1a3674e3b897362c8cc21eea899a583a0a63352cb852743a0",
+    ".venv/lib/python3.12/site-packages/mani_skill/agents/controllers/pd_joint_pos.py": "ce05feb05c4370ec2be58c60465082dde15fd97e6398a187a648a5e932a4d58e",
+    "scripts/rpd_assembly_contract.py": "aa360d1734bf2f0cb30feae512ed6a09556f8f031a6e8674390b9573cd5ccfd5",
+    "scripts/rpd_assembly_worker.py": "c5b39e4489e9d03523988f4bcb043495f6598342236b09f7e8ba77dda570b0c0",
+    "scripts/rpd_assembly_run.py": "6c31d3503bd2366d3ba9f82f7591edbc56c52877d92eda4ba60d2425de3e9a1e",
+    "scripts/rpd_assembly_audit.py": "176f4099eace3180f86e0187afe8e3bd03fb4853f456d1657961739925ee8d1d",
+    "tests/test_rpd_assembly.py": "a2ca5d85d24e91365148ec2e8e8f35cb7a699e5032115437c4baaef37c57bf29",
+    "papers/rss2027_rpd_stage1/reviews/PROPOSED_PROTOCOL_AND_NUMERICS.json": "e1f363e6591879726fbfe967fd63466f4856ff06dea114283efb00d1811df9da",
+    "papers/rss2027_rpd_stage1/reviews/STAGE2_VALIDATION_SPEC.md": "b3056ad6c2e6bde7202510b727f6fa17ef9a07f7b1f8a663efc97e222244f12c",
+    "CODEX_ASSEMBLY_PRELIMINARY_PROTOCOL.md": "65a0000c2696256e9ab2b8e40e933030f62912a2709541e124a40ba8ba884e26",
+    "RPD_RSS2027_STAGE1_V21_EDITORIAL.pdf": "3d9f8e1a3fa12ec063bcdff31db00760fccddf5744d6e4288a74c31490791cb1",
+    "/home/imad/Desktop/IEEE-RAL/.venv/bin/python3": "f2654f53c16db79297ad7656fa7a56ef64fa4bc26af22c5874c358c7651f72d5",
+    ".venv/lib/python3.12/site-packages/sapien/pysapien.cpython-312-x86_64-linux-gnu.so": "0f24a1b131f08ab8e498f341763e30de91a90cfab0908c615c0e8e671b3f7d94",
+    ".venv/lib/python3.12/site-packages/sapien/pysapien_pinocchio.cpython-312-x86_64-linux-gnu.so": "667b786e39e4d5cb70dc572ee00212f54888a2e78f0c99a862dc06ed280fe06c",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/panda_v3.srdf": "914d50f60103ca85d90c940b0006f42e993b537b0cc90d04f2bcae93d988c308",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/panda_bucket.urdf": "358d5fce6109b120a133ea64763d73d4d6c48e74c99ede04016cf1fc673447c5",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/panda_stick.srdf": "107a7cde963030a1d7b04162504d4a3dd45742f8e70e65e720fa4ffa82d2c986",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/panda_stick.urdf": "b29dc3ced2df06792af4cce993ae6656512415c1264a6613c0ee6f56cee32e17",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/mobile_panda_dual_arm.urdf": "2c8073bc17ce0bb71a9a021b3405973755aa00dfa6b55f5e5e8c1e372e54bfae",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/panda_bucket.srdf": "a79c5c555d9d24d3445c8fd6297617e7870e161e389787d5fa19ffbdd7389114",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/panda_v3.urdf": "d040277352476639950e2ddce1dff8a1c0e95df470e5e9ed186cd01c468fa412",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/panda_pinch.urdf": "4dc8a11b2c01ec69a4f4819ba77ceadaa1c7dd824aac9b9504e90a2e2e19b162",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/panda_pinch.srdf": "e1ab0d4f59819dc47b5de702080867cb4b99c5076449abd049d417649334733c",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/panda_v2.urdf": "524c6986dbbabe244e05801f262862205e880834d01459b06ee273016d0579ba",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/mobile_panda_single_arm.urdf": "2d79ac57ce7e0af3b6947acdeda97233f785168578c78708a428e2c1bc8554e1",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/panda_v2.srdf": "00d8beb0b638928ab5ce272aa5daf7e80d56b556555c2aa18d9c677ef826e6e4",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/panda_v2_gripper.urdf": "1bf0e8446c4c18b40bc159328cd723e23df9abb3c1b97752c9f6f0dfb37c59fa",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/realsense2_description/d415-pattern-sq.png": "7a1327efee82b5c66dcfa79b790e62094a9a42e151aec7158be83b9cdd84eb6d",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/realsense2_description/CHANGELOG.rst": "27bc072137e1df02a4d0ef706018e3197b23a05587e931440646e3cf9706769f",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/realsense2_description/CMakeLists.txt": "3e8a7a7e2cf59d848c91e2e4c6adcfc9996901850fe19169dc75c301b7dc32df",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/realsense2_description/package.xml": "a85a198dba9be51b236fca33c091ded088272d1f752c170e267c57478762d46b",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/sciurus17_description/meshes/visual/Base.stl": "07694f55aa5a106e6047639abef4b0308d23bb4a0c6a8c2fc10f42c50275a0da",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/sciurus17_description/meshes/visual/Body.stl": "bb369863d728bd654a4c769f95ab401c75a086cfb345ee760e71a1c9951efbd2",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/sciurus17_description/meshes/collision/Base.stl": "f8366b071116102ef4521db7f41e34701cc1b414367a68324c4943a683d8f88b",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/sciurus17_description/meshes/collision/Body.stl": "06b65c6ba3d06a6788253837268f33c10a83c0f48179a6a10b20b383983aac7e",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/realsense2_description/meshes/plug_collision.stl": "fc210c929bba2c9cf3f4ec074d4e6a38549904e9a1eddee9661f34ef7c610f5f",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/realsense2_description/meshes/plug.stl": "91a0bc6ec83fa24b5dcd4de0d1c0ed78032af2e7ed233b4b232bdbf906fea744",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/realsense2_description/meshes/d415.stl": "5ffbe0d4b4ffee3133b4b55b1fa68c053e46d186f4a4d2b4c0174a89f423481c",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/realsense2_description/meshes/d435.dae": "db6a3e27fd4dfe35d10f528c081d6202817c2b70e21bcfab8bac64f576c859f7",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/visual/hand.glb": "3c2de5514714f7f8232a51b008eadb2eb421d290bfdc7341e5a12887cb70b661",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/visual/link5.glb": "80d620e7d92b38a90a9ff2536e2d278cf2d0fa665f6bf4982e7069589b5cbb02",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/visual/link4.glb": "3e301a20f05f81d007741c2f8e199452a705ec4a489b729ff389ef14769c2283",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/visual/finger.glb": "0a71d057c0afb3e8587129539ec4161b726cf55dcb8935c4e6094f2b13558ed3",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/visual/link3.glb": "f904d2d91255086a5706ca9c039cac62de4b7877b4a91b8ef387f461b9fa915b",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/visual/link1.glb": "8376fac9a80cd04767a3749a723a68809c5b85fe34110f056e83b9c984c1f052",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/visual/link2.glb": "bbab9909c2b0572d256cd60e6a9c1b63ca9b55047ac3da7124a99b8b1fe6b8fc",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/visual/link7.glb": "a207703b9d6d28c186949619e5c424072ee8331b8d51d6256ace975816a94a15",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/visual/link0.glb": "672626c2bbf38cd2ea28837e5dafdc2f264959761200177e9e256d532b9be4f9",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/visual/link6.glb": "20f04024218fdafdf41926143e9038b970e27f0c84f574d34c2dd05df6a7a74f",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/collision/link1.stl.convex.stl": "89ce9a7f7148c7382be642b7de6f33c6c6aad5cf6604702e5c75397da8495802",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/collision/link7.stl.convex.stl": "3e424f960d2350103193333d993a56c126dfdf94520874a586ed79eba089b827",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/collision/link4.stl": "0180ebb5772ec9840cb049750cffb29a9ddc90311752a16ea34757782ef9e48d",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/collision/hand.stl.convex.stl": "5897611d07ec5bd71b712d5dfb4f15e44e717da01697c5cd7ce9c12b5da6aca0",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/collision/link2.stl": "370f7605a0fae3529db169ded50f52f171024aa792d4d773bc84197301f6a039",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/collision/finger.stl": "2d07a740392f3b9b0816f65d64fff9927d3d57c897870fc4b6ff9c56fff3a0c8",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/collision/link6.stl.convex.stl": "eca417cea6309a63934243101eb09baa43f0a1614f304dd7ea62b35d4122d4b1",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/collision/link0.stl": "dfc6d94330de8ddb005b311bfdba9f3b8e1aa7c256b71592ee7ff32cb9a9a5aa",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/collision/link4.stl.convex.stl": "74d94c2df67514e0cb4abbe488f3c86d92957756743a0e643922e4fda778e4a1",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/collision/link3.stl": "0a8d638b9349c6c0eefc4e888636ac4838c4b27170f18a51699321118af709c1",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/collision/link2.stl.convex.stl": "898af76442455ecb5fcd844ae25ee8cd73a826f6a48419c35b0f05606e5aa288",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/collision/link5.stl.convex.stl": "221f69a742f380e11510e830bbd17bd737520e3384783f73da57589edf1a9553",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/collision/link7.stl": "92ac6afcf7574c034d3170d8a68e95ac9048ab9d0dd5bbd8311b86e551b9ab1c",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/collision/link5.stl": "dd17e688c7870e722283525879643d53a74c0024d328b0e14b034b54c8b6c31a",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/collision/link6.stl": "20b768e99a0e0440b5754dcca108016434e57937cc356acd9c352ccd3cb27f77",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/collision/link0.stl.convex.stl": "00e668cdb1695e762fd5fcdc9aa72892153ce2cd281dd8e39fb4ba7c75a217c8",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/collision/hand.stl": "94493e94f30fe940f2c8ca2f155c3bbe67bbff406d3edf5e261670d2f0f6e2ed",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/collision/link3.stl.convex.stl": "6dd3a40e8f4e3b90c472aa86ae6e6c760bcce41887f5eac880d0ee0c8f820f01",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/franka_description/meshes/collision/link1.stl": "e41a39a94108fcf56aacff603fc91ec80541f4c1af17b51a0de5617f5566e6d2"
+  },
+  "versions": {
+    "mani-skill": "3.0.1",
+    "sapien": "3.0.3",
+    "numpy": "1.26.4",
+    "torch": "2.5.1+cpu",
+    "scipy": "1.17.1",
+    "pydantic": "2.14.3"
+  },
+  "method": "NOMINAL_SOURCE_EXPLORATORY_NOT_LEARNED_RPD",
+  "physics_qualification_cap_seconds": 10800,
+  "episode_timeout_seconds": 60,
+  "exploratory_maximum_source_episodes": 168,
+  "exploratory_cap_seconds": 10080,
+  "total_artifact_limit_bytes": 2147483648,
+  "source_choices": {
+    "physics_hz": 100,
+    "control_hz": 20,
+    "wrapper_ticks": 200,
+    "prefix_ticks": 30,
+    "remaining_ticks": 80,
+    "probe_ticks": 10,
+    "root_grasp": {
+      "min_force_N": 0.5,
+      "max_angle_deg": 85
+    },
+    "IK": {
+      "iterations": 100,
+      "seed_arm": [
+        0,
+        0.39269908169872414,
+        0,
+        -1.9634954084936207,
+        0,
+        2.356194490192345,
+        -0.7853981633974483
+      ]
+    },
+    "root_contact_samples": "six inclusive100Hz samples spanning0.05seconds; all>=0.5N",
+    "goal_dwell_samples": 26,
+    "two_policy_parameters": "same fixed nominal E for both;no learning from qualification/exploratory outcomes",
+    "replay": "fresh process and fixed-prefix regeneration only; no get/set-state restoration",
+    "root_parity": {
+      "translation_m": 1e-05,
+      "rotation_rad": 0.0001,
+      "other_numeric_abs": 1e-05,
+      "clock_and_flags": "exact"
+    },
+    "monitors": "native after_simulation_step hook, read-only100Hz; no state/controller mutation",
+    "one_parent": "all seven/six branches and repeats cluster within original parent",
+    "initialization_controller_reset": "once before any physical prefix step; never at root or between diagnostic and recovery",
+    "C_does_not_short_circuit_physics": true,
+    "terminal_goal": "stable mid-depth registered goal; native flag also logged; no relabeling",
+    "exploratory_approval": "user requests execution if qualification passes"
+  },
+  "confirmation_execution_authorized": false
+}

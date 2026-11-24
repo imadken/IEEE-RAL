@@ -1,0 +1,54 @@
+{
+  "DOI": "10.1109/lra.2026.3719194",
+  "title": [
+    "When Identifiability Is Not Enough: Terminal Controllability in Task-Compatible Active Calibration"
+  ],
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0009-0002-6318-2617",
+      "authenticated-orcid": false,
+      "given": "Jun",
+      "family": "Kobayashi",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Kyushu Institute of Technology",
+          "place": [
+            "Iizuka, Japan"
+          ]
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "container-title": [
+    "IEEE Robotics and Automation Letters"
+  ],
+  "volume": "11",
+  "issue": "10",
+  "page": "11039-11045",
+  "published": {
+    "date-parts": [
+      [
+        2026,
+        10
+      ]
+    ]
+  },
+  "type": "journal-article",
+  "URL": "https://doi.org/10.1109/lra.2026.3719194",
+  "link": [
+    {
+      "URL": "http://xplorestaging.ieee.org/ielx8/7083369/11656882/11631856.pdf?arnumber=11631856",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "source": "https://api.crossref.org/works/10.1109/LRA.2026.3719194"
+}

@@ -1,0 +1,31 @@
+{
+  "pages": 6,
+  "content_pages": 5,
+  "reference_pages": 1,
+  "paper_sha256": "dcfb6ecf14e02f097131f4f44b515af87a32c951dc9e86f0f1e56e829bf024e7",
+  "text_sha256": "f990553f8e8e8c99ab4101f21cf48a5e5cc58103bdec424fcc32d6c0ff347960",
+  "fonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nIHAIZV+NimbusRomNo9L-Regu            Type 1C           Custom           yes yes yes      4  0\nBZIVMZ+NimbusRomNo9L-MediItal        Type 1C           Custom           yes yes yes      5  0\nIXFAWU+NimbusRomNo9L-Medi            Type 1C           Custom           yes yes yes      6  0\nTQTHRL+NimbusRomNo9L-ReguItal        Type 1C           Custom           yes yes yes      7  0\nYEUUOC+CMMI10                        Type 1C           Builtin          yes yes yes     25  0\nAKHCZK+CMSY10                        Type 1C           Builtin          yes yes yes     26  0\nVDVGTR+CMR10                         Type 1C           Builtin          yes yes yes     27  0\nCAFSZL+CMR7                          Type 1C           Builtin          yes yes yes     28  0\nDDIEWW+CMMI7                         Type 1C           Builtin          yes yes yes     29  0\nFKPJSN+CMEX10                        Type 1C           Builtin          yes yes no      30  0\nPVTTLK+CMSY7                         Type 1C           Builtin          yes yes yes     31  0\nJAGKKY+CMMI5                         Type 1C           Builtin          yes yes yes     32  0\nNOMARO+MSBM10                        Type 1C           Builtin          yes yes yes     33  0\nKPXLOM+CMSY5                         Type 1C           Builtin          yes yes yes     34  0\nUTACNV+CMR5                          Type 1C           Builtin          yes yes yes     35  0\n",
+  "pdfinfo": "Custom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           6\nEncrypted:       no\nPage size:       612 x 792 pts (letter)\nPage rot:        0\nFile size:       163442 bytes\nOptimized:       no\nPDF version:     1.5\n",
+  "page_word_counts": [
+    593,
+    864,
+    1017,
+    972,
+    725,
+    379
+  ],
+  "page_numbers": false,
+  "unresolved_references": false,
+  "identifying_metadata_or_external_urls": false,
+  "critical_method_in_main_PDF": true,
+  "scope": "HISTORICAL_V21_ONLY_NOT_V44_OR_V45",
+  "binary_matches_preserved_pdf": true,
+  "originals": {
+    "original_v2_files": 9,
+    "template_hashes_passed": true,
+    "class_unmodified": true
+  },
+  "prior_seal": {
+    "prior_workspace_seal_verified_from_immutable_archive": true
+  }
+}

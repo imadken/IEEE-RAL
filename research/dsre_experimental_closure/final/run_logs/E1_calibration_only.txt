@@ -1,0 +1,2 @@
+PickCube-v1 {'harm_only': [0, 1], 'completion': [], 'useful': [0, 1]}
+PushCube-v1 {'harm_only': [0, 1], 'completion': [0, 1], 'useful': [0]}

@@ -1,0 +1,36 @@
+{
+  "decision": "SOURCE_NOT_QUALIFIED;NOMINAL_CATALOGUE_UNSUCCESSFUL;H1_H2_UNTESTED",
+  "complete_source_screens": 12,
+  "eligible": 7,
+  "known_ineligible": 5,
+  "current_unknown_parent_eligibility": 0,
+  "attempts": 77,
+  "complete_source_episodes": 75,
+  "preserved_failed_instrumentation_attempts": 2,
+  "unique_terminal_branches": 49,
+  "terminal_goal_successes": 0,
+  "whole_postroot_compliant_unique_branches": 0,
+  "parity_repeat_episodes": 14,
+  "paired_probe_hold_contrasts": 14,
+  "full_erasures": 0,
+  "option_losses": 0,
+  "option_creations": 0,
+  "current_complete_rows_independently_verified": 75,
+  "trace_frames_checked": 36450,
+  "controller_commands_checked": 7290,
+  "exploratory_attempted": 0,
+  "confirmation_attempted": 0,
+  "maintained_tests": {
+    "passed": 799,
+    "skipped": 6
+  },
+  "workspace_tests": {
+    "passed": 11
+  },
+  "new_dependencies": 0,
+  "public_pushes": 0,
+  "submissions": 0,
+  "full_report": "SCIENTIFIC_REPORT.md",
+  "source_registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+  "author_action": "Final Stage1 source-grounded revision and decision about including this negative technical pilot; no further physics authorized by this closure."
+}

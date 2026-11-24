@@ -1,0 +1,25 @@
+{
+  "provenance": "Direct write_stdin tool results for registered worker sessions85004(Pick) and44698(Push), both exit_code139. Written after observing process termination; no rerun.",
+  "tasks": {
+    "PickCube-v1": {
+      "session_id": 85004,
+      "exit_code": 139,
+      "shell_signal_interpretation": "SIGSEGV(11), no native backtrace or39th-row returned trace available",
+      "console_birth_epoch": 1795098733,
+      "exit_observed_no_later_than_epoch": 1795099204.917064,
+      "stage": "UNKNOWN_AFTER_ROW_STARTED_JOURNAL",
+      "restart_after_failure": false,
+      "source_failure_stop_rule_applied": true
+    },
+    "PushCube-v1": {
+      "session_id": 44698,
+      "exit_code": 139,
+      "shell_signal_interpretation": "SIGSEGV(11), no native backtrace or39th-row returned trace available",
+      "console_birth_epoch": 1795098766,
+      "exit_observed_no_later_than_epoch": 1795099204.917064,
+      "stage": "UNKNOWN_AFTER_ROW_STARTED_JOURNAL",
+      "restart_after_failure": false,
+      "source_failure_stop_rule_applied": true
+    }
+  }
+}

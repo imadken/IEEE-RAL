@@ -1,0 +1,11 @@
+{
+  "two_fresh_directories": true,
+  "source": "manuscript_working",
+  "builds": [
+    "/tmp/rpd-v45-final-clean-c",
+    "/tmp/rpd-v45-final-clean-d"
+  ],
+  "pdf_binary_identical": true,
+  "pdf_sha256": "180761c5a1dd8e7bd99bf33959ab595d79d68b13f749c72d8ed1158baaa56ddf",
+  "new_physics": 0
+}

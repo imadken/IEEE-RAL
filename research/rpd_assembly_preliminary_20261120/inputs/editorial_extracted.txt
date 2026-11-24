@@ -1,0 +1,330 @@
+When Does Physical Diagnosis Compromise Robot
+                  Recovery?
+                                       Author Names Omitted for Anonymous Review
+
+
+   Abstract—A diagnostic contact can reveal why a manipulation
+failed while destroying an otherwise available correction. How
+frequently does this happen beyond the effect of waiting, and
+does anticipating it improve recovery? We study post-diagnosis
+recoverability: which fixed feedback corrections still complete
+the task within a common deadline. Matched probe and equal-
+duration hold executions separate changes caused by contact
+from lost time, while controlled diagnostic-response tests measure
+information gained. We formulate two falsifiable hypotheses
+for contact-rich assembly. H1 predicts at least 10% constraint-
+compliant loss of the entire declared recovery repertoire under
+a frozen information-seeking policy, together with positive diag-
+nostic signal; a secondary test examines their co-occurrence. H2
+predicts at least five percentage points higher task completion
+for recoverability-aware diagnosis under matched constraints
+and observations. We provide exact finite-model analysis, a fully
+specified simulation protocol, and an interpretation of positive
+and null outcomes. The physical hypotheses remain prospective;
+the contribution is a recovery-specific measurement and decision
+methodology, not a new contingent-planning solver.
+
+                      I. I NTRODUCTION
+   A peg has stalled against a fixture. An axial preload or          Fig. 1. A probe changes both knowledge and the physical state for recovery.
+lateral dither might reveal the cause, but the same contact can      In these constructed worlds (not robot measurements), equal-duration fine
+                                                                     diagnosis identifies A/B/C but destroys C’s only successful correction; coarse
+change what a subsequent correction can accomplish. More             diagnosis reveals less yet retains a response-dependent correction. The assem-
+accurate diagnosis is of little help if the robot no longer          bly sketch is conceptual. Alternative branches are evaluated offline; only one
+has time, clearance, or a suitable corrective policy to finish.      is executed online.
+Waiting can remove opportunities too. An experiment must
+distinguish the physical effect of diagnosis from the effect of
+its duration.
+   We ask: under which post-failure contact conditions does
+informative diagnosis remove recovery opportunities beyond           of information-seeking and recoverability-aware decisions.
+elapsed time, and when does accounting for those opportuni-          The matched contrast identifies what a diagnostic interaction
+ties improve completion? Recovery is relative to a task, policy      changes beyond elapsed time. The policy comparison asks
+catalogue and remaining budget. Losing one correction need           whether that change actually matters for task completion.
+not erase the catalogue; staying within physical constraints         Together they turn a familiar possibility, that sensing can
+need not preserve a successful correction.                           disturb objects, into a measurable and falsifiable robotics
+   Interaction as sensing is established [1]. s-FEAST couples        question.
+active fault estimation and probabilistic state constraints [7];
+DA-GRD seeks grasp-relevant agreement while considering                 H1: Material physical tradeoff. A frozen information-
+contact-induced motion [11]. Reversibility-aware methods [3,         seeking probe policy causes full-repertoire erasure, beyond
+4] and task-compatible calibration’s distinction between identi-     equal-duration holding and on compliant paths, in at least
+fiability and downstream controllability [5] precede this work.      10% of eligible checkpoints. Its responses also yield positive
+Contingent and reach-avoid planning can represent terminal           population diagnostic signal relative to both the initial obser-
+task feasibility [8]. We do not propose a new POMDP solver           vation and holding; erasure-case signal is tested separately.
+or claim these methods cannot express our objective.                 H2: Decision consequence. A recoverability-aware selector
+   We develop a post-failure measurement and decision                improves task completion by at least five percentage points
+methodology with three linked elements: an operational set           relative to constrained information seeking, with no more than
+of successful remaining corrections, a matched physical              two points additional measured constraint violations. These are
+probe-versus-hold contrast, and a shared-model comparison            prespecified materiality thresholds, not observed effect sizes.
+    II. R ECOVERY S ETS AND C ONTINGENT D ECISIONS                   nor a target recentered at every measured pose. Define full-
+                                                                     repertoire erasure as
+   State s includes physical state, controller memory, com-
+pletion flag and clock; h is legitimate observation history                Lp = I[Kτ −d (Hd (s)) ̸= ∅ ∧ Kτ −d (Tp (s)) = ∅].      (5)
+and τ remaining time. Fix two executable feedback policies
+A = {a0 , a1 }. Let G(s, a, τ ) be binary completion within τ        Report full set differences too: losing a0 while a1 remains
+under the declared goal, deterministic in the reference model.       is not Lp . Also report the secondary compliant-recovery set
+Define                                                               KC = {a : G = 1, Ca = 1}. Primary K is goal-based:
+                                                                     an option can reach the goal while violating a recovery-path
+              Kτ (s) = {a ∈ A : G(s, a, τ ) = 1},                    constraint. With sampled probe/hold compliance Cp , CH ,
+                                                              (1)
+                       \
+         Commonτ (B) =    Kτ (s).                                            Jp = Lp Cp CH ,       qIG = EDeligible JπIG (h) .    (6)
+                             s∈B
+                                                                     The selector and predecision eligibility are frozen be-
+An empty set excludes only these policies within this budget.
+                                                                     fore confirmation. H1 uses a probe-only IG selector over
+Nonempty sets for every state in support B(h) do not imply a
+                                                                     preload/dither. If neither passes the modeled gate below, it
+common choice. Goal completion alone does not imply path
+                                                                     returns ⊥, with defined policy contributions J⊥ = D0⊥ =
+compliance.
+                                                                     DH⊥ = 0. These are not physical terminal labels. Report
+   Probe p takes dp , follows trajectory ξp (s), changes state to
+                                                                     abstention; qIG cannot exceed probe-execution frequency. H2’s
+Tp (s) and returns y = Op (s, Tp (s), ξp (s)). Its nominal support
+                                                                     deployment wrapper can choose direct recovery instead, so
+is
+                                                                     H1 is not its unconditional erasure rate. No destructive-best-
+   Bp,y = {Tp (s) : s ∈ B(h), Op (s, Tp (s), ξp (s)) = y}.    (2)    probe selection, safe-only post-treatment subset or erased-only
+                                                                     completion denominator is used.
+Recovery starts there with τ − dp ; no within-history reset             Matched replay identifies these contrasts only under com-
+occurs. For stochastic dynamics use a joint kernel Pp (ds′ , dy |    plete physical/controller replay, source parity and the declared
+s), including all permitted transitions in robust support. A         dynamics coupling. Independent pseudorandom parents and
+nominal guarantee does not transfer through physical model           within-source stationarity are assumptions, not consequences
+mismatch.                                                            of hash uniqueness. All branches remain one parent. Re-
+   For a complete deterministic model with admissible probe          peated noisy rollouts cluster; one failure cannot establish zero
+and recovery paths, one-probe robust recovery is feasible            stochastic success probability. Scope is repeatability-qualified
+exactly when                                                         CPU simulation, not hardware safety.
+
+         ∀ reachable y :     Commonτ −dp (Bp,y ) ̸= ∅.        (3)    B. H1: two properties and a co-occurrence diagnostic
+                                                                       Let Z be the evaluator-only generator mode below.
+The executed correction after y must work for every consistent
+                                                                     Discovery-frozen predictors f0 (Z | X), fp (Z | X, Yp ) and
+state, proving necessity; choosing a member of each intersec-
+                                                                     fH (Z | X, YH ) share a fitting budget. For the frozen selector
+tion proves sufficiency. This is ordinary contingent planning.
+                                                                     report
+An existing exact implementation and independent policy-tree
+oracle agree on 1,024 exhaustive small transition, response,         D0 = log fp (Z)−log f0 (Z),     DH = log fp (Z)−log fH (Z).
+recovery and path masks. This verifies nominal logic, not                                                                        (7)
+physical prediction.                                                 H1 requires a lower bound above .10 for qIG and positive
+   The prospective recoverability-preserving diagnosis (RPD)         lower bounds for both score means. These gains are nats
+selector uses the conventional one-probe value                       per parent, not automatically mutual information. Erasure and
+                                                                     signal could occur on disjoint subsets. Therefore also bound
+                                        b ′ , a, τ − dp ),
+         Vp (b, τ ) = Ey max Es′ |y,p,b G(s                   (4)
+                         a∈A
+                                                                     E[Jp D0 ] and E[Jp DH ] as prespecified secondary diagnostics
+                                                                     over all parents. Non-erasure rows receive zero weight, not
+comparing probing, direct recovery with full τ , and explicit        deletion. When qIG > 0, their signs equal the conditional score
+STOP. STOP ends the attempt and is scored by the completion          means on erasure cases. This checks average co-occurrence for
+flag actually measured then, not a fabricated missing rollout.       frozen predictors, not informativeness of every erased parent
+Goal achievement sets an absorbing task flag, not a physical         or a refitted subgroup.
+reset. Primary validation permits at most one probe.                    For three modes smooth f ← (1 − 3ϵ)f + ϵ, ϵ = .001. All
+                                                                     scores and weighted scores lie in [−b, b], b = − log ϵ. Use the
+       III. S EPARATING P HYSICAL L OSS , T IME AND
+                                                                     one-sided empirical Bernstein bound [6]
+                      I NFORMATION                                            q
+                                                                         D̄ − 2SD   2 log(2/α)/n − 14b log(2/α)/(3(n − 1))       (8)
+A. Matched physical estimands
+   Hold Hd maintains the checkpoint’s commanded equilib-             with unbiased variance. H1’s three conditions form an
+rium, gains and gripper command for d = dp . Gravity,                intersection–union test, each at α = .025. The two sec-
+feedback, contacts and time continue. It is neither frozen state     ondary weighted-score bounds use .0125 each. Abstention-
+weighted gains describe this diagnostic policy, not a hypothet-    A. Checkpoint generator and native control
+ical response on every root. Broad bounds or uninformative            Native square geometry has c = 3 mm per-side clear-
+responses leave the mechanism unresolved even if motion            ance, half-length ℓ ∼ U [85, 125] mm and half-width r ∼
+damages the task.                                                  U [15, 25] mm. Keep native robot base (−.615, 0, 0) m. Place
+   For independent eligible binary parents use exact Clopper–      hole frame H at world (.05, .30, .15) m, identity rotation, com-
+Pearson bounds [2]. At n = 512, a one-sided .025 test              pensating its fixture offset; +x is insertion. In H, nominal peg
+against .10 rejects from 66 events; binomial-component power       centre is (−2ℓ−2c, 0, 0), identity rotation, head (−ℓ−2c, 0, 0).
+at true .15 is .921. Zero events give a 97.5% upper bound          Nominal TCP is (−2ℓ − 2c − .060, 0, 0), rotation Rx (π); the
+.00718. Attrition changes n and precision; 66 is not a universal   60 mm grasp offset follows the source.
+threshold or joint H1 power calculation.                              Draw hidden Z uniformly: (i) y offset ±1.25c, z ∼
+C. H2: completion and constraints                                  U [−c/4, c/4]; (ii) interchange y, z; (iii) y, z ∼ U [−c/4, c/4],
+                                                                   one equiprobable pitch/yaw offset ±2θc , θc = arctan(c/(2ℓ)).
+   H2 tests ∆U = E[U (πRPD ) − U (πIG )] ≥ .05 on the entire
+                                                                   Signs are independent fair draws; other rotations are zero. Set
+eligible confirmation cohort, whether H1 holds or not. Report
+                                                                   actual peg centre to nominal centre plus (0, δy , δz ) in H, and
+discordant counts k+ , k− and concordance k0 . For candidate
+                                                                   rotation Rz (θz )Ry (θy ) about its centre; TCP remains nominal.
+difference δ, the profile log likelihood [12] is
+                                                                   Thus errors are unknown actual grasp-transform errors, not
+ ℓδ = max{k+ log(q +δ)+k− log q +k0 log(1−2q −δ)}, (9)             noise added to exact online object pose. Scales straddle one
+        q
+                                                                   clearance and comparable tip-angle error, not fitted effects.
+where q ∈ [max(0, −δ), (1 − δ)/2] and 0 log 0 = 0. The                Only at initialization, place the peg, set zero body/joint
+95% set has 2(ℓb − ℓδ ) ≤ 3.841459; maximize the concave           velocities and solve native CPU IK (100 iterations) seeded
+scalar likelihood including boundaries, then bisect endpoints      by task vector (0, π/8, 0, −5π/8, 0, 3π/4, −π/4); fingers start
+in [−1, 1] to 10−8 . Its lower endpoint must exceed .05. Below     at .04 m each. Close for .5 s, then command a 3c axial
+30 discordances use conservative exact bounds [L+ −U− , U+ −       approach in 1 s. No weld, teleport or reset follows. Use ab-
+L− ], with .0125 per marginal tail, also reported for every        solute native pd_ee_pose, base-frame XYZ Euler angles; arm
+sample. The analogous upper paired bound on violation-risk         stiffness/damping/limit are 103 Nm/rad, 102 Nm s/rad,100 Nm;
+increase must be below .02. Profile coverage is asymptotic. At     gripper values 103 N/m,102 N s/m,100 N, command −1. IK
+discordance .20 and difference .10, normal 95% half-width is       must meet c/10 Euclidean position and θc /10 geodesic ro-
+.0378, not a power guarantee.                                      tation residuals. Translation uses ρ(v) = 3v 2 − 2v 3 , rotation
+   Each primary hypothesis receives one-sided .025; H2’s           shortest-path interpolation.
+two conditions form a conjunction. Primary family con-                Eligibility requires no goal, native two-finger grasp (.5 N,
+trol is asymptotic where profile likelihood is used. A pro-        85◦ defaults), peg–fixture force norm ≥ .5 N during
+file/exact disagreement is approximate support with unre-          the last .05 s, TCP residual [c/4, 4c], and the checkpoint
+solved finite-sample sensitivity, not robust confirmation. Other   constraints below. Root-relative slip starts at zero. For
+baseline/stratum intervals are descriptive. With m missing         “RPD-assembly-v1/phase/index/geometry”, take the first four
+paired outcomes, use conservative exact bounds [L(k+ , n) −        SHA256 bytes big-endian as native reset seed; phases are
+U (k− + m, n), U (k+ + m, n) − L(k− , n)] with the same            qual/discovery/confirmation, indices zero-based decimal. Na-
+marginal allocation, not a completed-prefix profile. H1 uses       tive reset supplies geometry. The full separate “/fault” digest
+[L(k,
+ P n), U (k + m, n)]. For missing scores, lower the mean to        seeds NumPy PCG64, drawing Z, two fair signs, two trans-
+( Dobs −mb)/n and bound unbiased variance by nb2 /(n−1)            verse uniforms, then an angular-axis bit, consuming unused
+in Eq. (8); reverse signs for an upper bound. Retain all missing   components too. Check seed uniqueness before collection.
+parents; never replace them or infer equality from a degenerate    Each fixed ID is tried once. Known-ineligible roots and failed
+bootstrap.                                                         sources with UNKNOWN eligibility are distinct dispositions.
+  IV. A C ONCRETE P ROSPECTIVE A SSEMBLY P ROTOCOL                 B. Actions, observations and measured success
+   The following are proposed study defaults, not experi-             Let u0 be commanded checkpoint equilibrium. Over d =
+mentally qualified settings. Use ManiSkill3 3.0.1/SAPIEN           .5 s, hold keeps u0 , preload commands u0 + (c/2)ρ(k/10)ex ,
+3.0.3, NumPy 1.26.4, Torch 2.5.1+cpu [10], PegInsertionSide-       dither u0 + c sin(2πk/10)ey , for k = 1, . . . , 10, setting its last
+v1, panda_wristcam and CPU PhysX, native 100 Hz simu-              command literally to stored u0 . Express offsets in H, convert
+lation/20 Hz control. Peg/fixture friction is .3/.3 and native     targets to the robot-base frame, and apply by zero-order hold
+finger friction 2/2, restitution zero. Override both episode       on [(k − 1)/20, k/20). Orientation/gripper commands stay
+time-limit wrappers to 200 control ticks: the 30-tick setup        fixed. Sample Yk after that interval’s fifth physics substep.
+plus the 160-tick doubled budget must fit without resetting the    Equal final commanded pose need not imply equal physical
+elapsed clock. Goal/constraint flags never truncate stepping       state. All phases use endpoint-inclusive commands. Remaining
+before the declared deadline; STOP and source failure are          τ = 4 s gives 70 recovery updates after ten diagnostic updates.
+separate records. Assembly motivates this setting [9]; no             Write E = TC−1 TP for peg-in-TCP transform. Policy
+hardware or blocked planner prefix is required.                    a0 uses nominal E; a1 uses a discovery-trained estimate
+E(X)
+ b      computed once at the root and held identical across            Yjp , channel Pp (j | i) ∝ exp[−∥Yjp − Yip ∥2 /(2dY )], nor-
+probe/hold/direct branches. Responses choose a macro, not              malized over j. Map a response to nearest codeword, ties
+its parameters. For desired peg pose P ∗ , command TCP                 by ID; Bayes weights give the smoothed predictors. Hold
+C ∗ = P ∗ E −1 . Policy a0 inserts to head (−.010, 0, 0) m,            uses its own equal-budget channel. Per-particle G      b i (p, a) is
+peg rotation identity, in 40 updates, then holds. Policy a1            well defined because recovery parameters do not depend on
+withdraws measured macro-start TCP by 4c along −x without              response codeword j. No confirmation labels are fitted.
+rotation in ten; realigns to peg-head (−ℓ − 2c, 0, 0), identity           IG maximizes exact finite-channel information about Z;
+rotation, in ten; inserts to the same final target in forty; then      RPD maximizes Eq. (4). TheyPshare the expected-success
+holds. Segments start at the preceding commanded endpoint,             recovery rule and probe gate         i wi (1 − Cip ) ≤ .02, for
+except the first at measured TCP. Native action updates con-           pre-recovery modeled violations only. H2’s IG wrapper uses
+tinue, without extra controller reset, state restore or clock reset.   a common direct action, meaning G      b i (root, a) = 1 for ev-
+   Primary success is held stable mid-depth insertion: head            ery positive-weight particle; otherwise H1’s probe selector,
+x ∈ [−15, 15] mm, peg-centre |y|, |z| ≤ c/2, rotation geodesic         falling back to best direct expected success on abstention.
+error ≤ θc , linear speed ≤ c/s and angular speed ≤ θc /s on           Direct policy uses that root argmax, so one shared direct
+26 consecutive 100 Hz samples spanning .25 s. The evaluator            rollout suffices. Zero modeled recovery chance selects shorter-
+sets an absorbing completion flag but continues monitoring             duration STOP, scored from the prefix flag. RPD compares
+to deadline. This is not released full assembly. The stock             direct, probes and STOP. Bayesian task-consensus maximizes
+head-only event is secondary; historical outcomes remain               expected successful-action coverage with identical transitions,
+untouched.                                                             algebraically equaling RPD; this adaptation is not DA-GRD
+   At 100 Hz check native joint limits, ∥q̇∥∞ ≤ 2 rad/s, TCP           reproduction. Independent response-wise enumeration is an
+residual ≤ 4c, relative-grasp slip ∥ trans(E0−1 Et )∥ ≤ c and          exact equality control. Ties prefer shorter time, smaller com-
+rotation geodesic ≤ 2θc , and peg–fixture net-force norm               manded path, then ID. Report model errors; discovery particles
+≤ 10mpeg g. Non-finger robot contact with peg/fixture above            do not establish complete physical support or calibrated safety.
+.5 N violates the envelope. Cp , CH cover root to d, Ca the               Before discovery, a 12-candidate qualification pilot uses
+macro, and H2 violations the whole post-root attempt. These            nominal E for both bootstrap routines and a0 as direct
+are sampled constraints, not hardware guarantees. Native               control: seven branches plus repeats for the first two eligible
+impulses/timestep supply evaluator-only forces; the monitor            IDs, at most 98 terminal episodes/three worker-hours. It tests
+provides no privileged corrective feedback. Report path length,        execution, not final-policy performance. Require eight eligible
+commanded motion and time; unavailable effort stays missing.           roots and complete finite traces, commands/clocks and goals
+   Online X is 28 scalars: seven arm positions and velocities,         reproducible to 10−5 m/10−4 rad. Regenerate initialization and
+TCP position and rotation logarithm relative to nominal, com-          the 30-tick prefix in fresh processes; do not trust ordinary
+manded position and rotation logarithm, and ℓ, r. Fixture/grasp        snapshots. Check body/joint state, drive targets, command,
+calibration is public. Each Yk has 23 scalars: seven posi-             estimator, absolute clock and dwell memory. After fitting the
+tions/velocities, TCP position/rotation-log and position resid-        final estimator, repeat all eight branches for the first two eligi-
+ual, hence dY = 230. True peg pose, grasp error, Z, contacts           ble retained discovery IDs (16 episodes) before confirmation.
+and alternative outcomes are evaluator-only. Known fixture             Root failures are attrition; branch violations and failed goals
+geometry does not reveal actual grasp error. No force/aperture         stay measured outcomes, not source exclusions. No gate uses
+sensor is invented.                                                    erasure, accuracy or advantage. Source failure stops without
+                                                                       task/parameter search. These pilots have not run.
+C. One shared finite model and strong controls                          V. F IXED VALIDATION AND I NTERPRETABLE O UTCOMES
+   First screen discovery roots and fit only the root grasp               Use 64 discovery and 512 confirmation candidates in dis-
+estimator from their evaluator-labeled TC−1 TP . Normalize po-         joint phases. Discovery must supply at least two eligible
+sitions/dimensions by c, rotations by θc , joint angles/rates by       roots and complete paired labels for every retained parti-
+1 rad and 1 rad/s; centre/scale by discovery standard deviation        cle; otherwise the model is unavailable, without outcome
+floored at 1. TCP/command positions are expressed in H;                imputation. Freeze models/policies before confirmation. Fin-
+rotation logarithms are relative to nominal TCP rotation, with         ish its entire eligibility screen before terminal comparisons.
+principal angle in [0, π]. Root weights are wi ∝ exp[−∥X −             UNKNOWN eligibility prevents an unconditional eligible-
+Xi ∥2 /(2dX )]. Estimate translation by weighted mean and ro-          population claim; any source-evaluable restriction must be
+tation by normalized weighted quaternion mean, signs aligned           reported. Every known eligible parent, including missing,
+with the first ID; norm below 10−8 uses that ID’s rotation.            unsafe, uninformative and non-erasing branches, remains in
+Freeze before recovery-label collection. Discovery supervision         the fixed denominator. Effective n may be below 512. Check
+is shared model construction, never test-time oracle access.           every regenerated root against its screened fingerprint, not just
+Estimation is fixed in the physical-loss contrast.                     the two pilot repeats.
+   Collect all discovery action labels with that frozen estimator,        With full eligibility, confirmation needs 512×3×2 = 3,072
+then fit the observation/outcome model. For probe codewords            matched terminal branches plus 512 full-deadline direct-policy
+branches. Discovery needs 64×8 = 512, including both direct          physically possible controllers. Goal-based and compliant-
+recoveries to model the full-deadline option. Base cost is 4,096     recovery masks distinguish task loss from loss of a constraint-
+terminal branches. Screening adds at most 576 episodes and           compliant correction. Root parity and continuous clock checks
+final-estimator parity 16; observations come from the same           distinguish intervention effects from invalid branch reconstruc-
+rollouts. Branches do not increase n. Before confirmation, pilot     tion.
+timings determine only whether this fixed study fits, never its         Response-blind versus response-aware catalogue choice
+margins. One CPU worker, 60 s per episode including setup,           tests telemetry’s decision value with execution parameters
+a 28-worker-hour ceiling (three qualification, twenty primary,       fixed. The hold predictor tests information beyond waiting.
+five sensitivities), and ascending ID then hold/preload/dither,      H2 gains can reflect saved probe time or action choice, not
+a0 /a1 , then direct define execution order. Finish or mark          mediation by erasure alone. Report descriptive overlap with
+missing the atomic parent; retain unfinished IDs and full-           Jp and compare the same selected macro on paired hold/probe
+cohort bounds. Assembly validation remains prospective.              traces; this cross-world evaluator diagnostic is not a deployable
+   On 64 confirmation IDs selected by hash before outcomes,          policy. Mode prediction does not identify a hidden physical
+doubling τ adds 384 terminal branches. A pre-existing extra          cause, and a lower modeled risk is not calibrated safety.
+skill adds 192 only if named and qualified before confirmation;         The 12-parent technical pilot can establish only source
+none is bound, so that sensitivity is unavailable. A response-       availability at its inspected roots; continued per-parent parity is
+blind rule fixed from X alone is scored on the same post-probe       needed. Large UNKNOWN eligibility or outcome missingness
+branches. It measures response decision value without multiple       can make inference vacuous. The score bounds can also be
+online executions. No hardware campaign is required.                 conservative at rare erasure rates; H1’s binomial power does
+   In the constructed uniform A/B/C example, hold/coarse             not ensure a decisive co-occurrence test. If the weighted
+leave {a0 }, {a0 , a1 }, {a1 }; fine leaves {a0 }, {a1 }, ∅. Paths   intervals remain broad, the paper must retain the weaker two-
+obey the nominal constraints. Fine information is log 3 =            population conclusion rather than claim same-case informative
+1.099 nats with best completion 2/3; coarse information is           erasure. This is an unresolved empirical hypothesis, not an
+.637 nats with completion 1. Task-consensus and full-objective       invitation to lower the margin or select different roots.
+planning tie RPD. This is logical possibility at equal durations,       All assembly settings remain proposed and require bounded
+not a physical prevalence or algorithmic-advantage result.           source qualification. No assembly outcomes currently establish
+   Existing cube source checks comprise 14 valid fresh-process       physical prevalence, diagnostic co-occurrence or completion
+episodes at one inspected parent per task. Pick release histories    gain. A qualified simulation study can answer the fixed ques-
+lose continuation while recovery remains; Push retains both.         tion without unavailable hardware; transfer to a robot remains
+No full erasure appears in these retrospective contrasts. The        outside scope. The commitment is to report information,
+preceding pilot crashed after 38 completed branches per task;        complete option sets, completion, constraints, attrition and
+original lost outcomes remain missing and isolated replay does       baseline equality together, including a qualified null.
+not establish global stability. Cube neutral commands differ
+from the proposed equilibrium hold. These checks neither
+qualify assembly nor test H1/H2.
+   Support for H1 establishes its two population properties;
+weighted-score diagnostics additionally address average signal
+on erasure cases. H2 support establishes its completion margin
+against IG jointly with constraint noninferiority, not superiority
+over equivalent task-aware planning. H1 without H2 shows
+loss without the proposed benefit; H2 without H1 could
+reflect partial-option changes. Report hold-empty repertoires
+separately: inadequate skill coverage is not harmless diagnosis.
+A narrow interval below .10 limits this selector’s prevalence;
+uninformative probes and source failure are different out-
+comes. Recovery at 2τ indicates deadline dependence; an
+extra skill would indicate catalogue dependence. None licenses
+effect-rich test selection.
+A. What the controls can and cannot identify
+   Equal-duration holding controls elapsed time under the
+same feedback law; it does not make a probe non-disturbing.
+The common root-frozen estimator prevents a poorer post-
+probe belief from silently redefining recovery commands.
+Differences still concern these fixed feedback policies and
+their interaction with contact and controller state, not all
+                       R EFERENCES                                     spacecraft fault estimation and collision avoidance. Sci-
+[1] Jeannette Bohg, Karol Hausman, Bharath Sankaran,                   ence Robotics, 9(93):eadn4722, 2024.
+    Oliver Brock, Danica Kragic, Stefan Schaal, and Gau-           [8] Shili Sheng, David Parker, and Lu Feng. Safe POMDP
+    rav S. Sukhatme. Interactive perception: Leveraging                online planning via shielding. In IEEE International
+    action in perception and perception in action. IEEE                Conference on Robotics and Automation, 2024.
+    Transactions on Robotics, 33(6):1273–1291, 2017.               [9] Bingjie Tang, Michael A. Lin, Iretiayo A. Akinola,
+[2] C. J. Clopper and E. S. Pearson. The use of confidence             Ankur Handa, Gaurav S. Sukhatme, Fabio Ramos, Dieter
+    or fiducial limits illustrated in the case of the binomial.        Fox, and Yashraj S. Narang. IndustReal: Transferring
+    Biometrika, 26(4):404–413, 1934.                                   contact-rich assembly tasks from simulation to reality.
+[3] Benjamin Eysenbach, Shane Gu, Julian Ibarz, and Sergey             In Robotics: Science and Systems, 2023.
+    Levine. Leave no trace: Learning to reset for safe and        [10] Stone Tao, Fanbo Xiang, Arth Shukla, Yuzhe Qin,
+    autonomous reinforcement learning. In International                Xander Hinrichsen, Xiaodi Yuan, Chen Bao, Xinsong
+    Conference on Learning Representations, 2018.                      Lin, Yulin Liu, Tse-Kai Chan, Yuan Gao, Xuanlin Li,
+[4] Nathan Grinsztajn, Johan Ferret, Olivier Pietquin,                 Tongzhou Mu, Nan Xiao, Arnav Gurha, Viswesh Na-
+    Philippe Preux, and Matthieu Geist. There is no turning            gaswamy Rajesh, Yong Woo Choi, Yen-Ru Chen, Zhiao
+    back: A self-supervised approach for reversibility-aware           Huang, Roberto Calandra, Rui Chen, Shan Luo, and Hao
+    reinforcement learning. In Advances in Neural Informa-             Su. Demonstrating GPU parallelized robot simulation
+    tion Processing Systems, volume 34, 2021.                          and rendering for generalizable embodied AI with Man-
+[5] Jun Kobayashi. When identifiability is not enough:                 iSkill3. In Robotics: Science and Systems, 2025.
+    Terminal controllability in task-compatible active cali-      [11] Haoran Wang, Yuteng Sun, Yuanjie Li, Ruofei Bai,
+    bration. IEEE Robotics and Automation Letters, 11(10):             Meng Yee (Michael) Chuah, Wenyu Liang, Jun Li, and
+    11039–11045, 2026.                                                 Wei-Yun Yau. DA-GRD: Decision-aware grasp-relevant
+[6] Andreas Maurer and Massimiliano Pontil. Empiri-                    disambiguation for tactile recovery under perception-to-
+    cal bernstein bounds and sample variance penalization.             execution mismatches. arXiv:2609.29065, preprint, 2026.
+    arXiv:0907.3740, 2009.                                        [12] S. S. Wilks. The large-sample distribution of the likeli-
+[7] James Ragan, Benjamin Riviere, Fred Y. Hadaegh, and                hood ratio for testing composite hypotheses. The Annals
+    Soon-Jo Chung. Online tree-based planning for active               of Mathematical Statistics, 9(1):60–62, 1938.
+

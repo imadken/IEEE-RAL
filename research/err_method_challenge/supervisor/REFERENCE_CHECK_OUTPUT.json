@@ -1,0 +1,37 @@
+{
+  "scope": "analytical finite-world illustration, not robot result",
+  "same_marginal_harm": [
+    0,
+    0.4
+  ],
+  "marginals": {
+    "continue": 0.4,
+    "recover": 0.6000000000000001
+  },
+  "single_action_logs": {
+    "status": "impossible",
+    "unresolved_pairs": [
+      [
+        "low_harm",
+        "high_harm"
+      ]
+    ]
+  },
+  "including_paired_trial": {
+    "status": "resolvable",
+    "cost": 2,
+    "experiments": [
+      "paired_trial"
+    ],
+    "opposite_verdict_pairs": 1
+  },
+  "minimum_cost_two_information_sources": {
+    "status": "resolvable",
+    "cost": 2,
+    "experiments": [
+      "x",
+      "y"
+    ],
+    "opposite_verdict_pairs": 4
+  }
+}

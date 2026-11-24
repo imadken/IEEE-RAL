@@ -1,0 +1,21 @@
+{
+  "pages": 6,
+  "content_pages": 5,
+  "reference_pages": 1,
+  "paper_sha256": "2538061b1cafa6a15852426f17517423b50f08d157379690a2e619bcd52848f6",
+  "text_sha256": "96340275e7ec573d54a9bf4ebbfddc952f3a58abe913579bbfbe547258d8bafd",
+  "fonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nIHAIZV+NimbusRomNo9L-Regu            Type 1C           Custom           yes yes yes      4  0\nBZIVMZ+NimbusRomNo9L-MediItal        Type 1C           Custom           yes yes yes      5  0\nIXFAWU+NimbusRomNo9L-Medi            Type 1C           Custom           yes yes yes      6  0\nTQTHRL+NimbusRomNo9L-ReguItal        Type 1C           Custom           yes yes yes      7  0\nYEUUOC+CMMI8                         Type 1C           Builtin          yes yes yes     22  0\nAKHCZK+CMR6                          Type 1C           Builtin          yes yes yes     23  0\nVDVGTR+CMR8                          Type 1C           Builtin          yes yes yes     24  0\nCAFSZL+CMMI10                        Type 1C           Builtin          yes yes yes     25  0\nDDIEWW+CMSY10                        Type 1C           Builtin          yes yes yes     29  0\nFKPJSN+CMR10                         Type 1C           Builtin          yes yes yes     30  0\nPVTTLK+CMR7                          Type 1C           Builtin          yes yes yes     31  0\nJAGKKY+CMMI7                         Type 1C           Builtin          yes yes yes     32  0\nNOMARO+CMEX10                        Type 1C           Builtin          yes yes no      33  0\nKPXLOM+CMSY7                         Type 1C           Builtin          yes yes yes     34  0\nUTACNV+CMMI5                         Type 1C           Builtin          yes yes yes     35  0\nFZDNHS+MSBM10                        Type 1C           Builtin          yes yes yes     36  0\nDZGKAF+CMSY5                         Type 1C           Builtin          yes yes yes     37  0\nGJMHKB+CMR5                          Type 1C           Builtin          yes yes yes     38  0\n",
+  "pdfinfo": "Custom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           6\nEncrypted:       no\nPage size:       612 x 792 pts (letter)\nPage rot:        0\nFile size:       165068 bytes\nOptimized:       no\nPDF version:     1.5\n",
+  "page_word_counts": [
+    636,
+    876,
+    1015,
+    962,
+    689,
+    379
+  ],
+  "page_numbers": false,
+  "unresolved_references": false,
+  "identifying_metadata_or_external_urls": false,
+  "critical_method_in_main_PDF": true
+}

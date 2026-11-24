@@ -1,0 +1,2 @@
+d63d4bf27f29603a733d06e27ba5fbb40488acf9d1d696354a88b886758f70a7  IEEEtran.cls
+ffc8b8053bd218ba9be4c93a569de4c2f36c7f70ae8d2245c747611bed697271  official_rss2027_paper_template.tar.gz

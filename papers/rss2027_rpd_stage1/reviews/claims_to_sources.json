@@ -1,0 +1,59 @@
+{
+  "claims": [
+    {
+      "claim": "Original cube fresh-process checks:14 valid episodes per task,one parent per task,no full repertoire erasure; not assembly H1/H2",
+      "scope": "RETROSPECTIVE_TECHNICAL_ONLY",
+      "sources": {
+        "research/rpd_source_isolation_20261119/technical_matches.json": "eff7fe5b8a21312466e05cf570f2059e2ee6453236aa2c4f9b7bb357b65ef89c",
+        "research/rpd_source_isolation_20261119/final_audit/summary.json": "ebe53e3acb19ba0a2b21f1774ed5750c11b80c2dd8352b6d378006f2d2082a98",
+        "research/rpd_source_isolation_20261119/integrity_manifest.json": "f2636950f5552506514c44ac2295dac44fe2e7ead928ec406d75d924492436d4"
+      },
+      "new_outcomes": 0
+    },
+    {
+      "claim": "One-probe common-action condition and1024 exhaustive small-mask solver/oracle matches",
+      "scope": "COMPLETE_NOMINAL_MODEL_NOT_PHYSICAL_GUARANTEE",
+      "sources": {
+        "scripts/rpd_paper_v2_checks.py": "b99dabdfce17cb6b5cc8757a546cf18f31175f8b1286a07e5f7d698be2138cf6",
+        "papers/rss2027_rpd_stage1/reviews/nominal_oracle_recheck.json": "eebe8be9e57cb52722b396022fbc89941513e691802de4bc0ef28ec10e0cf0e7"
+      }
+    },
+    {
+      "claim": "Constructed fine/coarse information and completion;H1 disjoint-population example;CP/profile/EB numbers;episode budgets and seed inputs",
+      "scope": "ANALYTICAL_OR_PROPOSED_INPUTS_NO_ROBOT_LABELS",
+      "sources": {
+        "papers/rss2027_rpd_stage1/tools/protocol_math.py": "21cc23a23cd8b85ee728dc6385cd4a3be6d0fc8c3c289410c6285a9953c143c0",
+        "papers/rss2027_rpd_stage1/tools/test_workspace.py": "a386c260082d33a2777deb80c95da8abc29f5f201d3c377c6102df86c557198c",
+        "papers/rss2027_rpd_stage1/reviews/PROPOSED_PROTOCOL_AND_NUMERICS.json": "e1f363e6591879726fbfe967fd63466f4856ff06dea114283efb00d1811df9da"
+      }
+    },
+    {
+      "claim": "Assembly protocol andH1/H2 margins are prospective;zero assembly confirmation parents",
+      "scope": "PROPOSED_AUTHOR_REVIEW_NOT_PHYSICS_QUALIFIED",
+      "sources": {
+        "papers/rss2027_rpd_stage1/manuscript/body.tex": "c8ee43ea798b5dfc4367947991e3f9b608b8d2499b3686b0b7f9f1a94247518d",
+        "papers/rss2027_rpd_stage1/reviews/STAGE2_VALIDATION_SPEC.md": "b3056ad6c2e6bde7202510b727f6fa17ef9a07f7b1f8a663efc97e222244f12c"
+      }
+    },
+    {
+      "claim": "Official current RSS class,archive/layout verification and anonymous5+1 build",
+      "scope": "DOCUMENT_VERIFICATION",
+      "sources": {
+        "papers/rss2027_rpd_stage1/template/verification.json": "5415ba2075801c72a07ff8b2d2b9de8bafbe3d2a3128d17518f47797481c567c",
+        "papers/rss2027_rpd_stage1/reviews/build_verification.json": "72b82d39c38bf1e755dcd2c54d7734584eaf8f1dbd4447e9f3c11ae3dc47e755",
+        "papers/rss2027_rpd_stage1/reviews/layout_comparison.json": "2eedcc6ec7a98908b9b8e567f915cd3da4f614ee50884580a610ebb8cfd5609a",
+        "papers/rss2027_rpd_stage1/reviews/clean_build_receipt.json": "60399b881f3c1ee22b2b211f568c66f23ae7416d16fa48ac71de82c0b2855234"
+      }
+    },
+    {
+      "claim": "Primary citation metadata and corrected terminal-controllability journal attribution",
+      "scope": "BIBLIOGRAPHIC_AUDIT_PUBLISHER_FULLTEXT_ACCESS_LIMIT_DISCLOSED",
+      "sources": {
+        "papers/rss2027_rpd_stage1/reviews/CITATION_AUDIT.md": "a537d79b2f159ae9824b553c03aaf5ef0e1748ff431dfa88fbadc5bb01a91494",
+        "papers/rss2027_rpd_stage1/reviews/primary_metadata/kobayashi_terminal_verified.json": "df6e5a73a57cc6ac698bde19508f81bfb8a8d8e329bb15ccda99c5e33b242d5c",
+        "papers/rss2027_rpd_stage1/reviews/primary_metadata/kobayashi_source_receipt.json": "defcc23a90bc8a4866abb1fc720b645581a2d37b6baab4b02b2852b63716007e"
+      }
+    }
+  ],
+  "no_new_physics": true
+}

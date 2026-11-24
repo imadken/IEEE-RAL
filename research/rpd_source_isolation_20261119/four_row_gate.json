@@ -1,0 +1,170 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "job_id": "f22d0aaba4bb81fa841c070c5ad07e3b9fdcfe342c0704bb9065e4fd185ed590",
+      "phase": "failed_row_replay",
+      "task": "PickCube-v1",
+      "source_passed": true,
+      "process": {
+        "job_id": "f22d0aaba4bb81fa841c070c5ad07e3b9fdcfe342c0704bb9065e4fd185ed590",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 17.368601102993125,
+        "native_SIGSEGV_observed": false,
+        "debugger_log_sha256": "ed0a190669995d42e74658fb45c4793275159e3aee50dc582800b99061fd430e",
+        "gdb_pid": 2763914,
+        "remaining_task_seconds": 1182.6313988970069,
+        "backtrace_status": "Captured in debugger log if inferior stopped; no failure replay to collect a backtrace",
+        "new_independent_parents": 0
+      },
+      "status": "COMPLETE",
+      "raw_path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/f22d0aaba4bb81fa841c070c5ad07e3b9fdcfe342c0704bb9065e4fd185ed590/native.json.xz",
+      "raw_sha256": "48eed47ac20f44ebfb68e793cef4184ea11c482a13fccf6ace01de9d9ac4c581",
+      "trace_checks": {
+        "passed": true,
+        "errors": [],
+        "frames": 156,
+        "whole_path_allowed": true,
+        "suffix_allowed": true,
+        "violations": {
+          "arm": [],
+          "TCP": [],
+          "object": []
+        },
+        "native_success": true
+      },
+      "prefix_matches_original": true,
+      "root_memory_matches_original": true,
+      "runtime_config_matches_original": true,
+      "probe_prefix_matches_original_continue": true,
+      "macro_end_success": true,
+      "deadline_success": true
+    },
+    {
+      "job_id": "9c590dd90cea3be2cd8c249220be93b04028330275a782ab9894843296fbe87e",
+      "phase": "failed_row_replay",
+      "task": "PickCube-v1",
+      "source_passed": true,
+      "process": {
+        "job_id": "9c590dd90cea3be2cd8c249220be93b04028330275a782ab9894843296fbe87e",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 17.215753419994144,
+        "native_SIGSEGV_observed": false,
+        "debugger_log_sha256": "75c937e09246bd7d4aa8aadbeee4d5bab6dc1008235843105ebcc775a254fb79",
+        "gdb_pid": 2765671,
+        "remaining_task_seconds": 1165.4156454770127,
+        "backtrace_status": "Captured in debugger log if inferior stopped; no failure replay to collect a backtrace",
+        "new_independent_parents": 0
+      },
+      "status": "COMPLETE",
+      "raw_path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/9c590dd90cea3be2cd8c249220be93b04028330275a782ab9894843296fbe87e/native.json.xz",
+      "raw_sha256": "bcdde28ba5434c4477d623f6ed841307a105a5fb3c781ce5a73bf79f3d37a81e",
+      "trace_checks": {
+        "passed": true,
+        "errors": [],
+        "frames": 156,
+        "whole_path_allowed": true,
+        "suffix_allowed": true,
+        "violations": {
+          "arm": [],
+          "TCP": [],
+          "object": []
+        },
+        "native_success": true
+      },
+      "prefix_matches_original": true,
+      "root_memory_matches_original": true,
+      "runtime_config_matches_original": true,
+      "probe_prefix_matches_original_continue": true,
+      "macro_end_success": true,
+      "deadline_success": true
+    },
+    {
+      "job_id": "d7ddc99c99b19afb6d7d1dcb52cd077b7f595e2cecb4f4d6c110ed51d2fba215",
+      "phase": "failed_row_replay",
+      "task": "PushCube-v1",
+      "source_passed": true,
+      "process": {
+        "job_id": "d7ddc99c99b19afb6d7d1dcb52cd077b7f595e2cecb4f4d6c110ed51d2fba215",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 16.76808438601438,
+        "native_SIGSEGV_observed": false,
+        "debugger_log_sha256": "43b2316a9e9b196b4e318e72a9d4d17c3f5be77eb58c4cb273552b7c4f19fed5",
+        "gdb_pid": 2767266,
+        "remaining_task_seconds": 1183.2319156139856,
+        "backtrace_status": "Captured in debugger log if inferior stopped; no failure replay to collect a backtrace",
+        "new_independent_parents": 0
+      },
+      "status": "COMPLETE",
+      "raw_path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/d7ddc99c99b19afb6d7d1dcb52cd077b7f595e2cecb4f4d6c110ed51d2fba215/native.json.xz",
+      "raw_sha256": "8ee450255757ce2f7c88163113ff9d1a0a58c9f8962759b916eef402a80a2384",
+      "trace_checks": {
+        "passed": true,
+        "errors": [],
+        "frames": 144,
+        "whole_path_allowed": true,
+        "suffix_allowed": true,
+        "violations": {
+          "arm": [],
+          "TCP": [],
+          "object": []
+        },
+        "native_success": true
+      },
+      "prefix_matches_original": true,
+      "root_memory_matches_original": true,
+      "runtime_config_matches_original": true,
+      "probe_prefix_matches_original_continue": true,
+      "macro_end_success": true,
+      "deadline_success": true
+    },
+    {
+      "job_id": "8f72ebf12443770070ea8f4085e692faf60f1701e7cc435ddd5749900cc06023",
+      "phase": "failed_row_replay",
+      "task": "PushCube-v1",
+      "source_passed": true,
+      "process": {
+        "job_id": "8f72ebf12443770070ea8f4085e692faf60f1701e7cc435ddd5749900cc06023",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 16.413470003026305,
+        "native_SIGSEGV_observed": false,
+        "debugger_log_sha256": "730b75b6a4adbda7554513228403f5816c0bf90f4e1f2f6997b976358948ae6a",
+        "gdb_pid": 2768679,
+        "remaining_task_seconds": 1166.8184456109593,
+        "backtrace_status": "Captured in debugger log if inferior stopped; no failure replay to collect a backtrace",
+        "new_independent_parents": 0
+      },
+      "status": "COMPLETE",
+      "raw_path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/8f72ebf12443770070ea8f4085e692faf60f1701e7cc435ddd5749900cc06023/native.json.xz",
+      "raw_sha256": "a03abd104b40876306b14d8360287ad98ed54b88b8e6f4e3a21f098f1975ad15",
+      "trace_checks": {
+        "passed": true,
+        "errors": [],
+        "frames": 144,
+        "whole_path_allowed": true,
+        "suffix_allowed": true,
+        "violations": {
+          "arm": [],
+          "TCP": [],
+          "object": []
+        },
+        "native_success": true
+      },
+      "prefix_matches_original": true,
+      "root_memory_matches_original": true,
+      "runtime_config_matches_original": true,
+      "probe_prefix_matches_original_continue": true,
+      "macro_end_success": true,
+      "deadline_success": true
+    }
+  ],
+  "full_cross_process_repeat_parity": {
+    "PickCube-v1": true,
+    "PushCube-v1": true
+  },
+  "gate_scope": "Return/clock/source/replay parity, not requirement that task success is1; same row repeated, zero independent parents."
+}

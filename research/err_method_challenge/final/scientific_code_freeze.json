@@ -1,0 +1,17 @@
+{
+  "base_commit": "9f98797e587489b4a6f9c5139f8aec0d65912bb8",
+  "created_epoch": 1795086813.6948607,
+  "scientific_code_sha256": {
+    "src/dual_rec/evidence_aware/experiment_schema.py": "a67d999622f6fbcc0c9b61c2688f207af20d4a10ffb79f9e8c395a29f5dd08ff",
+    "src/dual_rec/evidence_aware/experiment_resolvability.py": "0a1699659665511294df2dc8b356ca05501480cef792792a76ff7fa4be64531e",
+    "src/dual_rec/evidence_aware/evidence_resolution.py": "33b5b3af702f3adaa4d128bae7f18ce6da522ba54c3445eed72e3077a6a94ba5",
+    "scripts/err_cases.py": "aabc1434bef74a45b9c8d42408be6e287b8eed8886c8f1ecb48234b090cd927b",
+    "scripts/err_independent_oracle.py": "6f1588e3d55849a2232c28c342c76251faad5efb28e347756ea3afbddf75f106",
+    "scripts/err_method_audit.py": "297b868fb896bd36eddad8130b707171638ea508739a124b5f708c3042d8faf1",
+    "scripts/err_robot_witnesses.py": "1204c6feff0144caba7d1a78bb39d7c7636aa656dcb468f1cd80fbcfb4ab5e84",
+    "scripts/err_stage2_manifest.py": "84620a1bab27d2df70f2ca4e20c1a5e88c5b32424a6ba4896ab223c22c534596",
+    "scripts/err_run.py": "3ca08f6c5b4c76a3f21c5c2a2f33c53bbf5204918b685c119ed342f3dbf32eed",
+    "tests/test_experiment_resolvability.py": "59bf530856a045775ef3fb27ac9c649b0b6d63b00231d75b2d90ebe809d705b7"
+  },
+  "registration_sha256": "29d3d1ddf210aae1d1d9760a1a7427efe5d88e147a47894c8a07d2767d06a0aa"
+}

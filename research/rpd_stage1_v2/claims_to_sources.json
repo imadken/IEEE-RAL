@@ -1,0 +1,112 @@
+{
+  "claims": [
+    {
+      "claim": "Nominal one-probe criterion necessary and sufficient with complete support and admissible paths; 1024 exhaustive models",
+      "scope": "CONSTRUCTED_COMPLETE_DETERMINISTIC_MODEL_NOT_PHYSICAL_GUARANTEE",
+      "sources": {
+        "research/rpd_stage1_v2/final_verification/nominal_verification.json": "beccdb75c932dc0f7dcd1256d83dda0a0c313f472ede99ba42af413f70f982bd",
+        "scripts/rpd_paper_v2_checks.py": "b99dabdfce17cb6b5cc8757a546cf18f31175f8b1286a07e5f7d698be2138cf6",
+        "tests/test_rpd_paper_v2.py": "0c33b34fc0ffe6cce2da3d0b902fd250a62ed7c75f7074d6e0321cff5f3cf141",
+        "src/dual_rec/recoverability/planner.py": "d1b0c83456885f1b70e00eff39ebce56b642b1105f4af6196e9685c36754394e",
+        "scripts/rpd_independent_oracle.py": "242a67cc7627808f9c5061cf9b7a928d92f887cb0be7e11ab2dca1871329292d"
+      }
+    },
+    {
+      "claim": "Equal durations .5s from4s; fine information ln3, completion2/3; coarse informationH(2/3,1/3), completion1; full lossC, partialB; matched planner/task-consensus equality",
+      "scope": "ANALYTICAL_WORLDS_NOT_ROBOT_EPISODES",
+      "sources": {
+        "research/rpd_stage1_v2/final_verification/illustration.json": "4055fcf46dfd3748824abc69fab9074a59ba2b2e57a808c05756b8cb2d5484a8",
+        "scripts/rpd_paper_v2_checks.py": "b99dabdfce17cb6b5cc8757a546cf18f31175f8b1286a07e5f7d698be2138cf6",
+        "scripts/rpd_paper_v2_figure.py": "dd1b49f4c5ae5f53d993e9acb1413502caae8f166c9b6969238ea86aef12f920",
+        "research/rpd_stage1_v2/paper/figures/figure1.pdf": "4f477d57062176df9a20e50b95ab8a1a1a28d5590a7a89ee08d61393562b32fe"
+      }
+    },
+    {
+      "claim": "H1 proposed10pct; H2 proposed5pp; constraint noninferiority+.02; 64discovery512confirmation; primary single probe; fixed assembly family",
+      "scope": "SUPERVISOR_PROSPECTIVE_HYPOTHESES_NOT_OBSERVED_EFFECTS",
+      "sources": {
+        "research/rpd_stage1_v2/supervisor/RPD_HYPOTHESES_AND_METHOD_LOCK_V2.md": "1030d30ce5fd89487b1c709612afe78bd61c33f5e2837ef4d8a1bb8bc31638b4",
+        "research/rpd_stage1_v2/supervisor/SAMPLE_PRECISION_CHECK.json": "42b9d76dc4a3274621b1ffbad1dbe274b77653c9dca58f5480487a1d50ca7796"
+      }
+    },
+    {
+      "claim": "H1 reject66; size.0203185; power.921296 atq.15; zero-event upper.00717895; H2 normal halfwidth.03775634",
+      "scope": "ANALYTICAL_PRECISION_REQUIRES_INDEPENDENT_PARENTS",
+      "sources": {
+        "research/rpd_stage1_v2/final_verification/precision.json": "dea7ba4ce2f7d6d69edb32033fef5773560f7ee586d8c047dd6e939b9b909369",
+        "scripts/rpd_paper_v2_checks.py": "b99dabdfce17cb6b5cc8757a546cf18f31175f8b1286a07e5f7d698be2138cf6",
+        "tests/test_rpd_paper_v2.py": "0c33b34fc0ffe6cce2da3d0b902fd250a62ed7c75f7074d6e0321cff5f3cf141"
+      }
+    },
+    {
+      "claim": "H2 paired profile asymptotic, rare-discordance exact fallback, CP sensitivity; primary family not exact finite-sample",
+      "scope": "PROSPECTIVE_STATISTICAL_PLAN_NO_NEW_EMPIRICAL_CI",
+      "sources": {
+        "research/rpd_stage1_v2/paper/paper.tex": "27a545c45d63ad2911c95ed8aa7df90941ba1c2a75ce12344928a66f67d885ad",
+        "research/rpd_stage1_v2/final_verification/precision.json": "dea7ba4ce2f7d6d69edb32033fef5773560f7ee586d8c047dd6e939b9b909369",
+        "tests/test_rpd_paper_v2.py": "0c33b34fc0ffe6cce2da3d0b902fd250a62ed7c75f7074d6e0321cff5f3cf141"
+      }
+    },
+    {
+      "claim": "Empirical Bernstein score bound rescaled to[-b,b], b=-log(.001); aggregate predictive signal vsbaseline andhold",
+      "scope": "CONDITIONAL_ON_DISCOVERY_FROZEN_DECODERS_AND_IID_CONFIRMATION",
+      "sources": {
+        "research/rpd_stage1_v2/paper/paper.tex": "27a545c45d63ad2911c95ed8aa7df90941ba1c2a75ce12344928a66f67d885ad",
+        "research/rpd_stage1_v2/citation_audit.json": "7b56b2b38d9e0e62d1340b5d7d1e7ad2dd0ce08f40464566fa47eaf9e1adcc02"
+      }
+    },
+    {
+      "claim": "28 source episodes14/task; one inspected parent/task; six matched histories/task; partial-loss histories4Pick0Push; no full erasure in these technical histories",
+      "scope": "RETROSPECTIVE_MIXED_PROVENANCE_CORRELATED_TECHNICAL_CASES_NOT_H1_H2",
+      "sources": {
+        "research/rpd_stage1_v2/final_verification/preliminary_recount.json": "b1a5e4db6cd6865779265ac7bd9d8d9c41596e36a8469e8554b1c19b3db21d5b",
+        "research/rpd_stage1_v2/raw_source_reaudit/summary.json": "ebe53e3acb19ba0a2b21f1774ed5750c11b80c2dd8352b6d378006f2d2082a98",
+        "research/rpd_source_isolation_20261119/technical_matches.json": "eff7fe5b8a21312466e05cf570f2059e2ee6453236aa2c4f9b7bb357b65ef89c"
+      }
+    },
+    {
+      "claim": "Original pilot38complete/task then native branch39 failed; no inferred crash cause or global stability",
+      "scope": "ORIGINAL_MISSING_OUTCOMES_PRESERVED",
+      "sources": {
+        "research/rpd_physical_pilot_20261119/final_audit/summary.json": "813dd1d87bd359a9d0a1313858a688fc82a431288dbd9e5469c4ba2ee4ccf075",
+        "research/rpd_source_isolation_20261119/final_audit/summary.json": "ebe53e3acb19ba0a2b21f1774ed5750c11b80c2dd8352b6d378006f2d2082a98"
+      }
+    },
+    {
+      "claim": "Square geometry3mm/side; half length85-125mm width15-25mm; hole+x; panda_wristcam; head-only event; no bound force sensor",
+      "scope": "READ_ONLY_PINNED_SOURCE_NOT_ASSEMBLY_QUALIFICATION",
+      "sources": {
+        "research/rpd_stage1_v2/final_verification/assembly_source_review.json": "342162cd5977a06db6db2ebcc1fb0075afee4e6f3f3fe96b10884856eb11c3c6",
+        ".venv/lib/python3.12/site-packages/mani_skill/envs/tasks/tabletop/peg_insertion_side.py": "79761d7a7b17ebdbd974c58f7427abcd3a50ec115f0340f6ed5d282a0d48fc6e"
+      }
+    },
+    {
+      "claim": "Assembly0parents; source/sensor/control/constraint/checkpoint bindings outstanding; d.5tau4 illustrative",
+      "scope": "PROPOSED_UNQUALIFIED_ADAPTER",
+      "sources": {
+        "research/rpd_stage1_v2/final_verification/assembly_source_review.json": "342162cd5977a06db6db2ebcc1fb0075afee4e6f3f3fe96b10884856eb11c3c6",
+        "research/rpd_stage1_v2/paper/paper.tex": "27a545c45d63ad2911c95ed8aa7df90941ba1c2a75ce12344928a66f67d885ad",
+        "docs/RPD_STAGE1_V2_METHOD_AND_VERIFICATION_20261119.md": "067fb00064876db744da02efa1f4f64874b7b5ae66f49be8bfd9919f41329f05"
+      }
+    },
+    {
+      "claim": "3072matched confirmation+512root direct+384discovery=3968; sensitivities384+192=576conditional; total4544; worker-hours unbound",
+      "scope": "PROSPECTIVE_BRANCH_ACCOUNTING_NOT_INDEPENDENT_PARENT_COUNTS_OR_MEASURED_RUNTIME",
+      "sources": {
+        "research/rpd_stage1_v2/final_verification/precision.json": "dea7ba4ce2f7d6d69edb32033fef5773560f7ee586d8c047dd6e939b9b909369",
+        "research/rpd_stage1_v2/paper/paper.tex": "27a545c45d63ad2911c95ed8aa7df90941ba1c2a75ce12344928a66f67d885ad",
+        "docs/RPD_STAGE1_V2_METHOD_AND_VERIFICATION_20261119.md": "067fb00064876db744da02efa1f4f64874b7b5ae66f49be8bfd9919f41329f05"
+      }
+    },
+    {
+      "claim": "Existing methods cover interactive sensing, active constrained diagnosis, task-aware contact, reversibility, terminal controllability; no novel optimizer claim",
+      "scope": "VERIFIED_PRIMARY_LITERATURE_WITH_ACCESS_LIMITS",
+      "sources": {
+        "research/rpd_stage1_v2/citation_audit.json": "7b56b2b38d9e0e62d1340b5d7d1e7ad2dd0ce08f40464566fa47eaf9e1adcc02",
+        "research/rpd_stage1_v2/paper/references.bib": "ec06767c3e1037283905bcc689b5ec3bb3324c08a7552c8b9569b90a19715da7",
+        "research/rpd_stage1_v2/paper/paper.tex": "27a545c45d63ad2911c95ed8aa7df90941ba1c2a75ce12344928a66f67d885ad"
+      }
+    }
+  ],
+  "new_physics": 0
+}

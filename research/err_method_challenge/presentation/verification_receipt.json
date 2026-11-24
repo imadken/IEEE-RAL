@@ -1,0 +1,12 @@
+{
+  "pptx_sha256": "269a962e531f70b1ee50358cb4eb688e3635e83b698d4ae8a9c8239c5e9e2172",
+  "pdf_sha256": "1068c632e08f752e9da45e8c4c01703ce9688a96a7248828caae919b16502714",
+  "native_fodp_sha256": "ec484f843be6f959baaad2803992007bdeed35f14ade9960f5331f5ea00eed96",
+  "editable_slides": 2,
+  "editable_shape_count": 13,
+  "pdf_pages": 2,
+  "visual_inspection": "PASS: corrected 33.867 by19.05cm canvas, all panels and footer visible; actual raster preview preserved",
+  "preview_sha256": "df93e6d2ed7928f8c8b7c849ab354a979033e73cac65935a590acc2368d7d625",
+  "export_tool": "Existing LibreOffice7.3, no new dependency",
+  "existing_figures_changed": false
+}

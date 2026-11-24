@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "provided_output_equal": true,
+  "independent_rows": {
+    "full": {
+      "successor_groups": {
+        "A": [
+          "A"
+        ],
+        "B": [
+          "B"
+        ],
+        "C": [
+          "D"
+        ]
+      },
+      "common_recoveries": {
+        "A": [
+          0
+        ],
+        "B": [
+          0
+        ],
+        "C": []
+      },
+      "information_bits": 1.584962500721156,
+      "all_branches_viable": false,
+      "all_successor_states_physically_allowed": true
+    },
+    "coarse": {
+      "successor_groups": {
+        "left": [
+          "A",
+          "B"
+        ],
+        "right": [
+          "C"
+        ]
+      },
+      "common_recoveries": {
+        "left": [
+          0
+        ],
+        "right": [
+          1
+        ]
+      },
+      "information_bits": 0.9182958340544896,
+      "all_branches_viable": true,
+      "all_successor_states_physically_allowed": true
+    }
+  },
+  "scope": "ANALYTICAL_ONLY",
+  "wall_seconds": 0.04583002798608504,
+  "new_physics": 0
+}

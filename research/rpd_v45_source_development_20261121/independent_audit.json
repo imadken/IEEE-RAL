@@ -1,0 +1,131 @@
+{
+  "independent_audit_passed": true,
+  "technical_development_parents": 1,
+  "fresh_process_attempts": 2,
+  "source_complete": 2,
+  "missing_source_results": 0,
+  "nominal_gate_passed": false,
+  "replay_trace_byte_identical": true,
+  "root_controller_drive_state_byte_equivalent": true,
+  "no_postfailure_hold_pair_available": true,
+  "new_qualification_roots": 0,
+  "new_exploratory_parents": 0,
+  "confirmation_parents": 0,
+  "rows": [
+    {
+      "repeat": 0,
+      "source_status": "COMPLETE",
+      "frames_checked": 550,
+      "commands_checked": 110,
+      "actual_goal": false,
+      "whole_postroot_compliant": false,
+      "initial_postfailure_screen": {
+        "disposition": "KNOWN_ELIGIBLE",
+        "reasons": []
+      },
+      "trace_sha256": "2f41ce759d0c9871929d0e212981eaf8653367eaaa4774f32fa6b17d079c41f4",
+      "violations": {
+        "joint_limits": {
+          "samples": 0,
+          "first_substep": null
+        },
+        "joint_speed": {
+          "samples": 0,
+          "first_substep": null
+        },
+        "tcp_residual": {
+          "samples": 79,
+          "first_substep": 196
+        },
+        "grasp_slip_translation": {
+          "samples": 350,
+          "first_substep": 201
+        },
+        "grasp_slip_rotation": {
+          "samples": 358,
+          "first_substep": 193
+        },
+        "peg_fixture_force": {
+          "samples": 69,
+          "first_substep": 187
+        },
+        "nonfinger_robot_contact": {
+          "samples": 0,
+          "first_substep": null
+        }
+      },
+      "peak_TCP_residual_m": 0.03567306999748195,
+      "peak_slip_translation_m": 0.13368075765840262,
+      "peak_slip_rotation_rad": 0.4115935602329877,
+      "peak_peg_fixture_force_N": 53.75783950197257,
+      "force_limit_N": 20.444331984221936,
+      "final_peg_head_H_m": [
+        -0.09742135808977136,
+        0.007310928080543667,
+        -0.13308104318271555
+      ],
+      "configuration_length_m": 0.09100504219532013,
+      "no_clock_reset": true,
+      "learner_boundary_checked": true,
+      "contact_impulse_units_independently_checked": true
+    },
+    {
+      "repeat": 1,
+      "source_status": "COMPLETE",
+      "frames_checked": 550,
+      "commands_checked": 110,
+      "actual_goal": false,
+      "whole_postroot_compliant": false,
+      "initial_postfailure_screen": {
+        "disposition": "KNOWN_ELIGIBLE",
+        "reasons": []
+      },
+      "trace_sha256": "2f41ce759d0c9871929d0e212981eaf8653367eaaa4774f32fa6b17d079c41f4",
+      "violations": {
+        "joint_limits": {
+          "samples": 0,
+          "first_substep": null
+        },
+        "joint_speed": {
+          "samples": 0,
+          "first_substep": null
+        },
+        "tcp_residual": {
+          "samples": 79,
+          "first_substep": 196
+        },
+        "grasp_slip_translation": {
+          "samples": 350,
+          "first_substep": 201
+        },
+        "grasp_slip_rotation": {
+          "samples": 358,
+          "first_substep": 193
+        },
+        "peg_fixture_force": {
+          "samples": 69,
+          "first_substep": 187
+        },
+        "nonfinger_robot_contact": {
+          "samples": 0,
+          "first_substep": null
+        }
+      },
+      "peak_TCP_residual_m": 0.03567306999748195,
+      "peak_slip_translation_m": 0.13368075765840262,
+      "peak_slip_rotation_rad": 0.4115935602329877,
+      "peak_peg_fixture_force_N": 53.75783950197257,
+      "force_limit_N": 20.444331984221936,
+      "final_peg_head_H_m": [
+        -0.09742135808977136,
+        0.007310928080543667,
+        -0.13308104318271555
+      ],
+      "configuration_length_m": 0.09100504219532013,
+      "no_clock_reset": true,
+      "learner_boundary_checked": true,
+      "contact_impulse_units_independently_checked": true
+    }
+  ],
+  "scope": "One new nominal-initialization development checkpoint repeated, not2 independent parents or H1/H2 evidence"
+}

@@ -1,0 +1,60 @@
+[
+  {
+    "name": "sfeast_thesis",
+    "url": "https://thesis.caltech.edu/17024/1/_Thesis%20Final%20Final%20Draft.pdf",
+    "bytes": 52470568,
+    "sha256": "9328d96516389de5077ea7908c3025cc0183b1c01176c11742278538857ece90",
+    "status": "FULL_METHOD_SOURCE_RETRIEVED",
+    "pdfinfo": "Title:           \nSubject:         \nKeywords:        \nAuthor:          \nCreator:         LaTeX with hyperref\nProducer:        pdfTeX-1.40.26\nCreationDate:    Tue Feb 25 02:57:15 2025 CET\nModDate:         Tue Feb 25 02:57:15 2025 CET\nCustom Metadata: yes\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           190\nEncrypted:       no\nPage size:       612 x 792 pts (letter)\nPage rot:        0\nFile size:       52470568 bytes\nOptimized:       yes\nPDF version:     1.5\n",
+    "text_sha256": "fd7eeafeab12170d6a3d309cd74796489ac3213e50f068e2a55760596d0e1ff7",
+    "copyright_storage": "Temporary PDF removed after verified text extraction; no paper redistributed in the Git package"
+  },
+  {
+    "name": "hybrid_full",
+    "url": "https://arxiv.org/pdf/1707.05904",
+    "bytes": 1198125,
+    "sha256": "52f808a4a29dab87ae2f7192f559ceb1cbce1de0a536ec300fa9490b691737aa",
+    "status": "FULL_METHOD_SOURCE_RETRIEVED",
+    "pdfinfo": "Title:           \nSubject:         \nKeywords:        \nAuthor:          \nCreator:         LaTeX with hyperref package\nProducer:        pdfTeX-1.40.17\nCreationDate:    Wed Sep 12 09:11:14 2018 CEST\nModDate:         Wed Sep 12 09:11:14 2018 CEST\nCustom Metadata: yes\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           28\nEncrypted:       no\nPage size:       612 x 792 pts (letter)\nPage rot:        0\nFile size:       1198125 bytes\nOptimized:       no\nPDF version:     1.5\n",
+    "text_sha256": "c8c8b43d82d78cf3f3e4868eb68326d64bd09b38a19be62d472aa6d55ae4b69b",
+    "copyright_storage": "Temporary PDF removed after verified text extraction; no paper redistributed in the Git package"
+  },
+  {
+    "name": "safe_dual_full",
+    "url": "https://arxiv.org/html/2302.00171v2",
+    "bytes": 726721,
+    "sha256": "9942eefbabf3eb6d1a9d1a92819eea3690045b46ebe642b54249cb337e73a7b5",
+    "status": "FULL_METHOD_SOURCE_RETRIEVED"
+  },
+  {
+    "name": "dagrd_full",
+    "url": "https://arxiv.org/html/2609.29065v1",
+    "bytes": 170058,
+    "sha256": "e6253d135ab85f4df10c7d9015d45ba17eb34d829658530b3af413d09df23146",
+    "status": "FULL_METHOD_SOURCE_RETRIEVED"
+  },
+  {
+    "name": "reach_avoid_full",
+    "url": "https://www.cs.ox.ac.uk/David.Parker/papers/icra24shields.pdf",
+    "bytes": 329051,
+    "sha256": "3d0fcba9b3bf00ec65fee1d6af32d5f4d45b03d7564d78aaced0cbe1948203e7",
+    "status": "FULL_METHOD_SOURCE_RETRIEVED",
+    "pdfinfo": "Title:           \nSubject:         \nKeywords:        \nAuthor:          \nCreator:         LaTeX with hyperref\nProducer:        pdfTeX-1.40.22\nCreationDate:    Mon Mar  4 21:20:51 2024 CET\nModDate:         Mon Mar  4 21:20:51 2024 CET\nCustom Metadata: yes\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           7\nEncrypted:       no\nPage size:       612 x 792 pts (letter)\nPage rot:        0\nFile size:       329051 bytes\nOptimized:       no\nPDF version:     1.5\n",
+    "text_sha256": "d7962efd4ee4842593bda8297a9aa57a192a08d744da1dfb15e17a028fc164d4",
+    "copyright_storage": "Temporary PDF removed after verified text extraction; no paper redistributed in the Git package"
+  },
+  {
+    "name": "raya_full",
+    "url": "https://arxiv.org/html/2609.21690v1",
+    "bytes": 223008,
+    "sha256": "4e32e573d7907fb5a0ee09dce0fa44065d9d8fb1134b03b7873dba15db5e35d6",
+    "status": "FULL_PRIMARY_METHOD_RETRIEVED",
+    "checked_sections": [
+      "III-A",
+      "III-B",
+      "III-C",
+      "III-D",
+      "IV-A"
+    ]
+  }
+]

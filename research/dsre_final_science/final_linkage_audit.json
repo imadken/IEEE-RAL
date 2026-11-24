@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "complete_aggregate_records_exactly_equal_individually_audited_native_records": {
+    "discovery": 128,
+    "calibration": 1024
+  },
+  "parent_duplicates": 0,
+  "scope": "Read-only exact parent-ID and full-record comparison; complements independent raw branch and CP/LP audits without changing any source, model or outcome.",
+  "archive_sha256": "17474ae66963604b4aec05fb9a10bf76b6777b45c565ba5569756a4192b41a88"
+}

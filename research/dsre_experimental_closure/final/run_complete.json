@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "steps": 16,
+  "wall_seconds": 547.2201499938965,
+  "cumulative_contract_wall_seconds": 4457.5206933021545,
+  "child_cpu_seconds": 551.194221,
+  "new_physics_processes": 0,
+  "controller_training_runs": 0,
+  "artifact_bytes": 19427035,
+  "sampling_scope": "Audits and retrospective analyses only; no new prospective experiment",
+  "execution_mode": "CONTRACT_CLOSURE",
+  "wall_budget_origin": 1795035525.4249547
+}

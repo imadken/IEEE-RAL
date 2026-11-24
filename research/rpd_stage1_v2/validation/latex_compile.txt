@@ -1,0 +1,22 @@
+note: using only cached resource files
+note: Running TeX ...
+warning: paper.tex:58: Underfull \hbox (badness 1931) in paragraph at lines 57--58
+warning: paper.tex:126: Underfull \hbox (badness 2005) in paragraph at lines 125--126
+warning: paper.tex:138: Underfull \hbox (badness 6741) in paragraph at lines 137--138
+warning: paper.tex:149: Underfull \hbox (badness 1472) in paragraph at lines 148--149
+warning: paper.tex:151: Underfull \hbox (badness 1852) in paragraph at lines 150--151
+note: Running BibTeX on paper.aux ...
+note: Rerunning TeX because bibtex was run ...
+warning: paper.tex:58: Underfull \hbox (badness 1931) in paragraph at lines 57--58
+warning: paper.tex:126: Underfull \hbox (badness 2005) in paragraph at lines 125--126
+warning: paper.tex:138: Underfull \hbox (badness 6741) in paragraph at lines 137--138
+warning: paper.tex:149: Underfull \hbox (badness 1472) in paragraph at lines 148--149
+warning: paper.tex:151: Underfull \hbox (badness 1852) in paragraph at lines 150--151
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+note: Running xdvipdfmx ...
+note: Writing `paper.out` (4.58984375 KiB)
+note: Writing `paper.pdf` (180.0361328125 KiB)
+note: Writing `paper.aux` (6.9814453125 KiB)
+note: Writing `paper.log` (14.673828125 KiB)
+note: Writing `paper.blg` (195 B)
+note: Writing `paper.bbl` (4.2265625 KiB)

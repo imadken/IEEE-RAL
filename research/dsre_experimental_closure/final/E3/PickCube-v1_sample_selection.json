@@ -1,0 +1,71 @@
+{
+  "qualified_requested": 24,
+  "qualified_available": 111,
+  "qualified_selected": 24,
+  "withheld_requested": 24,
+  "withheld_selected": 24,
+  "withheld_strata": {
+    "HARM_UNAVOIDABLE_WITHIN_MODEL+BENEFIT_UNSUPPORTED": {
+      "available": 145,
+      "selected": 24
+    }
+  },
+  "selected_parent_ids": [
+    "1c403c9219c1ec9ab1dac0e6fb3eec5a100acd4cc62633f34421879e77893b58",
+    "0eab40020fbc01154d9a6a6159092a5a7d3cbe1a9a67cd1cad7ecdb489a775be",
+    "340e9a8d2c61924cbeecd5be871b18dd94f782df6b24d9b0bb9538ff4e5a5ecb",
+    "cc1a66b3c4947c2cd3b235fa92a5e66e0f8a4ae6d492cb75551a9aa2565a0d7e",
+    "8fafa3e5987fc977c70b9443e723f1eab2fb21b18f1809a4d6c9e7f8366772e4",
+    "0d0d6ed70ec144aa3f3f302c35bdc56ff4f0ae0365cc07ae9c74339a963bcb2e",
+    "a64006702340360a837400771b8778d2443918b5db8cbc88b436c28983c41c95",
+    "bc9d36695a3dfc95b1b42f05eb626cb953abdae64890fea805fd5c7ded049a30",
+    "620af181473f3c3ed4f659d4cef8820d592eebb93edce8e6670c656131e38479",
+    "cc56d403c931d1e16ea96b0fb7b09b6da0bb3910475896f39f19f9a71a02d769",
+    "dc6359688726278e366f07d7fb9266728368bbb8dfc24052f960fec2ecfd22b4",
+    "2678f5d9c8c5f0c45a33274f6ec59f9a775509461c4b75523ef8d3ab4412ca09",
+    "427b8590b1e1a917d1db9a0e571a9f0a1efc03c20ad63f99cd9f1c7c351e8274",
+    "8069fcb91286c59583170a0da0d1940f745bea7c0b6f48b4ff4f3144cf9f0704",
+    "01d744f3c30a4a33a2035e5cf167f8572a5d4c2ca157d64d781e1e46a5921951",
+    "475d7263bde11b1ab30e7eb535545eafd9f8155f84d9b20655b28f0b690b9aa9",
+    "61ccff0f3a283226a5cd33d0579c4103ddd3f3e6e5890c6ceeb64a5f665767e2",
+    "15c370e970581f91f9c59cf29cc74df344aa7528c6aae19704755735522a524b",
+    "3710fd819cb12fd98a9714d672060070be08909e8398c566c716adb69bd62ea5",
+    "60e32781791745096b4ee66bcc6c6ce3f802ee5f6a2d284ed18f07b117944023",
+    "52ce20e6c77d088da0b2a2a8c48552719ef5c455a2f32dd51a5899429097abf9",
+    "0bb295de14eeaa0e4ef7d554c29e5c79d7f64c229d1e40ebc52495e0ce322f1a",
+    "742a587e28e19863be1a264d64d43a6c25bd047be22e4a8173eae4035dbbfa6d",
+    "8d12d2186d2e42e1c351fa19a816ce9c4ce4181b426d50419a08cd1395f232cb",
+    "7d70c0197dc03f387ea417d68055ad3ebcb09a298c047fedbcbb1f1cc99d0352",
+    "4301171d32f34690678b6d6763c751e918ed21fe75b8e8f7d37b51a8c7d7c05e",
+    "b37176c904dfd96ecce5411085ab64f1eb8c467f4f7aee98e27be54b298d8a17",
+    "a81e95747ca1045455e5b09ec46344cf50c7749dcbd1eef89a28629363f6f8b2",
+    "223bc48052e5262c9856dd5011108da16218deb2b951b5574e1befb7d5ccf252",
+    "65be5196298246d125e001423bbcb8ec1452515edcecf4b53b34d7ed7b201b11",
+    "cf100fb1d4ec0d1ecab7bca60f4f95fe8f2b115b4eae432c8910c10983c20697",
+    "3d93feff36d037824027e8ad851b0d7d052c3dace2c26c63366b6a32c75e407a",
+    "0d289c450041279e126c1d3dec8b4717d812285d958584e7355ccbb99e294b39",
+    "b18ad53ce293d4779403d92bcaebb03cae002d2f76125c88ab44284221be707d",
+    "b4c373ad50127f42a94163188b3b574512ffc8d6698e50386bf5fe27a19f6d78",
+    "76189dcd97e90dbf5e9b5551087590b0540e0e110f9ab9d7789a9c0d3569f89a",
+    "d7cfb6f5564cddc9ce3bb0a59a2819f009cbcf05bdd5da8397803a700271e5d3",
+    "130d3d4aea90bab122c4a866aadd279e0faec92738a25a975bdf1d9528a2144c",
+    "c27145df08646e864c0e1bd4d99646dc47f93834a9c0cf2d7f144877bc4e45e5",
+    "91a5def677196ae32608b56f706bfa3c7a53cff16b85ecb31b4a94dd0423486d",
+    "4ed40bb6dd83d12b34d03d58e725f5b677c1c8c8dab59f81a17b5095e1948d9f",
+    "222b7557a074c39b05205bfb027cbdc92dc8b961b21951506168c043adb8c7c7",
+    "efcbee23d7035598e60751aa4c2263a3452cb4a9911f0e5d27fce0ead927e75e",
+    "1d01ec7f5cb346931a665a25d46be66e24e454cd7f86f5ef3376f0172a00e99f",
+    "93ea23192d34d294069f8b77cf74bbdf69d7e782b6f8178ed745df823ca5c6ec",
+    "1965195abc654aa7585f2570477b91468e2d4e31f666db6c4fe52da2f8e215ae",
+    "b6b728ac7f9351c56ff7e89540451c0137d138f41b7576748a1caf6c2eff0e1c",
+    "e2b1d86c9279a0bd20a985924cca58c1bb73bc8b4ef913c9881b564e46d0a090"
+  ],
+  "selection_inputs": "Only predecision X, original C bounds and reason codes, then fixed parent hash; no certificate text or test outcome selects cases",
+  "successful_reads": [
+    "/home/imad/Desktop/IEEE-RAL/research/dsre_experimental_closure/final/E3/selection_inputs/PickCube-v1.json"
+  ],
+  "input_sha256": {
+    "/home/imad/Desktop/IEEE-RAL/research/dsre_experimental_closure/final/E3/selection_inputs/PickCube-v1.json": "012884c1985bf7e396d2a16284588e9e87d8d51f2cba54deb685129871963b71"
+  },
+  "isolation": "Selector cannot open original outcomes, E1 certificate text, E0 future labels, or evaluator traces"
+}

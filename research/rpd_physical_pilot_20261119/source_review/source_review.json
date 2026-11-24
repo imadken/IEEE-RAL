@@ -1,0 +1,1958 @@
+{
+  "passed": true,
+  "physics_restarted": false,
+  "tasks": {
+    "PickCube-v1": {
+      "histories": [
+        {
+          "row_id": "040ed53fbc0b8e567c7ea7303a11f7257e94148817d89f07842f78543150856b",
+          "raw_path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/040ed53fbc0b8e567c7ea7303a11f7257e94148817d89f07842f78543150856b.json.xz",
+          "raw_sha256": "2ba6b97a907e126def33ab1ff5c785103626aef30165f940aecd837f4bfb5653",
+          "history": [
+            "release_settle"
+          ],
+          "parent_index": 0,
+          "root_active_contact_evidence": true,
+          "prefix_active_contact_boundary_count": 20,
+          "probe_tick_count": 10,
+          "native_manifold_tick_count": 10,
+          "active_contact_tick_count": 0,
+          "proximity_only_tick_count": 10,
+          "active_to_inactive_contact_transition": true,
+          "frames": [
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020576794631779194,
+              "max_separation_m": 0.021584339439868927,
+              "max_native_impulse_norm": 0.21429691377064006
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 22,
+              "min_separation_m": 0.004460184834897518,
+              "max_separation_m": 0.026369964703917503,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 10,
+              "min_separation_m": 0.009636927396059036,
+              "max_separation_m": 0.0381266251206398,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.021951567381620407,
+              "max_separation_m": 0.021951567381620407,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 3,
+              "min_separation_m": 0.028967780992388725,
+              "max_separation_m": 0.03972981497645378,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.029771210625767708,
+              "max_separation_m": 0.029771210625767708,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.030266206711530685,
+              "max_separation_m": 0.030266206711530685,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.030569428578019142,
+              "max_separation_m": 0.030569428578019142,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.030754458159208298,
+              "max_separation_m": 0.030754458159208298,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.030867204070091248,
+              "max_separation_m": 0.030867204070091248,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.030935868620872498,
+              "max_separation_m": 0.030935868620872498,
+              "max_native_impulse_norm": 0.0
+            }
+          ],
+          "scope": "Evaluator-only native solver/manifold diagnostics; no hardware force/damage claim. Root included separately. No matched-hold effect available."
+        },
+        {
+          "row_id": "221d7df26d2d9755645f1c454d6c20dd0256014fede711280ae6c3dd91b3523d",
+          "raw_path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/221d7df26d2d9755645f1c454d6c20dd0256014fede711280ae6c3dd91b3523d.json.xz",
+          "raw_sha256": "8f143e9e51e6b89285b0faeb8585ed8532ee4b840011c4892b7f7444f48010cb",
+          "history": [
+            "release_settle",
+            "micro_lift"
+          ],
+          "parent_index": 0,
+          "root_active_contact_evidence": true,
+          "prefix_active_contact_boundary_count": 20,
+          "probe_tick_count": 20,
+          "native_manifold_tick_count": 20,
+          "active_contact_tick_count": 0,
+          "proximity_only_tick_count": 20,
+          "active_to_inactive_contact_transition": true,
+          "frames": [
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020576794631779194,
+              "max_separation_m": 0.021584339439868927,
+              "max_native_impulse_norm": 0.21429691377064006
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 22,
+              "min_separation_m": 0.004460184834897518,
+              "max_separation_m": 0.026369964703917503,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 10,
+              "min_separation_m": 0.009636927396059036,
+              "max_separation_m": 0.0381266251206398,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.021951567381620407,
+              "max_separation_m": 0.021951567381620407,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 3,
+              "min_separation_m": 0.028967780992388725,
+              "max_separation_m": 0.03972981497645378,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.029771210625767708,
+              "max_separation_m": 0.029771210625767708,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.030266206711530685,
+              "max_separation_m": 0.030266206711530685,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.030569428578019142,
+              "max_separation_m": 0.030569428578019142,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.030754458159208298,
+              "max_separation_m": 0.030754458159208298,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.030867204070091248,
+              "max_separation_m": 0.030867204070091248,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.030935868620872498,
+              "max_separation_m": 0.030935868620872498,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 4,
+              "min_separation_m": 0.01917984150350094,
+              "max_separation_m": 0.020424144342541695,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 12,
+              "min_separation_m": 0.02007494680583477,
+              "max_separation_m": 0.03901625797152519,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 16,
+              "min_separation_m": 0.02105475775897503,
+              "max_separation_m": 0.04000011831521988,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 14,
+              "min_separation_m": 0.022020787000656128,
+              "max_separation_m": 0.03977552801370621,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 12,
+              "min_separation_m": 0.022622769698500633,
+              "max_separation_m": 0.03806624561548233,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 16,
+              "min_separation_m": 0.022687768563628197,
+              "max_separation_m": 0.04000036418437958,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 12,
+              "min_separation_m": 0.022693274542689323,
+              "max_separation_m": 0.03813894838094711,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 12,
+              "min_separation_m": 0.022693349048495293,
+              "max_separation_m": 0.03813902288675308,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 12,
+              "min_separation_m": 0.02269325591623783,
+              "max_separation_m": 0.03813892602920532,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 12,
+              "min_separation_m": 0.022693322971463203,
+              "max_separation_m": 0.03813900053501129,
+              "max_native_impulse_norm": 0.0
+            }
+          ],
+          "scope": "Evaluator-only native solver/manifold diagnostics; no hardware force/damage claim. Root included separately. No matched-hold effect available."
+        },
+        {
+          "row_id": "283e14b3f8deedd315cf2ffaab555c1a84b03cea92e1b7be32f9c9062d04fdf6",
+          "raw_path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/283e14b3f8deedd315cf2ffaab555c1a84b03cea92e1b7be32f9c9062d04fdf6.json.xz",
+          "raw_sha256": "a7c5e5a9815338a8ea7602ef6d7e16cfb8783813fe5220c94cc508c176e003b0",
+          "history": [
+            "micro_lift",
+            "release_settle"
+          ],
+          "parent_index": 0,
+          "root_active_contact_evidence": true,
+          "prefix_active_contact_boundary_count": 20,
+          "probe_tick_count": 20,
+          "native_manifold_tick_count": 20,
+          "active_contact_tick_count": 10,
+          "proximity_only_tick_count": 10,
+          "active_to_inactive_contact_transition": true,
+          "frames": [
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020576794631779194,
+              "max_separation_m": 0.021584339439868927,
+              "max_native_impulse_norm": 0.21429691377064006
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020585511811077595,
+              "max_separation_m": 0.021583039313554764,
+              "max_native_impulse_norm": 0.21434343281142718
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020568748004734516,
+              "max_separation_m": 0.02158403769135475,
+              "max_native_impulse_norm": 0.21422984677344242
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020566140301525593,
+              "max_separation_m": 0.02158401533961296,
+              "max_native_impulse_norm": 0.21421503820448953
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.002056699711829424,
+              "max_separation_m": 0.021584346890449524,
+              "max_native_impulse_norm": 0.21421061324838395
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020568598993122578,
+              "max_separation_m": 0.021584372967481613,
+              "max_native_impulse_norm": 0.21422170934000023
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020567928440868855,
+              "max_separation_m": 0.02158408612012863,
+              "max_native_impulse_norm": 0.21421683895135873
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020569530315697193,
+              "max_separation_m": 0.021584291011095047,
+              "max_native_impulse_norm": 0.21421560369331383
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.002056628931313753,
+              "max_separation_m": 0.021584156900644302,
+              "max_native_impulse_norm": 0.2142136288015603
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.002056796569377184,
+              "max_separation_m": 0.02158438041806221,
+              "max_native_impulse_norm": 0.21421570213731927
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.002056731376796961,
+              "max_separation_m": 0.021584369242191315,
+              "max_native_impulse_norm": 0.21421383404202554
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 22,
+              "min_separation_m": 0.004073913209140301,
+              "max_separation_m": 0.02711382880806923,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 2,
+              "min_separation_m": 0.012666245922446251,
+              "max_separation_m": 0.029909566044807434,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.026651276275515556,
+              "max_separation_m": 0.026651276275515556,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.027722928673028946,
+              "max_separation_m": 0.027722928673028946,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.02840547077357769,
+              "max_separation_m": 0.02840547077357769,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.028830695897340775,
+              "max_separation_m": 0.028830695897340775,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.029092632234096527,
+              "max_separation_m": 0.029092632234096527,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.029252968728542328,
+              "max_separation_m": 0.029252968728542328,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.02935085818171501,
+              "max_separation_m": 0.02935085818171501,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.029410570859909058,
+              "max_separation_m": 0.029410570859909058,
+              "max_native_impulse_norm": 0.0
+            }
+          ],
+          "scope": "Evaluator-only native solver/manifold diagnostics; no hardware force/damage claim. Root included separately. No matched-hold effect available."
+        },
+        {
+          "row_id": "3d598853c146d3c309905f508b2ad175227df1435d4f08e6b5965d92c6ebb2ef",
+          "raw_path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/3d598853c146d3c309905f508b2ad175227df1435d4f08e6b5965d92c6ebb2ef.json.xz",
+          "raw_sha256": "b33eb6457e1a98828c2c9f88d4776fa57a757668d6b0e704cd93906569ae7ae5",
+          "history": [
+            "release_settle",
+            "release_settle"
+          ],
+          "parent_index": 0,
+          "root_active_contact_evidence": true,
+          "prefix_active_contact_boundary_count": 20,
+          "probe_tick_count": 20,
+          "native_manifold_tick_count": 20,
+          "active_contact_tick_count": 0,
+          "proximity_only_tick_count": 20,
+          "active_to_inactive_contact_transition": true,
+          "frames": [
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020576794631779194,
+              "max_separation_m": 0.021584339439868927,
+              "max_native_impulse_norm": 0.21429691377064006
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 22,
+              "min_separation_m": 0.004460184834897518,
+              "max_separation_m": 0.026369964703917503,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 10,
+              "min_separation_m": 0.009636927396059036,
+              "max_separation_m": 0.0381266251206398,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.021951567381620407,
+              "max_separation_m": 0.021951567381620407,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 3,
+              "min_separation_m": 0.028967780992388725,
+              "max_separation_m": 0.03972981497645378,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.029771210625767708,
+              "max_separation_m": 0.029771210625767708,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.030266206711530685,
+              "max_separation_m": 0.030266206711530685,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.030569428578019142,
+              "max_separation_m": 0.030569428578019142,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.030754458159208298,
+              "max_separation_m": 0.030754458159208298,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.030867204070091248,
+              "max_separation_m": 0.030867204070091248,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.030935868620872498,
+              "max_separation_m": 0.030935868620872498,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.030977457761764526,
+              "max_separation_m": 0.030977457761764526,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.031002772971987724,
+              "max_separation_m": 0.031002772971987724,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.031018195673823357,
+              "max_separation_m": 0.031018195673823357,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.031027527526021004,
+              "max_separation_m": 0.031027527526021004,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.031033208593726158,
+              "max_separation_m": 0.031033208593726158,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.03103666938841343,
+              "max_separation_m": 0.03103666938841343,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.03103872388601303,
+              "max_separation_m": 0.03103872388601303,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.031040053814649582,
+              "max_separation_m": 0.031040053814649582,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.031040770933032036,
+              "max_separation_m": 0.031040770933032036,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 1,
+              "min_separation_m": 0.031041283160448074,
+              "max_separation_m": 0.031041283160448074,
+              "max_native_impulse_norm": 0.0
+            }
+          ],
+          "scope": "Evaluator-only native solver/manifold diagnostics; no hardware force/damage claim. Root included separately. No matched-hold effect available."
+        },
+        {
+          "row_id": "866b3311e1714a1587cad7cfb66044ae47abc8742317b64c8a8f8c1b2097213d",
+          "raw_path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/866b3311e1714a1587cad7cfb66044ae47abc8742317b64c8a8f8c1b2097213d.json.xz",
+          "raw_sha256": "3a2f6e5273f883a32d43b70082efd54c49cf721d3073be2d0000f524b7a33139",
+          "history": [
+            "micro_lift"
+          ],
+          "parent_index": 0,
+          "root_active_contact_evidence": true,
+          "prefix_active_contact_boundary_count": 20,
+          "probe_tick_count": 10,
+          "native_manifold_tick_count": 10,
+          "active_contact_tick_count": 10,
+          "proximity_only_tick_count": 0,
+          "active_to_inactive_contact_transition": false,
+          "frames": [
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020576794631779194,
+              "max_separation_m": 0.021584339439868927,
+              "max_native_impulse_norm": 0.21429691377064006
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020585511811077595,
+              "max_separation_m": 0.021583039313554764,
+              "max_native_impulse_norm": 0.21434343281142718
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020568748004734516,
+              "max_separation_m": 0.02158403769135475,
+              "max_native_impulse_norm": 0.21422984677344242
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020566140301525593,
+              "max_separation_m": 0.02158401533961296,
+              "max_native_impulse_norm": 0.21421503820448953
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.002056699711829424,
+              "max_separation_m": 0.021584346890449524,
+              "max_native_impulse_norm": 0.21421061324838395
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020568598993122578,
+              "max_separation_m": 0.021584372967481613,
+              "max_native_impulse_norm": 0.21422170934000023
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020567928440868855,
+              "max_separation_m": 0.02158408612012863,
+              "max_native_impulse_norm": 0.21421683895135873
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020569530315697193,
+              "max_separation_m": 0.021584291011095047,
+              "max_native_impulse_norm": 0.21421560369331383
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.002056628931313753,
+              "max_separation_m": 0.021584156900644302,
+              "max_native_impulse_norm": 0.2142136288015603
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.002056796569377184,
+              "max_separation_m": 0.02158438041806221,
+              "max_native_impulse_norm": 0.21421570213731927
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.002056731376796961,
+              "max_separation_m": 0.021584369242191315,
+              "max_native_impulse_norm": 0.21421383404202554
+            }
+          ],
+          "scope": "Evaluator-only native solver/manifold diagnostics; no hardware force/damage claim. Root included separately. No matched-hold effect available."
+        },
+        {
+          "row_id": "8bbd72fabada8e0ce1394d53f2ac6a15f19aeaf616f0b2e23423f68924282e9c",
+          "raw_path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/8bbd72fabada8e0ce1394d53f2ac6a15f19aeaf616f0b2e23423f68924282e9c.json.xz",
+          "raw_sha256": "ac0d445e89dc1cf24b63900545b378b571c04e00b6b5565e29ef49cd0afc9af8",
+          "history": [
+            "micro_lift",
+            "micro_lift"
+          ],
+          "parent_index": 0,
+          "root_active_contact_evidence": true,
+          "prefix_active_contact_boundary_count": 20,
+          "probe_tick_count": 20,
+          "native_manifold_tick_count": 20,
+          "active_contact_tick_count": 20,
+          "proximity_only_tick_count": 0,
+          "active_to_inactive_contact_transition": false,
+          "frames": [
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020576794631779194,
+              "max_separation_m": 0.021584339439868927,
+              "max_native_impulse_norm": 0.21429691377064006
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020585511811077595,
+              "max_separation_m": 0.021583039313554764,
+              "max_native_impulse_norm": 0.21434343281142718
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020568748004734516,
+              "max_separation_m": 0.02158403769135475,
+              "max_native_impulse_norm": 0.21422984677344242
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020566140301525593,
+              "max_separation_m": 0.02158401533961296,
+              "max_native_impulse_norm": 0.21421503820448953
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.002056699711829424,
+              "max_separation_m": 0.021584346890449524,
+              "max_native_impulse_norm": 0.21421061324838395
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020568598993122578,
+              "max_separation_m": 0.021584372967481613,
+              "max_native_impulse_norm": 0.21422170934000023
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020567928440868855,
+              "max_separation_m": 0.02158408612012863,
+              "max_native_impulse_norm": 0.21421683895135873
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020569530315697193,
+              "max_separation_m": 0.021584291011095047,
+              "max_native_impulse_norm": 0.21421560369331383
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.002056628931313753,
+              "max_separation_m": 0.021584156900644302,
+              "max_native_impulse_norm": 0.2142136288015603
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.002056796569377184,
+              "max_separation_m": 0.02158438041806221,
+              "max_native_impulse_norm": 0.21421570213731927
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.002056731376796961,
+              "max_separation_m": 0.021584369242191315,
+              "max_native_impulse_norm": 0.21421383404202554
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020566140301525593,
+              "max_separation_m": 0.021584156900644302,
+              "max_native_impulse_norm": 0.21420145434826257
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.002056844998151064,
+              "max_separation_m": 0.021584294736385345,
+              "max_native_impulse_norm": 0.21420626285946587
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020568077452480793,
+              "max_separation_m": 0.021584346890449524,
+              "max_native_impulse_norm": 0.21420205674258902
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020565693266689777,
+              "max_separation_m": 0.02158435434103012,
+              "max_native_impulse_norm": 0.21419796119353376
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.002056837547570467,
+              "max_separation_m": 0.02158406376838684,
+              "max_native_impulse_norm": 0.21421410373219799
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020566065795719624,
+              "max_separation_m": 0.02158414199948311,
+              "max_native_impulse_norm": 0.21420527876229373
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020565656013786793,
+              "max_separation_m": 0.021584544330835342,
+              "max_native_impulse_norm": 0.21420676591759624
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020565916784107685,
+              "max_separation_m": 0.021584350615739822,
+              "max_native_impulse_norm": 0.21420497833261343
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020566866733133793,
+              "max_separation_m": 0.021584276109933853,
+              "max_native_impulse_norm": 0.2142057333276653
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -0.0020565991289913654,
+              "max_separation_m": 0.021584272384643555,
+              "max_native_impulse_norm": 0.2142045611716842
+            }
+          ],
+          "scope": "Evaluator-only native solver/manifold diagnostics; no hardware force/damage claim. Root included separately. No matched-hold effect available."
+        }
+      ],
+      "source_contact_boolean_semantics": "Legacy record.robot_object_contact checks native body-name manifold membership, not point penetration/impulse. It may include proximity-only records. Exact replay of that boolean was checked but is not proof of active contact.",
+      "source_qualification_unchanged": "SOURCE_NOT_QUALIFIED; contact interpretation does not turn missing hold/outcome rows into qualified data"
+    },
+    "PushCube-v1": {
+      "histories": [
+        {
+          "row_id": "31af1c7eef6d359b9092566e66a5d5b9b0cd97974d0a3bc19ec093a373a46e70",
+          "raw_path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/31af1c7eef6d359b9092566e66a5d5b9b0cd97974d0a3bc19ec093a373a46e70.json.xz",
+          "raw_sha256": "23548c4e25ff921a4bf93f66e8c03317e03eef93b18dae88fb426cb9bfdb2d41",
+          "history": [
+            "lateral_sweep",
+            "forward_tap"
+          ],
+          "parent_index": 0,
+          "root_active_contact_evidence": true,
+          "prefix_active_contact_boundary_count": 6,
+          "probe_tick_count": 20,
+          "native_manifold_tick_count": 20,
+          "active_contact_tick_count": 3,
+          "proximity_only_tick_count": 17,
+          "active_to_inactive_contact_transition": true,
+          "frames": [
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 32,
+              "min_separation_m": -2.574176278358209e-06,
+              "max_separation_m": 0.021742815151810646,
+              "max_native_impulse_norm": 0.00028932694842903194
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 20,
+              "min_separation_m": 0.0028749853372573853,
+              "max_separation_m": 0.01905844919383526,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 20,
+              "min_separation_m": 0.0030052270740270615,
+              "max_separation_m": 0.01911073550581932,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 17,
+              "min_separation_m": 0.0029690146911889315,
+              "max_separation_m": 0.01848248578608036,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 17,
+              "min_separation_m": 0.002934364601969719,
+              "max_separation_m": 0.018510496243834496,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 16,
+              "min_separation_m": 0.002926945686340332,
+              "max_separation_m": 0.018532732501626015,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 16,
+              "min_separation_m": 0.0029222406446933746,
+              "max_separation_m": 0.01853916235268116,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 16,
+              "min_separation_m": 0.0029194988310337067,
+              "max_separation_m": 0.018540166318416595,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 16,
+              "min_separation_m": 0.002919018268585205,
+              "max_separation_m": 0.01854019984602928,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 16,
+              "min_separation_m": 0.0029189232736825943,
+              "max_separation_m": 0.018540319055318832,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 16,
+              "min_separation_m": 0.0029189325869083405,
+              "max_separation_m": 0.018540184944868088,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 16,
+              "min_separation_m": 0.0013943660305812955,
+              "max_separation_m": 0.018383486196398735,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 32,
+              "min_separation_m": -1.6577541828155518e-06,
+              "max_separation_m": 0.02188117429614067,
+              "max_native_impulse_norm": 0.0012659652327015542
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 32,
+              "min_separation_m": -1.3597309589385986e-06,
+              "max_separation_m": 0.021871738135814667,
+              "max_native_impulse_norm": 0.0008845018378872114
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 32,
+              "min_separation_m": -1.695007085800171e-06,
+              "max_separation_m": 0.021864095702767372,
+              "max_native_impulse_norm": 0.0009485322931300054
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 32,
+              "min_separation_m": 2.6868656277656555e-05,
+              "max_separation_m": 0.021873265504837036,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 32,
+              "min_separation_m": 3.777258098125458e-05,
+              "max_separation_m": 0.02187267877161503,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 32,
+              "min_separation_m": 3.7804245948791504e-05,
+              "max_separation_m": 0.021872781217098236,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 32,
+              "min_separation_m": 3.7981197237968445e-05,
+              "max_separation_m": 0.02187270112335682,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 32,
+              "min_separation_m": 3.800541162490845e-05,
+              "max_separation_m": 0.021872805431485176,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 32,
+              "min_separation_m": 3.794953227043152e-05,
+              "max_separation_m": 0.021872814744710922,
+              "max_native_impulse_norm": 0.0
+            }
+          ],
+          "scope": "Evaluator-only native solver/manifold diagnostics; no hardware force/damage claim. Root included separately. No matched-hold effect available."
+        },
+        {
+          "row_id": "5043dc16b2076429ea61594ac29875dafc5e115c639afae975ef67149f3ed584",
+          "raw_path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/5043dc16b2076429ea61594ac29875dafc5e115c639afae975ef67149f3ed584.json.xz",
+          "raw_sha256": "680130a3a34445723b1acc8bd079f9ae1f76afa485a8e3c64319a5fd9e6f569f",
+          "history": [
+            "lateral_sweep",
+            "lateral_sweep"
+          ],
+          "parent_index": 0,
+          "root_active_contact_evidence": true,
+          "prefix_active_contact_boundary_count": 6,
+          "probe_tick_count": 20,
+          "native_manifold_tick_count": 20,
+          "active_contact_tick_count": 0,
+          "proximity_only_tick_count": 20,
+          "active_to_inactive_contact_transition": true,
+          "frames": [
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 32,
+              "min_separation_m": -2.574176278358209e-06,
+              "max_separation_m": 0.021742815151810646,
+              "max_native_impulse_norm": 0.00028932694842903194
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 20,
+              "min_separation_m": 0.0028749853372573853,
+              "max_separation_m": 0.01905844919383526,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 20,
+              "min_separation_m": 0.0030052270740270615,
+              "max_separation_m": 0.01911073550581932,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 17,
+              "min_separation_m": 0.0029690146911889315,
+              "max_separation_m": 0.01848248578608036,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 17,
+              "min_separation_m": 0.002934364601969719,
+              "max_separation_m": 0.018510496243834496,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 16,
+              "min_separation_m": 0.002926945686340332,
+              "max_separation_m": 0.018532732501626015,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 16,
+              "min_separation_m": 0.0029222406446933746,
+              "max_separation_m": 0.01853916235268116,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 16,
+              "min_separation_m": 0.0029194988310337067,
+              "max_separation_m": 0.018540166318416595,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 16,
+              "min_separation_m": 0.002919018268585205,
+              "max_separation_m": 0.01854019984602928,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 16,
+              "min_separation_m": 0.0029189232736825943,
+              "max_separation_m": 0.018540319055318832,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 16,
+              "min_separation_m": 0.0029189325869083405,
+              "max_separation_m": 0.018540184944868088,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 16,
+              "min_separation_m": 0.002897687256336212,
+              "max_separation_m": 0.01854587346315384,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 17,
+              "min_separation_m": 0.002867078175768256,
+              "max_separation_m": 0.01856691762804985,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 17,
+              "min_separation_m": 0.0028342697769403458,
+              "max_separation_m": 0.018593357875943184,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 15,
+              "min_separation_m": 0.00280285463668406,
+              "max_separation_m": 0.01862083561718464,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 15,
+              "min_separation_m": 0.002795053645968437,
+              "max_separation_m": 0.01863904856145382,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 15,
+              "min_separation_m": 0.002788374200463295,
+              "max_separation_m": 0.018644703552126884,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 15,
+              "min_separation_m": 0.002786383032798767,
+              "max_separation_m": 0.018645433709025383,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 15,
+              "min_separation_m": 0.0027861110866069794,
+              "max_separation_m": 0.018645578995347023,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 15,
+              "min_separation_m": 0.0027859583497047424,
+              "max_separation_m": 0.018645593896508217,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 15,
+              "min_separation_m": 0.0027860216796398163,
+              "max_separation_m": 0.018645549193024635,
+              "max_native_impulse_norm": 0.0
+            }
+          ],
+          "scope": "Evaluator-only native solver/manifold diagnostics; no hardware force/damage claim. Root included separately. No matched-hold effect available."
+        },
+        {
+          "row_id": "b618178d3fec8101a1e3f339b4af9624eb558a3a2bca2085092be04df596f703",
+          "raw_path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/b618178d3fec8101a1e3f339b4af9624eb558a3a2bca2085092be04df596f703.json.xz",
+          "raw_sha256": "1e1e487cddde69e9dcdd59d58060ac5ba217e6b3881b6d71cec60bc23e9eab9f",
+          "history": [
+            "forward_tap",
+            "forward_tap"
+          ],
+          "parent_index": 0,
+          "root_active_contact_evidence": true,
+          "prefix_active_contact_boundary_count": 6,
+          "probe_tick_count": 20,
+          "native_manifold_tick_count": 20,
+          "active_contact_tick_count": 7,
+          "proximity_only_tick_count": 13,
+          "active_to_inactive_contact_transition": true,
+          "frames": [
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 32,
+              "min_separation_m": -2.574176278358209e-06,
+              "max_separation_m": 0.021742815151810646,
+              "max_native_impulse_norm": 0.00028932694842903194
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 20,
+              "min_separation_m": 0.0013703148579224944,
+              "max_separation_m": 0.019077494740486145,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": 6.761401891708374e-07,
+              "max_separation_m": 0.02187683805823326,
+              "max_native_impulse_norm": 0.0009229229360934889
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -3.8929283618927e-07,
+              "max_separation_m": 0.02186097390949726,
+              "max_native_impulse_norm": 0.0007555158527616121
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -2.520158886909485e-06,
+              "max_separation_m": 0.021856851875782013,
+              "max_native_impulse_norm": 0.0007477693969696872
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 28,
+              "min_separation_m": 2.6699155569076538e-05,
+              "max_separation_m": 0.021863562986254692,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 28,
+              "min_separation_m": 3.8465484976768494e-05,
+              "max_separation_m": 0.02186294086277485,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 28,
+              "min_separation_m": 3.855861723423004e-05,
+              "max_separation_m": 0.02186293713748455,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 28,
+              "min_separation_m": 3.858841955661774e-05,
+              "max_separation_m": 0.02186313085258007,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 28,
+              "min_separation_m": 3.8644298911094666e-05,
+              "max_separation_m": 0.021862950176000595,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 28,
+              "min_separation_m": 3.8582831621170044e-05,
+              "max_separation_m": 0.021863024681806564,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -6.407499313354492e-07,
+              "max_separation_m": 0.021849267184734344,
+              "max_native_impulse_norm": 0.0009016972838770607
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -1.991167664527893e-06,
+              "max_separation_m": 0.02184339053928852,
+              "max_native_impulse_norm": 0.0007571679926455244
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -8.884817361831665e-07,
+              "max_separation_m": 0.02184269391000271,
+              "max_native_impulse_norm": 0.0009803614285261372
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -3.03611159324646e-07,
+              "max_separation_m": 0.021835189312696457,
+              "max_native_impulse_norm": 0.0011770281598946046
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 28,
+              "min_separation_m": 2.9608607292175293e-05,
+              "max_separation_m": 0.021834297105669975,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 28,
+              "min_separation_m": 4.2460858821868896e-05,
+              "max_separation_m": 0.021830687299370766,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 28,
+              "min_separation_m": 4.276074469089508e-05,
+              "max_separation_m": 0.021830163896083832,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 28,
+              "min_separation_m": 4.2766332626342773e-05,
+              "max_separation_m": 0.021830052137374878,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 28,
+              "min_separation_m": 4.279240965843201e-05,
+              "max_separation_m": 0.02183014526963234,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 28,
+              "min_separation_m": 4.2790547013282776e-05,
+              "max_separation_m": 0.021830154582858086,
+              "max_native_impulse_norm": 0.0
+            }
+          ],
+          "scope": "Evaluator-only native solver/manifold diagnostics; no hardware force/damage claim. Root included separately. No matched-hold effect available."
+        },
+        {
+          "row_id": "bc96844368ffba56246e10f2e2bb00751cff7690aa6a4fa966cb1d12034bcac7",
+          "raw_path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/bc96844368ffba56246e10f2e2bb00751cff7690aa6a4fa966cb1d12034bcac7.json.xz",
+          "raw_sha256": "e5354e04253e143f6b242c1bf224ab497e8e84f40cbf77f0bb28d106a65c5ed0",
+          "history": [
+            "lateral_sweep"
+          ],
+          "parent_index": 0,
+          "root_active_contact_evidence": true,
+          "prefix_active_contact_boundary_count": 6,
+          "probe_tick_count": 10,
+          "native_manifold_tick_count": 10,
+          "active_contact_tick_count": 0,
+          "proximity_only_tick_count": 10,
+          "active_to_inactive_contact_transition": true,
+          "frames": [
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 32,
+              "min_separation_m": -2.574176278358209e-06,
+              "max_separation_m": 0.021742815151810646,
+              "max_native_impulse_norm": 0.00028932694842903194
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 20,
+              "min_separation_m": 0.0028749853372573853,
+              "max_separation_m": 0.01905844919383526,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 20,
+              "min_separation_m": 0.0030052270740270615,
+              "max_separation_m": 0.01911073550581932,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 17,
+              "min_separation_m": 0.0029690146911889315,
+              "max_separation_m": 0.01848248578608036,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 17,
+              "min_separation_m": 0.002934364601969719,
+              "max_separation_m": 0.018510496243834496,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 16,
+              "min_separation_m": 0.002926945686340332,
+              "max_separation_m": 0.018532732501626015,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 16,
+              "min_separation_m": 0.0029222406446933746,
+              "max_separation_m": 0.01853916235268116,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 16,
+              "min_separation_m": 0.0029194988310337067,
+              "max_separation_m": 0.018540166318416595,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 16,
+              "min_separation_m": 0.002919018268585205,
+              "max_separation_m": 0.01854019984602928,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 16,
+              "min_separation_m": 0.0029189232736825943,
+              "max_separation_m": 0.018540319055318832,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 16,
+              "min_separation_m": 0.0029189325869083405,
+              "max_separation_m": 0.018540184944868088,
+              "max_native_impulse_norm": 0.0
+            }
+          ],
+          "scope": "Evaluator-only native solver/manifold diagnostics; no hardware force/damage claim. Root included separately. No matched-hold effect available."
+        },
+        {
+          "row_id": "da7bc3d5fb8536263bb99fc1378640cbaf12b4d3b2aafd3260d95bee37c6c0df",
+          "raw_path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/da7bc3d5fb8536263bb99fc1378640cbaf12b4d3b2aafd3260d95bee37c6c0df.json.xz",
+          "raw_sha256": "494b74ea7401da2eceff5676d64e94b15c74dd0113014671f0c42f718056089e",
+          "history": [
+            "forward_tap",
+            "lateral_sweep"
+          ],
+          "parent_index": 0,
+          "root_active_contact_evidence": true,
+          "prefix_active_contact_boundary_count": 6,
+          "probe_tick_count": 20,
+          "native_manifold_tick_count": 20,
+          "active_contact_tick_count": 12,
+          "proximity_only_tick_count": 8,
+          "active_to_inactive_contact_transition": true,
+          "frames": [
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 32,
+              "min_separation_m": -2.574176278358209e-06,
+              "max_separation_m": 0.021742815151810646,
+              "max_native_impulse_norm": 0.00028932694842903194
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 20,
+              "min_separation_m": 0.0013703148579224944,
+              "max_separation_m": 0.019077494740486145,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": 6.761401891708374e-07,
+              "max_separation_m": 0.02187683805823326,
+              "max_native_impulse_norm": 0.0009229229360934889
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -3.8929283618927e-07,
+              "max_separation_m": 0.02186097390949726,
+              "max_native_impulse_norm": 0.0007555158527616121
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -2.520158886909485e-06,
+              "max_separation_m": 0.021856851875782013,
+              "max_native_impulse_norm": 0.0007477693969696872
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 28,
+              "min_separation_m": 2.6699155569076538e-05,
+              "max_separation_m": 0.021863562986254692,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 28,
+              "min_separation_m": 3.8465484976768494e-05,
+              "max_separation_m": 0.02186294086277485,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 28,
+              "min_separation_m": 3.855861723423004e-05,
+              "max_separation_m": 0.02186293713748455,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 28,
+              "min_separation_m": 3.858841955661774e-05,
+              "max_separation_m": 0.02186313085258007,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 28,
+              "min_separation_m": 3.8644298911094666e-05,
+              "max_separation_m": 0.021862950176000595,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 28,
+              "min_separation_m": 3.8582831621170044e-05,
+              "max_separation_m": 0.021863024681806564,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 28,
+              "min_separation_m": 2.0536419469863176e-05,
+              "max_separation_m": 0.021870676428079605,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 36,
+              "min_separation_m": -4.4032926780346315e-06,
+              "max_separation_m": 0.021869242191314697,
+              "max_native_impulse_norm": 0.0009161197608512024
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 36,
+              "min_separation_m": -4.790839739143848e-06,
+              "max_separation_m": 0.02185591123998165,
+              "max_native_impulse_norm": 0.0006905961324590117
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 36,
+              "min_separation_m": -2.043322865574737e-06,
+              "max_separation_m": 0.02183990366756916,
+              "max_native_impulse_norm": 0.00037613450184040926
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 35,
+              "min_separation_m": -3.961846232414246e-06,
+              "max_separation_m": 0.02181416004896164,
+              "max_native_impulse_norm": 0.0007856505321258876
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 35,
+              "min_separation_m": -1.6149133443832397e-06,
+              "max_separation_m": 0.021796057000756264,
+              "max_native_impulse_norm": 0.0003245018798415807
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 35,
+              "min_separation_m": -3.725293851175593e-08,
+              "max_separation_m": 0.021789468824863434,
+              "max_native_impulse_norm": 3.552741379913844e-05
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 35,
+              "min_separation_m": 3.725252328834472e-09,
+              "max_separation_m": 0.02178870514035225,
+              "max_native_impulse_norm": 2.563097012145899e-05
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 35,
+              "min_separation_m": 3.7252863904768674e-08,
+              "max_separation_m": 0.021788788959383965,
+              "max_native_impulse_norm": 2.7058884731236563e-05
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 35,
+              "min_separation_m": 7.636841559133245e-08,
+              "max_separation_m": 0.021788597106933594,
+              "max_native_impulse_norm": 1.2718995653793826e-05
+            }
+          ],
+          "scope": "Evaluator-only native solver/manifold diagnostics; no hardware force/damage claim. Root included separately. No matched-hold effect available."
+        },
+        {
+          "row_id": "ea33da26d446acf042367b18287ac98013c9da241d731430fcb30db2c6d723bb",
+          "raw_path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/ea33da26d446acf042367b18287ac98013c9da241d731430fcb30db2c6d723bb.json.xz",
+          "raw_sha256": "4db8b53b72c10b44190d0fb0a07e76a989ea820e10c1ba8b85c00f29847e27b6",
+          "history": [
+            "forward_tap"
+          ],
+          "parent_index": 0,
+          "root_active_contact_evidence": true,
+          "prefix_active_contact_boundary_count": 6,
+          "probe_tick_count": 10,
+          "native_manifold_tick_count": 10,
+          "active_contact_tick_count": 3,
+          "proximity_only_tick_count": 7,
+          "active_to_inactive_contact_transition": true,
+          "frames": [
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 32,
+              "min_separation_m": -2.574176278358209e-06,
+              "max_separation_m": 0.021742815151810646,
+              "max_native_impulse_norm": 0.00028932694842903194
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 20,
+              "min_separation_m": 0.0013703148579224944,
+              "max_separation_m": 0.019077494740486145,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": 6.761401891708374e-07,
+              "max_separation_m": 0.02187683805823326,
+              "max_native_impulse_norm": 0.0009229229360934889
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -3.8929283618927e-07,
+              "max_separation_m": 0.02186097390949726,
+              "max_native_impulse_norm": 0.0007555158527616121
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": true,
+              "point_count": 28,
+              "min_separation_m": -2.520158886909485e-06,
+              "max_separation_m": 0.021856851875782013,
+              "max_native_impulse_norm": 0.0007477693969696872
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 28,
+              "min_separation_m": 2.6699155569076538e-05,
+              "max_separation_m": 0.021863562986254692,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 28,
+              "min_separation_m": 3.8465484976768494e-05,
+              "max_separation_m": 0.02186294086277485,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 28,
+              "min_separation_m": 3.855861723423004e-05,
+              "max_separation_m": 0.02186293713748455,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 28,
+              "min_separation_m": 3.858841955661774e-05,
+              "max_separation_m": 0.02186313085258007,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 28,
+              "min_separation_m": 3.8644298911094666e-05,
+              "max_separation_m": 0.021862950176000595,
+              "max_native_impulse_norm": 0.0
+            },
+            {
+              "native_manifold_present": true,
+              "active_contact_evidence": false,
+              "point_count": 28,
+              "min_separation_m": 3.8582831621170044e-05,
+              "max_separation_m": 0.021863024681806564,
+              "max_native_impulse_norm": 0.0
+            }
+          ],
+          "scope": "Evaluator-only native solver/manifold diagnostics; no hardware force/damage claim. Root included separately. No matched-hold effect available."
+        }
+      ],
+      "source_contact_boolean_semantics": "Legacy record.robot_object_contact checks native body-name manifold membership, not point penetration/impulse. It may include proximity-only records. Exact replay of that boolean was checked but is not proof of active contact.",
+      "source_qualification_unchanged": "SOURCE_NOT_QUALIFIED; contact interpretation does not turn missing hold/outcome rows into qualified data"
+    }
+  },
+  "frozen_runner_sha256": "b4814b7834fd5183d31a4227d0e5eb9dc4f2d68e6f82c99e75f7a1a2e2744842",
+  "forbidden_within_history_calls": [],
+  "diagnostic_inputs": "Fixed registered history menu; arm qpos/qvel first7, FK TCPxyz and native20Hz clock only. Object pose/contact/task labels are absent from recorded planner_frame.",
+  "macro_privilege": "Unchanged native c/r macros internally use ideal object/goal state, as explicitly frozen; simulation-only, never claimed to be proprioceptive deployable hardware controllers.",
+  "checkpoint_lineage": "Fresh World per evaluator episode, native seed reset in its unchanged constructor, full original prefix tape; root/controller custom matched across38returned branches/task. No restore invoked in new driver.",
+  "statistical_scope": "No calibrated G, independent risk interval, population prevalence or held-out information gain. One parent exposed/task; macro/history branches correlated.",
+  "native_failure_scope": "Started39th journal has no returned trace/backtrace. Exact stage and root cause are UNDETERMINED. Worker isolation is a future hypothesis only.",
+  "source_semantics_limit": "Both cached-contact proxy interpretation and missing native-finalizer accounting are explicitly disclosed; original source and historical claims/evidence not rewritten."
+}

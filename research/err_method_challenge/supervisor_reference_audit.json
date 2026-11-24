@@ -1,0 +1,16 @@
+{
+  "provided_reference_examples": "PASS_EXACT_EXPECTED_JSON",
+  "tiny_difference_probe": "KNOWN_REFERENCE_ROUNDING_LIMIT",
+  "epsilon": "1/10000000000000",
+  "reference_result": {
+    "status": "impossible",
+    "unresolved_pairs": [
+      [
+        "just_below_harm",
+        "just_above_harm"
+      ]
+    ]
+  },
+  "exact_law_relationship": "Different exact paired laws and opposing verdicts; 12-digit rounding suppresses the difference. Production must use exact rationals.",
+  "source_not_modified": true
+}

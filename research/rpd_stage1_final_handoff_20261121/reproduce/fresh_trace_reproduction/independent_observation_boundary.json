@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "frames_checked": 36450,
+  "root_feature_dimension": 28,
+  "diagnostic_sample_dimension": 23,
+  "diagnostic_sample_substeps": [
+    155,
+    160,
+    165,
+    170,
+    175,
+    180,
+    185,
+    190,
+    195,
+    200
+  ],
+  "scope": "Reconstruct every recorded online scalar from whitelisted joint/TCP/command/publicgeometry fields. Force,Z,peg/grasp pose and alternative outcomes remain evaluator-only. No learned diagnostic model was fitted."
+}

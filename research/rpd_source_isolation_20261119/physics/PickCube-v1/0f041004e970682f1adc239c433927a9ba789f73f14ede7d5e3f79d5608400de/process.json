@@ -1,0 +1,12 @@
+{
+  "job_id": "0f041004e970682f1adc239c433927a9ba789f73f14ede7d5e3f79d5608400de",
+  "returncode": 0,
+  "timed_out": false,
+  "wall_seconds": 16.919049810996512,
+  "native_SIGSEGV_observed": false,
+  "debugger_log_sha256": "341049c311522ba00ed776e6afd411555c87c489808602500969b2c2d39bb0bf",
+  "gdb_pid": 2786290,
+  "remaining_task_seconds": 992.2335449600068,
+  "backtrace_status": "Captured in debugger log if inferior stopped; no failure replay to collect a backtrace",
+  "new_independent_parents": 0
+}

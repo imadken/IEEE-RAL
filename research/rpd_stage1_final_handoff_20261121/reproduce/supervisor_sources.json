@@ -1,0 +1,17 @@
+{
+  "RPD_PAIRED_H2_VIOLATION_STATISTICAL_AUDIT_20261120.md": {
+    "sha256": "4093e88a393c6e5f14cadf6401a7fcc40185af1aaee812e39c34d6aab72db2bf",
+    "bytes": 5323,
+    "origin": "https://github.com/imadken/IEEE-RAL/blob/research/rpd-stage1-v3-local-handoff-20261120/docs/RPD_PAIRED_H2_VIOLATION_STATISTICAL_AUDIT_20261120.md"
+  },
+  "RPD_SOURCE_AND_STAGE1_V45_QUALIFICATION_20261121.md": {
+    "sha256": "2b797fda533822a762ad0ce0fcd1e6b3f4dca652b5bcd253b3e83643f81e8137",
+    "bytes": 4625,
+    "origin": "https://github.com/imadken/IEEE-RAL/blob/research/rpd-stage1-v3-local-handoff-20261120/docs/RPD_SOURCE_AND_STAGE1_V45_QUALIFICATION_20261121.md"
+  },
+  "CODEX_RPD_STAGE1_FINAL_FREEZE_EXPERIMENTS_AND_RETURN_BUNDLE_20261121.md": {
+    "sha256": "fc8c0a7dc0063c7c83f8e886acda646baa48738e763d29a03513e563e8901818",
+    "bytes": 14515,
+    "origin": "https://github.com/imadken/IEEE-RAL/blob/research/rpd-stage1-v3-local-handoff-20261120/docs/CODEX_RPD_STAGE1_FINAL_FREEZE_EXPERIMENTS_AND_RETURN_BUNDLE_20261121.md"
+  }
+}

@@ -1,0 +1,173 @@
+commit e65133d73454bcb42ff820bba52e43a4883df3a1
+Author: imadken <imadkenai09@gmail.com>
+Date:   Sat Nov 21 12:16:34 2026 +0100
+
+    test(rpd): register new-seed nominal insertion source gate
+
+diff --git a/research/rpd_v45_source_development_20261121/nominal_worker.py b/research/rpd_v45_source_development_20261121/nominal_worker.py
+new file mode 100644
+index 0000000..7af5419
+--- /dev/null
++++ b/research/rpd_v45_source_development_20261121/nominal_worker.py
+@@ -0,0 +1,161 @@
++"""New-seed aligned-insertion development gate; not a population experiment."""
++
++import argparse
++import faulthandler
++import hashlib
++import json
++import logging
++import sys
++import traceback
++from pathlib import Path
++from typing import Literal
++
++import numpy as np
++from pydantic import BaseModel, ConfigDict, Field
++from scipy.spatial.transform import Rotation, Slerp
++
++LOGGER = logging.getLogger(__name__)
++ROOT = Path(__file__).resolve().parents[2]
++sys.path.insert(0, str(ROOT / "scripts"))
++import rpd_assembly_worker as native
++from rpd_assembly_contract import pose_matrix, recovery_segments, transform
++
++
++class DevCandidate(BaseModel):
++    model_config = ConfigDict(extra="forbid", frozen=True)
++    candidate_id: Literal["RPD-V45-source-development-20261121/nominal/0"]
++    phase: Literal["nominal_development"]
++    index: Literal[0]
++    native_geometry_seed: int = Field(ge=0, lt=2**32)
++    fault_seed_sha256: str
++
++
++class DevJob(BaseModel):
++    model_config = ConfigDict(extra="forbid", frozen=True)
++    candidate: DevCandidate
++    intervention: Literal["direct"]
++    action: Literal["a0"]
++    repeat: Literal[0, 1]
++
++    @property
++    def job_id(self):
++        return hashlib.sha256(self.model_dump_json().encode()).hexdigest()
++
++
++def nominal_initial_condition(candidate, length):
++    """Explicit zero-fault initialization, not an observation/terminal imputation."""
++    return {
++        "Z": None,
++        "dy": 0.0,
++        "dz": 0.0,
++        "pitch": 0.0,
++        "yaw": 0.0,
++        "theta_c": float(np.arctan(0.003 / (2 * length))),
++        "signs": [0, 0],
++        "transverse_draws": [0.0, 0.0],
++        "axis_draw": None,
++        "regime": "ALIGNED_NOMINAL_DEVELOPMENT_NOT_TARGET_POPULATION",
++    }
++
++
++class NominalEpisode(native.AssemblyEpisode):
++    def execute(self):
++        # Retain original contact-screen results, but they are not the gate for
++        # an aligned nominal control: no postfailure population is claimed here.
++        original_screen = self.initialize()
++        result = {
++            "schema": "RPD_V45_NOMINAL_DEVELOPMENT_V1",
++            "job": self.job.model_dump(),
++            "job_id": self.job.job_id,
++            "status": "COMPLETE",
++            "original_postfailure_screen": original_screen,
++            "qualification_parent": False,
++            "confirmation_parent": False,
++        }
++        if self.root is None or not self.root["frame"]["native_grasp"]:
++            result["status"] = "BLOCKED_NO_VALID_GRASP_ROOT"
++            return result
++        start = np.linalg.inv(self.hole) @ pose_matrix(
++            native.vector(self.env.agent.tcp.pose.raw_pose)
++        )
++        previous = start
++        for duration, endpoint in recovery_segments(
++            start, self.length, self.job.action
++        ):
++            slerp = Slerp(
++                [0, 1], Rotation.from_matrix([previous[:3, :3], endpoint[:3, :3]])
++            )
++            for k in range(1, duration + 1):
++                v = k / duration
++                target = transform(
++                    previous[:3, 3]
++                    + (endpoint[:3, 3] - previous[:3, 3]) * (3 * v * v - 2 * v**3),
++                    slerp(v).as_matrix(),
++                )
++                self.step(target)
++            previous = endpoint
++        while self.tick < 110:
++            self.step(previous)
++        assert self.tick == 110 and self.substep == 550
++        path = [self.root["frame"]] + self.frames[150:]
++        result["terminal"] = {
++            "completion": self.completion,
++            "native_goal_at_deadline": self.frames[-1]["native_goal"],
++            "whole_postroot_compliant": all(
++                all(f["constraint_checks"].values()) for f in path
++            ),
++        }
++        result["nominal_compliant_insertion"] = (
++            result["terminal"]["completion"]
++            and result["terminal"]["whole_postroot_compliant"]
++        )
++        return result
++
++
++def main():
++    parser = argparse.ArgumentParser(description=__doc__)
++    parser.add_argument("--job", type=Path, required=True)
++    args = parser.parse_args()
++    registration = json.loads(
++        args.job.parents[1].joinpath("registration.json").read_text()
++    )
++    for raw, expected in registration["source_hashes"].items():
++        path = Path(raw) if Path(raw).is_absolute() else ROOT / raw
++        if hashlib.sha256(path.read_bytes()).hexdigest() != expected:
++            raise RuntimeError(f"Registered source changed: {path}")
++    job = DevJob.model_validate_json(args.job.read_text())
++    assert job.model_dump() in registration["jobs"]
++    faulthandler.enable(all_threads=True)
++    native.fault = nominal_initial_condition
++    episode = NominalEpisode(job, args.job.parent)
++    try:
++        result = episode.execute()
++    except Exception as exc:
++        LOGGER.exception(
++            "Nominal source failed; preserve actual trace and missing outcome"
++        )
++        result = {
++            "status": "SOURCE_ERROR",
++            "job": job.model_dump(),
++            "exception_type": type(exc).__name__,
++            "exception": str(exc),
++            "traceback": traceback.format_exc(),
++            "terminal": None,
++        }
++    episode.finish(result)
++    print(
++        json.dumps(
++            {
++                "status": result["status"],
++                "terminal": result.get("terminal"),
++                "nominal_compliant_insertion": result.get(
++                    "nominal_compliant_insertion"
++                ),
++            }
++        )
++    )
++    return 0 if result["status"] == "COMPLETE" else 3
++
++
++if __name__ == "__main__":
++    raise SystemExit(main())

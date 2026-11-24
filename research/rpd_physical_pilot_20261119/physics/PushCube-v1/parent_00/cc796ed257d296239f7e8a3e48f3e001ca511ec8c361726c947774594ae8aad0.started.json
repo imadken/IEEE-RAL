@@ -1,0 +1,6 @@
+{
+  "row_id": "cc796ed257d296239f7e8a3e48f3e001ca511ec8c361726c947774594ae8aad0",
+  "start_epoch": 1795098780.8040576,
+  "invocation": 0,
+  "resume_policy": "No repeat if started row lacks canonical result"
+}

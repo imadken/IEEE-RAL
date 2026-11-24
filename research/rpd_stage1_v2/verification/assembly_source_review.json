@@ -1,0 +1,50 @@
+{
+  "mode": "READ_ONLY_NO_ENVIRONMENT_CONSTRUCTION",
+  "source": ".venv/lib/python3.12/site-packages/mani_skill/envs/tasks/tabletop/peg_insertion_side.py",
+  "sha256": "79761d7a7b17ebdbd974c58f7427abcd3a50ec115f0340f6ed5d282a0d48fc6e",
+  "task": "PegInsertionSide-v1",
+  "robot": "panda_wristcam",
+  "clearance_per_side_m": 0.003,
+  "geometry": "Square peg cross-section and square opening; not a circular radial-clearance model",
+  "half_length_source_m": [
+    0.085,
+    0.125
+  ],
+  "half_width_source_m": [
+    0.015,
+    0.025
+  ],
+  "axis": "hole-local+x",
+  "native_success": "head-in-hole-frame x>=-.015m and abs(y/z)<=hole_half_width; no explicit full-body alignment/stability/force condition",
+  "available_online_channels": "Seven arm qpos/qvel, native FK tcp_pose and declared execution history; no bound force sensor",
+  "privileged_evaluator_fields": [
+    "peg_pose",
+    "box_hole_pose",
+    "peg_half_size",
+    "box_hole_radius",
+    "contact points",
+    "latent generator mode",
+    "future outcomes"
+  ],
+  "leakage_limit": "If exact peg/hole geometry defining alignment label Z enters X, the label may already be observable; cannot call it hidden diagnostic information",
+  "proposed_only": {
+    "probe_seconds": 0.5,
+    "remaining_seconds": 4,
+    "deadline_sensitivity_seconds": 8,
+    "axial": "bounded preload normalized to clearance",
+    "lateral": "one zero-net transverse dither at equal axial depth",
+    "hold": "same commanded equilibrium, not measured-pose recentering or frozen simulation"
+  },
+  "unbound": [
+    "qualified grasped post-failure checkpoint and replay prefix",
+    "lateral/angular generator ranges and friction strata",
+    "servo mode, gains and physical amplitude/withdrawal limits",
+    "declared pose-estimation/grasp-transform interface",
+    "diagnostic target Z and final feature encoding",
+    "pre-existing third recovery skill for optional catalogue sensitivity",
+    "terminal predicate adequacy for intended assembly goal"
+  ],
+  "assembly_source_qualified": false,
+  "assembly_or_confirmation_outcomes": 0,
+  "old_blocked_prefix_not_restarted": true
+}

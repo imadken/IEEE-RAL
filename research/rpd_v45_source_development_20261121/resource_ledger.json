@@ -1,0 +1,20 @@
+{
+  "worker_seconds": 24.80774850503076,
+  "worker_hours": 0.006891041251397433,
+  "source_processes": 2,
+  "independent_technical_development_parents": 1,
+  "physics_samples": 1100,
+  "control_commands": 220,
+  "source_complete": 2,
+  "missing_source_results": 0,
+  "native_crashes": 0,
+  "new_source_qualification_parents": 0,
+  "exploratory_parents": 0,
+  "confirmation_parents": 0,
+  "worker_cap_seconds": 600,
+  "output_cap_bytes": 104857600,
+  "artifact_bytes_before_seal": 4816023,
+  "new_dependencies": 0,
+  "source_upgrades": 0,
+  "paper_edits_after_freeze": 0
+}

@@ -1,0 +1,18 @@
+/home/imad/.config/matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /tmp/matplotlib-x6eziv_6 because there was an issue with the default path (/home/imad/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Frozen source row failed; preserve its trace and missing outcome
+Traceback (most recent call last):
+  File "/home/imad/Desktop/IEEE-RAL/scripts/rpd_assembly_worker.py", line 521, in main
+    result = episode.execute()
+             ^^^^^^^^^^^^^^^^^
+  File "/home/imad/Desktop/IEEE-RAL/scripts/rpd_assembly_worker.py", line 439, in execute
+    eligibility = self.initialize()
+                  ^^^^^^^^^^^^^^^^^
+  File "/home/imad/Desktop/IEEE-RAL/scripts/rpd_assembly_worker.py", line 222, in initialize
+    self.record_initial = self.measure()
+                          ^^^^^^^^^^^^^^
+  File "/home/imad/Desktop/IEEE-RAL/scripts/rpd_assembly_worker.py", line 327, in measure
+    for obj in link._objs
+               ^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '_objs'
+{"job_id": "e7a60252ebfa2da9fcbc8ae538a8667562730de21acd9218279e93627dccf52a", "status": "SOURCE_ERROR", "eligibility": {"disposition": "UNKNOWN"}}

@@ -1,0 +1,23 @@
+{
+  "status": "LATEST_AVAILABLE_LOCAL_SOURCE_IS_V21_NOT_V44",
+  "head": "280f821cdfb9e3b714bceccd6fa053bf45f9f28c",
+  "files": {
+    "papers/rss2027_rpd_stage1/manuscript/references.bib": "70f9f33d8ef3f740d2a891d57132d0adcdebee3a32261dbc41d256aec518b064",
+    "papers/rss2027_rpd_stage1/manuscript/IEEEtran.cls": "d63d4bf27f29603a733d06e27ba5fbb40488acf9d1d696354a88b886758f70a7",
+    "papers/rss2027_rpd_stage1/manuscript/main.tex": "cb9c6de59a6d967cf473af2a3396494832b5af1e6160ce02b2527fc222e6a43e",
+    "papers/rss2027_rpd_stage1/manuscript/body.tex": "121e4aea5bb6eeeec2916292f4546a94b23091639c7197518842b1455b734911",
+    "papers/rss2027_rpd_stage1/manuscript/figures/figure1.pdf": "27c474b1ca37c8ec81f9e3495415861a9007885bc2f2b422e1030791e458a112",
+    "papers/rss2027_rpd_stage1/manuscript/figures/figure1.svg": "3c3d94bf6a65341cf5f8d7471817043b60bc683074308cf1f69ebfc56a7f9706",
+    "papers/rss2027_rpd_stage1/manuscript/figures/figure1.png": "9b1fcdc75faff0464172702604abdc8c0b0d88804ddad03731d5f798624a69d2"
+  },
+  "paper_source_not_modified": true,
+  "evidence": [
+    "Only one includegraphics/figure master",
+    "64 discovery and512 confirmation design",
+    "Public/author V4.4 source package absent",
+    "No local V4.4 branch/worktree/reflog entry found"
+  ],
+  "requested_V45_closure_package_found": false,
+  "V45_freeze_created": false,
+  "readiness": "NOT_READY_MISSING_AUTHORITATIVE_V44_SOURCE"
+}

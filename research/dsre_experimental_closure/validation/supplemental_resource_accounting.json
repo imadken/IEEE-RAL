@@ -1,0 +1,13 @@
+{
+  "measured_output_roots": {
+    "research/dsre_experimental_closure": 28355071,
+    "/tmp/dsre-closure-independent-reproduction": 19422774,
+    "/tmp/dsre-closure-report-trial": 38149,
+    "/tmp/dsre-closure-report-trial2": 41048
+  },
+  "original_started_epoch": 1795035525.4249547,
+  "measured_epoch": 1795040212.0366905,
+  "new_physics": 0,
+  "new_controller_training": 0,
+  "accounting": "Output-root logical bytes before final transfer package. Includes fresh reproduction/trial-report artifacts; temporary test fixtures and preexisting dependency cache are not scientific evidence."
+}

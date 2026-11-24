@@ -1,0 +1,13 @@
+{
+  "all_six_pages_rendered_and_inspected": true,
+  "figures_cited": 2,
+  "conceptual_figures_not_measurements": true,
+  "figure_PDF_glyphs_outlined": true,
+  "SVG_text_editable": true,
+  "native_minimum_diagram_font_points": 7.5,
+  "deterministic_figure_regeneration_all_four_files": true,
+  "original_V44_TeX_and_masters_available": false,
+  "derived_from_V44_PDF": true,
+  "supplement_required_for_critical_method": false,
+  "automated_font_checks_in": "v45_build_check.json"
+}

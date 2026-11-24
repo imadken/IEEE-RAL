@@ -1,0 +1,25 @@
+{
+  "phase": "AUTHORIZED_SOURCE_ONLY_NO_FURTHER_PHYSICS",
+  "tasks": {
+    "PickCube-v1": {
+      "attempted": 14,
+      "returned_complete": 14,
+      "worker_wall_seconds": 241.60809456801508,
+      "output_bytes": 3431151,
+      "not_run": 0
+    },
+    "PushCube-v1": {
+      "attempted": 14,
+      "returned_complete": 14,
+      "worker_wall_seconds": 221.47255919899908,
+      "output_bytes": 1962142,
+      "not_run": 0
+    }
+  },
+  "worker_cap_seconds_per_task": 1200,
+  "output_cap_bytes_per_task": 104857600,
+  "new_independent_parents": 0,
+  "new_discovery_calibration_test_parents": 0,
+  "new_dependencies": 0,
+  "elapsed_calendar_seconds": 1461.6232075691223
+}

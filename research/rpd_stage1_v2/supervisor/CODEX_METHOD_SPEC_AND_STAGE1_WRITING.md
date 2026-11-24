@@ -1,0 +1,19 @@
+# Codex: apply the RPD hypothesis and method lock, then write Stage 1
+
+Repository: /home/imad/Desktop/IEEE-RAL
+Use the latest local RPD source-isolation history, reported commit d97c13a686c23963af0c1c3d6145a51d79cfcac0, without resetting unrelated or newer local work.
+
+Read RPD_HYPOTHESES_AND_METHOD_LOCK_V2.md fully. The scientific direction, proposed hypotheses and comparison semantics are supervisor choices, not permission to choose another contribution. Preserve all historical DSRE/ERR/RPD results and user edits.
+
+1. Reconcile the exact formal notation: tau is remaining time; post-probe budget is tau-d_p. State deterministic reference versus noisy evaluation assumptions. Include trajectory-dependent probe observations. Distinguish a per-state available recovery from an executable common action under partial observation.
+2. Specify the primary assembly interface with the pinned source: source checkpoint, two diagnostic actions, neutral hold, two recovery policies, actual sensor inputs, constraints and terminal success. Resolve numeric bindings from geometry/source conventions and development engineering, never from confirmation performance. Clearly label proposed versus implemented components. Do not state that a task is qualified if it is not. Clutter extraction remains a replication extension.
+3. Turn H1 and H2 into explicit, prospective tests with the proposed 10% erasure and 5 percentage-point completion margins. Distinguish source-failure, uninformative probes, narrow nulls, deadline dependence and repertoire dependence. Keep the primary denominator fixed before treatment and do not select safe/destructive test subsets.
+4. Verify the assumptions and proof of the nominal feasibility criterion against the existing exact planner. Keep established contingent-planning equivalences; do not invent algorithmic superiority. Create a same-duration analytical illustration only if all transitions and outcomes are explicitly labeled constructed.
+5. Write a scientific, anonymous RSS Stage 1 manuscript, at most five content pages plus one references page, following the user's writing playbook. Lead with the scientific question and mechanism; use a compact planner section and a concrete evaluation design. Leave internal gate names, Codex history and submission logistics out of the manuscript.
+6. Use the current 28-episode source isolation only as narrowly scoped feasibility evidence. It is not an H1 prevalence estimate. Keep current positive and negative outcomes needed to interpret that described comparison accurate. Do not import DSRE's recovery-selection performance as RPD results.
+7. Verify sources and venue status, especially active diagnosis, reversibility and terminal-feasibility work. Do not call the task-compatible calibration paper RA-L without a primary publisher record. Preserve the nearest-work distinction on shared objectives and evidence, not vague first-ever claims.
+8. Produce a brief, evidence-backed skeptical review checking hypothesis value, nontriviality, controls, feasibility, oracle leakage, matched baseline information, and all quantities in figures/tables. Fix supported problems without creating a new project.
+
+No new population simulations, neural training, source-package changes, or controller redesign in this assignment. A bounded read-only source/adapter feasibility review and analytical regression tests are authorized. If a protocol detail remains unsupported, disclose it specifically rather than inventing readiness.
+
+Deliver revised source/PDF, one figure storyboard, compact methodology/verification report, exact remaining bindings, verified citations and a scoped local commit. Inspect all pages, fonts, anonymity and reference resolution. Do not push or submit. Leave no workers running. The principal researcher retains the final submission decision.

@@ -1,0 +1,608 @@
+{
+  "passed": true,
+  "source_episode_command_sequences_checked": 75,
+  "controller_commands_checked": 7290,
+  "scope": "Independent equations for initialization/probes/hold/nominal macros and base-frameXYZ conversion;not a simulation rerun",
+  "rows": [
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/05baf7d369f83b0a3c5f83edc3d03d04f88d15653b0769912456c3f478898c68_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 1.0623194252154065e-18,
+      "maximum_native_float32_translation_error_m": 3.396062466465056e-08,
+      "maximum_native_float32_rotation_error_rad": 1.0956283669587911e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/0699aa859f03dbcffbd7f16a9c6ffc73726d21acb28d01045428ee7bdad3b02d_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551506862041495e-17,
+      "maximum_target_rotation_error_rad": 6.503963441457212e-19,
+      "maximum_native_float32_translation_error_m": 3.396062466465056e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1901919460295016e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/0c485385bfb2ef3fac4e10da1ce1a79c887298ab2abeb043b6a8467e4df4ed08_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.55128518885463e-17,
+      "maximum_target_rotation_error_rad": 9.697345388740505e-19,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 1.191568975390905e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/0e796862965066d59d5b27c3384b8aad23c332f9aeee181969886ceeab49397f_sourcefix02/result.json.xz",
+      "commands_checked": 30,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 0.0,
+      "maximum_native_float32_translation_error_m": 3.396062466465056e-08,
+      "maximum_native_float32_rotation_error_rad": 8.742278012618954e-08
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/16dcf588be003e73a183f6c7bad80053b26929ae39b1b9c76ace7d2c2df225d7_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 1.0336719099868351e-18,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 1.0716716350145157e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/1c0867bec8e075719f39412c2561c179b6a60874fd5b4ea41c6473e523ffe90a_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 1.2179235763833309e-18,
+      "maximum_native_float32_translation_error_m": 4.275211867314999e-08,
+      "maximum_native_float32_rotation_error_rad": 9.939943190555872e-08
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/28d314441018b6175e337afab1f4cc81c956e90cc45a7c1d2102103116c7c568_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.55128518885463e-17,
+      "maximum_target_rotation_error_rad": 4.96980357279489e-19,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 8.742278012618954e-08
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/2c3447c77efdd3e16ac0ef0a479de93a05368572a595c58f310e9606a373b70b_sourcefix02/result.json.xz",
+      "commands_checked": 30,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 0.0,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 8.742278012618954e-08
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/2f4c4eda83c338a7bac9bef577cb1e7c36a939efd432adab7dc777d50489d546_sourcefix02/result.json.xz",
+      "commands_checked": 30,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 0.0,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 8.742278012618954e-08
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/30505a112729cd5dd8b7cad2b1148f61f9de6b7d575abbb67834a804c127a4a1_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 8.504723820208297e-19,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 1.0953489826292874e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/30b096e108c95428c0b94060d72f851fc600bdd7a12e2add3e49e892833f2881_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 1.0623126324577937e-18,
+      "maximum_native_float32_translation_error_m": 3.396062466465056e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1835253221521941e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/31bf7d31f6712c8e8d680a861a5fd41fc749481d72f3f6c14d8adb85f749ad4e_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 2.776321109679425e-17,
+      "maximum_target_rotation_error_rad": 9.697343128210472e-19,
+      "maximum_native_float32_translation_error_m": 4.244492528752644e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1866108360535282e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/33e539246c1dfab309976e8f24fcea1b0c7ad9cad6daf8b21e260d605f490551_sourcefix02/result.json.xz",
+      "commands_checked": 30,
+      "maximum_target_translation_error_m": 2.7755575615628914e-17,
+      "maximum_target_rotation_error_rad": 0.0,
+      "maximum_native_float32_translation_error_m": 3.396062470388061e-08,
+      "maximum_native_float32_rotation_error_rad": 8.742278012618954e-08
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/35c9637297a291ace657bab3c293afaf50c94e689e49de2c6c20ad2d0d57bb57_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 1.3005457964785006e-18,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 1.0614896251894519e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/37268beea10643c0283fb535d9f270b1aa969c88dbb54eb37ced411eb698e994_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 7.509676453916736e-19,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1002985289471305e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/3f882f375b43b2ec05157d9a2e28634c77738c26e4ec143f4968bced52eb82e7_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 8.673582996136378e-19,
+      "maximum_native_float32_translation_error_m": 4.406964273149997e-08,
+      "maximum_native_float32_rotation_error_rad": 8.742278012618954e-08
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/43dcb8635f808c1d1cb41d8f2899dc187fbc99b47235f699348aeaf0392578a2_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551284527130373e-17,
+      "maximum_target_rotation_error_rad": 9.69736362042071e-19,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 1.191568975390905e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/481059536dd5d952e8dce416c66b70d3598c6c41d41e94ebca61afb32f445adc_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 9.006487207607886e-19,
+      "maximum_native_float32_translation_error_m": 3.930218312141042e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1597987302635779e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/49d3bd72bf922103d711301178044e889b259a5fa04dfe8741fc4b5bc613161e_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 4.878909167217119e-19,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 1.188291487382019e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/517920dc7f049154811e0c917268e52a35ca9306f9a391041e35770989f86e6a_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551287174026926e-17,
+      "maximum_target_rotation_error_rad": 1.0623194252154065e-18,
+      "maximum_native_float32_translation_error_m": 3.396062466465056e-08,
+      "maximum_native_float32_rotation_error_rad": 1.0956283669587911e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/53e59b4e895226ceaf3c67b61619375cc2b6827e25444d6c0b3b62f449a65cfc_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551795354783875e-17,
+      "maximum_target_rotation_error_rad": 9.93696575851279e-19,
+      "maximum_native_float32_translation_error_m": 3.4637829923720733e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1360969666938737e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/54219eb74ec6dfd380fb3643398ff46622185f1ae2f2ad53f253971fe0031f18_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 8.673550430399877e-19,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 1.0450691151059725e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/54d249229896bd8721d898379b34d72f87463c3250034817ebaa4582264f5dec_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551326877323783e-17,
+      "maximum_target_rotation_error_rad": 8.942964490609948e-19,
+      "maximum_native_float32_translation_error_m": 3.396062466465056e-08,
+      "maximum_native_float32_rotation_error_rad": 1.14761280929623e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/56814671b0c410cd259a0cebb1cb4f07a524b835661c26020763963ef1f9d786_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551803294739117e-17,
+      "maximum_target_rotation_error_rad": 1.3009857865702562e-18,
+      "maximum_native_float32_translation_error_m": 3.736122597589223e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1770958312303226e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/57e2b74d8f074b12649d9fa9916503b749b780135e3a18933c8ca383479c5095_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551326877323783e-17,
+      "maximum_target_rotation_error_rad": 8.942964490609948e-19,
+      "maximum_native_float32_translation_error_m": 3.396062466465056e-08,
+      "maximum_native_float32_rotation_error_rad": 1.14761280929623e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/5840537acb322047c711c3bcf9d427016c93a7df9c8371d1bcf7b9edd9353227_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 2.776912566245413e-17,
+      "maximum_target_rotation_error_rad": 7.026455184137248e-19,
+      "maximum_native_float32_translation_error_m": 3.6750212024674496e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1278550658582083e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/587d11b4a519da755ee1d1a918f9875bb768f23b50c3a822dec733cde63231a4_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551506862041495e-17,
+      "maximum_target_rotation_error_rad": 6.503963441457212e-19,
+      "maximum_native_float32_translation_error_m": 3.396062466465056e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1901919460295016e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/633ca636c15a42c0a9a1f5f6bc2eb85ac7ae94679ab84fe51a06dd8b18b9ad01_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 1.0336719099868351e-18,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 1.0616250038392895e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/6389a9a10251cb992a234bea0ec5e7939117189e47134171b2d67782be4aa9c5_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551498921662284e-17,
+      "maximum_target_rotation_error_rad": 1.0622677367626672e-18,
+      "maximum_native_float32_translation_error_m": 3.896519107013206e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1700440861459429e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/6b50dde0a1f8ce347b23b14be6c5fbe0d2ced78294ad9d4bed1aceeed98d4722_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 4.968422540376511e-19,
+      "maximum_native_float32_translation_error_m": 3.930218312141042e-08,
+      "maximum_native_float32_rotation_error_rad": 1.0695612358162027e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/70eaf4df8481c79e16e61718ba631133abe4c6433724901d4abe1dabdaca8f88_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 9.7015385914387e-19,
+      "maximum_native_float32_translation_error_m": 4.406964273149997e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1700440861459429e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/733734a36bb198580d32792d1e40c1fd47c2656551fc442435096996ecf526a4_sourcefix02/result.json.xz",
+      "commands_checked": 30,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 0.0,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 8.742278012618954e-08
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/74434872f534fc5e695087ce6b0afd083eaa522e16039ad8932f8a751005e575_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551295114709015e-17,
+      "maximum_target_rotation_error_rad": 9.936946762738075e-19,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1756597545235084e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/7b6fd1eee5eb1454eedfe579f2a09b7129c3be587e3eff9976546d0cc227f399_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 4.878903955487563e-19,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1493400594451906e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/7d7044c29335cf464b086e2227dc757666ac23cf5a177cbe6a8d039ebb780caa_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 5.311544677596025e-19,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1737752316751012e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/7f7b7db8ed5811353e67a43834b9dc19f3c1b21af2180903f42b31c809c6b3db_sourcefix02/result.json.xz",
+      "commands_checked": 30,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 0.0,
+      "maximum_native_float32_translation_error_m": 3.396062466465056e-08,
+      "maximum_native_float32_rotation_error_rad": 8.742278012618954e-08
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/811437d410f58c6e1beb243382ddc9e06d65e5ac874223bff09c60fcf830bfbc_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 4.878909167217119e-19,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1723502001131358e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/81b07429a6ae7642686a31bff7ff2919fc258f80a3022c7122dfc240ed43999f_sourcefix02/result.json.xz",
+      "commands_checked": 30,
+      "maximum_target_translation_error_m": 2.7755575615628914e-17,
+      "maximum_target_rotation_error_rad": 0.0,
+      "maximum_native_float32_translation_error_m": 3.396062470388061e-08,
+      "maximum_native_float32_rotation_error_rad": 8.742278012618954e-08
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/84161b96dd77936ac22e643d233063aee02ed079c5fc326c296dafadd1346888_sourcefix02/result.json.xz",
+      "commands_checked": 30,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 0.0,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 8.742278012618954e-08
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/87e206fc000f4b1b6b9acc182e5605b74e8e79ec6adf8f3f84fa4c05819c28a5_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 1.0336719099868351e-18,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 1.0616250038392895e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/890adb72d837a3faef61b282c6beb879c623cc79beede96d2a1b24371d98f2e5_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 1.0623240843561664e-18,
+      "maximum_native_float32_translation_error_m": 4.275211867314999e-08,
+      "maximum_native_float32_rotation_error_rad": 1.0000007633807394e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/8c71d749312d776b625da7534c590efd7738196d9050ecdd3d8c2178aa72977d_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 1.0623194252154065e-18,
+      "maximum_native_float32_translation_error_m": 3.396062466465056e-08,
+      "maximum_native_float32_rotation_error_rad": 1.0956283669587911e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/91a4c88d9e6d1e2ea47db2d5dc3c2b2a7baf6179cb5c49b0babae6594dca9f41_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 2.775981045729705e-17,
+      "maximum_target_rotation_error_rad": 1.693113392698199e-18,
+      "maximum_native_float32_translation_error_m": 3.396062470388061e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1597987302635779e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/948c8961766f7e69bfe3227903b83fd621dd2f1d94bd8c8160758b340979abb9_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 1.0623126324577937e-18,
+      "maximum_native_float32_translation_error_m": 3.396062466465056e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1835253221521941e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/96bbf2b2eddb6898f704d8ecd086c270cbaded866a1115ed97b5a1b348de56b5_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 6.659902707604651e-19,
+      "maximum_native_float32_translation_error_m": 3.930218312141042e-08,
+      "maximum_native_float32_rotation_error_rad": 1.0994861038555433e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/9881be2819738c6404b1f3af044ab9e0a614480bc9baeffe4e046dbad8f186c1_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551816527972622e-17,
+      "maximum_target_rotation_error_rad": 1.788645403903526e-18,
+      "maximum_native_float32_translation_error_m": 3.396062470388061e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1389765833369633e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/9cfc31ef4903310418bea23cda99cd4e7d1cc7cc506f0c8925441967676dc203_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.552639583445155e-17,
+      "maximum_target_rotation_error_rad": 9.936967060743724e-19,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1737752316751012e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/a123f2ece872a6179f3a22e36e5e68dca02d660bef12fafa944e88e90d72ac75_sourcefix02/result.json.xz",
+      "commands_checked": 30,
+      "maximum_target_translation_error_m": 2.7755575615628914e-17,
+      "maximum_target_rotation_error_rad": 0.0,
+      "maximum_native_float32_translation_error_m": 3.396062466465056e-08,
+      "maximum_native_float32_rotation_error_rad": 8.742278012618954e-08
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/a264a70f93dd3a29e6ecdffc3eb5af3ace93770b41f299bb386e130a3a133be7_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551284568488141e-17,
+      "maximum_target_rotation_error_rad": 1.0623142067682472e-18,
+      "maximum_native_float32_translation_error_m": 3.396062466465056e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1835253221521941e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/a2fac312cd50c90ef2e1ada726a72b0d8ef6a09dcacee93d8b0f9e4b3da44413_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551792873545532e-17,
+      "maximum_target_rotation_error_rad": 1.3006313438555349e-18,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1767406369068602e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/a382c9653ed9bcb794a564d0d2e15ad9bcc01b6fde6441f5f46423c6527b393a_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551287174026926e-17,
+      "maximum_target_rotation_error_rad": 1.062256140609442e-18,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1806742216205329e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/a43e6fa3f5a640419c23bf6e6c8a9cadd32d1f6a8ec2c822e9dc772d0a143056_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551284568488141e-17,
+      "maximum_target_rotation_error_rad": 1.0623142067682472e-18,
+      "maximum_native_float32_translation_error_m": 3.396062466465056e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1835253221521941e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/a61d9373915cf337b3357bef2f3a0a6840628b643d82bce388b8fd33413d79ac_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 2.7759175272232676e-17,
+      "maximum_target_rotation_error_rad": 1.7253424834201853e-18,
+      "maximum_native_float32_translation_error_m": 4.306765672274433e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1370762354368027e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/a671a78f93a25c9b18decea06c34e237af254c9213ef631f3c9b7deda8a105cb_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 6.504039545584592e-19,
+      "maximum_native_float32_translation_error_m": 3.396062466465056e-08,
+      "maximum_native_float32_rotation_error_rad": 8.754848725094823e-08
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/a7f75de765f28577d3d03b30e32974964c86d55aeb3518e25862795ee5146892_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551287174026926e-17,
+      "maximum_target_rotation_error_rad": 1.0623194252154065e-18,
+      "maximum_native_float32_translation_error_m": 3.396062466465056e-08,
+      "maximum_native_float32_rotation_error_rad": 1.0956283669587911e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/aa413f40b009982aaba021a261bb81daa17a6adf2b476ed63cbc8e957e230b54_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 6.504039545584592e-19,
+      "maximum_native_float32_translation_error_m": 3.396062466465056e-08,
+      "maximum_native_float32_rotation_error_rad": 8.754848725094823e-08
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/aae49e7af61157ab66c18b9f46137d3c42a070a14f84b00cb4f4cd1a7cf88436_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 1.0622498152496878e-18,
+      "maximum_native_float32_translation_error_m": 4.406964273149997e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1297082499055834e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/ae653cd009a181da97f21696d8cba43e5d6b0b99dfb2736f2237105a8542affb_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 2.776912814278498e-17,
+      "maximum_target_rotation_error_rad": 1.052470658775019e-18,
+      "maximum_native_float32_translation_error_m": 3.817631843526722e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1306447336689523e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/b4000f1e7dc7cb44c462c9d7e2330f1bb5880f18316279c6fd5a44a3d8e3addc_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551295114709015e-17,
+      "maximum_target_rotation_error_rad": 1.2935069629079225e-18,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1781236541567779e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/baa49257e4f3c66f4ce7d256665dffb9a5bfdcad2472abc6ea67be5b055535cc_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 1.0336719099868351e-18,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 1.0716716350145157e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/bc669d46b3a892e8b96f70bd7af231436355580ae01a27546a2e3aa2d2bcb502_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551835054446535e-17,
+      "maximum_target_rotation_error_rad": 1.2179235763833309e-18,
+      "maximum_native_float32_translation_error_m": 4.1614787045270014e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1901359802791205e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/c5446a0c437271f6e684d2bd6a7dacd2d7a9a051ba84def34ee8b20d068efb38_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 5.311544677596025e-19,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1737752316751012e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/c648923a0adce94809d279bc3c11165a163cf330d2d50476f53e9effbe21cd98_sourcefix02/result.json.xz",
+      "commands_checked": 30,
+      "maximum_target_translation_error_m": 2.7755575615628914e-17,
+      "maximum_target_rotation_error_rad": 0.0,
+      "maximum_native_float32_translation_error_m": 3.396062470388061e-08,
+      "maximum_native_float32_rotation_error_rad": 8.742278012618954e-08
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/c64dfb2fdef1ab3693a72861514df6fb9766b1abb0fa752fc68c68b00319afa8_sourcefix02/result.json.xz",
+      "commands_checked": 30,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 0.0,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 8.742278012618954e-08
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/c878d8a0e21e037c360bd25900eb886679ff1ab89307906c8eb710ab2e7d9512_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551284692561444e-17,
+      "maximum_target_rotation_error_rad": 9.936788415466029e-19,
+      "maximum_native_float32_translation_error_m": 3.396062470388061e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1536733869696021e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/ccea8083cbd191bd3a48654bc54b4d862fceebc291d6fe3b2070de36f3ed59c7_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 7.509676453916736e-19,
+      "maximum_native_float32_translation_error_m": 3.4515396330981025e-08,
+      "maximum_native_float32_rotation_error_rad": 1.191964414556355e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/d0049815a6ea1020b633ad91a800e8b8a12fce9a6adac1cab5663e8ef68218cb_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 5.311443875688778e-19,
+      "maximum_native_float32_translation_error_m": 4.275211867314999e-08,
+      "maximum_native_float32_rotation_error_rad": 1.0879899557641797e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/d24f09cebc7dfd56199781db6411748f5dae38c3def149844bcad53bf5debe0e_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551284527130373e-17,
+      "maximum_target_rotation_error_rad": 9.69736362042071e-19,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 1.191568975390905e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/dae9be22c83fc7640127c9d489261f2e70c67815fa326407d4bd4f93cb026679_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.552639583445155e-17,
+      "maximum_target_rotation_error_rad": 9.936967060743724e-19,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1737752316751012e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/de2d70b08af12fdad842341705e7150d43ccda4ebc12005abf8e7152e82b4ffa_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551157515970303e-17,
+      "maximum_target_rotation_error_rad": 5.311430646595575e-19,
+      "maximum_native_float32_translation_error_m": 3.396062470388061e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1900930181592281e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/e16c40edd9c7c7769b67755eeb3422c04d7a97318ca9ab7d516c9aede137b8d3_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551163430263365e-17,
+      "maximum_target_rotation_error_rad": 8.7421417102238e-19,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1618123810460524e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/e3bdba95b60f630633abf7b3603ea50725700ed2d52ece03c778aef6cd4edfa2_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.55128518885463e-17,
+      "maximum_target_rotation_error_rad": 9.697345388740505e-19,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 1.191568975390905e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/e7a60252ebfa2da9fcbc8ae538a8667562730de21acd9218279e93627dccf52a_sourcefix02/result.json.xz",
+      "commands_checked": 30,
+      "maximum_target_translation_error_m": 5.551115123125783e-17,
+      "maximum_target_rotation_error_rad": 0.0,
+      "maximum_native_float32_translation_error_m": 3.396062466465056e-08,
+      "maximum_native_float32_rotation_error_rad": 8.742278012618954e-08
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/e8bd11c0581e5717ff90165ce18e3eb50a11e7aa44375d7db2c7cfb05f03282d_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 5.551295114709015e-17,
+      "maximum_target_rotation_error_rad": 1.2935069629079225e-18,
+      "maximum_native_float32_translation_error_m": 3.410177537605035e-08,
+      "maximum_native_float32_rotation_error_rad": 1.1781236541567779e-07
+    },
+    {
+      "result": "research/rpd_assembly_preliminary_20261120/episodes/ff76c59dd16ae480e9d00cec37d64d4318111bdfd6c50f46c747bdcb5278f1d6_sourcefix02/result.json.xz",
+      "commands_checked": 110,
+      "maximum_target_translation_error_m": 2.775981045729705e-17,
+      "maximum_target_rotation_error_rad": 1.1858948728503286e-18,
+      "maximum_native_float32_translation_error_m": 3.876510120607183e-08,
+      "maximum_native_float32_rotation_error_rad": 1.0654105569588589e-07
+    }
+  ]
+}

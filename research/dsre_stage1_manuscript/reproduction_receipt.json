@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "anonymous_bundle_sha256": "34123d737e57bba340da6d9df4a8ced419d11b6c3aabf1c25f0a800110b9d224",
+  "extracted_members": 15,
+  "independent_compile_pages": 6,
+  "identical_extracted_PDF_text_and_layout": true,
+  "unrelated_worktree_status_entries_preserved": 56,
+  "artifact_pdf_sha256": "9fcd636c1baa8437eaf0be7072206f1900512b72f65d1597df1f268bd979a103",
+  "physics_executions": 0,
+  "new_fits": 0
+}

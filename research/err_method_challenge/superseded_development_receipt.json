@@ -1,0 +1,33 @@
+{
+  "scope": "Only this session\u2019s superseded, unsealed development outputs; full frozen final outputs are separate",
+  "reason": "Earlier randomized-arm representation conditioned away assignment; corrected final uses a whole masked randomized law. All numerical outcomes are preserved. Duplicate inactive reservations are also archived.",
+  "members": {
+    "research/err_method_challenge/development_candidate/execution_steps.json": "6588a37c07cb5112fc870332722958675b214610853959cd15e938fa5b4b9175",
+    "research/err_method_challenge/development_candidate/finite_models/exhaustive_binary_cases.jsonl": "11bf8c01ea14f98ec1607a8a9a9e62ad8ce3a9e5ba66db6eccc4867494d07ca8",
+    "research/err_method_challenge/development_candidate/finite_models/finite_world_audit_summary.json": "51ea63ae8c32fd53901b88fb76b5580a474f7e9aea1b8821119cc5dcb47c2b05",
+    "research/err_method_challenge/development_candidate/finite_models/registered_cases_and_results.json": "cf58e6aafb9e0256ce4cd8acd31e3fbd1889172e303d32d4719186dc5526f5be",
+    "research/err_method_challenge/development_candidate/finite_models/seeded_cases.jsonl": "373c5b943f077e4236ea0fd26bda3d12afa03856a664ef0b8e85d21e5caf3d6d",
+    "research/err_method_challenge/development_candidate/finite_models/seeded_results.jsonl": "861707e64458e8af5fdec6eadd2bbddde04a2cc06bad410452d458176e36d565",
+    "research/err_method_challenge/development_candidate/logs/D_C_only_robot_witnesses.txt": "1389befd950b39c75917ac354ed388a36632d87368f40f860a809dec4083224b",
+    "research/err_method_challenge/development_candidate/logs/exact_models_and_oracles.txt": "512025ce444c9e5b807b5b593a2d6aadc5ed8d42ba1da8a4b1dcab9529c543da",
+    "research/err_method_challenge/development_candidate/logs/focused_tests.txt": "4f2075abe371bf84e76fa3812882f1acb2800d279097efe30cf5459a5afc29e4",
+    "research/err_method_challenge/development_candidate/logs/inactive_future_parent_reservation.txt": "61faa065e18d2736880fcbcd8bbc7783e5ffc1204a61d3e6c875e309a38bda41",
+    "research/err_method_challenge/development_candidate/logs/maintained_tests.txt": "407c716109d973278a9611ac5c1fc88c8333055998040394adeae1b79e48d0f4",
+    "research/err_method_challenge/development_candidate/robot/robot_context_witnesses.json": "c0c30ebf442c914116b78484f4108828a62efe6f3f70e0b9a7ae0de20b0b6a6c",
+    "research/err_method_challenge/development_candidate/run_receipt.json": "ca144cfea3614315693e83335d4456bf97e398518400796c91059deb1c26f783",
+    "research/err_method_challenge/development_candidate/scientific_code_freeze.json": "05404ae4d23223d99581b61bdfaaeadb665c20150f7d438c3961139c1cce7f39",
+    "research/err_method_challenge/development_candidate/stage2_reservation/protocol_reservation.json": "7667c2bbfd86785ae0b7ab6416607f357614b95e49d7b887241d59e8b45c3dbb",
+    "research/err_method_challenge/development_candidate/stage2_reservation/reserved_parents.jsonl": "7801edde1c9580d1f90c97be7ba214a6fb07277c42ed5dc46fe7a3f6a826b119",
+    "research/err_method_challenge/results/robot_context_witnesses.json": "39123da63cbfb32b09704a3cddce99b9041f450939b5d4415b005b9c04dc13a9",
+    "research/err_method_challenge/stage2_reservation/protocol_reservation.json": "7667c2bbfd86785ae0b7ab6416607f357614b95e49d7b887241d59e8b45c3dbb",
+    "research/err_method_challenge/stage2_reservation/reserved_parents.jsonl": "7801edde1c9580d1f90c97be7ba214a6fb07277c42ed5dc46fe7a3f6a826b119",
+    "research/err_method_challenge/trial_exact_audit/exhaustive_binary_cases.jsonl": "11bf8c01ea14f98ec1607a8a9a9e62ad8ce3a9e5ba66db6eccc4867494d07ca8",
+    "research/err_method_challenge/trial_exact_audit/finite_world_audit_summary.json": "cf50d150e9fb8891005f2e324d0633a9ec07288240295c6a539f23cb57d2b8b3",
+    "research/err_method_challenge/trial_exact_audit/registered_cases_and_results.json": "f3dc9fca8260d641de39eebecd5524587a80279856171132c4f26d381e4f1493",
+    "research/err_method_challenge/trial_exact_audit/seeded_cases.jsonl": "373c5b943f077e4236ea0fd26bda3d12afa03856a664ef0b8e85d21e5caf3d6d",
+    "research/err_method_challenge/trial_exact_audit/seeded_results.jsonl": "63f85b5d1698637724d408300d50e366afbdf64f6e728380cec3cb5ee830af45"
+  },
+  "archive_sha256": "cb63f11c2b2e6a4d5f8232a93556d8f2eef9d59751adcfed8093085fb62537bd",
+  "original_bytes": 33703401,
+  "archive_bytes": 1138668
+}

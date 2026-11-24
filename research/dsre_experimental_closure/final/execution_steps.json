@@ -1,0 +1,200 @@
+[
+  {
+    "phase": "E0_native_final",
+    "args": [
+      "scripts/dsre_last_audit.py",
+      "--compact",
+      "--output",
+      "/home/imad/Desktop/IEEE-RAL/research/dsre_experimental_closure/final/E0/final_native_source_audit.json"
+    ],
+    "started_epoch": 1795039435.725525,
+    "completed_epoch": 1795039548.1968682,
+    "wall_seconds": 112.47134399414062,
+    "returncode": 0,
+    "log_sha256": "6e791804eb5adc834fa6f070c503b1675994fff75cae66e2514e8eb68fa425c8"
+  },
+  {
+    "phase": "E0_grasp_original",
+    "args": [
+      "scripts/dsre_evidence_prospective_audit.py",
+      "results/dsre-evidence-aware/20261117-prospective",
+      "--task",
+      "PickCube-v1",
+      "--output",
+      "/home/imad/Desktop/IEEE-RAL/research/dsre_experimental_closure/final/E0/grasp_original_physics_audit.json"
+    ],
+    "started_epoch": 1795039548.198733,
+    "completed_epoch": 1795039621.3405416,
+    "wall_seconds": 73.1418092250824,
+    "returncode": 0,
+    "log_sha256": "50f4b997141cdef70583d05ce90c84cc6dabade5bfb0a656171f04761057009b"
+  },
+  {
+    "phase": "E0_navigation_original",
+    "args": [
+      "scripts/dsre_evidence_prospective_audit.py",
+      "results/dsre-evidence-aware/20261117-prospective",
+      "--task",
+      "PointMaze_UMaze-v3",
+      "--output",
+      "/home/imad/Desktop/IEEE-RAL/research/dsre_experimental_closure/final/E0/navigation_original_physics_audit.json"
+    ],
+    "started_epoch": 1795039621.3422253,
+    "completed_epoch": 1795039659.6771042,
+    "wall_seconds": 38.33487915992737,
+    "returncode": 0,
+    "log_sha256": "6b7ad5d2f1a520055c7f08dcf1bdb7e6790b588dfe13b82896cc3904941e4fc1"
+  },
+  {
+    "phase": "E0_independent_recount",
+    "args": [
+      "-c",
+      "import dsre_stage1_verify_numbers as audit; from pathlib import Path; import os; audit.OUT=Path(os.environ['DSRE_CLOSURE_OUTPUT'])/'E0/recount'; audit.main()"
+    ],
+    "started_epoch": 1795039659.6781573,
+    "completed_epoch": 1795039803.612712,
+    "wall_seconds": 143.93455481529236,
+    "returncode": 0,
+    "log_sha256": "3ae0d898731cef2f2b7543dccde017cadfda80dd38a6b2179bb0678c59c65cd2"
+  },
+  {
+    "phase": "E0_math",
+    "args": [
+      "scripts/dsre_closure_math.py"
+    ],
+    "started_epoch": 1795039803.613767,
+    "completed_epoch": 1795039827.1503866,
+    "wall_seconds": 23.536620140075684,
+    "returncode": 0,
+    "log_sha256": "f477472ebfefcfeb5078db92ac7bef623931138d3d09c6e8f18b9d6de7b1fb43"
+  },
+  {
+    "phase": "E0_original_integrity",
+    "args": [
+      "scripts/dsre_closure_integrity.py"
+    ],
+    "started_epoch": 1795039827.1525135,
+    "completed_epoch": 1795039837.950805,
+    "wall_seconds": 10.798291683197021,
+    "returncode": 0,
+    "log_sha256": "fb96287f1056bfa9f958301466cd03b6838db4d83fd38cbfb82867d2204f3acb"
+  },
+  {
+    "phase": "E0_checkpoint_and_parent_identity",
+    "args": [
+      "scripts/dsre_closure_checkpoints.py"
+    ],
+    "started_epoch": 1795039837.9530032,
+    "completed_epoch": 1795039922.2431257,
+    "wall_seconds": 84.29012274742126,
+    "returncode": 0,
+    "log_sha256": "187a53427304f9bb9c465d194db8b3d97052fd82ed15ca01ce6b36ab4591b2f7"
+  },
+  {
+    "phase": "E1_calibration_only",
+    "args": [
+      "scripts/dsre_closure_calibrate.py"
+    ],
+    "started_epoch": 1795039922.245152,
+    "completed_epoch": 1795039924.266195,
+    "wall_seconds": 2.021043300628662,
+    "returncode": 0,
+    "log_sha256": "b25f22ca089c74eab15a76b1378f0c51782b84b00b48ef65136e7618e3561289"
+  },
+  {
+    "phase": "E1_obligation_scores",
+    "args": [
+      "scripts/dsre_closure_evaluate.py",
+      "obligations"
+    ],
+    "started_epoch": 1795039924.269653,
+    "completed_epoch": 1795039925.4888594,
+    "wall_seconds": 1.2192065715789795,
+    "returncode": 0,
+    "log_sha256": "6eb5d2353ec15e4248fbc7aa90ad5706f0adfca27230836d36124bf1d7480f86"
+  },
+  {
+    "phase": "E2_source_materialization",
+    "args": [
+      "scripts/dsre_closure_sources.py",
+      "materialize"
+    ],
+    "started_epoch": 1795039925.4905796,
+    "completed_epoch": 1795039926.7586195,
+    "wall_seconds": 1.268040657043457,
+    "returncode": 0,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "phase": "E2_isolated_source_fits",
+    "args": [
+      "scripts/dsre_closure_sources.py",
+      "learn"
+    ],
+    "started_epoch": 1795039926.762268,
+    "completed_epoch": 1795039946.9897728,
+    "wall_seconds": 20.227505207061768,
+    "returncode": 0,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "phase": "E3_selection_materialization",
+    "args": [
+      "scripts/dsre_closure_sample.py",
+      "prepare"
+    ],
+    "started_epoch": 1795039946.9941702,
+    "completed_epoch": 1795039948.1633403,
+    "wall_seconds": 1.169170618057251,
+    "returncode": 0,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "phase": "E3_isolated_case_selection",
+    "args": [
+      "scripts/dsre_closure_sample.py",
+      "select"
+    ],
+    "started_epoch": 1795039948.1684241,
+    "completed_epoch": 1795039949.2859485,
+    "wall_seconds": 1.1175248622894287,
+    "returncode": 0,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "phase": "E3_complete_certificates",
+    "args": [
+      "scripts/dsre_closure_evaluate.py",
+      "certificates"
+    ],
+    "started_epoch": 1795039949.289797,
+    "completed_epoch": 1795039950.7087522,
+    "wall_seconds": 1.4189555644989014,
+    "returncode": 0,
+    "log_sha256": "6eb5d2353ec15e4248fbc7aa90ad5706f0adfca27230836d36124bf1d7480f86"
+  },
+  {
+    "phase": "E4_mechanism_falsification",
+    "args": [
+      "scripts/dsre_closure_evaluate.py",
+      "mechanisms"
+    ],
+    "started_epoch": 1795039950.7146404,
+    "completed_epoch": 1795039952.8850946,
+    "wall_seconds": 2.170454502105713,
+    "returncode": 0,
+    "log_sha256": "6eb5d2353ec15e4248fbc7aa90ad5706f0adfca27230836d36124bf1d7480f86"
+  },
+  {
+    "phase": "E5_error_box_sensitivity",
+    "args": [
+      "scripts/dsre_closure_evaluate.py",
+      "sensitivity"
+    ],
+    "started_epoch": 1795039952.89033,
+    "completed_epoch": 1795039982.9403505,
+    "wall_seconds": 30.050020933151245,
+    "returncode": 0,
+    "log_sha256": "6eb5d2353ec15e4248fbc7aa90ad5706f0adfca27230836d36124bf1d7480f86"
+  }
+]

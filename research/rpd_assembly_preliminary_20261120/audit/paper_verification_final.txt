@@ -1,0 +1,31 @@
+make: Entering directory '/home/imad/Desktop/IEEE-RAL/papers/rss2027_rpd_stage1'
+python3 tools/workspace.py build
+{"built": "build/main.pdf", "verified": true, "pages": 6}
+python3 tools/workspace.py check
+{"pages": 6, "content_pages": 5, "reference_pages": 1, "paper_sha256": "dcfb6ecf14e02f097131f4f44b515af87a32c951dc9e86f0f1e56e829bf024e7", "text_sha256": "f990553f8e8e8c99ab4101f21cf48a5e5cc58103bdec424fcc32d6c0ff347960", "page_word_counts": [593, 864, 1017, 972, 725, 379], "page_numbers": false, "unresolved_references": false, "identifying_metadata_or_external_urls": false, "critical_method_in_main_PDF": true, "original_v2_files": 9, "template_hashes_passed": true, "class_unmodified": true}
+python3 tools/workspace.py reproduce
+{"passed": true, "fresh_directory": true, "same_text": true, "pages": 6, "pdf_binary_identical": true, "source_date_epoch": 1795132800, "new_physics": 0}
+UV_CACHE_DIR=/tmp/rss-rpd-uv uv run --project ../.. --offline --no-sync python -m unittest discover -s tools -p 'test_*.py' -v
+test_immutable_originals_and_official_template (test_workspace.PaperChecks.test_immutable_originals_and_official_template) ... ok
+test_info_removal_preserves_pdf_text_and_fonts (test_workspace.PaperChecks.test_info_removal_preserves_pdf_text_and_fonts) ... ok
+test_info_removal_rejects_non_pdf_input (test_workspace.PaperChecks.test_info_removal_rejects_non_pdf_input) ... ok
+test_binomial_margin_and_zero_event_limit (test_workspace.ProtocolChecks.test_binomial_margin_and_zero_event_limit) ... ok
+test_candidate_namespaces_are_fixed_and_disjoint (test_workspace.ProtocolChecks.test_candidate_namespaces_are_fixed_and_disjoint) ... ok
+test_complete_tree_oracle_matches_responsewise_control (test_workspace.ProtocolChecks.test_complete_tree_oracle_matches_responsewise_control) ... ok
+test_goal_and_wrapper_clocks_include_boundaries (test_workspace.ProtocolChecks.test_goal_and_wrapper_clocks_include_boundaries) ... ok
+test_independent_profile_likelihood_at_interval_endpoints (test_workspace.ProtocolChecks.test_independent_profile_likelihood_at_interval_endpoints) ... ok
+test_missing_exact_interval_contains_every_possible_completion (test_workspace.ProtocolChecks.test_missing_exact_interval_contains_every_possible_completion) ... ok
+test_missing_score_envelope_contains_variance_sensitive_bounds (test_workspace.ProtocolChecks.test_missing_score_envelope_contains_variance_sensitive_bounds) ... ok
+test_zero_discordance_has_uncertainty (test_workspace.ProtocolChecks.test_zero_discordance_has_uncertainty) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.253s
+
+OK
+python3 tools/workspace.py originals
+{"original_v2_files": 9, "template_hashes_passed": true, "class_unmodified": true}
+python3 tools/workspace.py prior-seal
+{"prior_workspace_seal_verified_from_immutable_archive": true}
+python3 tools/workspace.py preservation
+{"passed": true, "starting_commit": "3465dd56c7b14e6aaa3e28a596ed6d4f1164e2d7", "baseline_path_checks": 1936, "protected_absences": 27, "historical_size_mtime_checks": 185513, "preexisting_status_entries_unchanged": 62, "original_v2": {"original_v2_files": 9, "template_hashes_passed": true, "class_unmodified": true}, "new_physics": 0, "scope": "Content hashes for inventoried source/manuscript/user paths; historical size/mtime plus separately rechecked sealed manifests. Metadata checks alone are not full historical byte hashes."}
+make: Leaving directory '/home/imad/Desktop/IEEE-RAL/papers/rss2027_rpd_stage1'

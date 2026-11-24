@@ -1,0 +1,1 @@
+{"audit_passed": true, "four_row_gate": true, "tasks": {"PickCube-v1": {"attempted": 14, "returned_complete": 14, "limited_source_completion": true, "worker_wall_seconds": 241.60809456801508}, "PushCube-v1": {"attempted": 14, "returned_complete": 14, "limited_source_completion": true, "worker_wall_seconds": 221.47255919899908}}}

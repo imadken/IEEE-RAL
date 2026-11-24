@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "mode": "PORTABLE_ISOLATED",
+  "steps": [
+    {
+      "name": "supplied_reference",
+      "returncode": 0,
+      "wall_seconds": 0.06443239000509493,
+      "log_sha256": "80c023f8402010e7ca48975f5e1ab35faa7c4c50a32fa292c61c1d622fdf7925"
+    },
+    {
+      "name": "finite",
+      "returncode": 0,
+      "wall_seconds": 4.931589537009131,
+      "log_sha256": "dd0371d4e39bfac45986c5c94e79d8d98122b3d66d8c6b87fe4f7d77ac9572cf"
+    },
+    {
+      "name": "source",
+      "returncode": 0,
+      "wall_seconds": 1.2199626940127928,
+      "log_sha256": "9abd901d0d853e0f85a33ef97c64b90844023a96ff4d1f8c93916166c9e25c2b"
+    },
+    {
+      "name": "stage2",
+      "returncode": 0,
+      "wall_seconds": 1.168305197992595,
+      "log_sha256": "ddde5c5f309e868fdc820f0da37049a65dc06f7f52ffe2a11c56a95ed44e1031"
+    },
+    {
+      "name": "tests",
+      "returncode": 0,
+      "wall_seconds": 0.6701306109898724,
+      "log_sha256": "d4f66fb71fbe787628b3e486c928933d96abe822fe293c0579a989a1ca4dc55d"
+    }
+  ],
+  "matched_scientific_outputs": [
+    "finite/audit_summary.json",
+    "finite/exhaustive_cases.jsonl.xz",
+    "finite/named_cases.json",
+    "finite/seeded_cases.jsonl.xz",
+    "source/source_and_adapters.json",
+    "stage2/protocol.json",
+    "stage2/reserved_parents.jsonl"
+  ],
+  "source_members_verified": 42,
+  "source_bundle_sha256": "a2df893c2c698b848e227c93738db472c26c579cd8ddffd5aff6f5101f33660e",
+  "excluded_projection_fields": [
+    "wall_seconds",
+    "historical_source_input_sha256"
+  ],
+  "wall_seconds": 8.759213588986313,
+  "child_cpu_seconds": 7.924440000000001,
+  "new_physics": 0,
+  "new_robot_outcomes": 0,
+  "output_bytes": 2603114
+}

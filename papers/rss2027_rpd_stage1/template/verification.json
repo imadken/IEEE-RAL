@@ -1,0 +1,15 @@
+{
+  "download_url": "https://roboticsconference.org/docs/paper-template-latex.tar.gz",
+  "retrieved": "2026-11-20",
+  "archive_sha256": "ffc8b8053bd218ba9be4c93a569de4c2f36c7f70ae8d2245c747611bed697271",
+  "IEEEtran_identical_to_V2": true,
+  "class_sha256": "d63d4bf27f29603a733d06e27ba5fbb40488acf9d1d696354a88b886758f70a7",
+  "upstream_members": {
+    "references.bib": "a2b6a8558f0f15fa8d3c6895dac2cf8d7982904282e78a9dc1a90f32774caf79",
+    "paper_template.tex": "0d8c15afd40c033d887770460248d5ee1e98486030a140097aaa5aed605da422",
+    "IEEEtran.cls": "d63d4bf27f29603a733d06e27ba5fbb40488acf9d1d696354a88b886758f70a7",
+    "paper_template.pdf": "43869c1418f24608c647694328e6b690bb4525f363202e828af98c2d5b241af1"
+  },
+  "format": "conference 10pt, US Letter, unmodified IEEEtran 1.7a from official current kit; times; natbib/plainnat; class margins and line spacing untouched",
+  "fallback_used": false
+}

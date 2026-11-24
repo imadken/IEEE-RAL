@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "task": "PickCube-v1",
+  "counts": {
+    "discovery": 128,
+    "calibration": 1024,
+    "test": 256,
+    "test_pairs": 256,
+    "calibration_screens_with_checkpoint": 1024,
+    "acquisition_pairs": 330,
+    "whitelisted_data_reads": 32191,
+    "independent_metric_counts": 1458,
+    "independent_metric_intervals": 972,
+    "scored_models": 21
+  },
+  "qualification_failures": [],
+  "CP_bands": 240,
+  "LP_extrema": 252,
+  "minimum_certificates": 1995,
+  "max_numerical_error": 3.6637359812630166e-15,
+  "production_inference_imported": false,
+  "audit_source_sha256": "d70321ecc37486e0ac039070efbf06ead05ee1b29d762765d70b93cc03b793d2"
+}

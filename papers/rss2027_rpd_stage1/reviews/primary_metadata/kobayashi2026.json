@@ -1,0 +1,43 @@
+{
+  "DOI": "10.64898/2026.06.11.731593",
+  "title": [
+    "Readout adaptation in simulated arm reaching: learned compensation and performance after updates stop"
+  ],
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0009-0002-6318-2617",
+      "authenticated-orcid": false,
+      "given": "Jun",
+      "family": "Kobayashi",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Department of Intelligent and Control Systems, Graduate School of Computer Science and Systems Engineering, Kyushu Institute of Technology, Iizuka, Fukuoka 820-8502, Japan"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "container-title": [],
+  "volume": null,
+  "issue": null,
+  "page": null,
+  "article-number": null,
+  "published": {
+    "date-parts": [
+      [
+        2026,
+        6,
+        15
+      ]
+    ]
+  },
+  "type": "posted-content",
+  "source": "https://api.crossref.org/works/10.64898/2026.06.11.731593",
+  "retrieved": "2026-11-20"
+}

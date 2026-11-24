@@ -1,0 +1,70 @@
+{
+  "registered_limits": {
+    "calendar_hours": 48,
+    "additional_experiment_wall_seconds": 10800,
+    "additional_data_bytes": 500000000,
+    "new_physics": 0
+  },
+  "inventory_started_utc": "2026-11-19T09:54:39.265264+00:00",
+  "numerical_work_completed_by_utc": "2026-11-19T11:24:58.271325+00:00",
+  "conservative_experiment_wall_upper_bound_seconds": 5419.0060613155365,
+  "upper_bound_explanation": "ALL calendar time through completion of numerical/test/reproduction work, including editing, imports and literature work, is charged as an intentionally conservative bound. It exceeds actual experiment time and is below3h. Subsequent work is packaging, hashing, Git and reporting only.",
+  "individually_measured_major_runs": {
+    "pinned_original_evidence": {
+      "path": "research/err_method_challenge/pinned_source_independent_reproduction_receipt.json",
+      "sha256": "0810aa1c53c081fef131abbe504d406a950db6e9880a50974e27f0716de3a247",
+      "wall_seconds": 571.1018617153168
+    },
+    "final_frozen_run": {
+      "path": "research/err_method_challenge/final/run_receipt.json",
+      "sha256": "796b5669226bfaf0d78167f46d61d079b217f9229820aee34d14e8489e32b435",
+      "wall_seconds": 94.02248513200902
+    },
+    "portable_reproduction": {
+      "path": "research/err_method_challenge/portable_reproduction_receipt.json",
+      "sha256": "2f84324de6b2c65548f32170790ad3f1acca1351d3d3eefefecea62d256cc408",
+      "wall_seconds": 43.60976764501538
+    },
+    "research/err_method_challenge/development_candidate/run_receipt.json": {
+      "archive": "research/err_method_challenge/superseded_development.tar.xz",
+      "member": "research/err_method_challenge/development_candidate/run_receipt.json",
+      "wall_seconds": 92.43446523798048
+    },
+    "research/err_method_challenge/trial_exact_audit/finite_world_audit_summary.json": {
+      "archive": "research/err_method_challenge/superseded_development.tar.xz",
+      "member": "research/err_method_challenge/trial_exact_audit/finite_world_audit_summary.json",
+      "wall_seconds": 20.530927740997868
+    }
+  },
+  "sum_major_measured_run_wall_seconds": 821.6995074713195,
+  "incomplete_timing_disclosure": "Minor development probes and early focused tests were not individually timed. They are included in the all-calendar upper bound; no invented precise sum.",
+  "prior_cumulative_timer": "47143.069s in pinned_source_run_complete.json is the OLD Nov18 closure clock; it is not the duration of this ERR session. The fresh pinned reproduction took571.102s including verification.",
+  "current_artifact_bytes_by_root": {
+    "research/err_method_challenge": 21061864,
+    "/tmp/err-source-revalidation-20261119": 19421482,
+    "/tmp/err-portable-reproduction-20261119": 23239375,
+    "/tmp/err-witness-strict-guard": 1056923,
+    "/tmp/err-storyboard-preview.png": 232995,
+    "/tmp/err-storyboard-preview-corrected.png": 233021
+  },
+  "current_measured_evidence_bytes": 65245660,
+  "final_repository_bytes": "See integrity_manifest.json; compact archive and manifest are created after this ledger. Their actual final sizes are checked against the cap.",
+  "python": "3.12.12",
+  "locked_packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "pydantic": "2.14.3",
+    "pytest": "8.4.2",
+    "ruff": "0.17.4"
+  },
+  "dependency_changes": 0,
+  "new_physics_processes": 0,
+  "new_robot_outcomes": 0,
+  "new_controller_training": 0,
+  "new_paid_api": 0,
+  "peak_memory": "NOT_MEASURED",
+  "future_stage2_reserved_parents_per_task": 7044,
+  "future_stage2_outcomes_collected": 0,
+  "future_stage2_inactive": true,
+  "final_report_countermodel_checks": "Three saved literal-deletion four-cell optimizers independently checked by simplex/marginal arithmetic and strict threshold violation during report generation; no new optimization or physical endpoint."
+}

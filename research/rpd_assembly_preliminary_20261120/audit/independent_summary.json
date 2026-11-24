@@ -1,0 +1,2666 @@
+{
+  "source_registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+  "candidate_counts": {
+    "qual": {
+      "fixed": 12,
+      "KNOWN_ELIGIBLE": 7,
+      "KNOWN_INELIGIBLE": 5,
+      "UNKNOWN": 0,
+      "NOT_ATTEMPTED": 0,
+      "complete_probe_hold_comparisons": 14,
+      "full_erasures": 0,
+      "joint_compliant_erasures": 0
+    },
+    "exploratory": {
+      "fixed": 24,
+      "KNOWN_ELIGIBLE": 0,
+      "KNOWN_INELIGIBLE": 0,
+      "UNKNOWN": 0,
+      "NOT_ATTEMPTED": 24,
+      "complete_probe_hold_comparisons": 0,
+      "full_erasures": 0,
+      "joint_compliant_erasures": 0
+    }
+  },
+  "actual_source_episodes": 77,
+  "actual_worker_seconds": 914.0704703309457,
+  "native_crashes": 0,
+  "missing_source_results": 0,
+  "source_errors": 2,
+  "all_existing_rows_independently_verified": false,
+  "confirmation_attempts": 0,
+  "H1_validated": false,
+  "H2_validated": false,
+  "method": "NOMINAL_SOURCE_EXPLORATORY_NOT_LEARNED_RPD",
+  "parents": [
+    {
+      "candidate_id": "RPD-assembly-v1/qual/0",
+      "phase": "qual",
+      "disposition": "KNOWN_ELIGIBLE",
+      "screen_reasons": [],
+      "matched_branches": {
+        "dither/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/54d249229896bd8721d898379b34d72f87463c3250034817ebaa4582264f5dec_sourcefix02/trace.jsonl",
+          "trace_sha256": "235e1050070253927eb426e5dbda5e31c1102038f6486163d55dd6f72d723746",
+          "source_valid": true
+        },
+        "direct/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": false,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/587d11b4a519da755ee1d1a918f9875bb768f23b50c3a822dec733cde63231a4_sourcefix02/trace.jsonl",
+          "trace_sha256": "3d8d6a3f96a9fae2f2d31b4d0954758c25b57ac4d43e7f32ab81de8d6fe3ce60",
+          "source_valid": true
+        },
+        "hold/a1": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/8c71d749312d776b625da7534c590efd7738196d9050ecdd3d8c2178aa72977d_sourcefix02/trace.jsonl",
+          "trace_sha256": "17c3910e8c84a2595860729224143607ce237e521d5a80d7918b37f0572bcbd2",
+          "source_valid": true
+        },
+        "preload/a1": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/948c8961766f7e69bfe3227903b83fd621dd2f1d94bd8c8160758b340979abb9_sourcefix02/trace.jsonl",
+          "trace_sha256": "bb3c6b796b2136831313bee6b66c7670e99c9499bc651c328e42818f321d7eb9",
+          "source_valid": true
+        },
+        "preload/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/a43e6fa3f5a640419c23bf6e6c8a9cadd32d1f6a8ec2c822e9dc772d0a143056_sourcefix02/trace.jsonl",
+          "trace_sha256": "29f9b6eed590bbd099477c57117b2bb125881f42299d539c9584c02a6caf850a",
+          "source_valid": true
+        },
+        "dither/a1": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/a671a78f93a25c9b18decea06c34e237af254c9213ef631f3c9b7deda8a105cb_sourcefix02/trace.jsonl",
+          "trace_sha256": "7abf1796629f4ee7b7c10a28bde08e1f893f44d472b29770ab921ae53eb1d869",
+          "source_valid": true
+        },
+        "hold/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/a7f75de765f28577d3d03b30e32974964c86d55aeb3518e25862795ee5146892_sourcefix02/trace.jsonl",
+          "trace_sha256": "92bec4754a14e7f6a18b6d4a9e4008791cab0417666e9503a0597e28b26839e8",
+          "source_valid": true
+        }
+      },
+      "option_comparisons": [
+        {
+          "probe": "preload",
+          "K_hold": [],
+          "K_probe": [],
+          "individual_options_lost": [],
+          "individual_options_created": [],
+          "full_erasure": false,
+          "full_creation": false,
+          "probe_and_hold_compliant": true,
+          "joint_compliant_erasure": false
+        },
+        {
+          "probe": "dither",
+          "K_hold": [],
+          "K_probe": [],
+          "individual_options_lost": [],
+          "individual_options_created": [],
+          "full_erasure": false,
+          "full_creation": false,
+          "probe_and_hold_compliant": true,
+          "joint_compliant_erasure": false
+        }
+      ],
+      "all_root_replays_passed": true
+    },
+    {
+      "candidate_id": "RPD-assembly-v1/qual/1",
+      "phase": "qual",
+      "disposition": "KNOWN_ELIGIBLE",
+      "screen_reasons": [],
+      "matched_branches": {
+        "hold/a1": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/0c485385bfb2ef3fac4e10da1ce1a79c887298ab2abeb043b6a8467e4df4ed08_sourcefix02/trace.jsonl",
+          "trace_sha256": "d57c6364e3e50a013dbed59f627af0ab510adc27038666890e1cee8fda8d6def",
+          "source_valid": true
+        },
+        "dither/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/16dcf588be003e73a183f6c7bad80053b26929ae39b1b9c76ace7d2c2df225d7_sourcefix02/trace.jsonl",
+          "trace_sha256": "9051b5518826c5668374d2437b6f2fadd2bc3e4abd1cc0306e27bdcae98b3734",
+          "source_valid": true
+        },
+        "preload/a1": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/7d7044c29335cf464b086e2227dc757666ac23cf5a177cbe6a8d039ebb780caa_sourcefix02/trace.jsonl",
+          "trace_sha256": "9f0601b7c1b574e9f80cfbe3a5693aba8ff2c70e8a96cdd8fcbdbd315fe4985e",
+          "source_valid": true
+        },
+        "dither/a1": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/87e206fc000f4b1b6b9acc182e5605b74e8e79ec6adf8f3f84fa4c05819c28a5_sourcefix02/trace.jsonl",
+          "trace_sha256": "dedec2c1da414ec2e1d6bfaf88f556f63c01856d3dd438e7c5255b52a0c0c662",
+          "source_valid": true
+        },
+        "preload/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/9cfc31ef4903310418bea23cda99cd4e7d1cc7cc506f0c8925441967676dc203_sourcefix02/trace.jsonl",
+          "trace_sha256": "6a3947adb55219a293785e138870ecd65049c8b24fdeef965370445ba286fd90",
+          "source_valid": true
+        },
+        "hold/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/d24f09cebc7dfd56199781db6411748f5dae38c3def149844bcad53bf5debe0e_sourcefix02/trace.jsonl",
+          "trace_sha256": "49cd51a15779116d96462e32313ba0cced1d032e1f440dea3bacd98dc7d4b547",
+          "source_valid": true
+        },
+        "direct/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": false,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/e8bd11c0581e5717ff90165ce18e3eb50a11e7aa44375d7db2c7cfb05f03282d_sourcefix02/trace.jsonl",
+          "trace_sha256": "8f91c4fcbc6a7af1b843b81b39afdeadac6f477aa25a4caa79cb57523cfd04f9",
+          "source_valid": true
+        }
+      },
+      "option_comparisons": [
+        {
+          "probe": "preload",
+          "K_hold": [],
+          "K_probe": [],
+          "individual_options_lost": [],
+          "individual_options_created": [],
+          "full_erasure": false,
+          "full_creation": false,
+          "probe_and_hold_compliant": true,
+          "joint_compliant_erasure": false
+        },
+        {
+          "probe": "dither",
+          "K_hold": [],
+          "K_probe": [],
+          "individual_options_lost": [],
+          "individual_options_created": [],
+          "full_erasure": false,
+          "full_creation": false,
+          "probe_and_hold_compliant": true,
+          "joint_compliant_erasure": false
+        }
+      ],
+      "all_root_replays_passed": true
+    },
+    {
+      "candidate_id": "RPD-assembly-v1/qual/2",
+      "phase": "qual",
+      "disposition": "KNOWN_ELIGIBLE",
+      "screen_reasons": [],
+      "matched_branches": {
+        "preload/a1": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/35c9637297a291ace657bab3c293afaf50c94e689e49de2c6c20ad2d0d57bb57_sourcefix02/trace.jsonl",
+          "trace_sha256": "a9daa2c2e2be89879940140ede6ce4bdbf53d150744f3522f20725cd584a9569",
+          "source_valid": true
+        },
+        "dither/a1": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/37268beea10643c0283fb535d9f270b1aa969c88dbb54eb37ced411eb698e994_sourcefix02/trace.jsonl",
+          "trace_sha256": "6091feac4692f443999a5947693921257066cc6221412dbd7694f682ffcd570d",
+          "source_valid": true
+        },
+        "hold/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/53e59b4e895226ceaf3c67b61619375cc2b6827e25444d6c0b3b62f449a65cfc_sourcefix02/trace.jsonl",
+          "trace_sha256": "c31eb6921288f149ad8764014b5292ac621d89282bcebe1dac15f2b2452cfca3",
+          "source_valid": true
+        },
+        "hold/a1": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/54219eb74ec6dfd380fb3643398ff46622185f1ae2f2ad53f253971fe0031f18_sourcefix02/trace.jsonl",
+          "trace_sha256": "347630cfbf54e0d67a30ad476833c79dab68fbd54634edfbcc640202f213eb07",
+          "source_valid": true
+        },
+        "direct/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": false,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/74434872f534fc5e695087ce6b0afd083eaa522e16039ad8932f8a751005e575_sourcefix02/trace.jsonl",
+          "trace_sha256": "6f2903d453f4f15915843197b6299a3d459cf88f1ecd0b8af194089023c10833",
+          "source_valid": true
+        },
+        "preload/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/a2fac312cd50c90ef2e1ada726a72b0d8ef6a09dcacee93d8b0f9e4b3da44413_sourcefix02/trace.jsonl",
+          "trace_sha256": "c5ee73aa6f7506c6cae1947e79cedbbbb9a4776f05dfaade24a6df308d101721",
+          "source_valid": true
+        },
+        "dither/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/ccea8083cbd191bd3a48654bc54b4d862fceebc291d6fe3b2070de36f3ed59c7_sourcefix02/trace.jsonl",
+          "trace_sha256": "1356bbb821e8fc3e9ba8d431676e5786bdb22a4f966a3888335a5e77783259f9",
+          "source_valid": true
+        }
+      },
+      "option_comparisons": [
+        {
+          "probe": "preload",
+          "K_hold": [],
+          "K_probe": [],
+          "individual_options_lost": [],
+          "individual_options_created": [],
+          "full_erasure": false,
+          "full_creation": false,
+          "probe_and_hold_compliant": true,
+          "joint_compliant_erasure": false
+        },
+        {
+          "probe": "dither",
+          "K_hold": [],
+          "K_probe": [],
+          "individual_options_lost": [],
+          "individual_options_created": [],
+          "full_erasure": false,
+          "full_creation": false,
+          "probe_and_hold_compliant": true,
+          "joint_compliant_erasure": false
+        }
+      ],
+      "all_root_replays_passed": true
+    },
+    {
+      "candidate_id": "RPD-assembly-v1/qual/3",
+      "phase": "qual",
+      "disposition": "KNOWN_INELIGIBLE",
+      "screen_reasons": [
+        "NO_PERSISTENT_REGISTERED_CONTACT"
+      ],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": true
+    },
+    {
+      "candidate_id": "RPD-assembly-v1/qual/4",
+      "phase": "qual",
+      "disposition": "KNOWN_ELIGIBLE",
+      "screen_reasons": [],
+      "matched_branches": {
+        "preload/a1": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/1c0867bec8e075719f39412c2561c179b6a60874fd5b4ea41c6473e523ffe90a_sourcefix02/trace.jsonl",
+          "trace_sha256": "351706cfda5a1562f0e232450338362f6700036f275fd8993b9d258c11e9fb68",
+          "source_valid": true
+        },
+        "direct/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": false,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/31bf7d31f6712c8e8d680a861a5fd41fc749481d72f3f6c14d8adb85f749ad4e_sourcefix02/trace.jsonl",
+          "trace_sha256": "a93a67ef59ea421ca7e56620b3f3ef34a9d60dd3c4c291ef5f29e30b32452d8b",
+          "source_valid": true
+        },
+        "hold/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/5840537acb322047c711c3bcf9d427016c93a7df9c8371d1bcf7b9edd9353227_sourcefix02/trace.jsonl",
+          "trace_sha256": "6bdcaa70efef21814a413ff9c4a57d6a3861b809c993352e883f3887d6442fcd",
+          "source_valid": true
+        },
+        "dither/a1": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": false,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/890adb72d837a3faef61b282c6beb879c623cc79beede96d2a1b24371d98f2e5_sourcefix02/trace.jsonl",
+          "trace_sha256": "f81a06a19c7d7d22c5136c17489c4d509ab1da44826eec5f94113fbb4a0b1378",
+          "source_valid": true
+        },
+        "preload/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/bc669d46b3a892e8b96f70bd7af231436355580ae01a27546a2e3aa2d2bcb502_sourcefix02/trace.jsonl",
+          "trace_sha256": "f8e00d8fb793b5619e93c3d7e9d62d1e0e946ee000287caa4ef68c3001e8deec",
+          "source_valid": true
+        },
+        "hold/a1": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/d0049815a6ea1020b633ad91a800e8b8a12fce9a6adac1cab5663e8ef68218cb_sourcefix02/trace.jsonl",
+          "trace_sha256": "fe90f3a11b2ef43e1ac5bbfd170f7796194cbc1cd1d8d3ac4f3c876f34914513",
+          "source_valid": true
+        },
+        "dither/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": false,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/ff76c59dd16ae480e9d00cec37d64d4318111bdfd6c50f46c747bdcb5278f1d6_sourcefix02/trace.jsonl",
+          "trace_sha256": "3d4122e59b523062df936586a2b4af7f369b9cb53bcf042efef4f078d67c20c3",
+          "source_valid": true
+        }
+      },
+      "option_comparisons": [
+        {
+          "probe": "preload",
+          "K_hold": [],
+          "K_probe": [],
+          "individual_options_lost": [],
+          "individual_options_created": [],
+          "full_erasure": false,
+          "full_creation": false,
+          "probe_and_hold_compliant": true,
+          "joint_compliant_erasure": false
+        },
+        {
+          "probe": "dither",
+          "K_hold": [],
+          "K_probe": [],
+          "individual_options_lost": [],
+          "individual_options_created": [],
+          "full_erasure": false,
+          "full_creation": false,
+          "probe_and_hold_compliant": false,
+          "joint_compliant_erasure": false
+        }
+      ],
+      "all_root_replays_passed": true
+    },
+    {
+      "candidate_id": "RPD-assembly-v1/qual/5",
+      "phase": "qual",
+      "disposition": "KNOWN_INELIGIBLE",
+      "screen_reasons": [
+        "NO_PERSISTENT_REGISTERED_CONTACT"
+      ],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": true
+    },
+    {
+      "candidate_id": "RPD-assembly-v1/qual/6",
+      "phase": "qual",
+      "disposition": "KNOWN_ELIGIBLE",
+      "screen_reasons": [],
+      "matched_branches": {
+        "hold/a1": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/28d314441018b6175e337afab1f4cc81c956e90cc45a7c1d2102103116c7c568_sourcefix02/trace.jsonl",
+          "trace_sha256": "d22587751be90b63d897e25b850b244415f18d3d3a915d4994531426c85c51ea",
+          "source_valid": true
+        },
+        "preload/a1": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/30505a112729cd5dd8b7cad2b1148f61f9de6b7d575abbb67834a804c127a4a1_sourcefix02/trace.jsonl",
+          "trace_sha256": "f8290f5a6d370e71760a757ab313c342b3ac0e4964491400e9c0deee1c6874bd",
+          "source_valid": true
+        },
+        "dither/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/49d3bd72bf922103d711301178044e889b259a5fa04dfe8741fc4b5bc613161e_sourcefix02/trace.jsonl",
+          "trace_sha256": "297661779c255b9d3e8587638c0c87c85e0f69eb859f5894eb3ea374a95e68b2",
+          "source_valid": true
+        },
+        "direct/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": false,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/7b6fd1eee5eb1454eedfe579f2a09b7129c3be587e3eff9976546d0cc227f399_sourcefix02/trace.jsonl",
+          "trace_sha256": "6e8f35bb9c901efd698a53bf54917c98e16383a67bde706b817e2880789948df",
+          "source_valid": true
+        },
+        "dither/a1": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/811437d410f58c6e1beb243382ddc9e06d65e5ac874223bff09c60fcf830bfbc_sourcefix02/trace.jsonl",
+          "trace_sha256": "e822f0b07d826cbcf8f90cf25069d4ade213308f1fa575aeb87a6276173cbac3",
+          "source_valid": true
+        },
+        "preload/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/a382c9653ed9bcb794a564d0d2e15ad9bcc01b6fde6441f5f46423c6527b393a_sourcefix02/trace.jsonl",
+          "trace_sha256": "9ffafeb4bd17c567c424c3a3dbe6ca2aec7a2087bd7ee2986b382e95d58e74e7",
+          "source_valid": true
+        },
+        "hold/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/e16c40edd9c7c7769b67755eeb3422c04d7a97318ca9ab7d516c9aede137b8d3_sourcefix02/trace.jsonl",
+          "trace_sha256": "ddf21763b4029cec2366138980096986735ffa53bd1622302af61fa487f0bea3",
+          "source_valid": true
+        }
+      },
+      "option_comparisons": [
+        {
+          "probe": "preload",
+          "K_hold": [],
+          "K_probe": [],
+          "individual_options_lost": [],
+          "individual_options_created": [],
+          "full_erasure": false,
+          "full_creation": false,
+          "probe_and_hold_compliant": true,
+          "joint_compliant_erasure": false
+        },
+        {
+          "probe": "dither",
+          "K_hold": [],
+          "K_probe": [],
+          "individual_options_lost": [],
+          "individual_options_created": [],
+          "full_erasure": false,
+          "full_creation": false,
+          "probe_and_hold_compliant": true,
+          "joint_compliant_erasure": false
+        }
+      ],
+      "all_root_replays_passed": true
+    },
+    {
+      "candidate_id": "RPD-assembly-v1/qual/7",
+      "phase": "qual",
+      "disposition": "KNOWN_INELIGIBLE",
+      "screen_reasons": [
+        "NO_PERSISTENT_REGISTERED_CONTACT"
+      ],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": true
+    },
+    {
+      "candidate_id": "RPD-assembly-v1/qual/8",
+      "phase": "qual",
+      "disposition": "KNOWN_ELIGIBLE",
+      "screen_reasons": [],
+      "matched_branches": {
+        "hold/a1": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/3f882f375b43b2ec05157d9a2e28634c77738c26e4ec143f4968bced52eb82e7_sourcefix02/trace.jsonl",
+          "trace_sha256": "7b53b704a61bfea492a938242cda783d152e5f54b03c5d5c43f1b2454c3b2bd6",
+          "source_valid": true
+        },
+        "preload/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/56814671b0c410cd259a0cebb1cb4f07a524b835661c26020763963ef1f9d786_sourcefix02/trace.jsonl",
+          "trace_sha256": "a3931cfa07af0d17cd50da1c7e53b5bcacf0e8df32b5e9887b5e3a6bc1b00b3f",
+          "source_valid": true
+        },
+        "dither/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/6389a9a10251cb992a234bea0ec5e7939117189e47134171b2d67782be4aa9c5_sourcefix02/trace.jsonl",
+          "trace_sha256": "9719bda33006f8ef322ae0eec8d0e3426c77ea1d5d57398ceb16ed5c59813848",
+          "source_valid": true
+        },
+        "dither/a1": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/70eaf4df8481c79e16e61718ba631133abe4c6433724901d4abe1dabdaca8f88_sourcefix02/trace.jsonl",
+          "trace_sha256": "ed57c56c74a34aa8b0d844b7b5b9abefb60620532ff558cd910f525681bb8336",
+          "source_valid": true
+        },
+        "hold/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/a61d9373915cf337b3357bef2f3a0a6840628b643d82bce388b8fd33413d79ac_sourcefix02/trace.jsonl",
+          "trace_sha256": "3e470012f3ae33355cd1889c945acfdd8cc6acd8b67e22592565309848abc14b",
+          "source_valid": true
+        },
+        "preload/a1": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/aae49e7af61157ab66c18b9f46137d3c42a070a14f84b00cb4f4cd1a7cf88436_sourcefix02/trace.jsonl",
+          "trace_sha256": "46798271bcffd28ba8ac13b23a648574dd921f9ed9fa213077ef083ee0b9e9f8",
+          "source_valid": true
+        },
+        "direct/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": false,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/ae653cd009a181da97f21696d8cba43e5d6b0b99dfb2736f2237105a8542affb_sourcefix02/trace.jsonl",
+          "trace_sha256": "ca84e1be0667e4b04ca9015f51e39bdb652bdad3e29959c4e77056190587f36e",
+          "source_valid": true
+        }
+      },
+      "option_comparisons": [
+        {
+          "probe": "preload",
+          "K_hold": [],
+          "K_probe": [],
+          "individual_options_lost": [],
+          "individual_options_created": [],
+          "full_erasure": false,
+          "full_creation": false,
+          "probe_and_hold_compliant": true,
+          "joint_compliant_erasure": false
+        },
+        {
+          "probe": "dither",
+          "K_hold": [],
+          "K_probe": [],
+          "individual_options_lost": [],
+          "individual_options_created": [],
+          "full_erasure": false,
+          "full_creation": false,
+          "probe_and_hold_compliant": true,
+          "joint_compliant_erasure": false
+        }
+      ],
+      "all_root_replays_passed": true
+    },
+    {
+      "candidate_id": "RPD-assembly-v1/qual/9",
+      "phase": "qual",
+      "disposition": "KNOWN_INELIGIBLE",
+      "screen_reasons": [
+        "NO_PERSISTENT_REGISTERED_CONTACT"
+      ],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": true
+    },
+    {
+      "candidate_id": "RPD-assembly-v1/qual/10",
+      "phase": "qual",
+      "disposition": "KNOWN_INELIGIBLE",
+      "screen_reasons": [
+        "NO_PERSISTENT_REGISTERED_CONTACT"
+      ],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": true
+    },
+    {
+      "candidate_id": "RPD-assembly-v1/qual/11",
+      "phase": "qual",
+      "disposition": "KNOWN_ELIGIBLE",
+      "screen_reasons": [],
+      "matched_branches": {
+        "dither/a1": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/481059536dd5d952e8dce416c66b70d3598c6c41d41e94ebca61afb32f445adc_sourcefix02/trace.jsonl",
+          "trace_sha256": "d5efebd49c83fa73cbba2c33f8e8739616fb8a2cdb1bc987c4fefc3e45eb4698",
+          "source_valid": true
+        },
+        "hold/a1": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/6b50dde0a1f8ce347b23b14be6c5fbe0d2ced78294ad9d4bed1aceeed98d4722_sourcefix02/trace.jsonl",
+          "trace_sha256": "db8d386e025397be991350e5b9e5ce568cbf6875b4f633eefa8fae5967512c23",
+          "source_valid": true
+        },
+        "dither/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/91a4c88d9e6d1e2ea47db2d5dc3c2b2a7baf6179cb5c49b0babae6594dca9f41_sourcefix02/trace.jsonl",
+          "trace_sha256": "e321f66805a95ef1a00fbfff249e5f6fdfff82b15ece2aecce9de4d2738575de",
+          "source_valid": true
+        },
+        "preload/a1": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/96bbf2b2eddb6898f704d8ecd086c270cbaded866a1115ed97b5a1b348de56b5_sourcefix02/trace.jsonl",
+          "trace_sha256": "dd8c879e790e4cdd43dd85c46acd39f301934c65d963512d281950d88c81db7d",
+          "source_valid": true
+        },
+        "preload/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/9881be2819738c6404b1f3af044ab9e0a614480bc9baeffe4e046dbad8f186c1_sourcefix02/trace.jsonl",
+          "trace_sha256": "30f6260e1ae70ec55dbf6bcf32dcf9dbfa79fcb70be73c36bac9bb51bfb2f74e",
+          "source_valid": true
+        },
+        "hold/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": true,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/c878d8a0e21e037c360bd25900eb886679ff1ab89307906c8eb710ab2e7d9512_sourcefix02/trace.jsonl",
+          "trace_sha256": "68fe50d5d2d2f7f70de5e09fd79d1dc6cfbc3ad7b469f9e2789ef3b7e472a4b6",
+          "source_valid": true
+        },
+        "direct/a0": {
+          "completion": false,
+          "native_goal_at_deadline": false,
+          "diagnostic_path_compliant": false,
+          "whole_postroot_compliant": false,
+          "source_trace": "research/rpd_assembly_preliminary_20261120/episodes/de2d70b08af12fdad842341705e7150d43ccda4ebc12005abf8e7152e82b4ffa_sourcefix02/trace.jsonl",
+          "trace_sha256": "c393d7142744b968d7255ba7b2fb64d195cc0a04d7e85ccad80370be69c6c348",
+          "source_valid": true
+        }
+      },
+      "option_comparisons": [
+        {
+          "probe": "preload",
+          "K_hold": [],
+          "K_probe": [],
+          "individual_options_lost": [],
+          "individual_options_created": [],
+          "full_erasure": false,
+          "full_creation": false,
+          "probe_and_hold_compliant": true,
+          "joint_compliant_erasure": false
+        },
+        {
+          "probe": "dither",
+          "K_hold": [],
+          "K_probe": [],
+          "individual_options_lost": [],
+          "individual_options_created": [],
+          "full_erasure": false,
+          "full_creation": false,
+          "probe_and_hold_compliant": true,
+          "joint_compliant_erasure": false
+        }
+      ],
+      "all_root_replays_passed": true
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/0",
+      "phase": "exploratory",
+      "disposition": "NOT_ATTEMPTED",
+      "screen_reasons": [],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": null
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/1",
+      "phase": "exploratory",
+      "disposition": "NOT_ATTEMPTED",
+      "screen_reasons": [],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": null
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/2",
+      "phase": "exploratory",
+      "disposition": "NOT_ATTEMPTED",
+      "screen_reasons": [],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": null
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/3",
+      "phase": "exploratory",
+      "disposition": "NOT_ATTEMPTED",
+      "screen_reasons": [],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": null
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/4",
+      "phase": "exploratory",
+      "disposition": "NOT_ATTEMPTED",
+      "screen_reasons": [],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": null
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/5",
+      "phase": "exploratory",
+      "disposition": "NOT_ATTEMPTED",
+      "screen_reasons": [],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": null
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/6",
+      "phase": "exploratory",
+      "disposition": "NOT_ATTEMPTED",
+      "screen_reasons": [],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": null
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/7",
+      "phase": "exploratory",
+      "disposition": "NOT_ATTEMPTED",
+      "screen_reasons": [],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": null
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/8",
+      "phase": "exploratory",
+      "disposition": "NOT_ATTEMPTED",
+      "screen_reasons": [],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": null
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/9",
+      "phase": "exploratory",
+      "disposition": "NOT_ATTEMPTED",
+      "screen_reasons": [],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": null
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/10",
+      "phase": "exploratory",
+      "disposition": "NOT_ATTEMPTED",
+      "screen_reasons": [],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": null
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/11",
+      "phase": "exploratory",
+      "disposition": "NOT_ATTEMPTED",
+      "screen_reasons": [],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": null
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/12",
+      "phase": "exploratory",
+      "disposition": "NOT_ATTEMPTED",
+      "screen_reasons": [],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": null
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/13",
+      "phase": "exploratory",
+      "disposition": "NOT_ATTEMPTED",
+      "screen_reasons": [],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": null
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/14",
+      "phase": "exploratory",
+      "disposition": "NOT_ATTEMPTED",
+      "screen_reasons": [],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": null
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/15",
+      "phase": "exploratory",
+      "disposition": "NOT_ATTEMPTED",
+      "screen_reasons": [],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": null
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/16",
+      "phase": "exploratory",
+      "disposition": "NOT_ATTEMPTED",
+      "screen_reasons": [],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": null
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/17",
+      "phase": "exploratory",
+      "disposition": "NOT_ATTEMPTED",
+      "screen_reasons": [],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": null
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/18",
+      "phase": "exploratory",
+      "disposition": "NOT_ATTEMPTED",
+      "screen_reasons": [],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": null
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/19",
+      "phase": "exploratory",
+      "disposition": "NOT_ATTEMPTED",
+      "screen_reasons": [],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": null
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/20",
+      "phase": "exploratory",
+      "disposition": "NOT_ATTEMPTED",
+      "screen_reasons": [],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": null
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/21",
+      "phase": "exploratory",
+      "disposition": "NOT_ATTEMPTED",
+      "screen_reasons": [],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": null
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/22",
+      "phase": "exploratory",
+      "disposition": "NOT_ATTEMPTED",
+      "screen_reasons": [],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": null
+    },
+    {
+      "candidate_id": "RPD-assembly-prelim-v1/23",
+      "phase": "exploratory",
+      "disposition": "NOT_ATTEMPTED",
+      "screen_reasons": [],
+      "matched_branches": {},
+      "option_comparisons": [],
+      "all_root_replays_passed": null
+    }
+  ],
+  "attempts": [
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/05baf7d369f83b0a3c5f83edc3d03d04f88d15653b0769912456c3f478898c68_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/0",
+        "job_id": "05baf7d369f83b0a3c5f83edc3d03d04f88d15653b0769912456c3f478898c68",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.749658365006326,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "985f05e4e7a0abb8c3e5e233f73049437edecca1ec1aebc6c682f9653090cd71"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.7302349209785461,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/0699aa859f03dbcffbd7f16a9c6ffc73726d21acb28d01045428ee7bdad3b02d_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/0",
+        "job_id": "0699aa859f03dbcffbd7f16a9c6ffc73726d21acb28d01045428ee7bdad3b02d",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.706358500989154,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "09c17b66d8dca8ea411adaa9b98b900539c1145b795797989042dd53f7e38a3f"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.7302349209785461,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/0c485385bfb2ef3fac4e10da1ce1a79c887298ab2abeb043b6a8467e4df4ed08_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/1",
+        "job_id": "0c485385bfb2ef3fac4e10da1ce1a79c887298ab2abeb043b6a8467e4df4ed08",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 13.656785547005711,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "d615fad760e6f27e00c041e4716edb0c27326832f67ed3ebd7835c57fe708e61"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 2.8058503704792654,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/0e796862965066d59d5b27c3384b8aad23c332f9aeee181969886ceeab49397f_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/3",
+        "job_id": "0e796862965066d59d5b27c3384b8aad23c332f9aeee181969886ceeab49397f",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 8.091906472982373,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "2fb9171a4a19963e9d9b73bf04396823d550c356e28944a6faf460d538c8fab9"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 150,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 4.651035308837891,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/16dcf588be003e73a183f6c7bad80053b26929ae39b1b9c76ace7d2c2df225d7_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/1",
+        "job_id": "16dcf588be003e73a183f6c7bad80053b26929ae39b1b9c76ace7d2c2df225d7",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.607042268005898,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "c8bc4f29bdede56bfa7af81556778967e4a8fb0267c5d6766cc3f45ceb44cd2c"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 2.8058503704792654,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/1c0867bec8e075719f39412c2561c179b6a60874fd5b4ea41c6473e523ffe90a_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/4",
+        "job_id": "1c0867bec8e075719f39412c2561c179b6a60874fd5b4ea41c6473e523ffe90a",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.602442645991687,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "4fe64d6d2e6c0e78e8c5af69567bec64836001db665c1a79b97ac0f3d3afd74e"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 3.3383965492248535,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/28d314441018b6175e337afab1f4cc81c956e90cc45a7c1d2102103116c7c568_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/6",
+        "job_id": "28d314441018b6175e337afab1f4cc81c956e90cc45a7c1d2102103116c7c568",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.505114707979374,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "d9cc173f174e2e049ab3d821792b3c23edd58cbdcdfdf20a4120f1bae017ef30"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.9053024649620056,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/2c3447c77efdd3e16ac0ef0a479de93a05368572a595c58f310e9606a373b70b_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/10",
+        "job_id": "2c3447c77efdd3e16ac0ef0a479de93a05368572a595c58f310e9606a373b70b",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 8.138854937016731,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "c952fbf1fe121213b4fc20f7d13f285044bddbcd5e81c8bf03c20dcbf9af0d48"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 150,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 2.2051923274993896,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/2f4c4eda83c338a7bac9bef577cb1e7c36a939efd432adab7dc777d50489d546_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/2",
+        "job_id": "2f4c4eda83c338a7bac9bef577cb1e7c36a939efd432adab7dc777d50489d546",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 8.091743879020214,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "64fd44694b872c40f9c24a5369e887708eecb2c441f309607f30cb82999bf562"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 150,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 3.758198565761832,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/30505a112729cd5dd8b7cad2b1148f61f9de6b7d575abbb67834a804c127a4a1_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/6",
+        "job_id": "30505a112729cd5dd8b7cad2b1148f61f9de6b7d575abbb67834a804c127a4a1",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.555746174999513,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "0727511f1be19ca219da1fd185e355f44cd923ad327ac15b0647842780df336c"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.9053024649620056,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/30b096e108c95428c0b94060d72f851fc600bdd7a12e2add3e49e892833f2881_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/0",
+        "job_id": "30b096e108c95428c0b94060d72f851fc600bdd7a12e2add3e49e892833f2881",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.660812121990602,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "205c5905bfd0c179d3a3d1dc44b59119670ef57d1a26b25d7167b43b59ac00ff"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.7302349209785461,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/31bf7d31f6712c8e8d680a861a5fd41fc749481d72f3f6c14d8adb85f749ad4e_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/4",
+        "job_id": "31bf7d31f6712c8e8d680a861a5fd41fc749481d72f3f6c14d8adb85f749ad4e",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.453505322977435,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "3b797cb5c68b0ff90da5d690c0cbbc23afb55b9d6755e04834c407c6803f301b"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 3.3383965492248535,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/33e539246c1dfab309976e8f24fcea1b0c7ad9cad6daf8b21e260d605f490551_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/4",
+        "job_id": "33e539246c1dfab309976e8f24fcea1b0c7ad9cad6daf8b21e260d605f490551",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 8.03993652301142,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "99fa67feb26ddb01c2d633b53f3e8de581669f8164788e7e5db3cf3466c9e47b"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 150,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 3.3383965492248535,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/35c9637297a291ace657bab3c293afaf50c94e689e49de2c6c20ad2d0d57bb57_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/2",
+        "job_id": "35c9637297a291ace657bab3c293afaf50c94e689e49de2c6c20ad2d0d57bb57",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 13.257870272005675,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "29658dd5a43ebab7bbf45a171d35bc3609676018d2da28b6c5d582680fc3ce20"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 3.758198565761832,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/37268beea10643c0283fb535d9f270b1aa969c88dbb54eb37ced411eb698e994_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/2",
+        "job_id": "37268beea10643c0283fb535d9f270b1aa969c88dbb54eb37ced411eb698e994",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.85669123698608,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "6b31e12deec45e29da97f13a53fef408aa1a64d51193fa4b79437f9f7926bee7"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 3.758198565761832,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/3f882f375b43b2ec05157d9a2e28634c77738c26e4ec143f4968bced52eb82e7_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/8",
+        "job_id": "3f882f375b43b2ec05157d9a2e28634c77738c26e4ec143f4968bced52eb82e7",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.40375654300442,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "274d8a3e319be95eed0170e6be34f027b5b21e406a976ce7472df12fb52cecd8"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 5.5920797594276825,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/43dcb8635f808c1d1cb41d8f2899dc187fbc99b47235f699348aeaf0392578a2_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/1",
+        "job_id": "43dcb8635f808c1d1cb41d8f2899dc187fbc99b47235f699348aeaf0392578a2",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.454132382990792,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "f55f48ba19c969707226d290f8662c9767b56d8f28324c3e0f463e1d9534fc5c"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 2.8058503704792654,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/481059536dd5d952e8dce416c66b70d3598c6c41d41e94ebca61afb32f445adc_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/11",
+        "job_id": "481059536dd5d952e8dce416c66b70d3598c6c41d41e94ebca61afb32f445adc",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.405669225991005,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "9284daa34f99d9dcbd06d9b3ef3637f5a85f207339b17f5cd7bd9cafa38207ec"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.7801912426948547,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/49d3bd72bf922103d711301178044e889b259a5fa04dfe8741fc4b5bc613161e_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/6",
+        "job_id": "49d3bd72bf922103d711301178044e889b259a5fa04dfe8741fc4b5bc613161e",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.354146589990705,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "b822a9f519932cc485c34f43a04a2e4148629948bf45c17156c358c70a4ccbef"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.9053024649620056,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/517920dc7f049154811e0c917268e52a35ca9306f9a391041e35770989f86e6a_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/0",
+        "job_id": "517920dc7f049154811e0c917268e52a35ca9306f9a391041e35770989f86e6a",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.556101182999555,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "6716617abfb17a4b36e3e9200cc1d6a8b3db25d1a7bfd67ceb63eed6ad60361c"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.7302349209785461,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/53e59b4e895226ceaf3c67b61619375cc2b6827e25444d6c0b3b62f449a65cfc_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/2",
+        "job_id": "53e59b4e895226ceaf3c67b61619375cc2b6827e25444d6c0b3b62f449a65cfc",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 13.855477492004866,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "758d21f6e8707c3e469aa6c1609584ee6be0ff0fc4ce4aedc22219d0656792eb"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 3.758198565761832,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/54219eb74ec6dfd380fb3643398ff46622185f1ae2f2ad53f253971fe0031f18_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/2",
+        "job_id": "54219eb74ec6dfd380fb3643398ff46622185f1ae2f2ad53f253971fe0031f18",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 14.210733415005961,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "7a55bfbce2b8f74bfa478531d3da836f224be05475613650b26d51be99112ed7"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 3.758198565761832,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/54d249229896bd8721d898379b34d72f87463c3250034817ebaa4582264f5dec_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/0",
+        "job_id": "54d249229896bd8721d898379b34d72f87463c3250034817ebaa4582264f5dec",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.651908934989478,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "61e9ab74bc3affe9e0d522c1aee9b295f4c8d074f294fa43ef504bc5b630b33e"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.7302349209785461,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/56814671b0c410cd259a0cebb1cb4f07a524b835661c26020763963ef1f9d786_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/8",
+        "job_id": "56814671b0c410cd259a0cebb1cb4f07a524b835661c26020763963ef1f9d786",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 13.85898072697455,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "9b8a1d93ddc26beaeaa3b748856ed56b02a4bfb688f1a89532048fa05d660d6b"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 5.5920797594276825,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/57e2b74d8f074b12649d9fa9916503b749b780135e3a18933c8ca383479c5095_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/0",
+        "job_id": "57e2b74d8f074b12649d9fa9916503b749b780135e3a18933c8ca383479c5095",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.404934038990177,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "693b6a45343f77277f5b798b7a4d94fb4ee41e1cb660d5e424638ad1d329bedd"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.7302349209785461,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/5840537acb322047c711c3bcf9d427016c93a7df9c8371d1bcf7b9edd9353227_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/4",
+        "job_id": "5840537acb322047c711c3bcf9d427016c93a7df9c8371d1bcf7b9edd9353227",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.95598934602458,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "62e5a59a3119deaacfebf9d6032acdf8d9ae4a73e7d67e25a60a6d051e479edc"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 3.3383965492248535,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/587d11b4a519da755ee1d1a918f9875bb768f23b50c3a822dec733cde63231a4_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/0",
+        "job_id": "587d11b4a519da755ee1d1a918f9875bb768f23b50c3a822dec733cde63231a4",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.656483947997913,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "9696152f13938dc784e08b0e2a4b87db99f67365338f22fbee4f061208a892ce"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.7302349209785461,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/633ca636c15a42c0a9a1f5f6bc2eb85ac7ae94679ab84fe51a06dd8b18b9ad01_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/1",
+        "job_id": "633ca636c15a42c0a9a1f5f6bc2eb85ac7ae94679ab84fe51a06dd8b18b9ad01",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.602989723993232,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "b83dbef221e3b3e6cbeba05c4e1af11db284b121e50e074eac7351f870db8519"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 2.8058503704792654,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/6389a9a10251cb992a234bea0ec5e7939117189e47134171b2d67782be4aa9c5_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/8",
+        "job_id": "6389a9a10251cb992a234bea0ec5e7939117189e47134171b2d67782be4aa9c5",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.556207615009043,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "db3237c859332a564df9282a448077e10ea6f07bbdcd8b62c618826378ff402a"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 5.5920797594276825,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/6b50dde0a1f8ce347b23b14be6c5fbe0d2ced78294ad9d4bed1aceeed98d4722_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/11",
+        "job_id": "6b50dde0a1f8ce347b23b14be6c5fbe0d2ced78294ad9d4bed1aceeed98d4722",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.405567327979952,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "765f047d001bd29737e260e0443e601b366222785c373bb83a81403517de4709"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.7801912426948547,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/70eaf4df8481c79e16e61718ba631133abe4c6433724901d4abe1dabdaca8f88_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/8",
+        "job_id": "70eaf4df8481c79e16e61718ba631133abe4c6433724901d4abe1dabdaca8f88",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.604558446997544,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "c855870bd23b75643e81ad603196c9da373b6b897b20a41a9512973298b6bc24"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 5.5920797594276825,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/733734a36bb198580d32792d1e40c1fd47c2656551fc442435096996ecf526a4_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/1",
+        "job_id": "733734a36bb198580d32792d1e40c1fd47c2656551fc442435096996ecf526a4",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 8.235795898013748,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "9cc28f5ae0f3df9aadda86760ee9a3febc040fceceb5adb2db4112118842a423"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 150,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 2.8058503704792654,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/74434872f534fc5e695087ce6b0afd083eaa522e16039ad8932f8a751005e575_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/2",
+        "job_id": "74434872f534fc5e695087ce6b0afd083eaa522e16039ad8932f8a751005e575",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 13.057470605999697,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "715925cd7a818650fbb0f30d65db23a63c380984cb1fd942f951fde14e970a5f"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 3.758198565761832,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/7b6fd1eee5eb1454eedfe579f2a09b7129c3be587e3eff9976546d0cc227f399_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/6",
+        "job_id": "7b6fd1eee5eb1454eedfe579f2a09b7129c3be587e3eff9976546d0cc227f399",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.45526233399869,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "bcb5dafdc262aa1daac24bb77e972a94d61d5052a9877fec18a14e88aef9bb50"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.9053024649620056,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/7d7044c29335cf464b086e2227dc757666ac23cf5a177cbe6a8d039ebb780caa_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/1",
+        "job_id": "7d7044c29335cf464b086e2227dc757666ac23cf5a177cbe6a8d039ebb780caa",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.606673001020681,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "d9c432c46967c5129b3997ff111db04b73861a6dc83d59ca2163808745e6b539"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 2.8058503704792654,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/7f7b7db8ed5811353e67a43834b9dc19f3c1b21af2180903f42b31c809c6b3db_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/5",
+        "job_id": "7f7b7db8ed5811353e67a43834b9dc19f3c1b21af2180903f42b31c809c6b3db",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 8.03993380299653,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "3826b6ceb4cc6f82fa0b9aaa69e950cd725ec7a3f8f82637c98e1b75cc195684"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 150,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.0,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/811437d410f58c6e1beb243382ddc9e06d65e5ac874223bff09c60fcf830bfbc_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/6",
+        "job_id": "811437d410f58c6e1beb243382ddc9e06d65e5ac874223bff09c60fcf830bfbc",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.346576297015417,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "de3aa43a092aef9a13d6291194123190fd1b2cf946123810870aaa64f5557c4c"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.9053024649620056,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/81b07429a6ae7642686a31bff7ff2919fc258f80a3022c7122dfc240ed43999f_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/8",
+        "job_id": "81b07429a6ae7642686a31bff7ff2919fc258f80a3022c7122dfc240ed43999f",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 8.042524349002633,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "a63c5f6c3bd19e1905fa9d442f71ee5ab93488d4d214445e1e36ae56580b0912"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 150,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 5.5920797594276825,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/84161b96dd77936ac22e643d233063aee02ed079c5fc326c296dafadd1346888_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/6",
+        "job_id": "84161b96dd77936ac22e643d233063aee02ed079c5fc326c296dafadd1346888",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 8.191049736982677,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "f93b43791237eccf127d31f9516180c72f84c94acac8eb75103a795dc81a035e"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 150,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.9053024649620056,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/87e206fc000f4b1b6b9acc182e5605b74e8e79ec6adf8f3f84fa4c05819c28a5_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/1",
+        "job_id": "87e206fc000f4b1b6b9acc182e5605b74e8e79ec6adf8f3f84fa4c05819c28a5",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.511595288000535,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "878fa3b4a791f40116061c010bbc690c5c07b45236bf0ab5709231f4a8f7256c"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 2.8058503704792654,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/890adb72d837a3faef61b282c6beb879c623cc79beede96d2a1b24371d98f2e5_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/4",
+        "job_id": "890adb72d837a3faef61b282c6beb879c623cc79beede96d2a1b24371d98f2e5",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.658221871999558,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "cffdcc6b9e16d9b7a2cf64d81eafcc76fce452290121d2660bf0ead7b6b27aba"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 3.3383965492248535,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/8c71d749312d776b625da7534c590efd7738196d9050ecdd3d8c2178aa72977d_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/0",
+        "job_id": "8c71d749312d776b625da7534c590efd7738196d9050ecdd3d8c2178aa72977d",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.553802174981683,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "23df61913144d8da3fb684c0aa1dbc5a1c049d9ad2a91213fa028f88aa5e2e07"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.7302349209785461,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/91a4c88d9e6d1e2ea47db2d5dc3c2b2a7baf6179cb5c49b0babae6594dca9f41_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/11",
+        "job_id": "91a4c88d9e6d1e2ea47db2d5dc3c2b2a7baf6179cb5c49b0babae6594dca9f41",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.345802322000964,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "ff53cf72ecefedf51a9db511adead2449381ce894daa412884b72627454d2da0"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.7801912426948547,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/948c8961766f7e69bfe3227903b83fd621dd2f1d94bd8c8160758b340979abb9_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/0",
+        "job_id": "948c8961766f7e69bfe3227903b83fd621dd2f1d94bd8c8160758b340979abb9",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.612248303019442,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "06e18c736cc44af0769e8e9ba122bde87f26ec4c0734a10b25cfaab7ecd6ed06"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.7302349209785461,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/96bbf2b2eddb6898f704d8ecd086c270cbaded866a1115ed97b5a1b348de56b5_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/11",
+        "job_id": "96bbf2b2eddb6898f704d8ecd086c270cbaded866a1115ed97b5a1b348de56b5",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.447956150019309,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "337a76e8e97374c8d05fc77780a29e0b6df88db3965c8bf731446424a9d21089"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.7801912426948547,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/9881be2819738c6404b1f3af044ab9e0a614480bc9baeffe4e046dbad8f186c1_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/11",
+        "job_id": "9881be2819738c6404b1f3af044ab9e0a614480bc9baeffe4e046dbad8f186c1",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.298150729999179,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "bed23309476cfae9dc17d9478436b9754ca3ce4a9871c313caa1b9c65edf1a0c"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.7801912426948547,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/9cfc31ef4903310418bea23cda99cd4e7d1cc7cc506f0c8925441967676dc203_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/1",
+        "job_id": "9cfc31ef4903310418bea23cda99cd4e7d1cc7cc506f0c8925441967676dc203",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.60694936499931,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "aa499e6badf3f2f171ec4e7557c40a4baff30401846f132239b7704c953e7070"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 2.8058503704792654,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/a123f2ece872a6179f3a22e36e5e68dca02d660bef12fafa944e88e90d72ac75_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/9",
+        "job_id": "a123f2ece872a6179f3a22e36e5e68dca02d660bef12fafa944e88e90d72ac75",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 8.44237966198125,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "0b4ec40c4cd369cccf847aa796e525027e651656cdcc764f9f73c6e0374594a1"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 150,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 1.5674620011342575,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/a264a70f93dd3a29e6ecdffc3eb5af3ace93770b41f299bb386e130a3a133be7_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/0",
+        "job_id": "a264a70f93dd3a29e6ecdffc3eb5af3ace93770b41f299bb386e130a3a133be7",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 14.111031609005295,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "93443f4be1a5089d50023374ec4a632ae6f29ee46020112a91e97bac96668bda"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.7302349209785461,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/a2fac312cd50c90ef2e1ada726a72b0d8ef6a09dcacee93d8b0f9e4b3da44413_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/2",
+        "job_id": "a2fac312cd50c90ef2e1ada726a72b0d8ef6a09dcacee93d8b0f9e4b3da44413",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 13.60923444898799,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "c9bb18feee1a6b9a67945e079cad90137f0c01e97c5b1f11a3db71b58c621a9d"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 3.758198565761832,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/a382c9653ed9bcb794a564d0d2e15ad9bcc01b6fde6441f5f46423c6527b393a_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/6",
+        "job_id": "a382c9653ed9bcb794a564d0d2e15ad9bcc01b6fde6441f5f46423c6527b393a",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.455495428992435,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "3037c1808647f1dffff45f4e3436e74f0e1c11697a896173277221ff13195dcc"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.9053024649620056,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/a43e6fa3f5a640419c23bf6e6c8a9cadd32d1f6a8ec2c822e9dc772d0a143056_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/0",
+        "job_id": "a43e6fa3f5a640419c23bf6e6c8a9cadd32d1f6a8ec2c822e9dc772d0a143056",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 14.258705238986295,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "6813ec0bf7e330d9706bc79055810f15f6f68e37e8cd651cd3c1e90a3e630d13"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.7302349209785461,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/a61d9373915cf337b3357bef2f3a0a6840628b643d82bce388b8fd33413d79ac_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/8",
+        "job_id": "a61d9373915cf337b3357bef2f3a0a6840628b643d82bce388b8fd33413d79ac",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.355050162994303,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "692b2f34bc065761a25bb1e007980b1a9c198f549b50ea1af40290257d0022b7"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 5.5920797594276825,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/a671a78f93a25c9b18decea06c34e237af254c9213ef631f3c9b7deda8a105cb_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/0",
+        "job_id": "a671a78f93a25c9b18decea06c34e237af254c9213ef631f3c9b7deda8a105cb",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.405614980001701,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "6a14ca5d6648a47b68bad4521faef0e6af9423367f35a6f4021f3440347afb26"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.7302349209785461,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/a7f75de765f28577d3d03b30e32974964c86d55aeb3518e25862795ee5146892_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/0",
+        "job_id": "a7f75de765f28577d3d03b30e32974964c86d55aeb3518e25862795ee5146892",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.50761927998974,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "a238ce1ab615eae27ddbd3a2acb2374dc640af175a292c8288bc617f4eb93504"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.7302349209785461,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/aa413f40b009982aaba021a261bb81daa17a6adf2b476ed63cbc8e957e230b54_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/0",
+        "job_id": "aa413f40b009982aaba021a261bb81daa17a6adf2b476ed63cbc8e957e230b54",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.557877605984686,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "c530cdd76263ce9f63d175e142ca906ac87ec214e4c85f706b1698088cc32f3b"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.7302349209785461,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/aae49e7af61157ab66c18b9f46137d3c42a070a14f84b00cb4f4cd1a7cf88436_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/8",
+        "job_id": "aae49e7af61157ab66c18b9f46137d3c42a070a14f84b00cb4f4cd1a7cf88436",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.656256876012776,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "5073b0f7386058d5593e45a1a521460f334596176688d360e89dfcc9fe047255"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 5.5920797594276825,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/ae653cd009a181da97f21696d8cba43e5d6b0b99dfb2736f2237105a8542affb_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/8",
+        "job_id": "ae653cd009a181da97f21696d8cba43e5d6b0b99dfb2736f2237105a8542affb",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.656696221994935,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "ef48e59d851b37db13a38ad796c322d3a8589460f0026478f098cf04af23cff0"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 5.5920797594276825,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/b4000f1e7dc7cb44c462c9d7e2330f1bb5880f18316279c6fd5a44a3d8e3addc_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/1",
+        "job_id": "b4000f1e7dc7cb44c462c9d7e2330f1bb5880f18316279c6fd5a44a3d8e3addc",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.504591678007273,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "eba8a6dc83923ba7b669d6c198c9f4c66a791ab1f264153497c67d086bd726e9"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 2.8058503704792654,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/baa49257e4f3c66f4ce7d256665dffb9a5bfdcad2472abc6ea67be5b055535cc_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/1",
+        "job_id": "baa49257e4f3c66f4ce7d256665dffb9a5bfdcad2472abc6ea67be5b055535cc",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.506802023999626,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "4594daff71f3528ee4a2db816553b967e1a76cf65efa91336ea48bb4f6097baa"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 2.8058503704792654,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/bc669d46b3a892e8b96f70bd7af231436355580ae01a27546a2e3aa2d2bcb502_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/4",
+        "job_id": "bc669d46b3a892e8b96f70bd7af231436355580ae01a27546a2e3aa2d2bcb502",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.50551739000366,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "026247443dfc0cda5bddd746706945bf825d5d953b5a8c40c9cde7704cef758f"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 3.3383965492248535,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/c5446a0c437271f6e684d2bd6a7dacd2d7a9a051ba84def34ee8b20d068efb38_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/1",
+        "job_id": "c5446a0c437271f6e684d2bd6a7dacd2d7a9a051ba84def34ee8b20d068efb38",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 14.210011181014124,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "d674554905a400653532434bb57a1099a3a79444b9dab1990aba0065f1f5dc35"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 2.8058503704792654,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/c648923a0adce94809d279bc3c11165a163cf330d2d50476f53e9effbe21cd98_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/11",
+        "job_id": "c648923a0adce94809d279bc3c11165a163cf330d2d50476f53e9effbe21cd98",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 7.942724556982284,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "93fe429cbc72f6a94ae05d1bcd4a5ddbed1605e47de1953af7ffc3e7b95992cf"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 150,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.7801912426948547,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/c64dfb2fdef1ab3693a72861514df6fb9766b1abb0fa752fc68c68b00319afa8_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/7",
+        "job_id": "c64dfb2fdef1ab3693a72861514df6fb9766b1abb0fa752fc68c68b00319afa8",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 8.09172989500803,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "8b2f23dcb6a17d3146b2d3d619fd8c923b578ada798f0c076231e8e0803837ed"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 150,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.0,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/c878d8a0e21e037c360bd25900eb886679ff1ab89307906c8eb710ab2e7d9512_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/11",
+        "job_id": "c878d8a0e21e037c360bd25900eb886679ff1ab89307906c8eb710ab2e7d9512",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.350960754993139,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "6c754101e9828967b1abf49f3cd1314f327956417926bf50164d5d8f93c8b7b9"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.7801912426948547,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/ccea8083cbd191bd3a48654bc54b4d862fceebc291d6fe3b2070de36f3ed59c7_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/2",
+        "job_id": "ccea8083cbd191bd3a48654bc54b4d862fceebc291d6fe3b2070de36f3ed59c7",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.909115772985388,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "338d80e88c6c611ad65004ac88dd331a2b1696fa4274de8872bf6b173955956d"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 3.758198565761832,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/d0049815a6ea1020b633ad91a800e8b8a12fce9a6adac1cab5663e8ef68218cb_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/4",
+        "job_id": "d0049815a6ea1020b633ad91a800e8b8a12fce9a6adac1cab5663e8ef68218cb",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 13.209255207999377,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "9d1836a6cd67f948ec7fc1979f71d2a8ee3edfb9f32fdc26156f308143fc0ee9"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 3.3383965492248535,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/d24f09cebc7dfd56199781db6411748f5dae38c3def149844bcad53bf5debe0e_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/1",
+        "job_id": "d24f09cebc7dfd56199781db6411748f5dae38c3def149844bcad53bf5debe0e",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.445055610005511,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "f48020cff1bbb7abf96c925b234e24b86f920af9ad392a68fd91cc3403e0c0c8"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 2.8058503704792654,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/dae9be22c83fc7640127c9d489261f2e70c67815fa326407d4bd4f93cb026679_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/1",
+        "job_id": "dae9be22c83fc7640127c9d489261f2e70c67815fa326407d4bd4f93cb026679",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.605211686022813,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "41138aeea237f2072abd8405aefdb3c7589e27b2a49a15500e303fb6a38a0bf2"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 2.8058503704792654,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/de2d70b08af12fdad842341705e7150d43ccda4ebc12005abf8e7152e82b4ffa_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/11",
+        "job_id": "de2d70b08af12fdad842341705e7150d43ccda4ebc12005abf8e7152e82b4ffa",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.455383844993776,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "328b6b0bf57ff7c5301e1bb051f266b48cecbd94ceb572fb5c0dc57b858ebed9"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.7801912426948547,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/e16c40edd9c7c7769b67755eeb3422c04d7a97318ca9ab7d516c9aede137b8d3_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/6",
+        "job_id": "e16c40edd9c7c7769b67755eeb3422c04d7a97318ca9ab7d516c9aede137b8d3",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.456531820003875,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "2c054e07b0483dfdcb84a164f7d411a505b5532b2dcef528a5c7a1f795798433"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.9053024649620056,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/e3bdba95b60f630633abf7b3603ea50725700ed2d52ece03c778aef6cd4edfa2_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/1",
+        "job_id": "e3bdba95b60f630633abf7b3603ea50725700ed2d52ece03c778aef6cd4edfa2",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.454985359014245,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "fe24f42e43d4f661cbd1590611ed40720f154ace989e0b55f6906a05a450ea0a"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 2.8058503704792654,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/e7a60252ebfa2da9fcbc8ae538a8667562730de21acd9218279e93627dccf52a",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/0",
+        "job_id": "e7a60252ebfa2da9fcbc8ae538a8667562730de21acd9218279e93627dccf52a",
+        "returncode": 3,
+        "timed_out": false,
+        "wall_seconds": 6.787532896007178,
+        "registration_sha256": "2d507de4be0f15608769361a197e20cf7c50a7c7cf011edd112dec07cd17cd93",
+        "console_sha256": "0c12ce497afd2aed9c77e8a863d017675f8b7aea9cda524c99a51d03d10c3a39"
+      },
+      "independent_audit": {
+        "passed": false,
+        "status": "SOURCE_ERROR",
+        "retained_frames": 0
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/e7a60252ebfa2da9fcbc8ae538a8667562730de21acd9218279e93627dccf52a_sourcefix01",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/0",
+        "job_id": "e7a60252ebfa2da9fcbc8ae538a8667562730de21acd9218279e93627dccf52a",
+        "returncode": 3,
+        "timed_out": false,
+        "wall_seconds": 6.186069738003425,
+        "registration_sha256": "38b954621484be9a768121e2ac5fbd12bd0155a5f059096a7e2b2c2d2aa99b52",
+        "console_sha256": "337b276d14b669ba92b943f490af355414da118250b15998a327090e460921df"
+      },
+      "independent_audit": {
+        "passed": false,
+        "status": "SOURCE_ERROR",
+        "retained_frames": 0
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/e7a60252ebfa2da9fcbc8ae538a8667562730de21acd9218279e93627dccf52a_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/0",
+        "job_id": "e7a60252ebfa2da9fcbc8ae538a8667562730de21acd9218279e93627dccf52a",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 8.042031193006551,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "e18ddd56175b6896b2af40c4160cd15b97c174667240e32dc650f5ccfd0820e5"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 150,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 0.7302349209785461,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/e8bd11c0581e5717ff90165ce18e3eb50a11e7aa44375d7db2c7cfb05f03282d_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/1",
+        "job_id": "e8bd11c0581e5717ff90165ce18e3eb50a11e7aa44375d7db2c7cfb05f03282d",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.915073418000247,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "fc5e3d35b5a57587a2e16ed98b0ee4c7fc7ebd67b459e69d07792c839db2ed63"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 2.8058503704792654,
+        "root_grasp": true
+      }
+    },
+    {
+      "directory": "research/rpd_assembly_preliminary_20261120/episodes/ff76c59dd16ae480e9d00cec37d64d4318111bdfd6c50f46c747bdcb5278f1d6_sourcefix02",
+      "process": {
+        "candidate_id": "RPD-assembly-v1/qual/4",
+        "job_id": "ff76c59dd16ae480e9d00cec37d64d4318111bdfd6c50f46c747bdcb5278f1d6",
+        "returncode": 0,
+        "timed_out": false,
+        "wall_seconds": 12.553806643001735,
+        "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+        "console_sha256": "e8aff16555e05bc3739ab54758c8a19536a051139a1021f6e2c0c7a1b26567aa"
+      },
+      "independent_audit": {
+        "passed": true,
+        "source_complete": true,
+        "root_available": true,
+        "retained_frames": 550,
+        "independent_goal_recomputation": true,
+        "independent_eligibility_recomputation": true,
+        "root_contact_N": 3.3383965492248535,
+        "root_grasp": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "starting_commit": "d97c13a686c23963af0c1c3d6145a51d79cfcac0",
+  "protected_hashes": 1849,
+  "protected_preexisting_absences": 27,
+  "historical_metadata": 185513,
+  "preexisting_user_status_entries": 59,
+  "changed_protected_files": [],
+  "changed_historical_metadata": [],
+  "lost_user_status_entries": [],
+  "new_physics_episodes": 0,
+  "elapsed_wall_seconds": 2290.6266028881073
+}

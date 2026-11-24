@@ -1,0 +1,19 @@
+{
+  "focused": {
+    "passed": 74,
+    "exit": 0
+  },
+  "maintained": {
+    "passed": 789,
+    "skipped": 6,
+    "exit": 0
+  },
+  "unscoped": {
+    "exit": 3,
+    "collection_errors": 56,
+    "reason": "Archived vendor test parses pytest arguments on import; scope to maintained tests/.",
+    "preserved": true
+  },
+  "new_physics_episodes": 0,
+  "ruff": "New scripts and test pass; see static_checks.txt"
+}

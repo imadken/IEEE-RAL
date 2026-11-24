@@ -1,0 +1,11 @@
+{
+  "starting_commit": "3465dd56c7b14e6aaa3e28a596ed6d4f1164e2d7",
+  "prior_workspace_files": 69,
+  "inputs": {
+    "research/rpd_assembly_preliminary_20261120/inputs/RPD_RSS2027_STAGE1_V21_EDITORIAL.pdf": "3d9f8e1a3fa12ec063bcdff31db00760fccddf5744d6e4288a74c31490791cb1",
+    "research/rpd_assembly_preliminary_20261120/inputs/pre_v21_workspace.tar.xz": "b5dfba4d5c5bb7c185e4a6dc88c59b0c7beb9c45d586aa47ef635e5b2ac26a81",
+    "research/rpd_assembly_preliminary_20261120/inputs/editorial_extracted.txt": "0d9b5763bb7baf20eb7f065b1c479b8c81935daddeb946ea51df7d52d065b2d0",
+    "research/rpd_assembly_preliminary_20261120/inputs/CODEX_ASSEMBLY_PRELIMINARY_PROTOCOL.md": "65a0000c2696256e9ab2b8e40e933030f62912a2709541e124a40ba8ba884e26"
+  },
+  "new_physics": 0
+}

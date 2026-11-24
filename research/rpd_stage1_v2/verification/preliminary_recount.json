@@ -1,0 +1,23 @@
+{
+  "source_hashes": {
+    "research/rpd_source_isolation_20261119/final_audit/summary.json": "ebe53e3acb19ba0a2b21f1774ed5750c11b80c2dd8352b6d378006f2d2082a98",
+    "research/rpd_source_isolation_20261119/technical_matches.json": "eff7fe5b8a21312466e05cf570f2059e2ee6453236aa2c4f9b7bb357b65ef89c"
+  },
+  "actual_episodes": 28,
+  "parents_per_task": 1,
+  "tasks": {
+    "PickCube-v1": {
+      "episodes": 14,
+      "seconds": 241.60809456801508,
+      "full_erasure_in_retrospective_technical_histories": 0,
+      "partial_option_loss_histories": 4
+    },
+    "PushCube-v1": {
+      "episodes": 14,
+      "seconds": 221.47255919899908,
+      "full_erasure_in_retrospective_technical_histories": 0,
+      "partial_option_loss_histories": 0
+    }
+  },
+  "scope": "Correlated already-inspected Pick/Push source cases, GDB supervised; not assembly data or H1/H2 confirmation. Original native failures preserved; no global stability or crash cause established."
+}

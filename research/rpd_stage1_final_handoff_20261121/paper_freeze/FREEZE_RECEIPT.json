@@ -1,0 +1,10 @@
+{
+  "freeze_commit": "e644addb5848545e8c114974a62e52eb7a080682",
+  "freeze_tree": "07e3186d8562a12b5c237b0c218979f65eb39e43",
+  "freeze_manifest_sha256": "8b51743606cb7624d3fdb764fdcd2502026b7b048406f2cef9c0f3fb1e03e4a2",
+  "PDF_sha256": "180761c5a1dd8e7bd99bf33959ab595d79d68b13f749c72d8ed1158baaa56ddf",
+  "status": "IMMUTABLE_REVIEW_CANDIDATE",
+  "paper_preflight": "REVIEW_READY_WITH_EXPLICIT_SOURCE_FEASIBILITY_RISK",
+  "1024_confirmation_parents": "UNTOUCHED",
+  "physics_before_freeze_commit": 0
+}

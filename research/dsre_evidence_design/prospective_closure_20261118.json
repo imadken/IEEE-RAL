@@ -1,0 +1,222 @@
+{
+  "epoch": 1794991976.7873747,
+  "phase": "PRE_NEW_PHYSICS_DURABLE_CLOSURE",
+  "base_commit": "6525dc6bf79a96e798d2d94c6778eae81d7b8304",
+  "archive": {
+    "path": "research/dsre_evidence_design/evidence_aware_prospective_review.tar.gz",
+    "sha256": "0f71dc12f64d6ba907ec37487462a5165efe90eeaea8b1eca28a6f67690d1ad7",
+    "bytes": 60153605,
+    "members": 23667,
+    "raw_seal_sha256": "194f28adbc90bf21282f6209d9aa30a9aa9f6f8251b197f2b0b1837f3ca8e5fb",
+    "physics_scope": "Complete model/data/count/source review; sampled physics plus every source failure; raw seal lists all every-parent trajectories retained locally."
+  },
+  "compact_extraction_verification": {
+    "passed": true,
+    "files": 23666,
+    "commands": 5,
+    "focused_tests_passed": 21,
+    "log": "{\n  \"description\": \"Supervisor mathematical/design checks only; no robot outcomes generated.\",\n  \"marginal_grid_cases\": 441,\n  \"max_exact_harm_error\": 1.1102230246251565e-16,\n  \"exact_marginal_nonidentification_cases_at_alpha_0_1\": 153,\n  \"random_interval_rectangles\": 256,\n  \"max_rectangle_error\": 0.0,\n  \"paired_constraint_nesting_cases\": 256,\n  \"certificate_exhaustive_cases\": 64,\n  \"same_marginal_worlds\": [\n    [\n      0.4,\n      0.2,\n      0.0,\n      0.4\n    ],\n    [\n      0.0,\n      0.6,\n      0.4,\n      0.0\n    ]\n  ],\n  \"naive_independence_counterexample\": {\n    \"joint\": [\n      0.2,\n      0.6,\n      0.2,\n      0.0\n    ],\n    \"predicted_harm\": 0.08000000000000002,\n    \"actual_harm\": 0.2\n  },\n  \"routing_counterexample\": {\n    \"full_region_harm\": 0.08000000000000002,\n    \"chosen_subregion_harm\": 0.8\n  },\n  \"zero_error_upper_bounds_per_prespecified_tail\": {\n    \"32\": 0.18284042136711248,\n    \"64\": 0.096031207047009,\n    \"96\": 0.06509182228687337,\n    \"128\": 0.049227265350446116,\n    \"256\": 0.024924241584504427\n  },\n  \"nonrandomized_logs_claim\": \"No causal certificate without supported identification assumptions.\",\n  \"test_status\": \"PASS\",\n  \"source_sha256\": \"810b849850d64f0e798727d1602e5b64494b989f7b18b7b4ac79f05807de18dc\"\n}\n.....................                                                    [100%]\n21 passed in 5.35s\n{\"audit\": \"PointMaze_UMaze-v3\", \"counts\": {\"whitelisted_data_reads\": 31873, \"independent_metric_counts\": 1458, \"independent_metric_intervals\": 972, \"scored_models\": 21}, \"CP_bands\": 182, \"failures\": []}\n{\"audit\": \"PickCube-v1\", \"counts\": {\"whitelisted_data_reads\": 32191, \"independent_metric_counts\": 1458, \"independent_metric_intervals\": 972, \"scored_models\": 21}, \"CP_bands\": 240, \"failures\": []}\n{\"passed\": true, \"counts\": {\"pinned_method_hashes\": 32, \"allocation_before_calibration_receipts\": 2048, \"outcome_blind_leaf_prefixes\": 140, \"exact_strategy_memberships\": 40, \"all_models_frozen_before_test\": 512, \"all_objective_extrema_and_optimizers\": 735, \"constructive_same_marginal_world_pairs\": 26, \"source_failure_witnesses\": 1}, \"tasks\": {\"PointMaze_UMaze-v3\": {\"acquisition\": \"INDEPENDENT_TIMING_MEMBERSHIP_AND_LEAF_EXCHANGEABILITY_CHECKED\", \"source_failures\": []}, \"PickCube-v1\": {\"acquisition\": \"INDEPENDENT_TIMING_MEMBERSHIP_AND_LEAF_EXCHANGEABILITY_CHECKED\", \"source_failures\": []}, \"PegInsertionSide-v1\": {\"acquisition\": \"NOT_FROZEN\", \"source_failures\": [{\"phase\": \"calibration\", \"index\": 259, \"seed\": 180937078, \"status\": \"FAILED_PREREQUISITE_OR_PREFIX\", \"error\": \"UPSTREAM_SCREW_PLANNING_FAILED\", \"checkpoint_present\": false, \"raw_sha256\": \"b1a5d1f8fff9008846936fd768d5a225572b6e41cee47f0d4fc9f399e93583e3\", \"no_label_imputation\": true}]}}, \"max_numerical_error\": 2.220446049250313e-16, \"production_inference_imported\": false, \"audit_source_sha256\": \"e440cd2bc83f162e0f377e20fb3f7376573a24fe2d463ad81551e46b36d0f7ab\", \"limitation\": \"Checks the registered hash-random within-leaf inclusion and observed time order under the stated exchangeability assumptions; no cross-budget significance guarantee.\"}\n{\"verified_compact_files\": 23666, \"commands_completed\": 5, \"physics_scope\": \"sampled trajectories only in compact; every-parent raw physical audit remains local and hash-sealed\"}\n"
+  },
+  "maintained_tests": {
+    "passed": 628,
+    "skipped": 6,
+    "log": "........................................................................ [ 11%]\n........................................................................ [ 22%]\n........................................................................ [ 34%]\n........................................................................ [ 45%]\n................................................ss...................... [ 56%]\n........................................................................ [ 68%]\n.................................................ssss................... [ 79%]\n........................................................................ [ 90%]\n..........................................................               [100%]\n628 passed, 6 skipped in 43.86s\n"
+  },
+  "full_raw_restoration": {
+    "passed": true,
+    "files_restored_and_byte_verified": 37132,
+    "bytes": 2253577736,
+    "hardlinked_files": 0,
+    "raw_seal_sha256": "194f28adbc90bf21282f6209d9aa30a9aa9f6f8251b197f2b0b1837f3ca8e5fb",
+    "scope": "Full local seal inventory restored into fresh temporary paths and every SHA verified; compact alone contains sampled physics. Full raw restoration requires retained local raw evidence.",
+    "temporary_restoration_removed": true
+  },
+  "independent_source_and_acquisition_audit": {
+    "passed": true,
+    "counts": {
+      "pinned_method_hashes": 32,
+      "allocation_before_calibration_receipts": 2048,
+      "outcome_blind_leaf_prefixes": 140,
+      "exact_strategy_memberships": 40,
+      "all_models_frozen_before_test": 512,
+      "all_objective_extrema_and_optimizers": 735,
+      "constructive_same_marginal_world_pairs": 26,
+      "source_failure_witnesses": 1
+    },
+    "tasks": {
+      "PointMaze_UMaze-v3": {
+        "acquisition": "INDEPENDENT_TIMING_MEMBERSHIP_AND_LEAF_EXCHANGEABILITY_CHECKED",
+        "source_failures": []
+      },
+      "PickCube-v1": {
+        "acquisition": "INDEPENDENT_TIMING_MEMBERSHIP_AND_LEAF_EXCHANGEABILITY_CHECKED",
+        "source_failures": []
+      },
+      "PegInsertionSide-v1": {
+        "acquisition": "NOT_FROZEN",
+        "source_failures": [
+          {
+            "phase": "calibration",
+            "index": 259,
+            "seed": 180937078,
+            "status": "FAILED_PREREQUISITE_OR_PREFIX",
+            "error": "UPSTREAM_SCREW_PLANNING_FAILED",
+            "checkpoint_present": false,
+            "raw_sha256": "b1a5d1f8fff9008846936fd768d5a225572b6e41cee47f0d4fc9f399e93583e3",
+            "no_label_imputation": true
+          }
+        ]
+      }
+    },
+    "max_numerical_error": 2.220446049250313e-16,
+    "production_inference_imported": false,
+    "audit_source_sha256": "e440cd2bc83f162e0f377e20fb3f7376573a24fe2d463ad81551e46b36d0f7ab",
+    "limitation": "Checks the registered hash-random within-leaf inclusion and observed time order under the stated exchangeability assumptions; no cross-budget significance guarantee."
+  },
+  "original_parent_counts": {
+    "PointMaze_UMaze-v3": {
+      "discovery": {
+        "registered": 128,
+        "attempted": 128,
+        "completed": 128,
+        "observed_absorbing_prefix": 0,
+        "observed_endpoint_parents": 128,
+        "attempt_statuses": {
+          "COMPLETE": 128
+        }
+      },
+      "calibration": {
+        "registered": 1024,
+        "attempted": 1024,
+        "completed": 1013,
+        "observed_absorbing_prefix": 11,
+        "observed_endpoint_parents": 1024,
+        "attempt_statuses": {
+          "COMPLETE": 1013,
+          "ALREADY_SOLVED_PREFIX": 11
+        }
+      },
+      "test": {
+        "registered": 256,
+        "attempted": 256,
+        "completed": 255,
+        "observed_absorbing_prefix": 1,
+        "observed_endpoint_parents": 256,
+        "attempt_statuses": {
+          "COMPLETE": 255,
+          "ALREADY_SOLVED_PREFIX": 1
+        }
+      }
+    },
+    "PickCube-v1": {
+      "discovery": {
+        "registered": 128,
+        "attempted": 128,
+        "completed": 128,
+        "observed_absorbing_prefix": 0,
+        "observed_endpoint_parents": 128,
+        "attempt_statuses": {
+          "COMPLETE": 128
+        }
+      },
+      "calibration": {
+        "registered": 1024,
+        "attempted": 1024,
+        "completed": 1024,
+        "observed_absorbing_prefix": 0,
+        "observed_endpoint_parents": 1024,
+        "attempt_statuses": {
+          "COMPLETE": 1024
+        }
+      },
+      "test": {
+        "registered": 256,
+        "attempted": 256,
+        "completed": 256,
+        "observed_absorbing_prefix": 0,
+        "observed_endpoint_parents": 256,
+        "attempt_statuses": {
+          "COMPLETE": 256
+        }
+      }
+    },
+    "PegInsertionSide-v1": {
+      "discovery": {
+        "registered": 128,
+        "attempted": 128,
+        "completed": 128,
+        "observed_absorbing_prefix": 0,
+        "observed_endpoint_parents": 128,
+        "attempt_statuses": {
+          "COMPLETE": 128
+        }
+      },
+      "calibration": {
+        "registered": 1024,
+        "attempted": 0,
+        "completed": 0,
+        "observed_absorbing_prefix": 0,
+        "observed_endpoint_parents": 0,
+        "attempt_statuses": {}
+      },
+      "test": {
+        "registered": 256,
+        "attempted": 0,
+        "completed": 0,
+        "observed_absorbing_prefix": 0,
+        "observed_endpoint_parents": 0,
+        "attempt_statuses": {}
+      }
+    }
+  },
+  "physics_invocations_before_new_commit": 6964,
+  "preserved_partial_archive": {
+    "partial_archive_preserved": "research/dsre_evidence_design/evidence_aware_prospective_review.paused-partial-20261117.tar.gz",
+    "bytes": 39252529,
+    "sha256": "32ccc28741f0cbdecb2004af58ef6ff4a54c9beec9a9053606ddd262b0fa2fbb",
+    "complete": false,
+    "final_archive_path_available_for_clean_rebuild": true,
+    "package_exit_code": 143
+  },
+  "preservation": {
+    "epoch": 1794952157.8610084,
+    "initial_head": "6525dc6bf79a96e798d2d94c6778eae81d7b8304",
+    "branch": "research/dsre-evidence-aware-prospective",
+    "preserved_initial_tracked_files": 1075,
+    "authorized_modified_paths": [
+      "scripts/dsre_evidence_tasks.py",
+      "src/dual_rec/evidence_aware/acquisition.py"
+    ],
+    "unexpected_tracked_differences": [],
+    "preserved_first_session_root_files": 41,
+    "old_evidence_differences": [],
+    "old_review_archive_sha256": "cd9452e121863c870f2b0adcae9bb3eea7ded74e3318466bed62379803c17863",
+    "imported_supervisor_documents_byte_equal_to_remote_design": true,
+    "manuscript_paths": {
+      "rss2027/dsre_full_paper_master.pdf": "adcfb169fa99cb8daad37379e555bf34ac9892459c05562ba659455f3d21b9e6",
+      "rss2027/dsre_full_paper_master.tex": "9db3906157f4094a20e4b85525bfd06557c54bd8c68aa7fab58ab48e6b034766",
+      "rss2027/dsre_stage1.pdf": "e0570d0189fdd27f2ffb235e066a5bba5aff9e1f3af6c1a3d14e4256835cf535",
+      "rss2027/dsre_stage1.tex": "525b25b315332415d34152224bf83b25d83611f98eb5ec5e72720eb73deb8341",
+      "rss2027/figures/final_operational.pdf": "4acc90340719f7872dbe61fcadd3d7528c8cd10f80aa063680d88aadc0b23920",
+      "rss2027/figures/final_robustness.pdf": "cd0b361f5b4928b888f65e3797e3e54b996b5ae5c999a25fb8b336e18d3d2c25",
+      "rss2027/figures/frontier.pdf": "428b67a2b4c65d61ca76fbf4d804ae4cbabf2ce609d727047aa7298c74063238",
+      "rss2027/figures/method.pdf": "162d70b02d504ac9129be1ea74266ef4b7225ad60ae0cd12cb4da88a4cfd6d37",
+      "rss2027/figures/necessity.pdf": "afdb3fc715018872511f9329ab40c288d031e19a6b27de50e6cece6bf87302ab",
+      "rss2027/figures/observation_robustness.pdf": "5f9ba44039504f6275bbeab04e68ab1785b15d80a10a881cbf425236d6a2c36d",
+      "rss2027/figures/operational.pdf": "befcfc042a76b58be429a703866535b490e083ffac4d4c74ce7654bd6d5b29b0",
+      "rss2027/figures/stage1_limits.pdf": "c27367b163d067af70046f51d9c1cdc352a6fb1f2a9cfafdd8273ea7b156ca16",
+      "rss2027/figures/stage1_locked_obligations.pdf": "755090a89c6f6c20f6141b491463bb6b1e9b16ca3bc5ab38ed891aa2b5264f4a",
+      "rss2027/figures/stage1_mechanism.pdf": "9f36089f6e5dab51f3b620c206b84bbda91129e42fd12e9c89280152a0b79b03",
+      "rss2027/figures/stage1_outcomes.pdf": "016edb8299293e210ce1586359b4ad80e96bf71dbbc965885cab8c771c411223",
+      "rss2027/figures/stage1_recovery_confirmation.pdf": "5b0676233bd4f49489207c7987c0868103bc758f739be9fb074648fd400d3bcd",
+      "rss2027/figures/stage1_synthesis_scopes.pdf": "df773db638096a6c10c78353348f93c92528feb2375def14f2a91c423174fb0a",
+      "rss2027/figures/stage1_synthesis_witnesses.pdf": "702b9214ba9feb4ff8570d2ea968e70255633f4bf1eca05f07adf19af0da7663",
+      "rss2027/stage1_synthesis_decisions.tex": "d288e77fca13e918c7b9228419c7e1d953479329f71db261f7aca84d22ffcef2",
+      "rss2027/stage1_synthesis_numbers.tex": "c03fe90980de07eaf2ac2510d94b0942fb1e1b6977c7a4f7214a8f44d015f058",
+      "rss2027/stage1_synthesis_outcomes.tex": "42a3e8989c87f5ac3c99dcd9bbb42a7e8a784de2c53f6938561d9c71759f066a"
+    },
+    "runtime_dependencies_changed": false
+  },
+  "new_contract_sha256": "771c72c85ae76d13ff2273c9ad62a2321de91cdf5850395e10d6e02731e8787e",
+  "physics_run_before_new_commit": false
+}

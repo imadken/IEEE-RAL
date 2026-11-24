@@ -1,0 +1,77 @@
+{
+  "epoch": 1794995586.0224636,
+  "passed": true,
+  "archive": {
+    "path": "research/dsre_evidence_design/evidence_aware_completion_review_20261118.tar.gz",
+    "sha256": "c4f996c25ccb20bb05853179c04b56fcebc2cc886362b5d624c0128c05af31c3",
+    "bytes": 79194106,
+    "members": 2768,
+    "raw_seal_sha256": "a988ef6e594e038e4d51b488a37ad7627bde6bd43cc17e4e09fe7bef09735fc1",
+    "prior_raw_seal_sha256": "194f28adbc90bf21282f6209d9aa30a9aa9f6f8251b197f2b0b1837f3ca8e5fb",
+    "scope": "Every new source trace plus complete follow-up metadata/code, original verified legacy numerical bundle and old sampled physics. Every-parent older physics remains locally preserved under the unchanged original seal; full independent raw audits are included."
+  },
+  "clean_extraction_verified_files": 2767,
+  "legacy_reproduction_passed": true,
+  "new_source_guard_and_canonical_counts_reproduced": true,
+  "full_test_suite": {
+    "passed": 631,
+    "skipped": 6,
+    "log": "........................................................................ [ 11%]\n........................................................................ [ 22%]\n........................................................................ [ 33%]\n........................................................................ [ 45%]\n...................................................ss................... [ 56%]\n........................................................................ [ 67%]\n....................................................ssss................ [ 79%]\n........................................................................ [ 90%]\n.............................................................            [100%]\n631 passed, 6 skipped in 43.82s\n"
+  },
+  "focused_extracted_tests": 24,
+  "reproduction_log": "{\n  \"description\": \"Supervisor mathematical/design checks only; no robot outcomes generated.\",\n  \"marginal_grid_cases\": 441,\n  \"max_exact_harm_error\": 1.1102230246251565e-16,\n  \"exact_marginal_nonidentification_cases_at_alpha_0_1\": 153,\n  \"random_interval_rectangles\": 256,\n  \"max_rectangle_error\": 0.0,\n  \"paired_constraint_nesting_cases\": 256,\n  \"certificate_exhaustive_cases\": 64,\n  \"same_marginal_worlds\": [\n    [\n      0.4,\n      0.2,\n      0.0,\n      0.4\n    ],\n    [\n      0.0,\n      0.6,\n      0.4,\n      0.0\n    ]\n  ],\n  \"naive_independence_counterexample\": {\n    \"joint\": [\n      0.2,\n      0.6,\n      0.2,\n      0.0\n    ],\n    \"predicted_harm\": 0.08000000000000002,\n    \"actual_harm\": 0.2\n  },\n  \"routing_counterexample\": {\n    \"full_region_harm\": 0.08000000000000002,\n    \"chosen_subregion_harm\": 0.8\n  },\n  \"zero_error_upper_bounds_per_prespecified_tail\": {\n    \"32\": 0.18284042136711248,\n    \"64\": 0.096031207047009,\n    \"96\": 0.06509182228687337,\n    \"128\": 0.049227265350446116,\n    \"256\": 0.024924241584504427\n  },\n  \"nonrandomized_logs_claim\": \"No causal certificate without supported identification assumptions.\",\n  \"test_status\": \"PASS\",\n  \"source_sha256\": \"810b849850d64f0e798727d1602e5b64494b989f7b18b7b4ac79f05807de18dc\"\n}\n.....................                                                    [100%]\n21 passed in 5.40s\n{\"audit\": \"PointMaze_UMaze-v3\", \"counts\": {\"whitelisted_data_reads\": 31873, \"independent_metric_counts\": 1458, \"independent_metric_intervals\": 972, \"scored_models\": 21}, \"CP_bands\": 182, \"failures\": []}\n{\"audit\": \"PickCube-v1\", \"counts\": {\"whitelisted_data_reads\": 32191, \"independent_metric_counts\": 1458, \"independent_metric_intervals\": 972, \"scored_models\": 21}, \"CP_bands\": 240, \"failures\": []}\n{\"passed\": true, \"counts\": {\"pinned_method_hashes\": 32, \"allocation_before_calibration_receipts\": 2048, \"outcome_blind_leaf_prefixes\": 140, \"exact_strategy_memberships\": 40, \"all_models_frozen_before_test\": 512, \"all_objective_extrema_and_optimizers\": 735, \"constructive_same_marginal_world_pairs\": 26, \"source_failure_witnesses\": 1}, \"tasks\": {\"PointMaze_UMaze-v3\": {\"acquisition\": \"INDEPENDENT_TIMING_MEMBERSHIP_AND_LEAF_EXCHANGEABILITY_CHECKED\", \"source_failures\": []}, \"PickCube-v1\": {\"acquisition\": \"INDEPENDENT_TIMING_MEMBERSHIP_AND_LEAF_EXCHANGEABILITY_CHECKED\", \"source_failures\": []}, \"PegInsertionSide-v1\": {\"acquisition\": \"NOT_FROZEN\", \"source_failures\": [{\"phase\": \"calibration\", \"index\": 259, \"seed\": 180937078, \"status\": \"FAILED_PREREQUISITE_OR_PREFIX\", \"error\": \"UPSTREAM_SCREW_PLANNING_FAILED\", \"checkpoint_present\": false, \"raw_sha256\": \"b1a5d1f8fff9008846936fd768d5a225572b6e41cee47f0d4fc9f399e93583e3\", \"no_label_imputation\": true}]}}, \"max_numerical_error\": 2.220446049250313e-16, \"production_inference_imported\": false, \"audit_source_sha256\": \"e440cd2bc83f162e0f377e20fb3f7376573a24fe2d463ad81551e46b36d0f7ab\", \"limitation\": \"Checks the registered hash-random within-leaf inclusion and observed time order under the stated exchangeability assumptions; no cross-budget significance guarantee.\"}\n{\"verified_compact_files\": 23666, \"commands_completed\": 5, \"physics_scope\": \"sampled trajectories only in compact; every-parent raw physical audit remains local and hash-sealed\"}\n........................                                                 [100%]\n24 passed in 5.50s\n{\"audit_phase\": \"discovery\", \"counts\": {\"independently_reviewed_unapproved_postcontrol_prefix_failure\": 1, \"discovery_eligible_outcomes\": 128}}\n{\"audit_phase\": \"calibration\", \"counts\": {\"independently_reviewed_unapproved_postcontrol_prefix_failure\": 1, \"discovery_eligible_outcomes\": 128}}\n{\"audit_phase\": \"test\", \"counts\": {\"independently_reviewed_unapproved_postcontrol_prefix_failure\": 1, \"discovery_eligible_outcomes\": 128}}\n{\"audit\": \"PegInsertionSide-v1\", \"counts\": {}, \"CP_bands\": 0, \"failures\": []}\n{\"passed\": true, \"counts\": {\"independently_reviewed_unapproved_postcontrol_prefix_failure\": 1, \"discovery_eligible_outcomes\": 128, \"independently_reproduced_source_exclusions\": 1}, \"max_numerical_error\": 0.0, \"source_guard\": {\"epoch\": 1794993539.188002, \"spec\": {\"task\": \"PegInsertionSide-v1\", \"phase\": \"calibration\", \"index\": 364, \"seed\": 85558356, \"offset\": -0.006, \"observation_protocol\": \"Peg-observation-v2\"}, \"stage\": \"screen\", \"reason\": \"Unqualified prefix failure; no automatic exclusion\", \"status\": \"HARD_QUALIFICATION_FAILURE\"}, \"source_guard_independent_review\": {\"independently_reviewed\": true, \"spec\": {\"task\": \"PegInsertionSide-v1\", \"phase\": \"calibration\", \"index\": 364, \"seed\": 85558356, \"offset\": -0.006, \"observation_protocol\": \"Peg-observation-v2\"}, \"last_attempted_stage\": \"Second prefix move: move(grasp), worker line444\", \"prefix_controls\": 33, \"prefix_states\": 34, \"elapsed_steps\": [33], \"finite_recorded_physics\": true, \"executable_decision_checkpoint\": false, \"observed_intervention_outcome\": null, \"eligibility_ruling\": \"Outside registered zero-control source-exclusion rule; independent review preserves hard guard, does not silently widen eligibility or change checkpoint.\", \"requires_supervisor_source_ruling_before_resume\": true}, \"production_inference_imported\": false, \"raw_physics_complete_in_this_audit\": false, \"scope\": \"Source-eligible checkpoints and fixed whole leaves only. A passed record audit does not erase a preserved hard qualification blocker.\", \"audit_source_sha256\": \"8d6984563e74cf445c79cdd93e2cf0c8bdf43b1c3d126e81c1d680c63cd18c68\"}\n{\"passed\": true, \"verified_bundle_files\": 2767, \"legacy_reproduction\": \"PASS\", \"new_focused_tests\": 24, \"new_source_and_guard_review\": \"PASS\", \"canonical_eligible_denominators\": \"PASS\", \"physics_executed\": false, \"scope\": \"Every new source trace plus complete follow-up metadata/code, original verified legacy numerical bundle and old sampled physics. Every-parent older physics remains locally preserved under the unchanged original seal; full independent raw audits are included.\"}\n",
+  "physics_executed_by_verifier": false,
+  "scientific_decision": "INCOMPLETE_SOURCE_EVIDENCE",
+  "G1_G6": {
+    "G1": "Original zero-control event independently qualified twice; uniform insertion source qualification BLOCKED by distinct second-move prefix failure after33 controls.",
+    "G2": "PASS:4224 original IDs/cohorts unchanged; eligibility/resource/code/storage amendments sealed before any insertion calibration/test outcome.",
+    "G3": "PARTIAL: navigation and PickCube fully attempted with explicit eligible denominators; insertion128 discovery,363 usable screens,1 approved no-decision source failure,1 hard source guard;0 calibration action outcomes and0 test decisions.",
+    "G4": "PARTIAL: historical/PickCube comparisons complete and tied at primary512; navigation508/512 candidate shortfall retained; insertion not executed due source guard, not asserted statistically impossible.",
+    "G5": "Independent three-domain record audits, grouped source denominators, support, missingness, baseline equalities, counterexamples and resource ledger delivered; final compact verification is recorded separately in its receipt.",
+    "G6": "NOT PASSED: no additional qualified non-grasp recovery; original scientific advance not established; manuscripts untouched."
+  },
+  "resources": {
+    "cumulative_worker_wall_seconds": 35956.350682497025,
+    "new_worker_wall_seconds": 940.6044926643372,
+    "cumulative_worker_hours": 9.987875189582507,
+    "ceiling_worker_hours": 28,
+    "remaining_ceiling_worker_hours": 18.012124810417493,
+    "audit_buffer_worker_hours": 2,
+    "new_physics_invocations": 107,
+    "prior_physics_invocations": 6964,
+    "insertion_source_screen_attempts_total": 365,
+    "unattempted_calibration_prefix_screens": 659,
+    "unattempted_test_prefix_screens": 256,
+    "raw_calibration_parent_slots_without_an_action_outcome": 1024,
+    "known_source_ineligible_calibration_parents_never_assigned_an_outcome": 1,
+    "remaining_eligible_action_continuation_upper_bound": 1535,
+    "current_stop": "Source qualification guard, not resource exhaustion",
+    "source_requalification_cost": "Unmeasured; needs ruling on distinct post-control prefix failure",
+    "physics_forecast_excluding_screening_G4_requalification_hours": 8.836172324992909,
+    "new_dependencies": 0,
+    "neural_training_runs": 0,
+    "paid_experimental_APIs": 0
+  },
+  "preservation": {
+    "passed": true,
+    "initial_tracked_unchanged_except_two_original_authorized_paths": 1075,
+    "first_session_files_unchanged": 41,
+    "prior_sealed_files_byte_verified": 37132,
+    "all_frozen_followup_method_files_unchanged": 50,
+    "manuscripts_unchanged": true,
+    "user_changes_not_staged": true,
+    "original_raw_seal_sha256": "194f28adbc90bf21282f6209d9aa30a9aa9f6f8251b197f2b0b1837f3ca8e5fb",
+    "old_review_archive_sha256": "cd9452e121863c870f2b0adcae9bb3eea7ded74e3318466bed62379803c17863",
+    "prephysics_commit": "a13aea090fcfe8b4ca0c9380a32f392b055b56ff",
+    "source_amendment_commit": "e566859534377ffba700a71d88657e6258cc67d7"
+  },
+  "source_proof": {
+    "path": "research/dsre_evidence_design/source_eligibility_proof_20261118.tar.gz",
+    "sha256": "fb7322739344b441991ff788e412e27aef3317455c1a05ac645dd71a45426329",
+    "bytes": 100896,
+    "members": 37,
+    "native_replays": 2,
+    "both_passed": true,
+    "amendment_before_assigned_outcomes": true
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "passed": true,
+  "pdf_sha256": "9fcd636c1baa8437eaf0be7072206f1900512b72f65d1597df1f268bd979a103",
+  "tex_sha256": "b2e48c9fbcb62ca1cc6493d4f602c75f256633c7b0350fdca5811dbbb99ae831",
+  "pages": 6,
+  "content_pages": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "reference_page": 6,
+  "figure1_page": 1,
+  "page_text_bounds": [
+    [
+      48.95948,
+      61.850321,
+      563.041661,
+      725.651343
+    ],
+    [
+      48.95945,
+      59.150707,
+      563.041765,
+      726.976364
+    ],
+    [
+      48.95947,
+      56.490682,
+      563.041671,
+      725.651363
+    ],
+    [
+      48.95947,
+      53.960114,
+      563.041671,
+      726.336757
+    ],
+    [
+      48.95948,
+      53.960094,
+      563.041681,
+      725.651383
+    ],
+    [
+      48.95948,
+      59.150707,
+      563.041582,
+      725.651333
+    ]
+  ],
+  "embedded_type1_fonts": 19,
+  "pdfinfo": "Title:           When Does Evidence Justify Robot Recovery?\nSubject:         Anonymous research manuscript\nCreator:         LaTeX with hyperref\nProducer:        xdvipdfmx (0.1)\nCreationDate:    Wed Nov 18 17:21:01 2026 CET\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           6\nEncrypted:       no\nPage size:       612 x 792 pts (letter)\nPage rot:        0\nFile size:       479471 bytes\nOptimized:       no\nPDF version:     1.5\n",
+  "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nIHAIZV+NimbusRomNo9L-Regu            Type 1C           Custom           yes yes yes      4  0\nBZIVMZ+NimbusRomNo9L-MediItal        Type 1C           Custom           yes yes yes      5  0\nIXFAWU+NimbusRomNo9L-Medi            Type 1C           Custom           yes yes yes      6  0\nTQTHRL+NimbusRomNo9L-ReguItal        Type 1C           Custom           yes yes yes      7  0\nYEUUOC+CMMI10                        Type 1C           Builtin          yes yes yes     28  0\nAKHCZK+CMSY10                        Type 1C           Builtin          yes yes yes     29  0\nVDVGTR+CMR10                         Type 1C           Builtin          yes yes yes     30  0\nCAFSZL+CMMI7                         Type 1C           Builtin          yes yes yes     31  0\nDDIEWW+CMR7                          Type 1C           Builtin          yes yes yes     32  0\nFKPJSN+CMSY7                         Type 1C           Builtin          yes yes yes     33  0\nPVTTLK+CMMI5                         Type 1C           Builtin          yes yes yes     34  0\nJAGKKY+CMEX10                        Type 1C           Builtin          yes yes yes     44  0\nNOMARO+MSAM10                        Type 1C           Builtin          yes yes yes     45  0\nKPXLOM+CMR8                          Type 1C           Builtin          yes yes yes     52  0\nUTACNV+CMMI8                         Type 1C           Builtin          yes yes yes     53  0\nFZDNHS+CMSY6                         Type 1C           Builtin          yes yes yes     54  0\nDZGKAF+CMR6                          Type 1C           Builtin          yes yes yes     60  0\nGJMHKB+CMMI6                         Type 1C           Builtin          yes yes yes     61  0\nNITCSQ+CMSY8                         Type 1C           Builtin          yes yes yes     62  0\n",
+  "external_uri_actions": 0,
+  "figure_checks": {
+    "figure1_evidence": {
+      "minimum_nominal_pt": 7.2,
+      "print_width_pt": 251.28,
+      "pdf_sha256": "1683ae88768187c952f9003202b21154934cd4a56794365f74c1892a0458c012"
+    },
+    "figure2_identification": {
+      "minimum_nominal_pt": 7.35,
+      "print_width_pt": 251.28,
+      "pdf_sha256": "ce494c1dce1353ac3a5f7f1fdc80949f749eab34cb2f42e7b74d2673ebbf8e0c"
+    }
+  },
+  "protected_files_verified": 480,
+  "rendered_pages": {
+    "research/dsre_stage1_manuscript/page_renders/page-1.png": "eaa2eac1a628518febfc1a5286d357b7edd8959cd5c6959950a257ff15a7d759",
+    "research/dsre_stage1_manuscript/page_renders/page-2.png": "a661f5c35df9b65925b92c94bdfa289cfe3785aa54b10edc20d8fe1eb10c2a5f",
+    "research/dsre_stage1_manuscript/page_renders/page-3.png": "95be67444c8af2644d7dd2a4f1d58faa437553607e39db1decf3683ff8a4a474",
+    "research/dsre_stage1_manuscript/page_renders/page-4.png": "f24b6ab312965d5b9383436d789e1a84110223e82f8c79b152c5da28894a5380",
+    "research/dsre_stage1_manuscript/page_renders/page-5.png": "67172dbdf9c486aa8a82664e302da0b9ab684c279a96a975aa166033d49bfaf0",
+    "research/dsre_stage1_manuscript/page_renders/page-6.png": "b0860d56bce5add6e8521af6838f7b27bf70253ecb832c3ce286dd970e37296d"
+  },
+  "inspect_source_sha256": "49da5d5f502607fdb53b9f03d2b260e8d241deb9a211ae528636bd09e0ab5235"
+}

@@ -1,0 +1,23 @@
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Policy & R & Rescue & Harm & Futile & Done\\
+\midrule
+\multicolumn{6}{l}{\textit{Grasp; 256 independent test parents}}\\
+DSRE & 111 & 84 & 0 & 27 & 227\\
+B7 exact rules & 111 & 84 & 0 & 27 & 227\\
+Direct partial ID & 111 & 84 & 0 & 27 & 227\\
+CART + same gate & 111 & 84 & 0 & 27 & 227\\
+Regression + same gate$^\dagger$ & 111 & 84 & 0 & 27 & 227\\
+Always continue & 0 & 0 & 0 & 0 & 143\\
+Always recover & 256 & 86 & 32 & 27 & 197\\
+\midrule
+\multicolumn{6}{l}{\textit{Push; 256 independent test parents}}\\
+DSRE & 128 & 126 & 0 & 2 & 253\\
+B7 exact rules & 128 & 126 & 0 & 2 & 253\\
+Direct partial ID & 128 & 126 & 0 & 2 & 253\\
+CART + same gate & 128 & 126 & 0 & 2 & 253\\
+Regression + same gate & 128 & 126 & 0 & 2 & 253\\
+Always continue & 0 & 0 & 0 & 0 & 127\\
+Always recover & 256 & 127 & 2 & 2 & 252\\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,10 @@
+{
+  "phase": "qual",
+  "passed": false,
+  "screened": 0,
+  "eligible": 0,
+  "registration_sha256": "38b954621484be9a768121e2ac5fbd12bd0155a5f059096a7e2b2c2d2aa99b52",
+  "reason": "STOP_SOURCE_FAILURE:research/rpd_assembly_preliminary_20261120/episodes/e7a60252ebfa2da9fcbc8ae538a8667562730de21acd9218279e93627dccf52a_sourcefix01",
+  "failure_type": "AssertionError",
+  "preserved_all_attempts": true
+}

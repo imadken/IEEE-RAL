@@ -1,0 +1,46 @@
+{
+  "job": {
+    "job_id": "80a3e521da84c9aee0628842f8995be4db9f78dd012db19040bcc7bb0f2eb6ab",
+    "phase": "neutral_control",
+    "isolation_replica": 1,
+    "row": {
+      "parent": {
+        "task": "PushCube-v1",
+        "phase": "technical_pilot",
+        "index": 0,
+        "seed": 2004100000,
+        "parent_id": "1abfd02f49137f01dbbbb43e0c3397b14ee32e1dcf8629aac45c917dda8f5392",
+        "condition": "nominal"
+      },
+      "history": [
+        "neutral20"
+      ],
+      "endpoint": "continue",
+      "repeat": 1,
+      "row_id": "acb265b85f11aa5b5d6e04fa2450c3bd9399f4c6a8d90a258b37f9c5bba4a810",
+      "delay_ticks": 20,
+      "macro_ticks": 70,
+      "deadline_ticks": 90
+    },
+    "original_continue_path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/5043dc16b2076429ea61594ac29875dafc5e115c639afae975ef67149f3ed584.json.xz"
+  },
+  "command": [
+    "/usr/bin/gdb",
+    "--batch",
+    "--nx",
+    "--quiet",
+    "--return-child-result",
+    "-x",
+    "research/rpd_source_isolation_20261119/debugger.gdb",
+    "--args",
+    "/home/imad/Desktop/IEEE-RAL/.venv/bin/python3",
+    "-X",
+    "faulthandler",
+    "scripts/rpd_isolation_worker.py",
+    "--job-id",
+    "80a3e521da84c9aee0628842f8995be4db9f78dd012db19040bcc7bb0f2eb6ab"
+  ],
+  "epoch": 1795102792.1901321,
+  "row_input_sha256": "2cd779022caae6624f581769b61573b263b1d331a1917ae9cf908dc4516d4284",
+  "one_row_per_process": true
+}

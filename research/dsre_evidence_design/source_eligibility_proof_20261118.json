@@ -1,0 +1,9 @@
+{
+  "path": "research/dsre_evidence_design/source_eligibility_proof_20261118.tar.gz",
+  "sha256": "fb7322739344b441991ff788e412e27aef3317455c1a05ac645dd71a45426329",
+  "bytes": 100896,
+  "members": 37,
+  "native_replays": 2,
+  "both_passed": true,
+  "amendment_before_assigned_outcomes": true
+}

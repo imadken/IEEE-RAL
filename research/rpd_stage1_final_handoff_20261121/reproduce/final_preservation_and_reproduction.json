@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "original_inventoried_paths": 2602,
+  "unchanged_preexisting_user_status_entries": 62,
+  "separately_preserved_user_V44_PDF": true,
+  "original_source_fingerprints_unchanged": 78,
+  "canonical_frozen_tree_unchanged_since_e644add": true,
+  "development_copied_and_offline_audit_reproduced_byte_identically": true,
+  "old_evidence_seal_reverified": true,
+  "physics_attempts_after_freeze": 2,
+  "new_source_qualification_roots": 0,
+  "exploratory_parents": 0,
+  "confirmation_parents": 0,
+  "public_pushes": 0,
+  "RSS_submissions": 0
+}

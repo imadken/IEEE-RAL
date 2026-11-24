@@ -1,0 +1,2 @@
+PickCube-v1 {'harm_only': (111, 227), 'completion': (0, 143), 'useful': (111, 227)}
+PushCube-v1 {'harm_only': (256, 252), 'completion': (256, 252), 'useful': (128, 253)}

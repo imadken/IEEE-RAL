@@ -1,0 +1,538 @@
+When Does Diagnostic Interaction Compromise
+Robot Recovery?
+Author Names Omitted for Anonymous Review
+Abstract—A diagnostic action changes both what an au-
+tonomous robot knows and which task continuations remain pos-
+sible. An informative contact may preserve conventional motion
+constraints yet remove an otherwise executable correction. We
+study this coupling in physics-based robotic simulation through
+post-diagnosis recoverability, the set of fixed feedback corrections
+that can complete the task within the remaining deadline. Our
+methodology combines a physical belief update, a response-
+contingent recovery decision, and matched probe-versus-hold
+interventions that distinguish contact-induced option loss from
+elapsed time. We formulate two quantitative hypotheses: in-
+formative probing causes materially frequent recovery-option
+erasure, and modeling its consequences improves task completion
+relative to constrained information seeking. An exact finite-world
+illustration demonstrates the conflict; a fully specified contact-
+rich assembly simulation study defines the probes, matched
+controls, recovery policies, and statistical tests needed to establish
+its prevalence and consequences. The result is a testable method-
+ology for judging diagnosis by both information gained and task
+recovery retained.
+I. INTRODUCTION
+Consider a simulated robot attempting an insertion when
+contact contradicts its expected alignment. A small physical
+probe can reveal an obstruction, but it can also wedge the
+part more tightly. Even when the probe stays inside the
+allowed workspace and contact limits, the robot may have
+fewer successful ways to finish. Contact-rich assembly makes
+this coupling between sensing and action particularly conse-
+quential [7, 8].
+Active perception uses action to improve observations [1],
+while safe active diagnosis limits exploratory motion [5].
+Task-aware tactile disambiguation stops when pose hypotheses
+share an executable grasp [9]; task-compatible active calibra-
+tion studies whether identification motions retain downstream
+controllability [4]. Reversibility-aware learning values return
+paths [3]. Our recovery-specific estimand instead isolates what
+a diagnostic probe changes after a contact failure: which
+corrective policies cease to work relative to holding for the
+same time? This matched comparison isolates the physical
+consequence of diagnosis from mere delay and makes it
+possible to evaluate task-relevant information together with
+subsequent task capability.
+Even a constraint-compliant probe may make completion
+impossible with the robot’s current corrective skills. If com-
+mon, this effect makes information-only diagnosis costly; if
+rare, a matched-hold comparison can delimit when simpler
+diagnosis suffices. Figure 1 motivates our question: when does
+informative probing destroy recoverable continuations, and
+when does anticipating this loss improve completion?
+Fig. 1. Why physical diagnosis can change recovery. From the same
+uncertain insertion condition, holding, axial preload, and lateral dither can
+leave different corrective actions available. This is a conceptual illustration,
+not a measured outcome. All branches take equal time; the study evaluates
+their consequences by matched physical replay.
+We develop a unified recoverability-preserving diagnosis
+(RPD) methodology. It (i) defines success relative to a task,
+feedback-policy repertoire and deadline; (ii) measures probe-
+induced losses against a time-matched physical hold; and (iii)
+compares diagnostic decisions made with and without pre-
+dicted recovery consequences. Response-contingent planning
+provides the decision mechanism [6]; the central scientific
+object is the recovery-specific effect measured by the matched
+intervention and its consequence for diagnostic choice.
+H1, informative option erasure. For a frozen constrained
+information-gain (IG) selector, physical probes erase all cor-
+rections retained after an equal-duration hold in more than
+10% of predecision-eligible simulated assembly checkpoints,
+counting direct action and abstention in the denominator. In
+over half of those erasure cases, the probe increases the held-
+out likelihood of the original contact mode by more than 20%
+over both the pre-probe and hold-based predictors.
+H2, decision consequence. With identical simulated ob-
+servations, models, controls and time budgets, recoverability-
+aware selection improves terminal completion by more than
+five percentage points over constrained information-gain se-
+lection, while increasing the measured constraint-violation
+rate by less than two points. The thresholds represent one
+materially compromised recovery per ten eligible attempts and
+one additional completion per twenty; they are prospective pre-
+dictions, not measured effects. We expect contact-dependent
+losses near clearance-scale probing, not universal damage from
+information gathering.
+II. PROBLEM: WHAT CAN STILL BE RECOVERED?
+Let s contain the physical state, controller memory, task
+flag, and clock. The robot observes a history h with belief
+b(s | h) and support B(h). Fix a recovery-policy repertoire
+A = {a0, a1}, remaining time τ, and binary task completion
+G(s, a, τ). The recovery-option set and the actions common
+to all plausible states are
+Kτ (s) = {a ∈ A : G(s, a, τ) = 1},
+Commonτ (B) =
+\
+s∈B
+Kτ (s). (1)
+A state may admit a correction although the robot cannot
+identify which correction to use: Kτ (s) ̸= ∅ for every s ∈ B
+does not imply Commonτ (B) ̸= ∅. An empty set means only
+that the specified policies fail within this deadline.
+Recoverability is relative to the deadline and available skills:
+a viable longer correction can fail a shorter budget, and an
+added skill can restore a lost option. It is not a universal
+reversibility guarantee.
+A diagnostic probe p lasts dp, changes physical state through
+Tp, and produces response y = Op(s, Tp(s), ξp(s)) along its
+trajectory ξp. The compatible post-probe states are
+Bp,y = {Tp(s) : s ∈ B(h), Op(s, Tp(s), ξp(s)) = y}. (2)
+Crucially, the state is transformed before recovery. A probe
+is robustly recoverable in the complete deterministic reference
+model exactly when
+∀y reachable, Commonτ−dp (Bp,y) ̸= ∅. (3)
+Why: after each response the robot must choose a single feed-
+back correction valid for every compatible state. Conversely,
+selecting a member of each nonempty intersection gives such a
+contingent plan. For stochastic dynamics, Tp, Op are replaced
+by a joint transition-observation kernel; Eq. (3) then refers
+to its declared robust support, not automatically to real-world
+uncertainty.
+For probabilistic selection, RPD uses the standard one-probe
+decision value
+V (p | b, τ) = Ey|p,b
+
+max
+a∈A
+Es′|y,p,b
+b
+G(s′
+, a, τ − dp)
+
+, (4)
+compared with direct correction and stopping. The fitted
+model b
+G is frozen before held-out evaluation. The competing
+information-gain (IG) policy chooses the highest predicted
+reduction in uncertainty about the contact mode, subject to the
+same modeled motion-constraint gate. For H2, both selectors
+recover directly whenever the model provides a common
+successful correction; otherwise IG chooses its preferred qual-
+ifying probe and falls back to direct recovery or STOP when
+no probe qualifies. Both can use the probe response to select
+a correction; neither can access the alternative physical future
+online. A full-model planner with Eq. (4) is an equivalence
+control, not an opponent expected to lose.
+Equation (3) holds for the complete reference model; Eq. (4)
+uses fitted dynamics and continuations. Offline matched sim-
+ulator rollouts test whether those predictions survive contact,
+separately from exact nominal planning.
+III. METHODOLOGY: SEPARATE LEARNING FROM LOSING
+OPTIONS
+A. The causal measurement
+Simply comparing success before and after probing con-
+founds physical disturbance with consumed time. From the
+same qualified checkpoint s, execute either probe Tp or an
+equal-duration commanded hold Hdp . Holding maintains the
+original equilibrium and feedback gains while time, gravity,
+and contact dynamics continue. Apply both frozen recovery
+policies after each branch under the common remaining budget
+τ − dp (Fig. 2).
+Full-repertoire erasure is
+Lp(s) = I
+
+Kτ−dp
+(Hdp
+(s)) ̸= ∅ ∧ Kτ−dp
+(Tp(s)) = ∅
+
+. (5)
+We additionally count losses of individual actions: a probe
+that removes a0 while leaving a1 does not satisfy Lp. Let
+Cp, CH ∈ {0, 1} record measured path-constraint compliance
+on the probe and hold; then Jp = LpCpCH. The primary
+prevalence is qIG = Es∼Deligible
+JπIG(h(s))(s) for the frozen
+constrained IG selector. For a direct action or STOP, define
+JπIG
+= 0 (no probe-induced erasure); these parents remain in
+the predecision-eligible denominator. We separately report the
+IG probe-selection rate ρIG = P(πIG ∈ {ppreload, pdither})
+and the fixed-probe rates qp = P(Jp = 1) for each probe
+across all eligible checkpoints. Thus a low qIG can be distin-
+guished from low physical erasure under the available probes.
+A successful task outcome is never imputed to an abstention.
+Simulator replay evaluates alternative branches from the
+same checkpoint; the acting policy sees only its executed
+branch. The loss Lp is time- and repertoire-relative, not
+universal irreversibility. Enlarging the repertoire can either
+create or eliminate this comparative event, since success after
+both hold and probe can change; we therefore fix the primary
+repertoire and deadline.
+B. Was the probe genuinely informative?
+Let Z denote the source-assigned pre-probe contact mode,
+X the pre-probe observable features, and Yp, YH probe and
+hold responses. On independent discovery data, freeze three
+equally trained predictive distributions: f0(Z | X), fp(Z |
+X, Yp), and fH(Z | X, YH). Their held-out log-score differ-
+ences are
+D0 = log fp(Z) − log f0(Z),
+DH = log fp(Z) − log fH(Z).
+(6)
+We predeclare a material log-score margin γ = log(1.2) and
+define Mp,γ = I[D0 > γ ∧ DH > γ]: the probe must assign
+more than 20% higher likelihood to the true initial mode than
+either comparator. H1 combines qIG = P(Jp = 1) > .10
+with ηγ = P(Mp,γ = 1 | Jp = 1) > .50. At a uniform
+three-mode prior, a 20% likelihood gain raises the true-mode
+probability from 1/3 to above 0.4. The majority criterion
+is not a universal chance level or a positive-mean informa-
+tion claim. We additionally compare the same scores with a
+response-shuffle control within frozen pre-probe observation
+strata; comparable shuffled gains prevent an interpretation as
+Fig. 2. One simulated decision, matched offline measurement. The policy chooses a probe from history h, observes response y, then executes one
+correction. Offline simulator replay compares an equal-duration hold and probe from the same checkpoint, each followed by both fixed corrections. Their
+outcomes reveal changed recovery options; paired alternatives are never available to the acting policy.
+useful diagnostic information. Conditional erasure count nJ
+is random, although the event is defined before confirmation;
+exact conditional-binomial inference is valid given nJ under
+independent-parent sampling. Mean score gains and the joint
+prevalence P(Jp = 1, Mp,γ = 1) = qIGηγ are also reported.
+C. Does preserving options improve decisions?
+H2 compares two frozen policies on identical paired parent
+checkpoints. For terminal task indicator U and entire-attempt
+constraint violation VC, define
+∆U = E[U(πRPD) − U(πIG)],
+∆C = E[VC(πRPD) − VC(πIG)].
+(7)
+H2 requires ∆U > .05 and ∆C < .02. The same observations,
+probe menu, feedback policies, model fitting, risk gate, and
+clock apply to both selectors. Besides IG, we evaluate a
+response-blind correction, a task-consensus selector, and the
+full-objective reference planner. Task consensus and the full-
+objective planner may reproduce RPD exactly; that tests im-
+plementation, not unique optimizer performance. Report com-
+pletion, diagnostic information, cost, option loss, constraint
+violations, and model prediction error as distinct quantities.
+A response-blind selector acts from the same post-probe
+state without the new signal, isolating information value
+from contact effects; direct recovery tests whether probing
+was needed. Both are evaluated offline from matched root
+checkpoints.
+IV. PROPOSED SIMULATION STUDY: CONTACT-RICH
+ASSEMBLY
+A. Simulation interface and independent sampling
+All proposed experiments run exclusively in physics simu-
+lation, without a hardware robot. The primary setting is lateral
+peg insertion in ManiSkill3/SAPIEN [8]. Peg and fixture
+geometry share a known 3 mm nominal per-side clearance
+c; a fixed generator introduces three equally probable hidden
+modes: transverse offset in y, transverse offset in z, or angular
+misalignment. Each mode includes both signs and bounded
+within-mode variation. The checkpoint occurs after a closed
+grasp and a short contact-making approach; eligibility uses
+only predecision observations, persistent contact and measured
+controller health. No outcome of the candidate probes or
+recovery policies enters eligibility. Prevalence therefore refers
+to this specified checkpoint distribution, not all manipulation
+failures; amplitude-response analysis and a later, separately
+sampled contact-task replication test how the phenomenon
+depends on this choice.
+The source geometry uses square peg-hole clearance c =
+3 mm and a fixed fixture frame. Hidden offset signs are
+symmetric and straddle clearance, perturbing peg-in-gripper
+alignment while the controller retains its nominal calibration.
+True mode, offset and pose are reserved for evaluation; probe
+choice never receives them.
+The actions are fixed before the confirmation cohort. Over
+d = 0.5 s at 20 Hz, hold retains commanded equilibrium,
+preload commands an axial displacement of c/2, and dither
+commands one transverse sinusoidal cycle of amplitude c, all
+with the same gripper and position-control parameters. Two
+feedback recovery policies follow: a0 continues the insertion
+from a nominal peg-to-tool transform; a1 withdraws by 4c,
+realigns using a predecision transform estimate, and reinserts.
+The root-fitted estimate is fixed across every matched branch;
+probe responses select the policy, not new privileged execution
+parameters.
+Online input consists of arm proprioception, calibrated tool
+pose, commanded equilibrium and known fixture dimensions.
+A 10-sample diagnostic response adds only these channels.
+True peg pose, hidden fault mode, contact forces and al-
+ternative outcomes are isolated to evaluation. Both policies
+receive τ − d = 3.5 s after intervention; direct recovery has
+the full τ = 4 s. No simulator state is reset between probe and
+correction. The primary goal is stable mid-depth insertion held
+for 0.25 s within prescribed translation, rotation and velocity
+tolerances; the native head-position flag is separately reported.
+Continuous sampled checks cover joint limits, joint speed,
+tracking residual, object slip, and peg-fixture contact-force
+envelopes. An unsafe path remains a measured violation, not
+an excluded result.
+Both recovery macros use the same feedback controller and
+stored predecision estimate. Success requires a stable insertion
+dwell, not just the native head-position flag; the full simulated
+path is checked for contact force, object slip, tracking and joint
+limits. This is a measured simulator outcome, not a hardware
+safety guarantee.
+B. Frozen model and fair comparisons
+Discovery-only data fit a nominal grasp-transform estimator
+and a shared finite probe-response/outcome model. Refer-
+ence particles have root feature X, probe response Yp, and
+matched recovery labels; Gaussian distance weights and a
+frozen nearest-response codebook define both policies’ pos-
+terior predictions. The RPD decision uses Eq. (4); IG maxi-
+mizes predicted contact-mode information, subject to the same
+estimated pre-recovery violation budget of .02. The direct and
+STOP options use identical goal and timing definitions. The
+model receives no true pose, latent mode or paired evaluator
+outcome during online decision making.
+Predecision features are joint positions/velocities, calibrated
+tool pose, tool command and known peg dimensions. Ten
+time samples of the same 23 scalar channels form a 230-
+dimensional probe response. Ground-truth forces and hidden
+mode remain evaluator-only; shared discovery-fitted scaling
+and response models give both selectors identical inputs.
+Prediction error is reported separately from nominal planning
+optimality.
+From fixed candidate lists, the study collects 64 discov-
+ery and 1,024 confirmation parents (candidate caps 128 and
+2,560), with eligibility determined solely from pre-probe con-
+tact, grasp and controller-health measurements. A separate 12-
+parent source qualification must yield at least eight eligible
+roots, six post-hold recoverable roots, and replay-consistent
+controller and timing traces. A failed source gate blocks
+confirmation and triggers separately recorded development, not
+substitution of favorable seeds. Each confirmed parent supplies
+hold, preload and dither followed by both correction policies:
+6,144 matched simulated continuations, plus direct-action con-
+trols. Every raw candidate, exclusion and missing branch is
+counted; the independent unit is the original checkpoint parent.
+C. Statistical decisions and scientific outcomes
+For H1, one-sided exact Clopper–Pearson (CP) lower
+bounds [2] test qIG > .10 on all eligible parents and ηγ > .50
+on the random number nJ of prespecified erasure cases,
+each at level .025. This directly tests whether diagnostic
+improvement co-occurs with option loss in the same cases.
+We report h, the fraction retaining a post-hold correction, and
+qIG/h, the erasure prevalence conditional on that event when
+h > 0. A shuffled-response control tests whether score gains
+actually require the measured probe signal.
+For H2, count paired RPD-only successes n+ and IG-only
+successes n−, with m = n+ + n− and r = P(URPD ̸= UIG).
+Defining θ = P(URPD = 1 | URPD ̸= UIG) gives ∆U =
+r(2θ − 1). Independent one-sided CP bounds for r and θ,
+each allocated .0125, yield a valid 97.5% lower limit on ∆U :
+multiply 2L(θ) − 1 by L(r) when nonnegative and by U(r)
+otherwise; for m = 0, use −U(r).
+For whole-path violations, write v+ and v− for RPD-only
+and IG-only violations, mC = v+ +v− and ϵC = .02. We test
+∆C < ϵC directly with a paired trinomial score:
+ZC =
+v+ − v− − nϵC
+p
+n[max(mC/n, ϵC) − ϵ2
+C]
+. (8)
+Under the null ∆C ≥ ϵC, its exact one-sided tail is maximized
+over the discordance nuisance rate rC ∈ [ϵC, 1], with probabil-
+ities (rC ±ϵC)/2 for the two discordant outcomes. Computing
+this one-dimensional supremum yields a finite-sample-valid
+noninferiority test; for n = 1024, the conservative critical
+value ZC ≤ −2.2 has null rejection probability below .025
+for every rC. H2 requires lower(∆U ) > .05 and the violation
+test to reject at .025. Each matched checkpoint contributes only
+one independent parent; missing outcomes receive sensitivity
+bounds.
+A pre-specified longer deadline and a third pre-specified
+simulated correction (withdraw, reorient, realign, reinsert)
+test repertoire and budget sensitivity without changing the
+primary two-skill comparison. Three frozen probe intensities
+(c/2, c, 3c/2) assess dose response on a disjoint development
+cohort, rather than choosing a favorable confirmation intensity.
+The two fixed-probe erasure rates and their original-contact-
+mode strata are also reported on the untouched confirmation
+cohort, with no threshold changes or selected-case exclusions.
+In all outcome regimes we report the exact lower and upper
+bounds on qIG, the hold-recoverable fraction h, conditional
+erasure qIG/h when h > 0, and the dose-response curve. A
+confidence interval spanning .10 is inconclusive, whereas an
+upper bound below .10 limits H1 in the declared population.
+Source or sensing failure prevents a physical conclusion; H1
+without H2 establishes an effect without extra policy benefit;
+H2 without H1 motivates analysis of partial-option losses.
+All alternatives are evaluated under the same state recon-
+struction and held-out parent distribution. A second contact-
+manipulation mechanism is reserved for later validation, not
+needed to define the method.
+At 1,024 parents, zero observed erasures bound qIG above
+by 0.360% (one-sided 97.5% exact CP); at least 123 erasures
+are needed to certify qIG > .10. Under hypothetical rates
+qIG = .15, ηγ = .80, H1 joint power is 99.7%. For H2,
+20% completion discordance with a 12-point gain and 2.5%
+violation discordance with zero difference give 99.3% and
+96.4% respective test powers, hence at least 95.6% joint power
+regardless of dependence. These are design calculations, not
+robot outcomes.
+A later simulation-only replication can examine cluttered
+target extraction, where a short contact displacement changes
+accessibility or support before a fixed grasp/extraction correc-
+tion. It retains the matched hold, recovery-set evaluation and
+independent-parent analysis in simulation.
+TABLE I
+MATCHED CONTROLS SEPARATE PROBE-INDUCED OPTION LOSS FROM
+COMPETING EXPLANATIONS.
+Observed pattern Interpretation tested
+Hold and probe lose
+options
+Deadline or common controller limit; not necessarily
+probe-induced loss.
+Hold retains, probe
+loses
+Contact effect beyond equal-duration waiting, within
+the declared repertoire.
+Probe changes op-
+tions, no mode sig-
+nal
+Physical disturbance without demonstrated diagnos-
+tic value.
+Option loss without
+policy gain
+Mechanism exists but does not establish H2’s deci-
+sion benefit.
+TABLE II
+EXACT CONSTRUCTED-MODEL OUTCOMES, NOT SIMULATOR
+MEASUREMENTS.
+Intensity Fine erasure IG success RPD success
+0.2 0 1 1
+0.5 1/6 5/6 1
+0.8 1/3 2/3 1
+V. ANALYTICAL ILLUSTRATION AND SCIENTIFIC
+IMPLICATIONS
+Consider three equiprobable contact states A, B, C and two
+fixed corrections. A fine diagnostic probe identifies the state
+exactly (log 3 ≈ 1.099 nats), while a coarse probe distin-
+guishes {A, B} from C (0.637 nats). The coarse response
+suffices to select a successful correction. The finer probe,
+despite perfectly identifying C, changes its physical state until
+neither correction succeeds. Thus maximizing information
+can reduce task completion even when a response-dependent
+correction is available.
+A constructed finite-world sweep varies the intensity of
+this interaction (Table II). As intensity increases, its predicted
+diagnostic information remains useful while the fine probe
+causes more unrecoverable continuations. The task-aware pol-
+icy chooses the coarse probe in the affected worlds, and a
+general contingent planner with the same terminal objective
+makes identical choices. The sweep is analytical evidence of
+a mechanism and its decision consequence, not a measured
+SAPIEN dose response or an H1 population estimate.
+What makes the hypotheses informative? H1 predicts
+more than a single harmful contact: within the fixed source
+distribution, IG-selected diagnosis must erase an entire hold-
+retained correction repertoire often enough to matter, and a
+majority of those cases must exhibit a material true-mode
+signal. The underlying physical quantities qp for each fixed
+probe and h clarify the mechanism. A large qp with small
+qIG indicates that the selector avoids disruptive probes; small
+qp despite high probe-selection frequency indicates that this
+regime preserves recovery. Neither can be inferred from the
+single aggregate rate alone. The three fixed amplitudes and
+predecision contact-mode strata assess where the interaction is
+consequential, without selecting a favorable evaluation subset.
+H2 asks a separate question: whether accounting for op-
+tion loss improves completion beyond what an identical
+information-seeking model achieves, without materially in-
+creasing whole-path violations. A full-objective planner or
+task-consensus rule may match RPD; the matched comparison
+isolates the value of the recovery objective, not a claimed
+advantage of the search algorithm. If H1 holds and H2 does
+not, the causal mechanism may be real but already managed
+by task consensus, or model prediction error may dominate
+planning. The response-blind and direct-recovery controls dis-
+tinguish these interpretations.
+Scientific conclusions across outcomes. Exact bounds
+on qIG, the hold-recoverable fraction h, fixed-probe rates
+qp, constraint compliance and model prediction error are
+reported together. A small upper bound on erasure in a well-
+qualified simulation population would delimit when simpler
+information-seeking diagnosis is adequate; a wide interval or
+an unqualified source would remain unresolved, not establish
+absence of the phenomenon. The second deadline and third
+correction determine whether measured losses reflect time
+limits or the declared skill repertoire. A later clutter-extraction
+replication checks whether the same measured contrast extends
+to a different contact mechanism.
+RPD therefore turns the effect of physical diagnosis on
+future executable corrections into a measurable, task-specific
+scientific question. The proposed simulation study can es-
+tablish where acquiring information and preserving recovery
+conflict, or bound how often they conflict under known con-
+straints. In either case, the conclusion concerns what diagnosis
+leaves the robot able to do, not information quality in isola-
+tion.
+REFERENCES
+[1] Jeannette Bohg, Karol Hausman, Bharath Sankaran, Oliver
+Brock, Danica Kragic, Stefan Schaal, and Gaurav S.
+Sukhatme. Interactive perception: Leveraging action in
+perception and perception in action. IEEE Transactions
+on Robotics, 33(6):1273–1291, 2017.
+[2] C. J. Clopper and E. S. Pearson. The use of confidence
+or fiducial limits illustrated in the case of the binomial.
+Biometrika, 26(4):404–413, 1934.
+[3] Nathan Grinsztajn, Johan Ferret, Olivier Pietquin, Philippe
+Preux, and Matthieu Geist. There is no turning back:
+A self-supervised approach for reversibility-aware rein-
+forcement learning. In Advances in Neural Information
+Processing Systems, volume 34, 2021.
+[4] Jun Kobayashi. When identifiability is not enough: Ter-
+minal controllability in task-compatible active calibration.
+IEEE Robotics and Automation Letters, 11(10):11039–
+11045, 2026.
+[5] James Ragan, Benjamin Riviere, Fred Y. Hadaegh, and
+Soon-Jo Chung. Online tree-based planning for active
+spacecraft fault estimation and collision avoidance. Sci-
+ence Robotics, 9(93):eadn4722, 2024.
+[6] Shili Sheng, David Parker, and Lu Feng. Safe POMDP
+online planning via shielding. In IEEE International
+Conference on Robotics and Automation, 2024.
+[7] Bingjie Tang, Michael A. Lin, Iretiayo A. Akinola, Ankur
+Handa, Gaurav S. Sukhatme, Fabio Ramos, Dieter Fox,
+and Yashraj S. Narang. IndustReal: Transferring contact-
+rich assembly tasks from simulation to reality. In Robotics:
+Science and Systems, 2023.
+[8] Stone Tao, Fanbo Xiang, Arth Shukla, Yuzhe Qin, Xander
+Hinrichsen, Xiaodi Yuan, Chen Bao, Xinsong Lin, Yulin
+Liu, Tse-Kai Chan, Yuan Gao, Xuanlin Li, Tongzhou Mu,
+Nan Xiao, Arnav Gurha, Viswesh Nagaswamy Rajesh,
+Yong Woo Choi, Yen-Ru Chen, Zhiao Huang, Roberto
+Calandra, Rui Chen, Shan Luo, and Hao Su. Demonstrat-
+ing GPU parallelized robot simulation and rendering for
+generalizable embodied AI with ManiSkill3. In Robotics:
+Science and Systems, 2025.
+[9] Haoran Wang, Yuteng Sun, Yuanjie Li, Ruofei Bai,
+Meng Yee (Michael) Chuah, Wenyu Liang, Jun Li, and
+Wei-Yun Yau. DA-GRD: Decision-aware grasp-relevant
+disambiguation for tactile recovery under perception-to-
+execution mismatches. arXiv:2609.29065, preprint, 2026.
+

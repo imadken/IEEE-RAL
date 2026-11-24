@@ -1,0 +1,2263 @@
+{
+  "audit_passed": true,
+  "source_qualified": false,
+  "decision": "SOURCE_NOT_QUALIFIED",
+  "tasks": {
+    "PickCube-v1": {
+      "verdict": "SOURCE_NOT_QUALIFIED",
+      "counts": {
+        "registered": 540,
+        "attempted": 39,
+        "complete": 38,
+        "interrupted_missing_outcome": 1,
+        "unattempted": 501,
+        "missing_terminal_labels": 502
+      },
+      "registered_parents": 10,
+      "attempted_parents": 1,
+      "complete_qualified_parents": 0,
+      "untouched_parents": 9,
+      "parents": [
+        {
+          "parent": {
+            "task": "PickCube-v1",
+            "phase": "technical_pilot",
+            "index": 0,
+            "seed": 2004000000,
+            "parent_id": "36afc2ba23e79ed6e745894adb52e31258cb0163f9b08b45fc1c176ba6a7d988",
+            "condition": "nominal"
+          },
+          "counts": {
+            "registered": 54,
+            "attempted": 39,
+            "complete": 38,
+            "interrupted_missing_outcome": 1,
+            "unattempted": 15,
+            "missing_terminal_labels": 16
+          },
+          "prefix_parity_on_returned_rows": true,
+          "controller_memory_on_returned_rows": true,
+          "all_returned_rows_trace_valid": true,
+          "qualified_complete_parent": false,
+          "original_checkpoint_contact_observed": true,
+          "root_descriptor": {
+            "signature": [
+              7,
+              64,
+              1,
+              -189,
+              -4,
+              259,
+              89,
+              -1,
+              -3,
+              0,
+              1,
+              0,
+              -4,
+              0,
+              5,
+              11,
+              12
+            ],
+            "evaluator_root_pose_cell": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "parent": {
+            "task": "PickCube-v1",
+            "phase": "technical_pilot",
+            "index": 1,
+            "seed": 2004000001,
+            "parent_id": "a8188a7f5e693f929e71949f9496b8b9d7a9698b3cf625148ab1ee52ec4d9134",
+            "condition": "nominal"
+          },
+          "counts": {
+            "registered": 54,
+            "attempted": 0,
+            "complete": 0,
+            "interrupted_missing_outcome": 0,
+            "unattempted": 54,
+            "missing_terminal_labels": 54
+          },
+          "prefix_parity_on_returned_rows": null,
+          "controller_memory_on_returned_rows": null,
+          "all_returned_rows_trace_valid": true,
+          "qualified_complete_parent": false,
+          "original_checkpoint_contact_observed": null,
+          "root_descriptor": null
+        },
+        {
+          "parent": {
+            "task": "PickCube-v1",
+            "phase": "technical_pilot",
+            "index": 2,
+            "seed": 2004000002,
+            "parent_id": "521ee858718c3d2577412785076ae0b8f81a74eca3a3cbafc036977cdb4dec6c",
+            "condition": "nominal"
+          },
+          "counts": {
+            "registered": 54,
+            "attempted": 0,
+            "complete": 0,
+            "interrupted_missing_outcome": 0,
+            "unattempted": 54,
+            "missing_terminal_labels": 54
+          },
+          "prefix_parity_on_returned_rows": null,
+          "controller_memory_on_returned_rows": null,
+          "all_returned_rows_trace_valid": true,
+          "qualified_complete_parent": false,
+          "original_checkpoint_contact_observed": null,
+          "root_descriptor": null
+        },
+        {
+          "parent": {
+            "task": "PickCube-v1",
+            "phase": "technical_pilot",
+            "index": 3,
+            "seed": 2004000003,
+            "parent_id": "c27c4986e4ee0bbf3dc148237d2304ff566bf2936cb5785f5d93584172d03ced",
+            "condition": "nominal"
+          },
+          "counts": {
+            "registered": 54,
+            "attempted": 0,
+            "complete": 0,
+            "interrupted_missing_outcome": 0,
+            "unattempted": 54,
+            "missing_terminal_labels": 54
+          },
+          "prefix_parity_on_returned_rows": null,
+          "controller_memory_on_returned_rows": null,
+          "all_returned_rows_trace_valid": true,
+          "qualified_complete_parent": false,
+          "original_checkpoint_contact_observed": null,
+          "root_descriptor": null
+        },
+        {
+          "parent": {
+            "task": "PickCube-v1",
+            "phase": "technical_pilot",
+            "index": 4,
+            "seed": 2004000004,
+            "parent_id": "d897164a529e15610f057da2bd68a91765004a3564e0bcd6df24eaee52adc978",
+            "condition": "nominal"
+          },
+          "counts": {
+            "registered": 54,
+            "attempted": 0,
+            "complete": 0,
+            "interrupted_missing_outcome": 0,
+            "unattempted": 54,
+            "missing_terminal_labels": 54
+          },
+          "prefix_parity_on_returned_rows": null,
+          "controller_memory_on_returned_rows": null,
+          "all_returned_rows_trace_valid": true,
+          "qualified_complete_parent": false,
+          "original_checkpoint_contact_observed": null,
+          "root_descriptor": null
+        },
+        {
+          "parent": {
+            "task": "PickCube-v1",
+            "phase": "technical_pilot",
+            "index": 5,
+            "seed": 2004000005,
+            "parent_id": "f1bed2b0ff79b23a7390a1d2045391fd41f42d1776e887de7fcc3ead9ba78646",
+            "condition": "nominal"
+          },
+          "counts": {
+            "registered": 54,
+            "attempted": 0,
+            "complete": 0,
+            "interrupted_missing_outcome": 0,
+            "unattempted": 54,
+            "missing_terminal_labels": 54
+          },
+          "prefix_parity_on_returned_rows": null,
+          "controller_memory_on_returned_rows": null,
+          "all_returned_rows_trace_valid": true,
+          "qualified_complete_parent": false,
+          "original_checkpoint_contact_observed": null,
+          "root_descriptor": null
+        },
+        {
+          "parent": {
+            "task": "PickCube-v1",
+            "phase": "technical_pilot",
+            "index": 6,
+            "seed": 2004000006,
+            "parent_id": "9ce46ba745c18a4bb50841e59217c5212ae3dc94996e33c8cffb5f114975f95f",
+            "condition": "nominal"
+          },
+          "counts": {
+            "registered": 54,
+            "attempted": 0,
+            "complete": 0,
+            "interrupted_missing_outcome": 0,
+            "unattempted": 54,
+            "missing_terminal_labels": 54
+          },
+          "prefix_parity_on_returned_rows": null,
+          "controller_memory_on_returned_rows": null,
+          "all_returned_rows_trace_valid": true,
+          "qualified_complete_parent": false,
+          "original_checkpoint_contact_observed": null,
+          "root_descriptor": null
+        },
+        {
+          "parent": {
+            "task": "PickCube-v1",
+            "phase": "technical_pilot",
+            "index": 7,
+            "seed": 2004000007,
+            "parent_id": "0a4a00dc6554c4843e575cf19782b994b205429e6ee02b15b84cf1b66457453a",
+            "condition": "nominal"
+          },
+          "counts": {
+            "registered": 54,
+            "attempted": 0,
+            "complete": 0,
+            "interrupted_missing_outcome": 0,
+            "unattempted": 54,
+            "missing_terminal_labels": 54
+          },
+          "prefix_parity_on_returned_rows": null,
+          "controller_memory_on_returned_rows": null,
+          "all_returned_rows_trace_valid": true,
+          "qualified_complete_parent": false,
+          "original_checkpoint_contact_observed": null,
+          "root_descriptor": null
+        },
+        {
+          "parent": {
+            "task": "PickCube-v1",
+            "phase": "technical_pilot",
+            "index": 8,
+            "seed": 2004000008,
+            "parent_id": "0f45c5e6e3f66e78e8719e691105dd92988ce17764f5fe6872e28f3907b372ab",
+            "condition": "nominal"
+          },
+          "counts": {
+            "registered": 54,
+            "attempted": 0,
+            "complete": 0,
+            "interrupted_missing_outcome": 0,
+            "unattempted": 54,
+            "missing_terminal_labels": 54
+          },
+          "prefix_parity_on_returned_rows": null,
+          "controller_memory_on_returned_rows": null,
+          "all_returned_rows_trace_valid": true,
+          "qualified_complete_parent": false,
+          "original_checkpoint_contact_observed": null,
+          "root_descriptor": null
+        },
+        {
+          "parent": {
+            "task": "PickCube-v1",
+            "phase": "technical_pilot",
+            "index": 9,
+            "seed": 2004000009,
+            "parent_id": "86d805338256bf59eb6913d778720edd54864ecd5a7195d9db84ce147bacd8d5",
+            "condition": "nominal"
+          },
+          "counts": {
+            "registered": 54,
+            "attempted": 0,
+            "complete": 0,
+            "interrupted_missing_outcome": 0,
+            "unattempted": 54,
+            "missing_terminal_labels": 54
+          },
+          "prefix_parity_on_returned_rows": null,
+          "controller_memory_on_returned_rows": null,
+          "all_returned_rows_trace_valid": true,
+          "qualified_complete_parent": false,
+          "original_checkpoint_contact_observed": null,
+          "root_descriptor": null
+        }
+      ],
+      "repeat_checks": [
+        {
+          "parent_index": 0,
+          "history": [
+            "micro_lift"
+          ],
+          "endpoint": "recover",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "release_settle",
+            "micro_lift"
+          ],
+          "endpoint": "recover",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [],
+          "endpoint": "continue",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "micro_lift",
+            "micro_lift"
+          ],
+          "endpoint": "recover",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "release_settle",
+            "release_settle"
+          ],
+          "endpoint": "continue",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "micro_lift"
+          ],
+          "endpoint": "STOP",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "micro_lift",
+            "micro_lift"
+          ],
+          "endpoint": "continue",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "release_settle"
+          ],
+          "endpoint": "continue",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [],
+          "endpoint": "recover",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "micro_lift"
+          ],
+          "endpoint": "continue",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "release_settle",
+            "micro_lift"
+          ],
+          "endpoint": "STOP",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "micro_lift",
+            "release_settle"
+          ],
+          "endpoint": "STOP",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "micro_lift",
+            "release_settle"
+          ],
+          "endpoint": "recover",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "micro_lift",
+            "micro_lift"
+          ],
+          "endpoint": "STOP",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "release_settle"
+          ],
+          "endpoint": "STOP",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "micro_lift",
+            "release_settle"
+          ],
+          "endpoint": "continue",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "release_settle",
+            "micro_lift"
+          ],
+          "endpoint": "continue",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [],
+          "endpoint": "STOP",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "release_settle"
+          ],
+          "endpoint": "recover",
+          "passed": true
+        }
+      ],
+      "successful_repeat_checks": 19,
+      "returned_prefix_replay_rows": 38,
+      "history_endpoint_counts_repeat0": [
+        {
+          "history": [],
+          "endpoints": {
+            "continue": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 1,
+              "native_deadline_successes": 1
+            },
+            "recover": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 1,
+              "native_deadline_successes": 1
+            },
+            "STOP": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": null,
+              "native_deadline_successes": 0
+            }
+          }
+        },
+        {
+          "history": [
+            "micro_lift"
+          ],
+          "endpoints": {
+            "continue": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 1,
+              "native_deadline_successes": 1
+            },
+            "recover": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 1,
+              "native_deadline_successes": 1
+            },
+            "STOP": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": null,
+              "native_deadline_successes": 0
+            }
+          }
+        },
+        {
+          "history": [
+            "release_settle"
+          ],
+          "endpoints": {
+            "continue": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 0,
+              "native_deadline_successes": 0
+            },
+            "recover": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 1,
+              "native_deadline_successes": 1
+            },
+            "STOP": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": null,
+              "native_deadline_successes": 0
+            }
+          }
+        },
+        {
+          "history": [
+            "micro_lift",
+            "micro_lift"
+          ],
+          "endpoints": {
+            "continue": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 1,
+              "native_deadline_successes": 1
+            },
+            "recover": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 1,
+              "native_deadline_successes": 1
+            },
+            "STOP": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": null,
+              "native_deadline_successes": 0
+            }
+          }
+        },
+        {
+          "history": [
+            "micro_lift",
+            "release_settle"
+          ],
+          "endpoints": {
+            "continue": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 0,
+              "native_deadline_successes": 0
+            },
+            "recover": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 1,
+              "native_deadline_successes": 1
+            },
+            "STOP": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": null,
+              "native_deadline_successes": 0
+            }
+          }
+        },
+        {
+          "history": [
+            "release_settle",
+            "micro_lift"
+          ],
+          "endpoints": {
+            "continue": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 0,
+              "native_deadline_successes": 0
+            },
+            "recover": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 1,
+              "native_deadline_successes": 1
+            },
+            "STOP": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": null,
+              "native_deadline_successes": 0
+            }
+          }
+        },
+        {
+          "history": [
+            "release_settle",
+            "release_settle"
+          ],
+          "endpoints": {
+            "continue": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 0,
+              "native_deadline_successes": 0
+            },
+            "recover": {
+              "returned_repeat0_parents": 0,
+              "native_macro_end_successes": 0,
+              "native_deadline_successes": 0
+            },
+            "STOP": {
+              "returned_repeat0_parents": 0,
+              "native_macro_end_successes": null,
+              "native_deadline_successes": 0
+            }
+          }
+        },
+        {
+          "history": [
+            "neutral10"
+          ],
+          "endpoints": {
+            "continue": {
+              "returned_repeat0_parents": 0,
+              "native_macro_end_successes": 0,
+              "native_deadline_successes": 0
+            },
+            "recover": {
+              "returned_repeat0_parents": 0,
+              "native_macro_end_successes": 0,
+              "native_deadline_successes": 0
+            },
+            "STOP": {
+              "returned_repeat0_parents": 0,
+              "native_macro_end_successes": null,
+              "native_deadline_successes": 0
+            }
+          }
+        },
+        {
+          "history": [
+            "neutral20"
+          ],
+          "endpoints": {
+            "continue": {
+              "returned_repeat0_parents": 0,
+              "native_macro_end_successes": 0,
+              "native_deadline_successes": 0
+            },
+            "recover": {
+              "returned_repeat0_parents": 0,
+              "native_macro_end_successes": 0,
+              "native_deadline_successes": 0
+            },
+            "STOP": {
+              "returned_repeat0_parents": 0,
+              "native_macro_end_successes": null,
+              "native_deadline_successes": 0
+            }
+          }
+        }
+      ],
+      "known_probe_effects": [
+        {
+          "parent_index": 0,
+          "history": [
+            "micro_lift",
+            "micro_lift"
+          ],
+          "probe_delay_ticks": 20,
+          "raw_path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/8bbd72fabada8e0ce1394d53f2ac6a15f19aeaf616f0b2e23423f68924282e9c.json.xz",
+          "raw_sha256": "ac0d445e89dc1cf24b63900545b378b571c04e00b6b5565e29ef49cd0afc9af8",
+          "probe_contact_ticks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "contact_tick_count": 20,
+          "object_displacement_m": 0.009875657090204368,
+          "tcp_displacement_m": 0.009877804321736417,
+          "sampled_probe_allowed": true,
+          "macro_deadline_native_success": true,
+          "matched_hold_contact_effect": "UNKNOWN_NO_MATCHED_HOLD",
+          "response": [
+            {
+              "probe": "micro_lift",
+              "response": {
+                "displacement_bins_5mm": [
+                  0,
+                  -1,
+                  1
+                ],
+                "arm_motion_bin_0_01rad": 1,
+                "peak_arm_speed_bin_0_1rad_s": 3,
+                "timestamp": 3.75,
+                "physical_effect_qualified": false,
+                "interpretation": "OBSERVED_KINEMATIC_RESPONSE_NOT_A_CONTACT_FORCE_OR_SUCCESS_LABEL"
+              },
+              "start_control": 65,
+              "end_control": 75
+            },
+            {
+              "probe": "micro_lift",
+              "response": {
+                "displacement_bins_5mm": [
+                  -1,
+                  0,
+                  0
+                ],
+                "arm_motion_bin_0_01rad": 0,
+                "peak_arm_speed_bin_0_1rad_s": 0,
+                "timestamp": 4.25,
+                "physical_effect_qualified": false,
+                "interpretation": "OBSERVED_KINEMATIC_RESPONSE_NOT_A_CONTACT_FORCE_OR_SUCCESS_LABEL"
+              },
+              "start_control": 75,
+              "end_control": 85
+            }
+          ]
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "micro_lift",
+            "release_settle"
+          ],
+          "probe_delay_ticks": 20,
+          "raw_path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/283e14b3f8deedd315cf2ffaab555c1a84b03cea92e1b7be32f9c9062d04fdf6.json.xz",
+          "raw_sha256": "a7c5e5a9815338a8ea7602ef6d7e16cfb8783813fe5220c94cc508c176e003b0",
+          "probe_contact_ticks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "contact_tick_count": 20,
+          "object_displacement_m": 0.04414367414121259,
+          "tcp_displacement_m": 0.007726069250615013,
+          "sampled_probe_allowed": true,
+          "macro_deadline_native_success": false,
+          "matched_hold_contact_effect": "UNKNOWN_NO_MATCHED_HOLD",
+          "response": [
+            {
+              "probe": "micro_lift",
+              "response": {
+                "displacement_bins_5mm": [
+                  0,
+                  -1,
+                  1
+                ],
+                "arm_motion_bin_0_01rad": 1,
+                "peak_arm_speed_bin_0_1rad_s": 3,
+                "timestamp": 3.75,
+                "physical_effect_qualified": false,
+                "interpretation": "OBSERVED_KINEMATIC_RESPONSE_NOT_A_CONTACT_FORCE_OR_SUCCESS_LABEL"
+              },
+              "start_control": 65,
+              "end_control": 75
+            },
+            {
+              "probe": "release_settle",
+              "response": {
+                "displacement_bins_5mm": [
+                  -1,
+                  -1,
+                  -1
+                ],
+                "arm_motion_bin_0_01rad": 0,
+                "peak_arm_speed_bin_0_1rad_s": 0,
+                "timestamp": 4.25,
+                "physical_effect_qualified": false,
+                "interpretation": "OBSERVED_KINEMATIC_RESPONSE_NOT_A_CONTACT_FORCE_OR_SUCCESS_LABEL"
+              },
+              "start_control": 75,
+              "end_control": 85
+            }
+          ]
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "release_settle",
+            "micro_lift"
+          ],
+          "probe_delay_ticks": 20,
+          "raw_path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/221d7df26d2d9755645f1c454d6c20dd0256014fede711280ae6c3dd91b3523d.json.xz",
+          "raw_sha256": "8f143e9e51e6b89285b0faeb8585ed8532ee4b840011c4892b7f7444f48010cb",
+          "probe_contact_ticks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "contact_tick_count": 20,
+          "object_displacement_m": 0.045322055043449,
+          "tcp_displacement_m": 0.009405541569816293,
+          "sampled_probe_allowed": true,
+          "macro_deadline_native_success": false,
+          "matched_hold_contact_effect": "UNKNOWN_NO_MATCHED_HOLD",
+          "response": [
+            {
+              "probe": "release_settle",
+              "response": {
+                "displacement_bins_5mm": [
+                  0,
+                  -1,
+                  1
+                ],
+                "arm_motion_bin_0_01rad": 0,
+                "peak_arm_speed_bin_0_1rad_s": 3,
+                "timestamp": 3.75,
+                "physical_effect_qualified": false,
+                "interpretation": "OBSERVED_KINEMATIC_RESPONSE_NOT_A_CONTACT_FORCE_OR_SUCCESS_LABEL"
+              },
+              "start_control": 65,
+              "end_control": 75
+            },
+            {
+              "probe": "micro_lift",
+              "response": {
+                "displacement_bins_5mm": [
+                  0,
+                  0,
+                  0
+                ],
+                "arm_motion_bin_0_01rad": 1,
+                "peak_arm_speed_bin_0_1rad_s": 0,
+                "timestamp": 4.25,
+                "physical_effect_qualified": false,
+                "interpretation": "OBSERVED_KINEMATIC_RESPONSE_NOT_A_CONTACT_FORCE_OR_SUCCESS_LABEL"
+              },
+              "start_control": 75,
+              "end_control": 85
+            }
+          ]
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "micro_lift"
+          ],
+          "probe_delay_ticks": 10,
+          "raw_path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/866b3311e1714a1587cad7cfb66044ae47abc8742317b64c8a8f8c1b2097213d.json.xz",
+          "raw_sha256": "3a2f6e5273f883a32d43b70082efd54c49cf721d3073be2d0000f524b7a33139",
+          "probe_contact_ticks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "contact_tick_count": 10,
+          "object_displacement_m": 0.007820434722205597,
+          "tcp_displacement_m": 0.00782277007480913,
+          "sampled_probe_allowed": true,
+          "macro_deadline_native_success": true,
+          "matched_hold_contact_effect": "UNKNOWN_NO_MATCHED_HOLD",
+          "response": [
+            {
+              "probe": "micro_lift",
+              "response": {
+                "displacement_bins_5mm": [
+                  0,
+                  -1,
+                  1
+                ],
+                "arm_motion_bin_0_01rad": 1,
+                "peak_arm_speed_bin_0_1rad_s": 3,
+                "timestamp": 3.75,
+                "physical_effect_qualified": false,
+                "interpretation": "OBSERVED_KINEMATIC_RESPONSE_NOT_A_CONTACT_FORCE_OR_SUCCESS_LABEL"
+              },
+              "start_control": 65,
+              "end_control": 75
+            }
+          ]
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "release_settle",
+            "release_settle"
+          ],
+          "probe_delay_ticks": 20,
+          "raw_path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/3d598853c146d3c309905f508b2ad175227df1435d4f08e6b5965d92c6ebb2ef.json.xz",
+          "raw_sha256": "b33eb6457e1a98828c2c9f88d4776fa57a757668d6b0e704cd93906569ae7ae5",
+          "probe_contact_ticks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "contact_tick_count": 20,
+          "object_displacement_m": 0.045322055043449,
+          "tcp_displacement_m": 0.0059246977205844355,
+          "sampled_probe_allowed": true,
+          "macro_deadline_native_success": false,
+          "matched_hold_contact_effect": "UNKNOWN_NO_MATCHED_HOLD",
+          "response": [
+            {
+              "probe": "release_settle",
+              "response": {
+                "displacement_bins_5mm": [
+                  0,
+                  -1,
+                  1
+                ],
+                "arm_motion_bin_0_01rad": 0,
+                "peak_arm_speed_bin_0_1rad_s": 3,
+                "timestamp": 3.75,
+                "physical_effect_qualified": false,
+                "interpretation": "OBSERVED_KINEMATIC_RESPONSE_NOT_A_CONTACT_FORCE_OR_SUCCESS_LABEL"
+              },
+              "start_control": 65,
+              "end_control": 75
+            },
+            {
+              "probe": "release_settle",
+              "response": {
+                "displacement_bins_5mm": [
+                  0,
+                  0,
+                  0
+                ],
+                "arm_motion_bin_0_01rad": 0,
+                "peak_arm_speed_bin_0_1rad_s": 0,
+                "timestamp": 4.25,
+                "physical_effect_qualified": false,
+                "interpretation": "OBSERVED_KINEMATIC_RESPONSE_NOT_A_CONTACT_FORCE_OR_SUCCESS_LABEL"
+              },
+              "start_control": 75,
+              "end_control": 85
+            }
+          ]
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "release_settle"
+          ],
+          "probe_delay_ticks": 10,
+          "raw_path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/040ed53fbc0b8e567c7ea7303a11f7257e94148817d89f07842f78543150856b.json.xz",
+          "raw_sha256": "2ba6b97a907e126def33ab1ff5c785103626aef30165f940aecd837f4bfb5653",
+          "probe_contact_ticks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "contact_tick_count": 10,
+          "object_displacement_m": 0.04532205557832283,
+          "tcp_displacement_m": 0.0059246977205844355,
+          "sampled_probe_allowed": true,
+          "macro_deadline_native_success": false,
+          "matched_hold_contact_effect": "UNKNOWN_NO_MATCHED_HOLD",
+          "response": [
+            {
+              "probe": "release_settle",
+              "response": {
+                "displacement_bins_5mm": [
+                  0,
+                  -1,
+                  1
+                ],
+                "arm_motion_bin_0_01rad": 0,
+                "peak_arm_speed_bin_0_1rad_s": 3,
+                "timestamp": 3.75,
+                "physical_effect_qualified": false,
+                "interpretation": "OBSERVED_KINEMATIC_RESPONSE_NOT_A_CONTACT_FORCE_OR_SUCCESS_LABEL"
+              },
+              "start_control": 65,
+              "end_control": 75
+            }
+          ]
+        }
+      ],
+      "neutral_hold_returned_rows": 0,
+      "K_hold": "UNKNOWN_MISSING",
+      "K_probe": "NOT_IDENTIFIED_AGAINST_MATCHED_HOLD",
+      "erasure_count": null,
+      "creation_count": null,
+      "lost_or_preserved_membership_vs_hold": null,
+      "matched_eligible_parent_probe_denominator": 0,
+      "interrupted_rows": [
+        {
+          "parent": {
+            "task": "PickCube-v1",
+            "phase": "technical_pilot",
+            "index": 0,
+            "seed": 2004000000,
+            "parent_id": "36afc2ba23e79ed6e745894adb52e31258cb0163f9b08b45fc1c176ba6a7d988",
+            "condition": "nominal"
+          },
+          "history": [
+            "release_settle",
+            "release_settle"
+          ],
+          "endpoint": "recover",
+          "repeat": 0,
+          "row_id": "b70d887b3bcd762e1464801a107bf5b859d7911bf87edea27e6ff1ba5ea33e3b",
+          "delay_ticks": 20,
+          "macro_ticks": 70,
+          "deadline_ticks": 90
+        }
+      ],
+      "complete_trace_frame_count": 5928,
+      "known_native_controls": 5890,
+      "known_probe_control_count": 520,
+      "native_controls_unreturned_row_range": [
+        0,
+        155
+      ],
+      "measured_completed_episode_wall_seconds": 95.00758800888434,
+      "actual_total_worker_wall_seconds": "NOT_EXACTLY_MEASURED_NATIVE_FINALIZER_DID_NOT_RUN",
+      "conservative_total_worker_wall_upper_seconds": 471.9170639514923,
+      "startup_seconds": [
+        0.4095728049869649,
+        0.477905962994555,
+        0.4044004300085362,
+        0.37521548802033067,
+        0.430730318010319,
+        0.39679975202307105,
+        0.4323174119926989,
+        0.4613271519774571,
+        0.4479209040000569,
+        0.4445116480055731,
+        0.4449886929942295,
+        0.4340212089882698,
+        0.4192471239948645,
+        0.38523883698508143,
+        0.4737940820050426,
+        0.3845529069949407,
+        0.39823248199536465,
+        0.47253660901333205,
+        0.48736213002121076,
+        0.4674190160003491,
+        0.48832768597640097,
+        0.4448625649965834,
+        0.4614538599853404,
+        0.47161595500074327,
+        0.5425192450056784,
+        0.4823953220038675,
+        0.4204733539954759,
+        0.4427736359939445,
+        0.478567641985137,
+        0.4447909959999379,
+        0.38668104499811307,
+        0.5625430709915236,
+        0.41344346400001086,
+        0.4878003979974892,
+        0.40361899000708945,
+        5.131090986978961,
+        0.43375118501717225,
+        0.408643017988652
+      ],
+      "native_process_exit": {
+        "session_id": 85004,
+        "exit_code": 139,
+        "shell_signal_interpretation": "SIGSEGV(11), no native backtrace or39th-row returned trace available",
+        "console_birth_epoch": 1795098733,
+        "exit_observed_no_later_than_epoch": 1795099204.917064,
+        "stage": "UNKNOWN_AFTER_ROW_STARTED_JOURNAL",
+        "restart_after_failure": false,
+        "source_failure_stop_rule_applied": true
+      },
+      "raw_compressed_bytes": 7517324,
+      "source_scope": "Finite/control/repeat checks passed only for38 returned rows; native worker crash blocks the fixed parent and family. No old calibration transfer.",
+      "new_discovery_calibration_test_parents": 0
+    },
+    "PushCube-v1": {
+      "verdict": "SOURCE_NOT_QUALIFIED",
+      "counts": {
+        "registered": 540,
+        "attempted": 39,
+        "complete": 38,
+        "interrupted_missing_outcome": 1,
+        "unattempted": 501,
+        "missing_terminal_labels": 502
+      },
+      "registered_parents": 10,
+      "attempted_parents": 1,
+      "complete_qualified_parents": 0,
+      "untouched_parents": 9,
+      "parents": [
+        {
+          "parent": {
+            "task": "PushCube-v1",
+            "phase": "technical_pilot",
+            "index": 0,
+            "seed": 2004100000,
+            "parent_id": "1abfd02f49137f01dbbbb43e0c3397b14ee32e1dcf8629aac45c917dda8f5392",
+            "condition": "nominal"
+          },
+          "counts": {
+            "registered": 54,
+            "attempted": 39,
+            "complete": 38,
+            "interrupted_missing_outcome": 1,
+            "unattempted": 15,
+            "missing_terminal_labels": 16
+          },
+          "prefix_parity_on_returned_rows": true,
+          "controller_memory_on_returned_rows": true,
+          "all_returned_rows_trace_valid": true,
+          "qualified_complete_parent": false,
+          "original_checkpoint_contact_observed": true,
+          "root_descriptor": {
+            "signature": [
+              0,
+              83,
+              -3,
+              -167,
+              0,
+              257,
+              75,
+              -1,
+              3,
+              0,
+              7,
+              0,
+              -4,
+              0,
+              14,
+              -3,
+              4
+            ],
+            "evaluator_root_pose_cell": [
+              2,
+              2
+            ]
+          }
+        },
+        {
+          "parent": {
+            "task": "PushCube-v1",
+            "phase": "technical_pilot",
+            "index": 1,
+            "seed": 2004100001,
+            "parent_id": "4d7f99450c95ceef19029645f7c89e009deecc19ea86493a12e17d0c3f852ce5",
+            "condition": "nominal"
+          },
+          "counts": {
+            "registered": 54,
+            "attempted": 0,
+            "complete": 0,
+            "interrupted_missing_outcome": 0,
+            "unattempted": 54,
+            "missing_terminal_labels": 54
+          },
+          "prefix_parity_on_returned_rows": null,
+          "controller_memory_on_returned_rows": null,
+          "all_returned_rows_trace_valid": true,
+          "qualified_complete_parent": false,
+          "original_checkpoint_contact_observed": null,
+          "root_descriptor": null
+        },
+        {
+          "parent": {
+            "task": "PushCube-v1",
+            "phase": "technical_pilot",
+            "index": 2,
+            "seed": 2004100002,
+            "parent_id": "8d2e778aa469588f12766c0bf904e29c5454f4436036848df942b1891549fdaf",
+            "condition": "nominal"
+          },
+          "counts": {
+            "registered": 54,
+            "attempted": 0,
+            "complete": 0,
+            "interrupted_missing_outcome": 0,
+            "unattempted": 54,
+            "missing_terminal_labels": 54
+          },
+          "prefix_parity_on_returned_rows": null,
+          "controller_memory_on_returned_rows": null,
+          "all_returned_rows_trace_valid": true,
+          "qualified_complete_parent": false,
+          "original_checkpoint_contact_observed": null,
+          "root_descriptor": null
+        },
+        {
+          "parent": {
+            "task": "PushCube-v1",
+            "phase": "technical_pilot",
+            "index": 3,
+            "seed": 2004100003,
+            "parent_id": "0999ae8192a4c81164a7128ae4c50fa4ead53651aa418f13af5db869a40912ec",
+            "condition": "nominal"
+          },
+          "counts": {
+            "registered": 54,
+            "attempted": 0,
+            "complete": 0,
+            "interrupted_missing_outcome": 0,
+            "unattempted": 54,
+            "missing_terminal_labels": 54
+          },
+          "prefix_parity_on_returned_rows": null,
+          "controller_memory_on_returned_rows": null,
+          "all_returned_rows_trace_valid": true,
+          "qualified_complete_parent": false,
+          "original_checkpoint_contact_observed": null,
+          "root_descriptor": null
+        },
+        {
+          "parent": {
+            "task": "PushCube-v1",
+            "phase": "technical_pilot",
+            "index": 4,
+            "seed": 2004100004,
+            "parent_id": "27930c1f28d768289174b4e5db79b427ff23831c29c59fadb533e4da9846ce8d",
+            "condition": "nominal"
+          },
+          "counts": {
+            "registered": 54,
+            "attempted": 0,
+            "complete": 0,
+            "interrupted_missing_outcome": 0,
+            "unattempted": 54,
+            "missing_terminal_labels": 54
+          },
+          "prefix_parity_on_returned_rows": null,
+          "controller_memory_on_returned_rows": null,
+          "all_returned_rows_trace_valid": true,
+          "qualified_complete_parent": false,
+          "original_checkpoint_contact_observed": null,
+          "root_descriptor": null
+        },
+        {
+          "parent": {
+            "task": "PushCube-v1",
+            "phase": "technical_pilot",
+            "index": 5,
+            "seed": 2004100005,
+            "parent_id": "7a1c8a734031e906deee93f93290862008ccd8410989db2ed9c5139f8ce1b3e6",
+            "condition": "nominal"
+          },
+          "counts": {
+            "registered": 54,
+            "attempted": 0,
+            "complete": 0,
+            "interrupted_missing_outcome": 0,
+            "unattempted": 54,
+            "missing_terminal_labels": 54
+          },
+          "prefix_parity_on_returned_rows": null,
+          "controller_memory_on_returned_rows": null,
+          "all_returned_rows_trace_valid": true,
+          "qualified_complete_parent": false,
+          "original_checkpoint_contact_observed": null,
+          "root_descriptor": null
+        },
+        {
+          "parent": {
+            "task": "PushCube-v1",
+            "phase": "technical_pilot",
+            "index": 6,
+            "seed": 2004100006,
+            "parent_id": "3eba92e9aa7ad7df145a090953d085c9d9ba41145c6838582e56aaa44bb769cc",
+            "condition": "nominal"
+          },
+          "counts": {
+            "registered": 54,
+            "attempted": 0,
+            "complete": 0,
+            "interrupted_missing_outcome": 0,
+            "unattempted": 54,
+            "missing_terminal_labels": 54
+          },
+          "prefix_parity_on_returned_rows": null,
+          "controller_memory_on_returned_rows": null,
+          "all_returned_rows_trace_valid": true,
+          "qualified_complete_parent": false,
+          "original_checkpoint_contact_observed": null,
+          "root_descriptor": null
+        },
+        {
+          "parent": {
+            "task": "PushCube-v1",
+            "phase": "technical_pilot",
+            "index": 7,
+            "seed": 2004100007,
+            "parent_id": "9cbd3a8f304bf35ef7821ed31ddef0e379f7b36f7db742f70f4e33acb3b3d09c",
+            "condition": "nominal"
+          },
+          "counts": {
+            "registered": 54,
+            "attempted": 0,
+            "complete": 0,
+            "interrupted_missing_outcome": 0,
+            "unattempted": 54,
+            "missing_terminal_labels": 54
+          },
+          "prefix_parity_on_returned_rows": null,
+          "controller_memory_on_returned_rows": null,
+          "all_returned_rows_trace_valid": true,
+          "qualified_complete_parent": false,
+          "original_checkpoint_contact_observed": null,
+          "root_descriptor": null
+        },
+        {
+          "parent": {
+            "task": "PushCube-v1",
+            "phase": "technical_pilot",
+            "index": 8,
+            "seed": 2004100008,
+            "parent_id": "b974a294588a2ef644e0c89b45e0bca82fb1629175b25863b606232dbb64e33e",
+            "condition": "nominal"
+          },
+          "counts": {
+            "registered": 54,
+            "attempted": 0,
+            "complete": 0,
+            "interrupted_missing_outcome": 0,
+            "unattempted": 54,
+            "missing_terminal_labels": 54
+          },
+          "prefix_parity_on_returned_rows": null,
+          "controller_memory_on_returned_rows": null,
+          "all_returned_rows_trace_valid": true,
+          "qualified_complete_parent": false,
+          "original_checkpoint_contact_observed": null,
+          "root_descriptor": null
+        },
+        {
+          "parent": {
+            "task": "PushCube-v1",
+            "phase": "technical_pilot",
+            "index": 9,
+            "seed": 2004100009,
+            "parent_id": "07c95462ebf2e897944c03354c20d65034b6d16392c7b09eb2de9d2aff01887b",
+            "condition": "nominal"
+          },
+          "counts": {
+            "registered": 54,
+            "attempted": 0,
+            "complete": 0,
+            "interrupted_missing_outcome": 0,
+            "unattempted": 54,
+            "missing_terminal_labels": 54
+          },
+          "prefix_parity_on_returned_rows": null,
+          "controller_memory_on_returned_rows": null,
+          "all_returned_rows_trace_valid": true,
+          "qualified_complete_parent": false,
+          "original_checkpoint_contact_observed": null,
+          "root_descriptor": null
+        }
+      ],
+      "repeat_checks": [
+        {
+          "parent_index": 0,
+          "history": [],
+          "endpoint": "continue",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "forward_tap",
+            "lateral_sweep"
+          ],
+          "endpoint": "continue",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [],
+          "endpoint": "STOP",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "forward_tap",
+            "forward_tap"
+          ],
+          "endpoint": "continue",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "forward_tap",
+            "lateral_sweep"
+          ],
+          "endpoint": "STOP",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "lateral_sweep",
+            "forward_tap"
+          ],
+          "endpoint": "continue",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "lateral_sweep"
+          ],
+          "endpoint": "continue",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "forward_tap",
+            "forward_tap"
+          ],
+          "endpoint": "recover",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "lateral_sweep",
+            "forward_tap"
+          ],
+          "endpoint": "recover",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "forward_tap"
+          ],
+          "endpoint": "continue",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "lateral_sweep",
+            "lateral_sweep"
+          ],
+          "endpoint": "continue",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "forward_tap",
+            "lateral_sweep"
+          ],
+          "endpoint": "recover",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "lateral_sweep"
+          ],
+          "endpoint": "recover",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "forward_tap"
+          ],
+          "endpoint": "STOP",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [],
+          "endpoint": "recover",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "lateral_sweep",
+            "forward_tap"
+          ],
+          "endpoint": "STOP",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "forward_tap",
+            "forward_tap"
+          ],
+          "endpoint": "STOP",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "lateral_sweep"
+          ],
+          "endpoint": "STOP",
+          "passed": true
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "forward_tap"
+          ],
+          "endpoint": "recover",
+          "passed": true
+        }
+      ],
+      "successful_repeat_checks": 19,
+      "returned_prefix_replay_rows": 38,
+      "history_endpoint_counts_repeat0": [
+        {
+          "history": [],
+          "endpoints": {
+            "continue": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 1,
+              "native_deadline_successes": 1
+            },
+            "recover": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 1,
+              "native_deadline_successes": 1
+            },
+            "STOP": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": null,
+              "native_deadline_successes": 0
+            }
+          }
+        },
+        {
+          "history": [
+            "forward_tap"
+          ],
+          "endpoints": {
+            "continue": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 1,
+              "native_deadline_successes": 1
+            },
+            "recover": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 1,
+              "native_deadline_successes": 1
+            },
+            "STOP": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": null,
+              "native_deadline_successes": 0
+            }
+          }
+        },
+        {
+          "history": [
+            "lateral_sweep"
+          ],
+          "endpoints": {
+            "continue": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 1,
+              "native_deadline_successes": 1
+            },
+            "recover": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 1,
+              "native_deadline_successes": 1
+            },
+            "STOP": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": null,
+              "native_deadline_successes": 0
+            }
+          }
+        },
+        {
+          "history": [
+            "forward_tap",
+            "forward_tap"
+          ],
+          "endpoints": {
+            "continue": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 1,
+              "native_deadline_successes": 1
+            },
+            "recover": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 1,
+              "native_deadline_successes": 1
+            },
+            "STOP": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": null,
+              "native_deadline_successes": 0
+            }
+          }
+        },
+        {
+          "history": [
+            "forward_tap",
+            "lateral_sweep"
+          ],
+          "endpoints": {
+            "continue": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 1,
+              "native_deadline_successes": 1
+            },
+            "recover": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 1,
+              "native_deadline_successes": 1
+            },
+            "STOP": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": null,
+              "native_deadline_successes": 0
+            }
+          }
+        },
+        {
+          "history": [
+            "lateral_sweep",
+            "forward_tap"
+          ],
+          "endpoints": {
+            "continue": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 1,
+              "native_deadline_successes": 1
+            },
+            "recover": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 1,
+              "native_deadline_successes": 1
+            },
+            "STOP": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": null,
+              "native_deadline_successes": 0
+            }
+          }
+        },
+        {
+          "history": [
+            "lateral_sweep",
+            "lateral_sweep"
+          ],
+          "endpoints": {
+            "continue": {
+              "returned_repeat0_parents": 1,
+              "native_macro_end_successes": 1,
+              "native_deadline_successes": 1
+            },
+            "recover": {
+              "returned_repeat0_parents": 0,
+              "native_macro_end_successes": 0,
+              "native_deadline_successes": 0
+            },
+            "STOP": {
+              "returned_repeat0_parents": 0,
+              "native_macro_end_successes": null,
+              "native_deadline_successes": 0
+            }
+          }
+        },
+        {
+          "history": [
+            "neutral10"
+          ],
+          "endpoints": {
+            "continue": {
+              "returned_repeat0_parents": 0,
+              "native_macro_end_successes": 0,
+              "native_deadline_successes": 0
+            },
+            "recover": {
+              "returned_repeat0_parents": 0,
+              "native_macro_end_successes": 0,
+              "native_deadline_successes": 0
+            },
+            "STOP": {
+              "returned_repeat0_parents": 0,
+              "native_macro_end_successes": null,
+              "native_deadline_successes": 0
+            }
+          }
+        },
+        {
+          "history": [
+            "neutral20"
+          ],
+          "endpoints": {
+            "continue": {
+              "returned_repeat0_parents": 0,
+              "native_macro_end_successes": 0,
+              "native_deadline_successes": 0
+            },
+            "recover": {
+              "returned_repeat0_parents": 0,
+              "native_macro_end_successes": 0,
+              "native_deadline_successes": 0
+            },
+            "STOP": {
+              "returned_repeat0_parents": 0,
+              "native_macro_end_successes": null,
+              "native_deadline_successes": 0
+            }
+          }
+        }
+      ],
+      "known_probe_effects": [
+        {
+          "parent_index": 0,
+          "history": [
+            "forward_tap",
+            "lateral_sweep"
+          ],
+          "probe_delay_ticks": 20,
+          "raw_path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/da7bc3d5fb8536263bb99fc1378640cbaf12b4d3b2aafd3260d95bee37c6c0df.json.xz",
+          "raw_sha256": "494b74ea7401da2eceff5676d64e94b15c74dd0113014671f0c42f718056089e",
+          "probe_contact_ticks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "contact_tick_count": 20,
+          "object_displacement_m": 0.008287008993294969,
+          "tcp_displacement_m": 0.011090406722915265,
+          "sampled_probe_allowed": true,
+          "macro_deadline_native_success": true,
+          "matched_hold_contact_effect": "UNKNOWN_NO_MATCHED_HOLD",
+          "response": [
+            {
+              "probe": "forward_tap",
+              "response": {
+                "displacement_bins_5mm": [
+                  1,
+                  -1,
+                  0
+                ],
+                "arm_motion_bin_0_01rad": 4,
+                "peak_arm_speed_bin_0_1rad_s": 7,
+                "timestamp": 3.15,
+                "physical_effect_qualified": false,
+                "interpretation": "OBSERVED_KINEMATIC_RESPONSE_NOT_A_CONTACT_FORCE_OR_SUCCESS_LABEL"
+              },
+              "start_control": 53,
+              "end_control": 63
+            },
+            {
+              "probe": "lateral_sweep",
+              "response": {
+                "displacement_bins_5mm": [
+                  -1,
+                  1,
+                  -1
+                ],
+                "arm_motion_bin_0_01rad": 1,
+                "peak_arm_speed_bin_0_1rad_s": 0,
+                "timestamp": 3.65,
+                "physical_effect_qualified": false,
+                "interpretation": "OBSERVED_KINEMATIC_RESPONSE_NOT_A_CONTACT_FORCE_OR_SUCCESS_LABEL"
+              },
+              "start_control": 63,
+              "end_control": 73
+            }
+          ]
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "forward_tap"
+          ],
+          "probe_delay_ticks": 10,
+          "raw_path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/ea33da26d446acf042367b18287ac98013c9da241d731430fcb30db2c6d723bb.json.xz",
+          "raw_sha256": "4db8b53b72c10b44190d0fb0a07e76a989ea820e10c1ba8b85c00f29847e27b6",
+          "probe_contact_ticks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "contact_tick_count": 10,
+          "object_displacement_m": 0.008251736504640481,
+          "tcp_displacement_m": 0.00821168869696752,
+          "sampled_probe_allowed": true,
+          "macro_deadline_native_success": true,
+          "matched_hold_contact_effect": "UNKNOWN_NO_MATCHED_HOLD",
+          "response": [
+            {
+              "probe": "forward_tap",
+              "response": {
+                "displacement_bins_5mm": [
+                  1,
+                  -1,
+                  0
+                ],
+                "arm_motion_bin_0_01rad": 4,
+                "peak_arm_speed_bin_0_1rad_s": 7,
+                "timestamp": 3.15,
+                "physical_effect_qualified": false,
+                "interpretation": "OBSERVED_KINEMATIC_RESPONSE_NOT_A_CONTACT_FORCE_OR_SUCCESS_LABEL"
+              },
+              "start_control": 53,
+              "end_control": 63
+            }
+          ]
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "forward_tap",
+            "forward_tap"
+          ],
+          "probe_delay_ticks": 20,
+          "raw_path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/b618178d3fec8101a1e3f339b4af9624eb558a3a2bca2085092be04df596f703.json.xz",
+          "raw_sha256": "1e1e487cddde69e9dcdd59d58060ac5ba217e6b3881b6d71cec60bc23e9eab9f",
+          "probe_contact_ticks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "contact_tick_count": 20,
+          "object_displacement_m": 0.01600021774481805,
+          "tcp_displacement_m": 0.015956234760005194,
+          "sampled_probe_allowed": true,
+          "macro_deadline_native_success": true,
+          "matched_hold_contact_effect": "UNKNOWN_NO_MATCHED_HOLD",
+          "response": [
+            {
+              "probe": "forward_tap",
+              "response": {
+                "displacement_bins_5mm": [
+                  1,
+                  -1,
+                  0
+                ],
+                "arm_motion_bin_0_01rad": 4,
+                "peak_arm_speed_bin_0_1rad_s": 7,
+                "timestamp": 3.15,
+                "physical_effect_qualified": false,
+                "interpretation": "OBSERVED_KINEMATIC_RESPONSE_NOT_A_CONTACT_FORCE_OR_SUCCESS_LABEL"
+              },
+              "start_control": 53,
+              "end_control": 63
+            },
+            {
+              "probe": "forward_tap",
+              "response": {
+                "displacement_bins_5mm": [
+                  1,
+                  -1,
+                  -1
+                ],
+                "arm_motion_bin_0_01rad": 4,
+                "peak_arm_speed_bin_0_1rad_s": 1,
+                "timestamp": 3.65,
+                "physical_effect_qualified": false,
+                "interpretation": "OBSERVED_KINEMATIC_RESPONSE_NOT_A_CONTACT_FORCE_OR_SUCCESS_LABEL"
+              },
+              "start_control": 63,
+              "end_control": 73
+            }
+          ]
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "lateral_sweep"
+          ],
+          "probe_delay_ticks": 10,
+          "raw_path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/bc96844368ffba56246e10f2e2bb00751cff7690aa6a4fa966cb1d12034bcac7.json.xz",
+          "raw_sha256": "e5354e04253e143f6b242c1bf224ab497e8e84f40cbf77f0bb28d106a65c5ed0",
+          "probe_contact_ticks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "contact_tick_count": 10,
+          "object_displacement_m": 0.003529296511791677,
+          "tcp_displacement_m": 0.007703894631859276,
+          "sampled_probe_allowed": true,
+          "macro_deadline_native_success": true,
+          "matched_hold_contact_effect": "UNKNOWN_NO_MATCHED_HOLD",
+          "response": [
+            {
+              "probe": "lateral_sweep",
+              "response": {
+                "displacement_bins_5mm": [
+                  0,
+                  1,
+                  0
+                ],
+                "arm_motion_bin_0_01rad": 1,
+                "peak_arm_speed_bin_0_1rad_s": 7,
+                "timestamp": 3.15,
+                "physical_effect_qualified": false,
+                "interpretation": "OBSERVED_KINEMATIC_RESPONSE_NOT_A_CONTACT_FORCE_OR_SUCCESS_LABEL"
+              },
+              "start_control": 53,
+              "end_control": 63
+            }
+          ]
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "lateral_sweep",
+            "lateral_sweep"
+          ],
+          "probe_delay_ticks": 20,
+          "raw_path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/5043dc16b2076429ea61594ac29875dafc5e115c639afae975ef67149f3ed584.json.xz",
+          "raw_sha256": "680130a3a34445723b1acc8bd079f9ae1f76afa485a8e3c64319a5fd9e6f569f",
+          "probe_contact_ticks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "contact_tick_count": 20,
+          "object_displacement_m": 0.0035292813267794104,
+          "tcp_displacement_m": 0.015523313989366664,
+          "sampled_probe_allowed": true,
+          "macro_deadline_native_success": true,
+          "matched_hold_contact_effect": "UNKNOWN_NO_MATCHED_HOLD",
+          "response": [
+            {
+              "probe": "lateral_sweep",
+              "response": {
+                "displacement_bins_5mm": [
+                  0,
+                  1,
+                  0
+                ],
+                "arm_motion_bin_0_01rad": 1,
+                "peak_arm_speed_bin_0_1rad_s": 7,
+                "timestamp": 3.15,
+                "physical_effect_qualified": false,
+                "interpretation": "OBSERVED_KINEMATIC_RESPONSE_NOT_A_CONTACT_FORCE_OR_SUCCESS_LABEL"
+              },
+              "start_control": 53,
+              "end_control": 63
+            },
+            {
+              "probe": "lateral_sweep",
+              "response": {
+                "displacement_bins_5mm": [
+                  0,
+                  1,
+                  0
+                ],
+                "arm_motion_bin_0_01rad": 1,
+                "peak_arm_speed_bin_0_1rad_s": 0,
+                "timestamp": 3.65,
+                "physical_effect_qualified": false,
+                "interpretation": "OBSERVED_KINEMATIC_RESPONSE_NOT_A_CONTACT_FORCE_OR_SUCCESS_LABEL"
+              },
+              "start_control": 63,
+              "end_control": 73
+            }
+          ]
+        },
+        {
+          "parent_index": 0,
+          "history": [
+            "lateral_sweep",
+            "forward_tap"
+          ],
+          "probe_delay_ticks": 20,
+          "raw_path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/31af1c7eef6d359b9092566e66a5d5b9b0cd97974d0a3bc19ec093a373a46e70.json.xz",
+          "raw_sha256": "23548c4e25ff921a4bf93f66e8c03317e03eef93b18dae88fb426cb9bfdb2d41",
+          "probe_contact_ticks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "contact_tick_count": 20,
+          "object_displacement_m": 0.008393367328789914,
+          "tcp_displacement_m": 0.011250971907767658,
+          "sampled_probe_allowed": true,
+          "macro_deadline_native_success": true,
+          "matched_hold_contact_effect": "UNKNOWN_NO_MATCHED_HOLD",
+          "response": [
+            {
+              "probe": "lateral_sweep",
+              "response": {
+                "displacement_bins_5mm": [
+                  0,
+                  1,
+                  0
+                ],
+                "arm_motion_bin_0_01rad": 1,
+                "peak_arm_speed_bin_0_1rad_s": 7,
+                "timestamp": 3.15,
+                "physical_effect_qualified": false,
+                "interpretation": "OBSERVED_KINEMATIC_RESPONSE_NOT_A_CONTACT_FORCE_OR_SUCCESS_LABEL"
+              },
+              "start_control": 53,
+              "end_control": 63
+            },
+            {
+              "probe": "forward_tap",
+              "response": {
+                "displacement_bins_5mm": [
+                  1,
+                  -1,
+                  -1
+                ],
+                "arm_motion_bin_0_01rad": 4,
+                "peak_arm_speed_bin_0_1rad_s": 1,
+                "timestamp": 3.65,
+                "physical_effect_qualified": false,
+                "interpretation": "OBSERVED_KINEMATIC_RESPONSE_NOT_A_CONTACT_FORCE_OR_SUCCESS_LABEL"
+              },
+              "start_control": 63,
+              "end_control": 73
+            }
+          ]
+        }
+      ],
+      "neutral_hold_returned_rows": 0,
+      "K_hold": "UNKNOWN_MISSING",
+      "K_probe": "NOT_IDENTIFIED_AGAINST_MATCHED_HOLD",
+      "erasure_count": null,
+      "creation_count": null,
+      "lost_or_preserved_membership_vs_hold": null,
+      "matched_eligible_parent_probe_denominator": 0,
+      "interrupted_rows": [
+        {
+          "parent": {
+            "task": "PushCube-v1",
+            "phase": "technical_pilot",
+            "index": 0,
+            "seed": 2004100000,
+            "parent_id": "1abfd02f49137f01dbbbb43e0c3397b14ee32e1dcf8629aac45c917dda8f5392",
+            "condition": "nominal"
+          },
+          "history": [
+            "lateral_sweep",
+            "lateral_sweep"
+          ],
+          "endpoint": "recover",
+          "repeat": 0,
+          "row_id": "d3e651f52635d0432adfeee3c268cef4d81ebe6f15a1f69d2513a6fe9f1043dc",
+          "delay_ticks": 20,
+          "macro_ticks": 70,
+          "deadline_ticks": 90
+        }
+      ],
+      "complete_trace_frame_count": 5472,
+      "known_native_controls": 5434,
+      "known_probe_control_count": 520,
+      "native_controls_unreturned_row_range": [
+        0,
+        143
+      ],
+      "measured_completed_episode_wall_seconds": 63.19469370905426,
+      "actual_total_worker_wall_seconds": "NOT_EXACTLY_MEASURED_NATIVE_FINALIZER_DID_NOT_RUN",
+      "conservative_total_worker_wall_upper_seconds": 438.9170639514923,
+      "startup_seconds": [
+        0.43514111699187197,
+        0.4561950529750902,
+        0.42021358499187045,
+        0.39962909699534066,
+        0.40281516799586825,
+        0.3843567569856532,
+        0.4260522059921641,
+        0.44332150599802844,
+        0.4521229070087429,
+        0.37915880599757656,
+        5.04051031099516,
+        0.4014970540010836,
+        0.4292098320147488,
+        0.4326537779998034,
+        0.45966040799976327,
+        0.48999886398087256,
+        0.41275789702194743,
+        0.4350079619907774,
+        0.4776547509827651,
+        0.47996545597561635,
+        0.4002523859962821,
+        0.45082518199342303,
+        0.44603967797593214,
+        0.3888602160150185,
+        0.3843653019866906,
+        0.42672078200848773,
+        0.47732849800377153,
+        0.4049983189906925,
+        0.4635442449944094,
+        0.4299750610080082,
+        0.4175467879977077,
+        0.40928041000734083,
+        0.4148091889801435,
+        0.40801593198557384,
+        0.4665005200076848,
+        0.4519052069808822,
+        0.41818434998276643,
+        0.40648785402299836
+      ],
+      "native_process_exit": {
+        "session_id": 44698,
+        "exit_code": 139,
+        "shell_signal_interpretation": "SIGSEGV(11), no native backtrace or39th-row returned trace available",
+        "console_birth_epoch": 1795098766,
+        "exit_observed_no_later_than_epoch": 1795099204.917064,
+        "stage": "UNKNOWN_AFTER_ROW_STARTED_JOURNAL",
+        "restart_after_failure": false,
+        "source_failure_stop_rule_applied": true
+      },
+      "raw_compressed_bytes": 5617937,
+      "source_scope": "Finite/control/repeat checks passed only for38 returned rows; native worker crash blocks the fixed parent and family. No old calibration transfer.",
+      "new_discovery_calibration_test_parents": 0
+    }
+  },
+  "errors": [],
+  "supersedes_raw_only_counters": "independent_trace_audit/summary.json counts38 returned files and no invocation finalizer; it does not count the39th started journal or measure worker time. This forensic ledger is authoritative for attempts, missingness and cost.",
+  "causal_mechanism_result": "UNRESOLVED_MISSING_MATCHED_NEUTRAL_HOLDS_NOT_A_NEGATIVE_ERASURE_RESULT",
+  "root_cause": "UNDETERMINED_NATIVE_SIGSEGV; no stack/core/checkpoint trace returned for39th row. No new physics for diagnosis or repair.",
+  "original_manuscript_and_evidence_edit_count": 0,
+  "new_full_stage2_parents": 0
+}

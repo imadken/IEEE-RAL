@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "source_complete": true,
+  "root_available": true,
+  "retained_frames": 150,
+  "independent_goal_recomputation": true,
+  "independent_eligibility_recomputation": true,
+  "root_contact_N": 3.3383965492248535,
+  "root_grasp": true
+}

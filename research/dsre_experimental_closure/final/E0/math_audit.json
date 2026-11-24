@@ -1,0 +1,118 @@
+{
+  "passed": true,
+  "exact_marginal_cases": 1681,
+  "paired_refinement_cases": 128,
+  "binomial_coverage_regressions": 1476,
+  "maximum_error": 2.220446049250313e-16,
+  "analytical_same_marginal_worlds": {
+    "type": "ANALYTICAL_NOT_ROBOT_EPISODES",
+    "q": [
+      [
+        0.4,
+        0.2,
+        0,
+        0.4
+      ],
+      [
+        0,
+        0.6,
+        0.4,
+        0
+      ]
+    ],
+    "p0": 0.4,
+    "p1": 0.6,
+    "gain": 0.2,
+    "harms": [
+      0,
+      0.4
+    ]
+  },
+  "naive_independence_false_certificate": {
+    "type": "ANALYTICAL",
+    "p0": 0.2,
+    "p1": 0.6,
+    "assumed_harm": 0.08,
+    "admissible_harm": 0.2,
+    "world": [
+      0.2,
+      0.6,
+      0.2,
+      0.0
+    ]
+  },
+  "cellwise_sufficiency_not_necessity": {
+    "type": "ANALYTICAL",
+    "component_marginals": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "component_q": [
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "mixture_q": [
+      0,
+      0.5,
+      0,
+      0.5
+    ],
+    "fixed_mixture": [
+      0.5,
+      0.5
+    ],
+    "pooled_gain": 0.5,
+    "pooled_harm": 0,
+    "component_1_gain": 0,
+    "conclusion": "The frozen all-leaf criterion rejects an empty conjunction despite a qualifying fixed-weight union. Minimum means minimum in the registered cellwise grammar, not universal population-average necessity."
+  },
+  "scope_subgroup_counterexample": {
+    "type": "ANALYTICAL",
+    "subgroup_mass": 0.1,
+    "subgroup_harm": 0.8,
+    "remaining_harm": 0,
+    "parent_harm": 0.08,
+    "subgroup_q": [
+      0.2,
+      0.0,
+      0.8,
+      0.0
+    ],
+    "remaining_q": [
+      0.7,
+      0.3,
+      0.0,
+      0.0
+    ],
+    "parent_q": [
+      0.65,
+      0.27,
+      0.08000000000000002,
+      0.0
+    ],
+    "parent_useful_log_qualified": true,
+    "scope": "An entirely admissible whole-cell population passes both primary constraints while its selected subgroup violates both"
+  },
+  "expected_fail_closed_guards": {
+    "confounded_observational": "IDENTIFICATION_ASSUMPTION_UNSUPPORTED",
+    "no_overlap": "NO_OVERLAP",
+    "unqualified_pair": "COUNTERPART_SOURCE_MISMATCH",
+    "inconsistent": "INCONSISTENT_BOUNDS"
+  }
+}

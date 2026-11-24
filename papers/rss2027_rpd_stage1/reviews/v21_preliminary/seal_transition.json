@@ -1,0 +1,6 @@
+{
+  "prephysics_commit": "6490f9a",
+  "prephysics_seal_preserved": "SHA256SUMS.prephysics",
+  "reason": "Preservation helper now recognizes two new authorized offline audit/report source files. Editorial/manuscript/figure/template outputs unchanged from the prephysics integration.",
+  "old_evidence_seals_untouched": true
+}

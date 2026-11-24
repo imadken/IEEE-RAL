@@ -1,0 +1,34 @@
+{
+  "example": "synthetic, not physical validation",
+  "results": [
+    {
+      "probe": "full_diagnostic",
+      "cost": 1,
+      "information_bits": 1.584962500721156,
+      "robust_recovery_after_probe": false,
+      "contingent_recoveries": {
+        "A": [
+          "retry"
+        ],
+        "B": [
+          "retry"
+        ],
+        "C": []
+      }
+    },
+    {
+      "probe": "coarse_safe",
+      "cost": 2,
+      "information_bits": 0.9182958340544896,
+      "robust_recovery_after_probe": true,
+      "contingent_recoveries": {
+        "left": [
+          "retry"
+        ],
+        "right": [
+          "realign"
+        ]
+      }
+    }
+  ]
+}

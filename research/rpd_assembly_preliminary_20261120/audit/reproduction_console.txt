@@ -1,0 +1,1 @@
+{"passed": true, "output": "research/rpd_assembly_preliminary_20261120/audit/reproduction", "new_physics": 0}

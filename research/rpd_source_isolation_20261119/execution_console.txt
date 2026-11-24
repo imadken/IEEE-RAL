@@ -1,0 +1,29 @@
+{"task": "PickCube-v1", "phase": "failed_row_replay", "replica": 0, "history": ["release_settle", "release_settle"], "endpoint": "recover", "returncode": 0, "wall_seconds": 17.369}
+{"task": "PickCube-v1", "phase": "failed_row_replay", "replica": 1, "history": ["release_settle", "release_settle"], "endpoint": "recover", "returncode": 0, "wall_seconds": 17.216}
+{"task": "PushCube-v1", "phase": "failed_row_replay", "replica": 0, "history": ["lateral_sweep", "lateral_sweep"], "endpoint": "recover", "returncode": 0, "wall_seconds": 16.768}
+{"task": "PushCube-v1", "phase": "failed_row_replay", "replica": 1, "history": ["lateral_sweep", "lateral_sweep"], "endpoint": "recover", "returncode": 0, "wall_seconds": 16.413}
+GLOBAL_GATE True
+{"task": "PickCube-v1", "phase": "neutral_control", "replica": 0, "history": ["neutral10"], "endpoint": "continue", "returncode": 0, "wall_seconds": 17.021}
+{"task": "PickCube-v1", "phase": "neutral_control", "replica": 1, "history": ["neutral10"], "endpoint": "continue", "returncode": 0, "wall_seconds": 17.922}
+{"task": "PickCube-v1", "phase": "neutral_control", "replica": 0, "history": ["neutral10"], "endpoint": "recover", "returncode": 0, "wall_seconds": 17.369}
+{"task": "PickCube-v1", "phase": "neutral_control", "replica": 1, "history": ["neutral10"], "endpoint": "recover", "returncode": 0, "wall_seconds": 17.873}
+{"task": "PickCube-v1", "phase": "neutral_control", "replica": 0, "history": ["neutral10"], "endpoint": "STOP", "returncode": 0, "wall_seconds": 17.218}
+{"task": "PickCube-v1", "phase": "neutral_control", "replica": 1, "history": ["neutral10"], "endpoint": "STOP", "returncode": 0, "wall_seconds": 17.416}
+{"task": "PickCube-v1", "phase": "neutral_control", "replica": 0, "history": ["neutral20"], "endpoint": "continue", "returncode": 0, "wall_seconds": 17.366}
+{"task": "PickCube-v1", "phase": "neutral_control", "replica": 1, "history": ["neutral20"], "endpoint": "continue", "returncode": 0, "wall_seconds": 16.861}
+{"task": "PickCube-v1", "phase": "neutral_control", "replica": 0, "history": ["neutral20"], "endpoint": "recover", "returncode": 0, "wall_seconds": 17.216}
+{"task": "PickCube-v1", "phase": "neutral_control", "replica": 1, "history": ["neutral20"], "endpoint": "recover", "returncode": 0, "wall_seconds": 16.919}
+{"task": "PickCube-v1", "phase": "neutral_control", "replica": 0, "history": ["neutral20"], "endpoint": "STOP", "returncode": 0, "wall_seconds": 16.869}
+{"task": "PickCube-v1", "phase": "neutral_control", "replica": 1, "history": ["neutral20"], "endpoint": "STOP", "returncode": 0, "wall_seconds": 16.973}
+{"task": "PushCube-v1", "phase": "neutral_control", "replica": 0, "history": ["neutral10"], "endpoint": "continue", "returncode": 0, "wall_seconds": 16.114}
+{"task": "PushCube-v1", "phase": "neutral_control", "replica": 1, "history": ["neutral10"], "endpoint": "continue", "returncode": 0, "wall_seconds": 15.657}
+{"task": "PushCube-v1", "phase": "neutral_control", "replica": 0, "history": ["neutral10"], "endpoint": "recover", "returncode": 0, "wall_seconds": 15.763}
+{"task": "PushCube-v1", "phase": "neutral_control", "replica": 1, "history": ["neutral10"], "endpoint": "recover", "returncode": 0, "wall_seconds": 15.813}
+{"task": "PushCube-v1", "phase": "neutral_control", "replica": 0, "history": ["neutral10"], "endpoint": "STOP", "returncode": 0, "wall_seconds": 15.41}
+{"task": "PushCube-v1", "phase": "neutral_control", "replica": 1, "history": ["neutral10"], "endpoint": "STOP", "returncode": 0, "wall_seconds": 15.566}
+{"task": "PushCube-v1", "phase": "neutral_control", "replica": 0, "history": ["neutral20"], "endpoint": "continue", "returncode": 0, "wall_seconds": 16.015}
+{"task": "PushCube-v1", "phase": "neutral_control", "replica": 1, "history": ["neutral20"], "endpoint": "continue", "returncode": 0, "wall_seconds": 15.908}
+{"task": "PushCube-v1", "phase": "neutral_control", "replica": 0, "history": ["neutral20"], "endpoint": "recover", "returncode": 0, "wall_seconds": 15.413}
+{"task": "PushCube-v1", "phase": "neutral_control", "replica": 1, "history": ["neutral20"], "endpoint": "recover", "returncode": 0, "wall_seconds": 15.36}
+{"task": "PushCube-v1", "phase": "neutral_control", "replica": 0, "history": ["neutral20"], "endpoint": "STOP", "returncode": 0, "wall_seconds": 15.509}
+{"task": "PushCube-v1", "phase": "neutral_control", "replica": 1, "history": ["neutral20"], "endpoint": "STOP", "returncode": 0, "wall_seconds": 15.764}

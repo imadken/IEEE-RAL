@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "fresh_output_directory": true,
+  "all_deterministic_results_equal": true,
+  "integer_certificate_sha256": "442c925cef62690ad4a84137e943792ff18b08007604d76b4c496c48e6d7ff9c",
+  "exact_arithmetic": true,
+  "physics_episodes": 0
+}

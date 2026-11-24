@@ -1,0 +1,35 @@
+{
+  "claims": [
+    {
+      "claim": "Limited isolated source completion of fixed rows; no global stability or crash cause",
+      "sources": [
+        "research/rpd_source_isolation_20261119/four_row_gate.json",
+        "research/rpd_source_isolation_20261119/final_audit/summary.json"
+      ]
+    },
+    {
+      "claim": "Actual terminal/matched technical parent0 outcomes, not independent H1 confirmation",
+      "sources": [
+        "research/rpd_source_isolation_20261119/technical_matches.json",
+        "research/rpd_source_isolation_20261119/final_audit/summary.json"
+      ]
+    },
+    {
+      "claim": "H1/H2 untested; locked matched-joint-event methodology and inactive Stage2 charter",
+      "sources": [
+        "docs/RPD_SOURCE_ISOLATION_AND_STAGE1_HANDOFF_20261119.md",
+        "research/rpd_source_isolation_20261119/supervisor/RPD_RSS2027_STAGE1_METHOD_CHARTER_LOCK_20261119.md"
+      ]
+    }
+  ],
+  "sha256": {
+    "research/rpd_source_isolation_20261119/registration.json": "a2c043fd09b4756f8bb8f7ab98fa1f4b163333349696fe96baabb7611a6c10d8",
+    "research/rpd_source_isolation_20261119/environment_and_inputs.json": "c69853b032fca2b05323be53a7719e57e892494321e9620e2f463f3aeda876d4",
+    "research/rpd_source_isolation_20261119/four_row_gate.json": "f89778ec1dcc8ad03afb92032ba3f02b84cac39bfe4201ae1bb888274b1c8eb7",
+    "research/rpd_source_isolation_20261119/final_audit/summary.json": "ebe53e3acb19ba0a2b21f1774ed5750c11b80c2dd8352b6d378006f2d2082a98",
+    "research/rpd_source_isolation_20261119/technical_matches.json": "eff7fe5b8a21312466e05cf570f2059e2ee6453236aa2c4f9b7bb357b65ef89c",
+    "research/rpd_source_isolation_20261119/execution_complete.json": "8d6dea05f0fef2f52f8f52ce468ec9dec8c0b1b396e1d12e066db1ea7a32baa5",
+    "docs/RPD_SOURCE_ISOLATION_AND_STAGE1_HANDOFF_20261119.md": "106028b9826e13d87db0e72f4b07168f64932abe94175cb0594ec742ec41fd8c"
+  },
+  "raw_per_job_records": "All process receipts, native traces and logs individually covered by final integrity manifest"
+}

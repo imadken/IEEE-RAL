@@ -1,0 +1,35 @@
+{
+  "scope": "V2 manuscript, static source review and offline analytical/source audits only",
+  "new_physics_episodes": 0,
+  "new_population_parents": 0,
+  "new_robot_training_runs": 0,
+  "new_python_dependencies": 0,
+  "simulator_source_upgrades": 0,
+  "existing_technical_source_episodes_reaudited": 28,
+  "previously_inspected_parents_per_domain": 1,
+  "original_trace_references_verified": 64,
+  "exhaustive_nominal_models": 1024,
+  "elapsed_wall_seconds_at_receipt": 2284.6650500297546,
+  "new_package_bytes_before_final_seal": 3234076,
+  "source_qualification_status": "ASSEMBLY_UNQUALIFIED_PRECISE_BINDINGS_DISCLOSED",
+  "H1": "UNTESTED",
+  "H2": "UNTESTED",
+  "source_workers_running": 0,
+  "template_font_assets_retrieved": [
+    "cmsy5.pfb",
+    "cmr5.pfb"
+  ],
+  "prospective_branch_costs": {
+    "discovery": 384,
+    "matched_confirmation": 3072,
+    "frozen_direct_full_deadline": 512,
+    "base_excluding_source_and_parity": 3968,
+    "deadline_sensitivity": 384,
+    "extra_existing_skill_conditional": 192,
+    "maximum_listed_total": 4544
+  },
+  "prospective_worker_hours": "NOT_IDENTIFIED_FROM_UNQUALIFIED_ASSEMBLY_SOURCE; do not extrapolate cube timings",
+  "supervisor_archive_sha256": "25fd623d585458a5a2a825ea8f6387ef0e2321cc2e0d1fd0a7d59855bce1ea1f",
+  "authority_import_byte_exact": true,
+  "push_or_submit": false
+}

@@ -1,0 +1,12 @@
+{
+  "candidate": {
+    "candidate_id": "RPD-V45-source-development-20261121/nominal/0",
+    "phase": "nominal_development",
+    "index": 0,
+    "native_geometry_seed": 702360274,
+    "fault_seed_sha256": "ece0b55d092a49d5add1df83902475323ea050d0aee3f77240e5e318b5d341c7"
+  },
+  "intervention": "direct",
+  "action": "a0",
+  "repeat": 1
+}

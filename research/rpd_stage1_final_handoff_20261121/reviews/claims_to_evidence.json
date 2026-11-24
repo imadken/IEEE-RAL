@@ -1,0 +1,543 @@
+{
+  "version": "V45 reconstructed from suppliedV44PDF",
+  "sealed_historical_source_commit": "280f821cdfb9e3b714bceccd6fa053bf45f9f28c",
+  "claims": [
+    {
+      "id": "M01",
+      "claim": "K,Common and existence of a response-contingent recovery",
+      "status": "VERIFIED_MODEL_PROPERTY",
+      "sources": [
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/inputs/original_v44.pdf",
+          "sha256": "01407b597f0cde0b9eb103d33d004c9d0ae53aea98a965a11a587e57ca93beaf"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/body.tex",
+          "sha256": "78eb9c3b87e1fa93486422ee2b3ad8a46f50217f69f639d23fb5089a2851fcb2"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/reviews/finite_preflight.json",
+          "sha256": "a11e475d4b79e37d944f9504635b70b25ff659292f0f227acaba2d7da9e663f4"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/reproduce/verify_finite.py",
+          "sha256": "054876d1c06ef144929cbf8b8abc534032d06ad78aeddea5a282dca321878b3d"
+        }
+      ],
+      "scope": "Complete declared deterministic model;8640 exhaustive oracle cases, not a universal physical guarantee"
+    },
+    {
+      "id": "M02",
+      "claim": "Physical successor must precede recovery and robust support differs from success probability",
+      "status": "VERIFIED_FORMAL_SCOPE",
+      "sources": [
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/inputs/original_v44.pdf",
+          "sha256": "01407b597f0cde0b9eb103d33d004c9d0ae53aea98a965a11a587e57ca93beaf"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/body.tex",
+          "sha256": "78eb9c3b87e1fa93486422ee2b3ad8a46f50217f69f639d23fb5089a2851fcb2"
+        }
+      ],
+      "scope": "State includes controller,RNG and clock; no implicit reset"
+    },
+    {
+      "id": "M03",
+      "claim": "Expected-success RPD equals a same-objective contingent planner; no solver advantage",
+      "status": "VERIFIED_MODEL_EQUIVALENCE",
+      "sources": [
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/inputs/original_v44.pdf",
+          "sha256": "01407b597f0cde0b9eb103d33d004c9d0ae53aea98a965a11a587e57ca93beaf"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/body.tex",
+          "sha256": "78eb9c3b87e1fa93486422ee2b3ad8a46f50217f69f639d23fb5089a2851fcb2"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/reviews/finite_preflight.json",
+          "sha256": "a11e475d4b79e37d944f9504635b70b25ff659292f0f227acaba2d7da9e663f4"
+        }
+      ],
+      "scope": "Declared model, observations, action catalogue and ties"
+    },
+    {
+      "id": "M04",
+      "claim": "L requires nonempty hold K and empty probe K; J adds probe/hold compliance",
+      "status": "DEFINED_ESTIMAND",
+      "sources": [
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/inputs/original_v44.pdf",
+          "sha256": "01407b597f0cde0b9eb103d33d004c9d0ae53aea98a965a11a587e57ca93beaf"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/body.tex",
+          "sha256": "78eb9c3b87e1fa93486422ee2b3ad8a46f50217f69f639d23fb5089a2851fcb2"
+        }
+      ],
+      "scope": "Goal-based K differs from compliant-recovery K; fixed deadline/catalogue"
+    },
+    {
+      "id": "M05",
+      "claim": "qIG all eligible parents; direct/STOP zero erasure; rhoIG,rhoH,qp and conditional rate",
+      "status": "PROSPECTIVE_DEFINITION",
+      "sources": [
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/body.tex",
+          "sha256": "78eb9c3b87e1fa93486422ee2b3ad8a46f50217f69f639d23fb5089a2851fcb2"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/supervisor/CODEX_RPD_STAGE1_FINAL_FREEZE_EXPERIMENTS_AND_RETURN_BUNDLE_20261121.md",
+          "sha256": "fc8c0a7dc0063c7c83f8e886acda646baa48738e763d29a03513e563e8901818"
+        }
+      ],
+      "scope": "No terminal label imputation; selector and fixed-probe populations distinguished"
+    },
+    {
+      "id": "M06",
+      "claim": "H1 q>.10 AND eta>.50, log-score gains over root and hold exceed ln1.2",
+      "status": "PROSPECTIVE_HYPOTHESIS",
+      "sources": [
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/inputs/original_v44.pdf",
+          "sha256": "01407b597f0cde0b9eb103d33d004c9d0ae53aea98a965a11a587e57ca93beaf"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/body.tex",
+          "sha256": "78eb9c3b87e1fa93486422ee2b3ad8a46f50217f69f639d23fb5089a2851fcb2"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/supervisor/CODEX_RPD_STAGE1_FINAL_FREEZE_EXPERIMENTS_AND_RETURN_BUNDLE_20261121.md",
+          "sha256": "fc8c0a7dc0063c7c83f8e886acda646baa48738e763d29a03513e563e8901818"
+        }
+      ],
+      "scope": "Same erasure cases; eta undefined with zero erasures, scores are not universal mutual information"
+    },
+    {
+      "id": "M07",
+      "claim": "H2 completion>.05 and violation increase<.02",
+      "status": "PROSPECTIVE_HYPOTHESIS",
+      "sources": [
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/inputs/original_v44.pdf",
+          "sha256": "01407b597f0cde0b9eb103d33d004c9d0ae53aea98a965a11a587e57ca93beaf"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/body.tex",
+          "sha256": "78eb9c3b87e1fa93486422ee2b3ad8a46f50217f69f639d23fb5089a2851fcb2"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/supervisor/CODEX_RPD_STAGE1_FINAL_FREEZE_EXPERIMENTS_AND_RETURN_BUNDLE_20261121.md",
+          "sha256": "fc8c0a7dc0063c7c83f8e886acda646baa48738e763d29a03513e563e8901818"
+        }
+      ],
+      "scope": "Independent matched parents, entire post-root path"
+    },
+    {
+      "id": "N01",
+      "claim": "1024-parent score critical-2.2 type-I upper.023485662185796",
+      "status": "VERIFIED_EXACT_INTEGER_CERTIFICATE",
+      "sources": [
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/body.tex",
+          "sha256": "78eb9c3b87e1fa93486422ee2b3ad8a46f50217f69f639d23fb5089a2851fcb2"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/reviews/statistical_preflight.json",
+          "sha256": "76ae47c4db31b018d9de39dbcc647824ce2afcc18d71a7e6ab8b3faf1214ad24"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/reviews/bernstein_integer_certificate.json",
+          "sha256": "442c925cef62690ad4a84137e943792ff18b08007604d76b4c496c48e6d7ff9c"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/reproduce/statistical_preflight.py",
+          "sha256": "c9ed0c698178d9384dcae135ba7015726d7189ce41dcf7298683c30760cbf52c"
+        }
+      ],
+      "scope": "Conservative continuum upper bound; valid sampling and n1024 only"
+    },
+    {
+      "id": "N02",
+      "claim": "27 rational trinomial/Bernstein oracle equalities",
+      "status": "VERIFIED_INDEPENDENT_ORACLE",
+      "sources": [
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/reviews/statistical_preflight.json",
+          "sha256": "76ae47c4db31b018d9de39dbcc647824ce2afcc18d71a7e6ab8b3faf1214ad24"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/reproduce/statistical_preflight.py",
+          "sha256": "c9ed0c698178d9384dcae135ba7015726d7189ce41dcf7298683c30760cbf52c"
+        }
+      ],
+      "scope": "9 n/critical settings at3 interior t each; not1024-episode physics"
+    },
+    {
+      "id": "N03",
+      "claim": "123 erasures; zero-event CP upper.003595940406834479",
+      "status": "VERIFIED_DESIGN_CALCULATION",
+      "sources": [
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/reviews/statistical_preflight.json",
+          "sha256": "76ae47c4db31b018d9de39dbcc647824ce2afcc18d71a7e6ab8b3faf1214ad24"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/body.tex",
+          "sha256": "78eb9c3b87e1fa93486422ee2b3ad8a46f50217f69f639d23fb5089a2851fcb2"
+        }
+      ],
+      "scope": "n1024, alpha.025; not an observed erasure count"
+    },
+    {
+      "id": "N04",
+      "claim": "H1 joint power.9974005 and H2.9925748/.9637414, joint>=.9563162",
+      "status": "VERIFIED_HYPOTHETICAL_POWER",
+      "sources": [
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/reviews/statistical_preflight.json",
+          "sha256": "76ae47c4db31b018d9de39dbcc647824ce2afcc18d71a7e6ab8b3faf1214ad24"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/body.tex",
+          "sha256": "78eb9c3b87e1fa93486422ee2b3ad8a46f50217f69f639d23fb5089a2851fcb2"
+        }
+      ],
+      "scope": "q.15,eta.8,rU.20,deltaU.12,rC.025,deltaC0; actual alternatives unknown"
+    },
+    {
+      "id": "N05",
+      "claim": "116/128 known-signal threshold CP lower.85253186",
+      "status": "VERIFIED_CRITERION_NOT_PIPELINE",
+      "sources": [
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/reviews/statistical_preflight.json",
+          "sha256": "76ae47c4db31b018d9de39dbcc647824ce2afcc18d71a7e6ab8b3faf1214ad24"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/body.tex",
+          "sha256": "78eb9c3b87e1fa93486422ee2b3ad8a46f50217f69f639d23fb5089a2851fcb2"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/supervisor/CODEX_RPD_STAGE1_FINAL_FREEZE_EXPERIMENTS_AND_RETURN_BUNDLE_20261121.md",
+          "sha256": "fc8c0a7dc0063c7c83f8e886acda646baa48738e763d29a03513e563e8901818"
+        }
+      ],
+      "scope": "One-sided95%; synthetic pipeline not executed"
+    },
+    {
+      "id": "N06",
+      "claim": "384discovery=256fit+128audit;64disjointdose;1024confirmation; caps768/128/2560",
+      "status": "PROSPECTIVE_FIXED_COUNTS",
+      "sources": [
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/supervisor/CODEX_RPD_STAGE1_FINAL_FREEZE_EXPERIMENTS_AND_RETURN_BUNDLE_20261121.md",
+          "sha256": "fc8c0a7dc0063c7c83f8e886acda646baa48738e763d29a03513e563e8901818"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/body.tex",
+          "sha256": "78eb9c3b87e1fa93486422ee2b3ad8a46f50217f69f639d23fb5089a2851fcb2"
+        }
+      ],
+      "scope": "No discovery,dose or confirmation cohort executed"
+    },
+    {
+      "id": "N07",
+      "claim": "11136base and11520with deadline terminal cost",
+      "status": "AUDIT_COMPLETION_OF_MENU",
+      "sources": [
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/body.tex",
+          "sha256": "78eb9c3b87e1fa93486422ee2b3ad8a46f50217f69f639d23fb5089a2851fcb2"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/reviews/V44_TO_V45_INTEGRATION.md",
+          "sha256": "48447996b0a41b950d171d21512cfd52e62d92a42a85e8125f90c0ebeb9d4f76"
+        }
+      ],
+      "scope": "384*8+64*14+1024*7 plus64*6; correction upward from unsupported public10112; not measured cost"
+    },
+    {
+      "id": "N08",
+      "claim": "CP completion product and finite-sample paired violation conjunction",
+      "status": "VERIFIED_STATISTICAL_METHOD",
+      "sources": [
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/body.tex",
+          "sha256": "78eb9c3b87e1fa93486422ee2b3ad8a46f50217f69f639d23fb5089a2851fcb2"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/reviews/statistical_preflight.json",
+          "sha256": "76ae47c4db31b018d9de39dbcc647824ce2afcc18d71a7e6ab8b3faf1214ad24"
+        }
+      ],
+      "scope": "Conditional frozen model and independent identically distributed eligible parents; not all-secondary family control"
+    },
+    {
+      "id": "N09",
+      "claim": "Other realized n must be calibrated before outcomes; missing-label envelopes",
+      "status": "PROSPECTIVE_VALIDITY_GUARDS",
+      "sources": [
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/body.tex",
+          "sha256": "78eb9c3b87e1fa93486422ee2b3ad8a46f50217f69f639d23fb5089a2851fcb2"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/supervisor/CODEX_RPD_STAGE1_FINAL_FREEZE_EXPERIMENTS_AND_RETURN_BUNDLE_20261121.md",
+          "sha256": "fc8c0a7dc0063c7c83f8e886acda646baa48738e763d29a03513e563e8901818"
+        }
+      ],
+      "scope": "No completed-prefix or outcome-dependent sample selection"
+    },
+    {
+      "id": "P01",
+      "claim": "Simulator/version/geometry/controller interface",
+      "status": "VERIFIED_SOURCE_FACTS_AND_PROPOSED_SETTINGS",
+      "sources": [
+        {
+          "path": "research/rpd_assembly_preliminary_20261120/registration_sourcefix02.json",
+          "sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/reproduce/source_fingerprint_check.json",
+          "sha256": "f7c1df6ff4954a2d88110bf891ad7fcce67532d2d3081343b186091e8fd1cde8"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/body.tex",
+          "sha256": "78eb9c3b87e1fa93486422ee2b3ad8a46f50217f69f639d23fb5089a2851fcb2"
+        }
+      ],
+      "scope": "Native identities unchanged; fault amplitudes, goals and envelopes are unqualified design choices"
+    },
+    {
+      "id": "P02",
+      "claim": "28root fields and23channels*10ticks, no evaluator privilege online",
+      "status": "VERIFIED_HISTORICAL_INTERFACE",
+      "sources": [
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/reproduce/fresh_trace_reproduction/independent_observation_boundary.json",
+          "sha256": "abd0972e523bde2883aaf338d42bacd8229f1474cba252f33d5798187e7aa0cc"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/body.tex",
+          "sha256": "78eb9c3b87e1fa93486422ee2b3ad8a46f50217f69f639d23fb5089a2851fcb2"
+        }
+      ],
+      "scope": "36450 existing frames checked; no final learned pipeline evaluated"
+    },
+    {
+      "id": "P03",
+      "claim": "0.5s hold/probes,4s deadline,two fixed macro policies and stable.25s goal",
+      "status": "PROSPECTIVE_DESIGN",
+      "sources": [
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/inputs/original_v44.pdf",
+          "sha256": "01407b597f0cde0b9eb103d33d004c9d0ae53aea98a965a11a587e57ca93beaf"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/body.tex",
+          "sha256": "78eb9c3b87e1fa93486422ee2b3ad8a46f50217f69f639d23fb5089a2851fcb2"
+        },
+        {
+          "path": "research/rpd_assembly_preliminary_20261120/registration_sourcefix02.json",
+          "sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73"
+        }
+      ],
+      "scope": "Corrective-source qualification remains necessary; original source code not altered"
+    },
+    {
+      "id": "P04",
+      "claim": "Gaussian codebook model, fitting-only CV, immutable root macro estimate",
+      "status": "DETERMINISTIC_PROPOSAL",
+      "sources": [
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/inputs/original_v44.pdf",
+          "sha256": "01407b597f0cde0b9eb103d33d004c9d0ae53aea98a965a11a587e57ca93beaf"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/body.tex",
+          "sha256": "78eb9c3b87e1fa93486422ee2b3ad8a46f50217f69f639d23fb5089a2851fcb2"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/reviews/V44_TO_V45_INTEGRATION.md",
+          "sha256": "48447996b0a41b950d171d21512cfd52e62d92a42a85e8125f90c0ebeb9d4f76"
+        }
+      ],
+      "scope": "No physical model/controller fit or calibrated safety claimed; operational details completed before outcomes"
+    },
+    {
+      "id": "P05",
+      "claim": "Newsource gate>=8eligible and>=6hold-recoverable among12newroots",
+      "status": "PROSPECTIVE_PREREQUISITE",
+      "sources": [
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/body.tex",
+          "sha256": "78eb9c3b87e1fa93486422ee2b3ad8a46f50217f69f639d23fb5089a2851fcb2"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/supervisor/CODEX_RPD_STAGE1_FINAL_FREEZE_EXPERIMENTS_AND_RETURN_BUNDLE_20261121.md",
+          "sha256": "fc8c0a7dc0063c7c83f8e886acda646baa48738e763d29a03513e563e8901818"
+        }
+      ],
+      "scope": "No erasure,real informativeness or positive policy effect gate"
+    },
+    {
+      "id": "E01",
+      "claim": "Historical12roots,7eligible,5ineligible,0unknown",
+      "status": "VERIFIED_HISTORICAL_OUTCOMES",
+      "sources": [
+        {
+          "path": "research/rpd_assembly_preliminary_20261120/audit/independent_summary.json",
+          "sha256": "7f7ac4dce9667a8359ea812e5128ae6a755d96c60a669ee7036c7296b2fb37f2"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/reproduce/fresh_trace_reproduction/clean_reproduction.json",
+          "sha256": "f53080a6f095c9e516215c96c6fb1ae00d5873cc2aaf1564e0384308bd021b09"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/body.tex",
+          "sha256": "78eb9c3b87e1fa93486422ee2b3ad8a46f50217f69f639d23fb5089a2851fcb2"
+        }
+      ],
+      "scope": "Technical qualification source, not H1/H2 independent cohort; source commit280f821cdfb9e3b714bceccd6fa053bf45f9f28c"
+    },
+    {
+      "id": "E02",
+      "claim": "49distinct terminal continuations,0goals,0whole-path compliant;14repeats",
+      "status": "VERIFIED_HISTORICAL_OUTCOMES",
+      "sources": [
+        {
+          "path": "research/rpd_assembly_preliminary_20261120/audit/terminal_measurements.json",
+          "sha256": "11633f8d23baa552e0e0ad46d4d1e1e8f24f014a1e495afa0621066599363f43"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/experiments/historical_source_preflight.json",
+          "sha256": "6cfab5eeeddf0058581c866896a37eddf56f51d6e2980758333e958c6db3f6da"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/reproduce/fresh_trace_reproduction/independent_full_trace_parity.json",
+          "sha256": "3aa9ef023d3f7572188c41151e9b5a68560a1173924a3358da7000efc428281f"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/body.tex",
+          "sha256": "78eb9c3b87e1fa93486422ee2b3ad8a46f50217f69f639d23fb5089a2851fcb2"
+        }
+      ],
+      "scope": "7technical parents, not49 independent samples; empty hold catalogue, no erasure conclusion"
+    },
+    {
+      "id": "E03",
+      "claim": "77attempts=75complete+2preserved source errors;914.070470worker seconds",
+      "status": "VERIFIED_HISTORICAL_RESOURCES",
+      "sources": [
+        {
+          "path": "research/rpd_assembly_preliminary_20261120/audit/resource_ledger.json",
+          "sha256": "318efc98ab4110a56c67af5a1fb1beed86e1ea5a4dc35fa161e0a4d206a1487c"
+        },
+        {
+          "path": "research/rpd_assembly_preliminary_20261120/audit/closure_receipt.json",
+          "sha256": "1930e3b05ed4632df2f2bdb58943e00ac05b3245a14e802dc25323fe9c8f354a"
+        }
+      ],
+      "scope": "Failed source labels remain unavailable; no new physics in these counts"
+    },
+    {
+      "id": "A01",
+      "claim": "Fine information ln3,coarse.63651417; illustrative success2/3 vs1",
+      "status": "VERIFIED_ANALYTICAL_ONLY",
+      "sources": [
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/inputs/original_v44.pdf",
+          "sha256": "01407b597f0cde0b9eb103d33d004c9d0ae53aea98a965a11a587e57ca93beaf"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/body.tex",
+          "sha256": "78eb9c3b87e1fa93486422ee2b3ad8a46f50217f69f639d23fb5089a2851fcb2"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/reviews/finite_preflight.json",
+          "sha256": "a11e475d4b79e37d944f9504635b70b25ff659292f0f227acaba2d7da9e663f4"
+        }
+      ],
+      "scope": "Constructed physical transitions with allowed yet irrecoverable states, not robot episodes"
+    },
+    {
+      "id": "A02",
+      "claim": "Constructed intensity0,.1666667,.3333333 erasure and1,5/6,2/3 success",
+      "status": "VERIFIED_EXPLICIT_FINITE_CONSTRUCTION",
+      "sources": [
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/inputs/original_v44.pdf",
+          "sha256": "01407b597f0cde0b9eb103d33d004c9d0ae53aea98a965a11a587e57ca93beaf"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/body.tex",
+          "sha256": "78eb9c3b87e1fa93486422ee2b3ad8a46f50217f69f639d23fb5089a2851fcb2"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/reviews/finite_preflight.json",
+          "sha256": "a11e475d4b79e37d944f9504635b70b25ff659292f0f227acaba2d7da9e663f4"
+        }
+      ],
+      "scope": "TableV44values have explicit six-world realization; arbitrary intensity mapping, no simulator dose claim"
+    },
+    {
+      "id": "B01",
+      "claim": "All9citation identities and scoped nearest-work positioning",
+      "status": "VERIFIED_METADATA_WITH_ACCESS_LIMIT",
+      "sources": [
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/references.bib",
+          "sha256": "af46429d65b3b5c30a8c68759cfa1e2396d220563d1c18cd23538ad053f5693d"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/reviews/CITATION_AND_FORMAT_AUDIT.md",
+          "sha256": "6f9aee8126c8149f5527581ca2ec911abc2613716805fa282de68abdfe996dfa"
+        },
+        {
+          "path": "papers/rss2027_rpd_stage1/reviews/CITATION_AUDIT.md",
+          "sha256": "a537d79b2f159ae9824b553c03aaf5ef0e1748ff431dfa88fbadc5bb01a91494"
+        }
+      ],
+      "scope": "DA-GRD full methods reread; Kobayashi publisher PDF not newly accessible; no native method replication"
+    },
+    {
+      "id": "F01",
+      "claim": "5content+1references,2figures,official class,anonymous PDF and clean-build equality",
+      "status": "VERIFIED_ARTIFACT_CHECKS",
+      "sources": [
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/reviews/v45_build_check.json",
+          "sha256": "300ba752a91a647d2e0d3fb8f7661c8eb3b8063bdaf549f36adb18664b7d4de7"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/reviews/clean_build_reproduction.json",
+          "sha256": "d7f3aa01fb56ec8bdf51957af65eb3ab384114175b9d4a7abbcac56e9b208e63"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/reviews/visual_and_source_receipt.json",
+          "sha256": "327fe17e1198d4bdd5e9d94268fc3912268ecfacd4e904192617e2fd0d5f8776"
+        }
+      ],
+      "scope": "Original source unavailable; reconstructedV45 from userV44PDF, not oldV21"
+    },
+    {
+      "id": "S01",
+      "claim": "IID parents,stationarity,source coupling and source parity",
+      "status": "DECLARED_ASSUMPTIONS_AND_GUARDS",
+      "sources": [
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/manuscript_working/body.tex",
+          "sha256": "78eb9c3b87e1fa93486422ee2b3ad8a46f50217f69f639d23fb5089a2851fcb2"
+        },
+        {
+          "path": "research/rpd_stage1_final_handoff_20261121/reviews/SCIENTIFIC_PREFLIGHT.md",
+          "sha256": "e9b10472487e15279683e799362602f15cce64a24baae57ff47a42e054d9852d"
+        }
+      ],
+      "scope": "Hash uniqueness and a few replay matches do not prove population independence or universal native stability"
+    }
+  ],
+  "new_prospective_physics_results": 0
+}

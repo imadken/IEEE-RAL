@@ -1,0 +1,14 @@
+{
+  "paper_freeze": "e644addb5848545e8c114974a62e52eb7a080682",
+  "prospective_source_jobs": "e65133d73454bcb42ff820bba52e43a4883df3a1",
+  "outcomes_and_independent_audit": "ff6f31e3b4bd1c9aa84e5a1e27916b2d399a7104",
+  "development_final_commit": "fc5186df8b5dfea108ddb5e504df3c548fc1b35b",
+  "branch": "research/rpd-v45-source-development-20261121",
+  "new_source_verdict": "NOT_QUALIFIED_NOMINAL_GATE_FAILED",
+  "full_raw_evidence_copied_and_hash_checked": "experiments/development",
+  "postfailure_hold_pairs": 0,
+  "new_qualification_roots": 0,
+  "exploratory_parents": 0,
+  "confirmation_parents": 0,
+  "optional_addendum": "NONE_NO_QUALIFIED_POSITIVE_PHYSICAL_EVIDENCE"
+}

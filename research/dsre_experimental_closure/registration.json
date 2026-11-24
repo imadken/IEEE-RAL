@@ -1,0 +1,32 @@
+{
+  "base_commit": "f551a6e546a55f59dc059747af6dfe8a3899c478",
+  "branch": "research/dsre-rss2027-experimental-closure",
+  "created_epoch": 1795036099.045178,
+  "alpha": 0.1,
+  "eta": 0.05,
+  "max_wall_hours": 12,
+  "max_new_artifact_bytes": 2147483648,
+  "new_physics_allowed": false,
+  "new_controller_fits_allowed": false,
+  "source_budgets": [
+    128,
+    256,
+    512,
+    1024
+  ],
+  "source_order_namespace": "DSRE-CLOSURE-E2-PARENT-v1",
+  "source_arm_namespace": "DSRE-CLOSURE-E2-ARM-v1",
+  "sample_namespace": "DSRE-CLOSURE-E3-SAMPLE-v1",
+  "finite_sample_namespace": "DSRE-CLOSURE-E4-SMALL-C-v1",
+  "radii_mm": [
+    0,
+    5,
+    10
+  ],
+  "contract_source": "Full scientific-supervisor closure contract supplied in this conversation, 18 November 2026",
+  "absent_editorial_inputs": [
+    "V4 REVIEWER_RISK_REGISTER.md",
+    "DSRE_RSS2027_METHOD_FIRST_STAGE1_REVISION_20261118.zip",
+    "latest methodology-first blueprint distinct from the available scientific story lock"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "sfeast": {
+    "publisher_url": "https://doi.org/10.1126/scirobotics.adn4722",
+    "publisher_access": "403/inaccessible via the web reader",
+    "full_primary_method_used": "First author James Ragan2025 thesis, Chapter3.2-3.3 and AppendixB; source SHA in retrieval receipt",
+    "limitation": "Author method version, not an assertion of byte identity with the Science Robotics final article"
+  },
+  "hybrid": {
+    "journal2021_url": "https://doi.org/10.1177/0278364920963783",
+    "journal2021_fulltext": "UNAVAILABLE from tested public routes; institutional repository says no fulltext",
+    "author_repository": "https://github.com/Ahmed-Nouman/HCPlan/",
+    "author_repository_result": "GitHub contents API: empty repository",
+    "full_method_used": "HCP-ASP full28-page arXiv1707.05904 predecessor; exact retrieved hash recorded",
+    "limitation": "No detailed claim or measured benchmark of inaccessible2021 extension"
+  },
+  "all_published_code_benchmarks": "NOT_RUN; numerical controls are accurately labelled finite adaptations or same-input exact generic solvers"
+}

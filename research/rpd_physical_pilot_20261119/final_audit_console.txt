@@ -1,0 +1,1 @@
+{"audit_passed": true, "decision": "SOURCE_NOT_QUALIFIED", "tasks": {"PickCube-v1": {"registered": 540, "attempted": 39, "complete": 38, "interrupted_missing_outcome": 1, "unattempted": 501, "missing_terminal_labels": 502}, "PushCube-v1": {"registered": 540, "attempted": 39, "complete": 38, "interrupted_missing_outcome": 1, "unattempted": 501, "missing_terminal_labels": 502}}}

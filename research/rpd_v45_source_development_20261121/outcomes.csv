@@ -1,0 +1,3 @@
+parent,repeat,geometry_seed,source_status,goal,whole_postroot_compliant,new_qualification_parent,new_exploratory_parent,confirmation_parent,worker_seconds,trace_sha256
+RPD-V45-source-development-20261121/nominal/0,0,702360274,COMPLETE,False,False,False,False,False,12.452545857988298,2f41ce759d0c9871929d0e212981eaf8653367eaaa4774f32fa6b17d079c41f4
+RPD-V45-source-development-20261121/nominal/0,1,702360274,COMPLETE,False,False,False,False,False,12.35520264704246,2f41ce759d0c9871929d0e212981eaf8653367eaaa4774f32fa6b17d079c41f4

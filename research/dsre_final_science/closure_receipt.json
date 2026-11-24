@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "archive": "research/dsre_final_science/final_science_evidence_20261118.tar.gz",
+  "archive_sha256": "17474ae66963604b4aec05fb9a10bf76b6777b45c565ba5569756a4192b41a88",
+  "archive_bytes": 225070164,
+  "verified_manifest_files": 18625,
+  "verified_new_seal_files": 12339,
+  "exactly_reconstructed_new_gzip_traces": 1824,
+  "original_gzip_bytes": 1011852758,
+  "lossless_xz_bytes": 104281268,
+  "compression_net_trace_saving_bytes": 907571490,
+  "extraction_directory": "/tmp/dsre-final-reproduction-ettkob71",
+  "independent_numerical_physical_access_and_counts_reproduced": true,
+  "mathematical_and_old_signature_checks_reproduced": true,
+  "all_historical_E1_paired_trajectories_rechecked": true,
+  "full_older_raw_preservation_scope": "Separately verified locally; not all older prospective raw traces are included in the compact bundle.",
+  "physics_executed_by_verifier": false,
+  "elapsed_seconds": 647.2398734092712,
+  "verification_script_sha256": "eba85a368d27ffe202253b6c9aa2b2b9dd685bf16aadaeb87d6d352f34eb3141"
+}

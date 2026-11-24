@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "one_probe_equivalence_exhaustive_models": 1024,
+  "scope": "Finite deterministic complete model, admissible probe paths and complete support. Not a guarantee under physical/model mismatch."
+}

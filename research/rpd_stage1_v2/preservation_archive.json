@@ -1,0 +1,8 @@
+{
+  "original_bytes": 32342308,
+  "original_sha256": "09e202b6f1bebe0b7388704fbd83f938a8752f4ce6d1a4f7f2d22b479343190c",
+  "archive_bytes": 2105484,
+  "archive_sha256": "33887aad314b0824a440a0d0d61756e0685cc311b059220dfccccbffae1cba1f",
+  "lossless_verified": true,
+  "scope": "Only this session newly created inventory compressed; all old evidence and original root ZIPs preserved."
+}

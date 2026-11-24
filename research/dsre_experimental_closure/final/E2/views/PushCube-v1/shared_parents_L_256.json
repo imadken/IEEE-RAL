@@ -1,0 +1,4106 @@
+{
+  "logs": [
+    {
+      "parent_id": "f73fea17ec2785d698fd4e435d215dbe016074fecfa97c42d0300573d9129987",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "7b499887e9ffd3ea5956345e231cef1583c19b30a598f5511bc6f3eeb9108e19",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "d0c45ef61eb051d62bbdee5ed12a3aa09044d4f999290fc15f8e68affaa0d91b",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "52ba3bac95affa67388b7e24ad9e45a4c0de861275a1e913e136cc3b7d702f39",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "c13adac06910c6d73542325c7d8e34dfaa543961b307321be1ce24c3cf422475",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "5fece57ba2b6f1cfb5f9d489d7104e3d5ae0a2603afbc53941714e294531e845",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "41e0f3cdd04a777621a951f3e2674a832b49f913208ca32fd0cb9b62f06e1acd",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "0cdbb563defb612fa82d1dbfe29df9dfeb50f4c4cc15c2f49c5ad7360830813c",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "0cc98dad4be0347f64dbbd2c90d567964e6c78cf9a635936722d1630d9d6a815",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "51c0fe7bd9f3b98a2c54d670994b084662b341c0ad48c875c870007b208d3240",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "cc5f107291215081c4b5e1b7aa6533972afcda96c02a0d124ddfb4c8239d6931",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "b994662d77fa01a33c459837c763683827a0d08935888fd0a778a5caef6359f1",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "22b5d0ea27871c7271f74ea61a284cd478bd14d379966f84b5185d906c44023f",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "0424e2984e6b432a4adae87377d610db309ce15ffc4f13fcc31f26fc63b0685e",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "4391ee7102cb1187f9e7b4f868430e57b5abf8630ff27cba9637aaf203fc59aa",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "bea200fd7943f53ef288ea8f4be47995afa3c07fccd58c18472926c3116bea2a",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "4d8600d5d5cca677667ce718e698016dc6342f13138738ea1b29269aba0ed751",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "eac7e549a81eab0d20e1bceae4a0950c241402e7816525fa452d92cebc82e58b",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "cc2f18ef5d2ecaef96a2e1e52a14f3546e5b50457c6be3e205d426b5d22c06a8",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "637e1ab3ef62a0c39e67871f6db87aa9f0d64f176cb1f63401a62653814ca6ac",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "9cbd6e367b5341d4dde37f5cd88f7a2a85e470bd697ab341765df7ff920ea66b",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "cbee251b62615ccad7906a00b5e6a95605c1fecca9b20b824c2fc02a0cb033e8",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "557559b658e543d0130f2f41b160bd3410b0d7b600a5d4116e69808bf5354acc",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "99fb96c9018fd6244d8cf42b3f7dc052e30c74948e233695802a7f34a1aefdaa",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "6a80e57d7603337daa79c3c0548e9626f7453fb7a9793e64f205deb6121dc750",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "d0fc11f8ac80a076de1854588169cea71fdbc7f3dfda53b962c44d146069d2ab",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "927cde2bde789916f80568ab4ed42c343908d668717d838135c86fdbaecbcdbb",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "1e01c5b028c76fd5e3cee922f82e5d08e360d53d6be72e69da6dbb496df70f2b",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "4a24c7469300ef7f33f359809da0d0f2380522b9f36a2ca5e240436266e958ba",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "7d5949b6c789d7afb8b00da90920e3760ae0bd754171821d2d55f12be0a3d70e",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "36304ad6720936029a48eedbbb903228a387a6098af34824d49998de70ddda4a",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "c4d6ec7018c81d2fa3591e6bbaf8c7a01d26740f39cb0501786da698be06fc15",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "344febf1b58ed76f35f7bd6d59d977444bbea03c579ebad81d4ec57f1b4b88ea",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "aea8824af24111d81a74c376bff029fe47d88552bc778cce1dd93655fca7e2c9",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "24d3900456351f1dd6a83fe53ce0a293ecd2a3252a8713e639172f14bfcbdf09",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "d1431e90b6d05116f396340eb51d45aecc8b423f33a16209d6d247097f92e0cb",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "21493b853cfee450358d668bbd37eafde4e6cb8a6fb4abf39f15afbbeb3095b7",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "c40455efb1572ba85894a1879f107af372c44ceb47a08db834edf7a38bb97453",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "38ec46d8e3a186e37e14baca73019e4153207a0e037f8628a2dcc414c21c331e",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "94866272af1192c8c548f2ea9b97b2f6b1376fff42a740e7a08297701fa36b18",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "e5b70a2fb2bb2eeb7dafd5d33ad507c8fdc199d87a1b097576e5b934b6289bbb",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "9e1eb953cb9256e9fdd9d2b45252e80e9dd178d930e4d5558b4c5c9e4bce8e61",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "a858449bf3048ddde8d4d47cd30ae943ee851cbf1a6cbac377fce6f94b75a974",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "d11a2b80dfc7af2f3c48aafae41125946bcb07803beeabd33f834d607c9e8798",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "040f84c452593b2c9c654e08ed138e20834c23bddfb6dcc8215fa8cc62b6f064",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "db5b132a2fd45b303271cec694f71cc39ffccc6cd26e7df01f7783316d0f7515",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "229c66a4d8bdbde43bdfde3599f9ef80a63a67e555696abef001509ecf25f0cd",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "fdfe5ea0b7ce04adfe7df453b0a01527c1f1a9e4ed43561b060d2810b9275e0a",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "6ed321cf42cc759858650dd99addfe06f60bf4a9d0cd12600da1c67245bc036f",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "fff35e39e896659b525918d910e15bbec86286a8f896563d44c709cf6181d577",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "f7fa562acff5acf3d5aabed6fcae51c6eb37d80e7d1f2ef22d3d345657bb2338",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "9c44139d004258bad84c7184017b30fbe96d5cd001359c676d131245f72a2ae8",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "ccf7e553845d52db2ade4459c731bc656247de5f1956ef50bb0b962a75919445",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "dd973c88a436b9b20e88fb41cda4b01bcf4632aecda21036ffffec1a8e98d277",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "ac169063953c9a54ff816628fb021b6a4d850ac299b3d4fa80ee9a34b6d6a874",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "4d97315a43e21ff8d8a92987de00bb6d0bd2f39452ca9014d7ac0d58a9e1dca1",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "61b2ac997f6156e6243c04d2b62728908624f3668ca860e5c5646aa86ce8e1e6",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "58bd7b635a260baa9940c0f9dda4f5a80a58fb01ccd1c3ca0eb9865133944fd1",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "a4ad6a99da88e64e4dc18510a839eb48d777042115e879b339dd5e4716505f17",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "730f36c8877bd7e41ea1489d2eb15cc730f1ee595e15baa871faddc8b799f068",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "7fb1ddfdb5a3390793cec0c27ca5052e3639e082f182708af740b58b984d9f3b",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "efe00e2e568eee8fb59f90cbb84f2e7dbd6d5c18802c5e40d0e1db3a1f67b146",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "0179645debcf7a2c159dd7fa0fb3995cb8eff80b19c6c026be5d0c056460e6b9",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "3ba29a9ad02e4331ce3bd2c6e51e82984596d2e5eec00523cb659fb6d706d4bf",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "fc55557e386a40bc97a3bd917a7c6ed35f182d89aae8c9ced5d2fe2166c92203",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "f0aefa2d26c57010c9482cbe2de76d8b8c84ecbbc415ff40c08ab38ef91c3252",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "c87501a3a16fb17a1f26bab8e14bb8fd692f5db43ca735822b600fe9ea3269aa",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "bc77c884539ba25f296353d02f368511905944f08228750e5d6926dcc2174e79",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "4a60bfca4708043e313c0868298d2042654030c9d2f5b9ba0a43ab35b1a16773",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "643391ac66ca5af45b0ed99c01315e7b5e1d594d43952380854fd9727a585b02",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "00f40085c0d261df981ecafcb9f4b80a88faee6bca7693179e45df6a16094575",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "d5f9e18cf40b6b96d7d854eba661f3f230b1325491feb99faca6af6b7fcc85e7",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "a86585b9046d39e154a31f13cb640ea1b6d8d65657c6fca121dc201b07bd5123",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "79686483a6680c84ffc3b8959ad83bec83aea2864413732b25639d4eca174354",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "441cb50d4fa7fddb0fbaf0113de13bc708359ca0165a8cfee4fd605e3f1d845e",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "7186d05522b5cca360211bdd0ce3d1d4143aa8e64e187d8fa19bddd2452d6d3d",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "9b636e986019c1f86de86df12a9571f7566da8129daa015b5dbaf05f0b398995",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "f34caf70d9d9a9ca5e39afff44d9480a19396dd66217a130506f658befcddb3f",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "10b3dfe0fce783cceffc2057d8edc61cb473168b6f4836bc873000bb6ba3e37c",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "015d07100da31df63abfb9827ec27361bda2d4d749dca049ceb37b2cb54e798f",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "d4c8fbc6dac483d4ef2a503f7317012507966d8517cea9a7897facb0b1bf640c",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "b8091b2a3c7a42da89a2ab6386729d6c59021214d2d1b8135ad2397735ae5183",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "6914a42b9dae3b5575bdeee09dcf0e8e076b69f5ec2462935ead805fbeb1b473",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "34b0a7da64c8664dceec6ec287f9506c6c51f82a5f25c0f5a02a898a5aa2aa5d",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "8b9389cd34aa242b56333832d953d1d69e4b71e54da2341c82435cb5f0a7a932",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "ef9117757243aaeaf880cbe561a01042f7ae343d8e10563831b2184c98f7b438",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "4a8a0c0c8373b73a2d2c629b337e0c79c7ef19e5f79fd9cc029de8a50a6f8cd2",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "b60e73125338fb5f3e3d730a007f911d5e56837ef694cc75c7e9aa8edc33986f",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "9d8f6f20275db6ead6ebd2c7778c83abe868cbdf82b652b4c3b8009f43a0e775",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "5aadbda876d44a09ac289c726b59207d6b0e76675ead00b7881cebfc499e8bf4",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "0363cf3886694ecdf12ed3fd9b23eb4c126e76e12949dbd198582d84767408b7",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "5cc51d977f4c33dcf61f92336e6188d1f09f18767222c068ac9b197631b18c55",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "e4bedf75666cc741d4527e908b41f2220504707c82505d6ac09f1cff3bb8cd50",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "f78db28484d38e5c964b7df7e9b3924718cb570201e4fe3b335c94bd49fb9478",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "a817150173f9a6376e6ae916799ecb094effa2e7ff49ced1c580451f92820dab",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "9f8b95d7c199bf4ec94c32290a6d68c6831c00024db4edf1f98e9d3ad0dae571",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "6eddf30c01e37cca1d83746e07bc1591858c21c1e843b6d68cd0269d4aac7c08",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "46b743ff1e000601573cf9700a75845021ad064f9697546451cd91e25098c31d",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "361dc8ed538489469a0834e2a26076324f53d632dd9ec9623c490e66520e431c",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "8444f392662a90c4ebde787bb2429c36dd070821813cc17b8c0e6571449bc158",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "f631785c99c7a8bcffcd3902d08376089fcfd965ed52a64d0ba91561cabb5149",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "6cf8b192b5ea607da7a530f995c3164ad4d27715534acc21389b07e50daed926",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "2b5a4e7aef6a563efe3f89a76877d74d0cb17bda6a9a7b374f2ce0cb2ad1e0cd",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "0efd1ac9f1a267645f07e5e5f2402b6e5bb2d33adace7035c6615547bce8e145",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "74dd5b296f3a3d5723e863a6848e4891f3c87dc8ed07eadf118528e775a9eb06",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "e8050dae37885c229487dcec4e9ae1222f0b85837f3e90affd59dac108aa77e1",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "f97ce228e4e139d4206f174580d5da9f0eab4d3299bf81d66f9a1dd9f48a8e23",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "2ff401be7dffbc814622ee6bd5d179b82502169e738124c3395dd82cd721762b",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "23b6fd04c75eebecfab798548084b100b0b697ec88d21810cd7e398c43ce7911",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "7ba8d6768e129b4cb2414e31683d27869e191e1ffe926634f5d49d12a749000c",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "0a0f852344b783b676397b8115a48684c4a43e1f4e1121383db0197a96589d4d",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "d2d24067f1ee25a278b26179573f5b49f04ef919ca4458763799bba2af780c7b",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "167ddb8c5a027ae6412bea095982c525918871c22c340d7cbeb645b5de32ab74",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "1d0b70710ffffe1424b51228bfcbc609e0eefccd415446629417aeb010bab63c",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "61318add0089e4dfbf76d8d2c092494381ae6d40afb8824229308d92920a4854",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "bcba33445e34be3e7c1b2f7752ea25fbecc58d93c47a299643dff3719e2551ed",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "2ec6063c8f9ea5b56c69eea29e46649b3154770a6aa8967bcd471a39aee5330c",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "844d500346212e5c33a39bee84ce6785ee80645439e45ddbd18a05e3d5c007b1",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "23e7f8d464ffec71e49b075c072ddcb8216629ac5cd80ce648fe8faa595443d4",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "7b6f91abe6043eb513c115714c1b392917dcb9f943a4612c6ae2a4a34615dab7",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "05408dba4899a496bf09eeb24b489530efe7c0e028eb93c89c0ae517c3469c1f",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "0e1049f428ecf40297476c1e4cb19e6411c6d33bb68953b179c994bcc1ea9b76",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "a1232ebdeb629ea0db7645039297c632c21402f255c8965b638b23739a2dde6b",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "e285558acb6168349d3207a8dbf4f45151b58bdb491f028e3c508df0637b7977",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "681c3010a23d1e94abb516fc42f7d7da617b4420f6b97d85ea52ed1f87aa7eaf",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "2cdecb9175f3acda083f6f5dd5cf067a4a675bf67fd0ad08238dc11afbfc85f0",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "d0e1ed1b2336370483af351acce5699b95633a24fd778d85c4eaad1deb9ac0a9",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "6ec776f86ffbfc63fbd10e9d21c0bd9a0d490c0e167f709e48e6a72e894e8751",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "2b8c0d3f0aca8d8a59174e296f5a830e326e611ba171e228ca2970c4657c24f1",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "32033c4cc5793f377c9c08a8692cb80ce99b12378442094e3dadd227619c4f0b",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "43f04882361cb3d67ca248ff17b5ae12ac19658d2f338d42d9dd4878850f97e3",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "1e41fd117ad1e2415a6ea19138b022189e39b952e31743703890810405977f34",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "bc067d755e6b1d9a99631ff13ee86c53d78f20a53acc2b6e127e58e476fa91c2",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "d7c01f138eef1562cb0ffa2cca0e8a3f6bae4d31f6a944ebd845437363198a7c",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "2c05b787ca35820fb3bbd317cafd8908f257542c735c02790e69775371c5b496",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "540279e1bbaa13a740b5278536c2a43c972207bec25e071d9ad70055f32ec6d1",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "32fa682316b3203e7f8f7aa35f5c1c7e9da46f1d699b33020a634b5bab579e32",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "07193b807ea16a5b943187518af92536c13a261ca754f9e96841c65a2c20c8e2",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "2df4b1efd021f7aff7c2b85793c952d0d7c6e7a591ba0ad5457d91ff25309c1b",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "f45cacc54df82963ba02862113a4daec97fcf5ebfa6c4619e0d86d322a251e79",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "7b34305ff3dafeddaee83afee5a5e51e71f1a78d76613244b09d7a7ffb764232",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "783285988dc1073f05ec830cdd639ba40e05fe2288db86c7b65769efc9bb89bb",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "38260e3f1b80fd5bbee691f13ea653e10946ca8098dc9aac0e49be53a4a8a587",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "c2dd705a031796648b30765050c06b7330668eb8073b3c032a53bc3a8dfde0f5",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "9ad12bec923325164143641d8464a50eb1a8618bda8c71a49fcf6edff77e8c46",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "a41b2730c0be4e2936100da1c469ed3e24ebd46f787f51b98b422c7f85f89363",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "61976c93e327e5cf7b2d9ab5420ff12c29c538e37c8809f37fe374594154b8cb",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "57c83ee59e84bc8f5f0c9e61a202ae43a8d52a29ed9e565b8e75dd89d55f7ae5",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "cc3cb155a847adebabb123023eecb648925658fc003d4ea6fb4b5cdbf310b185",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "8abad2e82d8f253e4a553e0b8a4978bdf88e702609afedece4944666aed7b740",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "863003748ae6fdf1650225c4a65e024831f665aceb800742447eaf6e88e80765",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "2115a58d2b1e6a7e696111668bdd4e79fd36d5425e45a23dd8a83fb79ae4c1a8",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "e08ffe1c59c866fadddfdccfcf34124b6de20f48ccd6c9dce620f75c68f4c849",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "ea894f59f090ad5049b074d8fbd7be9aa692f0634ff67f7e6b6d7df656934858",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "53472d62427d141640a02e9ea25023a35648ebdc52b1982a63749d66ea5b035a",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "cf2705dded0342ea2aae2213bcee52f757435a7e0ebcae46c32d2296a779cd3d",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "00676bd3802dd25fad056c08881b50d5c6e50bcf560961d2cb6aec49c5687eb4",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "6e46d7adc9d7199a8d0658f77ebc9b18b3c53cb6a2ac73b36c009a1d992d3801",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "bc24d27b808898a2255a36013863760f17d692c5243c257aba93663bf6d6f6c1",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "439fef1607b08cb8163908a9b02451a0e354262165140240f8d990d03992d0d2",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "612d363fc749b2dfde84645d9000ac3a8c096745de806b51739f44156e0e75e8",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "de453a47fdd59f84b4b79c6c55fa3ce2089b17a53d760593ab332224195a5752",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "c51e337c936af47a86f466a39d96be1362f4e6f3a83e5308bde1162c7848e673",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "2acca5c19f78a23e53d1edaaafc419cf260f507c7291ea385b3380612741af2d",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "0952925e65b0015c306c6a2b4d72c04559c1a7910b4cb88dbf0f7953d1ad5e63",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "efc8e08039764bbfea190dcf502f1be1cec716d4d8b2cddc7d22e71f6657af1b",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "9ee51ce76bbc4e802eaf84b8a45676f7bb1ef7b6a85a1d2da935925e16d3dd5f",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "c7f8195df40b6815818d3905505ceed5c2c02a4922f8884622226799b79de213",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "11cda191a12b448bc6530b49975eca83388cab9ef4e2d725ab13db298c1eed21",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "859b5a13500b892e58495e94284b552f8e0b6483c41bdf23167f7d133453924f",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "a21ab865577a8ddc24204b4bdb99e3056633a4f95177df8dca5740a158e113d9",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "bae7fea641a3b0d6db6afe3ec86196a0261735c72bbdcba4e307a6efd171ea71",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "65a4f1c3118a32116b70dbca5efd46fe0322de7febfe11796d47e131d10e1a4f",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "5ba0493fcd389ad36e7b2b553ed78e11ce73bdfb297ff88481c68ab731d308ee",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "579100bc41d5de9e8c9fe7d1daa4e7916f93fda8861ed262a2510b80a113a4c8",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "c746c7f42f1eebffba60f374d1832a52ec53dc245e8745e6c8f99ec989012a03",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "9cf9803ceb4192c7e1e5b305daef286996d82a1d88e82299f434511c09016bc8",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "a70bc0d863ebe2b264bec20d976abbead18e15627064503a4426c04f3a70325c",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "223676a05485560713eebbbf5c3c0d4a83edcdc51b23be3385bad8c4ca22f04d",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "d6c286d0db95b82787c24b167e44e0fc4bf76e85e3e2bf9832250fec25738926",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "3fe781019d40cc62a3eac0949a66fd34426ad85e58e6f87251e4c2fcc99dcfa4",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "4f4b4b70329c574c16fb2c979a0534e7a340740f316c6c17963d25480d57ff93",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "4ca5115ca38ee712128225effa72269ba3b03b203e3d0dfd14ead0b712b66eaa",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "0b1565b5b67975247a9de76ad3243609a2a7bac7439cf3c3ea61f8727474fe0b",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "4c476814a7f9a053038e92584efd8467bbb003d30b00e5c0518041ec881dea62",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "7bc49a771ec748055838e211f6fff2307c276a0ca8053c239094053b9047fdb0",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "80143757d8dd4bdb7eed87e9ca904a1e511aa2cbf92419a1d3a77e2532077d26",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "8659073c0fbd02309c7f88c3f7fd2046dfcd7b0c5154f3a38d39b3d3ab84d48a",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "2856fb038ee4dd5052251bec486b2b6edc0e4e74853849fbdb5ab1f38f035f7b",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "688d4e97edc3b43000129bb7174a410db9e673d077030b37bbab6ade843c3b02",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "d5783a7f95fc491dad1e2eb018d8493191a5f5291ac3e19148ac6f99851f698e",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "0aa6682381ad18dd8d2a19eee9d38108bb1f260e20e9d7e854ebd9aed3648c5a",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "916673fc9294983fceabd968bb43bee6b9e050c5d05f9d9b06440db486e78ebd",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "24bcd758c875e6ed11fe0196e8c004ee07b524aaef3bd5775ee9a127cbb4f9e4",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "d977fa68f32168f99a112356244eed58e47d72c955ecde367760942a42fbf60a",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "b3e14e9ad6ba31973a4eaf14cf987de68f7434582e6aadac2924b15fefdca096",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "4b15713bb80520edde68b9bd15d99b05d99953566449be74e1cdaefa8a8cd3d5",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "4ec954267abe36d94e75055898d34a8783f76738a5773a71c5daf687edfaad71",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "7b04b23343bd79e3fc7c7f2020ae0afff3eb938b4ab3b015e48a2604e839836c",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "96cafb32a4485d6168fb2cb289ea83b8e8d54af5cf85403a1b94ef733cdcf47e",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "b60a85d52680ab0cf089fa33bd21db30d4cce6dca27d09f66e04ab1fc9897e41",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "a8fc6bf884639e7efc400dbb17a8c5ed6c4adace22bd3ea320f89fbeaeaac0f2",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "8edcb4618a4b1bdacb8a400dfa138bd68fb003b78939c427ba2546e029776c48",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "2d86b4e38b46e16d7f5216f2d9ade771e3ac84d066f67732a589b2387079afd3",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "d4831d9feb7bcb883af6a6afa254a368a013b1e56a923532a41465d041718fb9",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "e4dd64a4d8232a8efa5da8fd9c0c2ce485720e74811d802282e05a834bda702d",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "de90c7f4338990b1925b6b7b690ad47d2a8e3b2b23d83e9cdd802cd2695640db",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "7308accbe628548a26b3ed0ee219541652f00b375ae174d1a4969ed41bf91174",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "6b7046a4cb1150800cf3033ab09c314863cfc46b25d91a23a74cb680c2bb0276",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "b1bf4d682fbf38dc8128b12b58affd01b93e21dd435724fc2db2c2d19182b3e7",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "04fa7bc9e1fa86a3dbe2980bf9ed0c327021ed50b30cf648154dff267a914bc9",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "84a0335e68281f00220e3a02aceb5035c7d36defb871f65c8932207d100bdc29",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "f4d26b2487a28394919cb263f86e10e3d95dd795eb0164229d89151a85fb14e4",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "977eae41dab24a59ce949d97c22c7d9b0477ac8a9ab11fb0fdb33d67dd8e40c2",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "cbb57f22ead999bff93634fb0ab71d30281ce84a34f9c5e3f3cd8d31c063888f",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "fe1deeef6d6892f0d4286ef73407fc55a20104605fa1a10ffdc124607d32f28b",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "e244c461c5bbc3dbb31d60741d1da4412bac606888d690f2eacec6c0d04fe5de",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "06141578391b3ee587376ced65c6fb7736ccbd867320514528827bcf4627f15d",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "57e0ad8e359f03e8b599550f5eb0caa297379d8025643fda8b081126f8317daf",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "8f829b57e2854487d760e9cc29000cf39bc24709b9ec7bc83c49b17a6c4fad67",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "3455e78ce8791a9efa8b391753e026f186144b01176872ff7d9ba59e26deab6d",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "16db347f03609498c104b013c282aacad669c21725cb4d4b2c27757b34eae5ee",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "3fda6f54a11531160ae9a26becc7a6e3e40f16c955aebc5c6da53e8d1471a6a3",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "56413c7caa7c7490aac10534284e19ab1b6bc660ea7272157f5cd37fc4a187fa",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "657d480cf394875fd51f4b1f1c088e624790eea7845a8cdf00f5a6d21edd83c7",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "062ff0bff7b94436998e743c0f1b69f87b5c4eb8e5eed9aabada66fdfde161b0",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "90e643db599c370f689b5055ec21e5156eac5e4b28db82ed4222022dfee5d857",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "819d7c9f4962b2bd937559db34ba36db6b3f3f374419e9ee9ff7a7e03a24e267",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "020cfec7b7beea075ec7718992f5464aadbfc5205a4cd7a101b57661ceb5aa5e",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "1d6a3be7b50c25fa00953f6bcab71ce563331f858578f1226bf215374f5a2f3b",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "d7eb513267d7a616e714d9de7f878bb45916a41ae4a2bc34b69655da819b1cdd",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "314ec264b489f77ca5faf16b5876b69ee1f6fbf6640bfa280914138e68056b7d",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "6c4ec6ddb9c6abe360552a9abba58e58fac14c9fe6499c6b67baf6904837ce60",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "83a83dc91a2b59c0eeb22f901ffbc8801d5aba11ce801d9be84ba308164cea8c",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "a655fbd84a33ae8dc06e0574a2defa594dc3e5f8b3cda5c5f49bb3c1cef20a9e",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "77bac4d029f69993ab2e6a2fe85af70ade4009a38748fb854fc2f9f65810a624",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "13674d2cafe95da3e790909410327001ba636f18f127edd1e56c3f1016cb0c57",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "9fb8cc370be3623c11654ea3a3167eb914815400a002d0e083a0468bf246dd8c",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "340b0c5aaa377c809d8c1884db39f733ca089ea1477502276a7d8842fc618676",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "748e5f4c84adab352f49dca75535ce3d4c9d9e8d6aa5f5498d3db58932a00268",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "2b16ce832a05083c4e9124f009a7cede1eb784ed02435bedc2ae7e3c9d618675",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "4d0ba0281e69d854d059ab40ddebbd67cf78741347fbc03c13ba00ea5d788726",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "5a687a323e7d4426d3801402e58fbe538b05f78a61daf4c749e738b111be51ff",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "42db4d4c5bb03c503dd301ee7cc8e99712db719c514c654e95977d96c8e85752",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "611e474c05b15d82b41604bbdca6206a3c880b43ad3bfaae9ed156656a83b0cb",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "3696f3f49366d807e443c05bd4c7b0241d712f04f1538f4174efc1562bd26260",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "a15ded7ee56ac943b27b045200ef8532cd2340d03f56197bcef4e161a505d8ea",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "ae60c53f2d857b5b0fe6367883e1b6f0141ad31ae908d8058fbb583e99184c6a",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "8af7922ae2bd6af86a9eb606dcb955a4bf43ccfda74e5259d915789381be7b67",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "904061836fc792f98b15ea37030e762f0a655ab817a1617bd9e295aaf973dcb7",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "588ba701f859067d8487906854469fe7f3d5520ac9cebbfcb173c06096b93a21",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "d0f360955f802e5b6a7e573f3c47eafb90484fd3aa1af547ffbb4f8b7bfecaa1",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "91064ddba9b570412488733833b93c748dd65946e0a630c0721c68fcf4b07796",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "87b8ecd15dc3daa8d43c803bf993ba32d3ab8d7f45fb42f71e313ec2823d0a64",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "7f882e832d5d94fabc1eb800c842c77a4baa958cf203ebef0213f196f94684ef",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "9e70332de8e4a0df2a768aef75ce844a853f2ac054e48456a95d6fbb338f9df9",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    }
+  ],
+  "pairs": [],
+  "visible_action_outcomes": 256,
+  "counterpart_exposure_authorized": false,
+  "budget": 256,
+  "qualification_only": true,
+  "no_independent_test_scoring": true
+}

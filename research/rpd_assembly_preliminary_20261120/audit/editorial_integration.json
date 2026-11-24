@@ -1,0 +1,10 @@
+{
+  "editorial_pdf_supplied_not_latex": true,
+  "reconstructed_only_abstract_introduction_and_caption": true,
+  "sections_II_onward_tex_unchanged": true,
+  "bibliography_unchanged": true,
+  "normalized_editorial_pdf_sections_II_onward_equal_original_pdf": true,
+  "normalized_pdf_differences": [],
+  "new_physics": 0,
+  "unicode_ligature_and_discretionary_hyphen_normalization": true
+}

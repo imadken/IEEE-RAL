@@ -1,0 +1,13 @@
+task,quantity,numerator,denominator,scope
+PickCube-v1,any action succeeds,229,256,"Separate quantities, not additive gaps; third column empirical only"
+PickCube-v1,common action per full X,16,256,"Separate quantities, not additive gaps; third column empirical only"
+PickCube-v1,log-identifiable point estimates,111,256,"Separate quantities, not additive gaps; third column empirical only"
+PickCube-v1,calibrated recover coverage,111,256,"Separate quantities, not additive gaps; third column empirical only"
+PushCube-v1,any action succeeds,254,256,"Separate quantities, not additive gaps; third column empirical only"
+PushCube-v1,common action per full X,0,256,"Separate quantities, not additive gaps; third column empirical only"
+PushCube-v1,log-identifiable point estimates,128,256,"Separate quantities, not additive gaps; third column empirical only"
+PushCube-v1,calibrated recover coverage,128,256,"Separate quantities, not additive gaps; third column empirical only"
+PointMaze_UMaze-v3,any action succeeds,183,255,"Separate quantities, not additive gaps; third column empirical only"
+PointMaze_UMaze-v3,common action per full X,68,255,"Separate quantities, not additive gaps; third column empirical only"
+PointMaze_UMaze-v3,log-identifiable point estimates,0,255,"Separate quantities, not additive gaps; third column empirical only"
+PointMaze_UMaze-v3,calibrated recover coverage,0,255,"Separate quantities, not additive gaps; third column empirical only"

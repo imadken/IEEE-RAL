@@ -1,0 +1,14 @@
+{
+  "source": "https://zenodo.org/api/records/21390226",
+  "title": "epistemic-active-calibration: Terminal Controllability in Task-Compatible Active Calibration",
+  "files": [
+    {
+      "key": "jkoba0512/epistemic-active-calibration-v1.0.0.zip",
+      "size": 3755516,
+      "checksum": "md5:cbb2a8019bdf143cb098f37996f690b9",
+      "links": {
+        "self": "https://zenodo.org/api/records/21390226/files/jkoba0512/epistemic-active-calibration-v1.0.0.zip/content"
+      }
+    }
+  ]
+}

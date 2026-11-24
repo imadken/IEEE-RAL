@@ -1,0 +1,76 @@
+{
+  "scope": "HISTORICAL_UNQUALIFIED_SOURCE; no new physics; timing is descriptive, not a cause diagnosis",
+  "candidate_counts": {
+    "qual": {
+      "fixed": 12,
+      "KNOWN_ELIGIBLE": 7,
+      "KNOWN_INELIGIBLE": 5,
+      "UNKNOWN": 0,
+      "NOT_ATTEMPTED": 0,
+      "complete_probe_hold_comparisons": 14,
+      "full_erasures": 0,
+      "joint_compliant_erasures": 0
+    },
+    "exploratory": {
+      "fixed": 24,
+      "KNOWN_ELIGIBLE": 0,
+      "KNOWN_INELIGIBLE": 0,
+      "UNKNOWN": 0,
+      "NOT_ATTEMPTED": 24,
+      "complete_probe_hold_comparisons": 0,
+      "full_erasures": 0,
+      "joint_compliant_erasures": 0
+    }
+  },
+  "distinct_terminal_branches": 49,
+  "technical_parents": 7,
+  "successful_completions": 0,
+  "same_four_second_remaining_clock": true,
+  "constraint_census": {
+    "joint_limits": {
+      "branches_violating": 0,
+      "first_failure_substep_min": null,
+      "first_failure_substep_max": null,
+      "first_failure_during_probe_or_hold": 0
+    },
+    "joint_speed": {
+      "branches_violating": 0,
+      "first_failure_substep_min": null,
+      "first_failure_substep_max": null,
+      "first_failure_during_probe_or_hold": 0
+    },
+    "tcp_residual": {
+      "branches_violating": 49,
+      "first_failure_substep_min": 186,
+      "first_failure_substep_max": 357,
+      "first_failure_during_probe_or_hold": 0
+    },
+    "grasp_slip_translation": {
+      "branches_violating": 49,
+      "first_failure_substep_min": 198,
+      "first_failure_substep_max": 377,
+      "first_failure_during_probe_or_hold": 0
+    },
+    "grasp_slip_rotation": {
+      "branches_violating": 49,
+      "first_failure_substep_min": 185,
+      "first_failure_substep_max": 373,
+      "first_failure_during_probe_or_hold": 0
+    },
+    "peg_fixture_force": {
+      "branches_violating": 49,
+      "first_failure_substep_min": 161,
+      "first_failure_substep_max": 357,
+      "first_failure_during_probe_or_hold": 2
+    },
+    "nonfinger_robot_contact": {
+      "branches_violating": 0,
+      "first_failure_substep_min": null,
+      "first_failure_substep_max": null,
+      "first_failure_during_probe_or_hold": 0
+    }
+  },
+  "new_source_attempts": 0,
+  "new_exploratory_parents": 0,
+  "new_confirmation_parents": 0
+}

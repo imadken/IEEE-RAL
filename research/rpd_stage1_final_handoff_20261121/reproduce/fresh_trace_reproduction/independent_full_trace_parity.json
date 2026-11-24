@@ -1,0 +1,161 @@
+{
+  "passed": true,
+  "repeat_pairs": 14,
+  "checks": [
+    {
+      "parent": "RPD-assembly-v1/qual/0",
+      "intervention": "hold",
+      "action": "a1",
+      "paired_frames": 550,
+      "maximum_translation_m": 0.0,
+      "maximum_rotation_rad": 0.0,
+      "maximum_other_numeric_abs": 0.0,
+      "original": "research/rpd_assembly_preliminary_20261120/episodes/8c71d749312d776b625da7534c590efd7738196d9050ecdd3d8c2178aa72977d_sourcefix02/result.json.xz",
+      "repeat": "research/rpd_assembly_preliminary_20261120/episodes/05baf7d369f83b0a3c5f83edc3d03d04f88d15653b0769912456c3f478898c68_sourcefix02/result.json.xz"
+    },
+    {
+      "parent": "RPD-assembly-v1/qual/0",
+      "intervention": "direct",
+      "action": "a0",
+      "paired_frames": 550,
+      "maximum_translation_m": 0.0,
+      "maximum_rotation_rad": 0.0,
+      "maximum_other_numeric_abs": 0.0,
+      "original": "research/rpd_assembly_preliminary_20261120/episodes/587d11b4a519da755ee1d1a918f9875bb768f23b50c3a822dec733cde63231a4_sourcefix02/result.json.xz",
+      "repeat": "research/rpd_assembly_preliminary_20261120/episodes/0699aa859f03dbcffbd7f16a9c6ffc73726d21acb28d01045428ee7bdad3b02d_sourcefix02/result.json.xz"
+    },
+    {
+      "parent": "RPD-assembly-v1/qual/0",
+      "intervention": "preload",
+      "action": "a1",
+      "paired_frames": 550,
+      "maximum_translation_m": 0.0,
+      "maximum_rotation_rad": 0.0,
+      "maximum_other_numeric_abs": 0.0,
+      "original": "research/rpd_assembly_preliminary_20261120/episodes/948c8961766f7e69bfe3227903b83fd621dd2f1d94bd8c8160758b340979abb9_sourcefix02/result.json.xz",
+      "repeat": "research/rpd_assembly_preliminary_20261120/episodes/30b096e108c95428c0b94060d72f851fc600bdd7a12e2add3e49e892833f2881_sourcefix02/result.json.xz"
+    },
+    {
+      "parent": "RPD-assembly-v1/qual/1",
+      "intervention": "hold",
+      "action": "a0",
+      "paired_frames": 550,
+      "maximum_translation_m": 0.0,
+      "maximum_rotation_rad": 0.0,
+      "maximum_other_numeric_abs": 0.0,
+      "original": "research/rpd_assembly_preliminary_20261120/episodes/d24f09cebc7dfd56199781db6411748f5dae38c3def149844bcad53bf5debe0e_sourcefix02/result.json.xz",
+      "repeat": "research/rpd_assembly_preliminary_20261120/episodes/43dcb8635f808c1d1cb41d8f2899dc187fbc99b47235f699348aeaf0392578a2_sourcefix02/result.json.xz"
+    },
+    {
+      "parent": "RPD-assembly-v1/qual/0",
+      "intervention": "hold",
+      "action": "a0",
+      "paired_frames": 550,
+      "maximum_translation_m": 0.0,
+      "maximum_rotation_rad": 0.0,
+      "maximum_other_numeric_abs": 0.0,
+      "original": "research/rpd_assembly_preliminary_20261120/episodes/a7f75de765f28577d3d03b30e32974964c86d55aeb3518e25862795ee5146892_sourcefix02/result.json.xz",
+      "repeat": "research/rpd_assembly_preliminary_20261120/episodes/517920dc7f049154811e0c917268e52a35ca9306f9a391041e35770989f86e6a_sourcefix02/result.json.xz"
+    },
+    {
+      "parent": "RPD-assembly-v1/qual/0",
+      "intervention": "dither",
+      "action": "a0",
+      "paired_frames": 550,
+      "maximum_translation_m": 0.0,
+      "maximum_rotation_rad": 0.0,
+      "maximum_other_numeric_abs": 0.0,
+      "original": "research/rpd_assembly_preliminary_20261120/episodes/54d249229896bd8721d898379b34d72f87463c3250034817ebaa4582264f5dec_sourcefix02/result.json.xz",
+      "repeat": "research/rpd_assembly_preliminary_20261120/episodes/57e2b74d8f074b12649d9fa9916503b749b780135e3a18933c8ca383479c5095_sourcefix02/result.json.xz"
+    },
+    {
+      "parent": "RPD-assembly-v1/qual/1",
+      "intervention": "dither",
+      "action": "a1",
+      "paired_frames": 550,
+      "maximum_translation_m": 0.0,
+      "maximum_rotation_rad": 0.0,
+      "maximum_other_numeric_abs": 0.0,
+      "original": "research/rpd_assembly_preliminary_20261120/episodes/87e206fc000f4b1b6b9acc182e5605b74e8e79ec6adf8f3f84fa4c05819c28a5_sourcefix02/result.json.xz",
+      "repeat": "research/rpd_assembly_preliminary_20261120/episodes/633ca636c15a42c0a9a1f5f6bc2eb85ac7ae94679ab84fe51a06dd8b18b9ad01_sourcefix02/result.json.xz"
+    },
+    {
+      "parent": "RPD-assembly-v1/qual/0",
+      "intervention": "preload",
+      "action": "a0",
+      "paired_frames": 550,
+      "maximum_translation_m": 0.0,
+      "maximum_rotation_rad": 0.0,
+      "maximum_other_numeric_abs": 0.0,
+      "original": "research/rpd_assembly_preliminary_20261120/episodes/a43e6fa3f5a640419c23bf6e6c8a9cadd32d1f6a8ec2c822e9dc772d0a143056_sourcefix02/result.json.xz",
+      "repeat": "research/rpd_assembly_preliminary_20261120/episodes/a264a70f93dd3a29e6ecdffc3eb5af3ace93770b41f299bb386e130a3a133be7_sourcefix02/result.json.xz"
+    },
+    {
+      "parent": "RPD-assembly-v1/qual/0",
+      "intervention": "dither",
+      "action": "a1",
+      "paired_frames": 550,
+      "maximum_translation_m": 0.0,
+      "maximum_rotation_rad": 0.0,
+      "maximum_other_numeric_abs": 0.0,
+      "original": "research/rpd_assembly_preliminary_20261120/episodes/a671a78f93a25c9b18decea06c34e237af254c9213ef631f3c9b7deda8a105cb_sourcefix02/result.json.xz",
+      "repeat": "research/rpd_assembly_preliminary_20261120/episodes/aa413f40b009982aaba021a261bb81daa17a6adf2b476ed63cbc8e957e230b54_sourcefix02/result.json.xz"
+    },
+    {
+      "parent": "RPD-assembly-v1/qual/1",
+      "intervention": "direct",
+      "action": "a0",
+      "paired_frames": 550,
+      "maximum_translation_m": 0.0,
+      "maximum_rotation_rad": 0.0,
+      "maximum_other_numeric_abs": 0.0,
+      "original": "research/rpd_assembly_preliminary_20261120/episodes/e8bd11c0581e5717ff90165ce18e3eb50a11e7aa44375d7db2c7cfb05f03282d_sourcefix02/result.json.xz",
+      "repeat": "research/rpd_assembly_preliminary_20261120/episodes/b4000f1e7dc7cb44c462c9d7e2330f1bb5880f18316279c6fd5a44a3d8e3addc_sourcefix02/result.json.xz"
+    },
+    {
+      "parent": "RPD-assembly-v1/qual/1",
+      "intervention": "dither",
+      "action": "a0",
+      "paired_frames": 550,
+      "maximum_translation_m": 0.0,
+      "maximum_rotation_rad": 0.0,
+      "maximum_other_numeric_abs": 0.0,
+      "original": "research/rpd_assembly_preliminary_20261120/episodes/16dcf588be003e73a183f6c7bad80053b26929ae39b1b9c76ace7d2c2df225d7_sourcefix02/result.json.xz",
+      "repeat": "research/rpd_assembly_preliminary_20261120/episodes/baa49257e4f3c66f4ce7d256665dffb9a5bfdcad2472abc6ea67be5b055535cc_sourcefix02/result.json.xz"
+    },
+    {
+      "parent": "RPD-assembly-v1/qual/1",
+      "intervention": "preload",
+      "action": "a1",
+      "paired_frames": 550,
+      "maximum_translation_m": 0.0,
+      "maximum_rotation_rad": 0.0,
+      "maximum_other_numeric_abs": 0.0,
+      "original": "research/rpd_assembly_preliminary_20261120/episodes/7d7044c29335cf464b086e2227dc757666ac23cf5a177cbe6a8d039ebb780caa_sourcefix02/result.json.xz",
+      "repeat": "research/rpd_assembly_preliminary_20261120/episodes/c5446a0c437271f6e684d2bd6a7dacd2d7a9a051ba84def34ee8b20d068efb38_sourcefix02/result.json.xz"
+    },
+    {
+      "parent": "RPD-assembly-v1/qual/1",
+      "intervention": "preload",
+      "action": "a0",
+      "paired_frames": 550,
+      "maximum_translation_m": 0.0,
+      "maximum_rotation_rad": 0.0,
+      "maximum_other_numeric_abs": 0.0,
+      "original": "research/rpd_assembly_preliminary_20261120/episodes/9cfc31ef4903310418bea23cda99cd4e7d1cc7cc506f0c8925441967676dc203_sourcefix02/result.json.xz",
+      "repeat": "research/rpd_assembly_preliminary_20261120/episodes/dae9be22c83fc7640127c9d489261f2e70c67815fa326407d4bd4f93cb026679_sourcefix02/result.json.xz"
+    },
+    {
+      "parent": "RPD-assembly-v1/qual/1",
+      "intervention": "hold",
+      "action": "a1",
+      "paired_frames": 550,
+      "maximum_translation_m": 0.0,
+      "maximum_rotation_rad": 0.0,
+      "maximum_other_numeric_abs": 0.0,
+      "original": "research/rpd_assembly_preliminary_20261120/episodes/0c485385bfb2ef3fac4e10da1ce1a79c887298ab2abeb043b6a8467e4df4ed08_sourcefix02/result.json.xz",
+      "repeat": "research/rpd_assembly_preliminary_20261120/episodes/e3bdba95b60f630633abf7b3603ea50725700ed2d52ece03c778aef6cd4edfa2_sourcefix02/result.json.xz"
+    }
+  ],
+  "scope": "Fourteen full-trajectory pairs at the first two eligible source parents only;not global native stability"
+}

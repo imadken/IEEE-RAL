@@ -1,0 +1,10 @@
+Source qualification stopped at the exact failed row
+Traceback (most recent call last):
+  File "/home/imad/Desktop/IEEE-RAL/scripts/rpd_assembly_run.py", line 152, in execute
+    row, _ = launch(
+             ^^^^^^^
+  File "/home/imad/Desktop/IEEE-RAL/scripts/rpd_assembly_run.py", line 89, in launch
+    assert child.returncode == 0 and not timed_out, f"STOP_SOURCE_FAILURE:{directory}"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: STOP_SOURCE_FAILURE:research/rpd_assembly_preliminary_20261120/episodes/e7a60252ebfa2da9fcbc8ae538a8667562730de21acd9218279e93627dccf52a
+{"phase": "qual", "passed": false, "screened": 0, "eligible": 0, "registration_sha256": "2d507de4be0f15608769361a197e20cf7c50a7c7cf011edd112dec07cd17cd93", "reason": "STOP_SOURCE_FAILURE:research/rpd_assembly_preliminary_20261120/episodes/e7a60252ebfa2da9fcbc8ae538a8667562730de21acd9218279e93627dccf52a", "failure_type": "AssertionError", "preserved_all_attempts": true}

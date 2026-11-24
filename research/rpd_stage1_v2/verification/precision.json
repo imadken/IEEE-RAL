@@ -1,0 +1,21 @@
+{
+  "scope": "ANALYTICAL_DESIGN_CALCULATIONS_NOT_ROBOT_OUTCOMES",
+  "n": 512,
+  "alpha_per_primary_hypothesis": 0.025,
+  "H1_null_boundary": 0.1,
+  "H1_reject_from_events": 66,
+  "H1_test_size_at_boundary": 0.020318522616838825,
+  "H1_power_at_true_rate_15pct": 0.9212959594666066,
+  "H1_zero_event_upper975": 0.007178950026259456,
+  "H2_normal_halfwidth_at_discordance20pct_effect10pct": 0.037756341973792434,
+  "H2_exact_conservative_bound_power_at_pplus15pct_pminus5pct": 0.3076074862622259,
+  "H2_paired_profile_power_at_pplus15pct_pminus5pct": 0.7472681942802396,
+  "H2_primary_interval_scope": "Asymptotic trinomial profile-likelihood95%CI; <30discordant pairs use conservative exact CP-difference bounds. Exact CP sensitivity reported for all counts. No exact finite-sample H2 coverage claim.",
+  "H2_all_zero_discordance_upper_unseen_plus": 0.008522124826342391,
+  "confirmation_terminal_evaluations": 3072,
+  "discovery_terminal_evaluations": 384,
+  "deadline_sensitivity_extra_evaluations": 384,
+  "extra_skill_sensitivity_extra_evaluations_if_bound": 192,
+  "information_bound": "For clipped probabilities >=epsilon, paired log-score difference in[-b,b], b=-log(epsilon). L=mean-b*sqrt(2log(1/alpha)/n). Same bound for probe-minus-hold score.",
+  "H2_bound": "LowerCP(n_plus,n,alpha/2)-UpperCP(n_minus,n,alpha/2); no independence of discordant counts assumed. Conservative power is lower than normal halfwidth suggests."
+}

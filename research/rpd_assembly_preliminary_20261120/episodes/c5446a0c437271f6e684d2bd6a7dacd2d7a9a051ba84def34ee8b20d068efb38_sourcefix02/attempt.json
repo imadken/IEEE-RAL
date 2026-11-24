@@ -1,0 +1,11 @@
+{
+  "candidate_id": "RPD-assembly-v1/qual/1",
+  "pid": 23777,
+  "command": [
+    "/home/imad/Desktop/IEEE-RAL/.venv/bin/python3",
+    "scripts/rpd_assembly_worker.py",
+    "--job",
+    "research/rpd_assembly_preliminary_20261120/episodes/c5446a0c437271f6e684d2bd6a7dacd2d7a9a051ba84def34ee8b20d068efb38_sourcefix02/job.json"
+  ],
+  "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73"
+}

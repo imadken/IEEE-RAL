@@ -1,0 +1,255 @@
+{
+  "tasks": {
+    "PickCube-v1": {
+      "harm_only": {
+        "parents": 256,
+        "recover": 111,
+        "rescue": 84,
+        "harm": 0,
+        "futile": 27,
+        "redundant": 0,
+        "completion": 227,
+        "withheld": 145,
+        "certificate_lengths": {
+          "1": 111
+        },
+        "policy_scope": "Retrospective obligation contrast on the original sealed paired oracle; thresholds and regions unchanged, no refit",
+        "CART_frozen_gain_prefilter": {
+          "parents": 256,
+          "recover": 111,
+          "rescue": 84,
+          "harm": 0,
+          "futile": 27,
+          "redundant": 0,
+          "completion": 227,
+          "withheld": 145
+        },
+        "CART_obligation_gate_only": {
+          "parents": 256,
+          "recover": 111,
+          "rescue": 84,
+          "harm": 0,
+          "futile": 27,
+          "redundant": 0,
+          "completion": 227,
+          "withheld": 145
+        }
+      },
+      "completion": {
+        "parents": 256,
+        "recover": 0,
+        "rescue": 0,
+        "harm": 0,
+        "futile": 0,
+        "redundant": 0,
+        "completion": 143,
+        "withheld": 256,
+        "certificate_lengths": {},
+        "policy_scope": "Retrospective obligation contrast on the original sealed paired oracle; thresholds and regions unchanged, no refit",
+        "CART_frozen_gain_prefilter": {
+          "parents": 256,
+          "recover": 0,
+          "rescue": 0,
+          "harm": 0,
+          "futile": 0,
+          "redundant": 0,
+          "completion": 143,
+          "withheld": 256
+        },
+        "CART_obligation_gate_only": {
+          "parents": 256,
+          "recover": 0,
+          "rescue": 0,
+          "harm": 0,
+          "futile": 0,
+          "redundant": 0,
+          "completion": 143,
+          "withheld": 256
+        }
+      },
+      "useful": {
+        "parents": 256,
+        "recover": 111,
+        "rescue": 84,
+        "harm": 0,
+        "futile": 27,
+        "redundant": 0,
+        "completion": 227,
+        "withheld": 145,
+        "certificate_lengths": {
+          "1": 111
+        },
+        "policy_scope": "Retrospective obligation contrast on the original sealed paired oracle; thresholds and regions unchanged, no refit",
+        "CART_frozen_gain_prefilter": {
+          "parents": 256,
+          "recover": 111,
+          "rescue": 84,
+          "harm": 0,
+          "futile": 27,
+          "redundant": 0,
+          "completion": 227,
+          "withheld": 145
+        },
+        "CART_obligation_gate_only": {
+          "parents": 256,
+          "recover": 111,
+          "rescue": 84,
+          "harm": 0,
+          "futile": 27,
+          "redundant": 0,
+          "completion": 227,
+          "withheld": 145
+        }
+      },
+      "always_continue": {
+        "parents": 256,
+        "recover": 0,
+        "rescue": 0,
+        "harm": 0,
+        "futile": 0,
+        "redundant": 0,
+        "completion": 143,
+        "withheld": 256
+      },
+      "always_recover": {
+        "parents": 256,
+        "recover": 256,
+        "rescue": 86,
+        "harm": 32,
+        "futile": 27,
+        "redundant": 111,
+        "completion": 197,
+        "withheld": 0
+      }
+    },
+    "PushCube-v1": {
+      "harm_only": {
+        "parents": 256,
+        "recover": 256,
+        "rescue": 127,
+        "harm": 2,
+        "futile": 2,
+        "redundant": 125,
+        "completion": 252,
+        "withheld": 0,
+        "certificate_lengths": {
+          "0": 256
+        },
+        "policy_scope": "Retrospective obligation contrast on the original sealed paired oracle; thresholds and regions unchanged, no refit",
+        "CART_frozen_gain_prefilter": {
+          "parents": 256,
+          "recover": 128,
+          "rescue": 126,
+          "harm": 0,
+          "futile": 2,
+          "redundant": 0,
+          "completion": 253,
+          "withheld": 128
+        },
+        "CART_obligation_gate_only": {
+          "parents": 256,
+          "recover": 256,
+          "rescue": 127,
+          "harm": 2,
+          "futile": 2,
+          "redundant": 125,
+          "completion": 252,
+          "withheld": 0
+        }
+      },
+      "completion": {
+        "parents": 256,
+        "recover": 256,
+        "rescue": 127,
+        "harm": 2,
+        "futile": 2,
+        "redundant": 125,
+        "completion": 252,
+        "withheld": 0,
+        "certificate_lengths": {
+          "0": 256
+        },
+        "policy_scope": "Retrospective obligation contrast on the original sealed paired oracle; thresholds and regions unchanged, no refit",
+        "CART_frozen_gain_prefilter": {
+          "parents": 256,
+          "recover": 128,
+          "rescue": 126,
+          "harm": 0,
+          "futile": 2,
+          "redundant": 0,
+          "completion": 253,
+          "withheld": 128
+        },
+        "CART_obligation_gate_only": {
+          "parents": 256,
+          "recover": 256,
+          "rescue": 127,
+          "harm": 2,
+          "futile": 2,
+          "redundant": 125,
+          "completion": 252,
+          "withheld": 0
+        }
+      },
+      "useful": {
+        "parents": 256,
+        "recover": 128,
+        "rescue": 126,
+        "harm": 0,
+        "futile": 2,
+        "redundant": 0,
+        "completion": 253,
+        "withheld": 128,
+        "certificate_lengths": {
+          "1": 128
+        },
+        "policy_scope": "Retrospective obligation contrast on the original sealed paired oracle; thresholds and regions unchanged, no refit",
+        "CART_frozen_gain_prefilter": {
+          "parents": 256,
+          "recover": 128,
+          "rescue": 126,
+          "harm": 0,
+          "futile": 2,
+          "redundant": 0,
+          "completion": 253,
+          "withheld": 128
+        },
+        "CART_obligation_gate_only": {
+          "parents": 256,
+          "recover": 128,
+          "rescue": 126,
+          "harm": 0,
+          "futile": 2,
+          "redundant": 0,
+          "completion": 253,
+          "withheld": 128
+        }
+      },
+      "always_continue": {
+        "parents": 256,
+        "recover": 0,
+        "rescue": 0,
+        "harm": 0,
+        "futile": 0,
+        "redundant": 0,
+        "completion": 127,
+        "withheld": 256
+      },
+      "always_recover": {
+        "parents": 256,
+        "recover": 256,
+        "rescue": 127,
+        "harm": 2,
+        "futile": 2,
+        "redundant": 125,
+        "completion": 252,
+        "withheld": 0
+      }
+    }
+  },
+  "input_sha256": {
+    "/home/imad/Desktop/IEEE-RAL/research/dsre_experimental_closure/final/registration.json": "068a79054111d6770baf412e215f36fee686ff375cb6f269a01df7711d77f014",
+    "/home/imad/Desktop/IEEE-RAL/research/dsre_experimental_closure/final/E1/calibration_freeze.json": "095675ed507699a0f5d6b3df9153eed2c10172d4a92887ba7ef34da447d7031b",
+    "/home/imad/Desktop/IEEE-RAL/research/dsre_experimental_closure/final/E0/recount/independent_numbers.json": "8e7372bc48f99815edfeeafdbd9e7b92442407d00c2ffbb269006184912b7f30"
+  }
+}

@@ -1,0 +1,13 @@
+
+warning: Loadable section ".dynstr" outside of ELF segments
+  in /home/imad/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/bin/python3.12
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+IMPORT_FROZEN_NATIVE_WORKER 146f31016394d7b11cc36e66a847698f666555ef351f1bba2b9e731eaf42b332
+EXECUTE_FROZEN_ROW {"parent":{"task":"PickCube-v1","phase":"technical_pilot","index":0,"seed":2004000000,"parent_id":"36afc2ba23e79ed6e745894adb52e31258cb0163f9b08b45fc1c176ba6a7d988","condition":"nominal"},"history":["neutral20"],"endpoint":"recover","repeat":0,"row_id":"837fc5c507b8519fe9a697ab279f860c86830bbf3963864bbf27d69e111300e0","delay_ticks":20,"macro_ticks":70,"deadline_ticks":90}
+[Detaching after vfork from child process 2785509]
+[Detaching after vfork from child process 2785517]
+[Detaching after vfork from child process 2785550]
+[Detaching after vfork from child process 2785902]
+FROZEN_ROW_RETURNED COMPLETE True True
+[Inferior 1 (process 2784764) exited normally]

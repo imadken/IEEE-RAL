@@ -1,0 +1,16 @@
+{
+  "files": {
+    "scripts/rpd_pilot_handoff.py": "834747c9d92561d266dd5e9be7bc6d40c218960bb10f69385904296de6c42db6",
+    "scripts/rpd_pilot_package.py": "a3db236dc1d1ed1df7a2a9a3aac4c66d81fda8d7bb372d5f50db413ad82b69b4",
+    "scripts/rpd_pilot_source_review.py": "92c4d688a6523d74ecebb179ce3f70797a75658dd2bf80545565286371e3eda6",
+    "scripts/rpd_pilot_audit.py": "ac4f1b86dbe188c65b4b6c7553e2f85a2ce317c615def38bc49df9078ec94320",
+    "scripts/rpd_pilot_physics.py": "b4814b7834fd5183d31a4227d0e5eb9dc4f2d68e6f82c99e75f7a1a2e2744842",
+    "scripts/rpd_pilot_reproduce.py": "8faf4269358cc6a2d06538929a67498a8caef710dbaa5b203b85eb51425ef8b7",
+    "scripts/rpd_pilot_common.py": "d11e74662dafb1afd0fba1c9d0f06e388fa6104aa5620a2ddf58ad1249a548b4",
+    "scripts/rpd_pilot_closure.py": "1643fdb986a88a4837c672c6a0346f295851de631bde71c02216b2f1d9958bf5",
+    "scripts/rpd_pilot_preflight.py": "27d49f963f752ae4c89c3836eabcfccdffbea7680a88fa56527d2033665c1c7a",
+    "tests/test_rpd_physical_pilot.py": "15a5198adcac932c64750bfb741388a6ce51cae4155ad44427f36d4be027161f",
+    "tests/test_rpd_pilot_forensics.py": "e741bf1eca0bf46176715d0feefd92ee1ed23c6c01e193a81cab918fadd16d57"
+  },
+  "post_failure_additions": "Forensic missingness correction, scientific handoff and offline package/reproduction only; frozen physics/menu/source/test code not changed after collection."
+}

@@ -1,0 +1,21 @@
+{
+  "created_epoch": 1795039435.7245343,
+  "base_commit": "f551a6e546a55f59dc059747af6dfe8a3899c478",
+  "code_sha256": {
+    "scripts/dsre_closure_calibrate.py": "057146c0e35cbb7b9cfa7a42d2fa69ad87fd6b398913a19df8bf794bcdddf97e",
+    "scripts/dsre_closure_checkpoints.py": "5a3080603464e9265e176f88f6134bcd5e19686b4c21f14b507dc04f77e560cb",
+    "scripts/dsre_closure_common.py": "2f2365379149c7c93f733907a7d63e7436fa2978e6dc19a10d0babcf1aca01ec",
+    "scripts/dsre_closure_evaluate.py": "77081888741e80d41a6332ae1ab0590dd65f41574b70d38f341805adb31e6653",
+    "scripts/dsre_closure_integrity.py": "ddbb3aa6710ab0750ecbbe4875d0158b03d08fd3cdac100e59ad2fb46a5f1f97",
+    "scripts/dsre_closure_math.py": "0918f049d71c944cd42a59ee679af2e677369dc78ef215ffdf314af8bad6c951",
+    "scripts/dsre_closure_report.py": "10c8e5e9a68ed82301196dc750b5ccd5de6381ea4a81ae525f354e01496ca7be",
+    "scripts/dsre_closure_reproduce.py": "4b1f894a56a1340d75fee0da1a2ab763c72002f470f59091f7b8e3117731e7b3",
+    "scripts/dsre_closure_run.py": "addce0f705e13387f9c5912c1e1961701d11aaa48e688f3b56cea3e45374cdd3",
+    "scripts/dsre_closure_sample.py": "1deb4e8b043f0659ae270bad52004ee20398f0118a8442b800c7de889e24fdc0",
+    "scripts/dsre_closure_seal.py": "1731a7a72d5a090ce8cda407ff9f30f0db377c55e1376cebc0a998cb371bc955",
+    "scripts/dsre_closure_sources.py": "f9c4b33fc41261aea0cd1de33a15b0cf8fcb43a9654ec7816fcb80aed887d923",
+    "tests/test_dsre_closure.py": "90aaff69cb9f45c04315df4da6168e63351b35e4b3526f2be6797080a22564da"
+  },
+  "new_physics": 0,
+  "new_controller_fits": 0
+}

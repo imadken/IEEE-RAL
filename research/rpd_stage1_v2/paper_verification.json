@@ -1,0 +1,21 @@
+{
+  "pages": 6,
+  "content_pages": 5,
+  "reference_pages": 1,
+  "paper_sha256": "fbe81c8565fee6a6200ccd70323f6bec830b436966f1c35ad6d38a5d755b9eb9",
+  "text_sha256": "4605f09ad01b7090bc3b300d5267147d0a3eff5f54f2f712e17d6a0228b52eea",
+  "page_word_counts": [
+    635,
+    829,
+    879,
+    890,
+    810,
+    377
+  ],
+  "pdfinfo": "Title:           When Does Physical Diagnosis Compromise Robot Recovery?\nSubject:         Anonymous manuscript\nCreator:         LaTeX with hyperref\nProducer:        xdvipdfmx (0.1)\nCreationDate:    Thu Nov 19 19:17:08 2026 CET\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           6\nEncrypted:       no\nPage size:       612 x 792 pts (letter)\nPage rot:        0\nFile size:       184357 bytes\nOptimized:       no\nPDF version:     1.5\n",
+  "fonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nIHAIZV+NimbusRomNo9L-Regu            Type 1C           Custom           yes yes yes      4  0\nBZIVMZ+NimbusRomNo9L-MediItal        Type 1C           Custom           yes yes yes      5  0\nIXFAWU+NimbusRomNo9L-Medi            Type 1C           Custom           yes yes yes      6  0\nTQTHRL+NimbusRomNo9L-ReguItal        Type 1C           Custom           yes yes yes      7  0\nYEUUOC+CMMI10                        Type 1C           Builtin          yes yes yes     24  0\nAKHCZK+CMSY10                        Type 1C           Builtin          yes yes yes     25  0\nVDVGTR+CMR10                         Type 1C           Builtin          yes yes yes     26  0\nCAFSZL+CMMI7                         Type 1C           Builtin          yes yes yes     27  0\nDDIEWW+CMEX10                        Type 1C           Builtin          yes yes no      28  0\nFKPJSN+CMSY7                         Type 1C           Builtin          yes yes yes     29  0\nPVTTLK+CMSY5                         Type 1C           Builtin          yes yes yes     30  0\nJAGKKY+CMMI5                         Type 1C           Builtin          yes yes yes     31  0\nNOMARO+MSAM10                        Type 1C           Builtin          yes yes yes     32  0\nKPXLOM+MSBM10                        Type 1C           Builtin          yes yes yes     33  0\nUTACNV+CMR7                          Type 1C           Builtin          yes yes yes     39  0\nFZDNHS+CMR5                          Type 1C           Builtin          yes yes yes     40  0\n",
+  "unresolved_references": false,
+  "external_urls_and_identifying_author_metadata": false,
+  "visual_review": "All six rendered pages and Figure 1 inspected; no figure clipping, text overlap, or table overflow. References balanced without font/margin changes.",
+  "font_warning_scope": "IEEEtran emits TU font-shape warnings before T1/times is loaded; final PDF embeds only Type1C fonts. Minor underfull text boxes retained, no overfull boxes."
+}

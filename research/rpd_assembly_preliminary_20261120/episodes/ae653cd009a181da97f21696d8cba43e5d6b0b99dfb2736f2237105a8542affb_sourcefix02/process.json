@@ -1,0 +1,9 @@
+{
+  "candidate_id": "RPD-assembly-v1/qual/8",
+  "job_id": "ae653cd009a181da97f21696d8cba43e5d6b0b99dfb2736f2237105a8542affb",
+  "returncode": 0,
+  "timed_out": false,
+  "wall_seconds": 12.656696221994935,
+  "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+  "console_sha256": "ef48e59d851b37db13a38ad796c322d3a8589460f0026478f098cf04af23cff0"
+}

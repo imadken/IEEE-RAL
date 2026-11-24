@@ -1,0 +1,53 @@
+{
+  "mode": "ISOLATED_PORTABLE",
+  "new_physics": 0,
+  "new_robot_outcomes": 0,
+  "steps": [
+    {
+      "name": "finite_models",
+      "returncode": 0,
+      "wall_seconds": 21.184281967987772,
+      "log_sha256": "6a723305d10db837f7fcb7342996dc56406b1df2c69f7a0ffa0099cca242f990"
+    },
+    {
+      "name": "robot",
+      "returncode": 0,
+      "wall_seconds": 19.178977119008778,
+      "log_sha256": "1389befd950b39c75917ac354ed388a36632d87368f40f860a809dec4083224b"
+    },
+    {
+      "name": "stage2_reservation",
+      "returncode": 0,
+      "wall_seconds": 0.41610447101993486,
+      "log_sha256": "61faa065e18d2736880fcbcd8bbc7783e5ffc1204a61d3e6c875e309a38bda41"
+    },
+    {
+      "name": "focused_tests",
+      "returncode": 0,
+      "wall_seconds": 1.4186921090004034,
+      "log_sha256": "e00d880779cbeef5cd9b01acad1e08c88c541e645ee4eed55396ef88dc8989ab"
+    }
+  ],
+  "source_archive_sha256": "1399a14b3c566d045f2b763548e3085d209121bfc0ec3fea26f5ca2b3487b45e",
+  "source_members_verified": 2477,
+  "passed": true,
+  "scientific_projection_matches": [
+    "finite_models/exhaustive_binary_cases.jsonl",
+    "finite_models/finite_world_audit_summary.json",
+    "finite_models/registered_cases_and_results.json",
+    "finite_models/seeded_cases.jsonl",
+    "finite_models/seeded_results.jsonl",
+    "robot/robot_context_witnesses.json",
+    "stage2_reservation/protocol_reservation.json",
+    "stage2_reservation/reserved_parents.jsonl"
+  ],
+  "excluded_comparison_fields": [
+    "wall_seconds",
+    "solver_wall_seconds",
+    "input_sha256",
+    "successful_reads"
+  ],
+  "wall_seconds": 43.60976764501538,
+  "child_cpu_seconds": 43.062827,
+  "output_bytes": 23237694
+}

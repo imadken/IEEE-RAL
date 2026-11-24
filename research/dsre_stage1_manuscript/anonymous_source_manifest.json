@@ -1,0 +1,21 @@
+{
+  "archive": "rss2027/dsre_stage1_anonymous_source.tar.gz",
+  "sha256": "34123d737e57bba340da6d9df4a8ced419d11b6c3aabf1c25f0a800110b9d224",
+  "files": {
+    "IEEEtran.cls": "d63d4bf27f29603a733d06e27ba5fbb40488acf9d1d696354a88b886758f70a7",
+    "dsre_stage1.tex": "b2e48c9fbcb62ca1cc6493d4f602c75f256633c7b0350fdca5811dbbb99ae831",
+    "figure_source.py": "7b6717192b50c8d40a4a0d8910c2661453b2d435b5afc65ce69fe586734a67d6",
+    "main_results.csv": "bd9cb184231b5f811d27f81f9295f0cca963db84ed8f1d51d0827ec5912cf641",
+    "stage1_evidence/calibration.tex": "f7fca1593294325f24f692e482cc0a6661876967e5df4e477cf90c4a57d118b6",
+    "stage1_evidence/figure1_evidence.pdf": "1683ae88768187c952f9003202b21154934cd4a56794365f74c1892a0458c012",
+    "stage1_evidence/figure1_evidence.png": "c64a09b98d3c28ca74a163e4de329f4799ff2aae8d2009f56a7738800b1f389f",
+    "stage1_evidence/figure1_evidence.svg": "bc4b70003cf3f30da7fd4a3167b523e9821c41e9d77d8b321fca055533759cd0",
+    "stage1_evidence/figure2_identification.pdf": "ce494c1dce1353ac3a5f7f1fdc80949f749eab34cb2f42e7b74d2673ebbf8e0c",
+    "stage1_evidence/figure2_identification.png": "ce811f518bfd3c0c7cd1aca03c7683b2bc462704bd3cfdd9ca29e264f9511d3f",
+    "stage1_evidence/figure2_identification.svg": "3230db31b3443dc6344fa075991b5789faf6127aaccf3b2fd681efc72c5fec9b",
+    "stage1_evidence/figure_data.json": "0c547ae7151e93ccfae635620d30b21ad90eea979ae18d4bf1fb745a98f072a2",
+    "stage1_evidence/main_results.tex": "8a04311d875eba4eece4f265a9252a5247b3d15e6f7cbc95d8f3526ac469a19e",
+    "stage1_evidence/references.bib": "14e30cac4f006cedffd1ef0d3daa85ff29e8a4443055fb70d4918f57304193af",
+    "README.txt": "f81d568e2df2c0401443507c363578cacf62d22d4d086105519e562805ef11b8"
+  }
+}

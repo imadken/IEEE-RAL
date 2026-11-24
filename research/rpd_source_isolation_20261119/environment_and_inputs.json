@@ -1,0 +1,480 @@
+{
+  "epoch": 1795102392.6439047,
+  "before_physics": true,
+  "environment_scope": "Physics-relevant allowlist plus installed-distribution versions; no secret/transient environment values recorded",
+  "environment": {
+    "PYTHONPATH": "src:scripts:.",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": null,
+    "CUDA_VISIBLE_DEVICES": null,
+    "LD_LIBRARY_PATH": null,
+    "PYTHONHASHSEED": null,
+    "SAPIEN_RENDER_SYSTEM": null,
+    "UV_CACHE_DIR": "/tmp/dsre-evidence-uv"
+  },
+  "installed_distributions": [
+    [
+      "Farama-Notifications",
+      "0.0.6"
+    ],
+    [
+      "GitPython",
+      "3.2.1"
+    ],
+    [
+      "ImageIO",
+      "2.38.1"
+    ],
+    [
+      "Jinja2",
+      "3.1.6"
+    ],
+    [
+      "MarkupSafe",
+      "3.0.4"
+    ],
+    [
+      "PyOpenGL",
+      "3.1.10"
+    ],
+    [
+      "PyYAML",
+      "6.0.3"
+    ],
+    [
+      "Pygments",
+      "2.21.0"
+    ],
+    [
+      "absl-py",
+      "2.5.1"
+    ],
+    [
+      "annotated-types",
+      "0.8.0"
+    ],
+    [
+      "anyio",
+      "4.16.0"
+    ],
+    [
+      "arm_pytorch_utilities",
+      "0.5.0"
+    ],
+    [
+      "asttokens",
+      "3.0.2"
+    ],
+    [
+      "certifi",
+      "2026.10.23"
+    ],
+    [
+      "charset-normalizer",
+      "3.5.2"
+    ],
+    [
+      "click",
+      "8.5.1"
+    ],
+    [
+      "cloudpickle",
+      "3.1.2"
+    ],
+    [
+      "contourpy",
+      "1.3.3"
+    ],
+    [
+      "cycler",
+      "0.12.1"
+    ],
+    [
+      "dacite",
+      "1.9.2"
+    ],
+    [
+      "defusedxml",
+      "0.7.1"
+    ],
+    [
+      "docstring_parser",
+      "0.18.0"
+    ],
+    [
+      "etils",
+      "1.15.0"
+    ],
+    [
+      "evdev",
+      "2.0.0"
+    ],
+    [
+      "executing",
+      "2.3.0"
+    ],
+    [
+      "filelock",
+      "4.2.10"
+    ],
+    [
+      "fonttools",
+      "4.68.0"
+    ],
+    [
+      "fsspec",
+      "2026.9.0"
+    ],
+    [
+      "gitdb",
+      "4.0.12"
+    ],
+    [
+      "glfw",
+      "2.11.0"
+    ],
+    [
+      "gymnasium",
+      "1.4.0"
+    ],
+    [
+      "h11",
+      "0.16.0"
+    ],
+    [
+      "h5py",
+      "3.16.0"
+    ],
+    [
+      "hf-xet",
+      "1.8.0"
+    ],
+    [
+      "httpcore2",
+      "2.16.0"
+    ],
+    [
+      "httpx2",
+      "2.16.0"
+    ],
+    [
+      "huggingface_hub",
+      "2.4.0"
+    ],
+    [
+      "idna",
+      "3.20"
+    ],
+    [
+      "imageio-ffmpeg",
+      "0.8.1"
+    ],
+    [
+      "importlib_resources",
+      "7.1.0"
+    ],
+    [
+      "iniconfig",
+      "2.3.1"
+    ],
+    [
+      "ipython",
+      "9.18.1"
+    ],
+    [
+      "ipython_pygments_lexers",
+      "1.1.1"
+    ],
+    [
+      "jedi",
+      "0.20.1"
+    ],
+    [
+      "kiwisolver",
+      "1.5.1"
+    ],
+    [
+      "llvmlite",
+      "0.50.0"
+    ],
+    [
+      "lxml",
+      "6.1.3"
+    ],
+    [
+      "mani_skill",
+      "3.0.1"
+    ],
+    [
+      "matplotlib",
+      "3.11.2"
+    ],
+    [
+      "matplotlib-inline",
+      "0.2.2"
+    ],
+    [
+      "mink",
+      "0.0.5"
+    ],
+    [
+      "mplib",
+      "0.1.1"
+    ],
+    [
+      "mpmath",
+      "1.3.0"
+    ],
+    [
+      "mujoco",
+      "3.3.7"
+    ],
+    [
+      "networkx",
+      "3.7"
+    ],
+    [
+      "numba",
+      "0.68.1"
+    ],
+    [
+      "numpy",
+      "1.26.4"
+    ],
+    [
+      "nvidia-ml-py",
+      "13.615.71"
+    ],
+    [
+      "opencv-python",
+      "4.11.0.86"
+    ],
+    [
+      "packaging",
+      "26.3"
+    ],
+    [
+      "parso",
+      "0.8.7"
+    ],
+    [
+      "pexpect",
+      "4.9.0"
+    ],
+    [
+      "pillow",
+      "13.0.0"
+    ],
+    [
+      "pluggy",
+      "1.7.0"
+    ],
+    [
+      "prompt_toolkit",
+      "3.0.53"
+    ],
+    [
+      "psutil",
+      "7.2.2"
+    ],
+    [
+      "ptyprocess",
+      "0.7.0"
+    ],
+    [
+      "pure_eval",
+      "0.2.4"
+    ],
+    [
+      "pydantic",
+      "2.14.3"
+    ],
+    [
+      "pydantic_core",
+      "2.50.4"
+    ],
+    [
+      "pynput",
+      "1.8.2"
+    ],
+    [
+      "pyparsing",
+      "3.3.3"
+    ],
+    [
+      "pyperclip",
+      "1.11.0"
+    ],
+    [
+      "pytest",
+      "8.4.2"
+    ],
+    [
+      "python-dateutil",
+      "4.0.0"
+    ],
+    [
+      "python-xlib",
+      "0.33"
+    ],
+    [
+      "pytorch-kinematics",
+      "0.7.6"
+    ],
+    [
+      "pytorch-seed",
+      "0.2.0"
+    ],
+    [
+      "qpsolvers",
+      "4.13.0"
+    ],
+    [
+      "quadprog",
+      "0.1.14"
+    ],
+    [
+      "requests",
+      "2.34.2"
+    ],
+    [
+      "robosuite",
+      "1.5.2"
+    ],
+    [
+      "ruff",
+      "0.17.4"
+    ],
+    [
+      "sapien",
+      "3.0.3"
+    ],
+    [
+      "scipy",
+      "1.17.1"
+    ],
+    [
+      "setuptools",
+      "84.2.1"
+    ],
+    [
+      "six",
+      "1.17.0"
+    ],
+    [
+      "smmap",
+      "5.0.3"
+    ],
+    [
+      "stack-data",
+      "0.6.3"
+    ],
+    [
+      "sympy",
+      "1.13.1"
+    ],
+    [
+      "tabulate",
+      "0.10.0"
+    ],
+    [
+      "termcolor",
+      "3.3.0"
+    ],
+    [
+      "toppra",
+      "0.6.11"
+    ],
+    [
+      "torch",
+      "2.5.1+cpu"
+    ],
+    [
+      "tqdm",
+      "4.70.1"
+    ],
+    [
+      "traitlets",
+      "5.16.1"
+    ],
+    [
+      "transforms3d",
+      "0.4.2"
+    ],
+    [
+      "trimesh",
+      "5.2.0"
+    ],
+    [
+      "truststore",
+      "0.10.5"
+    ],
+    [
+      "typeguard",
+      "4.6.0"
+    ],
+    [
+      "typing-inspection",
+      "0.4.5"
+    ],
+    [
+      "typing_extensions",
+      "4.16.0"
+    ],
+    [
+      "tyro",
+      "1.0.17"
+    ],
+    [
+      "tzdata",
+      "2026.6"
+    ],
+    [
+      "urllib3",
+      "2.8.0"
+    ],
+    [
+      "wcwidth",
+      "0.9.4"
+    ],
+    [
+      "zipp",
+      "4.1.2"
+    ]
+  ],
+  "project_configuration": {
+    "pyproject.toml": "5d30356ba99d8ee06656798ad7fe1b9a96473a8aa1b18c6e406f8942906bf6b0",
+    "uv.lock": "79f692ff34e87194d9575472e6f7df5e9d7373c60f5217f52f9f5b1f37742d0a"
+  },
+  "full_row_input_sha256": {
+    "f22d0aaba4bb81fa841c070c5ad07e3b9fdcfe342c0704bb9065e4fd185ed590": "abd87158921edcc9759fb52bc8392a48a7922ef416c091a5f40e31a086a8164c",
+    "9c590dd90cea3be2cd8c249220be93b04028330275a782ab9894843296fbe87e": "abd87158921edcc9759fb52bc8392a48a7922ef416c091a5f40e31a086a8164c",
+    "773276968951439ff3338f140ba6bfbae93f87a46413eb4335fb6f7096b6fc29": "7eee87393101ff421d6b4f3d8133b73253c81f814692fc57ddd3406f14bfac13",
+    "43a4aabaad4d3fbccbd96c05e8092e45d7b76341169c64e573eae9b40a861d12": "3b3c0ed26855ab40f0b7f60afc863ccd6a697d5dd5cf81c07cf2929e61326916",
+    "0e6ff5e656859cac037aad90b985ce05d49ade4d5f14da3055910a2383065a0f": "0bb9f7500a1060f2cd12ab74311c73d819ce1f40456f69c646f57214152b0b6d",
+    "6c10fb5a1bf29fd3b7a0cb96221a803fca35f69f69b5829e693c84a0fb1d168a": "be9ad2aba7922b60b4d7562486447313ccf07da6f371a04ae7cce08d10c56cf0",
+    "fed1b1e6aa38b6c149f0f600fad0c684b81135d2cd4caa2a21e0e3b9c086160e": "27628d8978ae2f12b2c25201d6af93a6d350625997d4068747035522d1218b72",
+    "f4f34b8e0d657a88a80237d464f5081325f9a73cc5517663f4d6bbfa6339e83b": "6e321e92d178182761e5f0e6b03db7f1813cbb987efa83171270d06ffdaa1c77",
+    "8d9f204ffb041e56fb0d8293498d690b3647597045356b27dd5aeca69cda1ad5": "456f4e55bed0209e08d1dfe4ee31723f4761ed8bbe71813ed897e6743e38b114",
+    "8a9aa3bd24b36158619f9c9d1061d6bf0edfddf4ce8c45979cf0de6d9c150e7c": "cb43e5e92b38d6596ab1cf793b4c34e58159023c24cdbeae6ccf0260f671ee8d",
+    "146f31016394d7b11cc36e66a847698f666555ef351f1bba2b9e731eaf42b332": "20adaf7f49f313bebd903eadb17d309d23cb20c2554e1b2c044c26aed8a3dc60",
+    "0f041004e970682f1adc239c433927a9ba789f73f14ede7d5e3f79d5608400de": "07834566a33b5338c52903d5f2f6727c22acd2e62568e50d2a25668b50988d97",
+    "82ecd6479ea32e65ab6e158aff122179069aafaefcc9f6ebd796375aef8a4912": "cb0ef417596fcd44bdfaf779d2db18104d8ac8ab50d27a39a3b6c8579db4b302",
+    "1d3d11e0d83f69290ed8b87fc26062b83744c8065953b951c6d6720a74cab4da": "6f80f9b342abf9cd79cd049459c01507ac463c5c611182213c63cb6409b1d2ca",
+    "d7ddc99c99b19afb6d7d1dcb52cd077b7f595e2cecb4f4d6c110ed51d2fba215": "9e627c80093285c4a1aea712a546e58747ee37b17dc19df2815f6b2792e7dcb1",
+    "8f72ebf12443770070ea8f4085e692faf60f1701e7cc435ddd5749900cc06023": "9e627c80093285c4a1aea712a546e58747ee37b17dc19df2815f6b2792e7dcb1",
+    "394b6c9229cbc05dd48402ca0c0fc9724de17c5dd05eed91086273ae0b645fe5": "77411d606fe61679a14334f1ab3659e5fd068d021b4858cc62749d869d39e429",
+    "2f12bcfb2c4f7005f8788c36cc7aeb3e2c85c6a1f8a1b57b5f9aa5a01aa806ac": "c63f1e5ef4617fcfc6d4d3b9bd847182614b3e67353ae0e7b5337ef6584f800b",
+    "6f5ddfbcb68cc45ca8d72e8832859a13ba4af487656e0de062742f7e33bdbd79": "c0daeb01da0bbd6fbf3dda98e390e7793a07b01cd39096f0aecd1d7ea81ea3dc",
+    "2630d5c9baa2a7c4a680c2f581d5084dbe2191a123e54b37d6a1fade1d9baf9f": "1cf0ebffc587fe8b59a6a073a3268dddde839b2c08c6cdd8b91f69d892ea9f37",
+    "b1f43a67c23799254b327d861feaa287bc1b5ad2bdae5329fe3a02c8eb90aa07": "cd03bf7c18c55ec7082015a09291363ed6695d06390a19e546183adfe81f580b",
+    "133d5d7e778d16e7cf7634fa1ab97ccbc011d1b7547dc61ed709ef57ff70bd04": "5926c5dd311328136f97f41695ae0541bb1cc6801564373edab75798de56b381",
+    "24c25507c2296903d049bd03f6c54aa7778c4e8b6e557e71ce58403f40e7a0af": "3a5099d840636f4f723093161f31beaf003b7fbaec26bc46b4d70d0871cfd78d",
+    "80a3e521da84c9aee0628842f8995be4db9f78dd012db19040bcc7bb0f2eb6ab": "8bb85ea64426f1ddea8b8d6f88e59770c13c860b344d588b4446021933174698",
+    "9067316dba2b505c69789df16050107120baba6ca3565ebcd1093dfa2126c5e3": "3de1a28932d1a3f3e79aab23ee0c2d940ce39f9cd131498960e0697974215355",
+    "0fe0ffa279fe45e53691f11d1b14ad904e4927d513a2c2884570dda6421f2ba5": "93dda99426b0f6004a7baaa3cbb3b7658b2ca10d06910bc3cad00797086808c1",
+    "a0f65ac6ea55d52e00d5c4224b075efaebceef9c59891255c160941c2248388e": "ca5176f8435ddd652a3d53e5e2331907163dcbb2af18b77bc5dd0e73f6b27416",
+    "e5eb3beda35543005cdafb34fa739bddaa45911ec16dfb477bfb8f9b0e5f2225": "148cf357632a7dbafe380301c92fa16c2aa6cf04e28ce3dc8d7d0ac5424f0b0b"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "steps": [
+    {
+      "label": "exact_models_and_oracles",
+      "args": [
+        "scripts/err_method_audit.py",
+        "--output",
+        "research/err_method_challenge/final/finite_models"
+      ],
+      "returncode": 0,
+      "wall_seconds": 21.222375990008004,
+      "log_sha256": "0e0dc85d1f127326033e9784331b98a2806239eabfad555f78c0b5af2087b04a"
+    },
+    {
+      "label": "D_C_only_robot_witnesses",
+      "args": [
+        "scripts/err_robot_witnesses.py",
+        "--output",
+        "research/err_method_challenge/final/robot"
+      ],
+      "returncode": 0,
+      "wall_seconds": 19.7785822750011,
+      "log_sha256": "1389befd950b39c75917ac354ed388a36632d87368f40f860a809dec4083224b"
+    },
+    {
+      "label": "inactive_future_parent_reservation",
+      "args": [
+        "scripts/err_stage2_manifest.py",
+        "--output",
+        "research/err_method_challenge/final/stage2_reservation"
+      ],
+      "returncode": 0,
+      "wall_seconds": 0.416940616996726,
+      "log_sha256": "61faa065e18d2736880fcbcd8bbc7783e5ffc1204a61d3e6c875e309a38bda41"
+    },
+    {
+      "label": "focused_tests",
+      "args": [
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_experiment_resolvability.py"
+      ],
+      "returncode": 0,
+      "wall_seconds": 1.4204485100053716,
+      "log_sha256": "4f2075abe371bf84e76fa3812882f1acb2800d279097efe30cf5459a5afc29e4"
+    },
+    {
+      "label": "maintained_tests",
+      "args": [
+        "-m",
+        "pytest",
+        "-q",
+        "tests"
+      ],
+      "returncode": 0,
+      "wall_seconds": 51.17191443699994,
+      "log_sha256": "a5b7c3be814963c1beddfd3437a7a72dfabcd4079ddf8626441a038c0edd5dfb"
+    }
+  ],
+  "wall_seconds": 94.02248513200902,
+  "child_cpu_seconds": 80.357731,
+  "new_physics": 0,
+  "new_controller_training": 0,
+  "new_robot_outcomes": 0,
+  "output_bytes": 16856617,
+  "source_guard": "Only the D/C robot-witness subprocess fits/queries source examples; source audits/evaluator views are isolated",
+  "scope": "Finite-model method verification and retrospective source capabilities, not a new prospective physical experiment"
+}

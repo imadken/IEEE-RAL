@@ -1,0 +1,323 @@
+{
+  "source": "https://api.crossref.org/works?query.title=When+Identifiability+Is+Not+Enough+Terminal+Controllability+in+Task-Compatible+Active+Calibration&rows=8",
+  "items": [
+    {
+      "DOI": "10.1109/lra.2026.3719194",
+      "title": [
+        "When Identifiability Is Not Enough: Terminal Controllability in Task-Compatible Active Calibration"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0002-6318-2617",
+          "authenticated-orcid": false,
+          "given": "Jun",
+          "family": "Kobayashi",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Kyushu Institute of Technology",
+              "place": [
+                "Iizuka, Japan"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Robotics and Automation Letters"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            10
+          ]
+        ]
+      },
+      "type": "journal-article",
+      "score": 68.97449
+    },
+    {
+      "DOI": "10.2139/ssrn.7507404",
+      "title": [
+        "Active Inertial Self-Calibration Beyond Identifiability: Task-Compatible Excitation and Terminal Feasibility"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0002-6318-2617",
+          "authenticated-orcid": true,
+          "given": "Jun",
+          "family": "Kobayashi",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "type": "posted-content",
+      "score": 45.15774
+    },
+    {
+      "DOI": "10.1117/12.373366",
+      "title": [
+        "When calibration is not enough"
+      ],
+      "author": [
+        {
+          "given": "Jeffrey R.",
+          "family": "Kingsley",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Leslie",
+          "family": "Johnson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "SPIE Proceedings",
+        "19th Annual Symposium on Photomask Technology"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1999,
+            12,
+            30
+          ]
+        ]
+      },
+      "type": "proceedings-article",
+      "score": 28.801296
+    },
+    {
+      "DOI": "10.1007/978-3-642-51861-4_21",
+      "title": [
+        "Controllability, Observability, and Parameter Identifiability"
+      ],
+      "author": [
+        {
+          "given": "David H.",
+          "family": "Anderson",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Lecture Notes in Biomathematics",
+        "Compartmental Modeling and Tracer Kinetics"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1983
+          ]
+        ]
+      },
+      "type": "book-chapter",
+      "score": 26.11065
+    },
+    {
+      "DOI": "10.1137/1.9781611976977.ch7",
+      "title": [
+        "Chapter 7: Controllability, Observability, and Identifiability"
+      ],
+      "author": null,
+      "container-title": [
+        "A Toolbox for Digital Twins: From Model-Based to Data-Driven"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            1
+          ]
+        ]
+      },
+      "type": "book-chapter",
+      "score": 24.930637
+    },
+    {
+      "DOI": "10.12968/bjhc.2011.17.2.51",
+      "title": [
+        "When is enough, enough?"
+      ],
+      "author": [
+        {
+          "given": "John",
+          "family": "Appleby",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "British Journal of Healthcare Management"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            2
+          ]
+        ]
+      },
+      "type": "journal-article",
+      "score": 23.196594
+    },
+    {
+      "DOI": "10.1161/str.32.11.2710",
+      "title": [
+        "When Is Enough Enough?"
+      ],
+      "author": [
+        {
+          "given": "Geoffrey A.",
+          "family": "Donnan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "From the National Stroke Research Institute, Heidelberg West, Victoria, Australia."
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Stephen M.",
+          "family": "Davis",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "From the National Stroke Research Institute, Heidelberg West, Victoria, Australia."
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Stroke"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2001,
+            11
+          ]
+        ]
+      },
+      "type": "journal-article",
+      "score": 23.196594
+    },
+    {
+      "DOI": "10.1093/acprof:oso/9780195365771.003.0003",
+      "title": [
+        "When Is Enough Enough?"
+      ],
+      "author": [
+        {
+          "given": "Daniel",
+          "family": "Strickman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stephen P.",
+          "family": "Frances",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mustapha",
+          "family": "Debboun",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Prevention of Bug Bites, Stings, and Disease"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2009,
+            6,
+            1
+          ]
+        ]
+      },
+      "type": "book-chapter",
+      "score": 23.133783
+    }
+  ]
+}

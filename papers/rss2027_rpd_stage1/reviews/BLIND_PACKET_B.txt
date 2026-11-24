@@ -1,0 +1,7 @@
+Figure1 caption:
+Diagnosis changes both the response and the state from which recovery starts. The assembly sketch is conceptual; the option cards are a \emph{constructed} three-world example, not predictions or measured outcomes for either proposed probe. All branches take $.5$\,s. Fine diagnosis distinguishes A/B/C but loses one option in B and all options in C; coarse diagnosis preserves a response-dependent correction. Offline replay evaluates alternatives; the online robot executes only one branch.}
+
+Scientific outcome interpretation:
+Support for H1 establishes its two population properties; only the weighted-score diagnostics additionally address average signal on erasure cases. H2 support establishes the completion margin against IG jointly with constraint noninferiority, not superiority over equivalent task-aware planning. H1 without H2 shows material loss without the proposed policy benefit. H2 without H1 could reflect partial-option changes rather than full erasure. A narrow interval below $.10$ constrains prevalence; uninformative probes and source failure are different outcomes. Recovery at $2\tau$ indicates deadline dependence; an extra skill would indicate catalogue dependence. None licenses effect-rich test selection.
+
+All assembly settings remain proposed and require bounded source qualification. Claims are simulation-, distribution-, catalogue- and budget-relative. The commitment is to report information, complete option sets, completion, constraints, attrition and baseline equality together, including a qualified null.

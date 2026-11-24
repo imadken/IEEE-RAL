@@ -1,0 +1,30 @@
+{
+  "maintained_suite": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src:scripts UV_CACHE_DIR=/tmp/rss-rpd-uv uv run --offline --no-sync pytest -q tests",
+    "passed": 799,
+    "skipped": 6,
+    "seconds": 51.22,
+    "exit_code": 0
+  },
+  "workspace_tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 UV_CACHE_DIR=/tmp/rss-rpd-uv uv run --offline --no-sync python -m unittest discover -s papers/rss2027_rpd_stage1/tools -p 'test_*.py' -v",
+    "passed": 11,
+    "exit_code": 0
+  },
+  "new_statistical_tests": {
+    "passed": 6,
+    "exit_code": 0,
+    "command": "PYTHONDONTWRITEBYTECODE=1 UV_CACHE_DIR=/tmp/rss-rpd-uv uv run --offline --no-sync python -m unittest discover -s research/rpd_stage1_final_handoff_20261121/reproduce -p 'test_*.py' -v"
+  },
+  "new_code_ruff": {
+    "passed": true,
+    "command": "UV_CACHE_DIR=/tmp/rss-rpd-uv uv run --offline --no-sync ruff check research/rpd_stage1_final_handoff_20261121/reproduce"
+  },
+  "historical_seal_sha256sum_check_exit_code": 0,
+  "new_math_oracle_cases": 27,
+  "new_finite_policy_oracle_cases": 8640,
+  "source_complete_episodes_verified": 75,
+  "preserved_failed_source_attempts": 2,
+  "false_all_existing_rows_flag_explanation": "Two preserved pre-prefix source errors do not have verified terminal outcomes;75 complete rows are independently verified, not77 valid outcomes.",
+  "new_physics_before_freeze": 0
+}

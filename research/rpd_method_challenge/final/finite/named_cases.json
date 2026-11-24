@@ -1,0 +1,2973 @@
+{
+  "three_world": {
+    "problem": {
+      "model_id": "supervisor_three_world_with_explicit_dead_state",
+      "source_scope": "DECLARED_DETERMINISTIC_FINITE_MODEL",
+      "evidence_origin": "ANALYTICAL_TRUTH_TABLE_NOT_ROBOT_OUTCOMES",
+      "calibration_available": false,
+      "assumptions": [
+        "Complete known deterministic finite transition model",
+        "All possible initial states retained; observations follow physical transitions",
+        "Truth-table task success is analytical, not calibrated physical performance"
+      ],
+      "states": [
+        {
+          "state_id": "A",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": false,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": true,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "B",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": false,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": true,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "C",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": true,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": false,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "dead_C",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": false,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": false,
+              "path_safe": true
+            }
+          ]
+        }
+      ],
+      "recovery_actions": [
+        "realign",
+        "retry"
+      ],
+      "probes": [
+        {
+          "probe_id": "full_diagnostic",
+          "cost": "1",
+          "transitions": [
+            {
+              "state_id": "A",
+              "enabled": true,
+              "successor": "A",
+              "observation": "A",
+              "path_safe": true
+            },
+            {
+              "state_id": "B",
+              "enabled": true,
+              "successor": "B",
+              "observation": "B",
+              "path_safe": true
+            },
+            {
+              "state_id": "C",
+              "enabled": true,
+              "successor": "dead_C",
+              "observation": "C",
+              "path_safe": true
+            },
+            {
+              "state_id": "dead_C",
+              "enabled": true,
+              "successor": "dead_C",
+              "observation": "C",
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "probe_id": "coarse_safe",
+          "cost": "2",
+          "transitions": [
+            {
+              "state_id": "A",
+              "enabled": true,
+              "successor": "A",
+              "observation": "left",
+              "path_safe": true
+            },
+            {
+              "state_id": "B",
+              "enabled": true,
+              "successor": "B",
+              "observation": "left",
+              "path_safe": true
+            },
+            {
+              "state_id": "C",
+              "enabled": true,
+              "successor": "C",
+              "observation": "right",
+              "path_safe": true
+            },
+            {
+              "state_id": "dead_C",
+              "enabled": true,
+              "successor": "dead_C",
+              "observation": "dead",
+              "path_safe": true
+            }
+          ]
+        }
+      ],
+      "initial_support": [
+        "A",
+        "B",
+        "C"
+      ],
+      "horizon": 1,
+      "max_probe_cost": null,
+      "cost_unit": "DECLARED_PROBE_COST_UNITS",
+      "require_physical_safety": true
+    },
+    "production": {
+      "status": "ROBUST_FINITE_MODEL_RECOVERY",
+      "policy": {
+        "belief": [
+          "A",
+          "B",
+          "C"
+        ],
+        "decision": "PROBE",
+        "action_id": "coarse_safe",
+        "branches": [
+          {
+            "observation": "left",
+            "child": {
+              "belief": [
+                "A",
+                "B"
+              ],
+              "decision": "RECOVER",
+              "action_id": "retry",
+              "branches": []
+            }
+          },
+          {
+            "observation": "right",
+            "child": {
+              "belief": [
+                "C"
+              ],
+              "decision": "RECOVER",
+              "action_id": "realign",
+              "branches": []
+            }
+          }
+        ]
+      },
+      "worst_probe_cost": "2",
+      "obstruction": null,
+      "dynamic_programming_states": 6,
+      "scope": "THIS_KNOWN_FINITE_MODEL_HORIZON_AND_BUDGET_ONLY",
+      "statistical_calibration": false,
+      "physical_deployment_authorized": false,
+      "implicit_resets": false
+    },
+    "oracle_cost": "2",
+    "POMDP_max_goal_probability": "1",
+    "POMDP_probability_one_min_worst_cost": "2",
+    "policy_trees_enumerated": 39,
+    "matched_control_comparison": {
+      "exact_strong_policy_oracle": {
+        "tree": [
+          "PROBE",
+          "coarse_safe",
+          [
+            [
+              "left",
+              [
+                "RECOVER",
+                "retry",
+                []
+              ]
+            ],
+            [
+              "right",
+              [
+                "RECOVER",
+                "realign",
+                []
+              ]
+            ]
+          ]
+        ],
+        "metrics": {
+          "all_worlds_success": true,
+          "uniform_initial_completion": "1",
+          "worst_probe_cost": "2",
+          "mean_probe_cost": "2",
+          "per_initial_world": [
+            {
+              "initial": "A",
+              "success": true,
+              "probe_cost": "2",
+              "trace": [
+                {
+                  "probe": "coarse_safe",
+                  "before": "A",
+                  "after": "A",
+                  "observation": "left"
+                }
+              ]
+            },
+            {
+              "initial": "B",
+              "success": true,
+              "probe_cost": "2",
+              "trace": [
+                {
+                  "probe": "coarse_safe",
+                  "before": "B",
+                  "after": "B",
+                  "observation": "left"
+                }
+              ]
+            },
+            {
+              "initial": "C",
+              "success": true,
+              "probe_cost": "2",
+              "trace": [
+                {
+                  "probe": "coarse_safe",
+                  "before": "C",
+                  "after": "C",
+                  "observation": "right"
+                }
+              ]
+            }
+          ],
+          "scope": "ANALYTICAL_ONLY_NOT_ROBOT_OUTCOMES"
+        }
+      },
+      "no_probe": {
+        "tree": [
+          "STOP",
+          null,
+          []
+        ],
+        "metrics": {
+          "all_worlds_success": false,
+          "uniform_initial_completion": "0",
+          "worst_probe_cost": "0",
+          "mean_probe_cost": "0",
+          "per_initial_world": [
+            {
+              "initial": "A",
+              "success": false,
+              "probe_cost": "0",
+              "trace": []
+            },
+            {
+              "initial": "B",
+              "success": false,
+              "probe_cost": "0",
+              "trace": []
+            },
+            {
+              "initial": "C",
+              "success": false,
+              "probe_cost": "0",
+              "trace": []
+            }
+          ],
+          "scope": "ANALYTICAL_ONLY_NOT_ROBOT_OUTCOMES"
+        }
+      },
+      "physical_entropy": {
+        "tree": [
+          "PROBE",
+          "full_diagnostic",
+          [
+            [
+              "A",
+              [
+                "RECOVER",
+                "retry",
+                []
+              ]
+            ],
+            [
+              "B",
+              [
+                "RECOVER",
+                "retry",
+                []
+              ]
+            ],
+            [
+              "C",
+              [
+                "STOP",
+                null,
+                []
+              ]
+            ]
+          ]
+        ],
+        "metrics": {
+          "all_worlds_success": false,
+          "uniform_initial_completion": "2/3",
+          "worst_probe_cost": "1",
+          "mean_probe_cost": "1",
+          "per_initial_world": [
+            {
+              "initial": "A",
+              "success": true,
+              "probe_cost": "1",
+              "trace": [
+                {
+                  "probe": "full_diagnostic",
+                  "before": "A",
+                  "after": "A",
+                  "observation": "A"
+                }
+              ]
+            },
+            {
+              "initial": "B",
+              "success": true,
+              "probe_cost": "1",
+              "trace": [
+                {
+                  "probe": "full_diagnostic",
+                  "before": "B",
+                  "after": "B",
+                  "observation": "B"
+                }
+              ]
+            },
+            {
+              "initial": "C",
+              "success": false,
+              "probe_cost": "1",
+              "trace": [
+                {
+                  "probe": "full_diagnostic",
+                  "before": "C",
+                  "after": "dead_C",
+                  "observation": "C"
+                }
+              ]
+            }
+          ],
+          "scope": "ANALYTICAL_ONLY_NOT_ROBOT_OUTCOMES"
+        }
+      },
+      "one_step_consensus": {
+        "tree": [
+          "PROBE",
+          "coarse_safe",
+          [
+            [
+              "left",
+              [
+                "RECOVER",
+                "retry",
+                []
+              ]
+            ],
+            [
+              "right",
+              [
+                "RECOVER",
+                "realign",
+                []
+              ]
+            ]
+          ]
+        ],
+        "metrics": {
+          "all_worlds_success": true,
+          "uniform_initial_completion": "1",
+          "worst_probe_cost": "2",
+          "mean_probe_cost": "2",
+          "per_initial_world": [
+            {
+              "initial": "A",
+              "success": true,
+              "probe_cost": "2",
+              "trace": [
+                {
+                  "probe": "coarse_safe",
+                  "before": "A",
+                  "after": "A",
+                  "observation": "left"
+                }
+              ]
+            },
+            {
+              "initial": "B",
+              "success": true,
+              "probe_cost": "2",
+              "trace": [
+                {
+                  "probe": "coarse_safe",
+                  "before": "B",
+                  "after": "B",
+                  "observation": "left"
+                }
+              ]
+            },
+            {
+              "initial": "C",
+              "success": true,
+              "probe_cost": "2",
+              "trace": [
+                {
+                  "probe": "coarse_safe",
+                  "before": "C",
+                  "after": "C",
+                  "observation": "right"
+                }
+              ]
+            }
+          ],
+          "scope": "ANALYTICAL_ONLY_NOT_ROBOT_OUTCOMES"
+        }
+      },
+      "static_ERR_transition_ignored_ABLATION": {
+        "tree": [
+          "PROBE",
+          "full_diagnostic",
+          [
+            [
+              "A",
+              [
+                "RECOVER",
+                "retry",
+                []
+              ]
+            ],
+            [
+              "B",
+              [
+                "RECOVER",
+                "retry",
+                []
+              ]
+            ],
+            [
+              "C",
+              [
+                "RECOVER",
+                "realign",
+                []
+              ]
+            ]
+          ]
+        ],
+        "metrics": {
+          "all_worlds_success": false,
+          "uniform_initial_completion": "2/3",
+          "worst_probe_cost": "1",
+          "mean_probe_cost": "1",
+          "per_initial_world": [
+            {
+              "initial": "A",
+              "success": true,
+              "probe_cost": "1",
+              "trace": [
+                {
+                  "probe": "full_diagnostic",
+                  "before": "A",
+                  "after": "A",
+                  "observation": "A"
+                }
+              ]
+            },
+            {
+              "initial": "B",
+              "success": true,
+              "probe_cost": "1",
+              "trace": [
+                {
+                  "probe": "full_diagnostic",
+                  "before": "B",
+                  "after": "B",
+                  "observation": "B"
+                }
+              ]
+            },
+            {
+              "initial": "C",
+              "success": false,
+              "probe_cost": "1",
+              "trace": [
+                {
+                  "probe": "full_diagnostic",
+                  "before": "C",
+                  "after": "dead_C",
+                  "observation": "C"
+                }
+              ]
+            }
+          ],
+          "scope": "ANALYTICAL_ONLY_NOT_ROBOT_OUTCOMES"
+        },
+        "valid_model_based_competitor": false,
+        "limitation": "Deliberately violates the physical transition model; no robust model-based guarantee. Independent empirical terminal calibration would be a separate, source-scoped claim."
+      }
+    }
+  },
+  "three_world_no_probe_horizon": {
+    "problem": {
+      "model_id": "supervisor_three_world_with_explicit_dead_state",
+      "source_scope": "DECLARED_DETERMINISTIC_FINITE_MODEL",
+      "evidence_origin": "ANALYTICAL_TRUTH_TABLE_NOT_ROBOT_OUTCOMES",
+      "calibration_available": false,
+      "assumptions": [
+        "Complete known deterministic finite transition model",
+        "All possible initial states retained; observations follow physical transitions",
+        "Truth-table task success is analytical, not calibrated physical performance"
+      ],
+      "states": [
+        {
+          "state_id": "A",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": false,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": true,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "B",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": false,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": true,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "C",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": true,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": false,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "dead_C",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": false,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": false,
+              "path_safe": true
+            }
+          ]
+        }
+      ],
+      "recovery_actions": [
+        "realign",
+        "retry"
+      ],
+      "probes": [
+        {
+          "probe_id": "full_diagnostic",
+          "cost": "1",
+          "transitions": [
+            {
+              "state_id": "A",
+              "enabled": true,
+              "successor": "A",
+              "observation": "A",
+              "path_safe": true
+            },
+            {
+              "state_id": "B",
+              "enabled": true,
+              "successor": "B",
+              "observation": "B",
+              "path_safe": true
+            },
+            {
+              "state_id": "C",
+              "enabled": true,
+              "successor": "dead_C",
+              "observation": "C",
+              "path_safe": true
+            },
+            {
+              "state_id": "dead_C",
+              "enabled": true,
+              "successor": "dead_C",
+              "observation": "C",
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "probe_id": "coarse_safe",
+          "cost": "2",
+          "transitions": [
+            {
+              "state_id": "A",
+              "enabled": true,
+              "successor": "A",
+              "observation": "left",
+              "path_safe": true
+            },
+            {
+              "state_id": "B",
+              "enabled": true,
+              "successor": "B",
+              "observation": "left",
+              "path_safe": true
+            },
+            {
+              "state_id": "C",
+              "enabled": true,
+              "successor": "C",
+              "observation": "right",
+              "path_safe": true
+            },
+            {
+              "state_id": "dead_C",
+              "enabled": true,
+              "successor": "dead_C",
+              "observation": "dead",
+              "path_safe": true
+            }
+          ]
+        }
+      ],
+      "initial_support": [
+        "A",
+        "B",
+        "C"
+      ],
+      "horizon": 0,
+      "max_probe_cost": null,
+      "cost_unit": "DECLARED_PROBE_COST_UNITS",
+      "require_physical_safety": true
+    },
+    "production": {
+      "status": "STOP_NO_ROBUST_POLICY",
+      "policy": {
+        "belief": [
+          "A",
+          "B",
+          "C"
+        ],
+        "decision": "STOP",
+        "action_id": null,
+        "branches": []
+      },
+      "worst_probe_cost": null,
+      "obstruction": {
+        "belief": [
+          "A",
+          "B",
+          "C"
+        ],
+        "remaining_horizon": 0,
+        "remaining_cost": null,
+        "reason": "NO_COMMON_RECOVERY_AT_HORIZON",
+        "unsafe_states": [],
+        "recoveries": [
+          {
+            "action_id": "realign",
+            "state_id": "A",
+            "reason": "TASK_FAILURE"
+          },
+          {
+            "action_id": "retry",
+            "state_id": "C",
+            "reason": "TASK_FAILURE"
+          }
+        ],
+        "probes": []
+      },
+      "dynamic_programming_states": 1,
+      "scope": "THIS_KNOWN_FINITE_MODEL_HORIZON_AND_BUDGET_ONLY",
+      "statistical_calibration": false,
+      "physical_deployment_authorized": false,
+      "implicit_resets": false
+    },
+    "oracle_cost": null,
+    "POMDP_max_goal_probability": "2/3",
+    "POMDP_probability_one_min_worst_cost": null,
+    "policy_trees_enumerated": 3
+  },
+  "three_world_budget_one": {
+    "problem": {
+      "model_id": "supervisor_three_world_with_explicit_dead_state",
+      "source_scope": "DECLARED_DETERMINISTIC_FINITE_MODEL",
+      "evidence_origin": "ANALYTICAL_TRUTH_TABLE_NOT_ROBOT_OUTCOMES",
+      "calibration_available": false,
+      "assumptions": [
+        "Complete known deterministic finite transition model",
+        "All possible initial states retained; observations follow physical transitions",
+        "Truth-table task success is analytical, not calibrated physical performance"
+      ],
+      "states": [
+        {
+          "state_id": "A",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": false,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": true,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "B",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": false,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": true,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "C",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": true,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": false,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "dead_C",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": false,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": false,
+              "path_safe": true
+            }
+          ]
+        }
+      ],
+      "recovery_actions": [
+        "realign",
+        "retry"
+      ],
+      "probes": [
+        {
+          "probe_id": "full_diagnostic",
+          "cost": "1",
+          "transitions": [
+            {
+              "state_id": "A",
+              "enabled": true,
+              "successor": "A",
+              "observation": "A",
+              "path_safe": true
+            },
+            {
+              "state_id": "B",
+              "enabled": true,
+              "successor": "B",
+              "observation": "B",
+              "path_safe": true
+            },
+            {
+              "state_id": "C",
+              "enabled": true,
+              "successor": "dead_C",
+              "observation": "C",
+              "path_safe": true
+            },
+            {
+              "state_id": "dead_C",
+              "enabled": true,
+              "successor": "dead_C",
+              "observation": "C",
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "probe_id": "coarse_safe",
+          "cost": "2",
+          "transitions": [
+            {
+              "state_id": "A",
+              "enabled": true,
+              "successor": "A",
+              "observation": "left",
+              "path_safe": true
+            },
+            {
+              "state_id": "B",
+              "enabled": true,
+              "successor": "B",
+              "observation": "left",
+              "path_safe": true
+            },
+            {
+              "state_id": "C",
+              "enabled": true,
+              "successor": "C",
+              "observation": "right",
+              "path_safe": true
+            },
+            {
+              "state_id": "dead_C",
+              "enabled": true,
+              "successor": "dead_C",
+              "observation": "dead",
+              "path_safe": true
+            }
+          ]
+        }
+      ],
+      "initial_support": [
+        "A",
+        "B",
+        "C"
+      ],
+      "horizon": 1,
+      "max_probe_cost": "1",
+      "cost_unit": "DECLARED_PROBE_COST_UNITS",
+      "require_physical_safety": true
+    },
+    "production": {
+      "status": "STOP_NO_ROBUST_POLICY",
+      "policy": {
+        "belief": [
+          "A",
+          "B",
+          "C"
+        ],
+        "decision": "STOP",
+        "action_id": null,
+        "branches": []
+      },
+      "worst_probe_cost": null,
+      "obstruction": {
+        "belief": [
+          "A",
+          "B",
+          "C"
+        ],
+        "remaining_horizon": 1,
+        "remaining_cost": "1",
+        "reason": "ALL_PROBES_BLOCKED",
+        "unsafe_states": [],
+        "recoveries": [
+          {
+            "action_id": "realign",
+            "state_id": "A",
+            "reason": "TASK_FAILURE"
+          },
+          {
+            "action_id": "retry",
+            "state_id": "C",
+            "reason": "TASK_FAILURE"
+          }
+        ],
+        "probes": [
+          {
+            "probe_id": "coarse_safe",
+            "reason": "COST_BUDGET",
+            "state_id": null,
+            "observation": null,
+            "child": null
+          },
+          {
+            "probe_id": "full_diagnostic",
+            "reason": "LOSING_BRANCH",
+            "state_id": null,
+            "observation": "C",
+            "child": {
+              "belief": [
+                "dead_C"
+              ],
+              "remaining_horizon": 0,
+              "remaining_cost": "0",
+              "reason": "NO_COMMON_RECOVERY_AT_HORIZON",
+              "unsafe_states": [],
+              "recoveries": [
+                {
+                  "action_id": "realign",
+                  "state_id": "dead_C",
+                  "reason": "TASK_FAILURE"
+                },
+                {
+                  "action_id": "retry",
+                  "state_id": "dead_C",
+                  "reason": "TASK_FAILURE"
+                }
+              ],
+              "probes": []
+            }
+          }
+        ]
+      },
+      "dynamic_programming_states": 4,
+      "scope": "THIS_KNOWN_FINITE_MODEL_HORIZON_AND_BUDGET_ONLY",
+      "statistical_calibration": false,
+      "physical_deployment_authorized": false,
+      "implicit_resets": false
+    },
+    "oracle_cost": null,
+    "POMDP_max_goal_probability": "2/3",
+    "POMDP_probability_one_min_worst_cost": null,
+    "policy_trees_enumerated": 30
+  },
+  "two_step_required": {
+    "problem": {
+      "model_id": "requires_2_physical_steps",
+      "source_scope": "DECLARED_DETERMINISTIC_FINITE_MODEL",
+      "evidence_origin": "ANALYTICAL_TRUTH_TABLE_NOT_ROBOT_OUTCOMES",
+      "calibration_available": false,
+      "assumptions": [
+        "Complete known deterministic finite transition model",
+        "All possible initial states retained; observations follow physical transitions",
+        "Truth-table task success is analytical, not calibrated physical performance"
+      ],
+      "states": [
+        {
+          "state_id": "A0",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": false,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": false,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "A1",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": false,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": false,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "A2",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": false,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": true,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "B0",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": false,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": false,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "B1",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": false,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": false,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "B2",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": true,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": false,
+              "path_safe": true
+            }
+          ]
+        }
+      ],
+      "recovery_actions": [
+        "realign",
+        "retry"
+      ],
+      "probes": [
+        {
+          "probe_id": "advance_0",
+          "cost": "1",
+          "transitions": [
+            {
+              "state_id": "A0",
+              "enabled": true,
+              "successor": "A1",
+              "observation": "unresolved",
+              "path_safe": true
+            },
+            {
+              "state_id": "A1",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            },
+            {
+              "state_id": "A2",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            },
+            {
+              "state_id": "B0",
+              "enabled": true,
+              "successor": "B1",
+              "observation": "unresolved",
+              "path_safe": true
+            },
+            {
+              "state_id": "B1",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            },
+            {
+              "state_id": "B2",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            }
+          ]
+        },
+        {
+          "probe_id": "advance_1",
+          "cost": "1",
+          "transitions": [
+            {
+              "state_id": "A0",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            },
+            {
+              "state_id": "A1",
+              "enabled": true,
+              "successor": "A2",
+              "observation": "A",
+              "path_safe": true
+            },
+            {
+              "state_id": "A2",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            },
+            {
+              "state_id": "B0",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            },
+            {
+              "state_id": "B1",
+              "enabled": true,
+              "successor": "B2",
+              "observation": "B",
+              "path_safe": true
+            },
+            {
+              "state_id": "B2",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            }
+          ]
+        }
+      ],
+      "initial_support": [
+        "A0",
+        "B0"
+      ],
+      "horizon": 2,
+      "max_probe_cost": null,
+      "cost_unit": "DECLARED_PROBE_COST_UNITS",
+      "require_physical_safety": true
+    },
+    "production": {
+      "status": "ROBUST_FINITE_MODEL_RECOVERY",
+      "policy": {
+        "belief": [
+          "A0",
+          "B0"
+        ],
+        "decision": "PROBE",
+        "action_id": "advance_0",
+        "branches": [
+          {
+            "observation": "unresolved",
+            "child": {
+              "belief": [
+                "A1",
+                "B1"
+              ],
+              "decision": "PROBE",
+              "action_id": "advance_1",
+              "branches": [
+                {
+                  "observation": "A",
+                  "child": {
+                    "belief": [
+                      "A2"
+                    ],
+                    "decision": "RECOVER",
+                    "action_id": "retry",
+                    "branches": []
+                  }
+                },
+                {
+                  "observation": "B",
+                  "child": {
+                    "belief": [
+                      "B2"
+                    ],
+                    "decision": "RECOVER",
+                    "action_id": "realign",
+                    "branches": []
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "worst_probe_cost": "2",
+      "obstruction": null,
+      "dynamic_programming_states": 4,
+      "scope": "THIS_KNOWN_FINITE_MODEL_HORIZON_AND_BUDGET_ONLY",
+      "statistical_calibration": false,
+      "physical_deployment_authorized": false,
+      "implicit_resets": false
+    },
+    "oracle_cost": "2",
+    "POMDP_max_goal_probability": "1",
+    "POMDP_probability_one_min_worst_cost": "2",
+    "policy_trees_enumerated": 15
+  },
+  "three_step_required": {
+    "problem": {
+      "model_id": "requires_3_physical_steps",
+      "source_scope": "DECLARED_DETERMINISTIC_FINITE_MODEL",
+      "evidence_origin": "ANALYTICAL_TRUTH_TABLE_NOT_ROBOT_OUTCOMES",
+      "calibration_available": false,
+      "assumptions": [
+        "Complete known deterministic finite transition model",
+        "All possible initial states retained; observations follow physical transitions",
+        "Truth-table task success is analytical, not calibrated physical performance"
+      ],
+      "states": [
+        {
+          "state_id": "A0",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": false,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": false,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "A1",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": false,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": false,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "A2",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": false,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": false,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "A3",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": false,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": true,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "B0",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": false,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": false,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "B1",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": false,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": false,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "B2",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": false,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": false,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "B3",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": true,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": false,
+              "path_safe": true
+            }
+          ]
+        }
+      ],
+      "recovery_actions": [
+        "realign",
+        "retry"
+      ],
+      "probes": [
+        {
+          "probe_id": "advance_0",
+          "cost": "1",
+          "transitions": [
+            {
+              "state_id": "A0",
+              "enabled": true,
+              "successor": "A1",
+              "observation": "unresolved",
+              "path_safe": true
+            },
+            {
+              "state_id": "A1",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            },
+            {
+              "state_id": "A2",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            },
+            {
+              "state_id": "A3",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            },
+            {
+              "state_id": "B0",
+              "enabled": true,
+              "successor": "B1",
+              "observation": "unresolved",
+              "path_safe": true
+            },
+            {
+              "state_id": "B1",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            },
+            {
+              "state_id": "B2",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            },
+            {
+              "state_id": "B3",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            }
+          ]
+        },
+        {
+          "probe_id": "advance_1",
+          "cost": "1",
+          "transitions": [
+            {
+              "state_id": "A0",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            },
+            {
+              "state_id": "A1",
+              "enabled": true,
+              "successor": "A2",
+              "observation": "unresolved",
+              "path_safe": true
+            },
+            {
+              "state_id": "A2",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            },
+            {
+              "state_id": "A3",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            },
+            {
+              "state_id": "B0",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            },
+            {
+              "state_id": "B1",
+              "enabled": true,
+              "successor": "B2",
+              "observation": "unresolved",
+              "path_safe": true
+            },
+            {
+              "state_id": "B2",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            },
+            {
+              "state_id": "B3",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            }
+          ]
+        },
+        {
+          "probe_id": "advance_2",
+          "cost": "1",
+          "transitions": [
+            {
+              "state_id": "A0",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            },
+            {
+              "state_id": "A1",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            },
+            {
+              "state_id": "A2",
+              "enabled": true,
+              "successor": "A3",
+              "observation": "A",
+              "path_safe": true
+            },
+            {
+              "state_id": "A3",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            },
+            {
+              "state_id": "B0",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            },
+            {
+              "state_id": "B1",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            },
+            {
+              "state_id": "B2",
+              "enabled": true,
+              "successor": "B3",
+              "observation": "B",
+              "path_safe": true
+            },
+            {
+              "state_id": "B3",
+              "enabled": false,
+              "successor": null,
+              "observation": null,
+              "path_safe": null
+            }
+          ]
+        }
+      ],
+      "initial_support": [
+        "A0",
+        "B0"
+      ],
+      "horizon": 3,
+      "max_probe_cost": null,
+      "cost_unit": "DECLARED_PROBE_COST_UNITS",
+      "require_physical_safety": true
+    },
+    "production": {
+      "status": "ROBUST_FINITE_MODEL_RECOVERY",
+      "policy": {
+        "belief": [
+          "A0",
+          "B0"
+        ],
+        "decision": "PROBE",
+        "action_id": "advance_0",
+        "branches": [
+          {
+            "observation": "unresolved",
+            "child": {
+              "belief": [
+                "A1",
+                "B1"
+              ],
+              "decision": "PROBE",
+              "action_id": "advance_1",
+              "branches": [
+                {
+                  "observation": "unresolved",
+                  "child": {
+                    "belief": [
+                      "A2",
+                      "B2"
+                    ],
+                    "decision": "PROBE",
+                    "action_id": "advance_2",
+                    "branches": [
+                      {
+                        "observation": "A",
+                        "child": {
+                          "belief": [
+                            "A3"
+                          ],
+                          "decision": "RECOVER",
+                          "action_id": "retry",
+                          "branches": []
+                        }
+                      },
+                      {
+                        "observation": "B",
+                        "child": {
+                          "belief": [
+                            "B3"
+                          ],
+                          "decision": "RECOVER",
+                          "action_id": "realign",
+                          "branches": []
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "worst_probe_cost": "3",
+      "obstruction": null,
+      "dynamic_programming_states": 5,
+      "scope": "THIS_KNOWN_FINITE_MODEL_HORIZON_AND_BUDGET_ONLY",
+      "statistical_calibration": false,
+      "physical_deployment_authorized": false,
+      "implicit_resets": false
+    },
+    "oracle_cost": "3",
+    "POMDP_max_goal_probability": "1",
+    "POMDP_probability_one_min_worst_cost": "3",
+    "policy_trees_enumerated": 18
+  },
+  "immediate_common_macro": {
+    "problem": {
+      "model_id": "analytical",
+      "source_scope": "DECLARED_DETERMINISTIC_FINITE_MODEL",
+      "evidence_origin": "ANALYTICAL_TRUTH_TABLE_NOT_ROBOT_OUTCOMES",
+      "calibration_available": false,
+      "assumptions": [
+        "Complete known deterministic finite transition model",
+        "All possible initial states retained; observations follow physical transitions",
+        "Truth-table task success is analytical, not calibrated physical performance"
+      ],
+      "states": [
+        {
+          "state_id": "A",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "retry",
+              "task_success": true,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "B",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "retry",
+              "task_success": true,
+              "path_safe": true
+            }
+          ]
+        }
+      ],
+      "recovery_actions": [
+        "retry"
+      ],
+      "probes": [],
+      "initial_support": [
+        "A",
+        "B"
+      ],
+      "horizon": 0,
+      "max_probe_cost": null,
+      "cost_unit": "DECLARED_PROBE_COST_UNITS",
+      "require_physical_safety": true
+    },
+    "production": {
+      "status": "ROBUST_FINITE_MODEL_RECOVERY",
+      "policy": {
+        "belief": [
+          "A",
+          "B"
+        ],
+        "decision": "RECOVER",
+        "action_id": "retry",
+        "branches": []
+      },
+      "worst_probe_cost": "0",
+      "obstruction": null,
+      "dynamic_programming_states": 1,
+      "scope": "THIS_KNOWN_FINITE_MODEL_HORIZON_AND_BUDGET_ONLY",
+      "statistical_calibration": false,
+      "physical_deployment_authorized": false,
+      "implicit_resets": false
+    },
+    "oracle_cost": "0",
+    "POMDP_max_goal_probability": "1",
+    "POMDP_probability_one_min_worst_cost": "0",
+    "policy_trees_enumerated": 2
+  },
+  "physically_allowed_but_irrecoverable": {
+    "problem": {
+      "model_id": "analytical",
+      "source_scope": "DECLARED_DETERMINISTIC_FINITE_MODEL",
+      "evidence_origin": "ANALYTICAL_TRUTH_TABLE_NOT_ROBOT_OUTCOMES",
+      "calibration_available": false,
+      "assumptions": [
+        "Complete known deterministic finite transition model",
+        "All possible initial states retained; observations follow physical transitions",
+        "Truth-table task success is analytical, not calibrated physical performance"
+      ],
+      "states": [
+        {
+          "state_id": "dead",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "retry",
+              "task_success": false,
+              "path_safe": true
+            }
+          ]
+        }
+      ],
+      "recovery_actions": [
+        "retry"
+      ],
+      "probes": [],
+      "initial_support": [
+        "dead"
+      ],
+      "horizon": 4,
+      "max_probe_cost": null,
+      "cost_unit": "DECLARED_PROBE_COST_UNITS",
+      "require_physical_safety": true
+    },
+    "production": {
+      "status": "STOP_NO_ROBUST_POLICY",
+      "policy": {
+        "belief": [
+          "dead"
+        ],
+        "decision": "STOP",
+        "action_id": null,
+        "branches": []
+      },
+      "worst_probe_cost": null,
+      "obstruction": {
+        "belief": [
+          "dead"
+        ],
+        "remaining_horizon": 4,
+        "remaining_cost": null,
+        "reason": "ALL_PROBES_BLOCKED",
+        "unsafe_states": [],
+        "recoveries": [
+          {
+            "action_id": "retry",
+            "state_id": "dead",
+            "reason": "TASK_FAILURE"
+          }
+        ],
+        "probes": []
+      },
+      "dynamic_programming_states": 1,
+      "scope": "THIS_KNOWN_FINITE_MODEL_HORIZON_AND_BUDGET_ONLY",
+      "statistical_calibration": false,
+      "physical_deployment_authorized": false,
+      "implicit_resets": false
+    },
+    "oracle_cost": null,
+    "POMDP_max_goal_probability": "0",
+    "POMDP_probability_one_min_worst_cost": null,
+    "policy_trees_enumerated": 2
+  },
+  "individual_options_no_common_diagnosis": {
+    "problem": {
+      "model_id": "analytical",
+      "source_scope": "DECLARED_DETERMINISTIC_FINITE_MODEL",
+      "evidence_origin": "ANALYTICAL_TRUTH_TABLE_NOT_ROBOT_OUTCOMES",
+      "calibration_available": false,
+      "assumptions": [
+        "Complete known deterministic finite transition model",
+        "All possible initial states retained; observations follow physical transitions",
+        "Truth-table task success is analytical, not calibrated physical performance"
+      ],
+      "states": [
+        {
+          "state_id": "A",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": false,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": true,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "B",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": true,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": false,
+              "path_safe": true
+            }
+          ]
+        }
+      ],
+      "recovery_actions": [
+        "realign",
+        "retry"
+      ],
+      "probes": [
+        {
+          "probe_id": "blind",
+          "cost": "1",
+          "transitions": [
+            {
+              "state_id": "A",
+              "enabled": true,
+              "successor": "A",
+              "observation": "same",
+              "path_safe": true
+            },
+            {
+              "state_id": "B",
+              "enabled": true,
+              "successor": "B",
+              "observation": "same",
+              "path_safe": true
+            }
+          ]
+        }
+      ],
+      "initial_support": [
+        "A",
+        "B"
+      ],
+      "horizon": 3,
+      "max_probe_cost": null,
+      "cost_unit": "DECLARED_PROBE_COST_UNITS",
+      "require_physical_safety": true
+    },
+    "production": {
+      "status": "STOP_NO_ROBUST_POLICY",
+      "policy": {
+        "belief": [
+          "A",
+          "B"
+        ],
+        "decision": "STOP",
+        "action_id": null,
+        "branches": []
+      },
+      "worst_probe_cost": null,
+      "obstruction": {
+        "belief": [
+          "A",
+          "B"
+        ],
+        "remaining_horizon": 3,
+        "remaining_cost": null,
+        "reason": "ALL_PROBES_BLOCKED",
+        "unsafe_states": [],
+        "recoveries": [
+          {
+            "action_id": "realign",
+            "state_id": "A",
+            "reason": "TASK_FAILURE"
+          },
+          {
+            "action_id": "retry",
+            "state_id": "B",
+            "reason": "TASK_FAILURE"
+          }
+        ],
+        "probes": [
+          {
+            "probe_id": "blind",
+            "reason": "LOSING_BRANCH",
+            "state_id": null,
+            "observation": "same",
+            "child": {
+              "belief": [
+                "A",
+                "B"
+              ],
+              "remaining_horizon": 2,
+              "remaining_cost": null,
+              "reason": "ALL_PROBES_BLOCKED",
+              "unsafe_states": [],
+              "recoveries": [
+                {
+                  "action_id": "realign",
+                  "state_id": "A",
+                  "reason": "TASK_FAILURE"
+                },
+                {
+                  "action_id": "retry",
+                  "state_id": "B",
+                  "reason": "TASK_FAILURE"
+                }
+              ],
+              "probes": [
+                {
+                  "probe_id": "blind",
+                  "reason": "LOSING_BRANCH",
+                  "state_id": null,
+                  "observation": "same",
+                  "child": {
+                    "belief": [
+                      "A",
+                      "B"
+                    ],
+                    "remaining_horizon": 1,
+                    "remaining_cost": null,
+                    "reason": "ALL_PROBES_BLOCKED",
+                    "unsafe_states": [],
+                    "recoveries": [
+                      {
+                        "action_id": "realign",
+                        "state_id": "A",
+                        "reason": "TASK_FAILURE"
+                      },
+                      {
+                        "action_id": "retry",
+                        "state_id": "B",
+                        "reason": "TASK_FAILURE"
+                      }
+                    ],
+                    "probes": [
+                      {
+                        "probe_id": "blind",
+                        "reason": "LOSING_BRANCH",
+                        "state_id": null,
+                        "observation": "same",
+                        "child": {
+                          "belief": [
+                            "A",
+                            "B"
+                          ],
+                          "remaining_horizon": 0,
+                          "remaining_cost": null,
+                          "reason": "NO_COMMON_RECOVERY_AT_HORIZON",
+                          "unsafe_states": [],
+                          "recoveries": [
+                            {
+                              "action_id": "realign",
+                              "state_id": "A",
+                              "reason": "TASK_FAILURE"
+                            },
+                            {
+                              "action_id": "retry",
+                              "state_id": "B",
+                              "reason": "TASK_FAILURE"
+                            }
+                          ],
+                          "probes": []
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "dynamic_programming_states": 4,
+      "scope": "THIS_KNOWN_FINITE_MODEL_HORIZON_AND_BUDGET_ONLY",
+      "statistical_calibration": false,
+      "physical_deployment_authorized": false,
+      "implicit_resets": false
+    },
+    "oracle_cost": null,
+    "POMDP_max_goal_probability": "1/2",
+    "POMDP_probability_one_min_worst_cost": null,
+    "policy_trees_enumerated": 12
+  },
+  "zero_cost_loop_cannot_reset": {
+    "problem": {
+      "model_id": "analytical",
+      "source_scope": "DECLARED_DETERMINISTIC_FINITE_MODEL",
+      "evidence_origin": "ANALYTICAL_TRUTH_TABLE_NOT_ROBOT_OUTCOMES",
+      "calibration_available": false,
+      "assumptions": [
+        "Complete known deterministic finite transition model",
+        "All possible initial states retained; observations follow physical transitions",
+        "Truth-table task success is analytical, not calibrated physical performance"
+      ],
+      "states": [
+        {
+          "state_id": "A",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": false,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": true,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "B",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": true,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": false,
+              "path_safe": true
+            }
+          ]
+        }
+      ],
+      "recovery_actions": [
+        "realign",
+        "retry"
+      ],
+      "probes": [
+        {
+          "probe_id": "loop",
+          "cost": "0",
+          "transitions": [
+            {
+              "state_id": "A",
+              "enabled": true,
+              "successor": "A",
+              "observation": "same",
+              "path_safe": true
+            },
+            {
+              "state_id": "B",
+              "enabled": true,
+              "successor": "B",
+              "observation": "same",
+              "path_safe": true
+            }
+          ]
+        }
+      ],
+      "initial_support": [
+        "A",
+        "B"
+      ],
+      "horizon": 4,
+      "max_probe_cost": null,
+      "cost_unit": "DECLARED_PROBE_COST_UNITS",
+      "require_physical_safety": true
+    },
+    "production": {
+      "status": "STOP_NO_ROBUST_POLICY",
+      "policy": {
+        "belief": [
+          "A",
+          "B"
+        ],
+        "decision": "STOP",
+        "action_id": null,
+        "branches": []
+      },
+      "worst_probe_cost": null,
+      "obstruction": {
+        "belief": [
+          "A",
+          "B"
+        ],
+        "remaining_horizon": 4,
+        "remaining_cost": null,
+        "reason": "ALL_PROBES_BLOCKED",
+        "unsafe_states": [],
+        "recoveries": [
+          {
+            "action_id": "realign",
+            "state_id": "A",
+            "reason": "TASK_FAILURE"
+          },
+          {
+            "action_id": "retry",
+            "state_id": "B",
+            "reason": "TASK_FAILURE"
+          }
+        ],
+        "probes": [
+          {
+            "probe_id": "loop",
+            "reason": "LOSING_BRANCH",
+            "state_id": null,
+            "observation": "same",
+            "child": {
+              "belief": [
+                "A",
+                "B"
+              ],
+              "remaining_horizon": 3,
+              "remaining_cost": null,
+              "reason": "ALL_PROBES_BLOCKED",
+              "unsafe_states": [],
+              "recoveries": [
+                {
+                  "action_id": "realign",
+                  "state_id": "A",
+                  "reason": "TASK_FAILURE"
+                },
+                {
+                  "action_id": "retry",
+                  "state_id": "B",
+                  "reason": "TASK_FAILURE"
+                }
+              ],
+              "probes": [
+                {
+                  "probe_id": "loop",
+                  "reason": "LOSING_BRANCH",
+                  "state_id": null,
+                  "observation": "same",
+                  "child": {
+                    "belief": [
+                      "A",
+                      "B"
+                    ],
+                    "remaining_horizon": 2,
+                    "remaining_cost": null,
+                    "reason": "ALL_PROBES_BLOCKED",
+                    "unsafe_states": [],
+                    "recoveries": [
+                      {
+                        "action_id": "realign",
+                        "state_id": "A",
+                        "reason": "TASK_FAILURE"
+                      },
+                      {
+                        "action_id": "retry",
+                        "state_id": "B",
+                        "reason": "TASK_FAILURE"
+                      }
+                    ],
+                    "probes": [
+                      {
+                        "probe_id": "loop",
+                        "reason": "LOSING_BRANCH",
+                        "state_id": null,
+                        "observation": "same",
+                        "child": {
+                          "belief": [
+                            "A",
+                            "B"
+                          ],
+                          "remaining_horizon": 1,
+                          "remaining_cost": null,
+                          "reason": "ALL_PROBES_BLOCKED",
+                          "unsafe_states": [],
+                          "recoveries": [
+                            {
+                              "action_id": "realign",
+                              "state_id": "A",
+                              "reason": "TASK_FAILURE"
+                            },
+                            {
+                              "action_id": "retry",
+                              "state_id": "B",
+                              "reason": "TASK_FAILURE"
+                            }
+                          ],
+                          "probes": [
+                            {
+                              "probe_id": "loop",
+                              "reason": "LOSING_BRANCH",
+                              "state_id": null,
+                              "observation": "same",
+                              "child": {
+                                "belief": [
+                                  "A",
+                                  "B"
+                                ],
+                                "remaining_horizon": 0,
+                                "remaining_cost": null,
+                                "reason": "NO_COMMON_RECOVERY_AT_HORIZON",
+                                "unsafe_states": [],
+                                "recoveries": [
+                                  {
+                                    "action_id": "realign",
+                                    "state_id": "A",
+                                    "reason": "TASK_FAILURE"
+                                  },
+                                  {
+                                    "action_id": "retry",
+                                    "state_id": "B",
+                                    "reason": "TASK_FAILURE"
+                                  }
+                                ],
+                                "probes": []
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "dynamic_programming_states": 5,
+      "scope": "THIS_KNOWN_FINITE_MODEL_HORIZON_AND_BUDGET_ONLY",
+      "statistical_calibration": false,
+      "physical_deployment_authorized": false,
+      "implicit_resets": false
+    },
+    "oracle_cost": null,
+    "POMDP_max_goal_probability": "1/2",
+    "POMDP_probability_one_min_worst_cost": null,
+    "policy_trees_enumerated": 15
+  },
+  "exact_rational_cost_trap": {
+    "problem": {
+      "model_id": "analytical",
+      "source_scope": "DECLARED_DETERMINISTIC_FINITE_MODEL",
+      "evidence_origin": "ANALYTICAL_TRUTH_TABLE_NOT_ROBOT_OUTCOMES",
+      "calibration_available": false,
+      "assumptions": [
+        "Complete known deterministic finite transition model",
+        "All possible initial states retained; observations follow physical transitions",
+        "Truth-table task success is analytical, not calibrated physical performance"
+      ],
+      "states": [
+        {
+          "state_id": "A",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": false,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": true,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "B",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": true,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": false,
+              "path_safe": true
+            }
+          ]
+        }
+      ],
+      "recovery_actions": [
+        "realign",
+        "retry"
+      ],
+      "probes": [
+        {
+          "probe_id": "A_probe",
+          "cost": "1",
+          "transitions": [
+            {
+              "state_id": "A",
+              "enabled": true,
+              "successor": "A",
+              "observation": "A",
+              "path_safe": true
+            },
+            {
+              "state_id": "B",
+              "enabled": true,
+              "successor": "B",
+              "observation": "B",
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "probe_id": "B_probe",
+          "cost": "999999999999999999999999999999/1000000000000000000000000000000",
+          "transitions": [
+            {
+              "state_id": "A",
+              "enabled": true,
+              "successor": "A",
+              "observation": "A",
+              "path_safe": true
+            },
+            {
+              "state_id": "B",
+              "enabled": true,
+              "successor": "B",
+              "observation": "B",
+              "path_safe": true
+            }
+          ]
+        }
+      ],
+      "initial_support": [
+        "A",
+        "B"
+      ],
+      "horizon": 1,
+      "max_probe_cost": null,
+      "cost_unit": "DECLARED_PROBE_COST_UNITS",
+      "require_physical_safety": true
+    },
+    "production": {
+      "status": "ROBUST_FINITE_MODEL_RECOVERY",
+      "policy": {
+        "belief": [
+          "A",
+          "B"
+        ],
+        "decision": "PROBE",
+        "action_id": "B_probe",
+        "branches": [
+          {
+            "observation": "A",
+            "child": {
+              "belief": [
+                "A"
+              ],
+              "decision": "RECOVER",
+              "action_id": "retry",
+              "branches": []
+            }
+          },
+          {
+            "observation": "B",
+            "child": {
+              "belief": [
+                "B"
+              ],
+              "decision": "RECOVER",
+              "action_id": "realign",
+              "branches": []
+            }
+          }
+        ]
+      },
+      "worst_probe_cost": "999999999999999999999999999999/1000000000000000000000000000000",
+      "obstruction": null,
+      "dynamic_programming_states": 3,
+      "scope": "THIS_KNOWN_FINITE_MODEL_HORIZON_AND_BUDGET_ONLY",
+      "statistical_calibration": false,
+      "physical_deployment_authorized": false,
+      "implicit_resets": false
+    },
+    "oracle_cost": "999999999999999999999999999999/1000000000000000000000000000000",
+    "POMDP_max_goal_probability": "1",
+    "POMDP_probability_one_min_worst_cost": "999999999999999999999999999999/1000000000000000000000000000000",
+    "policy_trees_enumerated": 21
+  },
+  "unsafe_intermediate_safe_endpoint": {
+    "problem": {
+      "model_id": "analytical",
+      "source_scope": "DECLARED_DETERMINISTIC_FINITE_MODEL",
+      "evidence_origin": "ANALYTICAL_TRUTH_TABLE_NOT_ROBOT_OUTCOMES",
+      "calibration_available": false,
+      "assumptions": [
+        "Complete known deterministic finite transition model",
+        "All possible initial states retained; observations follow physical transitions",
+        "Truth-table task success is analytical, not calibrated physical performance"
+      ],
+      "states": [
+        {
+          "state_id": "A",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": false,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": true,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "B",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "realign",
+              "task_success": true,
+              "path_safe": true
+            },
+            {
+              "action_id": "retry",
+              "task_success": false,
+              "path_safe": true
+            }
+          ]
+        }
+      ],
+      "recovery_actions": [
+        "realign",
+        "retry"
+      ],
+      "probes": [
+        {
+          "probe_id": "A_probe",
+          "cost": "0",
+          "transitions": [
+            {
+              "state_id": "A",
+              "enabled": true,
+              "successor": "A",
+              "observation": "A",
+              "path_safe": false
+            },
+            {
+              "state_id": "B",
+              "enabled": true,
+              "successor": "B",
+              "observation": "B",
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "probe_id": "B_probe",
+          "cost": "2",
+          "transitions": [
+            {
+              "state_id": "A",
+              "enabled": true,
+              "successor": "A",
+              "observation": "A",
+              "path_safe": true
+            },
+            {
+              "state_id": "B",
+              "enabled": true,
+              "successor": "B",
+              "observation": "B",
+              "path_safe": true
+            }
+          ]
+        }
+      ],
+      "initial_support": [
+        "A",
+        "B"
+      ],
+      "horizon": 1,
+      "max_probe_cost": null,
+      "cost_unit": "DECLARED_PROBE_COST_UNITS",
+      "require_physical_safety": true
+    },
+    "production": {
+      "status": "ROBUST_FINITE_MODEL_RECOVERY",
+      "policy": {
+        "belief": [
+          "A",
+          "B"
+        ],
+        "decision": "PROBE",
+        "action_id": "B_probe",
+        "branches": [
+          {
+            "observation": "A",
+            "child": {
+              "belief": [
+                "A"
+              ],
+              "decision": "RECOVER",
+              "action_id": "retry",
+              "branches": []
+            }
+          },
+          {
+            "observation": "B",
+            "child": {
+              "belief": [
+                "B"
+              ],
+              "decision": "RECOVER",
+              "action_id": "realign",
+              "branches": []
+            }
+          }
+        ]
+      },
+      "worst_probe_cost": "2",
+      "obstruction": null,
+      "dynamic_programming_states": 3,
+      "scope": "THIS_KNOWN_FINITE_MODEL_HORIZON_AND_BUDGET_ONLY",
+      "statistical_calibration": false,
+      "physical_deployment_authorized": false,
+      "implicit_resets": false
+    },
+    "oracle_cost": "2",
+    "POMDP_max_goal_probability": "1",
+    "POMDP_probability_one_min_worst_cost": "2",
+    "policy_trees_enumerated": 12
+  },
+  "terminal_macro_path_safety_False": {
+    "problem": {
+      "model_id": "analytical",
+      "source_scope": "DECLARED_DETERMINISTIC_FINITE_MODEL",
+      "evidence_origin": "ANALYTICAL_TRUTH_TABLE_NOT_ROBOT_OUTCOMES",
+      "calibration_available": false,
+      "assumptions": [
+        "Complete known deterministic finite transition model",
+        "All possible initial states retained; observations follow physical transitions",
+        "Truth-table task success is analytical, not calibrated physical performance"
+      ],
+      "states": [
+        {
+          "state_id": "A",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "retry",
+              "task_success": true,
+              "path_safe": false
+            }
+          ]
+        }
+      ],
+      "recovery_actions": [
+        "retry"
+      ],
+      "probes": [],
+      "initial_support": [
+        "A"
+      ],
+      "horizon": 1,
+      "max_probe_cost": null,
+      "cost_unit": "DECLARED_PROBE_COST_UNITS",
+      "require_physical_safety": false
+    },
+    "production": {
+      "status": "ROBUST_FINITE_MODEL_RECOVERY",
+      "policy": {
+        "belief": [
+          "A"
+        ],
+        "decision": "RECOVER",
+        "action_id": "retry",
+        "branches": []
+      },
+      "worst_probe_cost": "0",
+      "obstruction": null,
+      "dynamic_programming_states": 1,
+      "scope": "THIS_KNOWN_FINITE_MODEL_HORIZON_AND_BUDGET_ONLY",
+      "statistical_calibration": false,
+      "physical_deployment_authorized": false,
+      "implicit_resets": false
+    },
+    "oracle_cost": "0",
+    "POMDP_max_goal_probability": "1",
+    "POMDP_probability_one_min_worst_cost": "0",
+    "policy_trees_enumerated": 2
+  },
+  "initial_state_safety_False": {
+    "problem": {
+      "model_id": "analytical",
+      "source_scope": "DECLARED_DETERMINISTIC_FINITE_MODEL",
+      "evidence_origin": "ANALYTICAL_TRUTH_TABLE_NOT_ROBOT_OUTCOMES",
+      "calibration_available": false,
+      "assumptions": [
+        "Complete known deterministic finite transition model",
+        "All possible initial states retained; observations follow physical transitions",
+        "Truth-table task success is analytical, not calibrated physical performance"
+      ],
+      "states": [
+        {
+          "state_id": "A",
+          "physically_allowed": false,
+          "recoveries": [
+            {
+              "action_id": "retry",
+              "task_success": true,
+              "path_safe": true
+            }
+          ]
+        }
+      ],
+      "recovery_actions": [
+        "retry"
+      ],
+      "probes": [],
+      "initial_support": [
+        "A"
+      ],
+      "horizon": 1,
+      "max_probe_cost": null,
+      "cost_unit": "DECLARED_PROBE_COST_UNITS",
+      "require_physical_safety": false
+    },
+    "production": {
+      "status": "ROBUST_FINITE_MODEL_RECOVERY",
+      "policy": {
+        "belief": [
+          "A"
+        ],
+        "decision": "RECOVER",
+        "action_id": "retry",
+        "branches": []
+      },
+      "worst_probe_cost": "0",
+      "obstruction": null,
+      "dynamic_programming_states": 1,
+      "scope": "THIS_KNOWN_FINITE_MODEL_HORIZON_AND_BUDGET_ONLY",
+      "statistical_calibration": false,
+      "physical_deployment_authorized": false,
+      "implicit_resets": false
+    },
+    "oracle_cost": "0",
+    "POMDP_max_goal_probability": "1",
+    "POMDP_probability_one_min_worst_cost": "0",
+    "policy_trees_enumerated": 2
+  },
+  "terminal_macro_path_safety_True": {
+    "problem": {
+      "model_id": "analytical",
+      "source_scope": "DECLARED_DETERMINISTIC_FINITE_MODEL",
+      "evidence_origin": "ANALYTICAL_TRUTH_TABLE_NOT_ROBOT_OUTCOMES",
+      "calibration_available": false,
+      "assumptions": [
+        "Complete known deterministic finite transition model",
+        "All possible initial states retained; observations follow physical transitions",
+        "Truth-table task success is analytical, not calibrated physical performance"
+      ],
+      "states": [
+        {
+          "state_id": "A",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "retry",
+              "task_success": true,
+              "path_safe": false
+            }
+          ]
+        }
+      ],
+      "recovery_actions": [
+        "retry"
+      ],
+      "probes": [],
+      "initial_support": [
+        "A"
+      ],
+      "horizon": 1,
+      "max_probe_cost": null,
+      "cost_unit": "DECLARED_PROBE_COST_UNITS",
+      "require_physical_safety": true
+    },
+    "production": {
+      "status": "STOP_NO_ROBUST_POLICY",
+      "policy": {
+        "belief": [
+          "A"
+        ],
+        "decision": "STOP",
+        "action_id": null,
+        "branches": []
+      },
+      "worst_probe_cost": null,
+      "obstruction": {
+        "belief": [
+          "A"
+        ],
+        "remaining_horizon": 1,
+        "remaining_cost": null,
+        "reason": "ALL_PROBES_BLOCKED",
+        "unsafe_states": [],
+        "recoveries": [
+          {
+            "action_id": "retry",
+            "state_id": "A",
+            "reason": "PHYSICAL_PATH_UNSAFE"
+          }
+        ],
+        "probes": []
+      },
+      "dynamic_programming_states": 1,
+      "scope": "THIS_KNOWN_FINITE_MODEL_HORIZON_AND_BUDGET_ONLY",
+      "statistical_calibration": false,
+      "physical_deployment_authorized": false,
+      "implicit_resets": false
+    },
+    "oracle_cost": null,
+    "POMDP_max_goal_probability": "0",
+    "POMDP_probability_one_min_worst_cost": null,
+    "policy_trees_enumerated": 2
+  },
+  "initial_state_safety_True": {
+    "problem": {
+      "model_id": "analytical",
+      "source_scope": "DECLARED_DETERMINISTIC_FINITE_MODEL",
+      "evidence_origin": "ANALYTICAL_TRUTH_TABLE_NOT_ROBOT_OUTCOMES",
+      "calibration_available": false,
+      "assumptions": [
+        "Complete known deterministic finite transition model",
+        "All possible initial states retained; observations follow physical transitions",
+        "Truth-table task success is analytical, not calibrated physical performance"
+      ],
+      "states": [
+        {
+          "state_id": "A",
+          "physically_allowed": false,
+          "recoveries": [
+            {
+              "action_id": "retry",
+              "task_success": true,
+              "path_safe": true
+            }
+          ]
+        }
+      ],
+      "recovery_actions": [
+        "retry"
+      ],
+      "probes": [],
+      "initial_support": [
+        "A"
+      ],
+      "horizon": 1,
+      "max_probe_cost": null,
+      "cost_unit": "DECLARED_PROBE_COST_UNITS",
+      "require_physical_safety": true
+    },
+    "production": {
+      "status": "STOP_NO_ROBUST_POLICY",
+      "policy": {
+        "belief": [
+          "A"
+        ],
+        "decision": "STOP",
+        "action_id": null,
+        "branches": []
+      },
+      "worst_probe_cost": null,
+      "obstruction": {
+        "belief": [
+          "A"
+        ],
+        "remaining_horizon": 1,
+        "remaining_cost": null,
+        "reason": "INITIAL_STATE_UNSAFE",
+        "unsafe_states": [
+          "A"
+        ],
+        "recoveries": [],
+        "probes": []
+      },
+      "dynamic_programming_states": 1,
+      "scope": "THIS_KNOWN_FINITE_MODEL_HORIZON_AND_BUDGET_ONLY",
+      "statistical_calibration": false,
+      "physical_deployment_authorized": false,
+      "implicit_resets": false
+    },
+    "oracle_cost": null,
+    "POMDP_max_goal_probability": "0",
+    "POMDP_probability_one_min_worst_cost": null,
+    "policy_trees_enumerated": 2
+  },
+  "physical_restoration_no_information": {
+    "problem": {
+      "model_id": "analytical",
+      "source_scope": "DECLARED_DETERMINISTIC_FINITE_MODEL",
+      "evidence_origin": "ANALYTICAL_TRUTH_TABLE_NOT_ROBOT_OUTCOMES",
+      "calibration_available": false,
+      "assumptions": [
+        "Complete known deterministic finite transition model",
+        "All possible initial states retained; observations follow physical transitions",
+        "Truth-table task success is analytical, not calibrated physical performance"
+      ],
+      "states": [
+        {
+          "state_id": "broken",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "retry",
+              "task_success": false,
+              "path_safe": true
+            }
+          ]
+        },
+        {
+          "state_id": "ready",
+          "physically_allowed": true,
+          "recoveries": [
+            {
+              "action_id": "retry",
+              "task_success": true,
+              "path_safe": true
+            }
+          ]
+        }
+      ],
+      "recovery_actions": [
+        "retry"
+      ],
+      "probes": [
+        {
+          "probe_id": "restore",
+          "cost": "1",
+          "transitions": [
+            {
+              "state_id": "broken",
+              "enabled": true,
+              "successor": "ready",
+              "observation": "same",
+              "path_safe": true
+            },
+            {
+              "state_id": "ready",
+              "enabled": true,
+              "successor": "ready",
+              "observation": "same",
+              "path_safe": true
+            }
+          ]
+        }
+      ],
+      "initial_support": [
+        "broken"
+      ],
+      "horizon": 1,
+      "max_probe_cost": null,
+      "cost_unit": "DECLARED_PROBE_COST_UNITS",
+      "require_physical_safety": true
+    },
+    "production": {
+      "status": "ROBUST_FINITE_MODEL_RECOVERY",
+      "policy": {
+        "belief": [
+          "broken"
+        ],
+        "decision": "PROBE",
+        "action_id": "restore",
+        "branches": [
+          {
+            "observation": "same",
+            "child": {
+              "belief": [
+                "ready"
+              ],
+              "decision": "RECOVER",
+              "action_id": "retry",
+              "branches": []
+            }
+          }
+        ]
+      },
+      "worst_probe_cost": "1",
+      "obstruction": null,
+      "dynamic_programming_states": 2,
+      "scope": "THIS_KNOWN_FINITE_MODEL_HORIZON_AND_BUDGET_ONLY",
+      "statistical_calibration": false,
+      "physical_deployment_authorized": false,
+      "implicit_resets": false
+    },
+    "oracle_cost": "1",
+    "POMDP_max_goal_probability": "1",
+    "POMDP_probability_one_min_worst_cost": "1",
+    "policy_trees_enumerated": 4
+  }
+}

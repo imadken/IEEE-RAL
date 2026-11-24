@@ -1,0 +1,1867 @@
+{
+  "logs": [
+    {
+      "parent_id": "f73fea17ec2785d698fd4e435d215dbe016074fecfa97c42d0300573d9129987",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "7b499887e9ffd3ea5956345e231cef1583c19b30a598f5511bc6f3eeb9108e19",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "d0c45ef61eb051d62bbdee5ed12a3aa09044d4f999290fc15f8e68affaa0d91b",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "52ba3bac95affa67388b7e24ad9e45a4c0de861275a1e913e136cc3b7d702f39",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "c13adac06910c6d73542325c7d8e34dfaa543961b307321be1ce24c3cf422475",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "5fece57ba2b6f1cfb5f9d489d7104e3d5ae0a2603afbc53941714e294531e845",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "41e0f3cdd04a777621a951f3e2674a832b49f913208ca32fd0cb9b62f06e1acd",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "0cdbb563defb612fa82d1dbfe29df9dfeb50f4c4cc15c2f49c5ad7360830813c",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "0cc98dad4be0347f64dbbd2c90d567964e6c78cf9a635936722d1630d9d6a815",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "51c0fe7bd9f3b98a2c54d670994b084662b341c0ad48c875c870007b208d3240",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "cc5f107291215081c4b5e1b7aa6533972afcda96c02a0d124ddfb4c8239d6931",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "b994662d77fa01a33c459837c763683827a0d08935888fd0a778a5caef6359f1",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "22b5d0ea27871c7271f74ea61a284cd478bd14d379966f84b5185d906c44023f",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "0424e2984e6b432a4adae87377d610db309ce15ffc4f13fcc31f26fc63b0685e",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "4391ee7102cb1187f9e7b4f868430e57b5abf8630ff27cba9637aaf203fc59aa",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "bea200fd7943f53ef288ea8f4be47995afa3c07fccd58c18472926c3116bea2a",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "4d8600d5d5cca677667ce718e698016dc6342f13138738ea1b29269aba0ed751",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "eac7e549a81eab0d20e1bceae4a0950c241402e7816525fa452d92cebc82e58b",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "cc2f18ef5d2ecaef96a2e1e52a14f3546e5b50457c6be3e205d426b5d22c06a8",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "637e1ab3ef62a0c39e67871f6db87aa9f0d64f176cb1f63401a62653814ca6ac",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "9cbd6e367b5341d4dde37f5cd88f7a2a85e470bd697ab341765df7ff920ea66b",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "cbee251b62615ccad7906a00b5e6a95605c1fecca9b20b824c2fc02a0cb033e8",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "557559b658e543d0130f2f41b160bd3410b0d7b600a5d4116e69808bf5354acc",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "99fb96c9018fd6244d8cf42b3f7dc052e30c74948e233695802a7f34a1aefdaa",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "6a80e57d7603337daa79c3c0548e9626f7453fb7a9793e64f205deb6121dc750",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "d0fc11f8ac80a076de1854588169cea71fdbc7f3dfda53b962c44d146069d2ab",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "927cde2bde789916f80568ab4ed42c343908d668717d838135c86fdbaecbcdbb",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "1e01c5b028c76fd5e3cee922f82e5d08e360d53d6be72e69da6dbb496df70f2b",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "4a24c7469300ef7f33f359809da0d0f2380522b9f36a2ca5e240436266e958ba",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "7d5949b6c789d7afb8b00da90920e3760ae0bd754171821d2d55f12be0a3d70e",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "36304ad6720936029a48eedbbb903228a387a6098af34824d49998de70ddda4a",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "c4d6ec7018c81d2fa3591e6bbaf8c7a01d26740f39cb0501786da698be06fc15",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "344febf1b58ed76f35f7bd6d59d977444bbea03c579ebad81d4ec57f1b4b88ea",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "aea8824af24111d81a74c376bff029fe47d88552bc778cce1dd93655fca7e2c9",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "24d3900456351f1dd6a83fe53ce0a293ecd2a3252a8713e639172f14bfcbdf09",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "d1431e90b6d05116f396340eb51d45aecc8b423f33a16209d6d247097f92e0cb",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "21493b853cfee450358d668bbd37eafde4e6cb8a6fb4abf39f15afbbeb3095b7",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "c40455efb1572ba85894a1879f107af372c44ceb47a08db834edf7a38bb97453",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "38ec46d8e3a186e37e14baca73019e4153207a0e037f8628a2dcc414c21c331e",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "94866272af1192c8c548f2ea9b97b2f6b1376fff42a740e7a08297701fa36b18",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "e5b70a2fb2bb2eeb7dafd5d33ad507c8fdc199d87a1b097576e5b934b6289bbb",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "9e1eb953cb9256e9fdd9d2b45252e80e9dd178d930e4d5558b4c5c9e4bce8e61",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "a858449bf3048ddde8d4d47cd30ae943ee851cbf1a6cbac377fce6f94b75a974",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "d11a2b80dfc7af2f3c48aafae41125946bcb07803beeabd33f834d607c9e8798",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "040f84c452593b2c9c654e08ed138e20834c23bddfb6dcc8215fa8cc62b6f064",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "db5b132a2fd45b303271cec694f71cc39ffccc6cd26e7df01f7783316d0f7515",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "229c66a4d8bdbde43bdfde3599f9ef80a63a67e555696abef001509ecf25f0cd",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "fdfe5ea0b7ce04adfe7df453b0a01527c1f1a9e4ed43561b060d2810b9275e0a",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "6ed321cf42cc759858650dd99addfe06f60bf4a9d0cd12600da1c67245bc036f",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "fff35e39e896659b525918d910e15bbec86286a8f896563d44c709cf6181d577",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "f7fa562acff5acf3d5aabed6fcae51c6eb37d80e7d1f2ef22d3d345657bb2338",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "9c44139d004258bad84c7184017b30fbe96d5cd001359c676d131245f72a2ae8",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "ccf7e553845d52db2ade4459c731bc656247de5f1956ef50bb0b962a75919445",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "dd973c88a436b9b20e88fb41cda4b01bcf4632aecda21036ffffec1a8e98d277",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "ac169063953c9a54ff816628fb021b6a4d850ac299b3d4fa80ee9a34b6d6a874",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "4d97315a43e21ff8d8a92987de00bb6d0bd2f39452ca9014d7ac0d58a9e1dca1",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "61b2ac997f6156e6243c04d2b62728908624f3668ca860e5c5646aa86ce8e1e6",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "58bd7b635a260baa9940c0f9dda4f5a80a58fb01ccd1c3ca0eb9865133944fd1",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "a4ad6a99da88e64e4dc18510a839eb48d777042115e879b339dd5e4716505f17",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "730f36c8877bd7e41ea1489d2eb15cc730f1ee595e15baa871faddc8b799f068",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "7fb1ddfdb5a3390793cec0c27ca5052e3639e082f182708af740b58b984d9f3b",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "efe00e2e568eee8fb59f90cbb84f2e7dbd6d5c18802c5e40d0e1db3a1f67b146",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "0179645debcf7a2c159dd7fa0fb3995cb8eff80b19c6c026be5d0c056460e6b9",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "r",
+      "propensity": 0.5,
+      "y": true,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    },
+    {
+      "parent_id": "3ba29a9ad02e4331ce3bd2c6e51e82984596d2e5eec00523cb659fb6d706d4bf",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "action": "c",
+      "propensity": 0.5,
+      "y": false,
+      "counterpart_exposed": false,
+      "provenance": "Hash-masked from qualified paired simulator outcomes; not a new genuinely randomized execution log"
+    }
+  ],
+  "pairs": [
+    {
+      "parent_id": "f73fea17ec2785d698fd4e435d215dbe016074fecfa97c42d0300573d9129987",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "7b499887e9ffd3ea5956345e231cef1583c19b30a598f5511bc6f3eeb9108e19",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "d0c45ef61eb051d62bbdee5ed12a3aa09044d4f999290fc15f8e68affaa0d91b",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "52ba3bac95affa67388b7e24ad9e45a4c0de861275a1e913e136cc3b7d702f39",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "c13adac06910c6d73542325c7d8e34dfaa543961b307321be1ce24c3cf422475",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "5fece57ba2b6f1cfb5f9d489d7104e3d5ae0a2603afbc53941714e294531e845",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "41e0f3cdd04a777621a951f3e2674a832b49f913208ca32fd0cb9b62f06e1acd",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "0cdbb563defb612fa82d1dbfe29df9dfeb50f4c4cc15c2f49c5ad7360830813c",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "0cc98dad4be0347f64dbbd2c90d567964e6c78cf9a635936722d1630d9d6a815",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "51c0fe7bd9f3b98a2c54d670994b084662b341c0ad48c875c870007b208d3240",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "cc5f107291215081c4b5e1b7aa6533972afcda96c02a0d124ddfb4c8239d6931",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "b994662d77fa01a33c459837c763683827a0d08935888fd0a778a5caef6359f1",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "22b5d0ea27871c7271f74ea61a284cd478bd14d379966f84b5185d906c44023f",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "0424e2984e6b432a4adae87377d610db309ce15ffc4f13fcc31f26fc63b0685e",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "4391ee7102cb1187f9e7b4f868430e57b5abf8630ff27cba9637aaf203fc59aa",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "bea200fd7943f53ef288ea8f4be47995afa3c07fccd58c18472926c3116bea2a",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "4d8600d5d5cca677667ce718e698016dc6342f13138738ea1b29269aba0ed751",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "eac7e549a81eab0d20e1bceae4a0950c241402e7816525fa452d92cebc82e58b",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "cc2f18ef5d2ecaef96a2e1e52a14f3546e5b50457c6be3e205d426b5d22c06a8",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "637e1ab3ef62a0c39e67871f6db87aa9f0d64f176cb1f63401a62653814ca6ac",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "9cbd6e367b5341d4dde37f5cd88f7a2a85e470bd697ab341765df7ff920ea66b",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "cbee251b62615ccad7906a00b5e6a95605c1fecca9b20b824c2fc02a0cb033e8",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "557559b658e543d0130f2f41b160bd3410b0d7b600a5d4116e69808bf5354acc",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "99fb96c9018fd6244d8cf42b3f7dc052e30c74948e233695802a7f34a1aefdaa",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "6a80e57d7603337daa79c3c0548e9626f7453fb7a9793e64f205deb6121dc750",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "d0fc11f8ac80a076de1854588169cea71fdbc7f3dfda53b962c44d146069d2ab",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "927cde2bde789916f80568ab4ed42c343908d668717d838135c86fdbaecbcdbb",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "1e01c5b028c76fd5e3cee922f82e5d08e360d53d6be72e69da6dbb496df70f2b",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "4a24c7469300ef7f33f359809da0d0f2380522b9f36a2ca5e240436266e958ba",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "7d5949b6c789d7afb8b00da90920e3760ae0bd754171821d2d55f12be0a3d70e",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "36304ad6720936029a48eedbbb903228a387a6098af34824d49998de70ddda4a",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "c4d6ec7018c81d2fa3591e6bbaf8c7a01d26740f39cb0501786da698be06fc15",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "344febf1b58ed76f35f7bd6d59d977444bbea03c579ebad81d4ec57f1b4b88ea",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "aea8824af24111d81a74c376bff029fe47d88552bc778cce1dd93655fca7e2c9",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "24d3900456351f1dd6a83fe53ce0a293ecd2a3252a8713e639172f14bfcbdf09",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "d1431e90b6d05116f396340eb51d45aecc8b423f33a16209d6d247097f92e0cb",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "21493b853cfee450358d668bbd37eafde4e6cb8a6fb4abf39f15afbbeb3095b7",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": false
+    },
+    {
+      "parent_id": "c40455efb1572ba85894a1879f107af372c44ceb47a08db834edf7a38bb97453",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "38ec46d8e3a186e37e14baca73019e4153207a0e037f8628a2dcc414c21c331e",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "94866272af1192c8c548f2ea9b97b2f6b1376fff42a740e7a08297701fa36b18",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "e5b70a2fb2bb2eeb7dafd5d33ad507c8fdc199d87a1b097576e5b934b6289bbb",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "9e1eb953cb9256e9fdd9d2b45252e80e9dd178d930e4d5558b4c5c9e4bce8e61",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "a858449bf3048ddde8d4d47cd30ae943ee851cbf1a6cbac377fce6f94b75a974",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "d11a2b80dfc7af2f3c48aafae41125946bcb07803beeabd33f834d607c9e8798",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "040f84c452593b2c9c654e08ed138e20834c23bddfb6dcc8215fa8cc62b6f064",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "db5b132a2fd45b303271cec694f71cc39ffccc6cd26e7df01f7783316d0f7515",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "229c66a4d8bdbde43bdfde3599f9ef80a63a67e555696abef001509ecf25f0cd",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "fdfe5ea0b7ce04adfe7df453b0a01527c1f1a9e4ed43561b060d2810b9275e0a",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "6ed321cf42cc759858650dd99addfe06f60bf4a9d0cd12600da1c67245bc036f",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "fff35e39e896659b525918d910e15bbec86286a8f896563d44c709cf6181d577",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "f7fa562acff5acf3d5aabed6fcae51c6eb37d80e7d1f2ef22d3d345657bb2338",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "9c44139d004258bad84c7184017b30fbe96d5cd001359c676d131245f72a2ae8",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "ccf7e553845d52db2ade4459c731bc656247de5f1956ef50bb0b962a75919445",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "dd973c88a436b9b20e88fb41cda4b01bcf4632aecda21036ffffec1a8e98d277",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "ac169063953c9a54ff816628fb021b6a4d850ac299b3d4fa80ee9a34b6d6a874",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "4d97315a43e21ff8d8a92987de00bb6d0bd2f39452ca9014d7ac0d58a9e1dca1",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "61b2ac997f6156e6243c04d2b62728908624f3668ca860e5c5646aa86ce8e1e6",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "58bd7b635a260baa9940c0f9dda4f5a80a58fb01ccd1c3ca0eb9865133944fd1",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "a4ad6a99da88e64e4dc18510a839eb48d777042115e879b339dd5e4716505f17",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "730f36c8877bd7e41ea1489d2eb15cc730f1ee595e15baa871faddc8b799f068",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "7fb1ddfdb5a3390793cec0c27ca5052e3639e082f182708af740b58b984d9f3b",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "efe00e2e568eee8fb59f90cbb84f2e7dbd6d5c18802c5e40d0e1db3a1f67b146",
+      "x": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "yc": true,
+      "yr": true
+    },
+    {
+      "parent_id": "0179645debcf7a2c159dd7fa0fb3995cb8eff80b19c6c026be5d0c056460e6b9",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    },
+    {
+      "parent_id": "3ba29a9ad02e4331ce3bd2c6e51e82984596d2e5eec00523cb659fb6d706d4bf",
+      "x": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "yc": false,
+      "yr": true
+    }
+  ],
+  "visible_action_outcomes": 128,
+  "counterpart_exposure_authorized": true,
+  "budget": 128,
+  "qualification_only": true,
+  "no_independent_test_scoring": true
+}

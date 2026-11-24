@@ -1,0 +1,152 @@
+{
+  "science_base_commit": "d917a69d47f3102123030eaf565f4623dad86525",
+  "new_physics": 0,
+  "new_fits": 0,
+  "files": {
+    "research/dsre_stage1_manuscript/anonymous_source_manifest.json": {
+      "sha256": "3e63aeacca48faf826d5640e5f6a1347749290949ead7796d80ccbb2f706cfc1",
+      "bytes": 1728
+    },
+    "research/dsre_stage1_manuscript/citation_audit.json": {
+      "sha256": "3a83cd9b271bea9b754382f95987d70cc9db2049987ca104ce54f97e23406d51",
+      "bytes": 4861
+    },
+    "research/dsre_stage1_manuscript/dsre_stage1.blg": {
+      "sha256": "cb94655386a6a954c608a2d8b8012567ca23ae82d4545992d9376065ed88af91",
+      "bytes": 217
+    },
+    "research/dsre_stage1_manuscript/dsre_stage1.log": {
+      "sha256": "1247590b0307c6b09ee5a8e766b45652a9fc640055f59064da7270c7392b156c",
+      "bytes": 13740
+    },
+    "research/dsre_stage1_manuscript/frozen_science_reaudit.json": {
+      "sha256": "00dfc197d1f0794d38291f9e545d4e433d948efe64c0d7ac5f1cc2aece5f19e6",
+      "bytes": 8555
+    },
+    "research/dsre_stage1_manuscript/independent_numbers.json": {
+      "sha256": "8e7372bc48f99815edfeeafdbd9e7b92442407d00c2ffbb269006184912b7f30",
+      "bytes": 2679538
+    },
+    "research/dsre_stage1_manuscript/main_results.csv": {
+      "sha256": "bd9cb184231b5f811d27f81f9295f0cca963db84ed8f1d51d0827ec5912cf641",
+      "bytes": 1122
+    },
+    "research/dsre_stage1_manuscript/page_renders/page-1.png": {
+      "sha256": "eaa2eac1a628518febfc1a5286d357b7edd8959cd5c6959950a257ff15a7d759",
+      "bytes": 555175
+    },
+    "research/dsre_stage1_manuscript/page_renders/page-2.png": {
+      "sha256": "a661f5c35df9b65925b92c94bdfa289cfe3785aa54b10edc20d8fe1eb10c2a5f",
+      "bytes": 546005
+    },
+    "research/dsre_stage1_manuscript/page_renders/page-3.png": {
+      "sha256": "95be67444c8af2644d7dd2a4f1d58faa437553607e39db1decf3683ff8a4a474",
+      "bytes": 569145
+    },
+    "research/dsre_stage1_manuscript/page_renders/page-4.png": {
+      "sha256": "f24b6ab312965d5b9383436d789e1a84110223e82f8c79b152c5da28894a5380",
+      "bytes": 569536
+    },
+    "research/dsre_stage1_manuscript/page_renders/page-5.png": {
+      "sha256": "67172dbdf9c486aa8a82664e302da0b9ab684c279a96a975aa166033d49bfaf0",
+      "bytes": 537503
+    },
+    "research/dsre_stage1_manuscript/page_renders/page-6.png": {
+      "sha256": "b0860d56bce5add6e8521af6838f7b27bf70253ecb832c3ce286dd970e37296d",
+      "bytes": 368394
+    },
+    "research/dsre_stage1_manuscript/pdf_inspection.json": {
+      "sha256": "747fff296b5a6fceaba2e1673dce7e5623575a00f4eca942e294577b4f47875f",
+      "bytes": 4807
+    },
+    "research/dsre_stage1_manuscript/pdf_text.txt": {
+      "sha256": "ae9beba0c0dd99168e1207c00fdb73665dd1a6716f3f7daa8e7aaa98a1c92b60",
+      "bytes": 38398
+    },
+    "research/dsre_stage1_manuscript/preservation_before.json": {
+      "sha256": "1f41faedd04c13581d53e7cfaaa7334387a11b67f3ddb175785e6823fa75a1fc",
+      "bytes": 94646
+    },
+    "research/dsre_stage1_manuscript/reproduction_receipt.json": {
+      "sha256": "d9839cca74e1748beb9dc7c8b8f31904c443b7922b165b9399e3ea281d074c3b",
+      "bytes": 420
+    },
+    "research/dsre_stage1_manuscript/supervisor_import.json": {
+      "sha256": "3632e9fa8988a07e80730dc7dd484d8d148e2c6121e4601269b5823c83bf46f2",
+      "bytes": 958
+    },
+    "rss2027/dsre_stage1.pdf": {
+      "sha256": "9fcd636c1baa8437eaf0be7072206f1900512b72f65d1597df1f268bd979a103",
+      "bytes": 479471
+    },
+    "rss2027/dsre_stage1.tex": {
+      "sha256": "b2e48c9fbcb62ca1cc6493d4f602c75f256633c7b0350fdca5811dbbb99ae831",
+      "bytes": 28543
+    },
+    "rss2027/dsre_stage1_anonymous_source.tar.gz": {
+      "sha256": "34123d737e57bba340da6d9df4a8ced419d11b6c3aabf1c25f0a800110b9d224",
+      "bytes": 581455
+    },
+    "rss2027/stage1_evidence/calibration.tex": {
+      "sha256": "f7fca1593294325f24f692e482cc0a6661876967e5df4e477cf90c4a57d118b6",
+      "bytes": 352
+    },
+    "rss2027/stage1_evidence/figure1_evidence.pdf": {
+      "sha256": "1683ae88768187c952f9003202b21154934cd4a56794365f74c1892a0458c012",
+      "bytes": 41439
+    },
+    "rss2027/stage1_evidence/figure1_evidence.png": {
+      "sha256": "c64a09b98d3c28ca74a163e4de329f4799ff2aae8d2009f56a7738800b1f389f",
+      "bytes": 313981
+    },
+    "rss2027/stage1_evidence/figure1_evidence.svg": {
+      "sha256": "bc4b70003cf3f30da7fd4a3167b523e9821c41e9d77d8b321fca055533759cd0",
+      "bytes": 32799
+    },
+    "rss2027/stage1_evidence/figure2_identification.pdf": {
+      "sha256": "ce494c1dce1353ac3a5f7f1fdc80949f749eab34cb2f42e7b74d2673ebbf8e0c",
+      "bytes": 34888
+    },
+    "rss2027/stage1_evidence/figure2_identification.png": {
+      "sha256": "ce811f518bfd3c0c7cd1aca03c7683b2bc462704bd3cfdd9ca29e264f9511d3f",
+      "bytes": 125149
+    },
+    "rss2027/stage1_evidence/figure2_identification.svg": {
+      "sha256": "3230db31b3443dc6344fa075991b5789faf6127aaccf3b2fd681efc72c5fec9b",
+      "bytes": 105738
+    },
+    "rss2027/stage1_evidence/figure_data.json": {
+      "sha256": "0c547ae7151e93ccfae635620d30b21ad90eea979ae18d4bf1fb745a98f072a2",
+      "bytes": 9739
+    },
+    "rss2027/stage1_evidence/main_results.tex": {
+      "sha256": "8a04311d875eba4eece4f265a9252a5247b3d15e6f7cbc95d8f3526ac469a19e",
+      "bytes": 874
+    },
+    "rss2027/stage1_evidence/references.bib": {
+      "sha256": "14e30cac4f006cedffd1ef0d3daa85ff29e8a4443055fb70d4918f57304193af",
+      "bytes": 3861
+    },
+    "scripts/dsre_stage1_inspect_pdf.py": {
+      "sha256": "49da5d5f502607fdb53b9f03d2b260e8d241deb9a211ae528636bd09e0ab5235",
+      "bytes": 6185
+    },
+    "scripts/dsre_stage1_manuscript_figures.py": {
+      "sha256": "7b6717192b50c8d40a4a0d8910c2661453b2d435b5afc65ce69fe586734a67d6",
+      "bytes": 10883
+    },
+    "scripts/dsre_stage1_verify_numbers.py": {
+      "sha256": "48a43da102e7da403d0a7632c26c0c090a0110db3c09a66af06c09e37a9c57de",
+      "bytes": 20108
+    }
+  },
+  "tests": {
+    "focused_passed": 25,
+    "maintained_passed": 635,
+    "maintained_skipped": 6
+  },
+  "source_input_hashed_paths": 12360,
+  "protected_files": 480,
+  "unrelated_status_entries": 56,
+  "total_artifact_bytes": 7790213
+}

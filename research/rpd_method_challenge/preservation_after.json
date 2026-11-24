@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "preserved": {
+    "files": 1444,
+    "seals": 436,
+    "manuscripts": 55
+  },
+  "base_commit": "0d3b52b57a5914dee05530d15cc9ef26b95a921b",
+  "calendar_wall_seconds": 4458.355633020401,
+  "new_physics": 0,
+  "manuscript_edits": 0
+}

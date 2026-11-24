@@ -1,0 +1,18 @@
+{
+  "python": "3.12.12 (main, Oct 28 2025, 12:10:49) [Clang 20.1.4 ]",
+  "executable": "/home/imad/Desktop/IEEE-RAL/.venv/bin/python3",
+  "platform": "Linux-6.8.0-149-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "mani-skill": "3.0.1",
+    "sapien": "3.0.3",
+    "torch": "2.5.1+cpu",
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "pydantic": "2.14.3",
+    "pytest": "8.4.2",
+    "ruff": "0.17.4"
+  },
+  "source_start_commit": "280f821cdfb9e3b714bceccd6fa053bf45f9f28c",
+  "new_physics": 0,
+  "dependency_installations": 0
+}

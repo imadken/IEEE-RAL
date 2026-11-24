@@ -1,0 +1,10 @@
+{
+  "path": "RSS2027_RECOVERABILITY_PRESERVING_DIAGNOSIS_CONCEPT_20261119.zip",
+  "sha256": "2f275d64908941ad3c29f4422509a81c17e4b9b99fb185efc81ab4009f54d9ed",
+  "members": {
+    "research/rpd_method_challenge/supervisor/METHODOLOGY_FIRST_DECISION.md": "70c90f7ef8d79847e7bfea9947c7371896cc92796ee2c7f0e0eb39f8eecd70a2",
+    "research/rpd_method_challenge/supervisor/CODEX_48H_CHALLENGE.md": "c3a35805045aeff8eea7c9634b572b1fedf8bf6875758215b1458fe6394b52ad",
+    "research/rpd_method_challenge/supervisor/finite_world_probe_check.py": "66adfcd999d9508b9573e013e34da177f1a6204cc9a76aa6e48200442f28ea26",
+    "research/rpd_method_challenge/supervisor/ANALYTICAL_VALIDATION.json": "80c023f8402010e7ca48975f5e1ab35faa7c4c50a32fa292c61c1d622fdf7925"
+  }
+}

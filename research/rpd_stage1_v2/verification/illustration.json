@@ -1,0 +1,445 @@
+{
+  "scope": "CONSTRUCTED_FINITE_MODEL_NOT_ROBOT_DATA",
+  "model": {
+    "model_id": "CONSTRUCTED_EQUAL_DURATION_3WORLDS_CLOCK_AUGMENTED_V2",
+    "source_scope": "DECLARED_DETERMINISTIC_FINITE_MODEL",
+    "evidence_origin": "ANALYTICAL_TRUTH_TABLE_NOT_ROBOT_OUTCOMES",
+    "calibration_available": false,
+    "assumptions": [
+      "Complete known deterministic finite transition model",
+      "All possible initial states retained; observations follow physical transitions",
+      "Truth-table task success is analytical, not calibrated physical performance"
+    ],
+    "states": [
+      {
+        "state_id": "A0",
+        "physically_allowed": true,
+        "recoveries": [
+          {
+            "action_id": "a0",
+            "task_success": true,
+            "path_safe": true
+          },
+          {
+            "action_id": "a1",
+            "task_success": false,
+            "path_safe": true
+          }
+        ]
+      },
+      {
+        "state_id": "AF",
+        "physically_allowed": true,
+        "recoveries": [
+          {
+            "action_id": "a0",
+            "task_success": true,
+            "path_safe": true
+          },
+          {
+            "action_id": "a1",
+            "task_success": false,
+            "path_safe": true
+          }
+        ]
+      },
+      {
+        "state_id": "AH",
+        "physically_allowed": true,
+        "recoveries": [
+          {
+            "action_id": "a0",
+            "task_success": true,
+            "path_safe": true
+          },
+          {
+            "action_id": "a1",
+            "task_success": false,
+            "path_safe": true
+          }
+        ]
+      },
+      {
+        "state_id": "B0",
+        "physically_allowed": true,
+        "recoveries": [
+          {
+            "action_id": "a0",
+            "task_success": true,
+            "path_safe": true
+          },
+          {
+            "action_id": "a1",
+            "task_success": true,
+            "path_safe": true
+          }
+        ]
+      },
+      {
+        "state_id": "BF",
+        "physically_allowed": true,
+        "recoveries": [
+          {
+            "action_id": "a0",
+            "task_success": false,
+            "path_safe": true
+          },
+          {
+            "action_id": "a1",
+            "task_success": true,
+            "path_safe": true
+          }
+        ]
+      },
+      {
+        "state_id": "BH",
+        "physically_allowed": true,
+        "recoveries": [
+          {
+            "action_id": "a0",
+            "task_success": true,
+            "path_safe": true
+          },
+          {
+            "action_id": "a1",
+            "task_success": true,
+            "path_safe": true
+          }
+        ]
+      },
+      {
+        "state_id": "C0",
+        "physically_allowed": true,
+        "recoveries": [
+          {
+            "action_id": "a0",
+            "task_success": false,
+            "path_safe": true
+          },
+          {
+            "action_id": "a1",
+            "task_success": true,
+            "path_safe": true
+          }
+        ]
+      },
+      {
+        "state_id": "CF",
+        "physically_allowed": true,
+        "recoveries": [
+          {
+            "action_id": "a0",
+            "task_success": false,
+            "path_safe": true
+          },
+          {
+            "action_id": "a1",
+            "task_success": false,
+            "path_safe": true
+          }
+        ]
+      },
+      {
+        "state_id": "CH",
+        "physically_allowed": true,
+        "recoveries": [
+          {
+            "action_id": "a0",
+            "task_success": false,
+            "path_safe": true
+          },
+          {
+            "action_id": "a1",
+            "task_success": true,
+            "path_safe": true
+          }
+        ]
+      }
+    ],
+    "recovery_actions": [
+      "a0",
+      "a1"
+    ],
+    "probes": [
+      {
+        "probe_id": "hold",
+        "cost": "1/2",
+        "transitions": [
+          {
+            "state_id": "A0",
+            "enabled": true,
+            "successor": "AH",
+            "observation": "same",
+            "path_safe": true
+          },
+          {
+            "state_id": "AF",
+            "enabled": false,
+            "successor": null,
+            "observation": null,
+            "path_safe": null
+          },
+          {
+            "state_id": "AH",
+            "enabled": false,
+            "successor": null,
+            "observation": null,
+            "path_safe": null
+          },
+          {
+            "state_id": "B0",
+            "enabled": true,
+            "successor": "BH",
+            "observation": "same",
+            "path_safe": true
+          },
+          {
+            "state_id": "BF",
+            "enabled": false,
+            "successor": null,
+            "observation": null,
+            "path_safe": null
+          },
+          {
+            "state_id": "BH",
+            "enabled": false,
+            "successor": null,
+            "observation": null,
+            "path_safe": null
+          },
+          {
+            "state_id": "C0",
+            "enabled": true,
+            "successor": "CH",
+            "observation": "same",
+            "path_safe": true
+          },
+          {
+            "state_id": "CF",
+            "enabled": false,
+            "successor": null,
+            "observation": null,
+            "path_safe": null
+          },
+          {
+            "state_id": "CH",
+            "enabled": false,
+            "successor": null,
+            "observation": null,
+            "path_safe": null
+          }
+        ]
+      },
+      {
+        "probe_id": "p1_fine",
+        "cost": "1/2",
+        "transitions": [
+          {
+            "state_id": "A0",
+            "enabled": true,
+            "successor": "AF",
+            "observation": "A",
+            "path_safe": true
+          },
+          {
+            "state_id": "AF",
+            "enabled": false,
+            "successor": null,
+            "observation": null,
+            "path_safe": null
+          },
+          {
+            "state_id": "AH",
+            "enabled": false,
+            "successor": null,
+            "observation": null,
+            "path_safe": null
+          },
+          {
+            "state_id": "B0",
+            "enabled": true,
+            "successor": "BF",
+            "observation": "B",
+            "path_safe": true
+          },
+          {
+            "state_id": "BF",
+            "enabled": false,
+            "successor": null,
+            "observation": null,
+            "path_safe": null
+          },
+          {
+            "state_id": "BH",
+            "enabled": false,
+            "successor": null,
+            "observation": null,
+            "path_safe": null
+          },
+          {
+            "state_id": "C0",
+            "enabled": true,
+            "successor": "CF",
+            "observation": "C",
+            "path_safe": true
+          },
+          {
+            "state_id": "CF",
+            "enabled": false,
+            "successor": null,
+            "observation": null,
+            "path_safe": null
+          },
+          {
+            "state_id": "CH",
+            "enabled": false,
+            "successor": null,
+            "observation": null,
+            "path_safe": null
+          }
+        ]
+      },
+      {
+        "probe_id": "p2_coarse",
+        "cost": "1/2",
+        "transitions": [
+          {
+            "state_id": "A0",
+            "enabled": true,
+            "successor": "AH",
+            "observation": "AB",
+            "path_safe": true
+          },
+          {
+            "state_id": "AF",
+            "enabled": false,
+            "successor": null,
+            "observation": null,
+            "path_safe": null
+          },
+          {
+            "state_id": "AH",
+            "enabled": false,
+            "successor": null,
+            "observation": null,
+            "path_safe": null
+          },
+          {
+            "state_id": "B0",
+            "enabled": true,
+            "successor": "BH",
+            "observation": "AB",
+            "path_safe": true
+          },
+          {
+            "state_id": "BF",
+            "enabled": false,
+            "successor": null,
+            "observation": null,
+            "path_safe": null
+          },
+          {
+            "state_id": "BH",
+            "enabled": false,
+            "successor": null,
+            "observation": null,
+            "path_safe": null
+          },
+          {
+            "state_id": "C0",
+            "enabled": true,
+            "successor": "CH",
+            "observation": "C",
+            "path_safe": true
+          },
+          {
+            "state_id": "CF",
+            "enabled": false,
+            "successor": null,
+            "observation": null,
+            "path_safe": null
+          },
+          {
+            "state_id": "CH",
+            "enabled": false,
+            "successor": null,
+            "observation": null,
+            "path_safe": null
+          }
+        ]
+      }
+    ],
+    "initial_support": [
+      "A0",
+      "B0",
+      "C0"
+    ],
+    "horizon": 1,
+    "max_probe_cost": "1/2",
+    "cost_unit": "DECLARED_PROBE_COST_UNITS",
+    "require_physical_safety": true
+  },
+  "clock_seconds": {
+    "initial": 4,
+    "post_probe": 3.5
+  },
+  "equal_probe_durations_seconds": 0.5,
+  "prior": {
+    "A": 0.3333333333333333,
+    "B": 0.3333333333333333,
+    "C": 0.3333333333333333
+  },
+  "rows": [
+    {
+      "world": "A",
+      "hold_K": [
+        "a0"
+      ],
+      "fine_K": [
+        "a0"
+      ],
+      "coarse_K": [
+        "a0"
+      ]
+    },
+    {
+      "world": "B",
+      "hold_K": [
+        "a0",
+        "a1"
+      ],
+      "fine_K": [
+        "a1"
+      ],
+      "coarse_K": [
+        "a0",
+        "a1"
+      ]
+    },
+    {
+      "world": "C",
+      "hold_K": [
+        "a1"
+      ],
+      "fine_K": [],
+      "coarse_K": [
+        "a1"
+      ]
+    }
+  ],
+  "information_nats": {
+    "fine": 1.0986122886681098,
+    "coarse": 0.6365141682948128,
+    "hold": 0
+  },
+  "fine_analytical_erasure_world": "C",
+  "fine_analytical_partial_loss_world": "B",
+  "best_robust_probe": "p2_coarse",
+  "policy_tree_oracle_enumerated": 42,
+  "analytical_completion": {
+    "fine": 0.6666666666666666,
+    "coarse": 1,
+    "task_consensus": 1,
+    "same_objective_planner": 1
+  }
+}

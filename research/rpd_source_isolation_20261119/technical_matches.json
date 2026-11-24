@@ -1,0 +1,897 @@
+{
+  "scope": "RETROSPECTIVE_TECHNICAL_PARENT0_ONLY_NOT_POPULATION_H1_TEST",
+  "tasks": {
+    "PickCube-v1": {
+      "rows": [
+        {
+          "history": [
+            "micro_lift"
+          ],
+          "delay_ticks": 10,
+          "K_probe": [
+            "continue",
+            "recover"
+          ],
+          "K_hold": [
+            "continue",
+            "recover"
+          ],
+          "root_parity": true,
+          "probe_sources": [
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/866b3311e1714a1587cad7cfb66044ae47abc8742317b64c8a8f8c1b2097213d.json.xz",
+              "sha256": "3a2f6e5273f883a32d43b70082efd54c49cf721d3073be2d0000f524b7a33139",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/34172e9c2d1a7872062a741b69dfe11462476ad04940cfe3bbc3d0adcdcf7d22.json.xz",
+              "sha256": "919034f58e441ec6daeade3f17a9be2a94db03a0862f2f32b2e509c651458166",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/041f77280b4a9053b46a65adbf864e5c5bf73da28eb7bc5ad442bfea6a17f98a.json.xz",
+              "sha256": "ff648fa7c3a06b53994cb8ce8cc3897f8f9de866ca83283b826fabe0c1ecf57c",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/581247c74fab86c458167660e93e67818a5c1da2d25c7a97f44ce71681ad9072.json.xz",
+              "sha256": "492244b4942ab3bd24c4b598d7d3860413f4bc1afcdb2f1eb894eee29f3753f9",
+              "macro_end": true,
+              "deadline": true
+            }
+          ],
+          "hold_sources": [
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/773276968951439ff3338f140ba6bfbae93f87a46413eb4335fb6f7096b6fc29/native.json.xz",
+              "sha256": "7bbe0c4580edd55bc4d6841ce1da8864bc6d9617a838723657b97aeaf4e99df6",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/43a4aabaad4d3fbccbd96c05e8092e45d7b76341169c64e573eae9b40a861d12/native.json.xz",
+              "sha256": "cbe8075af5fe794d16cecdc48e9c28eddb366d905efa23f5a591146acfb5a3d3",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/0e6ff5e656859cac037aad90b985ce05d49ade4d5f14da3055910a2383065a0f/native.json.xz",
+              "sha256": "5902877f679f408c378486380690f08a6ab7ad9a35851f5ee2943d24468e9bfe",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/6c10fb5a1bf29fd3b7a0cb96221a803fca35f69f69b5829e693c84a0fb1d168a/native.json.xz",
+              "sha256": "5c1c70d93b60835ee4b00d9d16c12ed02206fbba9ae328a2ace509d5546126b4",
+              "macro_end": true,
+              "deadline": true
+            }
+          ],
+          "status": "KNOWN",
+          "erasure": false,
+          "creation": false,
+          "lost": [],
+          "gained": []
+        },
+        {
+          "history": [
+            "release_settle"
+          ],
+          "delay_ticks": 10,
+          "K_probe": [
+            "recover"
+          ],
+          "K_hold": [
+            "continue",
+            "recover"
+          ],
+          "root_parity": true,
+          "probe_sources": [
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/040ed53fbc0b8e567c7ea7303a11f7257e94148817d89f07842f78543150856b.json.xz",
+              "sha256": "2ba6b97a907e126def33ab1ff5c785103626aef30165f940aecd837f4bfb5653",
+              "macro_end": false,
+              "deadline": false
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/db234b47cf37f30191e1a342c42dcd85764ffa69287ede2676570d6a3d9b32e0.json.xz",
+              "sha256": "e440dc7702b0cd4b16b48fef62216a748c979fb200b67d9590aec9b95e28f68d",
+              "macro_end": false,
+              "deadline": false
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/55c5dd1b0d68f6f13962a7dbc5b31b2eb8db2fe506c1f0962f87dcc92463d615.json.xz",
+              "sha256": "73e7b422c95112683cb6959e51b319b5d0138a61c3ce800fef71b26c008c1e93",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/1e92d4510467c6a89c8c87a1b1ca3292ab421f1d6c90f37b9fe60f0f053b3128.json.xz",
+              "sha256": "6b2df0bdecd10afc4bfbb2a873bce27f98bd5ec98b961c9efac7593fabf19777",
+              "macro_end": true,
+              "deadline": true
+            }
+          ],
+          "hold_sources": [
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/773276968951439ff3338f140ba6bfbae93f87a46413eb4335fb6f7096b6fc29/native.json.xz",
+              "sha256": "7bbe0c4580edd55bc4d6841ce1da8864bc6d9617a838723657b97aeaf4e99df6",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/43a4aabaad4d3fbccbd96c05e8092e45d7b76341169c64e573eae9b40a861d12/native.json.xz",
+              "sha256": "cbe8075af5fe794d16cecdc48e9c28eddb366d905efa23f5a591146acfb5a3d3",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/0e6ff5e656859cac037aad90b985ce05d49ade4d5f14da3055910a2383065a0f/native.json.xz",
+              "sha256": "5902877f679f408c378486380690f08a6ab7ad9a35851f5ee2943d24468e9bfe",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/6c10fb5a1bf29fd3b7a0cb96221a803fca35f69f69b5829e693c84a0fb1d168a/native.json.xz",
+              "sha256": "5c1c70d93b60835ee4b00d9d16c12ed02206fbba9ae328a2ace509d5546126b4",
+              "macro_end": true,
+              "deadline": true
+            }
+          ],
+          "status": "KNOWN",
+          "erasure": false,
+          "creation": false,
+          "lost": [
+            "continue"
+          ],
+          "gained": []
+        },
+        {
+          "history": [
+            "micro_lift",
+            "micro_lift"
+          ],
+          "delay_ticks": 20,
+          "K_probe": [
+            "continue",
+            "recover"
+          ],
+          "K_hold": [
+            "continue",
+            "recover"
+          ],
+          "root_parity": true,
+          "probe_sources": [
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/8bbd72fabada8e0ce1394d53f2ac6a15f19aeaf616f0b2e23423f68924282e9c.json.xz",
+              "sha256": "ac0d445e89dc1cf24b63900545b378b571c04e00b6b5565e29ef49cd0afc9af8",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/cd6467614fbee743a8de5b92d22501986ccdb58793339f8a2ad47f4ba73068af.json.xz",
+              "sha256": "7ca3146c166759d213d62b3db42a69faa939ce79f8c1158523b74384f34d390c",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/4e0fdaf941fd03dff4a113e93501fa0ab4fdfca52ad7576e6d182737ef927d11.json.xz",
+              "sha256": "934bdcef512d5ee01fcf574d6baac76055ca43b1bb28b2755d31e740dcf3a3c6",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/0da583e212280491e335ced087f14ebc26c205a993bb2452aed671a1b6062f91.json.xz",
+              "sha256": "758fb7a854ce617f8ef480fda1cd1b3162d3987172d5f2f2d9ac86e7a1fbf29c",
+              "macro_end": true,
+              "deadline": true
+            }
+          ],
+          "hold_sources": [
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/8d9f204ffb041e56fb0d8293498d690b3647597045356b27dd5aeca69cda1ad5/native.json.xz",
+              "sha256": "135ef08a98589ce4ece275fea2bb42ecb4f3d8adf14abc93dc2da65d2c2bc53d",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/8a9aa3bd24b36158619f9c9d1061d6bf0edfddf4ce8c45979cf0de6d9c150e7c/native.json.xz",
+              "sha256": "1c554dc196f87e3e0ed43d3eeac7ff3bf9b59e5a7b92776e3413bef040da6963",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/146f31016394d7b11cc36e66a847698f666555ef351f1bba2b9e731eaf42b332/native.json.xz",
+              "sha256": "400a493c0b30ce880ca7bf9c4d8aca9217c5eeb8a3d360a86051e37a096e5aee",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/0f041004e970682f1adc239c433927a9ba789f73f14ede7d5e3f79d5608400de/native.json.xz",
+              "sha256": "ac807d4bf1e96211e044208f924dd76603cd56c1a8dbbcf9ff47d8cb3afed5a3",
+              "macro_end": true,
+              "deadline": true
+            }
+          ],
+          "status": "KNOWN",
+          "erasure": false,
+          "creation": false,
+          "lost": [],
+          "gained": []
+        },
+        {
+          "history": [
+            "micro_lift",
+            "release_settle"
+          ],
+          "delay_ticks": 20,
+          "K_probe": [
+            "recover"
+          ],
+          "K_hold": [
+            "continue",
+            "recover"
+          ],
+          "root_parity": true,
+          "probe_sources": [
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/283e14b3f8deedd315cf2ffaab555c1a84b03cea92e1b7be32f9c9062d04fdf6.json.xz",
+              "sha256": "a7c5e5a9815338a8ea7602ef6d7e16cfb8783813fe5220c94cc508c176e003b0",
+              "macro_end": false,
+              "deadline": false
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/074f609c536da90b898a9dda8dca358486901f628140d66c8e8f2dd675c699c3.json.xz",
+              "sha256": "0d649ea213213405fa2df2570c0437c09c8053934fd4c6dfef4c9048d66ccfb5",
+              "macro_end": false,
+              "deadline": false
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/a4db64b94ff1375c67498ab47c0d5ce9ed41bf92b41de8e7b3e0265eda31ac30.json.xz",
+              "sha256": "bdf0496ffcf8239da8cf80798cd0d29c2fd823067680460e2a8fbfb7cf29fc1d",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/dcd7849676f97488c8fdb9e314afd3575228dcee2cc2a9d7cda9a3ae7e20edb8.json.xz",
+              "sha256": "332f600a57755b9f92bd64dc5d8451729c62e72ebe3d875495a60597d0c6fe87",
+              "macro_end": true,
+              "deadline": true
+            }
+          ],
+          "hold_sources": [
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/8d9f204ffb041e56fb0d8293498d690b3647597045356b27dd5aeca69cda1ad5/native.json.xz",
+              "sha256": "135ef08a98589ce4ece275fea2bb42ecb4f3d8adf14abc93dc2da65d2c2bc53d",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/8a9aa3bd24b36158619f9c9d1061d6bf0edfddf4ce8c45979cf0de6d9c150e7c/native.json.xz",
+              "sha256": "1c554dc196f87e3e0ed43d3eeac7ff3bf9b59e5a7b92776e3413bef040da6963",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/146f31016394d7b11cc36e66a847698f666555ef351f1bba2b9e731eaf42b332/native.json.xz",
+              "sha256": "400a493c0b30ce880ca7bf9c4d8aca9217c5eeb8a3d360a86051e37a096e5aee",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/0f041004e970682f1adc239c433927a9ba789f73f14ede7d5e3f79d5608400de/native.json.xz",
+              "sha256": "ac807d4bf1e96211e044208f924dd76603cd56c1a8dbbcf9ff47d8cb3afed5a3",
+              "macro_end": true,
+              "deadline": true
+            }
+          ],
+          "status": "KNOWN",
+          "erasure": false,
+          "creation": false,
+          "lost": [
+            "continue"
+          ],
+          "gained": []
+        },
+        {
+          "history": [
+            "release_settle",
+            "micro_lift"
+          ],
+          "delay_ticks": 20,
+          "K_probe": [
+            "recover"
+          ],
+          "K_hold": [
+            "continue",
+            "recover"
+          ],
+          "root_parity": true,
+          "probe_sources": [
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/221d7df26d2d9755645f1c454d6c20dd0256014fede711280ae6c3dd91b3523d.json.xz",
+              "sha256": "8f143e9e51e6b89285b0faeb8585ed8532ee4b840011c4892b7f7444f48010cb",
+              "macro_end": false,
+              "deadline": false
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/aff998790110397223a9f5aa08dccd98cbdbc746837b9838d1d4f38c146c4e6d.json.xz",
+              "sha256": "fb24d87010696dd3e6126cd76aba69df75dd45e669ff60654c7e94e1d76ef9c8",
+              "macro_end": false,
+              "deadline": false
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/f2af465e537c4ab87fd793d01bf866568ab4f901151f1de1dfd685ec833de6bc.json.xz",
+              "sha256": "0db9744644632460441172bc5f9b9379f0378e7ad340eb147c3ebf900291c8ba",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/472cb82d601354b465fb466759238a86b3a3a911d4fc51672c304340f410bf34.json.xz",
+              "sha256": "608947347042545bdb74ec39e5bdd5dba11d371cc7a048e9d5c1d16c338030a6",
+              "macro_end": true,
+              "deadline": true
+            }
+          ],
+          "hold_sources": [
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/8d9f204ffb041e56fb0d8293498d690b3647597045356b27dd5aeca69cda1ad5/native.json.xz",
+              "sha256": "135ef08a98589ce4ece275fea2bb42ecb4f3d8adf14abc93dc2da65d2c2bc53d",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/8a9aa3bd24b36158619f9c9d1061d6bf0edfddf4ce8c45979cf0de6d9c150e7c/native.json.xz",
+              "sha256": "1c554dc196f87e3e0ed43d3eeac7ff3bf9b59e5a7b92776e3413bef040da6963",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/146f31016394d7b11cc36e66a847698f666555ef351f1bba2b9e731eaf42b332/native.json.xz",
+              "sha256": "400a493c0b30ce880ca7bf9c4d8aca9217c5eeb8a3d360a86051e37a096e5aee",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/0f041004e970682f1adc239c433927a9ba789f73f14ede7d5e3f79d5608400de/native.json.xz",
+              "sha256": "ac807d4bf1e96211e044208f924dd76603cd56c1a8dbbcf9ff47d8cb3afed5a3",
+              "macro_end": true,
+              "deadline": true
+            }
+          ],
+          "status": "KNOWN",
+          "erasure": false,
+          "creation": false,
+          "lost": [
+            "continue"
+          ],
+          "gained": []
+        },
+        {
+          "history": [
+            "release_settle",
+            "release_settle"
+          ],
+          "delay_ticks": 20,
+          "K_probe": [
+            "recover"
+          ],
+          "K_hold": [
+            "continue",
+            "recover"
+          ],
+          "root_parity": true,
+          "probe_sources": [
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/3d598853c146d3c309905f508b2ad175227df1435d4f08e6b5965d92c6ebb2ef.json.xz",
+              "sha256": "b33eb6457e1a98828c2c9f88d4776fa57a757668d6b0e704cd93906569ae7ae5",
+              "macro_end": false,
+              "deadline": false
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PickCube-v1/parent_00/976e0e503881b00035baa3a02711855d065edd571c3e50bb4f1a1bfbb1cb9cfd.json.xz",
+              "sha256": "2d8e73a8c98aa8f458f7fc27baed933a45047301ad1d27376d30ae3b12663465",
+              "macro_end": false,
+              "deadline": false
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/f22d0aaba4bb81fa841c070c5ad07e3b9fdcfe342c0704bb9065e4fd185ed590/native.json.xz",
+              "sha256": "48eed47ac20f44ebfb68e793cef4184ea11c482a13fccf6ace01de9d9ac4c581",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/9c590dd90cea3be2cd8c249220be93b04028330275a782ab9894843296fbe87e/native.json.xz",
+              "sha256": "bcdde28ba5434c4477d623f6ed841307a105a5fb3c781ce5a73bf79f3d37a81e",
+              "macro_end": true,
+              "deadline": true
+            }
+          ],
+          "hold_sources": [
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/8d9f204ffb041e56fb0d8293498d690b3647597045356b27dd5aeca69cda1ad5/native.json.xz",
+              "sha256": "135ef08a98589ce4ece275fea2bb42ecb4f3d8adf14abc93dc2da65d2c2bc53d",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/8a9aa3bd24b36158619f9c9d1061d6bf0edfddf4ce8c45979cf0de6d9c150e7c/native.json.xz",
+              "sha256": "1c554dc196f87e3e0ed43d3eeac7ff3bf9b59e5a7b92776e3413bef040da6963",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/146f31016394d7b11cc36e66a847698f666555ef351f1bba2b9e731eaf42b332/native.json.xz",
+              "sha256": "400a493c0b30ce880ca7bf9c4d8aca9217c5eeb8a3d360a86051e37a096e5aee",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PickCube-v1/0f041004e970682f1adc239c433927a9ba789f73f14ede7d5e3f79d5608400de/native.json.xz",
+              "sha256": "ac807d4bf1e96211e044208f924dd76603cd56c1a8dbbcf9ff47d8cb3afed5a3",
+              "macro_end": true,
+              "deadline": true
+            }
+          ],
+          "status": "KNOWN",
+          "erasure": false,
+          "creation": false,
+          "lost": [
+            "continue"
+          ],
+          "gained": []
+        }
+      ],
+      "independent_confirmation_parents": 0,
+      "already_inspected_parents": 1,
+      "original_pilot_status_unchanged": "SOURCE_NOT_QUALIFIED_INCOMPLETE",
+      "two_probe_history_scope": "Technical secondary20tick histories; not the locked one10tick-probe H1 confirmation cohort"
+    },
+    "PushCube-v1": {
+      "rows": [
+        {
+          "history": [
+            "forward_tap"
+          ],
+          "delay_ticks": 10,
+          "K_probe": [
+            "continue",
+            "recover"
+          ],
+          "K_hold": [
+            "continue",
+            "recover"
+          ],
+          "root_parity": true,
+          "probe_sources": [
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/ea33da26d446acf042367b18287ac98013c9da241d731430fcb30db2c6d723bb.json.xz",
+              "sha256": "4db8b53b72c10b44190d0fb0a07e76a989ea820e10c1ba8b85c00f29847e27b6",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/73ea0c6f904d605488fb8a50959a4353afacf73e79c6068d560e1362763e9e81.json.xz",
+              "sha256": "06a788b0c2160c82f3a83bb77179423c829f982430f205dd765cc5d8f0873703",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/55a136bfecfca4efe9e275986b4507be9c874e1440a5b957b6e86947dcbbd034.json.xz",
+              "sha256": "e3e79c3d4d9ed535e7090893e92233d43853e45229e972b3f7d25353148173dd",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/99809f8997de765d9e9a80ae1d2d3732fb0dd8139c8a7c26fcba3d168b9b9f1b.json.xz",
+              "sha256": "8bfbac7c806cc659451dcc1ed03d784b3eb88826fdb0935ec61bf3c14c5d2115",
+              "macro_end": true,
+              "deadline": true
+            }
+          ],
+          "hold_sources": [
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/394b6c9229cbc05dd48402ca0c0fc9724de17c5dd05eed91086273ae0b645fe5/native.json.xz",
+              "sha256": "e8ca48580ff135416e8e620ebc1da2684024de2a582c405a810e577aa9c508ea",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/2f12bcfb2c4f7005f8788c36cc7aeb3e2c85c6a1f8a1b57b5f9aa5a01aa806ac/native.json.xz",
+              "sha256": "5e07ecb16664b6dbed5b84ccceb31e1f8e96bc6596f9f8807b40217143eba4b3",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/6f5ddfbcb68cc45ca8d72e8832859a13ba4af487656e0de062742f7e33bdbd79/native.json.xz",
+              "sha256": "5c03364e67c9abe5affb41694a1b6c7d4873e40fb2d888cae7badcbd7828af76",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/2630d5c9baa2a7c4a680c2f581d5084dbe2191a123e54b37d6a1fade1d9baf9f/native.json.xz",
+              "sha256": "257a891158627ef7eab9f2a07aadf313e225c4518de84f8ccd31492a57860aa9",
+              "macro_end": true,
+              "deadline": true
+            }
+          ],
+          "status": "KNOWN",
+          "erasure": false,
+          "creation": false,
+          "lost": [],
+          "gained": []
+        },
+        {
+          "history": [
+            "lateral_sweep"
+          ],
+          "delay_ticks": 10,
+          "K_probe": [
+            "continue",
+            "recover"
+          ],
+          "K_hold": [
+            "continue",
+            "recover"
+          ],
+          "root_parity": true,
+          "probe_sources": [
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/bc96844368ffba56246e10f2e2bb00751cff7690aa6a4fa966cb1d12034bcac7.json.xz",
+              "sha256": "e5354e04253e143f6b242c1bf224ab497e8e84f40cbf77f0bb28d106a65c5ed0",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/cd952457f9e016cd17c99f8e9b23a1072c3b686ca99f8f010e666fa6637c5ba1.json.xz",
+              "sha256": "41d9872f297ab44efdf2898563f2801ca14b7bae848b23cb9ce05d1de0df8337",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/319d85f9ed09caf5698af971cc6ccf81230e38bae533ec645c53ca27ad9cc267.json.xz",
+              "sha256": "676891532f7a849c4c4419f9c04d24c549aee618f7f4c3471b038021333f6a6c",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/f36c1d03eeef33651eda9ef1c6802a44c241319bd086c182af352353872af7e1.json.xz",
+              "sha256": "1f15706f278a5908de86180735b4bc36520aefd67003690849566f730dfdf77a",
+              "macro_end": true,
+              "deadline": true
+            }
+          ],
+          "hold_sources": [
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/394b6c9229cbc05dd48402ca0c0fc9724de17c5dd05eed91086273ae0b645fe5/native.json.xz",
+              "sha256": "e8ca48580ff135416e8e620ebc1da2684024de2a582c405a810e577aa9c508ea",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/2f12bcfb2c4f7005f8788c36cc7aeb3e2c85c6a1f8a1b57b5f9aa5a01aa806ac/native.json.xz",
+              "sha256": "5e07ecb16664b6dbed5b84ccceb31e1f8e96bc6596f9f8807b40217143eba4b3",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/6f5ddfbcb68cc45ca8d72e8832859a13ba4af487656e0de062742f7e33bdbd79/native.json.xz",
+              "sha256": "5c03364e67c9abe5affb41694a1b6c7d4873e40fb2d888cae7badcbd7828af76",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/2630d5c9baa2a7c4a680c2f581d5084dbe2191a123e54b37d6a1fade1d9baf9f/native.json.xz",
+              "sha256": "257a891158627ef7eab9f2a07aadf313e225c4518de84f8ccd31492a57860aa9",
+              "macro_end": true,
+              "deadline": true
+            }
+          ],
+          "status": "KNOWN",
+          "erasure": false,
+          "creation": false,
+          "lost": [],
+          "gained": []
+        },
+        {
+          "history": [
+            "forward_tap",
+            "forward_tap"
+          ],
+          "delay_ticks": 20,
+          "K_probe": [
+            "continue",
+            "recover"
+          ],
+          "K_hold": [
+            "continue",
+            "recover"
+          ],
+          "root_parity": true,
+          "probe_sources": [
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/b618178d3fec8101a1e3f339b4af9624eb558a3a2bca2085092be04df596f703.json.xz",
+              "sha256": "1e1e487cddde69e9dcdd59d58060ac5ba217e6b3881b6d71cec60bc23e9eab9f",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/f0bce4d64c82dfaabe9d5f12496b597509dc948197fe752cdad5403b9fd997d2.json.xz",
+              "sha256": "c343219f3dccd8ee0c1c1baa040b0e23ed12a98fb1334fdee6cfdf1927e09b51",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/228a747f120110ea122668ae0c271e302af644d1f27a35a65751a3588f4adaa7.json.xz",
+              "sha256": "fd0255ef627ea577f7228b5dbb654a1be631a754f468f894eb076fba9ff7459b",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/ab81939dcf89ecba0deacd1ea104b7db784a4f6c6dbb7505e0cf309393846f12.json.xz",
+              "sha256": "8b51143418ed54daf663f52cb645b57e77160baa82b292b73737c94a8472dc3d",
+              "macro_end": true,
+              "deadline": true
+            }
+          ],
+          "hold_sources": [
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/24c25507c2296903d049bd03f6c54aa7778c4e8b6e557e71ce58403f40e7a0af/native.json.xz",
+              "sha256": "ef3142de2492fe1e2b28ac70a17a7a574a4b12678983746bb9cf839141773393",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/80a3e521da84c9aee0628842f8995be4db9f78dd012db19040bcc7bb0f2eb6ab/native.json.xz",
+              "sha256": "f2852400f6d172d53234b57e09123f1f0cfce59817e33a2c977d59bd4d336b1d",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/9067316dba2b505c69789df16050107120baba6ca3565ebcd1093dfa2126c5e3/native.json.xz",
+              "sha256": "8a394b2ee53bd8c9c1e20f613aca2bc83b624b5d7618b848feaacc453c706104",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/0fe0ffa279fe45e53691f11d1b14ad904e4927d513a2c2884570dda6421f2ba5/native.json.xz",
+              "sha256": "dfe97dfadfbdf86f19a6f516465ad8a41071070866ee5a155576b6cdd1eb83d4",
+              "macro_end": true,
+              "deadline": true
+            }
+          ],
+          "status": "KNOWN",
+          "erasure": false,
+          "creation": false,
+          "lost": [],
+          "gained": []
+        },
+        {
+          "history": [
+            "forward_tap",
+            "lateral_sweep"
+          ],
+          "delay_ticks": 20,
+          "K_probe": [
+            "continue",
+            "recover"
+          ],
+          "K_hold": [
+            "continue",
+            "recover"
+          ],
+          "root_parity": true,
+          "probe_sources": [
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/da7bc3d5fb8536263bb99fc1378640cbaf12b4d3b2aafd3260d95bee37c6c0df.json.xz",
+              "sha256": "494b74ea7401da2eceff5676d64e94b15c74dd0113014671f0c42f718056089e",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/e8ffb10145835dc48ad389c2b0aa29377819e9840390a77c49cf228a2d4c6542.json.xz",
+              "sha256": "8852adcb09c677255b3338f62407c75ab4d984882f0432e765a22f993675e690",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/ad6831e94a8ea1c46616c1f41cb416bf11a8b31867203e959482863ab3fd9a21.json.xz",
+              "sha256": "8291cff02a333bd4ab743efc68c1522eed191c38a86df4f0617a848936e52f93",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/bfcb6f5825662bc61dca2747f9eb3e64a3fddc7deb195639d209e7bb288144c8.json.xz",
+              "sha256": "ae26a6057318520007743be4d3f8adc854342aa43caf983905f5bf3f9ae1d999",
+              "macro_end": true,
+              "deadline": true
+            }
+          ],
+          "hold_sources": [
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/24c25507c2296903d049bd03f6c54aa7778c4e8b6e557e71ce58403f40e7a0af/native.json.xz",
+              "sha256": "ef3142de2492fe1e2b28ac70a17a7a574a4b12678983746bb9cf839141773393",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/80a3e521da84c9aee0628842f8995be4db9f78dd012db19040bcc7bb0f2eb6ab/native.json.xz",
+              "sha256": "f2852400f6d172d53234b57e09123f1f0cfce59817e33a2c977d59bd4d336b1d",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/9067316dba2b505c69789df16050107120baba6ca3565ebcd1093dfa2126c5e3/native.json.xz",
+              "sha256": "8a394b2ee53bd8c9c1e20f613aca2bc83b624b5d7618b848feaacc453c706104",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/0fe0ffa279fe45e53691f11d1b14ad904e4927d513a2c2884570dda6421f2ba5/native.json.xz",
+              "sha256": "dfe97dfadfbdf86f19a6f516465ad8a41071070866ee5a155576b6cdd1eb83d4",
+              "macro_end": true,
+              "deadline": true
+            }
+          ],
+          "status": "KNOWN",
+          "erasure": false,
+          "creation": false,
+          "lost": [],
+          "gained": []
+        },
+        {
+          "history": [
+            "lateral_sweep",
+            "forward_tap"
+          ],
+          "delay_ticks": 20,
+          "K_probe": [
+            "continue",
+            "recover"
+          ],
+          "K_hold": [
+            "continue",
+            "recover"
+          ],
+          "root_parity": true,
+          "probe_sources": [
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/31af1c7eef6d359b9092566e66a5d5b9b0cd97974d0a3bc19ec093a373a46e70.json.xz",
+              "sha256": "23548c4e25ff921a4bf93f66e8c03317e03eef93b18dae88fb426cb9bfdb2d41",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/885f97d6f4dabdd130750958a83def5cd172b8ae6dcf1adb3ee81ec3f8bac024.json.xz",
+              "sha256": "8da03d23996ca572c082a8a7063872af97d8d823467c069c9669a02031b22e94",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/a6ec0339f063a8bfbd09850827531a722a2cbcaed00b6167db880170a7084397.json.xz",
+              "sha256": "d21d184d19b4a398867cca24f43023c553f0dd5da236887daebb8dff38844ba5",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/e1ae61fb252a8cd88b8cbb8b438c4979a7335e8b9a446242f0bee311fb9b2e7a.json.xz",
+              "sha256": "e9a761648f517994cf283b3120cdc8bac4f270d3e7f2b779e05415027fde3360",
+              "macro_end": true,
+              "deadline": true
+            }
+          ],
+          "hold_sources": [
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/24c25507c2296903d049bd03f6c54aa7778c4e8b6e557e71ce58403f40e7a0af/native.json.xz",
+              "sha256": "ef3142de2492fe1e2b28ac70a17a7a574a4b12678983746bb9cf839141773393",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/80a3e521da84c9aee0628842f8995be4db9f78dd012db19040bcc7bb0f2eb6ab/native.json.xz",
+              "sha256": "f2852400f6d172d53234b57e09123f1f0cfce59817e33a2c977d59bd4d336b1d",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/9067316dba2b505c69789df16050107120baba6ca3565ebcd1093dfa2126c5e3/native.json.xz",
+              "sha256": "8a394b2ee53bd8c9c1e20f613aca2bc83b624b5d7618b848feaacc453c706104",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/0fe0ffa279fe45e53691f11d1b14ad904e4927d513a2c2884570dda6421f2ba5/native.json.xz",
+              "sha256": "dfe97dfadfbdf86f19a6f516465ad8a41071070866ee5a155576b6cdd1eb83d4",
+              "macro_end": true,
+              "deadline": true
+            }
+          ],
+          "status": "KNOWN",
+          "erasure": false,
+          "creation": false,
+          "lost": [],
+          "gained": []
+        },
+        {
+          "history": [
+            "lateral_sweep",
+            "lateral_sweep"
+          ],
+          "delay_ticks": 20,
+          "K_probe": [
+            "continue",
+            "recover"
+          ],
+          "K_hold": [
+            "continue",
+            "recover"
+          ],
+          "root_parity": true,
+          "probe_sources": [
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/5043dc16b2076429ea61594ac29875dafc5e115c639afae975ef67149f3ed584.json.xz",
+              "sha256": "680130a3a34445723b1acc8bd079f9ae1f76afa485a8e3c64319a5fd9e6f569f",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_physical_pilot_20261119/physics/PushCube-v1/parent_00/9f7dc62ec233a553c07d6804319f15c6c8291cc344916b707ba20013107bfcef.json.xz",
+              "sha256": "8efe3a6b4dc11446084a90a65c659515fac53d39d10d3a7c29cf010fa3cba1b6",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/d7ddc99c99b19afb6d7d1dcb52cd077b7f595e2cecb4f4d6c110ed51d2fba215/native.json.xz",
+              "sha256": "8ee450255757ce2f7c88163113ff9d1a0a58c9f8962759b916eef402a80a2384",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/8f72ebf12443770070ea8f4085e692faf60f1701e7cc435ddd5749900cc06023/native.json.xz",
+              "sha256": "a03abd104b40876306b14d8360287ad98ed54b88b8e6f4e3a21f098f1975ad15",
+              "macro_end": true,
+              "deadline": true
+            }
+          ],
+          "hold_sources": [
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/24c25507c2296903d049bd03f6c54aa7778c4e8b6e557e71ce58403f40e7a0af/native.json.xz",
+              "sha256": "ef3142de2492fe1e2b28ac70a17a7a574a4b12678983746bb9cf839141773393",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/80a3e521da84c9aee0628842f8995be4db9f78dd012db19040bcc7bb0f2eb6ab/native.json.xz",
+              "sha256": "f2852400f6d172d53234b57e09123f1f0cfce59817e33a2c977d59bd4d336b1d",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/9067316dba2b505c69789df16050107120baba6ca3565ebcd1093dfa2126c5e3/native.json.xz",
+              "sha256": "8a394b2ee53bd8c9c1e20f613aca2bc83b624b5d7618b848feaacc453c706104",
+              "macro_end": true,
+              "deadline": true
+            },
+            {
+              "path": "research/rpd_source_isolation_20261119/physics/PushCube-v1/0fe0ffa279fe45e53691f11d1b14ad904e4927d513a2c2884570dda6421f2ba5/native.json.xz",
+              "sha256": "dfe97dfadfbdf86f19a6f516465ad8a41071070866ee5a155576b6cdd1eb83d4",
+              "macro_end": true,
+              "deadline": true
+            }
+          ],
+          "status": "KNOWN",
+          "erasure": false,
+          "creation": false,
+          "lost": [],
+          "gained": []
+        }
+      ],
+      "independent_confirmation_parents": 0,
+      "already_inspected_parents": 1,
+      "original_pilot_status_unchanged": "SOURCE_NOT_QUALIFIED_INCOMPLETE",
+      "two_probe_history_scope": "Technical secondary20tick histories; not the locked one10tick-probe H1 confirmation cohort"
+    }
+  }
+}

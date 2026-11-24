@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/imad/Desktop/IEEE-RAL/scripts/rpd_pilot_reproduce.py", line 122, in <module>
+    verify()
+  File "/home/imad/Desktop/IEEE-RAL/scripts/rpd_pilot_reproduce.py", line 33, in verify
+    assert sha(name) == expected, name
+           ^^^^^^^^^^^^^^^^^^^^^
+AssertionError: research/rpd_physical_pilot_20261119/packaging_receipt.txt

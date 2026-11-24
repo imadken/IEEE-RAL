@@ -1,0 +1,89 @@
+{
+  "verified_on": "2026-11-18",
+  "sources": [
+    {
+      "key": "khan2009",
+      "title": "Minimal Sufficient Explanations for Factored Markov Decision Processes",
+      "status": "ICAPS 2009, pp.194\u2013200",
+      "primary_url": "https://ojs.aaai.org/index.php/ICAPS/article/view/13365",
+      "verification_scope": "Author full text also checked; templates/minimal explanation sets"
+    },
+    {
+      "key": "kallus2022",
+      "title": "What\u2019s the Harm? Sharp Bounds on the Fraction Negatively Affected by Treatment",
+      "status": "NeurIPS 2022, volume35",
+      "primary_url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/666cccc6376058e251315b4de7e085b9-Abstract-Conference.html",
+      "verification_scope": "Sharp negatively-affected-fraction bounds; not a DSRE theorem"
+    },
+    {
+      "key": "li2023",
+      "title": "Trustworthy Policy Learning under the Counterfactual No-Harm Criterion",
+      "status": "ICML 2023, PMLR202:20575\u201320598",
+      "primary_url": "https://proceedings.mlr.press/v202/li23ay.html",
+      "verification_scope": "Utility and no-harm learning; full estimator not reproduced"
+    },
+    {
+      "key": "joshi2024",
+      "title": "Towards Safe Policy Learning under Partial Identifiability: A Causal Approach",
+      "status": "AAAI 2024,38(12):13004\u201313012",
+      "primary_url": "https://ojs.aaai.org/index.php/AAAI/article/view/29198",
+      "verification_scope": "Publisher search record and official issue587 verified; article open was bot-blocked"
+    },
+    {
+      "key": "discret",
+      "title": "DISCRET: Synthesizing Faithful Explanations For Treatment Effect Estimation",
+      "status": "ICML 2024,PMLR235:53597\u201353618",
+      "primary_url": "https://proceedings.mlr.press/v235/wu24n.html",
+      "verification_scope": "RL explanatory treatment rule synthesis; no DSRE priority claim"
+    },
+    {
+      "key": "knowno",
+      "title": "Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners",
+      "status": "CoRL 2023,PMLR229:661\u2013682",
+      "primary_url": "https://proceedings.mlr.press/v229/ren23a.html",
+      "verification_scope": "Calibrated uncertainty/help; no new abstention principle"
+    },
+    {
+      "key": "rescue",
+      "title": "RESCUE: Is This Alarm Worth Acting On? Counterfactual Evaluation of VLA Runtime Monitors",
+      "status": "arXiv:2610.13516v1,9 October2026; preprint",
+      "primary_url": "https://arxiv.org/abs/2610.13516",
+      "verification_scope": "Author method full text \u00a7\u00a7III-A\u2013C inspected; no conference acceptance inferred"
+    },
+    {
+      "key": "dagrd",
+      "title": "DA-GRD: Decision-Aware Grasp-Relevant Disambiguation for tactile recovery under perception-to-execution mismatches",
+      "status": "arXiv:2609.29065v1,24 September2026; preprint",
+      "primary_url": "https://arxiv.org/abs/2609.29065",
+      "verification_scope": "Author method full text \u00a7\u00a7III-B\u2013E inspected; no conference acceptance inferred"
+    },
+    {
+      "key": "agentchord",
+      "title": "From Reaction to Anticipation: Proactive Failure Recovery through Agentic Task Graph for Robotic Manipulation",
+      "status": "RSS 2026, paper180",
+      "primary_url": "https://www.roboticsproceedings.org/rss22/p180.html",
+      "verification_scope": "Publisher title/authors/BibTeX and recovery-augmented graph abstract checked"
+    },
+    {
+      "key": "maniskill",
+      "title": "Demonstrating GPU Parallelized Robot Simulation and Rendering for Generalizable Embodied AI with ManiSkill3",
+      "status": "RSS 2025,paper021",
+      "primary_url": "https://roboticsproceedings.org/rss21/p021.html",
+      "verification_scope": "Use proceedings title, not differing arXiv/documentation title; installed version3.0.1"
+    },
+    {
+      "key": "clopper1934",
+      "title": "The Use of Confidence or Fiducial Limits Illustrated in the Case of the Binomial",
+      "status": "Biometrika26(4):404\u2013413,1934",
+      "primary_url": "https://academic.oup.com/biomet/article-abstract/26/4/404/291538",
+      "verification_scope": "Publisher bibliographic record; endpoints independently inverted from binomial CDF"
+    }
+  ],
+  "official_cfp": "https://roboticsconference.org/information/cfp/index.html",
+  "official_faq": "https://roboticsconference.org/information/author-faq/",
+  "official_author_kit": "https://roboticsconference.org/docs/paper-template-latex.tar.gz",
+  "author_kit_sha256": "ffc8b8053bd218ba9be4c93a569de4c2f36c7f70ae8d2245c747611bed697271",
+  "class_sha256": "d63d4bf27f29603a733d06e27ba5fbb40488acf9d1d696354a88b886758f70a7",
+  "bibliography_has_external_links": false,
+  "playbook": "Named playbook not found in repository, Downloads, Documents, /tmp, or local attachments; followed supplied contract and story-lock reading-order/visual principles."
+}

@@ -1,0 +1,57 @@
+{
+  "physics_authority": "Only original10technical parent slots per task with neutral controls",
+  "physics_stopped": true,
+  "source_failure": true,
+  "physics_not_resumed": true,
+  "per_family": {
+    "PickCube-v1": {
+      "counts": {
+        "registered": 540,
+        "attempted": 39,
+        "complete": 38,
+        "interrupted_missing_outcome": 1,
+        "unattempted": 501,
+        "missing_terminal_labels": 502
+      },
+      "known_native_controls": 5890,
+      "native_controls_unreturned_row_range": [
+        0,
+        155
+      ],
+      "measured_completed_episode_wall_seconds": 95.00758800888434,
+      "actual_total_worker_wall_seconds": "NOT_EXACTLY_MEASURED_NATIVE_FINALIZER_DID_NOT_RUN",
+      "conservative_total_worker_wall_upper_seconds": 471.9170639514923,
+      "raw_compressed_bytes": 7517324
+    },
+    "PushCube-v1": {
+      "counts": {
+        "registered": 540,
+        "attempted": 39,
+        "complete": 38,
+        "interrupted_missing_outcome": 1,
+        "unattempted": 501,
+        "missing_terminal_labels": 502
+      },
+      "known_native_controls": 5434,
+      "native_controls_unreturned_row_range": [
+        0,
+        143
+      ],
+      "measured_completed_episode_wall_seconds": 63.19469370905426,
+      "actual_total_worker_wall_seconds": "NOT_EXACTLY_MEASURED_NATIVE_FINALIZER_DID_NOT_RUN",
+      "conservative_total_worker_wall_upper_seconds": 438.9170639514923,
+      "raw_compressed_bytes": 5617937
+    }
+  },
+  "worker_seconds_cap_per_family": 10800,
+  "new_compressed_bytes_cap_per_family": 3221225472,
+  "total_new_parent_exposure": 2,
+  "total_complete_qualified_parents": 0,
+  "new_discovery_calibration_or_test_parents": 0,
+  "new_controller_training": 0,
+  "new_dependencies": 0,
+  "paid_API_calls": 0,
+  "new_hardware_experiments": 0,
+  "peak_memory": "NOT_MEASURED",
+  "wall_calendar_seconds_to_packaging": 1927.2545347213745
+}

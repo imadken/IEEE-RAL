@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "compared": [
+    {
+      "artifact": "E0/math_audit.json",
+      "scientific_projection_sha256": "e05d2e249d2b62209c6cbebc5fb6878721286f357668fcc5c7e8d5ea185efe75"
+    },
+    {
+      "artifact": "E0/checkpoint_and_parent_identity_audit.json",
+      "scientific_projection_sha256": "909be4080b35e6851becd790ded293398d5d5cf53be2c49b3fa830be6e7e6a02"
+    },
+    {
+      "artifact": "E0/raw_integrity_and_insertion_boundary.json",
+      "scientific_projection_sha256": "9ff34ad020b51ba022d7fca8d7d10c43e45800e725ab95ec4fe6adffa14df08a"
+    },
+    {
+      "artifact": "E0/recount/independent_numbers.json",
+      "scientific_projection_sha256": "3f4c9c37fc8998429dbf3cd953a8bd6b463e19f9bf691d16f8b0ae0062e9f84e"
+    },
+    {
+      "artifact": "E1/calibration_freeze.json",
+      "scientific_projection_sha256": "4be285ca46ed274fdb7bf64ad671a6ba225645e5673e4bd035987398d4bdedb7"
+    },
+    {
+      "artifact": "E1/obligation_results.json",
+      "scientific_projection_sha256": "20d5b3c1f5d6253e0ebd0cd16a039b7bdd393e52e5bb704058d1acdc6b1f0d78"
+    },
+    {
+      "artifact": "E2/source_curves.json",
+      "scientific_projection_sha256": "85b260b148fcd6dc2950f53a4f7f65e91751c8861858891a3e015d4d936fd759"
+    },
+    {
+      "artifact": "E3/full_certificate_audit.json",
+      "scientific_projection_sha256": "49cc97e4900b2b498e657ff700484d19a385b7149f858045437e71a3e0796ae5"
+    },
+    {
+      "artifact": "E4/physical_witnesses_and_ablations.json",
+      "scientific_projection_sha256": "e02fecd32d04f524ad95684246d9cca1850bb8a6aefd2253dd8a8a52484142c1"
+    },
+    {
+      "artifact": "E5/observation_error_sensitivity.json",
+      "scientific_projection_sha256": "823dfe2e1a047bc8a73748e5f53f49347911779410dadb41859418810d868d83"
+    }
+  ],
+  "wall_seconds": 571.1018617153168,
+  "fresh_output": "/tmp/err-source-revalidation-20261119",
+  "new_physics": 0,
+  "comparison_scope": "All scientific values/decisions/sources in ten artifacts; exclude timings, timestamps and relocation-dependent input-file digests"
+}

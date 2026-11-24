@@ -1,0 +1,84 @@
+{
+  "source_commit": "b00c441ffa88924c157dda51b8e4deff3934566b",
+  "decision": "SOURCE_NOT_QUALIFIED",
+  "claims": [
+    {
+      "id": "C1",
+      "kind": "ACTUAL_REGISTERED_PROTOCOL",
+      "claim": "20fixed parents,1080rows,90common deadline",
+      "sources": [
+        "research/rpd_physical_pilot_20261119/prephysics_amendment.json",
+        "research/rpd_physical_pilot_20261119/replay_manifest.jsonl",
+        "research/rpd_physical_pilot_20261119/prephysics_seal.json"
+      ]
+    },
+    {
+      "id": "C2",
+      "kind": "ACTUAL_MISSINGNESS",
+      "claim": "39starts38complete1interrupted501unattempted per family",
+      "sources": [
+        "research/rpd_physical_pilot_20261119/final_audit/summary.json",
+        "research/rpd_physical_pilot_20261119/final_audit/all_registered_rows.jsonl",
+        "research/rpd_physical_pilot_20261119/native_process_exit_receipt.json"
+      ]
+    },
+    {
+      "id": "C3",
+      "kind": "ACTUAL_TRACE_ONLY",
+      "claim": "76complete traces,38repeat pairs; native contacts/motion, known endpoints",
+      "sources": [
+        "research/rpd_physical_pilot_20261119/independent_trace_audit/raw_manifest.json",
+        "research/rpd_physical_pilot_20261119/independent_trace_audit/case_checks.json",
+        "research/rpd_physical_pilot_20261119/final_audit/summary.json"
+      ]
+    },
+    {
+      "id": "C4",
+      "kind": "UNKNOWN_NOT_ZERO",
+      "claim": "Matched erasure/creation and population/statistical claims unavailable: no neutral outcomes",
+      "sources": [
+        "research/rpd_physical_pilot_20261119/final_audit/summary.json",
+        "research/rpd_physical_pilot_20261119/final_audit/all_registered_rows.jsonl"
+      ]
+    },
+    {
+      "id": "C5",
+      "kind": "PRESERVED_PRIOR_ANALYTICAL_RESULT",
+      "claim": "Known strong/POMDP formulation; no new method originality",
+      "sources": [
+        "docs/RPD_METHODOLOGY_ORIGINALITY_CHALLENGE.md",
+        "research/rpd_method_challenge/final/finite/audit_summary.json"
+      ]
+    },
+    {
+      "id": "C6",
+      "kind": "INACTIVE_FUTURE_PROTOCOL_NOT_OBSERVED_RESULT",
+      "claim": "Stage2paired measurement and source-isolation micro-protocol require new authorization",
+      "sources": [
+        "docs/RPD_STAGE1_EMPIRICAL_HYPOTHESIS_GATE.md"
+      ]
+    },
+    {
+      "id": "C7",
+      "kind": "RETROSPECTIVE_NATIVE_CONTACT_SEMANTICS_REVIEW",
+      "claim": "Proximity-only cached manifolds are not active contact; native separation/impulse evidence is reported separately, root contact included",
+      "sources": [
+        "research/rpd_physical_pilot_20261119/source_review/source_review.json"
+      ]
+    }
+  ],
+  "sha256": {
+    "research/rpd_physical_pilot_20261119/prephysics_amendment.json": "59bf565249c4b9f45441139db8fc3df608b029ef4054254ed00f2372534baa26",
+    "research/rpd_physical_pilot_20261119/replay_manifest.jsonl": "b34733d6f718e28ba40b177cc08c8b60efeb57401cfde5db4ca46100c5ef2176",
+    "research/rpd_physical_pilot_20261119/prephysics_seal.json": "a74e4858419a7283f3af52cd84aae41e27f1518364a8943bde7030674d636812",
+    "research/rpd_physical_pilot_20261119/final_audit/summary.json": "813dd1d87bd359a9d0a1313858a688fc82a431288dbd9e5469c4ba2ee4ccf075",
+    "research/rpd_physical_pilot_20261119/final_audit/all_registered_rows.jsonl": "b725cfea46337a2162f5779e59202e9a2f886440ecde019b1884f4d3c84d7d12",
+    "research/rpd_physical_pilot_20261119/native_process_exit_receipt.json": "a70355a3f241d2d1ea767d9c51f96b98f7b203806a13e45d6260eccf396c1482",
+    "research/rpd_physical_pilot_20261119/independent_trace_audit/raw_manifest.json": "d1c462ec9f80b9feb3907af08604e89ef807cb6bb80b8d0e7e58519fd9ff10d1",
+    "research/rpd_physical_pilot_20261119/independent_trace_audit/case_checks.json": "ffdb11cf4a9bc5ea9a2f56f07afecb8f49ae8f04b359faac2893e6b9ab260ca4",
+    "research/rpd_physical_pilot_20261119/source_review/source_review.json": "46bf295280092f97077f37774af51a2fcdb8d7c84d31d2f41a94344be701c80b",
+    "docs/RPD_METHODOLOGY_ORIGINALITY_CHALLENGE.md": "7e375c9d6e3ebdfd3a00602d4047e304c2fcf709e4393b4ebf9fa3eb300d5fec",
+    "research/rpd_method_challenge/final/finite/audit_summary.json": "c1aaf6a919d5ec7dd21fb7859d327ec1f76829e606fae7dc1f7744f0b8f7656e",
+    "docs/RPD_STAGE1_EMPIRICAL_HYPOTHESIS_GATE.md": "6461b3eb9f3425435a73811cd157dce2311338a1bc38f2758454ef3ea615e869"
+  }
+}

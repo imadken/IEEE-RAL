@@ -1,0 +1,13 @@
+{
+  "path": "DSRE_RSS2027_EVIDENCE_RESOLUTION_METHOD_PACKAGE_20261119.zip",
+  "sha256": "887a3a81125b4b786590dc46d375c1346e81d61b4f5780eda8b0e5c084d6b0e8",
+  "bytes": 16489,
+  "status": "LATE_USER_SUPPLIED_INPUT_PRESERVE_UNTRACKED_ORIGINAL",
+  "members": {
+    "research/err_method_challenge/supervisor/CODEX_48H_METHODOLOGY_CHALLENGE.md": "5347daf598d749df4b8a3726cb6668f9d56ef6ae2c9c7f93386ea1c6386de971",
+    "research/err_method_challenge/supervisor/REFERENCE_CHECK_OUTPUT.json": "52ed0443b0e794f8aeb322f821d9371fae458cc83d3d9e7edf2777f1daa34e03",
+    "research/err_method_challenge/supervisor/SCIENCE_DECISION.md": "933f04be788c046073fcf95cc71e51425345a2751d038985ef56b29371bbfe91",
+    "research/err_method_challenge/supervisor/finite_world_experiment_planner.py": "bd90488ce1fa1f8a014740e319a852a2bca8122642cbe85a4ae73b9c0c491c8b"
+  },
+  "linked_document_difference": "Package documents contain one final newline absent from GitHub blobs; text otherwise identical"
+}

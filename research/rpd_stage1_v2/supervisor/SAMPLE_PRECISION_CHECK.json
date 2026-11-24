@@ -1,0 +1,10 @@
+{
+  "scope": "Design calculation only, not a robot experiment",
+  "n": 512,
+  "H1_one_sided_alpha": 0.025,
+  "H1_null_boundary": 0.1,
+  "binomial_rejection_count_at_least": 66,
+  "power_if_true_rate_.15": 0.9212959594666066,
+  "zero_event_upper975": 0.007178950026259456,
+  "H2_approx_95_halfwidth_at_discordance_.20_and_effect_.10": 0.037756341973792434
+}

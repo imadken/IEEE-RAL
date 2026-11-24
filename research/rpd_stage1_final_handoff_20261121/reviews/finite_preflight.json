@@ -1,0 +1,39 @@
+{
+  "scope": "ANALYTICAL_ONLY; not robot episodes or a new planning theorem",
+  "fine_mode_information_nats": 1.0986122886681098,
+  "coarse_mode_information_nats": 0.6365141682948128,
+  "constructed_sweep": [
+    {
+      "intensity": ".2",
+      "hold_preserves": "1",
+      "fine_erasure": "0",
+      "fine_completion": "1",
+      "RPD_completion": "1",
+      "same_objective_planner_completion": "1",
+      "physically_allowed_states_include_dead": true
+    },
+    {
+      "intensity": ".5",
+      "hold_preserves": "1",
+      "fine_erasure": "1/6",
+      "fine_completion": "5/6",
+      "RPD_completion": "1",
+      "same_objective_planner_completion": "1",
+      "physically_allowed_states_include_dead": true
+    },
+    {
+      "intensity": ".8",
+      "hold_preserves": "1",
+      "fine_erasure": "1/3",
+      "fine_completion": "2/3",
+      "RPD_completion": "1",
+      "same_objective_planner_completion": "1",
+      "physically_allowed_states_include_dead": true
+    }
+  ],
+  "independent_policy_tree_cases": 8640,
+  "common_set_criterion_matches_oracle": true,
+  "same_objective_equivalence": true,
+  "implicit_resets": 0,
+  "physics_episodes": 0
+}

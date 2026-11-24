@@ -1,0 +1,21 @@
+{
+  "stage": "A_COMPLETE_BEFORE_NEW_PHYSICS",
+  "registered_source_sha256": "2d507de4be0f15608769361a197e20cf7c50a7c7cf011edd112dec07cd17cd93",
+  "maintained_tests": {
+    "passed": 798,
+    "skipped": 6,
+    "seconds": 47.8
+  },
+  "new_tests": 9,
+  "workspace_tests": 11,
+  "editorial_integration": "sectionsII_onward_and_bibliography_unchanged",
+  "six_page_build": true,
+  "fresh_build_binary_identical": true,
+  "all_six_pages_visually_inspected": true,
+  "source_fingerprints": 78,
+  "qual_candidates": 12,
+  "exploratory_candidates": 24,
+  "native_seed_values_checked_for_nonoverlap": 612,
+  "new_physics_episodes": 0,
+  "confirmation_closed": true
+}

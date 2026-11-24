@@ -1,0 +1,54 @@
+{
+  "date_local": "2026-11-20T10:06:50.200043+01:00",
+  "starting_commit": "b9f4496867a670fbf829609efbf6b13299209969",
+  "branch": "paper/rpd-rss2027-stage1-preparation-20261120",
+  "final_commit_command": "git log -1 --format=%H -- papers/rss2027_rpd_stage1",
+  "scope": "ISOLATED_MANUSCRIPT_PREPARATION_NO_NEW_PHYSICS",
+  "wall_seconds_since_preservation_snapshot": 4929.57,
+  "new_physics_episodes": 0,
+  "physics_worker_hours": 0,
+  "dependency_installs": 0,
+  "public_pushes": 0,
+  "submissions": 0,
+  "actual_assembly_confirmation_parents": 0,
+  "preliminary_source_parents_per_task": {
+    "PickCube-v1": 1,
+    "PushCube-v1": 1
+  },
+  "fresh_process_source_episodes_per_task": {
+    "PickCube-v1": 14,
+    "PushCube-v1": 14
+  },
+  "workspace_tests": {
+    "passed": 11
+  },
+  "maintained_tests": {
+    "passed": 789,
+    "skipped": 6,
+    "elapsed_seconds": 48.27
+  },
+  "nominal_small_masks_checked": 1024,
+  "reviewed_manuscript_sha256": "c8ee43ea798b5dfc4367947991e3f9b608b8d2499b3686b0b7f9f1a94247518d",
+  "pdf_sha256": "2538061b1cafa6a15852426f17517423b50f08d157379690a2e619bcd52848f6",
+  "source_zip_sha256": "4d4b46d8a1055c8b075fc027ec4be344acbcad69f330c163632c6ba7ec7d0505",
+  "source_zip_members": [
+    "IEEEtran.cls",
+    "body.tex",
+    "figures/figure1.pdf",
+    "figures/figure1.svg",
+    "main.tex",
+    "references.bib"
+  ],
+  "format_integrity_decision": "PASS",
+  "scientific_decision": "SELF_CONTAINED_PROSPECTIVE_METHOD_FOR_AUTHOR_REVIEW;ASSEMBLY_FEASIBILITY_AND_H1_H2_UNTESTED",
+  "novel_solver_claim": false,
+  "same_objective_equivalence_retained": true,
+  "remaining_limits": [
+    "Assembly adapter/source qualification absent",
+    "No population-level informative erasure or completion gain observed",
+    "Finite-sample exact/profile disagreement and score underpower possible",
+    "Runtime/attrition may prevent full fixed cohort",
+    "Publisher full PDF unavailable for corrected nearest-work citation;author source and journal metadata verified"
+  ],
+  "next_physics_action": "Not authorized in this session. Proposed fixed12-candidate qualification,then64 discovery/512 confirmation only if separately authorized and qualified."
+}

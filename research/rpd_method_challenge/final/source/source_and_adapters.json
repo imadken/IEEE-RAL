@@ -1,0 +1,531 @@
+{
+  "static_interface_check_passed": true,
+  "source_sha256": {
+    "scripts/mani_runner.py": "c0aae0523296b1a12c55e9de5656f127970b4220f2fcdac13ae6b914f59dd6f7",
+    "scripts/overnight_replay.py": "ce9b351611059ef5041a3f26481b5ad00e0be4508414285c59625f177f4cb482",
+    "scripts/dsre_paper_physics.py": "acf871447082318913fcdf7de397ed27bed35bb49b17c521433926d353b2d077",
+    "src/dual_rec/overnight_pick.py": "581b19e967b833a95d0530f74c8b6ec22bdc391ffcebfaf5303c03208f08a253",
+    "src/dual_rec/replay.py": "69316444c21bdd16186370d69020d4bee8b219ee1b51f9881a347fa65de40833",
+    "src/dual_rec/validation.py": "a9a97801aad3ee96afb025eec79e7124c47ebf5fc7ab9b502b307f4be87b85b5",
+    ".venv/lib/python3.12/site-packages/mani_skill/envs/tasks/tabletop/pick_cube.py": "6f881f11151bd124a4ec6d1189e86e20b17d366aa1cbcc6e2f751f1f5bb03ed1",
+    ".venv/lib/python3.12/site-packages/mani_skill/envs/tasks/tabletop/push_cube.py": "8ae1536c13fae2fe8f5c84be0c60ff40a6acd625e738dfafc056ec333a16e0d8",
+    ".venv/lib/python3.12/site-packages/mani_skill/agents/robots/panda/panda.py": "2a98a2133b49e5a94a83d05019c0ab833ad6767f85ff1bf66265cd9247cb0fda",
+    ".venv/lib/python3.12/site-packages/mani_skill/agents/base_agent.py": "64b0c9f45577ef842ae41449af36529e476ad68d26e726de5c9d858496f8824d",
+    ".venv/lib/python3.12/site-packages/mani_skill/envs/sapien_env.py": "459196c275764eaf53ccba8e154e3207036399e54c8bdd45f9e7d0919970464b",
+    ".venv/lib/python3.12/site-packages/mani_skill/utils/structs/types.py": "86451c45e986ce7f789e01edecaa9ba6c3f89a08c3960ddb212ca0cf4499e156",
+    ".venv/lib/python3.12/site-packages/mani_skill/agents/controllers/pd_ee_pose.py": "318110fe18cb879eae00ca106f0117eed94679b79ee00ee226bacd38e4755f97",
+    ".venv/lib/python3.12/site-packages/mani_skill/assets/robots/panda/panda_v3.urdf": "d040277352476639950e2ddce1dff8a1c0e95df470e5e9ed186cd01c468fa412"
+  },
+  "versions": {
+    "mani-skill": "3.0.1",
+    "sapien": "3.0.3",
+    "torch": "2.5.1+cpu",
+    "numpy": "1.26.4",
+    "pydantic": "2.14.3"
+  },
+  "adapters": [
+    {
+      "task_id": "PickCube-v1",
+      "robot": "panda",
+      "status": "DESIGNED_NOT_EXECUTED",
+      "sim_backend": "cpu",
+      "render_backend": "none",
+      "obs_mode": "state_dict",
+      "control_mode": "pd_ee_delta_pos",
+      "control_hz": 20,
+      "max_episode_steps": 200,
+      "checkpoint": {
+        "function": "scripts/overnight_replay.py:prefix_to_stage(world,'transport')",
+        "exact_controls": 65,
+        "schedule": [
+          [
+            0,
+            20
+          ],
+          [
+            1,
+            25
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "requires_native_task_success_false": true,
+        "condition": "nominal; cached source targets and natural reset distribution frozen",
+        "new_checkpoint_requires_independent_qualification": true
+      },
+      "measured_channels": [
+        "observation.agent.qpos[0][0:7]",
+        "observation.agent.qvel[0][0:7]",
+        "observation.extra.tcp_pose[0][0:3]",
+        "time"
+      ],
+      "sensor_interpretation": "Ideal native arm proprioception and FK TCP estimate; not force, aperture, tactile contact or real robot sensing",
+      "excluded_planner_channels": [
+        "finger joints",
+        "obj_pose",
+        "is_grasped",
+        "contacts",
+        "wrenches",
+        "applied_qf",
+        "fault label",
+        "future success"
+      ],
+      "controller_privilege": "Original fixed macro functions use native object/goal state internally; identical for every method, simulation-only. Never disclosed to the planner.",
+      "probes": {
+        "micro_lift": {
+          "native_commands": [
+            [
+              0.0,
+              0.0,
+              0.025,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.025,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.025,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.025,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ]
+          ],
+          "controls": 10,
+          "predicted_effect": "Real actuator/PD commands can change hand-object motion or release contact; actual object effect and information benefit are UNMEASURED"
+        },
+        "release_settle": {
+          "native_commands": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "controls": 10,
+          "predicted_effect": "Real actuator/PD commands can change hand-object motion or release contact; actual object effect and information benefit are UNMEASURED"
+        }
+      },
+      "recovery_binding": {
+        "c": "scripts/dsre_paper_physics.py:action_for(world,'continue',j,post_probe_tcp)",
+        "r": "scripts/dsre_paper_physics.py:action_for(world,'recover',j,post_probe_tcp)"
+      },
+      "recovery_controls": 70,
+      "max_probes": 2,
+      "post_checkpoint_deadline_controls": 90,
+      "padding": "Native zero-EE delta with last gripper command until the common90-control deadline; separately record macro-end and deadline native success",
+      "STOP": "No further diagnostic/recovery attempt; native hold through deadline is measured and charged. Never impute its terminal outcome.",
+      "reset_rule": "Fresh full-prefix reconstruction only BETWEEN evaluator/source episodes; never reset, restore, teleport or rewind within a probe/recovery history",
+      "G_after_probe": "NOT_CALIBRATED_NOT_OBSERVED; no inherited DSRE calibration",
+      "pilot": {
+        "independent_parent_slots": 10,
+        "complete_history_macro_paths": 14,
+        "complete_history_STOP_paths": 7,
+        "repeat_executions_per_path": 2,
+        "maximum_native_episodes": 420,
+        "wall_cap_worker_hours": 2,
+        "completed_parents": 0,
+        "replacement": "NONE; failures retained with exact stage and missing labels"
+      },
+      "new_physics_authorized": false
+    },
+    {
+      "task_id": "PushCube-v1",
+      "robot": "panda",
+      "status": "DESIGNED_NOT_EXECUTED",
+      "sim_backend": "cpu",
+      "render_backend": "none",
+      "obs_mode": "state_dict",
+      "control_mode": "pd_ee_delta_pos",
+      "control_hz": 20,
+      "max_episode_steps": 200,
+      "checkpoint": {
+        "function": "scripts/overnight_replay.py:prefix_to_stage(world,'transport')",
+        "exact_controls": 53,
+        "schedule": [
+          [
+            0,
+            20
+          ],
+          [
+            1,
+            25
+          ],
+          [
+            2,
+            8
+          ]
+        ],
+        "requires_native_task_success_false": true,
+        "condition": "nominal; cached source targets and natural reset distribution frozen",
+        "new_checkpoint_requires_independent_qualification": true
+      },
+      "measured_channels": [
+        "observation.agent.qpos[0][0:7]",
+        "observation.agent.qvel[0][0:7]",
+        "observation.extra.tcp_pose[0][0:3]",
+        "time"
+      ],
+      "sensor_interpretation": "Ideal native arm proprioception and FK TCP estimate; not force, aperture, tactile contact or real robot sensing",
+      "excluded_planner_channels": [
+        "finger joints",
+        "obj_pose",
+        "is_grasped",
+        "contacts",
+        "wrenches",
+        "applied_qf",
+        "fault label",
+        "future success"
+      ],
+      "controller_privilege": "Original fixed macro functions use native object/goal state internally; identical for every method, simulation-only. Never disclosed to the planner.",
+      "probes": {
+        "forward_tap": {
+          "native_commands": [
+            [
+              0.05,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              0.05,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              0.05,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              0.05,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ]
+          ],
+          "controls": 10,
+          "predicted_effect": "Real actuator/PD commands can change hand-object motion or release contact; actual object effect and information benefit are UNMEASURED"
+        },
+        "lateral_sweep": {
+          "native_commands": [
+            [
+              0.0,
+              0.05,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.05,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.05,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.05,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ]
+          ],
+          "controls": 10,
+          "predicted_effect": "Real actuator/PD commands can change hand-object motion or release contact; actual object effect and information benefit are UNMEASURED"
+        }
+      },
+      "recovery_binding": {
+        "c": "scripts/dsre_paper_physics.py:action_for(world,'continue',j,post_probe_tcp)",
+        "r": "scripts/dsre_paper_physics.py:action_for(world,'recover',j,post_probe_tcp)"
+      },
+      "recovery_controls": 70,
+      "max_probes": 2,
+      "post_checkpoint_deadline_controls": 90,
+      "padding": "Native zero-EE delta with last gripper command until the common90-control deadline; separately record macro-end and deadline native success",
+      "STOP": "No further diagnostic/recovery attempt; native hold through deadline is measured and charged. Never impute its terminal outcome.",
+      "reset_rule": "Fresh full-prefix reconstruction only BETWEEN evaluator/source episodes; never reset, restore, teleport or rewind within a probe/recovery history",
+      "G_after_probe": "NOT_CALIBRATED_NOT_OBSERVED; no inherited DSRE calibration",
+      "pilot": {
+        "independent_parent_slots": 10,
+        "complete_history_macro_paths": 14,
+        "complete_history_STOP_paths": 7,
+        "repeat_executions_per_path": 2,
+        "maximum_native_episodes": 420,
+        "wall_cap_worker_hours": 2,
+        "completed_parents": 0,
+        "replacement": "NONE; failures retained with exact stage and missing labels"
+      },
+      "new_physics_authorized": false
+    }
+  ],
+  "insertion_prefix_dependency": false,
+  "new_physics": 0,
+  "historical_sensor_field_examples": [
+    {
+      "task": "PickCube-v1",
+      "historical_parent_id": "ad552a48fa35584b62fda307bae5bd3d4b8c6327c7be971ac2a6c9380e0fe076",
+      "original_phase": "calibration",
+      "prefix_control_index": 65,
+      "source": "results/dsre-evidence-aware/20261117-prospective/physics/PickCube-v1/calibration/56/randomized_assigned.json.gz",
+      "original_sha256": "8c44fcec93f5a805e216413d11b5626735689cf11af1181c30e4c78c6fc8ceb3",
+      "masked_real_frame": {
+        "time_seconds": 3.25,
+        "arm_qpos": [
+          0.1131490096449852,
+          0.7258579730987549,
+          0.004076526965945959,
+          -1.845438003540039,
+          0.01321906503289938,
+          2.606947183609009,
+          0.9524363279342651
+        ],
+        "arm_qvel": [
+          0.06532750278711319,
+          -0.3435630202293396,
+          0.01635270193219185,
+          -0.665520191192627,
+          0.00010490528075024486,
+          0.3132087290287018,
+          0.04550634324550629
+        ],
+        "tcp_xyz": [
+          0.024178944528102875,
+          0.07585522532463074,
+          0.028772838413715363
+        ],
+        "source": "NATIVE_ARM_PROPRIOCEPTION_AND_FORWARD_KINEMATICS"
+      },
+      "scope": "ORIGINAL_SEALED_D_C_SENSOR_FIELDS_ONLY; not new probe effects, new checkpoint replay qualification or calibration"
+    },
+    {
+      "task": "PushCube-v1",
+      "historical_parent_id": "686fc364a9f55bb6e80073f698591a7186a562e8ecfc129cb9829b17a0153ad4",
+      "original_phase": "calibration",
+      "prefix_control_index": 53,
+      "source": "results/dsre-evidence-aware/20261118-final-science/physics/calibration/475/assigned.json.gz",
+      "original_sha256": "bbcf9bd253c33000ddaed0d6c07ed5de6f163fcf7d0241ab5c9093c2eed7e2bb",
+      "masked_real_frame": {
+        "time_seconds": 2.65,
+        "arm_qpos": [
+          0.19605767726898193,
+          1.0633797645568848,
+          0.04100676253437996,
+          -1.2194839715957642,
+          -0.06316820532083511,
+          2.3290603160858154,
+          0.9541584253311157
+        ],
+        "arm_qvel": [
+          -0.03142152726650238,
+          0.6117627024650574,
+          -0.004037712700664997,
+          1.1566014289855957,
+          0.01720721833407879,
+          -0.537461519241333,
+          -0.08114856481552124
+        ],
+        "tcp_xyz": [
+          0.12494267523288727,
+          0.16786743700504303,
+          0.020284593105316162
+        ],
+        "source": "NATIVE_ARM_PROPRIOCEPTION_AND_FORWARD_KINEMATICS"
+      },
+      "scope": "ORIGINAL_SEALED_D_C_SENSOR_FIELDS_ONLY; not new probe effects, new checkpoint replay qualification or calibration"
+    }
+  ],
+  "historical_source_input_sha256": {
+    "research/err_method_challenge/final/robot/robot_context_witnesses.json": "c0c30ebf442c914116b78484f4108828a62efe6f3f70e0b9a7ae0de20b0b6a6c",
+    "results/dsre-evidence-aware/20261117-prospective/physics/PickCube-v1/calibration/56/randomized_assigned.json.gz": "8c44fcec93f5a805e216413d11b5626735689cf11af1181c30e4c78c6fc8ceb3",
+    "results/dsre-evidence-aware/20261118-final-science/physics/calibration/475/assigned.json.gz.archive.json": "b3c54e7a208b5ca881691ca2c0ecee7e274638268f8ff2c54925bafeb00bf967",
+    "results/dsre-evidence-aware/20261118-final-science/physics/calibration/475/assigned.json.xz": "43cbd59ad5eb0533d8a5ad0b53eb961158f8dd05874e3ba9e7a60c68ee21dd70",
+    "results/dsre-evidence-aware/20261118-final-science/physics/calibration/475/assigned.json.gz": "bbcf9bd253c33000ddaed0d6c07ed5de6f163fcf7d0241ab5c9093c2eed7e2bb"
+  },
+  "actual_qualification_pilots_completed": 0,
+  "new_calibrated_predicates": 0,
+  "full_physical_state_recoverability_table": "UNAVAILABLE_UNTIL_A_NEW_QUALIFIED_SOURCE_AND_INDEPENDENT_COHORT_EXIST",
+  "source_feasibility": "STATIC_BINDINGS_PRESENT; DYNAMICS_OBSERVABILITY_AND_TASK_EFFECTS_UNVERIFIED"
+}

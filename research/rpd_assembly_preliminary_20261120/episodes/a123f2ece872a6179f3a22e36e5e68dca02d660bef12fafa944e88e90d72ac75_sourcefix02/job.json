@@ -1,0 +1,12 @@
+{
+  "candidate": {
+    "candidate_id": "RPD-assembly-v1/qual/9",
+    "phase": "qual",
+    "index": 9,
+    "native_geometry_seed": 4101500041,
+    "fault_seed_sha256": "56b6d10b9bccedca76e5d430dd819db168a5cdb63e5106bd494111f1c7c57f4a"
+  },
+  "intervention": "screen",
+  "action": "none",
+  "repeat": 0
+}

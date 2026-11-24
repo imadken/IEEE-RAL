@@ -1,0 +1,69 @@
+RPD RSS 2027 Stage 1: V2 paper audit and isolated-workspace instructions
+Reviewed: 2026-11-19. Sources: user-uploaded anonymous_source.zip (paper.tex, paper.pdf, references.bib, IEEEtran.cls, figure1.pdf and editable figure1.svg); official RSS 2027 CFP and FAQ; official RSS website's repository publication of the template link.
+Decision
+The six-page V2 paper is a coherent methodology-first draft, but NOT yet author-ready for submission. Its five content pages plus one references page and embedded Type 1C fonts are technically promising. It still has material methodology bindings described as future engineering work and a partly misaligned H1 statement. Treat them as Stage 1 self-containment and feasibility issues, not reasons for another research pivot.
+Official sources
+- CFP: https://roboticsconference.org/information/cfp/
+- FAQ: https://roboticsconference.org/information/author-faq/
+- Official LaTeX archive linked by CFP: https://roboticsconference.org/docs/paper-template-latex.tar.gz
+- Official publishing source: https://github.com/rss2026/rss2026.github.io/blob/main/_information/cfp.md (the repository retains an older organization name despite the current 2027 CFP)
+- Rules: Stage 1 up to five content pages plus exactly one reference page; PDF only; no additional Stage 1 supplement; template formats must not change; no page numbers or identifying metadata; embedded Type 1 fonts; hallucinated references can cause desk rejection. Recheck CFP at submission.
+Exact V2 inventory and QA already performed
+- Archive: paper.tex, paper.pdf, paper.bbl, references.bib, IEEEtran.cls, figures/figure1.pdf, figures/figure1.svg.
+- PDF: six US Letter pages, embedded Type 1C fonts in pdffonts with no Type 3; first five pages content and sixth references; source uses \documentclass[conference]{IEEEtran} and plainnat with natbib. A fresh xelatex rebuild using the supplied paper.bbl reproduced six pages and substantively identical text, with a minor extracted-spacing difference in Eq. (7). The LaTeX log reports font-shape fallbacks and some underfull boxes; verify font compliance and readability against the official RSS kit.
+- Title: When Does Physical Diagnosis Compromise Robot Recovery?
+- Primary hypotheses: erasure rate at least 10% in eligible contact-sensitive assembly checkpoints, and completion gain at least five percentage points over constrained information gain.
+- Stage 2 experiment: 64 discovery and 512 independent confirmation parents, two physical probes plus matched hold, two recoveries each, 3,072 primary terminal branch evaluations plus 512 direct-policy evaluations and 384 discovery branch evaluations. These are per-parent matched branches, not 3,968 independent parents.
+- Main existing physical evidence: one inspected source-isolation parent per cube task, 14 valid episodes each; not a population study. Constructed three-world example, not physical evidence.
+P0: Must fix or explicitly qualify before submission
+1. Official template: Download and retain the original RSS LaTeX kit inside a NEW isolated local paper workspace, record its URL and SHA256. Check the current class file and bibliography style against the official kit. Recompile using official supplied class, without changing margins, font sizes, line spacing or columns. Do not assume a bundled historical IEEEtran.cls is identical. Verify pdfinfo, pdffonts, six pages, references-only sixth page, no identifying metadata or draft marks. The official template could not be fetched in this review's isolated network runtime; Codex must download locally.
+2. Binding the assembly protocol: V2 explicitly defers servo amplitudes, controller gains, response labels, trajectory/endpoints, displacement/impulse constraints, and the failed-checkpoint generator to source qualification. Stage 1 requires a fully specified METHOD even when experiments are pending. Define exact source-checked, dimensioned defaults or a deterministic recipe from fixture clearance; identify which details are frozen design choices and which are technical qualification checks. The proposed simulator head-position success predicate is not equivalent to a stable insertion; specify the primary goal and its sensor/evaluator semantics before future confirmation.
+3. Align H1 with the claimed information-versus-erasure conflict: The erasure event J_p=L_p C_p C_H does NOT itself require diagnostic informativeness for the same checkpoint. The current H1 combines population-average positive log-score gain with an erasure event rate; both could occur on disjoint subsets. Either explicitly frame H1 as two population properties or add a prespecified conditional/on-erasure informativeness diagnostic without invalid post-selection inference. Do not claim same-checkpoint informative erasure from the present two population tests.
+4. Feasibility statement: H1/H2 have no primary assembly outcomes and no qualified full physical probe/recovery menu. The two one-parent cube source checks must not be presented as assembly feasibility or material prevalence. Specify a bounded source qualification pilot and clear fallback interpretation in the methodology, without claiming an already-successful assembly pilot.
+5. Exact bibliographic and venue audit: Verify every listed paper against primary metadata, with special attention to recent preprints DA-GRD and task-compatible active calibration. Cite them as preprints, not accepted conference papers, unless proceedings confirm acceptance. No fabricated references or unsupported source claims.
+P1: High-impact presentation revisions
+6. Title/abstract opening: The current abstract is method-complete but dense. Make the physical phenomenon, risk, and testable question intelligible in the first two sentences. Keep scope and evidence boundaries, but do not use the abstract as an audit-log of incomplete experiments.
+7. Figure 1: Existing vector figure is well formed but text-heavy at column width and purely abstract. If the author redraws in PowerPoint, show an assembly physical scene plus three equal-time branches: hold, more informative probe, task-compatible probe; annotate lost-option versus all-options-lost and online versus offline. Keep the label constructed illustration unless every depicted physical effect is experimentally supported. Export vector PDF and retain editable slide/SVG.
+8. Prior work: RPD's proposed distinction is post-failure, catalogue-relative option-loss measurement against time-matched physical controls. Do not claim novel POMDP planning, information gain, active diagnosis, reversibility, or task feasibility. Closest works s-FEAST and task-compatible calibration require precise direct comparison; consolidate repeated prior-work discussion into one intelligible positioning argument rather than duplicate defensive text.
+9. Replace low-value small sample table: V2 devotes a table to 14 technical episodes from one parent per cube task, with zero complete erasures. Prefer one carefully scoped sentence if it does not answer the main hypothesis. Reallocate freed space to the actual assembly protocol, Stage 2 causal controls, or measurable null interpretations. Omission of unrelated development history is allowed; do not selectively report a misleading success.
+10. Targeted claims/proofs: The one-probe if-and-only-if result follows ordinary contingent planning and is under a deterministic supplied model. State this accurately and prioritize the physical measurement/identification methodology. Specify observation history, probe response source and evaluator-only oracle, assumptions for stochastic settings, limits and errors.
+11. Statistical checks: Reproduce 512-parent threshold calculations (66 erasure events for the one-sided 97.5% CP lower bound to exceed 10%, approximate 92.1% power at 15% true prevalence) and H2 paired interval decisions. Ensure familywise error and primary/secondary reporting are internally coherent. Inference scope is the sampled eligible distribution, not hardware safety.
+12. Final blind-read review: Give separate reviewers only (a) title and abstract; (b) title, abstract, Figure 1, and conclusion; (c) full methods. Ask whether the hypothesis is consequential, falsifiable, and adequately distinguished from closest work, and whether the stated engineering work can plausibly be completed during the Charter. Fix material comprehension and validity failures before final aesthetics.
+Proposed isolated local workspace
+Root: /home/imad/Desktop/IEEE-RAL/papers/rss2027_rpd_stage1/.
+papers/rss2027_rpd_stage1/
+  README.md
+  template/
+    official_rss2027_paper_template.tar.gz
+    SHA256SUMS.txt
+    upstream/                    # untouched extraction
+  manuscript/
+    main.tex
+    references.bib
+    figures/
+      figure1.pdf
+      figure1.svg
+      figure1_editable.pptx       # only if author/assistant supplies it
+  original_v2/
+    paper.tex
+    paper.pdf
+    references.bib
+    figures/
+  reviews/
+    V2_RISK_REGISTER.md
+    RSS_2027_SUBMISSION_CHECKLIST.md
+    CITATION_AUDIT.md
+    STAGE2_VALIDATION_SPEC.md
+  build/                          # ignored by git
+  submission/
+    rpd_stage1_anonymous.pdf
+  Makefile
+Do not modify the existing research/rpd_stage1_v2/ tree, local experimental branches, user changes or historic seals. Work on a dedicated local Git branch from the latest local HEAD, not by resetting to a remote design branch. Do not push the anonymous manuscript publicly. Download kit only from the official URL or verified official GitHub mirror if necessary. If download fails, report the blocker, do not silently substitute third-party LaTeX styles.
+Manuscript to reviewer logical path
+- Page 1: physical failure problem, precise question, H1/H2, thesis Figure 1 and known-work contrast.
+- Page 2: time/repertoire-relative recovery sets, support/post-probe belief, single contingent criterion.
+- Page 3: equal-duration probe/hold causal contrasts; diagnostic usefulness and constraint checks.
+- Page 4: EXACT assembly interface, controller/probe/recovery specification, prospective sampling and matched baselines.
+- Page 5: analytical example, honest technical evidence (brief), outcomes that distinguish hypotheses, and concise planned validation with interpretation of nulls.
+- Page 6: references only.
+Research result claims must come from real experimental evidence. Stage 1 permits pending empirical work, but it cannot be made to sound completed. The entire method must fit the five content pages because Stage 1 supplementary material is not reviewed.

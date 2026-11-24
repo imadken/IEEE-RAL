@@ -1,0 +1,98 @@
+{
+  "registered_epoch": 1795082834.5442917,
+  "base_commit": "9f98797e587489b4a6f9c5139f8aec0d65912bb8",
+  "branch": "research/err-rss2027-method-challenge",
+  "physics": false,
+  "max_calendar_hours": 48,
+  "max_additional_experiment_wall_seconds": 10800,
+  "max_new_artifact_bytes": 500000000,
+  "seed": 2026111901,
+  "random_grid": {
+    "world_counts": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "experiment_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "cases_each_grid_cell": 12,
+    "total_cases": 504
+  },
+  "exhaustive_families": [
+    {
+      "worlds": [
+        2,
+        3
+      ],
+      "experiments": [
+        1,
+        2,
+        3
+      ],
+      "verdicts": "all nonconstant binary assignments",
+      "laws": "all deterministic binary outcome matrices",
+      "costs": "all 0/1 assignments"
+    },
+    {
+      "worlds": [
+        4
+      ],
+      "experiments": [
+        1,
+        2
+      ],
+      "verdicts": "all nonconstant binary assignments",
+      "laws": "all deterministic binary outcome matrices",
+      "costs": "all 0/1 assignments"
+    }
+  ],
+  "exact_tie_breaks": [
+    "rational cost",
+    "count",
+    "lexicographic experiment IDs"
+  ],
+  "known_floating_reference_limit": "12-decimal law rounding; retain original, test exact rational production",
+  "source_witness_scope": "Discovery/calibration ONLY; evaluator/test paths forbidden",
+  "physical_context_selection_namespace": "ERR-PREDECISION-WITNESS-v1",
+  "primary_cost_counterexample": {
+    "nworlds": 7,
+    "experiments": {
+      "A": {
+        "covers": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "cost": 2
+      },
+      "B": {
+        "covers": [
+          1,
+          2,
+          5
+        ],
+        "cost": 2
+      },
+      "C": {
+        "covers": [
+          3,
+          4,
+          6
+        ],
+        "cost": 2
+      }
+    },
+    "role": "PREDECLARED_ANALYTICAL_SETCOVER_COUNTEREXAMPLE_NOT_ROBOT_RESULT"
+  }
+}

@@ -1,0 +1,59 @@
+[
+  {
+    "name": "finite_planner_and_independent_oracles",
+    "args": [
+      "scripts/rpd_audit.py",
+      "--output",
+      "research/rpd_method_challenge/final/finite"
+    ],
+    "returncode": 0,
+    "wall_seconds": 4.78010442800587,
+    "log_sha256": "ed38a498ec6a5c1f15d43e0a7a1d52f9be9aab7cd2ec3d1f48d296b61ca05543"
+  },
+  {
+    "name": "static_native_source_and_adapter_audit",
+    "args": [
+      "scripts/rpd_source_audit.py",
+      "--output",
+      "research/rpd_method_challenge/final/source"
+    ],
+    "returncode": 0,
+    "wall_seconds": 1.2185822149913292,
+    "log_sha256": "c032d63309974a895330b9bf90c62b1c02c13329ac75ec20163b03820349bc13"
+  },
+  {
+    "name": "inactive_stage2_reservation",
+    "args": [
+      "scripts/rpd_stage2_protocol.py",
+      "--output",
+      "research/rpd_method_challenge/final/stage2"
+    ],
+    "returncode": 0,
+    "wall_seconds": 1.168622549972497,
+    "log_sha256": "ddde5c5f309e868fdc820f0da37049a65dc06f7f52ffe2a11c56a95ed44e1031"
+  },
+  {
+    "name": "focused_tests",
+    "args": [
+      "-m",
+      "pytest",
+      "-q",
+      "tests/test_recoverability_planner.py"
+    ],
+    "returncode": 0,
+    "wall_seconds": 0.7176736670080572,
+    "log_sha256": "2d6923767fc2d90b9c51ad49f2f7e98ef2afc5e3df7d6f6a255bd32fccb3a141"
+  },
+  {
+    "name": "maintained_tests",
+    "args": [
+      "-m",
+      "pytest",
+      "-q",
+      "tests"
+    ],
+    "returncode": 0,
+    "wall_seconds": 48.21344209901872,
+    "log_sha256": "64684cfbeafe05ff10eae5129ef7391d3d1241390e4a2092a5f65b96b1559cae"
+  }
+]

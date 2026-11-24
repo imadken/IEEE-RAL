@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "steps": [
+    {
+      "script": "scripts/rpd_pilot_audit.py",
+      "matched_outputs": [
+        "case_checks.json",
+        "raw_manifest.json",
+        "summary.json"
+      ],
+      "returncode": 0
+    },
+    {
+      "script": "scripts/rpd_pilot_closure.py",
+      "matched_outputs": [
+        "all_registered_rows.jsonl",
+        "summary.json"
+      ],
+      "returncode": 0
+    },
+    {
+      "script": "scripts/rpd_pilot_source_review.py",
+      "matched_outputs": [
+        "source_review.json"
+      ],
+      "returncode": 0
+    }
+  ],
+  "new_physics": 0,
+  "no_native_worker_launched": true,
+  "scope": "Byte-exact independent source trace and forensic accounting, same sealed native evidence"
+}

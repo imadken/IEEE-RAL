@@ -1,0 +1,13 @@
+{
+  "phase": "qual",
+  "passed": false,
+  "fixed_candidates": 12,
+  "screened": 12,
+  "eligible": 7,
+  "registered_branch_count": 63,
+  "registration_sha256": "023c458ae428d95ff0969b7e57b06bc418bc88192b531f3d1879cdf123e2fa73",
+  "median_branch_wall_seconds": 12.557877605984686,
+  "p95_branch_wall_seconds": 14.08582652080222,
+  "reason": "FEWER_THAN_EIGHT_REGISTERED_ELIGIBLE_ROOTS",
+  "source_result_is_not_population_H1_or_H2": true
+}

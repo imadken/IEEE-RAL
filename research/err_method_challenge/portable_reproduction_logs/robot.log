@@ -1,0 +1,2 @@
+PickCube-v1 native anchors ['ad552a48fa35584b62fda307bae5bd3d4b8c6327c7be971ac2a6c9380e0fe076', '450b48bf2683238ea3b9c843cb57d5a54c6aee2906218792df3c38e9eb9285c0'] context plan ('reveal_goal_near_03',)
+PushCube-v1 native anchors ['686fc364a9f55bb6e80073f698591a7186a562e8ecfc129cb9829b17a0153ad4', '3e4b6a86522fc5161c04d83c2126def7e098051ab6b2bdcbda608feb5e45b21a'] context plan ('reveal_hand_object_near_04',)

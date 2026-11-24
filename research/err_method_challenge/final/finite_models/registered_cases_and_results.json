@@ -1,0 +1,4552 @@
+{
+  "same_marginals_with_pair": {
+    "problem": {
+      "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+      "obligation": "useful",
+      "predicate_description": "Fixed registered finite predicate; no continuous-population extrapolation",
+      "catalogue_scope": "DECLARED_FINITE_CATALOGUE",
+      "complete_for_declared_finite_catalogue": true,
+      "cross_experiment_law": "CONDITIONAL_PRODUCT_LAWS",
+      "cost_unit": "OUTCOMES_PER_EXPERIMENT_TYPE_NOT_TOTAL_REQUIRED_SAMPLES",
+      "worlds": [
+        {
+          "world_id": "Q0",
+          "obligation_verdict": true,
+          "joint": [
+            "2/5",
+            "1/5",
+            "0",
+            "2/5"
+          ]
+        },
+        {
+          "world_id": "Q1",
+          "obligation_verdict": false,
+          "joint": [
+            "0",
+            "3/5",
+            "2/5",
+            "0"
+          ]
+        }
+      ],
+      "experiments": [
+        {
+          "experiment_id": "c_log",
+          "cost": "1",
+          "alphabet": [
+            "other_arm",
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "1/2",
+                "3/10",
+                "1/5"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "1/2",
+                "3/10",
+                "1/5"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "randomized_arm",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": "c",
+            "propensity": "1/2",
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "r_log",
+          "cost": "1",
+          "alphabet": [
+            "other_arm",
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "1/2",
+                "1/5",
+                "3/10"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "1/2",
+                "1/5",
+                "3/10"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "randomized_arm",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": "r",
+            "propensity": "1/2",
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "randomized_log",
+          "cost": "1",
+          "alphabet": [
+            "c0",
+            "c1",
+            "r0",
+            "r1"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "3/10",
+                "1/5",
+                "1/5",
+                "3/10"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "3/10",
+                "1/5",
+                "1/5",
+                "3/10"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "randomized_single_action",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": "1/2",
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "paired_trial",
+          "cost": "2",
+          "alphabet": [
+            "00",
+            "01",
+            "10",
+            "11"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "2/5",
+                "1/5",
+                "0",
+                "2/5"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "0",
+                "3/5",
+                "2/5",
+                "0"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "qualified_simulator_pair",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": null,
+            "coupling": "Declared joint simulator-model coupling; not a hardware counterfactual",
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        }
+      ]
+    },
+    "production": {
+      "status": "MINIMUM_RESOLVING_MENU",
+      "selected_experiments": [
+        "paired_trial"
+      ],
+      "total_cost": "2",
+      "cost_unit": "OUTCOMES_PER_EXPERIMENT_TYPE_NOT_TOTAL_REQUIRED_SAMPLES",
+      "opposite_verdict_pairs": 1,
+      "coverage": [
+        {
+          "worlds": [
+            "Q0",
+            "Q1"
+          ],
+          "experiments": [
+            "paired_trial"
+          ]
+        }
+      ],
+      "removal_witnesses": [
+        {
+          "removed_experiment": "paired_trial",
+          "unseparated_opposing_worlds": [
+            "Q0",
+            "Q1"
+          ]
+        }
+      ],
+      "impossibility": null,
+      "unanimous_catalogue_verdict": null,
+      "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+      "finite_sample_resolution_guaranteed": false,
+      "physical_authorization": false,
+      "dynamic_programming_states": 2
+    },
+    "typed_output": {
+      "status": "UNRESOLVED",
+      "certificate": null,
+      "experiment_plan": {
+        "status": "MINIMUM_RESOLVING_MENU",
+        "selected_experiments": [
+          "paired_trial"
+        ],
+        "total_cost": "2",
+        "cost_unit": "OUTCOMES_PER_EXPERIMENT_TYPE_NOT_TOTAL_REQUIRED_SAMPLES",
+        "opposite_verdict_pairs": 1,
+        "coverage": [
+          {
+            "worlds": [
+              "Q0",
+              "Q1"
+            ],
+            "experiments": [
+              "paired_trial"
+            ]
+          }
+        ],
+        "removal_witnesses": [
+          {
+            "removed_experiment": "paired_trial",
+            "unseparated_opposing_worlds": [
+              "Q0",
+              "Q1"
+            ]
+          }
+        ],
+        "impossibility": null,
+        "unanimous_catalogue_verdict": null,
+        "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+        "finite_sample_resolution_guaranteed": false,
+        "physical_authorization": false,
+        "dynamic_programming_states": 2
+      },
+      "recovery_authorized": false,
+      "reason": "MINIMUM_CAPABLE_EXPERIMENT_TYPE_PLAN",
+      "interpretation": "Different laws identify in principle; finite observations may remain inconclusive or refute recovery"
+    },
+    "independent_exact_oracle": [
+      "2",
+      [
+        "paired_trial"
+      ]
+    ],
+    "supplied_reference_agrees": true,
+    "source_cost_greedy": [
+      "2",
+      [
+        "paired_trial"
+      ]
+    ],
+    "reverse_deleted_greedy": [
+      "2",
+      [
+        "paired_trial"
+      ]
+    ],
+    "solver_wall_seconds": 9.454501559957862e-05,
+    "evidence_type": "ANALYTICAL_ONLY_NOT_ROBOT_EPISODES"
+  },
+  "same_marginals_unpaired_only": {
+    "problem": {
+      "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+      "obligation": "useful",
+      "predicate_description": "Fixed registered finite predicate; no continuous-population extrapolation",
+      "catalogue_scope": "DECLARED_FINITE_CATALOGUE",
+      "complete_for_declared_finite_catalogue": true,
+      "cross_experiment_law": "CONDITIONAL_PRODUCT_LAWS",
+      "cost_unit": "OUTCOMES_PER_EXPERIMENT_TYPE_NOT_TOTAL_REQUIRED_SAMPLES",
+      "worlds": [
+        {
+          "world_id": "Q0",
+          "obligation_verdict": true,
+          "joint": [
+            "2/5",
+            "1/5",
+            "0",
+            "2/5"
+          ]
+        },
+        {
+          "world_id": "Q1",
+          "obligation_verdict": false,
+          "joint": [
+            "0",
+            "3/5",
+            "2/5",
+            "0"
+          ]
+        }
+      ],
+      "experiments": [
+        {
+          "experiment_id": "c_log",
+          "cost": "1",
+          "alphabet": [
+            "other_arm",
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "1/2",
+                "3/10",
+                "1/5"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "1/2",
+                "3/10",
+                "1/5"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "randomized_arm",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": "c",
+            "propensity": "1/2",
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "r_log",
+          "cost": "1",
+          "alphabet": [
+            "other_arm",
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "1/2",
+                "1/5",
+                "3/10"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "1/2",
+                "1/5",
+                "3/10"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "randomized_arm",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": "r",
+            "propensity": "1/2",
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "randomized_log",
+          "cost": "1",
+          "alphabet": [
+            "c0",
+            "c1",
+            "r0",
+            "r1"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "3/10",
+                "1/5",
+                "1/5",
+                "3/10"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "3/10",
+                "1/5",
+                "1/5",
+                "3/10"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "randomized_single_action",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": "1/2",
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        }
+      ]
+    },
+    "production": {
+      "status": "NOT_RESOLVABLE_WITH_AVAILABLE_EVIDENCE",
+      "selected_experiments": [],
+      "total_cost": null,
+      "cost_unit": "OUTCOMES_PER_EXPERIMENT_TYPE_NOT_TOTAL_REQUIRED_SAMPLES",
+      "opposite_verdict_pairs": 1,
+      "coverage": [],
+      "removal_witnesses": [],
+      "impossibility": {
+        "worlds": [
+          "Q0",
+          "Q1"
+        ],
+        "verdicts": [
+          true,
+          false
+        ],
+        "identical_laws": [
+          {
+            "experiment_id": "c_log",
+            "alphabet": [
+              "other_arm",
+              "0",
+              "1"
+            ],
+            "probabilities": [
+              "1/2",
+              "3/10",
+              "1/5"
+            ]
+          },
+          {
+            "experiment_id": "r_log",
+            "alphabet": [
+              "other_arm",
+              "0",
+              "1"
+            ],
+            "probabilities": [
+              "1/2",
+              "1/5",
+              "3/10"
+            ]
+          },
+          {
+            "experiment_id": "randomized_log",
+            "alphabet": [
+              "c0",
+              "c1",
+              "r0",
+              "r1"
+            ],
+            "probabilities": [
+              "3/10",
+              "1/5",
+              "1/5",
+              "3/10"
+            ]
+          }
+        ]
+      },
+      "unanimous_catalogue_verdict": null,
+      "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+      "finite_sample_resolution_guaranteed": false,
+      "physical_authorization": false,
+      "dynamic_programming_states": 0
+    },
+    "typed_output": {
+      "status": "NOT_RESOLVABLE_WITH_MENU",
+      "certificate": null,
+      "experiment_plan": {
+        "status": "NOT_RESOLVABLE_WITH_AVAILABLE_EVIDENCE",
+        "selected_experiments": [],
+        "total_cost": null,
+        "cost_unit": "OUTCOMES_PER_EXPERIMENT_TYPE_NOT_TOTAL_REQUIRED_SAMPLES",
+        "opposite_verdict_pairs": 1,
+        "coverage": [],
+        "removal_witnesses": [],
+        "impossibility": {
+          "worlds": [
+            "Q0",
+            "Q1"
+          ],
+          "verdicts": [
+            true,
+            false
+          ],
+          "identical_laws": [
+            {
+              "experiment_id": "c_log",
+              "alphabet": [
+                "other_arm",
+                "0",
+                "1"
+              ],
+              "probabilities": [
+                "1/2",
+                "3/10",
+                "1/5"
+              ]
+            },
+            {
+              "experiment_id": "r_log",
+              "alphabet": [
+                "other_arm",
+                "0",
+                "1"
+              ],
+              "probabilities": [
+                "1/2",
+                "1/5",
+                "3/10"
+              ]
+            },
+            {
+              "experiment_id": "randomized_log",
+              "alphabet": [
+                "c0",
+                "c1",
+                "r0",
+                "r1"
+              ],
+              "probabilities": [
+                "3/10",
+                "1/5",
+                "1/5",
+                "3/10"
+              ]
+            }
+          ]
+        },
+        "unanimous_catalogue_verdict": null,
+        "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+        "finite_sample_resolution_guaranteed": false,
+        "physical_authorization": false,
+        "dynamic_programming_states": 0
+      },
+      "recovery_authorized": false,
+      "reason": "OPPOSING_WORLDS_HAVE_IDENTICAL_ALL_MENU_LAWS",
+      "interpretation": "Impossibility is conditional on this finite catalogue, declared sources and product-data model"
+    },
+    "independent_exact_oracle": null,
+    "supplied_reference_agrees": true,
+    "source_cost_greedy": null,
+    "reverse_deleted_greedy": null,
+    "solver_wall_seconds": 8.508798782713711e-05,
+    "evidence_type": "ANALYTICAL_ONLY_NOT_ROBOT_EPISODES"
+  },
+  "same_marginals_absolute_refuted": {
+    "problem": {
+      "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+      "obligation": "completion",
+      "predicate_description": "Fixed registered finite predicate; no continuous-population extrapolation",
+      "catalogue_scope": "DECLARED_FINITE_CATALOGUE",
+      "complete_for_declared_finite_catalogue": true,
+      "cross_experiment_law": "CONDITIONAL_PRODUCT_LAWS",
+      "cost_unit": "OUTCOMES_PER_EXPERIMENT_TYPE_NOT_TOTAL_REQUIRED_SAMPLES",
+      "worlds": [
+        {
+          "world_id": "Q0",
+          "obligation_verdict": false,
+          "joint": [
+            "2/5",
+            "1/5",
+            "0",
+            "2/5"
+          ]
+        },
+        {
+          "world_id": "Q1",
+          "obligation_verdict": false,
+          "joint": [
+            "0",
+            "3/5",
+            "2/5",
+            "0"
+          ]
+        }
+      ],
+      "experiments": [
+        {
+          "experiment_id": "c_log",
+          "cost": "1",
+          "alphabet": [
+            "other_arm",
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "1/2",
+                "3/10",
+                "1/5"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "1/2",
+                "3/10",
+                "1/5"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "randomized_arm",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": "c",
+            "propensity": "1/2",
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "r_log",
+          "cost": "1",
+          "alphabet": [
+            "other_arm",
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "1/2",
+                "1/5",
+                "3/10"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "1/2",
+                "1/5",
+                "3/10"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "randomized_arm",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": "r",
+            "propensity": "1/2",
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "randomized_log",
+          "cost": "1",
+          "alphabet": [
+            "c0",
+            "c1",
+            "r0",
+            "r1"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "3/10",
+                "1/5",
+                "1/5",
+                "3/10"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "3/10",
+                "1/5",
+                "1/5",
+                "3/10"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "randomized_single_action",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": "1/2",
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "paired_trial",
+          "cost": "2",
+          "alphabet": [
+            "00",
+            "01",
+            "10",
+            "11"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "2/5",
+                "1/5",
+                "0",
+                "2/5"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "0",
+                "3/5",
+                "2/5",
+                "0"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "qualified_simulator_pair",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": null,
+            "coupling": "Declared joint simulator-model coupling; not a hardware counterfactual",
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        }
+      ]
+    },
+    "production": {
+      "status": "MINIMUM_RESOLVING_MENU",
+      "selected_experiments": [],
+      "total_cost": "0",
+      "cost_unit": "OUTCOMES_PER_EXPERIMENT_TYPE_NOT_TOTAL_REQUIRED_SAMPLES",
+      "opposite_verdict_pairs": 0,
+      "coverage": [],
+      "removal_witnesses": [],
+      "impossibility": null,
+      "unanimous_catalogue_verdict": false,
+      "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+      "finite_sample_resolution_guaranteed": false,
+      "physical_authorization": false,
+      "dynamic_programming_states": 1
+    },
+    "typed_output": {
+      "status": "REFUTED_WITHIN_CATALOGUE",
+      "certificate": null,
+      "experiment_plan": {
+        "status": "MINIMUM_RESOLVING_MENU",
+        "selected_experiments": [],
+        "total_cost": "0",
+        "cost_unit": "OUTCOMES_PER_EXPERIMENT_TYPE_NOT_TOTAL_REQUIRED_SAMPLES",
+        "opposite_verdict_pairs": 0,
+        "coverage": [],
+        "removal_witnesses": [],
+        "impossibility": null,
+        "unanimous_catalogue_verdict": false,
+        "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+        "finite_sample_resolution_guaranteed": false,
+        "physical_authorization": false,
+        "dynamic_programming_states": 1
+      },
+      "recovery_authorized": false,
+      "reason": "ALL_DECLARED_FINITE_WORLDS_REJECT_OBLIGATION",
+      "interpretation": "No actual robot repertoire failure or population refutation follows automatically"
+    },
+    "independent_exact_oracle": [
+      "0",
+      []
+    ],
+    "supplied_reference_agrees": true,
+    "source_cost_greedy": [
+      "0",
+      []
+    ],
+    "reverse_deleted_greedy": [
+      "0",
+      []
+    ],
+    "solver_wall_seconds": 4.88439982291311e-05,
+    "evidence_type": "ANALYTICAL_ONLY_NOT_ROBOT_EPISODES"
+  },
+  "obligation_shift_three_worlds_harm_only": {
+    "problem": {
+      "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+      "obligation": "harm_only",
+      "predicate_description": "Fixed registered finite predicate; no continuous-population extrapolation",
+      "catalogue_scope": "DECLARED_FINITE_CATALOGUE",
+      "complete_for_declared_finite_catalogue": true,
+      "cross_experiment_law": "CONDITIONAL_PRODUCT_LAWS",
+      "cost_unit": "OUTCOMES_PER_EXPERIMENT_TYPE_NOT_TOTAL_REQUIRED_SAMPLES",
+      "worlds": [
+        {
+          "world_id": "Q0",
+          "obligation_verdict": true,
+          "joint": [
+            "2/5",
+            "1/5",
+            "0",
+            "2/5"
+          ]
+        },
+        {
+          "world_id": "Q1",
+          "obligation_verdict": false,
+          "joint": [
+            "0",
+            "3/5",
+            "2/5",
+            "0"
+          ]
+        },
+        {
+          "world_id": "Q2",
+          "obligation_verdict": true,
+          "joint": [
+            "0",
+            "1/100",
+            "0",
+            "99/100"
+          ]
+        }
+      ],
+      "experiments": [
+        {
+          "experiment_id": "c_log",
+          "cost": "1",
+          "alphabet": [
+            "other_arm",
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "1/2",
+                "3/10",
+                "1/5"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "1/2",
+                "3/10",
+                "1/5"
+              ]
+            },
+            {
+              "world_id": "Q2",
+              "probabilities": [
+                "1/2",
+                "1/200",
+                "99/200"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "randomized_arm",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": "c",
+            "propensity": "1/2",
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "r_log",
+          "cost": "1",
+          "alphabet": [
+            "other_arm",
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "1/2",
+                "1/5",
+                "3/10"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "1/2",
+                "1/5",
+                "3/10"
+              ]
+            },
+            {
+              "world_id": "Q2",
+              "probabilities": [
+                "1/2",
+                "0",
+                "1/2"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "randomized_arm",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": "r",
+            "propensity": "1/2",
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "randomized_log",
+          "cost": "1",
+          "alphabet": [
+            "c0",
+            "c1",
+            "r0",
+            "r1"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "3/10",
+                "1/5",
+                "1/5",
+                "3/10"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "3/10",
+                "1/5",
+                "1/5",
+                "3/10"
+              ]
+            },
+            {
+              "world_id": "Q2",
+              "probabilities": [
+                "1/200",
+                "99/200",
+                "0",
+                "1/2"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "randomized_single_action",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": "1/2",
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "paired_trial",
+          "cost": "2",
+          "alphabet": [
+            "00",
+            "01",
+            "10",
+            "11"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "2/5",
+                "1/5",
+                "0",
+                "2/5"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "0",
+                "3/5",
+                "2/5",
+                "0"
+              ]
+            },
+            {
+              "world_id": "Q2",
+              "probabilities": [
+                "0",
+                "1/100",
+                "0",
+                "99/100"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "qualified_simulator_pair",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": null,
+            "coupling": "Declared joint simulator-model coupling; not a hardware counterfactual",
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        }
+      ]
+    },
+    "production": {
+      "status": "MINIMUM_RESOLVING_MENU",
+      "selected_experiments": [
+        "paired_trial"
+      ],
+      "total_cost": "2",
+      "cost_unit": "OUTCOMES_PER_EXPERIMENT_TYPE_NOT_TOTAL_REQUIRED_SAMPLES",
+      "opposite_verdict_pairs": 2,
+      "coverage": [
+        {
+          "worlds": [
+            "Q0",
+            "Q1"
+          ],
+          "experiments": [
+            "paired_trial"
+          ]
+        },
+        {
+          "worlds": [
+            "Q1",
+            "Q2"
+          ],
+          "experiments": [
+            "paired_trial"
+          ]
+        }
+      ],
+      "removal_witnesses": [
+        {
+          "removed_experiment": "paired_trial",
+          "unseparated_opposing_worlds": [
+            "Q0",
+            "Q1"
+          ]
+        }
+      ],
+      "impossibility": null,
+      "unanimous_catalogue_verdict": null,
+      "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+      "finite_sample_resolution_guaranteed": false,
+      "physical_authorization": false,
+      "dynamic_programming_states": 3
+    },
+    "typed_output": {
+      "status": "UNRESOLVED",
+      "certificate": null,
+      "experiment_plan": {
+        "status": "MINIMUM_RESOLVING_MENU",
+        "selected_experiments": [
+          "paired_trial"
+        ],
+        "total_cost": "2",
+        "cost_unit": "OUTCOMES_PER_EXPERIMENT_TYPE_NOT_TOTAL_REQUIRED_SAMPLES",
+        "opposite_verdict_pairs": 2,
+        "coverage": [
+          {
+            "worlds": [
+              "Q0",
+              "Q1"
+            ],
+            "experiments": [
+              "paired_trial"
+            ]
+          },
+          {
+            "worlds": [
+              "Q1",
+              "Q2"
+            ],
+            "experiments": [
+              "paired_trial"
+            ]
+          }
+        ],
+        "removal_witnesses": [
+          {
+            "removed_experiment": "paired_trial",
+            "unseparated_opposing_worlds": [
+              "Q0",
+              "Q1"
+            ]
+          }
+        ],
+        "impossibility": null,
+        "unanimous_catalogue_verdict": null,
+        "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+        "finite_sample_resolution_guaranteed": false,
+        "physical_authorization": false,
+        "dynamic_programming_states": 3
+      },
+      "recovery_authorized": false,
+      "reason": "MINIMUM_CAPABLE_EXPERIMENT_TYPE_PLAN",
+      "interpretation": "Different laws identify in principle; finite observations may remain inconclusive or refute recovery"
+    },
+    "independent_exact_oracle": [
+      "2",
+      [
+        "paired_trial"
+      ]
+    ],
+    "supplied_reference_agrees": true,
+    "source_cost_greedy": [
+      "3",
+      [
+        "c_log",
+        "paired_trial"
+      ]
+    ],
+    "reverse_deleted_greedy": [
+      "2",
+      [
+        "paired_trial"
+      ]
+    ],
+    "solver_wall_seconds": 8.719501784071326e-05,
+    "evidence_type": "ANALYTICAL_ONLY_NOT_ROBOT_EPISODES"
+  },
+  "obligation_shift_three_worlds_completion": {
+    "problem": {
+      "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+      "obligation": "completion",
+      "predicate_description": "Fixed registered finite predicate; no continuous-population extrapolation",
+      "catalogue_scope": "DECLARED_FINITE_CATALOGUE",
+      "complete_for_declared_finite_catalogue": true,
+      "cross_experiment_law": "CONDITIONAL_PRODUCT_LAWS",
+      "cost_unit": "OUTCOMES_PER_EXPERIMENT_TYPE_NOT_TOTAL_REQUIRED_SAMPLES",
+      "worlds": [
+        {
+          "world_id": "Q0",
+          "obligation_verdict": false,
+          "joint": [
+            "2/5",
+            "1/5",
+            "0",
+            "2/5"
+          ]
+        },
+        {
+          "world_id": "Q1",
+          "obligation_verdict": false,
+          "joint": [
+            "0",
+            "3/5",
+            "2/5",
+            "0"
+          ]
+        },
+        {
+          "world_id": "Q2",
+          "obligation_verdict": true,
+          "joint": [
+            "0",
+            "1/100",
+            "0",
+            "99/100"
+          ]
+        }
+      ],
+      "experiments": [
+        {
+          "experiment_id": "c_log",
+          "cost": "1",
+          "alphabet": [
+            "other_arm",
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "1/2",
+                "3/10",
+                "1/5"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "1/2",
+                "3/10",
+                "1/5"
+              ]
+            },
+            {
+              "world_id": "Q2",
+              "probabilities": [
+                "1/2",
+                "1/200",
+                "99/200"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "randomized_arm",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": "c",
+            "propensity": "1/2",
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "r_log",
+          "cost": "1",
+          "alphabet": [
+            "other_arm",
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "1/2",
+                "1/5",
+                "3/10"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "1/2",
+                "1/5",
+                "3/10"
+              ]
+            },
+            {
+              "world_id": "Q2",
+              "probabilities": [
+                "1/2",
+                "0",
+                "1/2"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "randomized_arm",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": "r",
+            "propensity": "1/2",
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "randomized_log",
+          "cost": "1",
+          "alphabet": [
+            "c0",
+            "c1",
+            "r0",
+            "r1"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "3/10",
+                "1/5",
+                "1/5",
+                "3/10"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "3/10",
+                "1/5",
+                "1/5",
+                "3/10"
+              ]
+            },
+            {
+              "world_id": "Q2",
+              "probabilities": [
+                "1/200",
+                "99/200",
+                "0",
+                "1/2"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "randomized_single_action",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": "1/2",
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "paired_trial",
+          "cost": "2",
+          "alphabet": [
+            "00",
+            "01",
+            "10",
+            "11"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "2/5",
+                "1/5",
+                "0",
+                "2/5"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "0",
+                "3/5",
+                "2/5",
+                "0"
+              ]
+            },
+            {
+              "world_id": "Q2",
+              "probabilities": [
+                "0",
+                "1/100",
+                "0",
+                "99/100"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "qualified_simulator_pair",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": null,
+            "coupling": "Declared joint simulator-model coupling; not a hardware counterfactual",
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        }
+      ]
+    },
+    "production": {
+      "status": "MINIMUM_RESOLVING_MENU",
+      "selected_experiments": [
+        "c_log"
+      ],
+      "total_cost": "1",
+      "cost_unit": "OUTCOMES_PER_EXPERIMENT_TYPE_NOT_TOTAL_REQUIRED_SAMPLES",
+      "opposite_verdict_pairs": 2,
+      "coverage": [
+        {
+          "worlds": [
+            "Q0",
+            "Q2"
+          ],
+          "experiments": [
+            "c_log"
+          ]
+        },
+        {
+          "worlds": [
+            "Q1",
+            "Q2"
+          ],
+          "experiments": [
+            "c_log"
+          ]
+        }
+      ],
+      "removal_witnesses": [
+        {
+          "removed_experiment": "c_log",
+          "unseparated_opposing_worlds": [
+            "Q0",
+            "Q2"
+          ]
+        }
+      ],
+      "impossibility": null,
+      "unanimous_catalogue_verdict": null,
+      "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+      "finite_sample_resolution_guaranteed": false,
+      "physical_authorization": false,
+      "dynamic_programming_states": 2
+    },
+    "typed_output": {
+      "status": "UNRESOLVED",
+      "certificate": null,
+      "experiment_plan": {
+        "status": "MINIMUM_RESOLVING_MENU",
+        "selected_experiments": [
+          "c_log"
+        ],
+        "total_cost": "1",
+        "cost_unit": "OUTCOMES_PER_EXPERIMENT_TYPE_NOT_TOTAL_REQUIRED_SAMPLES",
+        "opposite_verdict_pairs": 2,
+        "coverage": [
+          {
+            "worlds": [
+              "Q0",
+              "Q2"
+            ],
+            "experiments": [
+              "c_log"
+            ]
+          },
+          {
+            "worlds": [
+              "Q1",
+              "Q2"
+            ],
+            "experiments": [
+              "c_log"
+            ]
+          }
+        ],
+        "removal_witnesses": [
+          {
+            "removed_experiment": "c_log",
+            "unseparated_opposing_worlds": [
+              "Q0",
+              "Q2"
+            ]
+          }
+        ],
+        "impossibility": null,
+        "unanimous_catalogue_verdict": null,
+        "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+        "finite_sample_resolution_guaranteed": false,
+        "physical_authorization": false,
+        "dynamic_programming_states": 2
+      },
+      "recovery_authorized": false,
+      "reason": "MINIMUM_CAPABLE_EXPERIMENT_TYPE_PLAN",
+      "interpretation": "Different laws identify in principle; finite observations may remain inconclusive or refute recovery"
+    },
+    "independent_exact_oracle": [
+      "1",
+      [
+        "c_log"
+      ]
+    ],
+    "supplied_reference_agrees": true,
+    "source_cost_greedy": [
+      "1",
+      [
+        "c_log"
+      ]
+    ],
+    "reverse_deleted_greedy": [
+      "1",
+      [
+        "c_log"
+      ]
+    ],
+    "solver_wall_seconds": 7.243800791911781e-05,
+    "evidence_type": "ANALYTICAL_ONLY_NOT_ROBOT_EPISODES"
+  },
+  "obligation_shift_three_worlds_useful": {
+    "problem": {
+      "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+      "obligation": "useful",
+      "predicate_description": "Fixed registered finite predicate; no continuous-population extrapolation",
+      "catalogue_scope": "DECLARED_FINITE_CATALOGUE",
+      "complete_for_declared_finite_catalogue": true,
+      "cross_experiment_law": "CONDITIONAL_PRODUCT_LAWS",
+      "cost_unit": "OUTCOMES_PER_EXPERIMENT_TYPE_NOT_TOTAL_REQUIRED_SAMPLES",
+      "worlds": [
+        {
+          "world_id": "Q0",
+          "obligation_verdict": true,
+          "joint": [
+            "2/5",
+            "1/5",
+            "0",
+            "2/5"
+          ]
+        },
+        {
+          "world_id": "Q1",
+          "obligation_verdict": false,
+          "joint": [
+            "0",
+            "3/5",
+            "2/5",
+            "0"
+          ]
+        },
+        {
+          "world_id": "Q2",
+          "obligation_verdict": false,
+          "joint": [
+            "0",
+            "1/100",
+            "0",
+            "99/100"
+          ]
+        }
+      ],
+      "experiments": [
+        {
+          "experiment_id": "c_log",
+          "cost": "1",
+          "alphabet": [
+            "other_arm",
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "1/2",
+                "3/10",
+                "1/5"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "1/2",
+                "3/10",
+                "1/5"
+              ]
+            },
+            {
+              "world_id": "Q2",
+              "probabilities": [
+                "1/2",
+                "1/200",
+                "99/200"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "randomized_arm",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": "c",
+            "propensity": "1/2",
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "r_log",
+          "cost": "1",
+          "alphabet": [
+            "other_arm",
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "1/2",
+                "1/5",
+                "3/10"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "1/2",
+                "1/5",
+                "3/10"
+              ]
+            },
+            {
+              "world_id": "Q2",
+              "probabilities": [
+                "1/2",
+                "0",
+                "1/2"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "randomized_arm",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": "r",
+            "propensity": "1/2",
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "randomized_log",
+          "cost": "1",
+          "alphabet": [
+            "c0",
+            "c1",
+            "r0",
+            "r1"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "3/10",
+                "1/5",
+                "1/5",
+                "3/10"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "3/10",
+                "1/5",
+                "1/5",
+                "3/10"
+              ]
+            },
+            {
+              "world_id": "Q2",
+              "probabilities": [
+                "1/200",
+                "99/200",
+                "0",
+                "1/2"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "randomized_single_action",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": "1/2",
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "paired_trial",
+          "cost": "2",
+          "alphabet": [
+            "00",
+            "01",
+            "10",
+            "11"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "2/5",
+                "1/5",
+                "0",
+                "2/5"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "0",
+                "3/5",
+                "2/5",
+                "0"
+              ]
+            },
+            {
+              "world_id": "Q2",
+              "probabilities": [
+                "0",
+                "1/100",
+                "0",
+                "99/100"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "qualified_simulator_pair",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": null,
+            "coupling": "Declared joint simulator-model coupling; not a hardware counterfactual",
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        }
+      ]
+    },
+    "production": {
+      "status": "MINIMUM_RESOLVING_MENU",
+      "selected_experiments": [
+        "paired_trial"
+      ],
+      "total_cost": "2",
+      "cost_unit": "OUTCOMES_PER_EXPERIMENT_TYPE_NOT_TOTAL_REQUIRED_SAMPLES",
+      "opposite_verdict_pairs": 2,
+      "coverage": [
+        {
+          "worlds": [
+            "Q0",
+            "Q1"
+          ],
+          "experiments": [
+            "paired_trial"
+          ]
+        },
+        {
+          "worlds": [
+            "Q0",
+            "Q2"
+          ],
+          "experiments": [
+            "paired_trial"
+          ]
+        }
+      ],
+      "removal_witnesses": [
+        {
+          "removed_experiment": "paired_trial",
+          "unseparated_opposing_worlds": [
+            "Q0",
+            "Q1"
+          ]
+        }
+      ],
+      "impossibility": null,
+      "unanimous_catalogue_verdict": null,
+      "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+      "finite_sample_resolution_guaranteed": false,
+      "physical_authorization": false,
+      "dynamic_programming_states": 3
+    },
+    "typed_output": {
+      "status": "UNRESOLVED",
+      "certificate": null,
+      "experiment_plan": {
+        "status": "MINIMUM_RESOLVING_MENU",
+        "selected_experiments": [
+          "paired_trial"
+        ],
+        "total_cost": "2",
+        "cost_unit": "OUTCOMES_PER_EXPERIMENT_TYPE_NOT_TOTAL_REQUIRED_SAMPLES",
+        "opposite_verdict_pairs": 2,
+        "coverage": [
+          {
+            "worlds": [
+              "Q0",
+              "Q1"
+            ],
+            "experiments": [
+              "paired_trial"
+            ]
+          },
+          {
+            "worlds": [
+              "Q0",
+              "Q2"
+            ],
+            "experiments": [
+              "paired_trial"
+            ]
+          }
+        ],
+        "removal_witnesses": [
+          {
+            "removed_experiment": "paired_trial",
+            "unseparated_opposing_worlds": [
+              "Q0",
+              "Q1"
+            ]
+          }
+        ],
+        "impossibility": null,
+        "unanimous_catalogue_verdict": null,
+        "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+        "finite_sample_resolution_guaranteed": false,
+        "physical_authorization": false,
+        "dynamic_programming_states": 3
+      },
+      "recovery_authorized": false,
+      "reason": "MINIMUM_CAPABLE_EXPERIMENT_TYPE_PLAN",
+      "interpretation": "Different laws identify in principle; finite observations may remain inconclusive or refute recovery"
+    },
+    "independent_exact_oracle": [
+      "2",
+      [
+        "paired_trial"
+      ]
+    ],
+    "supplied_reference_agrees": true,
+    "source_cost_greedy": [
+      "3",
+      [
+        "c_log",
+        "paired_trial"
+      ]
+    ],
+    "reverse_deleted_greedy": [
+      "2",
+      [
+        "paired_trial"
+      ]
+    ],
+    "solver_wall_seconds": 7.159699453040957e-05,
+    "evidence_type": "ANALYTICAL_ONLY_NOT_ROBOT_EPISODES"
+  },
+  "reference_rounding_trap": {
+    "problem": {
+      "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+      "obligation": "useful",
+      "predicate_description": "Fixed registered finite predicate; no continuous-population extrapolation",
+      "catalogue_scope": "DECLARED_FINITE_CATALOGUE",
+      "complete_for_declared_finite_catalogue": true,
+      "cross_experiment_law": "CONDITIONAL_PRODUCT_LAWS",
+      "cost_unit": "OUTCOMES_PER_EXPERIMENT_TYPE_NOT_TOTAL_REQUIRED_SAMPLES",
+      "worlds": [
+        {
+          "world_id": "Q0",
+          "obligation_verdict": true,
+          "joint": [
+            "3000000000001/10000000000000",
+            "2999999999999/10000000000000",
+            "999999999999/10000000000000",
+            "3000000000001/10000000000000"
+          ]
+        },
+        {
+          "world_id": "Q1",
+          "obligation_verdict": false,
+          "joint": [
+            "2999999999999/10000000000000",
+            "3000000000001/10000000000000",
+            "1000000000001/10000000000000",
+            "2999999999999/10000000000000"
+          ]
+        }
+      ],
+      "experiments": [
+        {
+          "experiment_id": "c_log",
+          "cost": "1",
+          "alphabet": [
+            "other_arm",
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "1/2",
+                "3/10",
+                "1/5"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "1/2",
+                "3/10",
+                "1/5"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "randomized_arm",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": "c",
+            "propensity": "1/2",
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "r_log",
+          "cost": "1",
+          "alphabet": [
+            "other_arm",
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "1/2",
+                "1/5",
+                "3/10"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "1/2",
+                "1/5",
+                "3/10"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "randomized_arm",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": "r",
+            "propensity": "1/2",
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "randomized_log",
+          "cost": "1",
+          "alphabet": [
+            "c0",
+            "c1",
+            "r0",
+            "r1"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "3/10",
+                "1/5",
+                "1/5",
+                "3/10"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "3/10",
+                "1/5",
+                "1/5",
+                "3/10"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "randomized_single_action",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": "1/2",
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "paired_trial",
+          "cost": "2",
+          "alphabet": [
+            "00",
+            "01",
+            "10",
+            "11"
+          ],
+          "laws": [
+            {
+              "world_id": "Q0",
+              "probabilities": [
+                "3000000000001/10000000000000",
+                "2999999999999/10000000000000",
+                "999999999999/10000000000000",
+                "3000000000001/10000000000000"
+              ]
+            },
+            {
+              "world_id": "Q1",
+              "probabilities": [
+                "2999999999999/10000000000000",
+                "3000000000001/10000000000000",
+                "1000000000001/10000000000000",
+                "2999999999999/10000000000000"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "qualified_simulator_pair",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": null,
+            "coupling": "Declared joint simulator-model coupling; not a hardware counterfactual",
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        }
+      ]
+    },
+    "production": {
+      "status": "MINIMUM_RESOLVING_MENU",
+      "selected_experiments": [
+        "paired_trial"
+      ],
+      "total_cost": "2",
+      "cost_unit": "OUTCOMES_PER_EXPERIMENT_TYPE_NOT_TOTAL_REQUIRED_SAMPLES",
+      "opposite_verdict_pairs": 1,
+      "coverage": [
+        {
+          "worlds": [
+            "Q0",
+            "Q1"
+          ],
+          "experiments": [
+            "paired_trial"
+          ]
+        }
+      ],
+      "removal_witnesses": [
+        {
+          "removed_experiment": "paired_trial",
+          "unseparated_opposing_worlds": [
+            "Q0",
+            "Q1"
+          ]
+        }
+      ],
+      "impossibility": null,
+      "unanimous_catalogue_verdict": null,
+      "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+      "finite_sample_resolution_guaranteed": false,
+      "physical_authorization": false,
+      "dynamic_programming_states": 2
+    },
+    "typed_output": {
+      "status": "UNRESOLVED",
+      "certificate": null,
+      "experiment_plan": {
+        "status": "MINIMUM_RESOLVING_MENU",
+        "selected_experiments": [
+          "paired_trial"
+        ],
+        "total_cost": "2",
+        "cost_unit": "OUTCOMES_PER_EXPERIMENT_TYPE_NOT_TOTAL_REQUIRED_SAMPLES",
+        "opposite_verdict_pairs": 1,
+        "coverage": [
+          {
+            "worlds": [
+              "Q0",
+              "Q1"
+            ],
+            "experiments": [
+              "paired_trial"
+            ]
+          }
+        ],
+        "removal_witnesses": [
+          {
+            "removed_experiment": "paired_trial",
+            "unseparated_opposing_worlds": [
+              "Q0",
+              "Q1"
+            ]
+          }
+        ],
+        "impossibility": null,
+        "unanimous_catalogue_verdict": null,
+        "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+        "finite_sample_resolution_guaranteed": false,
+        "physical_authorization": false,
+        "dynamic_programming_states": 2
+      },
+      "recovery_authorized": false,
+      "reason": "MINIMUM_CAPABLE_EXPERIMENT_TYPE_PLAN",
+      "interpretation": "Different laws identify in principle; finite observations may remain inconclusive or refute recovery"
+    },
+    "independent_exact_oracle": [
+      "2",
+      [
+        "paired_trial"
+      ]
+    ],
+    "supplied_reference_agrees": false,
+    "source_cost_greedy": [
+      "2",
+      [
+        "paired_trial"
+      ]
+    ],
+    "reverse_deleted_greedy": [
+      "2",
+      [
+        "paired_trial"
+      ]
+    ],
+    "solver_wall_seconds": 5.3566996939480305e-05,
+    "evidence_type": "ANALYTICAL_ONLY_NOT_ROBOT_EPISODES"
+  },
+  "greedy_cover_counterexample": {
+    "problem": {
+      "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+      "obligation": "declared_predicate",
+      "predicate_description": "Fixed registered finite predicate; no continuous-population extrapolation",
+      "catalogue_scope": "DECLARED_FINITE_CATALOGUE",
+      "complete_for_declared_finite_catalogue": true,
+      "cross_experiment_law": "CONDITIONAL_PRODUCT_LAWS",
+      "cost_unit": "DECLARED_EXPERIMENT_TYPE_UNITS",
+      "worlds": [
+        {
+          "world_id": "w0",
+          "obligation_verdict": true,
+          "joint": null
+        },
+        {
+          "world_id": "w1",
+          "obligation_verdict": false,
+          "joint": null
+        },
+        {
+          "world_id": "w2",
+          "obligation_verdict": false,
+          "joint": null
+        },
+        {
+          "world_id": "w3",
+          "obligation_verdict": false,
+          "joint": null
+        },
+        {
+          "world_id": "w4",
+          "obligation_verdict": false,
+          "joint": null
+        },
+        {
+          "world_id": "w5",
+          "obligation_verdict": false,
+          "joint": null
+        },
+        {
+          "world_id": "w6",
+          "obligation_verdict": false,
+          "joint": null
+        }
+      ],
+      "experiments": [
+        {
+          "experiment_id": "A",
+          "cost": "2",
+          "alphabet": [
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "w0",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            },
+            {
+              "world_id": "w1",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "world_id": "w2",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "world_id": "w3",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "world_id": "w4",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "world_id": "w5",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            },
+            {
+              "world_id": "w6",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "abstract_known_law",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": null,
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "B",
+          "cost": "2",
+          "alphabet": [
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "w0",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            },
+            {
+              "world_id": "w1",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "world_id": "w2",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "world_id": "w3",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            },
+            {
+              "world_id": "w4",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            },
+            {
+              "world_id": "w5",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "world_id": "w6",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "abstract_known_law",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": null,
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "C",
+          "cost": "2",
+          "alphabet": [
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "w0",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            },
+            {
+              "world_id": "w1",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            },
+            {
+              "world_id": "w2",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            },
+            {
+              "world_id": "w3",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "world_id": "w4",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "world_id": "w5",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            },
+            {
+              "world_id": "w6",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "abstract_known_law",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": null,
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        }
+      ]
+    },
+    "production": {
+      "status": "MINIMUM_RESOLVING_MENU",
+      "selected_experiments": [
+        "B",
+        "C"
+      ],
+      "total_cost": "4",
+      "cost_unit": "DECLARED_EXPERIMENT_TYPE_UNITS",
+      "opposite_verdict_pairs": 6,
+      "coverage": [
+        {
+          "worlds": [
+            "w0",
+            "w1"
+          ],
+          "experiments": [
+            "B"
+          ]
+        },
+        {
+          "worlds": [
+            "w0",
+            "w2"
+          ],
+          "experiments": [
+            "B"
+          ]
+        },
+        {
+          "worlds": [
+            "w0",
+            "w3"
+          ],
+          "experiments": [
+            "C"
+          ]
+        },
+        {
+          "worlds": [
+            "w0",
+            "w4"
+          ],
+          "experiments": [
+            "C"
+          ]
+        },
+        {
+          "worlds": [
+            "w0",
+            "w5"
+          ],
+          "experiments": [
+            "B"
+          ]
+        },
+        {
+          "worlds": [
+            "w0",
+            "w6"
+          ],
+          "experiments": [
+            "C"
+          ]
+        }
+      ],
+      "removal_witnesses": [
+        {
+          "removed_experiment": "B",
+          "unseparated_opposing_worlds": [
+            "w0",
+            "w1"
+          ]
+        },
+        {
+          "removed_experiment": "C",
+          "unseparated_opposing_worlds": [
+            "w0",
+            "w3"
+          ]
+        }
+      ],
+      "impossibility": null,
+      "unanimous_catalogue_verdict": null,
+      "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+      "finite_sample_resolution_guaranteed": false,
+      "physical_authorization": false,
+      "dynamic_programming_states": 7
+    },
+    "typed_output": {
+      "status": "UNRESOLVED",
+      "certificate": null,
+      "experiment_plan": {
+        "status": "MINIMUM_RESOLVING_MENU",
+        "selected_experiments": [
+          "B",
+          "C"
+        ],
+        "total_cost": "4",
+        "cost_unit": "DECLARED_EXPERIMENT_TYPE_UNITS",
+        "opposite_verdict_pairs": 6,
+        "coverage": [
+          {
+            "worlds": [
+              "w0",
+              "w1"
+            ],
+            "experiments": [
+              "B"
+            ]
+          },
+          {
+            "worlds": [
+              "w0",
+              "w2"
+            ],
+            "experiments": [
+              "B"
+            ]
+          },
+          {
+            "worlds": [
+              "w0",
+              "w3"
+            ],
+            "experiments": [
+              "C"
+            ]
+          },
+          {
+            "worlds": [
+              "w0",
+              "w4"
+            ],
+            "experiments": [
+              "C"
+            ]
+          },
+          {
+            "worlds": [
+              "w0",
+              "w5"
+            ],
+            "experiments": [
+              "B"
+            ]
+          },
+          {
+            "worlds": [
+              "w0",
+              "w6"
+            ],
+            "experiments": [
+              "C"
+            ]
+          }
+        ],
+        "removal_witnesses": [
+          {
+            "removed_experiment": "B",
+            "unseparated_opposing_worlds": [
+              "w0",
+              "w1"
+            ]
+          },
+          {
+            "removed_experiment": "C",
+            "unseparated_opposing_worlds": [
+              "w0",
+              "w3"
+            ]
+          }
+        ],
+        "impossibility": null,
+        "unanimous_catalogue_verdict": null,
+        "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+        "finite_sample_resolution_guaranteed": false,
+        "physical_authorization": false,
+        "dynamic_programming_states": 7
+      },
+      "recovery_authorized": false,
+      "reason": "MINIMUM_CAPABLE_EXPERIMENT_TYPE_PLAN",
+      "interpretation": "Different laws identify in principle; finite observations may remain inconclusive or refute recovery"
+    },
+    "independent_exact_oracle": [
+      "4",
+      [
+        "B",
+        "C"
+      ]
+    ],
+    "supplied_reference_agrees": true,
+    "source_cost_greedy": [
+      "6",
+      [
+        "A",
+        "B",
+        "C"
+      ]
+    ],
+    "reverse_deleted_greedy": [
+      "4",
+      [
+        "B",
+        "C"
+      ]
+    ],
+    "solver_wall_seconds": 9.965998469851911e-05,
+    "evidence_type": "ANALYTICAL_ONLY_NOT_ROBOT_EPISODES"
+  },
+  "supervisor_two_cheap_sources": {
+    "problem": {
+      "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+      "obligation": "declared_predicate",
+      "predicate_description": "Fixed registered finite predicate; no continuous-population extrapolation",
+      "catalogue_scope": "DECLARED_FINITE_CATALOGUE",
+      "complete_for_declared_finite_catalogue": true,
+      "cross_experiment_law": "CONDITIONAL_PRODUCT_LAWS",
+      "cost_unit": "DECLARED_EXPERIMENT_TYPE_UNITS",
+      "worlds": [
+        {
+          "world_id": "w0",
+          "obligation_verdict": true,
+          "joint": null
+        },
+        {
+          "world_id": "w1",
+          "obligation_verdict": true,
+          "joint": null
+        },
+        {
+          "world_id": "w2",
+          "obligation_verdict": false,
+          "joint": null
+        },
+        {
+          "world_id": "w3",
+          "obligation_verdict": false,
+          "joint": null
+        }
+      ],
+      "experiments": [
+        {
+          "experiment_id": "x",
+          "cost": "1",
+          "alphabet": [
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "w0",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            },
+            {
+              "world_id": "w1",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "world_id": "w2",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "world_id": "w3",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "abstract_known_law",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": null,
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "y",
+          "cost": "1",
+          "alphabet": [
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "w0",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            },
+            {
+              "world_id": "w1",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "world_id": "w2",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            },
+            {
+              "world_id": "w3",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "abstract_known_law",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": null,
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "oracle",
+          "cost": "4",
+          "alphabet": [
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "w0",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            },
+            {
+              "world_id": "w1",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            },
+            {
+              "world_id": "w2",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "world_id": "w3",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "abstract_known_law",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": null,
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        }
+      ]
+    },
+    "production": {
+      "status": "MINIMUM_RESOLVING_MENU",
+      "selected_experiments": [
+        "x",
+        "y"
+      ],
+      "total_cost": "2",
+      "cost_unit": "DECLARED_EXPERIMENT_TYPE_UNITS",
+      "opposite_verdict_pairs": 4,
+      "coverage": [
+        {
+          "worlds": [
+            "w0",
+            "w2"
+          ],
+          "experiments": [
+            "x"
+          ]
+        },
+        {
+          "worlds": [
+            "w0",
+            "w3"
+          ],
+          "experiments": [
+            "y"
+          ]
+        },
+        {
+          "worlds": [
+            "w1",
+            "w2"
+          ],
+          "experiments": [
+            "y"
+          ]
+        },
+        {
+          "worlds": [
+            "w1",
+            "w3"
+          ],
+          "experiments": [
+            "x"
+          ]
+        }
+      ],
+      "removal_witnesses": [
+        {
+          "removed_experiment": "x",
+          "unseparated_opposing_worlds": [
+            "w0",
+            "w2"
+          ]
+        },
+        {
+          "removed_experiment": "y",
+          "unseparated_opposing_worlds": [
+            "w0",
+            "w3"
+          ]
+        }
+      ],
+      "impossibility": null,
+      "unanimous_catalogue_verdict": null,
+      "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+      "finite_sample_resolution_guaranteed": false,
+      "physical_authorization": false,
+      "dynamic_programming_states": 4
+    },
+    "typed_output": {
+      "status": "UNRESOLVED",
+      "certificate": null,
+      "experiment_plan": {
+        "status": "MINIMUM_RESOLVING_MENU",
+        "selected_experiments": [
+          "x",
+          "y"
+        ],
+        "total_cost": "2",
+        "cost_unit": "DECLARED_EXPERIMENT_TYPE_UNITS",
+        "opposite_verdict_pairs": 4,
+        "coverage": [
+          {
+            "worlds": [
+              "w0",
+              "w2"
+            ],
+            "experiments": [
+              "x"
+            ]
+          },
+          {
+            "worlds": [
+              "w0",
+              "w3"
+            ],
+            "experiments": [
+              "y"
+            ]
+          },
+          {
+            "worlds": [
+              "w1",
+              "w2"
+            ],
+            "experiments": [
+              "y"
+            ]
+          },
+          {
+            "worlds": [
+              "w1",
+              "w3"
+            ],
+            "experiments": [
+              "x"
+            ]
+          }
+        ],
+        "removal_witnesses": [
+          {
+            "removed_experiment": "x",
+            "unseparated_opposing_worlds": [
+              "w0",
+              "w2"
+            ]
+          },
+          {
+            "removed_experiment": "y",
+            "unseparated_opposing_worlds": [
+              "w0",
+              "w3"
+            ]
+          }
+        ],
+        "impossibility": null,
+        "unanimous_catalogue_verdict": null,
+        "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+        "finite_sample_resolution_guaranteed": false,
+        "physical_authorization": false,
+        "dynamic_programming_states": 4
+      },
+      "recovery_authorized": false,
+      "reason": "MINIMUM_CAPABLE_EXPERIMENT_TYPE_PLAN",
+      "interpretation": "Different laws identify in principle; finite observations may remain inconclusive or refute recovery"
+    },
+    "independent_exact_oracle": [
+      "2",
+      [
+        "x",
+        "y"
+      ]
+    ],
+    "supplied_reference_agrees": true,
+    "source_cost_greedy": [
+      "2",
+      [
+        "x",
+        "y"
+      ]
+    ],
+    "reverse_deleted_greedy": [
+      "2",
+      [
+        "x",
+        "y"
+      ]
+    ],
+    "solver_wall_seconds": 7.131401798687875e-05,
+    "evidence_type": "ANALYTICAL_ONLY_NOT_ROBOT_EPISODES"
+  },
+  "zero_cost_required_and_redundant": {
+    "problem": {
+      "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+      "obligation": "declared_predicate",
+      "predicate_description": "Fixed registered finite predicate; no continuous-population extrapolation",
+      "catalogue_scope": "DECLARED_FINITE_CATALOGUE",
+      "complete_for_declared_finite_catalogue": true,
+      "cross_experiment_law": "CONDITIONAL_PRODUCT_LAWS",
+      "cost_unit": "DECLARED_EXPERIMENT_TYPE_UNITS",
+      "worlds": [
+        {
+          "world_id": "w0",
+          "obligation_verdict": true,
+          "joint": null
+        },
+        {
+          "world_id": "w1",
+          "obligation_verdict": false,
+          "joint": null
+        }
+      ],
+      "experiments": [
+        {
+          "experiment_id": "A",
+          "cost": "0",
+          "alphabet": [
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "w0",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            },
+            {
+              "world_id": "w1",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "abstract_known_law",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": null,
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "B",
+          "cost": "0",
+          "alphabet": [
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "w0",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            },
+            {
+              "world_id": "w1",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "abstract_known_law",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": null,
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "C",
+          "cost": "2",
+          "alphabet": [
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "w0",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            },
+            {
+              "world_id": "w1",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "abstract_known_law",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": null,
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        }
+      ]
+    },
+    "production": {
+      "status": "MINIMUM_RESOLVING_MENU",
+      "selected_experiments": [
+        "A"
+      ],
+      "total_cost": "0",
+      "cost_unit": "DECLARED_EXPERIMENT_TYPE_UNITS",
+      "opposite_verdict_pairs": 1,
+      "coverage": [
+        {
+          "worlds": [
+            "w0",
+            "w1"
+          ],
+          "experiments": [
+            "A"
+          ]
+        }
+      ],
+      "removal_witnesses": [
+        {
+          "removed_experiment": "A",
+          "unseparated_opposing_worlds": [
+            "w0",
+            "w1"
+          ]
+        }
+      ],
+      "impossibility": null,
+      "unanimous_catalogue_verdict": null,
+      "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+      "finite_sample_resolution_guaranteed": false,
+      "physical_authorization": false,
+      "dynamic_programming_states": 2
+    },
+    "typed_output": {
+      "status": "UNRESOLVED",
+      "certificate": null,
+      "experiment_plan": {
+        "status": "MINIMUM_RESOLVING_MENU",
+        "selected_experiments": [
+          "A"
+        ],
+        "total_cost": "0",
+        "cost_unit": "DECLARED_EXPERIMENT_TYPE_UNITS",
+        "opposite_verdict_pairs": 1,
+        "coverage": [
+          {
+            "worlds": [
+              "w0",
+              "w1"
+            ],
+            "experiments": [
+              "A"
+            ]
+          }
+        ],
+        "removal_witnesses": [
+          {
+            "removed_experiment": "A",
+            "unseparated_opposing_worlds": [
+              "w0",
+              "w1"
+            ]
+          }
+        ],
+        "impossibility": null,
+        "unanimous_catalogue_verdict": null,
+        "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+        "finite_sample_resolution_guaranteed": false,
+        "physical_authorization": false,
+        "dynamic_programming_states": 2
+      },
+      "recovery_authorized": false,
+      "reason": "MINIMUM_CAPABLE_EXPERIMENT_TYPE_PLAN",
+      "interpretation": "Different laws identify in principle; finite observations may remain inconclusive or refute recovery"
+    },
+    "independent_exact_oracle": [
+      "0",
+      [
+        "A"
+      ]
+    ],
+    "supplied_reference_agrees": true,
+    "source_cost_greedy": [
+      "0",
+      [
+        "A"
+      ]
+    ],
+    "reverse_deleted_greedy": [
+      "0",
+      [
+        "A"
+      ]
+    ],
+    "solver_wall_seconds": 4.778499715030193e-05,
+    "evidence_type": "ANALYTICAL_ONLY_NOT_ROBOT_EPISODES"
+  },
+  "cost_priority_before_cardinality": {
+    "problem": {
+      "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+      "obligation": "declared_predicate",
+      "predicate_description": "Fixed registered finite predicate; no continuous-population extrapolation",
+      "catalogue_scope": "DECLARED_FINITE_CATALOGUE",
+      "complete_for_declared_finite_catalogue": true,
+      "cross_experiment_law": "CONDITIONAL_PRODUCT_LAWS",
+      "cost_unit": "DECLARED_EXPERIMENT_TYPE_UNITS",
+      "worlds": [
+        {
+          "world_id": "w0",
+          "obligation_verdict": true,
+          "joint": null
+        },
+        {
+          "world_id": "w1",
+          "obligation_verdict": false,
+          "joint": null
+        },
+        {
+          "world_id": "w2",
+          "obligation_verdict": false,
+          "joint": null
+        }
+      ],
+      "experiments": [
+        {
+          "experiment_id": "cheapA",
+          "cost": "1/3",
+          "alphabet": [
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "w0",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            },
+            {
+              "world_id": "w1",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "world_id": "w2",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "abstract_known_law",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": null,
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "cheapB",
+          "cost": "1/3",
+          "alphabet": [
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "w0",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            },
+            {
+              "world_id": "w1",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            },
+            {
+              "world_id": "w2",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "abstract_known_law",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": null,
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "single",
+          "cost": "1",
+          "alphabet": [
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "w0",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            },
+            {
+              "world_id": "w1",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "world_id": "w2",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "abstract_known_law",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": null,
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        }
+      ]
+    },
+    "production": {
+      "status": "MINIMUM_RESOLVING_MENU",
+      "selected_experiments": [
+        "cheapA",
+        "cheapB"
+      ],
+      "total_cost": "2/3",
+      "cost_unit": "DECLARED_EXPERIMENT_TYPE_UNITS",
+      "opposite_verdict_pairs": 2,
+      "coverage": [
+        {
+          "worlds": [
+            "w0",
+            "w1"
+          ],
+          "experiments": [
+            "cheapA"
+          ]
+        },
+        {
+          "worlds": [
+            "w0",
+            "w2"
+          ],
+          "experiments": [
+            "cheapB"
+          ]
+        }
+      ],
+      "removal_witnesses": [
+        {
+          "removed_experiment": "cheapA",
+          "unseparated_opposing_worlds": [
+            "w0",
+            "w1"
+          ]
+        },
+        {
+          "removed_experiment": "cheapB",
+          "unseparated_opposing_worlds": [
+            "w0",
+            "w2"
+          ]
+        }
+      ],
+      "impossibility": null,
+      "unanimous_catalogue_verdict": null,
+      "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+      "finite_sample_resolution_guaranteed": false,
+      "physical_authorization": false,
+      "dynamic_programming_states": 4
+    },
+    "typed_output": {
+      "status": "UNRESOLVED",
+      "certificate": null,
+      "experiment_plan": {
+        "status": "MINIMUM_RESOLVING_MENU",
+        "selected_experiments": [
+          "cheapA",
+          "cheapB"
+        ],
+        "total_cost": "2/3",
+        "cost_unit": "DECLARED_EXPERIMENT_TYPE_UNITS",
+        "opposite_verdict_pairs": 2,
+        "coverage": [
+          {
+            "worlds": [
+              "w0",
+              "w1"
+            ],
+            "experiments": [
+              "cheapA"
+            ]
+          },
+          {
+            "worlds": [
+              "w0",
+              "w2"
+            ],
+            "experiments": [
+              "cheapB"
+            ]
+          }
+        ],
+        "removal_witnesses": [
+          {
+            "removed_experiment": "cheapA",
+            "unseparated_opposing_worlds": [
+              "w0",
+              "w1"
+            ]
+          },
+          {
+            "removed_experiment": "cheapB",
+            "unseparated_opposing_worlds": [
+              "w0",
+              "w2"
+            ]
+          }
+        ],
+        "impossibility": null,
+        "unanimous_catalogue_verdict": null,
+        "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+        "finite_sample_resolution_guaranteed": false,
+        "physical_authorization": false,
+        "dynamic_programming_states": 4
+      },
+      "recovery_authorized": false,
+      "reason": "MINIMUM_CAPABLE_EXPERIMENT_TYPE_PLAN",
+      "interpretation": "Different laws identify in principle; finite observations may remain inconclusive or refute recovery"
+    },
+    "independent_exact_oracle": [
+      "2/3",
+      [
+        "cheapA",
+        "cheapB"
+      ]
+    ],
+    "supplied_reference_agrees": true,
+    "source_cost_greedy": [
+      "2/3",
+      [
+        "cheapA",
+        "cheapB"
+      ]
+    ],
+    "reverse_deleted_greedy": [
+      "2/3",
+      [
+        "cheapA",
+        "cheapB"
+      ]
+    ],
+    "solver_wall_seconds": 6.263601244427264e-05,
+    "evidence_type": "ANALYTICAL_ONLY_NOT_ROBOT_EPISODES"
+  },
+  "finite_sample_overlap": {
+    "problem": {
+      "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+      "obligation": "declared_predicate",
+      "predicate_description": "Fixed registered finite predicate; no continuous-population extrapolation",
+      "catalogue_scope": "DECLARED_FINITE_CATALOGUE",
+      "complete_for_declared_finite_catalogue": true,
+      "cross_experiment_law": "CONDITIONAL_PRODUCT_LAWS",
+      "cost_unit": "DECLARED_EXPERIMENT_TYPE_UNITS",
+      "worlds": [
+        {
+          "world_id": "w0",
+          "obligation_verdict": true,
+          "joint": null
+        },
+        {
+          "world_id": "w1",
+          "obligation_verdict": false,
+          "joint": null
+        }
+      ],
+      "experiments": [
+        {
+          "experiment_id": "e0",
+          "cost": "1",
+          "alphabet": [
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "w0",
+              "probabilities": [
+                "1/2",
+                "1/2"
+              ]
+            },
+            {
+              "world_id": "w1",
+              "probabilities": [
+                "5000000000001/10000000000000",
+                "4999999999999/10000000000000"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "abstract_known_law",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": null,
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        }
+      ]
+    },
+    "production": {
+      "status": "MINIMUM_RESOLVING_MENU",
+      "selected_experiments": [
+        "e0"
+      ],
+      "total_cost": "1",
+      "cost_unit": "DECLARED_EXPERIMENT_TYPE_UNITS",
+      "opposite_verdict_pairs": 1,
+      "coverage": [
+        {
+          "worlds": [
+            "w0",
+            "w1"
+          ],
+          "experiments": [
+            "e0"
+          ]
+        }
+      ],
+      "removal_witnesses": [
+        {
+          "removed_experiment": "e0",
+          "unseparated_opposing_worlds": [
+            "w0",
+            "w1"
+          ]
+        }
+      ],
+      "impossibility": null,
+      "unanimous_catalogue_verdict": null,
+      "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+      "finite_sample_resolution_guaranteed": false,
+      "physical_authorization": false,
+      "dynamic_programming_states": 2
+    },
+    "typed_output": {
+      "status": "UNRESOLVED",
+      "certificate": null,
+      "experiment_plan": {
+        "status": "MINIMUM_RESOLVING_MENU",
+        "selected_experiments": [
+          "e0"
+        ],
+        "total_cost": "1",
+        "cost_unit": "DECLARED_EXPERIMENT_TYPE_UNITS",
+        "opposite_verdict_pairs": 1,
+        "coverage": [
+          {
+            "worlds": [
+              "w0",
+              "w1"
+            ],
+            "experiments": [
+              "e0"
+            ]
+          }
+        ],
+        "removal_witnesses": [
+          {
+            "removed_experiment": "e0",
+            "unseparated_opposing_worlds": [
+              "w0",
+              "w1"
+            ]
+          }
+        ],
+        "impossibility": null,
+        "unanimous_catalogue_verdict": null,
+        "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+        "finite_sample_resolution_guaranteed": false,
+        "physical_authorization": false,
+        "dynamic_programming_states": 2
+      },
+      "recovery_authorized": false,
+      "reason": "MINIMUM_CAPABLE_EXPERIMENT_TYPE_PLAN",
+      "interpretation": "Different laws identify in principle; finite observations may remain inconclusive or refute recovery"
+    },
+    "independent_exact_oracle": [
+      "1",
+      [
+        "e0"
+      ]
+    ],
+    "supplied_reference_agrees": false,
+    "source_cost_greedy": [
+      "1",
+      [
+        "e0"
+      ]
+    ],
+    "reverse_deleted_greedy": [
+      "1",
+      [
+        "e0"
+      ]
+    ],
+    "solver_wall_seconds": 4.2073981603607535e-05,
+    "evidence_type": "ANALYTICAL_ONLY_NOT_ROBOT_EPISODES"
+  },
+  "fractional_cost_tolerance_trap": {
+    "problem": {
+      "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+      "obligation": "declared_predicate",
+      "predicate_description": "Fixed registered finite predicate; no continuous-population extrapolation",
+      "catalogue_scope": "DECLARED_FINITE_CATALOGUE",
+      "complete_for_declared_finite_catalogue": true,
+      "cross_experiment_law": "CONDITIONAL_PRODUCT_LAWS",
+      "cost_unit": "DECLARED_EXPERIMENT_TYPE_UNITS",
+      "worlds": [
+        {
+          "world_id": "w0",
+          "obligation_verdict": true,
+          "joint": null
+        },
+        {
+          "world_id": "w1",
+          "obligation_verdict": false,
+          "joint": null
+        }
+      ],
+      "experiments": [
+        {
+          "experiment_id": "A",
+          "cost": "1",
+          "alphabet": [
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "w0",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            },
+            {
+              "world_id": "w1",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "abstract_known_law",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": null,
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        },
+        {
+          "experiment_id": "B",
+          "cost": "999999999999999999999999999999/1000000000000000000000000000000",
+          "alphabet": [
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "w0",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            },
+            {
+              "world_id": "w1",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "abstract_known_law",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": null,
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        }
+      ]
+    },
+    "production": {
+      "status": "MINIMUM_RESOLVING_MENU",
+      "selected_experiments": [
+        "B"
+      ],
+      "total_cost": "999999999999999999999999999999/1000000000000000000000000000000",
+      "cost_unit": "DECLARED_EXPERIMENT_TYPE_UNITS",
+      "opposite_verdict_pairs": 1,
+      "coverage": [
+        {
+          "worlds": [
+            "w0",
+            "w1"
+          ],
+          "experiments": [
+            "B"
+          ]
+        }
+      ],
+      "removal_witnesses": [
+        {
+          "removed_experiment": "B",
+          "unseparated_opposing_worlds": [
+            "w0",
+            "w1"
+          ]
+        }
+      ],
+      "impossibility": null,
+      "unanimous_catalogue_verdict": null,
+      "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+      "finite_sample_resolution_guaranteed": false,
+      "physical_authorization": false,
+      "dynamic_programming_states": 2
+    },
+    "typed_output": {
+      "status": "UNRESOLVED",
+      "certificate": null,
+      "experiment_plan": {
+        "status": "MINIMUM_RESOLVING_MENU",
+        "selected_experiments": [
+          "B"
+        ],
+        "total_cost": "999999999999999999999999999999/1000000000000000000000000000000",
+        "cost_unit": "DECLARED_EXPERIMENT_TYPE_UNITS",
+        "opposite_verdict_pairs": 1,
+        "coverage": [
+          {
+            "worlds": [
+              "w0",
+              "w1"
+            ],
+            "experiments": [
+              "B"
+            ]
+          }
+        ],
+        "removal_witnesses": [
+          {
+            "removed_experiment": "B",
+            "unseparated_opposing_worlds": [
+              "w0",
+              "w1"
+            ]
+          }
+        ],
+        "impossibility": null,
+        "unanimous_catalogue_verdict": null,
+        "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+        "finite_sample_resolution_guaranteed": false,
+        "physical_authorization": false,
+        "dynamic_programming_states": 2
+      },
+      "recovery_authorized": false,
+      "reason": "MINIMUM_CAPABLE_EXPERIMENT_TYPE_PLAN",
+      "interpretation": "Different laws identify in principle; finite observations may remain inconclusive or refute recovery"
+    },
+    "independent_exact_oracle": [
+      "999999999999999999999999999999/1000000000000000000000000000000",
+      [
+        "B"
+      ]
+    ],
+    "supplied_reference_agrees": true,
+    "source_cost_greedy": [
+      "999999999999999999999999999999/1000000000000000000000000000000",
+      [
+        "B"
+      ]
+    ],
+    "reverse_deleted_greedy": [
+      "999999999999999999999999999999/1000000000000000000000000000000",
+      [
+        "B"
+      ]
+    ],
+    "solver_wall_seconds": 6.590000702999532e-05,
+    "evidence_type": "ANALYTICAL_ONLY_NOT_ROBOT_EPISODES"
+  },
+  "unanimous_true_is_not_population_certificate": {
+    "problem": {
+      "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+      "obligation": "declared_predicate",
+      "predicate_description": "Fixed registered finite predicate; no continuous-population extrapolation",
+      "catalogue_scope": "DECLARED_FINITE_CATALOGUE",
+      "complete_for_declared_finite_catalogue": true,
+      "cross_experiment_law": "CONDITIONAL_PRODUCT_LAWS",
+      "cost_unit": "DECLARED_EXPERIMENT_TYPE_UNITS",
+      "worlds": [
+        {
+          "world_id": "w0",
+          "obligation_verdict": true,
+          "joint": null
+        },
+        {
+          "world_id": "w1",
+          "obligation_verdict": true,
+          "joint": null
+        }
+      ],
+      "experiments": [
+        {
+          "experiment_id": "e0",
+          "cost": "1",
+          "alphabet": [
+            "0",
+            "1"
+          ],
+          "laws": [
+            {
+              "world_id": "w0",
+              "probabilities": [
+                "1",
+                "0"
+              ]
+            },
+            {
+              "world_id": "w1",
+              "probabilities": [
+                "0",
+                "1"
+              ]
+            }
+          ],
+          "source": {
+            "kind": "abstract_known_law",
+            "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+            "provenance": [
+              "Declared exact finite model; no observed robot episodes"
+            ],
+            "assumptions": [
+              "Known exact likelihoods",
+              "Complete declared finite catalogue",
+              "Conditional product observation laws"
+            ],
+            "qualified": true,
+            "participant_selection": "FIXED_BEFORE_OUTCOMES",
+            "participant_sampling": "DECLARED_ANALYTICAL",
+            "law_origin": "KNOWN_ANALYTICAL_MODEL",
+            "context_operation": "FIXED_OUTCOME_TARGET",
+            "action": null,
+            "propensity": null,
+            "coupling": null,
+            "recorded_channels": [],
+            "observation_timing": "NOT_OBSERVATION"
+          }
+        }
+      ]
+    },
+    "production": {
+      "status": "MINIMUM_RESOLVING_MENU",
+      "selected_experiments": [],
+      "total_cost": "0",
+      "cost_unit": "DECLARED_EXPERIMENT_TYPE_UNITS",
+      "opposite_verdict_pairs": 0,
+      "coverage": [],
+      "removal_witnesses": [],
+      "impossibility": null,
+      "unanimous_catalogue_verdict": true,
+      "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+      "finite_sample_resolution_guaranteed": false,
+      "physical_authorization": false,
+      "dynamic_programming_states": 1
+    },
+    "typed_output": {
+      "status": "UNRESOLVED",
+      "certificate": null,
+      "experiment_plan": {
+        "status": "MINIMUM_RESOLVING_MENU",
+        "selected_experiments": [],
+        "total_cost": "0",
+        "cost_unit": "DECLARED_EXPERIMENT_TYPE_UNITS",
+        "opposite_verdict_pairs": 0,
+        "coverage": [],
+        "removal_witnesses": [],
+        "impossibility": null,
+        "unanimous_catalogue_verdict": true,
+        "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+        "finite_sample_resolution_guaranteed": false,
+        "physical_authorization": false,
+        "dynamic_programming_states": 1
+      },
+      "recovery_authorized": false,
+      "reason": "FINITE_CATALOGUE_ALREADY_POSITIVE_NOT_A_CALIBRATION_CERTIFICATE",
+      "interpretation": "Different laws identify in principle; finite observations may remain inconclusive or refute recovery"
+    },
+    "independent_exact_oracle": [
+      "0",
+      []
+    ],
+    "supplied_reference_agrees": true,
+    "source_cost_greedy": [
+      "0",
+      []
+    ],
+    "reverse_deleted_greedy": [
+      "0",
+      []
+    ],
+    "solver_wall_seconds": 2.2894004359841347e-05,
+    "evidence_type": "ANALYTICAL_ONLY_NOT_ROBOT_EPISODES"
+  },
+  "opposing_empty_menu": {
+    "problem": {
+      "population_id": "ANALYTICAL_FINITE_WORLD_STUDY",
+      "obligation": "declared_predicate",
+      "predicate_description": "Fixed registered finite predicate; no continuous-population extrapolation",
+      "catalogue_scope": "DECLARED_FINITE_CATALOGUE",
+      "complete_for_declared_finite_catalogue": true,
+      "cross_experiment_law": "CONDITIONAL_PRODUCT_LAWS",
+      "cost_unit": "DECLARED_EXPERIMENT_TYPE_UNITS",
+      "worlds": [
+        {
+          "world_id": "w0",
+          "obligation_verdict": true,
+          "joint": null
+        },
+        {
+          "world_id": "w1",
+          "obligation_verdict": false,
+          "joint": null
+        }
+      ],
+      "experiments": []
+    },
+    "production": {
+      "status": "NOT_RESOLVABLE_WITH_AVAILABLE_EVIDENCE",
+      "selected_experiments": [],
+      "total_cost": null,
+      "cost_unit": "DECLARED_EXPERIMENT_TYPE_UNITS",
+      "opposite_verdict_pairs": 1,
+      "coverage": [],
+      "removal_witnesses": [],
+      "impossibility": {
+        "worlds": [
+          "w0",
+          "w1"
+        ],
+        "verdicts": [
+          true,
+          false
+        ],
+        "identical_laws": []
+      },
+      "unanimous_catalogue_verdict": null,
+      "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+      "finite_sample_resolution_guaranteed": false,
+      "physical_authorization": false,
+      "dynamic_programming_states": 0
+    },
+    "typed_output": {
+      "status": "NOT_RESOLVABLE_WITH_MENU",
+      "certificate": null,
+      "experiment_plan": {
+        "status": "NOT_RESOLVABLE_WITH_AVAILABLE_EVIDENCE",
+        "selected_experiments": [],
+        "total_cost": null,
+        "cost_unit": "DECLARED_EXPERIMENT_TYPE_UNITS",
+        "opposite_verdict_pairs": 1,
+        "coverage": [],
+        "removal_witnesses": [],
+        "impossibility": {
+          "worlds": [
+            "w0",
+            "w1"
+          ],
+          "verdicts": [
+            true,
+            false
+          ],
+          "identical_laws": []
+        },
+        "unanimous_catalogue_verdict": null,
+        "scope": "DECLARED_FINITE_CATALOGUE_ONLY",
+        "finite_sample_resolution_guaranteed": false,
+        "physical_authorization": false,
+        "dynamic_programming_states": 0
+      },
+      "recovery_authorized": false,
+      "reason": "OPPOSING_WORLDS_HAVE_IDENTICAL_ALL_MENU_LAWS",
+      "interpretation": "Impossibility is conditional on this finite catalogue, declared sources and product-data model"
+    },
+    "independent_exact_oracle": null,
+    "supplied_reference_agrees": true,
+    "source_cost_greedy": null,
+    "reverse_deleted_greedy": null,
+    "solver_wall_seconds": 1.685900497250259e-05,
+    "evidence_type": "ANALYTICAL_ONLY_NOT_ROBOT_EPISODES"
+  }
+}

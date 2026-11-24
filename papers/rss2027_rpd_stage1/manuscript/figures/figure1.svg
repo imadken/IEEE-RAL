@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="248.4pt" height="219.6pt" viewBox="0 0 248.4 219.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-20T09:49:00.724470</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Scientific vector schematic</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 219.6 
+L 248.4 219.6 
+L 248.4 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 154.8 41.76 
+L 213.84 41.76 
+L 213.84 27.36 
+L 154.8 27.36 
+z
+" clip-path="url(#p2838861318)" style="fill: #cbd4db; stroke: #183041; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 154.8 67.68 
+L 213.84 67.68 
+L 213.84 53.28 
+L 154.8 53.28 
+z
+" clip-path="url(#p2838861318)" style="fill: #cbd4db; stroke: #183041; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 39.6 51.12 
+L 147.6 43.92 
+L 147.6 35.28 
+L 39.6 42.48 
+z
+" clip-path="url(#p2838861318)" style="fill: #5d89a5; stroke: #183041; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 114.322588 62.64 
+Q 129.959966 62.64 144.702916 62.64 
+" clip-path="url(#p2838861318)" style="fill: none; stroke: #183041; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 141.902916 61.24 
+L 144.702916 62.64 
+L 141.902916 64.04 
+z
+" clip-path="url(#p2838861318)" style="fill: #183041; stroke: #183041; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 4.32 183.6 
+L 78.48 183.6 
+Q 80.64 183.6 80.64 181.44 
+L 80.64 105.12 
+Q 80.64 102.96 78.48 102.96 
+L 4.32 102.96 
+Q 2.16 102.96 2.16 105.12 
+L 2.16 181.44 
+Q 2.16 183.6 4.32 183.6 
+z
+" clip-path="url(#p2838861318)" style="fill: #edf2f5; stroke: #8a9aa6; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 121.846311 95.898691 
+Q 82.441891 98.639868 43.929741 101.318975 
+" clip-path="url(#p2838861318)" style="fill: none; stroke: #183041; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 46.820147 102.521286 
+L 43.929741 101.318975 
+L 46.625834 99.728037 
+z
+" clip-path="url(#p2838861318)" style="fill: #183041; stroke: #183041; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 87.12 183.6 
+L 161.28 183.6 
+Q 163.44 183.6 163.44 181.44 
+L 163.44 105.12 
+Q 163.44 102.96 161.28 102.96 
+L 87.12 102.96 
+Q 84.96 102.96 84.96 105.12 
+L 84.96 181.44 
+Q 84.96 183.6 87.12 183.6 
+z
+" clip-path="url(#p2838861318)" style="fill: #fff0e8; stroke: #8a9aa6; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 123.84 97.759687 
+Q 123.84 98.639175 123.84 98.624235 
+" clip-path="url(#p2838861318)" style="fill: none; stroke: #183041; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 125.24 95.824235 
+L 123.84 98.624235 
+L 122.44 95.824235 
+z
+" clip-path="url(#p2838861318)" style="fill: #183041; stroke: #183041; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 169.92 183.6 
+L 244.08 183.6 
+Q 246.24 183.6 246.24 181.44 
+L 246.24 105.12 
+Q 246.24 102.96 244.08 102.96 
+L 169.92 102.96 
+Q 167.76 102.96 167.76 105.12 
+L 167.76 181.44 
+Q 167.76 183.6 169.92 183.6 
+z
+" clip-path="url(#p2838861318)" style="fill: #e3f2ec; stroke: #8a9aa6; stroke-width: 0.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 125.833689 95.898691 
+Q 165.238109 98.639868 203.750259 101.318975 
+" clip-path="url(#p2838861318)" style="fill: none; stroke: #183041; stroke-width: 0.8; stroke-linecap: round"/>
+    <path d="M 201.054166 99.728037 
+L 203.750259 101.318975 
+L 200.859853 102.521286 
+z
+" clip-path="url(#p2838861318)" style="fill: #183041; stroke: #183041; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183041" x="123.84" y="10.08" transform="rotate(-0 123.84 10.08)">CONCEPTUAL SCENE · CONSTRUCTED WORLDS</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183041" x="30.96" y="62.64" transform="rotate(-0 30.96 62.64)">held peg</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183041" x="182.16" y="77.04" transform="rotate(-0 182.16 77.04)">fixture</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183041" x="118.08" y="72" transform="rotate(-0 118.08 72)">insertion</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183041" x="123.84" y="92.16" transform="rotate(-0 123.84 92.16)">Same checkpoint · same 0.5 s · 3.5 s left</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183041" x="41.04" y="113.76" transform="rotate(-0 41.04 113.76)">HOLD</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183041" x="41.04" y="124.56" transform="rotate(-0 41.04 124.56)">no response split</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183041" x="8.64" y="138.96" transform="rotate(-0 8.64 138.96)">A</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183041" x="22.32" y="138.96" transform="rotate(-0 22.32 138.96)">{a0}</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183041" x="8.64" y="153.36" transform="rotate(-0 8.64 153.36)">B</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183041" x="22.32" y="153.36" transform="rotate(-0 22.32 153.36)">{a0, a1}</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183041" x="8.64" y="167.76" transform="rotate(-0 8.64 167.76)">C</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183041" x="22.32" y="167.76" transform="rotate(-0 22.32 167.76)">{a1}</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183041" x="123.84" y="113.76" transform="rotate(-0 123.84 113.76)">FINE PROBE</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183041" x="123.84" y="124.56" transform="rotate(-0 123.84 124.56)">A / B / C</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183041" x="91.44" y="138.96" transform="rotate(-0 91.44 138.96)">A</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183041" x="105.12" y="138.96" transform="rotate(-0 105.12 138.96)">{a0}</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183041" x="91.44" y="153.36" transform="rotate(-0 91.44 153.36)">B</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183041" x="105.12" y="153.36" transform="rotate(-0 105.12 153.36)">{a1}</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183041" x="91.44" y="167.76" transform="rotate(-0 91.44 167.76)">C</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #ae392e" x="105.12" y="167.76" transform="rotate(-0 105.12 167.76)">EMPTY</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183041" x="206.64" y="113.76" transform="rotate(-0 206.64 113.76)">COARSE PROBE</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183041" x="206.64" y="124.56" transform="rotate(-0 206.64 124.56)">AB / C</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183041" x="174.24" y="138.96" transform="rotate(-0 174.24 138.96)">A</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183041" x="187.92" y="138.96" transform="rotate(-0 187.92 138.96)">{a0}</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183041" x="174.24" y="153.36" transform="rotate(-0 174.24 153.36)">B</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183041" x="187.92" y="153.36" transform="rotate(-0 187.92 153.36)">{a0, a1}</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183041" x="174.24" y="167.76" transform="rotate(-0 174.24 167.76)">C</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183041" x="187.92" y="167.76" transform="rotate(-0 187.92 167.76)">{a1}</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183041" x="123.84" y="192.96" transform="rotate(-0 123.84 192.96)">B loses one option; C loses the entire repertoire.</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 7.56px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183041" x="123.84" y="207.36" transform="rotate(-0 123.84 207.36)">Online coarse branch: AB → a0; C → a1</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p2838861318">
+   <rect x="0" y="0" width="248.4" height="219.6"/>
+  </clipPath>
+ </defs>
+</svg>

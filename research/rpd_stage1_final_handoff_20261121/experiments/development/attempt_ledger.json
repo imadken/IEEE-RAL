@@ -1,0 +1,40 @@
+{
+  "attempts": [
+    {
+      "started_UTC": "2026-11-21T11:17:02.542723+00:00",
+      "wall_seconds": 12.452545857988298,
+      "returncode": 0,
+      "timed_out": false,
+      "source_registration_sha256": "3222b6e243309f8f1db9ee194ced43a674ac2757173c11a7a413c71cc6507359",
+      "repeat": 0,
+      "source_status": "COMPLETE",
+      "terminal": {
+        "completion": false,
+        "native_goal_at_deadline": false,
+        "whole_postroot_compliant": false
+      },
+      "nominal_compliant_insertion": false
+    },
+    {
+      "started_UTC": "2026-11-21T11:17:15.006227+00:00",
+      "wall_seconds": 12.35520264704246,
+      "returncode": 0,
+      "timed_out": false,
+      "source_registration_sha256": "3222b6e243309f8f1db9ee194ced43a674ac2757173c11a7a413c71cc6507359",
+      "repeat": 1,
+      "source_status": "COMPLETE",
+      "terminal": {
+        "completion": false,
+        "native_goal_at_deadline": false,
+        "whole_postroot_compliant": false
+      },
+      "nominal_compliant_insertion": false
+    }
+  ],
+  "worker_seconds": 24.80774850503076,
+  "new_development_parents": 1,
+  "postfailure_qualification_parents": 0,
+  "exploratory_parents": 0,
+  "confirmation_parents": 0,
+  "stop_if_nominal_gate_fails": true
+}

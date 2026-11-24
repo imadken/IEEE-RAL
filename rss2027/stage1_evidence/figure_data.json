@@ -1,0 +1,397 @@
+{
+  "results": {
+    "PickCube-v1": {
+      "calibration": {
+        "0": {
+          "n_c": 147,
+          "n_r": 167,
+          "intervals": {
+            "c": [
+              0.0,
+              0.043003520123135505
+            ],
+            "r": [
+              0.7047457305121301,
+              0.8887069465451968
+            ]
+          },
+          "harm_upper": 0.043003520123135505,
+          "gain_lower": 0.6617422103889946,
+          "gain_upper": 0.8887069465451968,
+          "harm_lower": 0
+        },
+        "1": {
+          "n_c": 88,
+          "n_r": 82,
+          "intervals": {
+            "c": [
+              0.0,
+              0.07079488626884296
+            ],
+            "r": [
+              0.6351487352414359,
+              0.9053437615980222
+            ]
+          },
+          "harm_upper": 0.07079488626884296,
+          "gain_lower": 0.5643538489725929,
+          "gain_upper": 0.9053437615980222,
+          "harm_lower": 0
+        },
+        "2": {
+          "n_c": 158,
+          "n_r": 136,
+          "intervals": {
+            "c": [
+              0.959929563846977,
+              1.0
+            ],
+            "r": [
+              0.5405383081404056,
+              0.7820964008642309
+            ]
+          },
+          "harm_upper": 0.4594616918595944,
+          "gain_lower": -0.4594616918595944,
+          "gain_upper": -0.1778331629827461,
+          "harm_lower": 0.1778331629827461
+        },
+        "3": {
+          "n_c": 121,
+          "n_r": 125,
+          "intervals": {
+            "c": [
+              0.9480002021953159,
+              1.0
+            ],
+            "r": [
+              0.6057331195160983,
+              0.8425338052290513
+            ]
+          },
+          "harm_upper": 0.3942668804839017,
+          "gain_lower": -0.3942668804839017,
+          "gain_upper": -0.10546639696626459,
+          "harm_lower": 0.10546639696626459
+        }
+      },
+      "passed_leaves": [
+        0,
+        1
+      ],
+      "methods": {
+        "DSRE": {
+          "n": 256,
+          "recover": 111,
+          "completion": 227,
+          "rescue": 84,
+          "harm": 0,
+          "futile": 27,
+          "redundant": 0,
+          "default_continue": 145,
+          "observed_harm_two_sided_CP95": [
+            0.0,
+            0.03268699402394771
+          ]
+        },
+        "ordinary_rules": {
+          "n": 256,
+          "recover": 111,
+          "completion": 227,
+          "rescue": 84,
+          "harm": 0,
+          "futile": 27,
+          "redundant": 0,
+          "default_continue": 145,
+          "observed_harm_two_sided_CP95": [
+            0.0,
+            0.03268699402394771
+          ]
+        },
+        "tabular_Kallus_adaptation": {
+          "n": 256,
+          "recover": 111,
+          "completion": 227,
+          "rescue": 84,
+          "harm": 0,
+          "futile": 27,
+          "redundant": 0,
+          "default_continue": 145,
+          "observed_harm_two_sided_CP95": [
+            0.0,
+            0.03268699402394771
+          ]
+        },
+        "Li_no_harm_adaptation": {
+          "n": 256,
+          "recover": 111,
+          "completion": 227,
+          "rescue": 84,
+          "harm": 0,
+          "futile": 27,
+          "redundant": 0,
+          "default_continue": 145,
+          "observed_harm_two_sided_CP95": [
+            0.0,
+            0.03268699402394771
+          ]
+        },
+        "CART2_matched": {
+          "n": 256,
+          "recover": 111,
+          "completion": 227,
+          "rescue": 84,
+          "harm": 0,
+          "futile": 27,
+          "redundant": 0,
+          "default_continue": 145,
+          "observed_harm_two_sided_CP95": [
+            0.0,
+            0.03268699402394771
+          ]
+        },
+        "ensemble_matched": {
+          "n": 256,
+          "recover": 111,
+          "completion": 227,
+          "rescue": 84,
+          "harm": 0,
+          "futile": 27,
+          "redundant": 0,
+          "default_continue": 145,
+          "observed_harm_two_sided_CP95": [
+            0.0,
+            0.03268699402394771
+          ]
+        },
+        "DISCRET_style_adaptation": {
+          "n": 256,
+          "recover": 111,
+          "completion": 227,
+          "rescue": 84,
+          "harm": 0,
+          "futile": 27,
+          "redundant": 0,
+          "default_continue": 145,
+          "observed_harm_two_sided_CP95": [
+            0.0,
+            0.03268699402394771
+          ]
+        },
+        "empirical_utility": {
+          "n": 256,
+          "recover": 111,
+          "completion": 227,
+          "rescue": 84,
+          "harm": 0,
+          "futile": 27,
+          "redundant": 0,
+          "default_continue": 145,
+          "observed_harm_two_sided_CP95": [
+            0.0,
+            0.03268699402394771
+          ]
+        },
+        "naive_independence": {
+          "n": 256,
+          "recover": 111,
+          "completion": 227,
+          "rescue": 84,
+          "harm": 0,
+          "futile": 27,
+          "redundant": 0,
+          "default_continue": 145,
+          "observed_harm_two_sided_CP95": [
+            0.0,
+            0.03268699402394771
+          ]
+        },
+        "always_continue": {
+          "n": 256,
+          "recover": 0,
+          "completion": 143,
+          "rescue": 0,
+          "harm": 0,
+          "futile": 0,
+          "redundant": 0,
+          "default_continue": 256,
+          "observed_harm_two_sided_CP95": [
+            0.0,
+            1.0
+          ]
+        },
+        "always_recover": {
+          "n": 256,
+          "recover": 256,
+          "completion": 197,
+          "rescue": 86,
+          "harm": 32,
+          "futile": 27,
+          "redundant": 111,
+          "default_continue": 0,
+          "observed_harm_two_sided_CP95": [
+            0.0870937701193029,
+            0.17185990741178095
+          ]
+        },
+        "outcome_regression_same_gate": {
+          "n": 256,
+          "recover": 111,
+          "completion": 227,
+          "rescue": 84,
+          "harm": 0,
+          "futile": 27,
+          "redundant": 0,
+          "default_continue": 145,
+          "observed_harm_two_sided_CP95": [
+            0.0,
+            0.03268699402394771
+          ]
+        }
+      }
+    },
+    "PushCube-v1": {
+      "calibration": {
+        "0": {
+          "n_c": 251,
+          "n_r": 261,
+          "intervals": {
+            "c": [
+              0.0,
+              0.022719298466194953
+            ],
+            "r": [
+              0.9562944684910698,
+              0.9989038756354169
+            ]
+          },
+          "harm_upper": 0.022719298466194953,
+          "gain_lower": 0.9335751700248749,
+          "gain_upper": 0.9989038756354169,
+          "harm_lower": 0
+        },
+        "1": {
+          "n_c": 241,
+          "n_r": 271,
+          "intervals": {
+            "c": [
+              0.9527320855917006,
+              0.9988125851020583
+            ],
+            "r": [
+              0.9641668157301874,
+              0.999699789396191
+            ]
+          },
+          "harm_upper": 0.035833184269812635,
+          "gain_lower": -0.034645769371870916,
+          "gain_upper": 0.046967703804490335,
+          "harm_lower": 0
+        }
+      },
+      "passed_leaves": [
+        0
+      ],
+      "methods": {
+        "DSRE": {
+          "n": 256,
+          "recover": 128,
+          "completion": 253,
+          "rescue": 126,
+          "harm": 0,
+          "futile": 2,
+          "redundant": 0,
+          "default_continue": 128,
+          "observed_harm_two_sided_CP95": [
+            0.0,
+            0.02840805344354391
+          ]
+        },
+        "exact_B7": {
+          "n": 256,
+          "recover": 128,
+          "completion": 253,
+          "rescue": 126,
+          "harm": 0,
+          "futile": 2,
+          "redundant": 0,
+          "default_continue": 128,
+          "observed_harm_two_sided_CP95": [
+            0.0,
+            0.02840805344354391
+          ]
+        },
+        "direct_partial_ID": {
+          "n": 256,
+          "recover": 128,
+          "completion": 253,
+          "rescue": 126,
+          "harm": 0,
+          "futile": 2,
+          "redundant": 0,
+          "default_continue": 128,
+          "observed_harm_two_sided_CP95": [
+            0.0,
+            0.02840805344354391
+          ]
+        },
+        "CART_same_gate": {
+          "n": 256,
+          "recover": 128,
+          "completion": 253,
+          "rescue": 126,
+          "harm": 0,
+          "futile": 2,
+          "redundant": 0,
+          "default_continue": 128,
+          "observed_harm_two_sided_CP95": [
+            0.0,
+            0.02840805344354391
+          ]
+        },
+        "always_continue": {
+          "n": 256,
+          "recover": 0,
+          "completion": 127,
+          "rescue": 0,
+          "harm": 0,
+          "futile": 0,
+          "redundant": 0,
+          "default_continue": 256,
+          "observed_harm_two_sided_CP95": [
+            0.0,
+            1.0
+          ]
+        },
+        "always_recover": {
+          "n": 256,
+          "recover": 256,
+          "completion": 252,
+          "rescue": 127,
+          "harm": 2,
+          "futile": 2,
+          "redundant": 125,
+          "default_continue": 0,
+          "observed_harm_two_sided_CP95": [
+            0.0009475342881075717,
+            0.02793491420405472
+          ]
+        },
+        "outcome_regression_same_gate": {
+          "n": 256,
+          "recover": 128,
+          "completion": 253,
+          "rescue": 126,
+          "harm": 0,
+          "futile": 2,
+          "redundant": 0,
+          "default_continue": 128,
+          "observed_harm_two_sided_CP95": [
+            0.0,
+            0.02840805344354391
+          ]
+        }
+      }
+    }
+  }
+}

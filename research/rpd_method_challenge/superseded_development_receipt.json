@@ -1,0 +1,31 @@
+{
+  "members": {
+    "research/rpd_method_challenge/development_audit/audit_summary.json": "041fab01d75a8db155fcd8242cee4f0b7ad890d462868f0aaa6bd688a04f1dc1",
+    "research/rpd_method_challenge/development_audit/exhaustive_cases.jsonl.xz": "23dd79270e0d94bdd639940638b3cb762f9585339360e12f20bf29ff71169103",
+    "research/rpd_method_challenge/development_audit/named_cases.json": "5f529c5c4039cfa47202a4d97da0c452a2471d5f83d06d18b24f2718e1c46698",
+    "research/rpd_method_challenge/development_audit/seeded_cases.jsonl.xz": "7cf46a9d94a830cb562073bee26ea8c7ffefcfcd862e328589d8974970d0b33f",
+    "research/rpd_method_challenge/development_full_run/code_freeze.json": "1da2476cd9a93b561801eda7e36f221c2df52633cf5afbe29170febe24ab5a60",
+    "research/rpd_method_challenge/development_full_run/execution_steps.json": "46c6b6bdc71dd394bc6f66ac474b086e6581bdd7375c0ac60b1b475dab932761",
+    "research/rpd_method_challenge/development_full_run/finite/audit_summary.json": "1994083a0e9e059d4d8e568a7100e464fd3cf6f888a590c3f7210caf0d56596c",
+    "research/rpd_method_challenge/development_full_run/finite/exhaustive_cases.jsonl.xz": "23dd79270e0d94bdd639940638b3cb762f9585339360e12f20bf29ff71169103",
+    "research/rpd_method_challenge/development_full_run/finite/named_cases.json": "874124abb4158097ab929be5089a35748590cf7bc20c68a368d373034fe7d5e6",
+    "research/rpd_method_challenge/development_full_run/finite/seeded_cases.jsonl.xz": "7cf46a9d94a830cb562073bee26ea8c7ffefcfcd862e328589d8974970d0b33f",
+    "research/rpd_method_challenge/development_full_run/logs/finite_planner_and_independent_oracles.txt": "1445cf86069d29af6785192d82ecb66e7bf42996022d12ba9924f250c017e4db",
+    "research/rpd_method_challenge/development_full_run/logs/focused_tests.txt": "d4f66fb71fbe787628b3e486c928933d96abe822fe293c0579a989a1ca4dc55d",
+    "research/rpd_method_challenge/development_full_run/logs/inactive_stage2_reservation.txt": "ddde5c5f309e868fdc820f0da37049a65dc06f7f52ffe2a11c56a95ed44e1031",
+    "research/rpd_method_challenge/development_full_run/logs/maintained_tests.txt": "4b8544d7138d0f93f76c4c9d5178b0e5d439cd4ee6b5bf178190a42e9131c6e2",
+    "research/rpd_method_challenge/development_full_run/logs/static_native_source_and_adapter_audit.txt": "e0f9b73f0c442fc6128a012ff39d2700beff1a76a3f1ba84d9289b6f5ccc79f0",
+    "research/rpd_method_challenge/development_full_run/run_receipt.json": "d56b1db71aa4ddd8773220c0674b79cac606c564ef2c80e5c3769d0b76f42230",
+    "research/rpd_method_challenge/development_full_run/source/source_and_adapters.json": "4cb0938e7bbd48b5eb31e36bed30d1982330b1b8f518d84f6b60b89a41a673be",
+    "research/rpd_method_challenge/development_full_run/stage2/protocol.json": "4b79d87479be59f2bc8e818b03879a8d5a395265de719cd9a55320f710ea8c2e",
+    "research/rpd_method_challenge/development_full_run/stage2/reserved_parents.jsonl": "244574f85a437df8202f42395c8e9c9655fff5bb2a72eb55dc0c38f6734ccf34",
+    "research/rpd_method_challenge/development_protocol/protocol.json": "5680c77203493179a84353529e05f05f9a56d5a93e94420d003b2228c3efe0af",
+    "research/rpd_method_challenge/development_protocol/reserved_parents.jsonl": "244574f85a437df8202f42395c8e9c9655fff5bb2a72eb55dc0c38f6734ccf34",
+    "research/rpd_method_challenge/development_source/source_and_adapters.json": "d50c37702d35748d40454a72ae0cd1f0edb168acd833607ba6b71be5b2040f88",
+    "research/rpd_method_challenge/development_source_with_native_fields/source_and_adapters.json": "864a6bfcaac77679204863e0009fa8ba4314bf2d6abfd768df4e1fa4a65c9dcd"
+  },
+  "archive_sha256": "719ad026f7d67dbc41d3dda0a5cb3b8a1ec8c5ccdb88a79229a0337195c610bb",
+  "original_bytes": 1410915,
+  "archive_bytes": 178568,
+  "scope": "Only current-session superseded development; old evidence/seals/manuscripts untouched; final outputs are separate"
+}

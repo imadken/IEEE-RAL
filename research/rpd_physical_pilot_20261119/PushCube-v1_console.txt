@@ -1,0 +1,38 @@
+{"task": "PushCube-v1", "parent": 0, "history": [], "endpoint": "continue", "repeat": 0, "status": "COMPLETE", "wall_seconds": 6.174, "macro_end": true, "deadline": true}
+{"task": "PushCube-v1", "parent": 0, "history": [], "endpoint": "continue", "repeat": 1, "status": "COMPLETE", "wall_seconds": 1.623, "macro_end": true, "deadline": true}
+{"task": "PushCube-v1", "parent": 0, "history": [], "endpoint": "recover", "repeat": 0, "status": "COMPLETE", "wall_seconds": 1.469, "macro_end": true, "deadline": true}
+{"task": "PushCube-v1", "parent": 0, "history": [], "endpoint": "recover", "repeat": 1, "status": "COMPLETE", "wall_seconds": 1.536, "macro_end": true, "deadline": true}
+{"task": "PushCube-v1", "parent": 0, "history": [], "endpoint": "STOP", "repeat": 0, "status": "COMPLETE", "wall_seconds": 1.44, "macro_end": null, "deadline": false}
+{"task": "PushCube-v1", "parent": 0, "history": [], "endpoint": "STOP", "repeat": 1, "status": "COMPLETE", "wall_seconds": 1.434, "macro_end": null, "deadline": false}
+{"task": "PushCube-v1", "parent": 0, "history": ["forward_tap"], "endpoint": "continue", "repeat": 0, "status": "COMPLETE", "wall_seconds": 1.509, "macro_end": true, "deadline": true}
+{"task": "PushCube-v1", "parent": 0, "history": ["forward_tap"], "endpoint": "continue", "repeat": 1, "status": "COMPLETE", "wall_seconds": 1.447, "macro_end": true, "deadline": true}
+{"task": "PushCube-v1", "parent": 0, "history": ["forward_tap"], "endpoint": "recover", "repeat": 0, "status": "COMPLETE", "wall_seconds": 1.53, "macro_end": true, "deadline": true}
+{"task": "PushCube-v1", "parent": 0, "history": ["forward_tap"], "endpoint": "recover", "repeat": 1, "status": "COMPLETE", "wall_seconds": 1.563, "macro_end": true, "deadline": true}
+{"task": "PushCube-v1", "parent": 0, "history": ["forward_tap"], "endpoint": "STOP", "repeat": 0, "status": "COMPLETE", "wall_seconds": 1.642, "macro_end": null, "deadline": false}
+{"task": "PushCube-v1", "parent": 0, "history": ["forward_tap"], "endpoint": "STOP", "repeat": 1, "status": "COMPLETE", "wall_seconds": 1.474, "macro_end": null, "deadline": false}
+{"task": "PushCube-v1", "parent": 0, "history": ["lateral_sweep"], "endpoint": "continue", "repeat": 0, "status": "COMPLETE", "wall_seconds": 1.511, "macro_end": true, "deadline": true}
+{"task": "PushCube-v1", "parent": 0, "history": ["lateral_sweep"], "endpoint": "continue", "repeat": 1, "status": "COMPLETE", "wall_seconds": 1.447, "macro_end": true, "deadline": true}
+{"task": "PushCube-v1", "parent": 0, "history": ["lateral_sweep"], "endpoint": "recover", "repeat": 0, "status": "COMPLETE", "wall_seconds": 1.455, "macro_end": true, "deadline": true}
+{"task": "PushCube-v1", "parent": 0, "history": ["lateral_sweep"], "endpoint": "recover", "repeat": 1, "status": "COMPLETE", "wall_seconds": 1.49, "macro_end": true, "deadline": true}
+{"task": "PushCube-v1", "parent": 0, "history": ["lateral_sweep"], "endpoint": "STOP", "repeat": 0, "status": "COMPLETE", "wall_seconds": 1.445, "macro_end": null, "deadline": false}
+{"task": "PushCube-v1", "parent": 0, "history": ["lateral_sweep"], "endpoint": "STOP", "repeat": 1, "status": "COMPLETE", "wall_seconds": 1.529, "macro_end": null, "deadline": false}
+{"task": "PushCube-v1", "parent": 0, "history": ["forward_tap", "forward_tap"], "endpoint": "continue", "repeat": 0, "status": "COMPLETE", "wall_seconds": 1.544, "macro_end": true, "deadline": true}
+{"task": "PushCube-v1", "parent": 0, "history": ["forward_tap", "forward_tap"], "endpoint": "continue", "repeat": 1, "status": "COMPLETE", "wall_seconds": 1.584, "macro_end": true, "deadline": true}
+{"task": "PushCube-v1", "parent": 0, "history": ["forward_tap", "forward_tap"], "endpoint": "recover", "repeat": 0, "status": "COMPLETE", "wall_seconds": 1.54, "macro_end": true, "deadline": true}
+{"task": "PushCube-v1", "parent": 0, "history": ["forward_tap", "forward_tap"], "endpoint": "recover", "repeat": 1, "status": "COMPLETE", "wall_seconds": 1.503, "macro_end": true, "deadline": true}
+{"task": "PushCube-v1", "parent": 0, "history": ["forward_tap", "forward_tap"], "endpoint": "STOP", "repeat": 0, "status": "COMPLETE", "wall_seconds": 1.497, "macro_end": null, "deadline": false}
+{"task": "PushCube-v1", "parent": 0, "history": ["forward_tap", "forward_tap"], "endpoint": "STOP", "repeat": 1, "status": "COMPLETE", "wall_seconds": 1.599, "macro_end": null, "deadline": false}
+{"task": "PushCube-v1", "parent": 0, "history": ["forward_tap", "lateral_sweep"], "endpoint": "continue", "repeat": 0, "status": "COMPLETE", "wall_seconds": 1.561, "macro_end": true, "deadline": true}
+{"task": "PushCube-v1", "parent": 0, "history": ["forward_tap", "lateral_sweep"], "endpoint": "continue", "repeat": 1, "status": "COMPLETE", "wall_seconds": 1.539, "macro_end": true, "deadline": true}
+{"task": "PushCube-v1", "parent": 0, "history": ["forward_tap", "lateral_sweep"], "endpoint": "recover", "repeat": 0, "status": "COMPLETE", "wall_seconds": 1.527, "macro_end": true, "deadline": true}
+{"task": "PushCube-v1", "parent": 0, "history": ["forward_tap", "lateral_sweep"], "endpoint": "recover", "repeat": 1, "status": "COMPLETE", "wall_seconds": 1.504, "macro_end": true, "deadline": true}
+{"task": "PushCube-v1", "parent": 0, "history": ["forward_tap", "lateral_sweep"], "endpoint": "STOP", "repeat": 0, "status": "COMPLETE", "wall_seconds": 1.531, "macro_end": null, "deadline": false}
+{"task": "PushCube-v1", "parent": 0, "history": ["forward_tap", "lateral_sweep"], "endpoint": "STOP", "repeat": 1, "status": "COMPLETE", "wall_seconds": 1.579, "macro_end": null, "deadline": false}
+{"task": "PushCube-v1", "parent": 0, "history": ["lateral_sweep", "forward_tap"], "endpoint": "continue", "repeat": 0, "status": "COMPLETE", "wall_seconds": 1.628, "macro_end": true, "deadline": true}
+{"task": "PushCube-v1", "parent": 0, "history": ["lateral_sweep", "forward_tap"], "endpoint": "continue", "repeat": 1, "status": "COMPLETE", "wall_seconds": 1.573, "macro_end": true, "deadline": true}
+{"task": "PushCube-v1", "parent": 0, "history": ["lateral_sweep", "forward_tap"], "endpoint": "recover", "repeat": 0, "status": "COMPLETE", "wall_seconds": 1.587, "macro_end": true, "deadline": true}
+{"task": "PushCube-v1", "parent": 0, "history": ["lateral_sweep", "forward_tap"], "endpoint": "recover", "repeat": 1, "status": "COMPLETE", "wall_seconds": 1.712, "macro_end": true, "deadline": true}
+{"task": "PushCube-v1", "parent": 0, "history": ["lateral_sweep", "forward_tap"], "endpoint": "STOP", "repeat": 0, "status": "COMPLETE", "wall_seconds": 1.595, "macro_end": null, "deadline": false}
+{"task": "PushCube-v1", "parent": 0, "history": ["lateral_sweep", "forward_tap"], "endpoint": "STOP", "repeat": 1, "status": "COMPLETE", "wall_seconds": 1.596, "macro_end": null, "deadline": false}
+{"task": "PushCube-v1", "parent": 0, "history": ["lateral_sweep", "lateral_sweep"], "endpoint": "continue", "repeat": 0, "status": "COMPLETE", "wall_seconds": 1.678, "macro_end": true, "deadline": true}
+{"task": "PushCube-v1", "parent": 0, "history": ["lateral_sweep", "lateral_sweep"], "endpoint": "continue", "repeat": 1, "status": "COMPLETE", "wall_seconds": 1.602, "macro_end": true, "deadline": true}

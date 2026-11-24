@@ -1,0 +1,72 @@
+{
+  "registered_before_new_physics": true,
+  "registered_epoch": 1795098714.4933913,
+  "authority": "User-authorized final two-family physical feasibility pilot, 19 November 2026",
+  "old_protocol_preserved": "research/rpd_method_challenge/final/stage2/protocol.json",
+  "old_protocol_sha256": "4b79d87479be59f2bc8e818b03879a8d5a395265de719cd9a55320f710ea8c2e",
+  "old_reservation_sha256": "244574f85a437df8202f42395c8e9c9655fff5bb2a72eb55dc0c38f6734ccf34",
+  "tasks": [
+    "PickCube-v1",
+    "PushCube-v1"
+  ],
+  "prefix_controls": {
+    "PickCube-v1": 65,
+    "PushCube-v1": 53
+  },
+  "control_hz": 20,
+  "neutral_hold": {
+    "command": [
+      0.0,
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "ticks": [
+      10,
+      20
+    ],
+    "semantics": "Zero normalized Cartesian delta, native measured-current EE feedback every tick, gripper closed -1 matching last prefix command. This is a controlled hold, not frozen state; gravity/contact dynamics continue."
+  },
+  "native_macro": "Unchanged dsre_paper_physics.action_for(world, mode, j, post_history_tcp), 70 ticks",
+  "padding": "Zero EE delta, retain last actual gripper command; STOP retains history gripper or original closed gripper. Actual STOP outcome measured.",
+  "deadline_controls": 90,
+  "macro_endpoint": "after history delay+70 controls, also record deadline90; STOP has no macro endpoint",
+  "episode_max_controls": 200,
+  "episodes_per_task": 540,
+  "parents_per_task": 10,
+  "histories": "Original seven length0..2 plus neutral10 and neutral20, each c/r/STOP twice. Parents are independent units; branch observations are correlated.",
+  "physics_worker_seconds_per_task": 10800,
+  "compressed_bytes_per_task_cap": 3221225472,
+  "runtime_measurement": "First registered empty/continue/repeat0 episode is startup/throughput measurement and retained in planned540, not an extra outcome. Before later parents reserve54*max episode wall seconds plus startup margin. Stop family on source failure. Hard cap overrides atomic completion if an unpredictable overrun occurs.",
+  "replay": "Fresh native reset seed then exact registered prefix per isolated evaluator episode. No within-history reset, restore, state setter or teleport. Full prefix/controller-memory and repeated full-path checks.",
+  "repeat_limits": {
+    "position": 1e-05,
+    "angle": 0.0001,
+    "qpos": 0.0001,
+    "velocity": 0.0001,
+    "observation": 0.0001,
+    "time": 1e-09,
+    "contacts_and_task_flags": "exact",
+    "controller_memory": "exact canonical JSON"
+  },
+  "allowed_set": {
+    "arm": "Panda URDF joint limits +/-1e-6rad",
+    "TCP": "abs(x/y)<=.60m,z in[.015,.50]",
+    "object": "abs(x/y)<=.45m,z in[cube_half_size-.002,.50]",
+    "scope": "Every20Hz control boundary; no force/damage/continuous-time guarantee. Post-probe violation retained adverse, not source attrition."
+  },
+  "contact_mechanism": "Actual native robot-object contact during probe, plus measured motion/contact response vs identical-time neutral hold. No-contact and no-effect strata separate; native commands alone do not prove mechanism.",
+  "object_motion_resolution_m": 1e-05,
+  "tcp_motion_resolution_m": 1e-05,
+  "K": "continue/recover successful native deadline90 outcomes, only when both repeated outcomes and source checks agree; compare identical d10/d20 hold. Missing and unstable outcomes give UNKNOWN, never empty set.",
+  "erasure": "K_hold nonempty AND K_probe empty; creation converse. Lost/gained individual macro memberships separately. Require actual probe contact and sampled geometry for physical-mechanism conclusion.",
+  "observation_analysis": "Frozen5mm TCP response bins/.01rad arm-motion/.1rad_s peak speed only; report descriptive distinctness and evaluator-only root object-minus-TCP16cell label within identical fixed root signatures. No fitted decoder, held-out information claim or favorable probe ordering.",
+  "no_new_calibration": true,
+  "full_stage2_inactive": true,
+  "decisions": [
+    "PHYSICAL_MECHANISM_OBSERVED",
+    "QUALIFIED_NO_ERASURE_IN_PILOT",
+    "SOURCE_NOT_QUALIFIED",
+    "PROBE_NOT_MECHANISTIC"
+  ]
+}

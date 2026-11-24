@@ -1,0 +1,22 @@
+{
+  "artifact_commit": "4394693c451ce79198d88d3a295681a3fefcc56f",
+  "science_base_commit": "d917a69d47f3102123030eaf565f4623dad86525",
+  "branch": "research/dsre-rss2027-stage1-scientific-writing",
+  "protected_files_verified": 480,
+  "unrelated_worktree_entries_preserved": 56,
+  "pdf_sha256": "9fcd636c1baa8437eaf0be7072206f1900512b72f65d1597df1f268bd979a103",
+  "pdf_bytes": 479471,
+  "anonymous_bundle_sha256": "34123d737e57bba340da6d9df4a8ced419d11b6c3aabf1c25f0a800110b9d224",
+  "anonymous_bundle_bytes": 581455,
+  "paper_and_verification_artifact_bytes": 7790213,
+  "pages": 6,
+  "content_pages": 5,
+  "references_pages": 1,
+  "new_physics": 0,
+  "new_fits": 0,
+  "tests_passed": 635,
+  "tests_skipped": 6,
+  "pushed": false,
+  "submitted": false,
+  "receipt_note": "The following receipt-only commit records this artifact SHA; its own SHA is reported in the delivery."
+}

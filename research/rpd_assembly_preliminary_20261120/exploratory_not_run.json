@@ -1,0 +1,8 @@
+{
+  "reason": "FEWER_THAN_EIGHT_REGISTERED_ELIGIBLE_ROOTS",
+  "qualification_passed": false,
+  "fixed_exploratory_parents": 24,
+  "attempted_exploratory_parents": 0,
+  "confirmation_parents_attempted": 0,
+  "no_replacement_or_retuning": true
+}

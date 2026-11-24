@@ -1,0 +1,31 @@
+{
+  "source": "https://zenodo.org/api/records/21390226/files/jkoba0512/epistemic-active-calibration-v1.0.0.zip/content",
+  "bytes": 3755516,
+  "sha256": "2a948585377d11c1269c051a157a53dc352c8e7f1174a340bd653375e38125c6",
+  "md5_matches_publisher_record": true,
+  "executed": false,
+  "local_archive": "/tmp/rpd-terminal-primary-source.zip",
+  "methods_source_inspected": {
+    "experiments/redundant_arm_calibration.py": {
+      "sha256": "b203209ffb97df87a602030eac1d8637df60393c084b38416f8145cdcf77996a",
+      "functions_inspected": [
+        "compute_null_space_probe_action",
+        "compute_posture_task_action",
+        "rollout_step"
+      ]
+    },
+    "experiments/terminal_control_risk_diagnostics.py": {
+      "sha256": "fb405dbb54259f5c96f0b4df7a8c7941e95f28d3787f0833184b9ce33a7393a1",
+      "functions_inspected": [
+        "rollout_risk"
+      ]
+    },
+    "experiments/redundant_arm_phase2_control_study.py": {
+      "sha256": "23fb9ca1b102a776d69cbc163f5723fed2debcb937379dbc3a9c8c82e7ca2161",
+      "functions_inspected": [
+        "run_phase2"
+      ]
+    }
+  },
+  "scope": "Primary author release read as text/AST only; not imported, executed, or reproduced. Wrong bioRxiv DOI is not used."
+}

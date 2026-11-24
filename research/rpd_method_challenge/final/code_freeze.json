@@ -1,0 +1,19 @@
+{
+  "code_sha256": {
+    "src/dual_rec/recoverability/__init__.py": "905c9149334092530e563b60f4d69d414d44349df736eca5563d26b97ce4ea87",
+    "src/dual_rec/recoverability/adapters.py": "84fd8279e9440e99b01a15c95a4f0723e514a59946b7430172eda8ed2bee0c85",
+    "src/dual_rec/recoverability/planner.py": "d1b0c83456885f1b70e00eff39ebce56b642b1105f4af6196e9685c36754394e",
+    "src/dual_rec/recoverability/schema.py": "7f15d12743ad632ac895d0edb362f2e1f37ce52bcdd40e7c289e8078c1dec501",
+    "scripts/rpd_cases.py": "89f85e29018fb8799b7e75f6b044d2debcd0816e026580b8042c95294ca1a04a",
+    "scripts/rpd_baselines.py": "cfd7186ef00b1f8e0c6d60b0b3c9ccd7a759e3fcf203eed7c058f7337cfdd1c8",
+    "scripts/rpd_independent_oracle.py": "242a67cc7627808f9c5061cf9b7a928d92f887cb0be7e11ab2dca1871329292d",
+    "scripts/rpd_audit.py": "e747bd15f8c1051560cd8315991a45a217c10de49bbe7a0402699251595ecf4c",
+    "scripts/rpd_source_audit.py": "f8e09708a60c981a374427e935760d33f6608bb47062be0c4c0cd83787a48072",
+    "scripts/rpd_stage2_protocol.py": "1fb2e53bfe95950924867864306edbaed1344aabc55bd99863626599dd2b92f5",
+    "scripts/rpd_run.py": "fb231a2f82d882e5287eb31393ad5f0225986f0d0575019a2aa30bd95b130136",
+    "tests/test_recoverability_planner.py": "96fa7f9dd02f0c4670399733fd660a7bee402be9fa0869942ced47088737f9b3"
+  },
+  "registration_sha256": "17357a514cb75781a09d6669855cea793754889004c2559be29683825be6a712",
+  "base_commit": "0d3b52b57a5914dee05530d15cc9ef26b95a921b",
+  "created_epoch": 1795095065.1383953
+}

@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "official": {
+    "paperwidth": "614.295pt",
+    "paperheight": "794.96999pt",
+    "textwidth": "516.0pt",
+    "textheight": "672.0pt",
+    "columnwidth": "252.0pt",
+    "columnsep": "12.0pt",
+    "oddsidemargin": "-23.12692pt",
+    "evensidemargin": "-23.12692pt",
+    "topmargin": "-48.13498pt",
+    "headheight": "12.0pt",
+    "headsep": "18.06749pt",
+    "baselineskip": "12.0pt",
+    "fontsize": "10"
+  },
+  "manuscript": {
+    "paperwidth": "614.295pt",
+    "paperheight": "794.96999pt",
+    "textwidth": "516.0pt",
+    "textheight": "672.0pt",
+    "columnwidth": "252.0pt",
+    "columnsep": "12.0pt",
+    "oddsidemargin": "-23.12692pt",
+    "evensidemargin": "-23.12692pt",
+    "topmargin": "-48.13498pt",
+    "headheight": "12.0pt",
+    "headsep": "18.06749pt",
+    "baselineskip": "12.0pt",
+    "fontsize": "10"
+  },
+  "class_sha256": "d63d4bf27f29603a733d06e27ba5fbb40488acf9d1d696354a88b886758f70a7",
+  "scope": "Diagnostic typeout only; no layout settings modified"
+}

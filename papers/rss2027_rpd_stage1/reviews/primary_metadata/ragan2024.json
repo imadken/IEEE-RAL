@@ -1,0 +1,99 @@
+{
+  "DOI": "10.1126/scirobotics.adn4722",
+  "title": [
+    "Online tree-based planning for active spacecraft fault estimation and collision avoidance"
+  ],
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0009-0005-5680-9794",
+      "authenticated-orcid": true,
+      "given": "James",
+      "family": "Ragan",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Division of Engineering and Applied Science, California Institute of Technology, Pasadena, CA 91125, USA."
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-4189-4090",
+      "authenticated-orcid": true,
+      "given": "Benjamin",
+      "family": "Riviere",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Division of Engineering and Applied Science, California Institute of Technology, Pasadena, CA 91125, USA."
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0009-0008-5851-342X",
+      "authenticated-orcid": true,
+      "given": "Fred Y.",
+      "family": "Hadaegh",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Division of Engineering and Applied Science, California Institute of Technology, Pasadena, CA 91125, USA."
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-6657-3907",
+      "authenticated-orcid": true,
+      "given": "Soon-Jo",
+      "family": "Chung",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Division of Engineering and Applied Science, California Institute of Technology, Pasadena, CA 91125, USA."
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "container-title": [
+    "Science Robotics"
+  ],
+  "volume": "9",
+  "issue": "93",
+  "page": null,
+  "article-number": "eadn4722",
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        8,
+        28
+      ]
+    ]
+  },
+  "type": "journal-article",
+  "source": "https://api.crossref.org/works/10.1126/scirobotics.adn4722",
+  "retrieved": "2026-11-20"
+}
